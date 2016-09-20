@@ -1,0 +1,51 @@
+record(stringin, "$(P):ioc:hostname") 
+{
+    field(DTYP,  "LiberaHost")
+}
+
+record(stringin, "$(P):ioc:date") 
+{
+    field(DTYP,  "LiberaHost")
+    field(SCAN,  "10 second")
+}
+
+record(stringin, "$(P):ioc:ip:eth0") 
+{
+    field(DTYP,  "LiberaHost")
+    field(SCAN,  "Passive")
+}
+
+record(stringin, "$(P):ioc:ip:eth1") 
+{
+    field(DTYP,  "LiberaHost")
+    field(SCAN,  "Passive")
+}
+
+record(stringin, "$(P):ioc:uptime") 
+{
+    field(DTYP,  "LiberaHost")
+    field(SCAN,  "10 second")
+}
+
+record(stringin, "$(P):ioc:loadavg") 
+{
+    field(DTYP,  "LiberaHost")
+    field(SCAN,  "10 second")
+}
+
+record(stringin, "$(P):ioc:max_bytes") 
+{
+    field(DTYP,  "LiberaHost")
+}
+
+record(stringin, "$(P):ioc:free_mem") 
+{
+    field(DTYP,  "LiberaHost")
+    field(SCAN,  "10 second")
+}
+
+record(stringin, "$(P):ioc:cpu") 
+{
+    field(DTYP,  "LiberaHost")
+    field(SCAN,  "10 second")
+}

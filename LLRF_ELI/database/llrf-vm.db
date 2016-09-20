@@ -1,0 +1,639 @@
+record(libera, "$(P):$(B):amp_gate:duration") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).amp_gate.duration")
+}
+
+record(libera, "$(P):$(B):amp_gate:offset") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).amp_gate.offset")
+}
+
+record(libera, "$(P):$(B):ph_gate:duration") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).ph_gate.duration")
+}
+
+record(libera, "$(P):$(B):ph_gate:offset") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).ph_gate.offset")
+}
+
+record(libera, "$(P):$(B):feed_fwd:duration") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).feed_forward.duration")
+}
+
+record(libera, "$(P):$(B):feed_fwd:offset") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).feed_forward.offset")
+}
+
+record(libera, "$(P):$(B):dsp:pi_amp:kp") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).dsp.pi_amplitude.kp")
+}
+
+record(libera, "$(P):$(B):dsp:pi_amp:ki") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).dsp.pi_amplitude.ki")
+}
+
+record(libera, "$(P):$(B):dsp:pi_amp:loop_closed") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).dsp.pi_amplitude.loop_closed")
+}
+
+record(libera, "$(P):$(B):dsp:pi_ph:kp") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).dsp.pi_phase.kp")
+}
+
+record(libera, "$(P):$(B):dsp:pi_ph:ki") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).dsp.pi_phase.ki")
+}
+
+record(libera, "$(P):$(B):dsp:pi_ph:loop_closed") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).dsp.pi_phase.loop_closed")
+}
+
+record(libera, "$(P):$(B):dsp:sp_amp:amplitude") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).dsp.sp_amp.amplitude")
+}
+
+record(libera, "$(P):$(B):dsp:sp_amp:power") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).dsp.sp_amp.power")
+}
+
+record(libera, "$(P):$(B):dsp:sp_amp:power_dBm") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).dsp.sp_amp.power_dBm")
+}
+
+record(libera, "$(P):$(B):dsp:sp_amp:coeff") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).dsp.sp_amp.coeff")
+}
+
+record(libera, "$(P):$(B):dsp:sp_amp:calibrate") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).dsp.sp_amp.calibrate")
+}
+
+record(libera, "$(P):$(B):dsp:sp_amp:ref_val") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).dsp.sp_amp.ref_value")
+}
+
+record(libera, "$(P):$(B):dsp:ff_amp:amplitude") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).dsp.ff_amp.amplitude")
+}
+
+record(libera, "$(P):$(B):dsp:ff_amp:power") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).dsp.ff_amp.power")
+}
+
+record(libera, "$(P):$(B):dsp:ff_amp:power_dBm") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).dsp.ff_amp.power_dBm")
+}
+
+record(libera, "$(P):$(B):dsp:ff_amp:coeff") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).dsp.ff_amp.coeff")
+}
+
+record(libera, "$(P):$(B):dsp:ff_amp:calibrate") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).dsp.ff_amp.calibrate")
+}
+
+record(libera, "$(P):$(B):dsp:ff_amp:ref_val") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).dsp.ff_amp.ref_value")
+}
+
+record(libera, "$(P):$(B):dsp:ff_amp:lock") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).dsp.ff_amp.lock")
+}
+
+record(libera, "$(P):$(B):dsp:sp_ph:phase") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).dsp.sp_phase.phase")
+}
+
+record(libera, "$(P):$(B):dsp:sp_ph:coeff") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).dsp.sp_phase.coeff")
+}
+
+record(libera, "$(P):$(B):dsp:sp_ph:calibrate") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).dsp.sp_phase.calibrate")
+}
+
+record(libera, "$(P):$(B):dsp:sp_ph:ref_val") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).dsp.sp_phase.ref_value")
+}
+
+record(libera, "$(P):$(B):dsp:ff_ph:phase") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).dsp.ff_phase.phase")
+}
+
+record(libera, "$(P):$(B):dsp:ff_ph:coeff") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).dsp.ff_phase.coeff")
+}
+
+record(libera, "$(P):$(B):dsp:ff_ph:calibrate") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).dsp.ff_phase.calibrate")
+}
+
+record(libera, "$(P):$(B):dsp:ff_ph:ref_val") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).dsp.ff_phase.ref_value")
+}
+
+record(libera, "$(P):$(B):dsp:ff_ph:lock") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).dsp.ff_phase.lock")
+}
+
+record(libera, "$(P):$(B):dsp:ff_pulse_shape:amp") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).dsp.ff_pulse_shape.table_amp")
+}
+
+record(libera, "$(P):$(B):dsp:ff_pulse_shape:ph") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).dsp.ff_pulse_shape.table_phase")
+}
+
+record(libera, "$(P):$(B):dsp:ff_pulse_shape:apply_tables") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).dsp.ff_pulse_shape.apply_tables")
+}
+
+record(liberaSignal, "$(P):$(B):ch1:amp_phase")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch1.amp_phase")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch1:power_local")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch1.power_local")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch1:power_remote")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch1.power_remote")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch1:amp_derivative")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch1.amp_derivative")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch1:amp_average")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch1.amp_average")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch1:phase_derivative")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch1.phase_derivative")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch1:phase_average")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch1.phase_average")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch2:amp_phase")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch2.amp_phase")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch2:power_local")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch2.power_local")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch2:power_remote")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch2.power_remote")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch2:amp_derivative")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch2.amp_derivative")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch2:amp_average")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch2.amp_average")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch2:phase_derivative")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch2.phase_derivative")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch2:phase_average")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch2.phase_average")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+
+record(liberaSignal, "$(P):$(B):ch7:amp_phase")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch7.amp_phase")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch7:power_local")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch7.power_local")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch7:power_remote")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch7.power_remote")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch7:amp_derivative")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch7.amp_derivative")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch7:amp_average")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch7.amp_average")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch7:phase_derivative")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch7.phase_derivative")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch7:phase_average")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch7.phase_average")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch8:amp_phase")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch8.amp_phase")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch8:power_local")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch8.power_local")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch8:power_remote")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch8.power_remote")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch8:amp_derivative")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch8.amp_derivative")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch8:amp_average")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch8.amp_average")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch8:phase_derivative")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch8.phase_derivative")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch8:phase_average")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch8.phase_average")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch3:amplitude")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch3.amplitude")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch3:power_local")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch3.power_local")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch3:power_remote")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch3.power_remote")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch3:amp_derivative")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch3.amp_derivative")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch3:amp_average")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch3.amp_average")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch5:amplitude")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch5.amplitude")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch5:power_local")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch5.power_local")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch5:power_remote")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch5.power_remote")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch5:amp_derivative")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch5.amp_derivative")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch5:amp_average")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch5.amp_average")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch4:phase")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch4.phase")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch4:phase_derivative")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch4.phase_derivative")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch4:phase_average")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch4.phase_average")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch6:phase")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch6.phase")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch6:phase_derivative")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch6.phase_derivative")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(liberaSignal, "$(P):$(B):ch6:phase_average")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch6.phase_average")
+    field("NGRP", 1024)
+    field("SCAN", "1 second")
+}
+
+record(libera, "$(P):$(B):signals:ch1:average:window") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch1.average.window_length")
+}
+
+record(libera, "$(P):$(B):signals:ch2:average:window") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch2.average.window_length")
+}
+
+record(libera, "$(P):$(B):signals:ch3:average:window") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch3.average.window_length")
+}
+
+record(libera, "$(P):$(B):signals:ch4:average:window") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch4.average.window_length")
+}
+
+record(libera, "$(P):$(B):signals:ch5:average:window") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch5.average.window_length")
+}
+
+record(libera, "$(P):$(B):signals:ch6:average:window") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch6.average.window_length")
+}
+
+record(libera, "$(P):$(B):signals:ch7:average:window") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch7.average.window_length")
+}
+
+record(libera, "$(P):$(B):signals:ch8:average:window") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch8.average.window_length")
+}
+
+record(libera, "$(P):$(B):calibration:ch1:amp_local") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch1.calibration.amp_local")
+}
+
+record(libera, "$(P):$(B):calibration:ch2:amp_local") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch2.calibration.amp_local")
+}
+
+record(libera, "$(P):$(B):calibration:ch3:amp_local") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch3.calibration.amp_local")
+}
+
+record(libera, "$(P):$(B):calibration:ch5:amp_local") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch5.calibration.amp_local")
+}
+
+record(libera, "$(P):$(B):calibration:ch7:amp_local") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch7.calibration.amp_local")
+}
+
+record(libera, "$(P):$(B):calibration:ch8:amp_local") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch8.calibration.amp_local")
+}
+
+record(libera, "$(P):$(B):calibration:ch1:amp_remote") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch1.calibration.amp_remote")
+}
+
+record(libera, "$(P):$(B):calibration:ch2:amp_remote") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch2.calibration.amp_remote")
+}
+
+record(libera, "$(P):$(B):calibration:ch3:amp_remote") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch3.calibration.amp_remote")
+}
+
+record(libera, "$(P):$(B):calibration:ch5:amp_remote") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch5.calibration.amp_remote")
+}
+
+record(libera, "$(P):$(B):calibration:ch7:amp_remote") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch7.calibration.amp_remote")
+}
+
+record(libera, "$(P):$(B):calibration:ch8:amp_remote") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch8.calibration.amp_remote")
+}
+
+record(libera, "$(P):$(B):calibration:ch1:ph_remote") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch1.calibration.ph_remote")
+}
+
+record(libera, "$(P):$(B):calibration:ch2:ph_remote") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch2.calibration.ph_remote")
+}
+
+record(libera, "$(P):$(B):calibration:ch4:ph_remote") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch4.calibration.ph_remote")
+}
+
+record(libera, "$(P):$(B):calibration:ch6:ph_remote") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch6.calibration.ph_remote")
+}
+
+record(libera, "$(P):$(B):calibration:ch7:ph_remote") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch7.calibration.ph_remote")
+}
+
+record(libera, "$(P):$(B):calibration:ch8:ph_remote") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.ch8.calibration.ph_remote")
+}
+
+record(libera, "$(P):$(B):info:customer")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).info.customer")
+}
+
+record(libera, "$(P):$(B):info:revision")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).info.revision")
+}
+
+record(libera, "$(P):$(B):info:health_status")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).info.health_status")
+}
+

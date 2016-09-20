@@ -1,0 +1,1 @@
+"c:\Program Files\caQTDM\bin\win32-x86\caQtDM.exe" -macro "DEVICE=%1" main.ui

@@ -1,0 +1,9 @@
+record(libera, "$(P):llrf:app-name") 
+{
+    info(MCII,  "mcii://$(D)/app-name")
+}
+
+record(libera, "$(P):llrf:version") 
+{
+    info(MCII,  "mcii://$(D)/version")
+}

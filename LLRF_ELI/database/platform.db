@@ -1,0 +1,58 @@
+
+record(libera, "$(P):fans:right_middle") 
+{
+    info(MCII,  "mcii://$(D)/fans.right_middle")
+    field(SCAN, "10 second")
+}
+
+record(libera, "$(P):fans:right_rear") 
+{
+    info(MCII,  "mcii://$(D)/fans.right_rear")
+    field(SCAN, "10 second")
+}
+
+record(libera, "$(P):fans:right_front") 
+{
+    info(MCII,  "mcii://$(D)/fans.right_front")
+    field(SCAN, "10 second")
+}
+
+record(libera, "$(P):platform:app-name") 
+{
+    info(MCII,  "mcii://$(D)/app-name")
+}
+
+record(libera, "$(P):fans") 
+{
+    info(MCII,  "mcii://$(D)/fans")
+    field(SCAN, "10 second")
+}
+
+record(libera, "$(P):fans_set") 
+{
+    info(MCII,  "mcii://$(D)/fans")
+    field(SCAN, "Passive")
+}
+
+record(libera, "$(P):platform:version") 
+{
+    info(MCII,  "mcii://$(D)/version")
+}
+
+record(libera, "$(P):fans:left_middle") 
+{
+    info(MCII,  "mcii://$(D)/fans.left_middle")
+    field(SCAN, "10 second")
+}
+
+record(libera, "$(P):fans:left_rear") 
+{
+    info(MCII,  "mcii://$(D)/fans.left_rear")
+    field(SCAN, "10 second")
+}
+
+record(libera, "$(P):fans:left_front") 
+{
+    info(MCII,  "mcii://$(D)/fans.left_front")
+    field(SCAN, "10 second")
+}

@@ -1,0 +1,40 @@
+record(libera, "$(P):$(B):trig:source") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).triggers.trig.source")
+}
+
+record(libera, "$(P):$(B):trig:freq") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).triggers.trig.frequency")
+}
+
+record(libera, "$(P):$(B):trig:sampling_phase") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).triggers.trig.sampling_phase")
+}
+
+record(libera, "$(P):$(B):hk:adc_clk_lost") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).hk.adc_clock_lost")
+}
+
+record(libera, "$(P):$(B):info:revision") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).info.revision")
+}
+
+record(libera, "$(P):$(B):info:customer") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).info.customer")
+}
+
+record(libera, "$(P):$(B):info:health_status") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).info.health_status")
+}
+
+record(liberaSignal, "$(P):$(B):event")
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).signals.event")
+    field("SCAN", "I/O Intr")
+}

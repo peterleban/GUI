@@ -1,0 +1,74 @@
+record(libera, "$(P):$(B):dig_freq:v_w") 
+{
+    info(MCII,  "mcii://$(D)/application.digital_frequency.v_w")
+}
+
+record(libera, "$(P):$(B):ref_tracking:period") 
+{
+    info(MCII,  "mcii://$(D)/application.reference_tracking.period")
+}
+
+record(libera, "$(P):$(B):ref_tracking:enabled") 
+{
+    info(MCII,  "mcii://$(D)/application.reference_tracking.enabled")
+}
+
+record(libera, "$(P):$(B):ref_tracking:error") 
+{
+    info(MCII,  "mcii://$(D)/application.reference_tracking.error")
+}
+
+record(libera, "$(P):$(B):rf_ctrl") 
+{
+    info(MCII,  "mcii://$(D)/application.rf_control.rf_state")
+}
+
+record(libera, "$(P):$(B):clk_info:ref_freq") 
+{
+    info(MCII,  "mcii://$(D)/application.clock_info.ref_frequency")
+}
+
+record(libera, "$(P):$(B):clk_info:adc_freq") 
+{
+    info(MCII,  "mcii://$(D)/application.clock_info.adc_frequency")
+}
+
+record(libera, "$(P):$(B):clk_info:if_freq") 
+{
+    info(MCII,  "mcii://$(D)/application.clock_info.if_frequency")
+}
+
+record(libera, "$(P):$(B):acq_window:length") 
+{
+    info(MCII,  "mcii://$(D)/application.acquisition_window.duration")
+}
+
+record(libera, "$(P):$(B):acq_window:offset") 
+{
+    info(MCII,  "mcii://$(D)/application.acquisition_window.offset")
+}
+
+record(libera, "$(P):$(B):interlock:state") 
+{
+    info(MCII,  "mcii://$(D)/application.interlock_control.interlock_state")
+}
+
+record(libera, "$(P):$(B):interlock:event_log") 
+{
+    info(MCII,  "mcii://$(D)/application.interlock_control.ilk_event_log")
+}
+
+record(libera, "$(P):$(B):interlock:last_cnt")
+{
+    info(MCII,  "mcii://$(D)/application.interlock_control.last_event.counter")
+}
+
+record(libera, "$(P):$(B):interlock:last_board")
+{
+    info(MCII,  "mcii://$(D)/application.interlock_control.last_event.board")
+}
+
+record(libera, "$(P):$(B):interlock:last_timestamp")
+{
+    info(MCII,  "mcii://$(D)/application.interlock_control.last_event.timestamp")
+}

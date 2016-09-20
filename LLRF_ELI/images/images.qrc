@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="images">
+    <file>save.png</file>
+    <file>Libera.png</file>
+  </qresource>
+</RCC>

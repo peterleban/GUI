@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>342</width>
+    <height>201</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string extracomment="Libera">Libera Brilliance+</string>
+  </property>
+  <property name="accessibleName">
+   <string>Libera Brilliance+</string>
+  </property>
+  <property name="accessibleDescription">
+   <string/>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>10</y>
+      <width>67</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans Serif</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Eth1</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="ipaddress">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>10</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>FreeSans</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">caTextEntry,caLineEdit {background-color: rgba(192, 192, 192, 255); color: rgba(0, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(96, 96, 96, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(96, 96, 96, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(DEVICE):ioc:ip:eth0</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>192</red>
+      <green>192</green>
+      <blue>192</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+    <property name="fontScaleMode">
+     <enum>caLineEdit::WidthAndHeight</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>90</y>
+      <width>85</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans Serif</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>CPU load [%]</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="cpuload">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>90</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>FreeSans</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">caTextEntry,caLineEdit {background-color: rgba(192, 192, 192, 255); color: rgba(0, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(96, 96, 96, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(96, 96, 96, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(DEVICE):ioc:cpu</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>192</red>
+      <green>192</green>
+      <blue>192</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+    <property name="fontScaleMode">
+     <enum>caLineEdit::WidthAndHeight</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>50</y>
+      <width>67</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans Serif</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Hostname</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="hostname">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>50</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>FreeSans</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(DEVICE):ioc:hostname</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>192</red>
+      <green>192</green>
+      <blue>192</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+    <property name="fontScaleMode">
+     <enum>caLineEdit::WidthAndHeight</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>110</y>
+      <width>56</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans Serif</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Loadavg</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="loadavg">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>110</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>FreeSans</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(DEVICE):ioc:loadavg</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>192</red>
+      <green>192</green>
+      <blue>192</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+    <property name="fontScaleMode">
+     <enum>caLineEdit::WidthAndHeight</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>70</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans Serif</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Uptime</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="uptime">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>70</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>FreeSans</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(DEVICE):ioc:uptime</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>192</red>
+      <green>192</green>
+      <blue>192</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+    <property name="fontScaleMode">
+     <enum>caLineEdit::WidthAndHeight</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>130</y>
+      <width>86</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans Serif</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Free memory</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="free_mem">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>130</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>FreeSans</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(DEVICE):ioc:free_mem</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>192</red>
+      <green>192</green>
+      <blue>192</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+    <property name="fontScaleMode">
+     <enum>caLineEdit::WidthAndHeight</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>180</y>
+      <width>32</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans Serif</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Date</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="iocdate">
+    <property name="geometry">
+     <rect>
+      <x>82</x>
+      <y>180</y>
+      <width>256</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>FreeSans</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(DEVICE):ioc:date</string>
+    </property>
+    <property name="background">
+     <color alpha="192">
+      <red>192</red>
+      <green>192</green>
+      <blue>192</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+    <property name="fontScaleMode">
+     <enum>caLineEdit::WidthAndHeight</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>67</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans Serif</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Eth2</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="ipaddress_2">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>30</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>FreeSans</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(DEVICE):ioc:ip:eth1</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>192</red>
+      <green>192</green>
+      <blue>192</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+    <property name="fontScaleMode">
+     <enum>caLineEdit::WidthAndHeight</enum>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="free_mem_2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>155</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>FreeSans</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(DEVICE):ioc:max_bytes</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>192</red>
+      <green>192</green>
+      <blue>192</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+    <property name="fontScaleMode">
+     <enum>caLineEdit::WidthAndHeight</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>155</y>
+      <width>211</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans Serif</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>EPICS_CA_MAX_ARRAY_BYTES</string>
+    </property>
+   </widget>
+  </widget>
+  <action name="actionADC_raw_data">
+   <property name="text">
+    <string>ADC raw data</string>
+   </property>
+  </action>
+  <action name="actionTurn_by_turn_data">
+   <property name="text">
+    <string>Turn-by-turn data</string>
+   </property>
+  </action>
+  <action name="actionSlow_acquisition_data">
+   <property name="text">
+    <string>Slow acquisition data</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>caLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>caLineEdit</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="images/images.qrc"/>
+ </resources>
+ <connections/>
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>5</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>5</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>true</bool>
+  </property>
+ </designerdata>
+</ui>

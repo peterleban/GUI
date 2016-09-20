@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TBTSYNTH</class>
+ <widget class="QMainWindow" name="TBTSYNTH">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>990</width>
+    <height>576</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Postmortem</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="caCartesianPlot" name="pm_ddc_ampl">
+    <property name="geometry">
+     <rect>
+      <x>645</x>
+      <y>9</y>
+      <width>331</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans</family>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="Title" stdset="0">
+     <string notr="true">Amplitudes</string>
+    </property>
+    <property name="TitleX">
+     <string notr="true">Turns</string>
+    </property>
+    <property name="TitleY">
+     <string notr="true">Arbitrary units</string>
+    </property>
+    <property name="channels_1" stdset="0">
+     <string notr="true">;$(BPM):pm:ddc_synth.Va</string>
+    </property>
+    <property name="Style_1">
+     <enum>caCartesianPlot::Lines</enum>
+    </property>
+    <property name="symbol_1">
+     <enum>caCartesianPlot::Star1</enum>
+    </property>
+    <property name="color_1">
+     <color>
+      <red>255</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="channels_2" stdset="0">
+     <string notr="true">;$(BPM):pm:ddc_synth.Vb</string>
+    </property>
+    <property name="color_2">
+     <color>
+      <red>255</red>
+      <green>157</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="channels_3" stdset="0">
+     <string notr="true">;$(BPM):pm:ddc_synth.Vc</string>
+    </property>
+    <property name="color_3">
+     <color>
+      <red>50</red>
+      <green>198</green>
+      <blue>42</blue>
+     </color>
+    </property>
+    <property name="channels_4" stdset="0">
+     <string notr="true">;$(BPM):pm:ddc_synth.Vd</string>
+    </property>
+    <property name="plotMode">
+     <enum>caCartesianPlot::PlotNPointsAndStop</enum>
+    </property>
+    <property name="countNumOrChannel" stdset="0">
+     <string notr="true"/>
+    </property>
+    <property name="triggerChannel" stdset="0">
+     <string notr="true"/>
+    </property>
+    <property name="foreground">
+     <color alpha="0">
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="gridColor">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="XaxisScaling" stdset="0">
+     <enum>caCartesianPlot::Auto</enum>
+    </property>
+    <property name="XaxisLimits">
+     <string>0;100</string>
+    </property>
+    <property name="YaxisLimits">
+     <string>-1000000;-900000</string>
+    </property>
+   </widget>
+   <widget class="caCartesianPlot" name="pm_ddc_sum">
+    <property name="geometry">
+     <rect>
+      <x>645</x>
+      <y>290</y>
+      <width>331</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans</family>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="Title" stdset="0">
+     <string notr="true">SUM</string>
+    </property>
+    <property name="TitleX">
+     <string notr="true">Turns</string>
+    </property>
+    <property name="TitleY">
+     <string notr="true">Arbitrary units</string>
+    </property>
+    <property name="channels_1" stdset="0">
+     <string notr="true">;$(BPM):pm:ddc_synth.Sum</string>
+    </property>
+    <property name="Style_1">
+     <enum>caCartesianPlot::Lines</enum>
+    </property>
+    <property name="symbol_1">
+     <enum>caCartesianPlot::Star1</enum>
+    </property>
+    <property name="color_1">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="channels_2" stdset="0">
+     <string notr="true"/>
+    </property>
+    <property name="symbol_2">
+     <enum>caCartesianPlot::Star2</enum>
+    </property>
+    <property name="color_2">
+     <color>
+      <red>6</red>
+      <green>0</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="plotMode">
+     <enum>caCartesianPlot::PlotNPointsAndStop</enum>
+    </property>
+    <property name="countNumOrChannel" stdset="0">
+     <string notr="true"/>
+    </property>
+    <property name="triggerChannel" stdset="0">
+     <string notr="true"/>
+    </property>
+    <property name="foreground">
+     <color alpha="0">
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="gridColor">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="XaxisScaling" stdset="0">
+     <enum>caCartesianPlot::Auto</enum>
+    </property>
+    <property name="XaxisLimits">
+     <string>0;100</string>
+    </property>
+    <property name="YaxisLimits">
+     <string>-1000000;-900000</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_20">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>365</y>
+      <width>131</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Scan type</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_22">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>335</y>
+      <width>131</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Acquisition mode</string>
+    </property>
+   </widget>
+   <widget class="caMenu" name="tbtddcsynth_acqm">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>335</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans</family>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(BPM):pm:ddc_synth.ACQM</string>
+    </property>
+   </widget>
+   <widget class="caMenu" name="tbtddcsynth_scan">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>365</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans</family>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(BPM):pm:ddc_synth.SCAN</string>
+    </property>
+   </widget>
+   <widget class="caMessageButton" name="camessagebutton">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>395</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Proc</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="fontScaleMode">
+     <enum>EPushButton::WidthAndHeight</enum>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(BPM):pm:ddc_synth.PROC</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="pressMessage">
+     <string notr="true">1</string>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="tbtddcsynth_offs">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>75</y>
+      <width>76</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Monospace</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(BPM):pm:offset</string>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>170</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>127</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+    <property name="fontScaleMode">
+     <enum>caLineEdit::WidthAndHeight</enum>
+    </property>
+   </widget>
+   <widget class="caCartesianPlot" name="pm_ddc_y">
+    <property name="geometry">
+     <rect>
+      <x>305</x>
+      <y>290</y>
+      <width>331</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans</family>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="Title" stdset="0">
+     <string notr="true">Vertical position</string>
+    </property>
+    <property name="TitleX">
+     <string notr="true">Turns</string>
+    </property>
+    <property name="TitleY">
+     <string notr="true">Position [nm]</string>
+    </property>
+    <property name="channels_1" stdset="0">
+     <string notr="true">;$(BPM):pm:ddc_synth.Y</string>
+    </property>
+    <property name="Style_1">
+     <enum>caCartesianPlot::Lines</enum>
+    </property>
+    <property name="symbol_1">
+     <enum>caCartesianPlot::Star1</enum>
+    </property>
+    <property name="color_1">
+     <color>
+      <red>33</red>
+      <green>0</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="channels_2" stdset="0">
+     <string notr="true"/>
+    </property>
+    <property name="symbol_2">
+     <enum>caCartesianPlot::Star2</enum>
+    </property>
+    <property name="color_2">
+     <color>
+      <red>6</red>
+      <green>0</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="plotMode">
+     <enum>caCartesianPlot::PlotNPointsAndStop</enum>
+    </property>
+    <property name="countNumOrChannel" stdset="0">
+     <string notr="true"/>
+    </property>
+    <property name="triggerChannel" stdset="0">
+     <string notr="true"/>
+    </property>
+    <property name="foreground">
+     <color alpha="0">
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="gridColor">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="XaxisScaling" stdset="0">
+     <enum>caCartesianPlot::Auto</enum>
+    </property>
+    <property name="XaxisLimits">
+     <string>0;100</string>
+    </property>
+    <property name="YaxisLimits">
+     <string>-1000000;-900000</string>
+    </property>
+   </widget>
+   <widget class="caCartesianPlot" name="pm_ddc_x">
+    <property name="geometry">
+     <rect>
+      <x>305</x>
+      <y>9</y>
+      <width>331</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans</family>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="Title" stdset="0">
+     <string notr="true">Horizontal position</string>
+    </property>
+    <property name="TitleX">
+     <string notr="true">Turns</string>
+    </property>
+    <property name="TitleY">
+     <string notr="true">Position [nm]</string>
+    </property>
+    <property name="channels_1" stdset="0">
+     <string notr="true">;$(BPM):pm:ddc_synth.X</string>
+    </property>
+    <property name="Style_1">
+     <enum>caCartesianPlot::Lines</enum>
+    </property>
+    <property name="symbol_1">
+     <enum>caCartesianPlot::Star1</enum>
+    </property>
+    <property name="color_1">
+     <color>
+      <red>255</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="plotMode">
+     <enum>caCartesianPlot::PlotNPointsAndStop</enum>
+    </property>
+    <property name="countNumOrChannel" stdset="0">
+     <string notr="true"/>
+    </property>
+    <property name="triggerChannel" stdset="0">
+     <string notr="true"/>
+    </property>
+    <property name="foreground">
+     <color alpha="0">
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="gridColor">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="XaxisScaling" stdset="0">
+     <enum>caCartesianPlot::Auto</enum>
+    </property>
+    <property name="XaxisLimits">
+     <string>0;100</string>
+    </property>
+    <property name="YaxisLimits">
+     <string>-1000000;-900000</string>
+    </property>
+   </widget>
+   <widget class="caToggleButton" name="catogglebutton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Enable</string>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(BPM):pm:capture</string>
+    </property>
+   </widget>
+   <widget class="caLed" name="caled">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>10</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(BPM):pm:capture</string>
+    </property>
+    <property name="falseColor">
+     <color>
+      <red>255</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="trueColor">
+     <color>
+      <red>0</red>
+      <green>255</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="trueValue">
+     <string>true</string>
+    </property>
+    <property name="falseValue">
+     <string>false</string>
+    </property>
+   </widget>
+   <widget class="caMenu" name="camenu">
+    <property name="geometry">
+     <rect>
+      <x>109</x>
+      <y>45</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(BPM):pm:source_select</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>45</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Source select</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>75</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Write Offset</string>
+    </property>
+   </widget>
+   <widget class="caFrame" name="caframe_3">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>125</y>
+      <width>276</width>
+      <height>196</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(231, 231, 231);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="midLineWidth">
+     <number>1</number>
+    </property>
+    <property name="background">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="backgroundMode">
+     <enum>caFrame::Filled</enum>
+    </property>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>57</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X min</string>
+     </property>
+    </widget>
+    <widget class="caTextEntry" name="ilk_xmin">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>20</y>
+       <width>100</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(BPM):pm:limits:min_x</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>170</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>127</blue>
+      </color>
+     </property>
+     <property name="colorMode">
+      <enum>caLineEdit::Static</enum>
+     </property>
+    </widget>
+    <widget class="caTextEntry" name="ilk_xmax">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>40</y>
+       <width>100</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(BPM):pm:limits:max_x</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>170</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>127</blue>
+      </color>
+     </property>
+     <property name="colorMode">
+      <enum>caLineEdit::Static</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>57</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X max</string>
+     </property>
+    </widget>
+    <widget class="caTextEntry" name="ilk_ymin">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>75</y>
+       <width>100</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(BPM):pm:limits:min_y</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>170</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>127</blue>
+      </color>
+     </property>
+     <property name="colorMode">
+      <enum>caLineEdit::Static</enum>
+     </property>
+    </widget>
+    <widget class="caTextEntry" name="ilk_ymax">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>95</y>
+       <width>100</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(BPM):pm:limits:max_y</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>170</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>127</blue>
+      </color>
+     </property>
+     <property name="colorMode">
+      <enum>caLineEdit::Static</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>75</y>
+       <width>57</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Y min</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>95</y>
+       <width>57</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Y max</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>185</x>
+       <y>20</y>
+       <width>86</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <italic>true</italic>
+      </font>
+     </property>
+     <property name="text">
+      <string>Values are
+given in
+nanometers.</string>
+     </property>
+    </widget>
+    <widget class="caTextEntry" name="ilk_sat_dur">
+     <property name="geometry">
+      <rect>
+       <x>195</x>
+       <y>155</y>
+       <width>66</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(BPM):pm:limits:ovf_duration</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>170</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>127</blue>
+      </color>
+     </property>
+     <property name="colorMode">
+      <enum>caLineEdit::Static</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>130</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ADC saturation limit</string>
+     </property>
+    </widget>
+    <widget class="caTextEntry" name="ilk_sat_limit">
+     <property name="geometry">
+      <rect>
+       <x>161</x>
+       <y>130</y>
+       <width>100</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(BPM):pm:limits:ovf_threshold</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>170</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>127</blue>
+      </color>
+     </property>
+     <property name="colorMode">
+      <enum>caLineEdit::Static</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>155</y>
+       <width>176</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ADC saturation duration</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_23">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>115</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>Limits</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QwtPlot</class>
+   <extends>QFrame</extends>
+   <header>qwt_plot.h</header>
+  </customwidget>
+  <customwidget>
+   <class>caMenu</class>
+   <extends>QComboBox</extends>
+   <header>caMenu</header>
+  </customwidget>
+  <customwidget>
+   <class>caTextEntry</class>
+   <extends>caLineEdit</extends>
+   <header>caTextEntry</header>
+  </customwidget>
+  <customwidget>
+   <class>caMessageButton</class>
+   <extends>QPushButton</extends>
+   <header>caMessageButton</header>
+  </customwidget>
+  <customwidget>
+   <class>caToggleButton</class>
+   <extends>QCheckBox</extends>
+   <header>caToggleButton</header>
+  </customwidget>
+  <customwidget>
+   <class>caFrame</class>
+   <extends>QFrame</extends>
+   <header>caFrame</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>caLed</class>
+   <extends>QWidget</extends>
+   <header>caLed</header>
+  </customwidget>
+  <customwidget>
+   <class>caLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>caLineEdit</header>
+  </customwidget>
+  <customwidget>
+   <class>caCartesianPlot</class>
+   <extends>QwtPlot</extends>
+   <header>caCartesianPlot</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>5</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>5</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>true</bool>
+  </property>
+ </designerdata>
+</ui>

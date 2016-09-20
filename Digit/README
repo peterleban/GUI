@@ -1,0 +1,21 @@
+##############################################################
+# 							     #
+#  caQtDM is an MEDM replacement. It has been developed      #
+#  at PSI; check http://epics.web.psi.ch/software/caqtdm/    #
+#							     #
+#    Author: Matjaz Znidarcic (matjaz.znidarcic@i-tech.si)   #
+#    Date: November 17, 2015				     #
+#							     #
+#    Thanks to Anton Mezger (PSI) for support.		     #
+#							     #
+##############################################################
+
+ Usage instructions:
+  
+  1. Install caQtDM environment (Win/Linux/Mac supported).
+
+  2. Edit and run "start.sh" script from this directory.
+
+
+Feel free to modify the .uis!
+Just send the update back to author.

@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>572</width>
+    <height>347</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Slow data</string>
+  </property>
+  <property name="Title" stdset="0">
+   <string>SA data &gt;&gt; $(BPM)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="caStripPlot" name="castripplot_2">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>176</y>
+      <width>439</width>
+      <height>162</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>3</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="TitleX">
+     <string notr="true"/>
+    </property>
+    <property name="TitleY">
+     <string notr="true">Y position [nm]</string>
+    </property>
+    <property name="channels" stdset="0">
+     <string notr="true">$(BPM):sa.Y;$(BPM):stat:sa:y_mean;</string>
+    </property>
+    <property name="XaxisType">
+     <enum>caStripPlot::TimeScale</enum>
+    </property>
+    <property name="YAxisScaling" stdset="0">
+     <enum>caStripPlot::autoScale</enum>
+    </property>
+    <property name="YaxisLimitsMax_1">
+     <double>1000000.000000000000000</double>
+    </property>
+    <property name="YaxisLimitsMin_1">
+     <double>-1000000.000000000000000</double>
+    </property>
+    <property name="YaxisScalingMax_1" stdset="0">
+     <enum>caStripPlot::User</enum>
+    </property>
+    <property name="YaxisScalingMin_1" stdset="0">
+     <enum>caStripPlot::User</enum>
+    </property>
+    <property name="color_1">
+     <color>
+      <red>170</red>
+      <green>85</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="YaxisScalingMax_2" stdset="0">
+     <enum>caStripPlot::Channel</enum>
+    </property>
+    <property name="color_2">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="foreground">
+     <color alpha="0">
+      <red>133</red>
+      <green>190</green>
+      <blue>232</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="YaxisEnabled">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="caStripPlot" name="castripplot">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>439</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>3</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="TitleX">
+     <string notr="true"/>
+    </property>
+    <property name="TitleY">
+     <string notr="true">X position [nm]</string>
+    </property>
+    <property name="channels" stdset="0">
+     <string notr="true">$(BPM):sa.X;$(BPM):stat:sa:x_mean;</string>
+    </property>
+    <property name="XaxisType">
+     <enum>caStripPlot::TimeScale</enum>
+    </property>
+    <property name="YAxisScaling" stdset="0">
+     <enum>caStripPlot::autoScale</enum>
+    </property>
+    <property name="YaxisLimitsMax_1">
+     <double>1000000.000000000000000</double>
+    </property>
+    <property name="YaxisLimitsMin_1">
+     <double>-1000000.000000000000000</double>
+    </property>
+    <property name="YaxisScalingMax_1" stdset="0">
+     <enum>caStripPlot::User</enum>
+    </property>
+    <property name="YaxisScalingMin_1" stdset="0">
+     <enum>caStripPlot::User</enum>
+    </property>
+    <property name="color_1">
+     <color>
+      <red>170</red>
+      <green>170</green>
+      <blue>127</blue>
+     </color>
+    </property>
+    <property name="YaxisScalingMax_2" stdset="0">
+     <enum>caStripPlot::Channel</enum>
+    </property>
+    <property name="color_2">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="foreground">
+     <color alpha="0">
+      <red>133</red>
+      <green>190</green>
+      <blue>232</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="YaxisEnabled">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>454</x>
+      <y>9</y>
+      <width>109</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Current X position</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>454</x>
+      <y>176</y>
+      <width>108</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Current Y position</string>
+    </property>
+   </widget>
+   <widget class="caCalc" name="cacalc">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>25</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="fontScaleMode">
+     <enum>ESimpleLabel::WidthAndHeight</enum>
+    </property>
+    <property name="variable">
+     <string notr="true">sa_x</string>
+    </property>
+    <property name="calc">
+     <string notr="true">A/1000</string>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(BPM):sa.X</string>
+    </property>
+   </widget>
+   <widget class="caCalc" name="cacalc_2">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>195</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="fontScaleMode">
+     <enum>ESimpleLabel::WidthAndHeight</enum>
+    </property>
+    <property name="variable">
+     <string notr="true">sa_y</string>
+    </property>
+    <property name="calc">
+     <string notr="true">A/1000</string>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(BPM):sa.Y</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>455</x>
+      <y>50</y>
+      <width>109</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Mean X position</string>
+    </property>
+   </widget>
+   <widget class="caCalc" name="cacalc_3">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>70</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="fontScaleMode">
+     <enum>ESimpleLabel::WidthAndHeight</enum>
+    </property>
+    <property name="variable">
+     <string notr="true">sa_x_mean</string>
+    </property>
+    <property name="calc">
+     <string notr="true">A/1000</string>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(BPM):stat:sa:x_mean</string>
+    </property>
+   </widget>
+   <widget class="caCalc" name="cacalc_4">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>115</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="fontScaleMode">
+     <enum>ESimpleLabel::WidthAndHeight</enum>
+    </property>
+    <property name="variable">
+     <string notr="true">sa_x_rms</string>
+    </property>
+    <property name="calc">
+     <string notr="true">A/1000</string>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(BPM):stat:sa:x_std</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>455</x>
+      <y>95</y>
+      <width>109</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>RMS X position</string>
+    </property>
+   </widget>
+   <widget class="caCalc" name="cacalc_5">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>240</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="fontScaleMode">
+     <enum>ESimpleLabel::WidthAndHeight</enum>
+    </property>
+    <property name="variable">
+     <string notr="true">sa_y_mean</string>
+    </property>
+    <property name="calc">
+     <string notr="true">A/1000</string>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(BPM):stat:sa:y_mean</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>455</x>
+      <y>220</y>
+      <width>109</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Mean Y position</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>455</x>
+      <y>265</y>
+      <width>109</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>RMS Y position</string>
+    </property>
+   </widget>
+   <widget class="caCalc" name="cacalc_6">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>285</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="fontScaleMode">
+     <enum>ESimpleLabel::WidthAndHeight</enum>
+    </property>
+    <property name="variable">
+     <string notr="true">sa_y_rms</string>
+    </property>
+    <property name="calc">
+     <string notr="true">A/1000</string>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(BPM):stat:sa:y_std</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>465</x>
+      <y>145</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <italic>true</italic>
+     </font>
+    </property>
+    <property name="text">
+     <string>Values in um</string>
+    </property>
+   </widget>
+   <widget class="caRelatedDisplay" name="carelateddisplay">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>320</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="labels">
+     <string notr="true">Amplitudes</string>
+    </property>
+    <property name="files">
+     <string notr="true">sa_data_amplitudes</string>
+    </property>
+    <property name="args">
+     <string notr="true">BPM=$(BPM)</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QwtPlot</class>
+   <extends>QFrame</extends>
+   <header>qwt_plot.h</header>
+  </customwidget>
+  <customwidget>
+   <class>caRelatedDisplay</class>
+   <extends>QWidget</extends>
+   <header>caRelatedDisplay</header>
+  </customwidget>
+  <customwidget>
+   <class>caStripPlot</class>
+   <extends>QwtPlot</extends>
+   <header>caStripPlot</header>
+  </customwidget>
+  <customwidget>
+   <class>caCalc</class>
+   <extends>QLabel</extends>
+   <header>caCalc</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>5</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>5</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>true</bool>
+  </property>
+ </designerdata>
+</ui>

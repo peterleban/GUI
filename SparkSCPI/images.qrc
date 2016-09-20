@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/Libera Spark.png</file>
+        <file>images/connection diagram.png</file>
+        <file>images/Libera Spark back.jpg</file>
+        <file>images/Libera Spark front.jpg</file>
+        <file>images/boot-up.png</file>
+        <file>images/processing.png</file>
+        <file>images/maf_processing.png</file>
+        <file>images/reboot.png</file>
+        <file>images/start_device.png</file>
+        <file>images/read.png</file>
+        <file>images/trigger.png</file>
+        <file>images/save.png</file>
+        <file>images/reset.png</file>
+        <file>images/read_from.png</file>
+        <file>images/set.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,416 @@
+
+record(libera, "$(P):$(B):ID_8:units") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_8.units")
+}
+
+record(libera, "$(P):$(B):ID_10:name") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_10.name")
+}
+
+record(libera, "$(P):$(B):ID_14:nom") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_14.nom")
+}
+
+record(libera, "$(P):$(B):ID_15:type") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_15.type")
+}
+
+record(libera, "$(P):$(B):ID_8:value") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_8.value")
+    field(SCAN,  "10 second")
+}
+
+record(libera, "$(P):$(B):ID_4:type") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_4.type")
+}
+
+record(libera, "$(P):$(B):ID_16:nom") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_16.nom")
+}
+
+record(libera, "$(P):$(B):ID_14:name") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_14.name")
+}
+
+record(libera, "$(P):$(B):ID_14:value") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_14.value")
+    field(SCAN,  "10 second")
+}
+
+record(libera, "$(P):$(B):ID_12:name") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_12.name")
+}
+
+record(libera, "$(P):$(B):ID_11:nom") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_11.nom")
+}
+
+record(libera, "$(P):$(B):ID_13:type") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_13.type")
+}
+
+record(libera, "$(P):$(B):ID_3:nom") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_3.nom")
+}
+
+record(libera, "$(P):$(B):ID_10:units") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_10.units")
+}
+
+record(libera, "$(P):$(B):ID_12:nom") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_12.nom")
+}
+
+record(libera, "$(P):$(B):ID_8:type") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_8.type")
+}
+
+record(libera, "$(P):$(B):ID_6:units") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_6.units")
+}
+
+record(libera, "$(P):$(B):ID_13:name") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_13.name")
+}
+
+record(libera, "$(P):$(B):ID_2:units") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_2.units")
+}
+
+record(libera, "$(P):$(B):ID_9:units") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_9.units")
+}
+
+record(libera, "$(P):$(B):ID_16:name") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_16.name")
+}
+
+record(libera, "$(P):$(B):ID_15:value") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_15.value")
+    field(SCAN,  "10 second")
+}
+
+record(libera, "$(P):$(B):ID_1:type") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_1.type")
+}
+
+record(libera, "$(P):$(B):ID_13:value") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_13.value")
+    field(SCAN,  "10 second")
+}
+
+record(libera, "$(P):$(B):ID_8:name") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_8.name")
+}
+
+record(libera, "$(P):$(B):ID_3:units") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_3.units")
+}
+
+record(libera, "$(P):$(B):ID_6:value") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_6.value")
+    field(SCAN,  "10 second")
+}
+
+record(libera, "$(P):$(B):ID_5:name") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_5.name")
+}
+
+record(libera, "$(P):$(B):ID_4:units") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_4.units")
+}
+
+record(libera, "$(P):$(B):ID_10:nom") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_10.nom")
+}
+
+record(libera, "$(P):$(B):ID_5:value") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_5.value")
+    field(SCAN,  "10 second")
+}
+
+record(libera, "$(P):$(B):ID_16:value") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_16.value")
+    field(SCAN,  "10 second")
+}
+
+record(libera, "$(P):$(B):ID_1:name") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_1.name")
+}
+
+record(libera, "$(P):$(B):ID_2:name") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_2.name")
+}
+
+record(libera, "$(P):$(B):ID_5:nom") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_5.nom")
+}
+
+record(libera, "$(P):$(B):ID_12:units") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_12.units")
+}
+
+record(libera, "$(P):$(B):ID_7:name") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_7.name")
+}
+
+record(libera, "$(P):$(B):ID_7:value") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_7.value")
+    field(SCAN,  "10 second")
+}
+
+record(libera, "$(P):$(B):ID_3:value") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_3.value")
+    field(SCAN,  "10 second")
+}
+
+record(libera, "$(P):$(B):ID_11:name") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_11.name")
+}
+
+record(libera, "$(P):$(B):ID_8:nom") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_8.nom")
+}
+
+record(libera, "$(P):$(B):ID_7:units") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_7.units")
+}
+
+record(libera, "$(P):$(B):ID_6:name") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_6.name")
+}
+
+record(libera, "$(P):$(B):ID_16:type") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_16.type")
+}
+
+record(libera, "$(P):$(B):ID_1:units") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_1.units")
+}
+
+record(libera, "$(P):$(B):ID_3:name") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_3.name")
+}
+
+record(libera, "$(P):$(B):ID_9:type") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_9.type")
+}
+
+record(libera, "$(P):$(B):ID_5:type") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_5.type")
+}
+
+record(libera, "$(P):$(B):ID_11:value") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_11.value")
+    field(SCAN,  "10 second")
+}
+
+record(libera, "$(P):$(B):ID_1:nom") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_1.nom")
+}
+
+record(libera, "$(P):$(B):ID_15:name") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_15.name")
+}
+
+record(libera, "$(P):$(B):ID_13:units") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_13.units")
+}
+
+record(libera, "$(P):$(B):ID_9:name") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_9.name")
+}
+
+record(libera, "$(P):$(B):ID_4:value") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_4.value")
+    field(SCAN,  "10 second")
+}
+
+record(libera, "$(P):$(B):ID_1:value") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_1.value")
+    field(SCAN,  "10 second")
+}
+
+record(libera, "$(P):$(B):ID_4:nom") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_4.nom")
+}
+
+record(libera, "$(P):$(B):ID_9:nom") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_9.nom")
+}
+
+record(libera, "$(P):$(B):ID_2:type") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_2.type")
+}
+
+record(libera, "$(P):$(B):ID_7:nom") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_7.nom")
+}
+
+record(libera, "$(P):$(B):ID_11:units") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_11.units")
+}
+
+record(libera, "$(P):$(B):ID_16:units") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_16.units")
+}
+
+record(libera, "$(P):$(B):ID_13:nom") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_13.nom")
+}
+
+record(libera, "$(P):$(B):ID_2:value") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_2.value")
+    field(SCAN,  "10 second")
+}
+
+record(libera, "$(P):$(B):ID_15:units") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_15.units")
+}
+
+record(libera, "$(P):$(B):ID_5:units") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_5.units")
+}
+
+record(libera, "$(P):$(B):ID_11:type") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_11.type")
+}
+
+record(libera, "$(P):$(B):ID_7:type") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_7.type")
+}
+
+record(libera, "$(P):$(B):ID_10:type") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_10.type")
+}
+
+record(libera, "$(P):$(B):ID_4:name") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_4.name")
+}
+
+record(libera, "$(P):$(B):ID_6:nom") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_6.nom")
+}
+
+record(libera, "$(P):$(B):ID_15:nom") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_15.nom")
+}
+
+record(libera, "$(P):$(B):ID_10:value") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_10.value")
+    field(SCAN,  "10 second")
+}
+
+record(libera, "$(P):$(B):ID_3:type") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_3.type")
+}
+
+record(libera, "$(P):$(B):ID_2:nom") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_2.nom")
+}
+
+record(libera, "$(P):$(B):ID_12:value") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_12.value")
+    field(SCAN,  "10 second")
+}
+
+record(libera, "$(P):$(B):ID_6:type") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_6.type")
+}
+
+record(libera, "$(P):$(B):ID_12:type") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_12.type")
+}
+
+record(libera, "$(P):$(B):ID_14:type") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_14.type")
+}
+
+record(libera, "$(P):$(B):ID_14:units") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_14.units")
+}
+
+record(libera, "$(P):$(B):ID_9:value") 
+{
+    info(MCII,  "mcii://$(D)/boards.$(MB).sensors.ID_9.value")
+    field(SCAN,  "10 second")
+}
