@@ -26,7 +26,7 @@
    <bool>true</bool>
   </property>
   <property name="Title" stdset="0">
-   <string>$(BPM) design info</string>
+   <string>Design info &gt;&gt; $(BPM)</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label_3">
@@ -79,7 +79,7 @@
     <property name="font">
      <font>
       <family>FreeSans</family>
-      <pointsize>7</pointsize>
+      <pointsize>8</pointsize>
      </font>
     </property>
     <property name="styleSheet">
@@ -139,7 +139,7 @@
     <property name="font">
      <font>
       <family>FreeSans</family>
-      <pointsize>7</pointsize>
+      <pointsize>8</pointsize>
      </font>
     </property>
     <property name="channel" stdset="0">
@@ -196,7 +196,7 @@
     <property name="font">
      <font>
       <family>FreeSans</family>
-      <pointsize>7</pointsize>
+      <pointsize>8</pointsize>
      </font>
     </property>
     <property name="channel" stdset="0">
@@ -253,7 +253,7 @@
     <property name="font">
      <font>
       <family>FreeSans</family>
-      <pointsize>7</pointsize>
+      <pointsize>8</pointsize>
      </font>
     </property>
     <property name="channel" stdset="0">
@@ -310,7 +310,7 @@
     <property name="font">
      <font>
       <family>FreeSans</family>
-      <pointsize>7</pointsize>
+      <pointsize>8</pointsize>
      </font>
     </property>
     <property name="channel" stdset="0">
@@ -367,7 +367,7 @@
     <property name="font">
      <font>
       <family>FreeSans</family>
-      <pointsize>7</pointsize>
+      <pointsize>8</pointsize>
      </font>
     </property>
     <property name="channel" stdset="0">
@@ -405,7 +405,7 @@
     <property name="font">
      <font>
       <family>FreeSans</family>
-      <pointsize>7</pointsize>
+      <pointsize>8</pointsize>
      </font>
     </property>
     <property name="channel" stdset="0">
@@ -462,7 +462,7 @@
     <property name="font">
      <font>
       <family>FreeSans</family>
-      <pointsize>7</pointsize>
+      <pointsize>8</pointsize>
      </font>
     </property>
     <property name="channel" stdset="0">

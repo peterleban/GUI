@@ -19,6 +19,9 @@
   <property name="windowTitle">
    <string>ADC raw data</string>
   </property>
+  <property name="Title" stdset="0">
+   <string>ADC &gt;&gt; $(BPM)</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="caCartesianPlot" name="adc">
     <property name="geometry">
@@ -199,7 +202,7 @@
     <property name="font">
      <font>
       <family>Sans Serif</family>
-      <pointsize>11</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="channel" stdset="0">
@@ -247,6 +250,11 @@
  </widget>
  <customwidgets>
   <customwidget>
+   <class>QwtPlot</class>
+   <extends>QFrame</extends>
+   <header>qwt_plot.h</header>
+  </customwidget>
+  <customwidget>
    <class>caTextEntry</class>
    <extends>caLineEdit</extends>
    <header>caTextEntry</header>
@@ -258,7 +266,7 @@
   </customwidget>
   <customwidget>
    <class>caCartesianPlot</class>
-   <extends>QFrame</extends>
+   <extends>QwtPlot</extends>
    <header>caCartesianPlot</header>
   </customwidget>
  </customwidgets>

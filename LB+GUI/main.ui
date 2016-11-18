@@ -208,7 +208,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Instrumentation Technologies d.d. - June 2016</string>
+     <string>Instrumentation Technologies d.d. - November 2016</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -313,13 +313,13 @@
      </color>
     </property>
     <property name="labels">
-     <string notr="true">ALPHA;TPS;Grouping+;TLS;APS</string>
+     <string notr="true">Design 1;Design 2;Grouping+;Design 4;Design 5;Design 6;</string>
     </property>
     <property name="files">
-     <string notr="true">gdx_alpha;gdx_beta;gdx_gamma;gdx_epsilon;gdx_zeta</string>
+     <string notr="true">gdx1;gdx2;gdx3;gdx4;gdx5;gdx6</string>
     </property>
     <property name="args">
-     <string notr="true">DEVICE=$(DEVICE);DEVICE=$(DEVICE):gdx;DEVICE=$(DEVICE);DEVICE=$(DEVICE);DEVICE=$(DEVICE)</string>
+     <string notr="true">DEVICE=$(DEVICE);DEVICE=$(DEVICE):gdx;DEVICE=$(DEVICE):gdx;DEVICE=$(DEVICE);DEVICE=$(DEVICE);DEVICE=$(DEVICE)</string>
     </property>
     <property name="fontScaleMode">
      <enum>EPushButton::WidthAndHeight</enum>

@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Turn-by-Turn Amplitudes</string>
   </property>
+  <property name="Title" stdset="0">
+   <string>TBT AMPL &gt;&gt; $(BPM)</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="caCartesianPlot" name="tbttdpsynth_x">
     <property name="geometry">

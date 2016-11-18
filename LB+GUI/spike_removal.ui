@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Spike removal</string>
   </property>
+  <property name="Title" stdset="0">
+   <string>Spike removal &gt;&gt; $(BPM)</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="caTextEntry" name="sr_avg_window">
     <property name="geometry">

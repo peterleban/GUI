@@ -6,18 +6,21 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>347</width>
+    <width>390</width>
     <height>118</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Scaling Coefficients</string>
   </property>
+  <property name="Title" stdset="0">
+   <string>Kx,Ky &gt;&gt; $(BPM)</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="caTextEntry" name="phase_offset">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>70</x>
       <y>20</y>
       <width>91</width>
       <height>20</height>
@@ -58,7 +61,7 @@
      <rect>
       <x>10</x>
       <y>20</y>
-      <width>41</width>
+      <width>56</width>
       <height>21</height>
      </rect>
     </property>
@@ -69,7 +72,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Kx</string>
+     <string>Kx [nm]</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
@@ -77,7 +80,7 @@
      <rect>
       <x>10</x>
       <y>40</y>
-      <width>41</width>
+      <width>56</width>
       <height>21</height>
      </rect>
     </property>
@@ -88,13 +91,13 @@
      </font>
     </property>
     <property name="text">
-     <string>Ky</string>
+     <string>Ky [nm]</string>
     </property>
    </widget>
    <widget class="caTextEntry" name="phase_offset_2">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>70</x>
       <y>40</y>
       <width>91</width>
       <height>20</height>
@@ -133,7 +136,7 @@
    <widget class="caTextEntry" name="phase_offset_3">
     <property name="geometry">
      <rect>
-      <x>230</x>
+      <x>275</x>
       <y>20</y>
       <width>101</width>
       <height>20</height>
@@ -172,9 +175,9 @@
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>175</x>
       <y>20</y>
-      <width>61</width>
+      <width>96</width>
       <height>21</height>
      </rect>
     </property>
@@ -185,13 +188,13 @@
      </font>
     </property>
     <property name="text">
-     <string>Offset X</string>
+     <string>Offset X [nm]</string>
     </property>
    </widget>
    <widget class="caTextEntry" name="phase_offset_4">
     <property name="geometry">
      <rect>
-      <x>230</x>
+      <x>275</x>
       <y>40</y>
       <width>101</width>
       <height>20</height>
@@ -230,9 +233,9 @@
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>175</x>
       <y>40</y>
-      <width>61</width>
+      <width>96</width>
       <height>21</height>
      </rect>
     </property>
@@ -243,15 +246,15 @@
      </font>
     </property>
     <property name="text">
-     <string>Offset Y</string>
+     <string>Offset Y [nm]</string>
     </property>
    </widget>
    <widget class="Line" name="line">
     <property name="geometry">
      <rect>
-      <x>0</x>
+      <x>10</x>
       <y>60</y>
-      <width>321</width>
+      <width>371</width>
       <height>16</height>
      </rect>
     </property>
@@ -262,7 +265,7 @@
    <widget class="caTextEntry" name="phase_offset_5">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>70</x>
       <y>80</y>
       <width>91</width>
       <height>20</height>
@@ -301,7 +304,7 @@
    <widget class="caTextEntry" name="phase_offset_6">
     <property name="geometry">
      <rect>
-      <x>230</x>
+      <x>275</x>
       <y>80</y>
       <width>101</width>
       <height>20</height>
@@ -340,9 +343,9 @@
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>45</x>
       <y>80</y>
-      <width>41</width>
+      <width>21</width>
       <height>21</height>
      </rect>
     </property>
@@ -359,7 +362,7 @@
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>190</x>
       <y>80</y>
       <width>81</width>
       <height>21</height>

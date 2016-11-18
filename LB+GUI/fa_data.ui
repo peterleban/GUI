@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Fast data</string>
   </property>
+  <property name="Title" stdset="0">
+   <string>FA &gt;&gt; $(BPM)</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="caCartesianPlot" name="tbtddcsynth_x">
     <property name="geometry">
@@ -258,7 +261,7 @@
     </property>
     <property name="color_1">
      <color>
-      <red>255</red>
+      <red>0</red>
       <green>0</green>
       <blue>0</blue>
      </color>
@@ -331,7 +334,7 @@
     </property>
     <property name="color_1">
      <color>
-      <red>255</red>
+      <red>0</red>
       <green>0</green>
       <blue>0</blue>
      </color>
@@ -404,7 +407,7 @@
     </property>
     <property name="color_1">
      <color>
-      <red>255</red>
+      <red>0</red>
       <green>0</green>
       <blue>0</blue>
      </color>
@@ -477,7 +480,7 @@
     </property>
     <property name="color_1">
      <color>
-      <red>255</red>
+      <red>0</red>
       <green>0</green>
       <blue>0</blue>
      </color>
@@ -519,13 +522,18 @@
  </widget>
  <customwidgets>
   <customwidget>
+   <class>QwtPlot</class>
+   <extends>QFrame</extends>
+   <header>qwt_plot.h</header>
+  </customwidget>
+  <customwidget>
    <class>caMenu</class>
    <extends>QComboBox</extends>
    <header>caMenu</header>
   </customwidget>
   <customwidget>
    <class>caCartesianPlot</class>
-   <extends>QFrame</extends>
+   <extends>QwtPlot</extends>
    <header>caCartesianPlot</header>
   </customwidget>
  </customwidgets>

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>299</width>
-    <height>495</height>
+    <height>510</height>
    </rect>
   </property>
   <property name="font">
@@ -17,6 +17,9 @@
   </property>
   <property name="windowTitle">
    <string>Interlock</string>
+  </property>
+  <property name="Title" stdset="0">
+   <string>Interlock &gt;&gt; $(BPM)</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="caToggleButton" name="ilk_enable">
@@ -481,18 +484,23 @@ bit</string>
       <rect>
        <x>10</x>
        <y>20</y>
-       <width>57</width>
+       <width>81</width>
        <height>21</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
      <property name="text">
-      <string>X min</string>
+      <string>X min [nm]</string>
      </property>
     </widget>
     <widget class="caTextEntry" name="ilk_xmin">
      <property name="geometry">
       <rect>
-       <x>70</x>
+       <x>100</x>
        <y>20</y>
        <width>100</width>
        <height>21</height>
@@ -525,7 +533,7 @@ bit</string>
     <widget class="caTextEntry" name="ilk_xmax">
      <property name="geometry">
       <rect>
-       <x>70</x>
+       <x>100</x>
        <y>40</y>
        <width>100</width>
        <height>21</height>
@@ -560,18 +568,23 @@ bit</string>
       <rect>
        <x>10</x>
        <y>40</y>
-       <width>57</width>
+       <width>81</width>
        <height>21</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
      <property name="text">
-      <string>X max</string>
+      <string>X max [nm]</string>
      </property>
     </widget>
     <widget class="caTextEntry" name="ilk_ymin">
      <property name="geometry">
       <rect>
-       <x>70</x>
+       <x>100</x>
        <y>75</y>
        <width>100</width>
        <height>21</height>
@@ -604,7 +617,7 @@ bit</string>
     <widget class="caTextEntry" name="ilk_ymax">
      <property name="geometry">
       <rect>
-       <x>70</x>
+       <x>100</x>
        <y>95</y>
        <width>100</width>
        <height>21</height>
@@ -639,12 +652,17 @@ bit</string>
       <rect>
        <x>10</x>
        <y>75</y>
-       <width>57</width>
+       <width>81</width>
        <height>21</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
      <property name="text">
-      <string>Y min</string>
+      <string>Y min [nm]</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_7">
@@ -652,12 +670,17 @@ bit</string>
       <rect>
        <x>10</x>
        <y>95</y>
-       <width>57</width>
+       <width>81</width>
        <height>21</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
      <property name="text">
-      <string>Y max</string>
+      <string>Y max [nm]</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_11">
@@ -668,6 +691,11 @@ bit</string>
        <width>111</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
      </property>
      <property name="text">
       <string>Filter strength</string>
@@ -704,27 +732,6 @@ bit</string>
       <UInt>7</UInt>
      </property>
     </widget>
-    <widget class="QLabel" name="label_13">
-     <property name="geometry">
-      <rect>
-       <x>185</x>
-       <y>20</y>
-       <width>86</width>
-       <height>91</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-       <italic>true</italic>
-      </font>
-     </property>
-     <property name="text">
-      <string>Values are
-given in
-nanometers.</string>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_14">
      <property name="geometry">
       <rect>
@@ -733,6 +740,11 @@ nanometers.</string>
        <width>31</width>
        <height>16</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
      </property>
      <property name="text">
       <string>max</string>
@@ -834,7 +846,7 @@ nanometers.</string>
       <x>5</x>
       <y>355</y>
       <width>286</width>
-      <height>131</height>
+      <height>146</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -866,21 +878,26 @@ nanometers.</string>
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>45</y>
-       <width>151</width>
+       <y>60</y>
+       <width>196</width>
        <height>21</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
      <property name="text">
-      <string>ADC saturation limit</string>
+      <string>ADC saturation [ADC counts]</string>
      </property>
     </widget>
     <widget class="caTextEntry" name="ilk_sat_limit">
      <property name="geometry">
       <rect>
-       <x>160</x>
-       <y>45</y>
-       <width>100</width>
+       <x>210</x>
+       <y>60</y>
+       <width>66</width>
        <height>21</height>
       </rect>
      </property>
@@ -911,9 +928,9 @@ nanometers.</string>
     <widget class="caTextEntry" name="ilk_sat_dur">
      <property name="geometry">
       <rect>
-       <x>194</x>
-       <y>70</y>
-       <width>66</width>
+       <x>225</x>
+       <y>85</y>
+       <width>51</width>
        <height>21</height>
       </rect>
      </property>
@@ -945,23 +962,33 @@ nanometers.</string>
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>70</y>
-       <width>176</width>
+       <y>85</y>
+       <width>211</width>
        <height>21</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
      <property name="text">
-      <string>ADC saturation duration</string>
+      <string>Saturation duration [ADC samples]</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_10">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>100</y>
+       <y>115</y>
        <width>111</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
      </property>
      <property name="text">
       <string>Filter strength</string>
@@ -972,35 +999,24 @@ nanometers.</string>
       <rect>
        <x>10</x>
        <y>20</y>
-       <width>101</width>
+       <width>86</width>
        <height>21</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
      <property name="text">
       <string>Detection by</string>
-     </property>
-    </widget>
-    <widget class="caLineEdit" name="ilk_detection">
-     <property name="geometry">
-      <rect>
-       <x>110</x>
-       <y>20</y>
-       <width>36</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-     <property name="channel" stdset="0">
-      <string notr="true">$(BPM):ilk:limits:ovf_mode</string>
      </property>
     </widget>
     <widget class="caSlider" name="ilk_adc_filtering">
      <property name="geometry">
       <rect>
        <x>125</x>
-       <y>105</y>
+       <y>120</y>
        <width>111</width>
        <height>16</height>
       </rect>
@@ -1037,24 +1053,82 @@ nanometers.</string>
      <property name="geometry">
       <rect>
        <x>240</x>
-       <y>100</y>
+       <y>120</y>
        <width>31</width>
        <height>16</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
      </property>
      <property name="text">
       <string>max</string>
      </property>
     </widget>
-    <zorder>ilk_detection</zorder>
-    <zorder>label_8</zorder>
-    <zorder>ilk_sat_limit</zorder>
-    <zorder>ilk_sat_dur</zorder>
-    <zorder>label_9</zorder>
-    <zorder>label_10</zorder>
-    <zorder>label_12</zorder>
-    <zorder>ilk_adc_filtering</zorder>
-    <zorder>label_15</zorder>
+    <widget class="caTextEntry" name="ilk_gain_val_2">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>20</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Monospace</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(BPM):ilk:limits:ovf_mode</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>170</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>127</blue>
+      </color>
+     </property>
+     <property name="colorMode">
+      <enum>caLineEdit::Static</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>165</x>
+       <y>15</y>
+       <width>111</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Set in the config file:
+/var/opt/libera/cfg/
+libera-ebpm.xml</string>
+     </property>
+    </widget>
    </widget>
    <widget class="caMessageButton" name="ilk_reset">
     <property name="geometry">
@@ -1072,7 +1146,7 @@ nanometers.</string>
      </font>
     </property>
     <property name="text">
-     <string>CL</string>
+     <string>Clear status</string>
     </property>
     <property name="channel" stdset="0">
      <string notr="true">$(BPM):ilk:status:reset</string>

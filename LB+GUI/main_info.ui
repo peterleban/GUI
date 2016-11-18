@@ -25,6 +25,9 @@
   <property name="unifiedTitleAndToolBarOnMac">
    <bool>true</bool>
   </property>
+  <property name="Title" stdset="0">
+   <string>IOC info</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label_3">
     <property name="geometry">

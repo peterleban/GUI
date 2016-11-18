@@ -18,6 +18,9 @@
   <property name="windowTitle">
    <string>Postmortem</string>
   </property>
+  <property name="Title" stdset="0">
+   <string>Postmortem &gt;&gt; $(BPM)</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="caCartesianPlot" name="pm_ddc_ampl">
     <property name="geometry">

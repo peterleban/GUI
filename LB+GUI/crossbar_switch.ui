@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Crossbar switch properties</string>
   </property>
+  <property name="Title" stdset="0">
+   <string>Switching pattern</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label_15">
     <property name="geometry">

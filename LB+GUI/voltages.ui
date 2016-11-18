@@ -11,7 +11,10 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Temperatures</string>
+   <string>Voltages</string>
+  </property>
+  <property name="Title" stdset="0">
+   <string>Voltages &gt;&gt; $(MODULE)</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="caLineEdit" name="calineedit">

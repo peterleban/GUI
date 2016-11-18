@@ -18,6 +18,9 @@
   <property name="windowTitle">
    <string>Single pass</string>
   </property>
+  <property name="Title" stdset="0">
+   <string>Single Pass &gt;&gt; $(BPM)</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="caMenu" name="sp_orientation">
     <property name="geometry">
