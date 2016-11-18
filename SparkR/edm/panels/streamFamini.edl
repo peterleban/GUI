@@ -1,0 +1,188 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 949
+y 456
+w 420
+h 450
+font "helvetica-bold-r-12.0"
+ctlFont "helvetica-bold-r-12.0"
+btnFont "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+title "FA on $(HOSTNAME)"
+showGrid
+snapToGrid
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 370
+w 400
+h 70
+lineColor index 14
+fill
+fillColor index 0
+lineWidth 0
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+# Geometry
+x 10
+y 190
+w 400
+h 170
+# Appearance
+autoScaleBothDirections
+graphTitle "Vertical position"
+xLabel "samples"
+yLabel "[mm]"
+fgColor index 14
+bgColor index 0
+gridColor index 2
+font "helvetica-medium-r-12.0"
+# Operating Modes
+plotMode "plotLastNPts"
+nPts 1024
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMin 0
+xMax 1000
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+yLabelIntervals 3
+yShowLabelGrid
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 1
+yPv {
+  0 "EPICS\\$(HOSTNAME):signals:fa.Y"
+}
+plotColor {
+  0 index 14
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 310
+y 410
+w 90
+h 20
+fgColor index 91
+bgColor index 92
+topShadowColor index 0
+botShadowColor index 14
+font "helvetica-medium-r-14.0"
+buttonLabel "A,B,C,D"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "streamFa.edl"
+}
+menuLabel {
+  0 "SA"
+}
+symbols {
+  0 "SS=FA"
+}
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+# Geometry
+x 10
+y 10
+w 400
+h 170
+# Appearance
+autoScaleBothDirections
+graphTitle "Horizontal position"
+xLabel "samples"
+yLabel "[mm]"
+fgColor index 14
+bgColor index 0
+gridColor index 2
+font "helvetica-medium-r-12.0"
+# Operating Modes
+plotMode "plotLastNPts"
+nPts 1024
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMin 0
+xMax 1000
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+yLabelIntervals 3
+yShowLabelGrid
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 1
+yPv {
+  0 "EPICS\\$(HOSTNAME):signals:fa.X"
+}
+plotColor {
+  0 index 14
+}
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 380
+w 90
+h 20
+fgColor index 14
+onColor index 0
+offColor index 0
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(HOSTNAME):signals:fa.PROC"
+pressValue "1"
+onLabel "Refresh plot"
+offLabel "Refresh plot"
+3d
+font "helvetica-medium-r-10.0"
+endObjectProperties
+

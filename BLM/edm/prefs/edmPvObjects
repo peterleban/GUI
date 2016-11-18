@@ -1,0 +1,5 @@
+4
+CALC /home/libera/epics/install/lib/linux-x86/libCalc.so Calculation PV
+EPICS /home/libera/epics/install/lib/linux-x86/libEpics.so EPICS PV
+LOC /home/libera/epics/install/lib/linux-x86/libLoc.so Local PV
+LOG /home/libera/epics/install/lib/linux-x86/libLog.so LOG PV
