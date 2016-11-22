@@ -15,5 +15,4 @@ export EPICS_CA_MAX_ARRAY_BYTES=5000000
 export EPICS_CA_ADDR_LIST=${IP}
 
 # Call caQtDM, specify IOC name and main window to open
-/home/libera/epics/caqtdm-4.0.2/caQtDM_Binaries/caQtDM -macro "DEVICE=${DEVICE}" main.ui
-#caQtDM -macro "DEVICE=${DEVICE}" main.ui
+caQtDM -macro "DEVICE=${DEVICE}" main.ui
