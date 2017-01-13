@@ -1,7 +1,0 @@
-<RCC>
-  <qresource prefix="icons">
-    <file>argonne.jpg</file>
-    <file>sr.png</file>
-    <file>fan.png</file>
-  </qresource>
-</RCC>

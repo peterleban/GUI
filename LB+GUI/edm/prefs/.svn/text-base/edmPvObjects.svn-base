@@ -1,5 +1,0 @@
-4
-CALC /opt/epics-3.14.12/lib/linux-x86/libCalc.so Calculation PV
-EPICS /opt/epics-3.14.12/lib/linux-x86/libEpics.so EPICS PV
-LOC /opt/epics-3.14.12/lib/linux-x86/libLoc.so Local PV
-LOG /opt/epics-3.14.12/lib/linux-x86/libLog.so LOG PV
