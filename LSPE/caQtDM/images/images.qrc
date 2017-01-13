@@ -1,6 +1,6 @@
 <RCC>
   <qresource prefix="icons">
-    <file>sr.png</file>
+    <file>DC_offset.png</file>
     <file>fan.png</file>
   </qresource>
 </RCC>

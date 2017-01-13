@@ -1,0 +1,1046 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 657
+y 428
+w 425
+h 520
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-18.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+title "TIMING & SYNCHRONIZATION"
+showGrid
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 95
+y 165
+w 115
+h 45
+lineColor index 14
+fill
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 430
+h 40
+lineColor index 14
+fill
+fillColor index 9
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 10
+w 157
+h 18
+font "helvetica-bold-r-14.0"
+fgColor index 89
+bgColor index 0
+useDisplayBg
+value {
+  "Timing / EVRX module"
+}
+autoSize
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 315
+y 10
+w 90
+h 20
+fgColor index 91
+bgColor index 92
+topShadowColor index 0
+botShadowColor index 14
+font "helvetica-medium-r-12.0"
+buttonLabel "Voltages"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "voltage.edl"
+}
+menuLabel {
+  0 "Fans"
+}
+symbols {
+  0 "BSENS=evrx"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 195
+y 10
+w 90
+h 20
+fgColor index 91
+bgColor index 92
+topShadowColor index 0
+botShadowColor index 14
+font "helvetica-medium-r-12.0"
+buttonLabel "Temperatures"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "temperature.edl"
+}
+menuLabel {
+  0 "Fans"
+}
+symbols {
+  0 "BSENS=evrx"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 210
+y 185
+w 40
+h 0
+lineColor index 14
+fillColor index 0
+lineWidth 3
+arrows "to"
+numPoints 2
+xPoints {
+  0 210
+  1 250
+}
+yPoints {
+  0 187
+  1 187
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 255
+y 160
+w 79
+h 15
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "MC lock status"
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 330
+y 185
+w 40
+h 0
+lineColor index 14
+fillColor index 0
+lineWidth 3
+arrows "to"
+numPoints 2
+xPoints {
+  0 330
+  1 370
+}
+yPoints {
+  0 187
+  1 187
+}
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 255
+y 180
+w 80
+h 15
+controlPv "EPICS\\$(HOSTNAME):evrx:clk_mgr:mc:locked"
+fgColor index 14
+fgAlarm
+bgColor index 0
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 150
+y 170
+w 60
+h 15
+controlPv "EPICS\\$(HOSTNAME):evrx:triggers:mc:source"
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+editable
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 100
+y 170
+w 39
+h 15
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Source"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 100
+y 190
+w 30
+h 15
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Code"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 150
+y 190
+w 60
+h 15
+controlPv "EPICS\\$(HOSTNAME):evrx:triggers:mc:code"
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+editable
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 50
+y 185
+w 40
+h 0
+lineColor index 14
+fillColor index 0
+lineWidth 3
+arrows "to"
+numPoints 2
+xPoints {
+  0 50
+  1 90
+}
+yPoints {
+  0 187
+  1 187
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 180
+w 23
+h 18
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "MC"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 95
+y 255
+w 115
+h 45
+lineColor index 14
+fill
+fillColor index 0
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 210
+y 280
+w 40
+h 0
+lineColor index 14
+fillColor index 0
+lineWidth 3
+arrows "to"
+numPoints 2
+xPoints {
+  0 210
+  1 250
+}
+yPoints {
+  0 281
+  1 281
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 150
+y 260
+w 60
+h 15
+controlPv "EPICS\\$(HOSTNAME):evrx:triggers:t0:source"
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+editable
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 100
+y 260
+w 39
+h 15
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Source"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 100
+y 285
+w 30
+h 15
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Code"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 150
+y 285
+w 60
+h 15
+controlPv "EPICS\\$(HOSTNAME):evrx:triggers:t0:code"
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+editable
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 50
+y 280
+w 40
+h 0
+lineColor index 14
+fillColor index 0
+lineWidth 3
+arrows "to"
+numPoints 2
+xPoints {
+  0 50
+  1 90
+}
+yPoints {
+  0 281
+  1 281
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 270
+w 17
+h 18
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "T0"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 95
+y 350
+w 115
+h 45
+lineColor index 14
+fill
+fillColor index 0
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 210
+y 375
+w 40
+h 0
+lineColor index 14
+fillColor index 0
+lineWidth 3
+arrows "to"
+numPoints 2
+xPoints {
+  0 210
+  1 250
+}
+yPoints {
+  0 374
+  1 374
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 150
+y 355
+w 60
+h 15
+controlPv "EPICS\\$(HOSTNAME):evrx:triggers:t1:source"
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+editable
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 100
+y 355
+w 39
+h 15
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Source"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 100
+y 380
+w 30
+h 15
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Code"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 150
+y 380
+w 60
+h 15
+controlPv "EPICS\\$(HOSTNAME):evrx:triggers:t1:code"
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+editable
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 50
+y 375
+w 40
+h 0
+lineColor index 14
+fillColor index 0
+lineWidth 3
+arrows "to"
+numPoints 2
+xPoints {
+  0 50
+  1 90
+}
+yPoints {
+  0 374
+  1 374
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 365
+w 17
+h 18
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "T1"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 95
+y 445
+w 115
+h 45
+lineColor index 14
+fill
+fillColor index 0
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 210
+y 465
+w 40
+h 0
+lineColor index 14
+fillColor index 0
+lineWidth 3
+arrows "to"
+numPoints 2
+xPoints {
+  0 210
+  1 250
+}
+yPoints {
+  0 467
+  1 467
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 150
+y 450
+w 60
+h 15
+controlPv "EPICS\\$(HOSTNAME):evrx:triggers:t2:source"
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+editable
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 100
+y 450
+w 39
+h 15
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Source"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 100
+y 470
+w 30
+h 15
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Code"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 150
+y 470
+w 60
+h 15
+controlPv "EPICS\\$(HOSTNAME):evrx:triggers:t2:code"
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+editable
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 50
+y 465
+w 40
+h 0
+lineColor index 14
+fillColor index 0
+lineWidth 3
+arrows "to"
+numPoints 2
+xPoints {
+  0 50
+  1 90
+}
+yPoints {
+  0 467
+  1 467
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 455
+w 17
+h 18
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "T2"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 105
+w 84
+h 15
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Decoder switch"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 160
+y 105
+w 100
+h 15
+controlPv "EPICS\\$(HOSTNAME):evrx:rtc:decoder_switch"
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+editable
+autoHeight
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 125
+w 40
+h 15
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Mgt out"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 160
+y 125
+w 100
+h 15
+controlPv "EPICS\\$(HOSTNAME):evrx:rtc:mgt_out"
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+editable
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 85
+w 115
+h 15
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "SFP frequency [MHz]"
+}
+autoSize
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 160
+y 60
+w 80
+h 18
+controlPv "EPICS\\$(HOSTNAME):application:clock_info:adc_frequency"
+fgColor index 14
+fgAlarm
+bgColor index 0
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 65
+w 117
+h 15
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "ADC frequency [MHz]"
+}
+autoSize
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 160
+y 85
+w 80
+h 18
+controlPv "EPICS\\$(HOSTNAME):evrx:sfp_freq"
+fgColor index 14
+fgAlarm
+bgColor index 0
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+

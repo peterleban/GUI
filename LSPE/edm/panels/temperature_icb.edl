@@ -1,0 +1,1345 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 688
+y 378
+w 960
+h 360
+font "helvetica-bold-r-12.0"
+ctlFont "helvetica-bold-r-12.0"
+btnFont "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+title "$(BSENS) temperature monitoring"
+showGrid
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (Bar)
+object activeBarClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 100
+y 70
+w 40
+h 200
+indicatorColor index 83
+indicatorAlarm
+fgColor index 9
+fgAlarm
+bgColor index 0
+indicatorPv "EPICS\\$(HOSTNAME):$(BSENS):ID_0:value"
+label "ID 0"
+showScale
+font "helvetica-medium-r-10.0"
+labelTicks "5"
+majorTicks "3"
+border
+min "10"
+max "90"
+scaleFormat "FFloat"
+orientation "vertical"
+endObjectProperties
+
+# (Bar)
+object activeBarClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 150
+y 70
+w 40
+h 200
+indicatorColor index 83
+indicatorAlarm
+fgColor index 9
+fgAlarm
+bgColor index 0
+indicatorPv "EPICS\\$(HOSTNAME):$(BSENS):ID_1:value"
+label "ID 1"
+showScale
+font "helvetica-medium-r-10.0"
+labelTicks "5"
+majorTicks "3"
+border
+min "10"
+max "90"
+scaleFormat "FFloat"
+orientation "vertical"
+endObjectProperties
+
+# (Bar)
+object activeBarClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 200
+y 70
+w 40
+h 200
+indicatorColor index 83
+indicatorAlarm
+fgColor index 9
+fgAlarm
+bgColor index 0
+indicatorPv "EPICS\\$(HOSTNAME):$(BSENS):ID_2:value"
+label "ID 2"
+showScale
+font "helvetica-medium-r-10.0"
+labelTicks "5"
+majorTicks "3"
+border
+min "10"
+max "90"
+scaleFormat "FFloat"
+orientation "vertical"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 100
+y 280
+w 40
+h 20
+controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_0:value"
+displayMode "decimal"
+fgColor index 14
+fgAlarm
+bgColor index 104
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 23
+y 280
+w 69
+h 15
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Temp. [°C]:"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 90
+w 70
+h 80
+font "courier-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "HNR: 85 °C"
+  " HC: 80 °C"
+  "HNC: 70 °C"
+  "LNC: 10 °C"
+  " LC:  5 °C"
+  "LNR:  0 °C"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 70
+w 40
+h 15
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Limits:"
+}
+autoSize
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 810
+y 55
+w 40
+h 20
+fgColor index 14
+onColor index 6
+offColor index 21
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\temp_tim_traces=i:0"
+indicatorPv "LOC\\temp_tim_traces=i:0"
+onLabel "ID_0"
+offLabel "ID_0"
+labelType "literal"
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 810
+y 80
+w 40
+h 20
+fgColor index 14
+onColor index 6
+offColor index 26
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\temp_tim_traces=i:0"
+indicatorPv "LOC\\temp_tim_traces=i:0"
+onLabel "ID_1"
+offLabel "ID_1"
+labelType "literal"
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 1
+readBitPos 1
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 810
+y 105
+w 40
+h 20
+fgColor index 14
+onColor index 6
+offColor index 31
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\temp_tim_traces=i:0"
+indicatorPv "LOC\\temp_tim_traces=i:0"
+onLabel "ID_2"
+offLabel "ID_2"
+labelType "literal"
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 2
+readBitPos 2
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 810
+y 130
+w 40
+h 20
+fgColor index 14
+onColor index 6
+offColor index 36
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\temp_tim_traces=i:0"
+indicatorPv "LOC\\temp_tim_traces=i:0"
+onLabel "ID_3"
+offLabel "ID_3"
+labelType "literal"
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 3
+readBitPos 3
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 810
+y 155
+w 40
+h 20
+fgColor index 14
+onColor index 6
+offColor index 41
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\temp_tim_traces=i:0"
+indicatorPv "LOC\\temp_tim_traces=i:0"
+onLabel "ID_4"
+offLabel "ID_4"
+labelType "literal"
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 4
+readBitPos 4
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 810
+y 180
+w 40
+h 20
+fgColor index 14
+onColor index 6
+offColor index 46
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\temp_tim_traces=i:0"
+indicatorPv "LOC\\temp_tim_traces=i:0"
+onLabel "ID_5"
+offLabel "ID_5"
+labelType "literal"
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 5
+readBitPos 5
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 810
+y 205
+w 40
+h 20
+fgColor index 14
+onColor index 6
+offColor index 58
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\temp_tim_traces=i:0"
+indicatorPv "LOC\\temp_tim_traces=i:0"
+onLabel "ID_6"
+offLabel "ID_6"
+labelType "literal"
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 6
+readBitPos 6
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 6
+release 0
+# Geometry
+x 455
+y 55
+w 350
+h 255
+# Appearance
+border
+autoScaleBothDirections
+fgColor index 14
+bgColor index 95
+gridColor index 0
+font "courier-medium-r-12.0"
+# Operating Modes
+plotMode "plotLastNPts"
+nPts 50
+traceCtlPv "LOC\\temp_tim_traces=i:0"
+resetPv "LOC\\temp_tim_reset=i:0"
+# X axis properties
+showXAxis
+xAxisStyle "time"
+xAxisSrc "AutoScale"
+xMax 1
+xAxisTimeFormat "dateTime"
+xLabelIntervals 2
+xMajorsPerLabel 1
+xUserSpecScaleDiv 1
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 8
+yPv {
+  0 "EPICS\\$(HOSTNAME):$(BSENS):ID_0:value"
+  1 "EPICS\\$(HOSTNAME):$(BSENS):ID_1:value"
+  2 "EPICS\\$(HOSTNAME):$(BSENS):ID_2:value"
+  3 "EPICS\\$(HOSTNAME):$(BSENS):ID_3:value"
+  4 "EPICS\\$(HOSTNAME):$(BSENS):ID_4:value"
+  5 "EPICS\\$(HOSTNAME):$(BSENS):ID_5:value"
+  6 "EPICS\\$(HOSTNAME):$(BSENS):ID_6:value"
+  7 "EPICS\\$(HOSTNAME):$(BSENS):ID_7:value"
+}
+ySigned {
+  0 1
+  1 1
+  2 1
+  3 1
+  4 1
+  5 1
+  6 1
+  7 1
+}
+plotColor {
+  0 index 21
+  1 index 26
+  2 index 31
+  3 index 36
+  4 index 41
+  5 index 46
+  6 index 58
+  7 index 63
+}
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 125
+y 55
+w 10
+h 10
+lineColor index 14
+lineAlarm
+fill
+fillColor index 106
+fillAlarm
+alarmPv "EPICS\\$(HOSTNAME):$(BSENS):ID_0:value"
+endObjectProperties
+
+# (Bar)
+object activeBarClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 250
+y 70
+w 40
+h 200
+indicatorColor index 83
+indicatorAlarm
+fgColor index 9
+fgAlarm
+bgColor index 0
+indicatorPv "EPICS\\$(HOSTNAME):$(BSENS):ID_3:value"
+label "ID 3"
+showScale
+font "helvetica-medium-r-10.0"
+labelTicks "5"
+majorTicks "3"
+border
+min "10"
+max "90"
+scaleFormat "FFloat"
+orientation "vertical"
+endObjectProperties
+
+# (Bar)
+object activeBarClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 300
+y 70
+w 40
+h 200
+indicatorColor index 83
+indicatorAlarm
+fgColor index 9
+fgAlarm
+bgColor index 0
+indicatorPv "EPICS\\$(HOSTNAME):$(BSENS):ID_4:value"
+label "ID 4"
+showScale
+font "helvetica-medium-r-10.0"
+labelTicks "5"
+majorTicks "3"
+border
+min "10"
+max "90"
+scaleFormat "FFloat"
+orientation "vertical"
+endObjectProperties
+
+# (Bar)
+object activeBarClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 350
+y 70
+w 40
+h 200
+indicatorColor index 83
+indicatorAlarm
+fgColor index 9
+fgAlarm
+bgColor index 0
+indicatorPv "EPICS\\$(HOSTNAME):$(BSENS):ID_5:value"
+label "ID 5"
+showScale
+font "helvetica-medium-r-10.0"
+labelTicks "5"
+majorTicks "3"
+border
+min "10"
+max "90"
+scaleFormat "FFloat"
+orientation "vertical"
+endObjectProperties
+
+# (Bar)
+object activeBarClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 400
+y 70
+w 40
+h 200
+indicatorColor index 83
+indicatorAlarm
+fgColor index 9
+fgAlarm
+bgColor index 0
+indicatorPv "EPICS\\$(HOSTNAME):$(BSENS):ID_6:value"
+label "ID 6"
+showScale
+font "helvetica-medium-r-10.0"
+labelTicks "5"
+majorTicks "3"
+border
+min "10"
+max "90"
+scaleFormat "FFloat"
+orientation "vertical"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 150
+y 280
+w 40
+h 20
+controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_1:value"
+displayMode "decimal"
+fgColor index 14
+fgAlarm
+bgColor index 104
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 200
+y 280
+w 40
+h 20
+controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_2:value"
+displayMode "decimal"
+fgColor index 14
+fgAlarm
+bgColor index 104
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 250
+y 280
+w 40
+h 20
+controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_3:value"
+displayMode "decimal"
+fgColor index 14
+fgAlarm
+bgColor index 104
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 300
+y 280
+w 40
+h 20
+controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_4:value"
+displayMode "decimal"
+fgColor index 14
+fgAlarm
+bgColor index 104
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 350
+y 280
+w 40
+h 20
+controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_5:value"
+displayMode "decimal"
+fgColor index 14
+fgAlarm
+bgColor index 104
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 400
+y 280
+w 40
+h 20
+controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_6:value"
+displayMode "decimal"
+fgColor index 14
+fgAlarm
+bgColor index 104
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 175
+y 55
+w 10
+h 10
+lineColor index 14
+lineAlarm
+fill
+fillColor index 106
+fillAlarm
+alarmPv "EPICS\\$(HOSTNAME):$(BSENS):ID_1:value"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 225
+y 55
+w 10
+h 10
+lineColor index 14
+lineAlarm
+fill
+fillColor index 106
+fillAlarm
+alarmPv "EPICS\\$(HOSTNAME):$(BSENS):ID_2:value"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 55
+w 10
+h 10
+lineColor index 14
+lineAlarm
+fill
+fillColor index 106
+fillAlarm
+alarmPv "EPICS\\$(HOSTNAME):$(BSENS):ID_3:value"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 325
+y 55
+w 10
+h 10
+lineColor index 14
+lineAlarm
+fill
+fillColor index 106
+fillAlarm
+alarmPv "EPICS\\$(HOSTNAME):$(BSENS):ID_4:value"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 375
+y 55
+w 10
+h 10
+lineColor index 14
+lineAlarm
+fill
+fillColor index 106
+fillAlarm
+alarmPv "EPICS\\$(HOSTNAME):$(BSENS):ID_5:value"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 425
+y 55
+w 10
+h 10
+lineColor index 14
+lineAlarm
+fill
+fillColor index 106
+fillAlarm
+alarmPv "EPICS\\$(HOSTNAME):$(BSENS):ID_6:value"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 38
+y 305
+w 53
+h 15
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Nominal:"
+}
+autoSize
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 860
+y 205
+w 85
+h 20
+controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_6:name"
+displayMode "decimal"
+fgColor index 14
+fgAlarm
+bgColor index 104
+fill
+font "helvetica-medium-r-8.0"
+fontAlign "center"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 860
+y 180
+w 85
+h 20
+controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_5:name"
+displayMode "decimal"
+fgColor index 14
+fgAlarm
+bgColor index 104
+fill
+font "helvetica-medium-r-8.0"
+fontAlign "center"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 860
+y 155
+w 85
+h 20
+controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_4:name"
+displayMode "decimal"
+fgColor index 14
+fgAlarm
+bgColor index 104
+fill
+font "helvetica-medium-r-8.0"
+fontAlign "center"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 860
+y 130
+w 85
+h 20
+controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_3:name"
+displayMode "decimal"
+fgColor index 14
+fgAlarm
+bgColor index 104
+fill
+font "helvetica-medium-r-8.0"
+fontAlign "center"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 860
+y 105
+w 85
+h 20
+controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_2:name"
+displayMode "decimal"
+fgColor index 14
+fgAlarm
+bgColor index 104
+fill
+font "helvetica-medium-r-8.0"
+fontAlign "center"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 860
+y 80
+w 85
+h 20
+controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_1:name"
+displayMode "decimal"
+fgColor index 14
+fgAlarm
+bgColor index 104
+fill
+font "helvetica-medium-r-8.0"
+fontAlign "center"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 860
+y 55
+w 85
+h 20
+controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_0:name"
+displayMode "decimal"
+fgColor index 14
+fgAlarm
+bgColor index 104
+fill
+font "helvetica-medium-r-8.0"
+fontAlign "center"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 400
+y 305
+w 40
+h 20
+controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_6:nom"
+displayMode "decimal"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 350
+y 305
+w 40
+h 20
+controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_5:nom"
+displayMode "decimal"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 300
+y 305
+w 40
+h 20
+controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_4:nom"
+displayMode "decimal"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 250
+y 305
+w 40
+h 20
+controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_3:nom"
+displayMode "decimal"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 200
+y 305
+w 40
+h 20
+controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_2:nom"
+displayMode "decimal"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 150
+y 305
+w 40
+h 20
+controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_1:nom"
+displayMode "decimal"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 100
+y 305
+w 40
+h 20
+controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_0:nom"
+displayMode "decimal"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 340
+w 77
+h 15
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Refresh rate:"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 100
+y 340
+w 40
+h 10
+controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_0:value.SCAN"
+font "helvetica-bold-r-8.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+editable
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 150
+y 340
+w 40
+h 10
+controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_1:value.SCAN"
+font "helvetica-bold-r-8.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+editable
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 200
+y 340
+w 40
+h 10
+controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_2:value.SCAN"
+font "helvetica-bold-r-8.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+editable
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 250
+y 340
+w 40
+h 10
+controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_3:value.SCAN"
+font "helvetica-bold-r-8.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+editable
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 295
+y 340
+w 40
+h 10
+controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_4:value.SCAN"
+font "helvetica-bold-r-8.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+editable
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 350
+y 340
+w 40
+h 10
+controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_5:value.SCAN"
+font "helvetica-bold-r-8.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+editable
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 405
+y 340
+w 40
+h 10
+controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_6:value.SCAN"
+font "helvetica-bold-r-8.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+editable
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 965
+h 40
+lineColor index 14
+fill
+fillColor index 9
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 15
+y 10
+w 252
+h 18
+font "helvetica-bold-r-14.0"
+fgColor index 89
+bgColor index 0
+useDisplayBg
+value {
+  "Temperature monitoring #$(BSENS)"
+}
+autoSize
+endObjectProperties
+
