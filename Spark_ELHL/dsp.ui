@@ -52,7 +52,7 @@
       <pointsize>9</pointsize>
       <weight>75</weight>
       <bold>true</bold>
-      <kerning>false</kerning>
+      <kerning>true</kerning>
      </font>
     </property>
     <property name="styleSheet">
@@ -75,7 +75,7 @@
     </property>
     <widget class="QWidget" name="Pos">
      <attribute name="title">
-      <string>Position</string>
+      <string>Position I</string>
      </attribute>
      <widget class="caFrame" name="caframe_4">
       <property name="geometry">
@@ -178,9 +178,9 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>4</y>
-         <width>46</width>
-         <height>26</height>
+         <y>9</y>
+         <width>41</width>
+         <height>21</height>
         </rect>
        </property>
        <property name="font">
@@ -200,7 +200,7 @@ color: rgb(0, 0, 0);</string>
         <x>5</x>
         <y>5</y>
         <width>921</width>
-        <height>340</height>
+        <height>321</height>
        </rect>
       </property>
       <property name="sizePolicy">
@@ -252,9 +252,9 @@ color: rgb(0, 0, 0);</string>
       </property>
       <property name="color_1">
        <color>
-        <red>0</red>
-        <green>6</green>
-        <blue>255</blue>
+        <red>255</red>
+        <green>0</green>
+        <blue>0</blue>
        </color>
       </property>
       <property name="YaxisScalingMax_2" stdset="0">
@@ -277,14 +277,17 @@ color: rgb(0, 0, 0);</string>
       <property name="YaxisEnabled">
        <bool>true</bool>
       </property>
+      <property name="LegendEnabled">
+       <bool>false</bool>
+      </property>
      </widget>
      <widget class="caStripPlot" name="castripplot_2">
       <property name="geometry">
        <rect>
         <x>5</x>
-        <y>355</y>
+        <y>329</y>
         <width>921</width>
-        <height>340</height>
+        <height>326</height>
        </rect>
       </property>
       <property name="sizePolicy">
@@ -328,9 +331,9 @@ color: rgb(0, 0, 0);</string>
       </property>
       <property name="color_1">
        <color>
-        <red>255</red>
+        <red>0</red>
         <green>0</green>
-        <blue>18</blue>
+        <blue>255</blue>
        </color>
       </property>
       <property name="YaxisScalingMax_2" stdset="0">
@@ -352,6 +355,587 @@ color: rgb(0, 0, 0);</string>
       </property>
       <property name="YaxisEnabled">
        <bool>true</bool>
+      </property>
+      <property name="LegendEnabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="caRelatedDisplay" name="carelateddisplay_4">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>675</y>
+        <width>456</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sans Serif</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="background">
+       <color>
+        <red>252</red>
+        <green>220</green>
+        <blue>123</blue>
+       </color>
+      </property>
+      <property name="labels">
+       <string notr="true">SUM signal</string>
+      </property>
+      <property name="files">
+       <string notr="true">sp_sum_I</string>
+      </property>
+      <property name="args">
+       <string notr="true">DEVICE=$(DEVICE)</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_3">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>695</y>
+        <width>921</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="caRelatedDisplay" name="carelateddisplay_5">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>675</y>
+        <width>456</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sans Serif</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="background">
+       <color>
+        <red>252</red>
+        <green>220</green>
+        <blue>123</blue>
+       </color>
+      </property>
+      <property name="labels">
+       <string notr="true">Amplitudes</string>
+      </property>
+      <property name="files">
+       <string notr="true">sp_amplitudes_I</string>
+      </property>
+      <property name="args">
+       <string notr="true">DEVICE=$(DEVICE)</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_4">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>660</y>
+        <width>921</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>Position II</string>
+     </attribute>
+     <widget class="caFrame" name="caframe_9">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>710</y>
+        <width>921</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>DejaVu Sans</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(217, 217, 217);</string>
+      </property>
+      <widget class="caLineEdit" name="calineedit_2">
+       <property name="geometry">
+        <rect>
+         <x>800</x>
+         <y>10</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>10</pointsize>
+         <stylestrategy>PreferDefault</stylestrategy>
+        </font>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">$(DEVICE):signals:sp.trigger_cnt</string>
+       </property>
+      </widget>
+      <widget class="caMessageButton" name="camessagebutton_5">
+       <property name="geometry">
+        <rect>
+         <x>690</x>
+         <y>5</y>
+         <width>100</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="fontScaleMode">
+        <enum>EPushButton::WidthAndHeight</enum>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">$(DEVICE):dsp:reset_counters</string>
+       </property>
+       <property name="label">
+        <string notr="true">Reset counters</string>
+       </property>
+       <property name="pressMessage">
+        <string notr="true">Execute</string>
+       </property>
+      </widget>
+      <widget class="caMenu" name="camenu_10">
+       <property name="geometry">
+        <rect>
+         <x>55</x>
+         <y>5</y>
+         <width>100</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">selection-color: rgb(0, 0, 0);
+color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="maxVisibleItems">
+        <number>4</number>
+       </property>
+       <property name="maxCount">
+        <number>4</number>
+       </property>
+       <property name="insertPolicy">
+        <enum>QComboBox::NoInsert</enum>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">$(DEVICE):signals:sp.SCAN</string>
+       </property>
+       <property name="colorMode">
+        <enum>caMenu::Default</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_60">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>9</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Scan</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="caCartesianPlot" name="position">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>5</y>
+        <width>921</width>
+        <height>321</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+        <horstretch>0</horstretch>
+        <verstretch>2</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sans</family>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb();</string>
+      </property>
+      <property name="Title" stdset="0">
+       <string notr="true">X position data</string>
+      </property>
+      <property name="TitleX">
+       <string notr="true">Group</string>
+      </property>
+      <property name="TitleY">
+       <string notr="true">Position [nm]</string>
+      </property>
+      <property name="channels_1" stdset="0">
+       <string notr="true">;$(DEVICE):signals:sp.x</string>
+      </property>
+      <property name="Style_1">
+       <enum>caCartesianPlot::Lines</enum>
+      </property>
+      <property name="symbol_1">
+       <enum>caCartesianPlot::Star1</enum>
+      </property>
+      <property name="color_1">
+       <color>
+        <red>255</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </property>
+      <property name="channels_2" stdset="0">
+       <string notr="true"/>
+      </property>
+      <property name="symbol_2">
+       <enum>caCartesianPlot::Star2</enum>
+      </property>
+      <property name="color_2">
+       <color>
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+       </color>
+      </property>
+      <property name="channels_3" stdset="0">
+       <string notr="true"/>
+      </property>
+      <property name="symbol_3">
+       <enum>caCartesianPlot::Star1</enum>
+      </property>
+      <property name="color_3">
+       <color>
+        <red>85</red>
+        <green>0</green>
+        <blue>255</blue>
+       </color>
+      </property>
+      <property name="channels_4" stdset="0">
+       <string notr="true"/>
+      </property>
+      <property name="symbol_4">
+       <enum>caCartesianPlot::Star2</enum>
+      </property>
+      <property name="color_4">
+       <color>
+        <red>122</red>
+        <green>12</green>
+        <blue>114</blue>
+       </color>
+      </property>
+      <property name="plotMode">
+       <enum>caCartesianPlot::PlotNPointsAndStop</enum>
+      </property>
+      <property name="countNumOrChannel" stdset="0">
+       <string notr="true"/>
+      </property>
+      <property name="triggerChannel" stdset="0">
+       <string notr="true"/>
+      </property>
+      <property name="foreground">
+       <color alpha="0">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </property>
+      <property name="background">
+       <color>
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </property>
+      <property name="scaleColor">
+       <color>
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </property>
+      <property name="grid">
+       <bool>true</bool>
+      </property>
+      <property name="gridColor">
+       <color>
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </property>
+      <property name="XaxisScaling" stdset="0">
+       <enum>caCartesianPlot::Auto</enum>
+      </property>
+      <property name="XaxisLimits">
+       <string>0;100</string>
+      </property>
+      <property name="YaxisLimits">
+       <string>-1000000;-900000</string>
+      </property>
+     </widget>
+     <widget class="caCartesianPlot" name="position_2">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>335</y>
+        <width>921</width>
+        <height>321</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+        <horstretch>0</horstretch>
+        <verstretch>2</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sans</family>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb();</string>
+      </property>
+      <property name="Title" stdset="0">
+       <string notr="true">Y position data</string>
+      </property>
+      <property name="TitleX">
+       <string notr="true">Group</string>
+      </property>
+      <property name="TitleY">
+       <string notr="true">Position [nm]</string>
+      </property>
+      <property name="channels_1" stdset="0">
+       <string notr="true">;$(DEVICE):signals:sp.y</string>
+      </property>
+      <property name="Style_1">
+       <enum>caCartesianPlot::Lines</enum>
+      </property>
+      <property name="symbol_1">
+       <enum>caCartesianPlot::Star1</enum>
+      </property>
+      <property name="color_1">
+       <color>
+        <red>0</red>
+        <green>0</green>
+        <blue>255</blue>
+       </color>
+      </property>
+      <property name="channels_2" stdset="0">
+       <string notr="true"/>
+      </property>
+      <property name="symbol_2">
+       <enum>caCartesianPlot::Star2</enum>
+      </property>
+      <property name="color_2">
+       <color>
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+       </color>
+      </property>
+      <property name="channels_3" stdset="0">
+       <string notr="true"/>
+      </property>
+      <property name="symbol_3">
+       <enum>caCartesianPlot::Star1</enum>
+      </property>
+      <property name="color_3">
+       <color>
+        <red>85</red>
+        <green>0</green>
+        <blue>255</blue>
+       </color>
+      </property>
+      <property name="channels_4" stdset="0">
+       <string notr="true"/>
+      </property>
+      <property name="symbol_4">
+       <enum>caCartesianPlot::Star2</enum>
+      </property>
+      <property name="color_4">
+       <color>
+        <red>122</red>
+        <green>12</green>
+        <blue>114</blue>
+       </color>
+      </property>
+      <property name="plotMode">
+       <enum>caCartesianPlot::PlotNPointsAndStop</enum>
+      </property>
+      <property name="countNumOrChannel" stdset="0">
+       <string notr="true"/>
+      </property>
+      <property name="triggerChannel" stdset="0">
+       <string notr="true"/>
+      </property>
+      <property name="foreground">
+       <color alpha="0">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </property>
+      <property name="background">
+       <color>
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </property>
+      <property name="scaleColor">
+       <color>
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </property>
+      <property name="grid">
+       <bool>true</bool>
+      </property>
+      <property name="gridColor">
+       <color>
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </property>
+      <property name="XaxisScaling" stdset="0">
+       <enum>caCartesianPlot::Auto</enum>
+      </property>
+      <property name="XaxisLimits">
+       <string>0;100</string>
+      </property>
+      <property name="YaxisLimits">
+       <string>-1000000;-900000</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_2">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>660</y>
+        <width>921</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>695</y>
+        <width>921</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="caRelatedDisplay" name="carelateddisplay_2">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>675</y>
+        <width>456</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sans Serif</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="background">
+       <color>
+        <red>252</red>
+        <green>220</green>
+        <blue>123</blue>
+       </color>
+      </property>
+      <property name="labels">
+       <string notr="true">SUM signal</string>
+      </property>
+      <property name="files">
+       <string notr="true">sp_sum_II</string>
+      </property>
+      <property name="args">
+       <string notr="true">DEVICE=$(DEVICE)</string>
+      </property>
+     </widget>
+     <widget class="caRelatedDisplay" name="carelateddisplay_3">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>675</y>
+        <width>456</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sans Serif</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="background">
+       <color>
+        <red>252</red>
+        <green>220</green>
+        <blue>123</blue>
+       </color>
+      </property>
+      <property name="labels">
+       <string notr="true">Amplitudes</string>
+      </property>
+      <property name="files">
+       <string notr="true">sp_amplitudes_II</string>
+      </property>
+      <property name="args">
+       <string notr="true">DEVICE=$(DEVICE)</string>
       </property>
      </widget>
     </widget>
@@ -403,8 +987,8 @@ color: rgb(0, 0, 0);</string>
       </property>
       <property name="color_1">
        <color>
-        <red>255</red>
-        <green>0</green>
+        <red>0</red>
+        <green>255</green>
         <blue>0</blue>
        </color>
       </property>
@@ -604,9 +1188,9 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>4</y>
-         <width>46</width>
-         <height>26</height>
+         <y>9</y>
+         <width>41</width>
+         <height>21</height>
         </rect>
        </property>
        <property name="font">
@@ -619,293 +1203,6 @@ color: rgb(0, 0, 0);</string>
         <string>Scan</string>
        </property>
       </widget>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="tab_2">
-     <attribute name="title">
-      <string>Charge</string>
-     </attribute>
-     <widget class="caStripPlot" name="castripplot_3">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>9</y>
-        <width>921</width>
-        <height>686</height>
-       </rect>
-      </property>
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-        <horstretch>3</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="Title" stdset="0">
-       <string notr="true">SUM Signal</string>
-      </property>
-      <property name="TitleX">
-       <string notr="true">Triggers</string>
-      </property>
-      <property name="TitleY">
-       <string notr="true">AU</string>
-      </property>
-      <property name="channels" stdset="0">
-       <string notr="true">;$(DEVICE):signals:sp.sum;</string>
-      </property>
-      <property name="refreshRate" stdset="0">
-       <enum>caStripPlot::High</enum>
-      </property>
-      <property name="XaxisType">
-       <enum>caStripPlot::TimeScale</enum>
-      </property>
-      <property name="YAxisScaling" stdset="0">
-       <enum>caStripPlot::autoScale</enum>
-      </property>
-      <property name="YaxisLimitsMax_1">
-       <double>1000000.000000000000000</double>
-      </property>
-      <property name="YaxisLimitsMin_1">
-       <double>-1000000.000000000000000</double>
-      </property>
-      <property name="YaxisScalingMax_1" stdset="0">
-       <enum>caStripPlot::User</enum>
-      </property>
-      <property name="YaxisScalingMin_1" stdset="0">
-       <enum>caStripPlot::User</enum>
-      </property>
-      <property name="color_1">
-       <color>
-        <red>255</red>
-        <green>0</green>
-        <blue>18</blue>
-       </color>
-      </property>
-      <property name="YaxisScalingMax_2" stdset="0">
-       <enum>caStripPlot::Channel</enum>
-      </property>
-      <property name="foreground">
-       <color alpha="0">
-        <red>133</red>
-        <green>190</green>
-        <blue>232</blue>
-       </color>
-      </property>
-      <property name="background">
-       <color>
-        <red>255</red>
-        <green>255</green>
-        <blue>255</blue>
-       </color>
-      </property>
-      <property name="YaxisEnabled">
-       <bool>true</bool>
-      </property>
-     </widget>
-     <widget class="caFrame" name="caframe_11">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>710</y>
-        <width>921</width>
-        <height>36</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>DejaVu Sans</family>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(217, 217, 217);</string>
-      </property>
-      <widget class="caLineEdit" name="calineedit_7">
-       <property name="geometry">
-        <rect>
-         <x>800</x>
-         <y>10</y>
-         <width>91</width>
-         <height>16</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>10</pointsize>
-         <stylestrategy>PreferDefault</stylestrategy>
-        </font>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string notr="true">$(DEVICE):signals:sp.trigger_cnt</string>
-       </property>
-      </widget>
-      <widget class="caMessageButton" name="camessagebutton_3">
-       <property name="geometry">
-        <rect>
-         <x>690</x>
-         <y>5</y>
-         <width>100</width>
-         <height>26</height>
-        </rect>
-       </property>
-       <property name="fontScaleMode">
-        <enum>EPushButton::WidthAndHeight</enum>
-       </property>
-       <property name="channel" stdset="0">
-        <string notr="true">$(DEVICE):dsp:reset_counters</string>
-       </property>
-       <property name="label">
-        <string notr="true">Reset counters</string>
-       </property>
-       <property name="pressMessage">
-        <string notr="true">Execute</string>
-       </property>
-      </widget>
-      <widget class="caMenu" name="camenu_8">
-       <property name="geometry">
-        <rect>
-         <x>55</x>
-         <y>5</y>
-         <width>100</width>
-         <height>25</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">selection-color: rgb(0, 0, 0);
-color: rgb(0, 0, 0);</string>
-       </property>
-       <property name="maxVisibleItems">
-        <number>4</number>
-       </property>
-       <property name="maxCount">
-        <number>4</number>
-       </property>
-       <property name="insertPolicy">
-        <enum>QComboBox::NoInsert</enum>
-       </property>
-       <property name="channel" stdset="0">
-        <string notr="true">$(DEVICE):signals:sp.SCAN</string>
-       </property>
-       <property name="colorMode">
-        <enum>caMenu::Default</enum>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_59">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>4</y>
-         <width>46</width>
-         <height>26</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>Scan</string>
-       </property>
-      </widget>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="Amp">
-     <property name="enabled">
-      <bool>false</bool>
-     </property>
-     <attribute name="title">
-      <string>Amplitude</string>
-     </attribute>
-     <widget class="caStripPlot" name="castripplot_4">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>5</y>
-        <width>921</width>
-        <height>691</height>
-       </rect>
-      </property>
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-        <horstretch>3</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="font">
-       <font>
-        <family>DejaVu Sans</family>
-       </font>
-      </property>
-      <property name="Title" stdset="0">
-       <string notr="true">Amplitudes</string>
-      </property>
-      <property name="TitleX">
-       <string notr="true">Triggers</string>
-      </property>
-      <property name="TitleY">
-       <string notr="true">AU</string>
-      </property>
-      <property name="channels" stdset="0">
-       <string notr="true">;$(DEVICE):signals:sp.va;$(DEVICE):signals:sp.vb;$(DEVICE):signals:sp.vc;$(DEVICE):signals:sp.vd;</string>
-      </property>
-      <property name="refreshRate" stdset="0">
-       <enum>caStripPlot::High</enum>
-      </property>
-      <property name="XaxisType">
-       <enum>caStripPlot::TimeScale</enum>
-      </property>
-      <property name="YAxisScaling" stdset="0">
-       <enum>caStripPlot::autoScale</enum>
-      </property>
-      <property name="YaxisLimitsMax_1">
-       <double>1000000.000000000000000</double>
-      </property>
-      <property name="YaxisLimitsMin_1">
-       <double>-1000000.000000000000000</double>
-      </property>
-      <property name="YaxisScalingMax_1" stdset="0">
-       <enum>caStripPlot::User</enum>
-      </property>
-      <property name="YaxisScalingMin_1" stdset="0">
-       <enum>caStripPlot::User</enum>
-      </property>
-      <property name="color_1">
-       <color>
-        <red>0</red>
-        <green>6</green>
-        <blue>255</blue>
-       </color>
-      </property>
-      <property name="YaxisScalingMax_2" stdset="0">
-       <enum>caStripPlot::Channel</enum>
-      </property>
-      <property name="foreground">
-       <color alpha="0">
-        <red>133</red>
-        <green>190</green>
-        <blue>232</blue>
-       </color>
-      </property>
-      <property name="background">
-       <color>
-        <red>255</red>
-        <green>255</green>
-        <blue>255</blue>
-       </color>
-      </property>
-      <property name="YaxisEnabled">
-       <bool>true</bool>
-      </property>
      </widget>
     </widget>
     <widget class="QWidget" name="ADC">
@@ -1002,14 +1299,15 @@ color: rgb(0, 0, 0);</string>
         <property name="geometry">
          <rect>
           <x>740</x>
-          <y>5</y>
+          <y>9</y>
           <width>81</width>
-          <height>26</height>
+          <height>21</height>
          </rect>
         </property>
         <property name="font">
          <font>
           <family>DejaVu Sans</family>
+          <pointsize>10</pointsize>
          </font>
         </property>
         <property name="text">
@@ -1043,9 +1341,9 @@ color: rgb(0, 0, 0);</string>
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>4</y>
+          <y>9</y>
           <width>46</width>
-          <height>26</height>
+          <height>21</height>
          </rect>
         </property>
         <property name="font">
@@ -1101,7 +1399,7 @@ color: rgb(0, 0, 0);</string>
         <x>5</x>
         <y>5</y>
         <width>921</width>
-        <height>691</height>
+        <height>676</height>
        </rect>
       </property>
       <property name="sizePolicy">
@@ -1165,7 +1463,7 @@ color: rgb(0, 0, 0);</string>
       </property>
       <property name="color_3">
        <color>
-        <red>85</red>
+        <red>0</red>
         <green>0</green>
         <blue>255</blue>
        </color>
@@ -1178,9 +1476,9 @@ color: rgb(0, 0, 0);</string>
       </property>
       <property name="color_4">
        <color>
-        <red>122</red>
-        <green>12</green>
-        <blue>114</blue>
+        <red>170</red>
+        <green>0</green>
+        <blue>255</blue>
        </color>
       </property>
       <property name="plotMode">
@@ -1233,6 +1531,198 @@ color: rgb(0, 0, 0);</string>
        <string>-1000000;-900000</string>
       </property>
      </widget>
+     <widget class="QLabel" name="label_25">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>685</y>
+        <width>36</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>DejaVu Sans</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>Ch. C</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_26">
+      <property name="geometry">
+       <rect>
+        <x>365</x>
+        <y>685</y>
+        <width>36</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>DejaVu Sans</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>Ch. D</string>
+      </property>
+     </widget>
+     <widget class="caRelatedDisplay" name="ADC_buffer">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>685</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="background">
+       <color>
+        <red>255</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </property>
+      <property name="labels">
+       <string notr="true"/>
+      </property>
+      <property name="files">
+       <string notr="true">adc</string>
+      </property>
+      <property name="args">
+       <string notr="true">DEVICE=$(DEVICE)</string>
+      </property>
+     </widget>
+     <widget class="caRelatedDisplay" name="ADC_buffer_3">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>685</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="background">
+       <color>
+        <red>0</red>
+        <green>0</green>
+        <blue>255</blue>
+       </color>
+      </property>
+      <property name="labels">
+       <string notr="true"/>
+      </property>
+      <property name="files">
+       <string notr="true">adc</string>
+      </property>
+      <property name="args">
+       <string notr="true">DEVICE=$(DEVICE)</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_27">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>685</y>
+        <width>36</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>DejaVu Sans</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>Ch. A</string>
+      </property>
+     </widget>
+     <widget class="caRelatedDisplay" name="ADC_buffer_2">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>685</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="background">
+       <color>
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+       </color>
+      </property>
+      <property name="labels">
+       <string notr="true"/>
+      </property>
+      <property name="files">
+       <string notr="true">adc</string>
+      </property>
+      <property name="args">
+       <string notr="true">DEVICE=$(DEVICE)</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_28">
+      <property name="geometry">
+       <rect>
+        <x>145</x>
+        <y>685</y>
+        <width>36</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>DejaVu Sans</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>Ch. B</string>
+      </property>
+     </widget>
+     <widget class="caRelatedDisplay" name="ADC_buffer_4">
+      <property name="geometry">
+       <rect>
+        <x>345</x>
+        <y>685</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="background">
+       <color>
+        <red>170</red>
+        <green>0</green>
+        <blue>255</blue>
+       </color>
+      </property>
+      <property name="labels">
+       <string notr="true"/>
+      </property>
+      <property name="files">
+       <string notr="true">adc</string>
+      </property>
+      <property name="args">
+       <string notr="true">DEVICE=$(DEVICE)</string>
+      </property>
+     </widget>
     </widget>
    </widget>
    <widget class="QTabWidget" name="MainSignalWindowTab_2">
@@ -1255,8 +1745,8 @@ color: rgb(0, 0, 0);</string>
     </property>
     <property name="minimumSize">
      <size>
-      <width>300</width>
-      <height>400</height>
+      <width>0</width>
+      <height>0</height>
      </size>
     </property>
     <property name="font">
@@ -1265,14 +1755,14 @@ color: rgb(0, 0, 0);</string>
       <pointsize>9</pointsize>
       <weight>75</weight>
       <bold>true</bold>
-      <kerning>false</kerning>
+      <kerning>true</kerning>
      </font>
     </property>
     <property name="styleSheet">
      <string notr="true"/>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>0</number>
     </property>
     <property name="iconSize">
      <size>
@@ -1286,119 +1776,6 @@ color: rgb(0, 0, 0);</string>
     <property name="usesScrollButtons">
      <bool>false</bool>
     </property>
-    <widget class="QWidget" name="tab_3">
-     <attribute name="title">
-      <string>Persistence</string>
-     </attribute>
-     <widget class="caFrame" name="caframe_5">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>5</y>
-        <width>306</width>
-        <height>741</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(226, 226, 226);</string>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::Box</enum>
-      </property>
-      <widget class="caMenu" name="camenu_9">
-       <property name="geometry">
-        <rect>
-         <x>195</x>
-         <y>15</y>
-         <width>100</width>
-         <height>25</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="frame">
-        <bool>true</bool>
-       </property>
-       <property name="channel" stdset="0">
-        <string notr="true">$(DEVICE):persistence:save_on_exit</string>
-       </property>
-       <property name="labelDisplay">
-        <bool>false</bool>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_23">
-       <property name="geometry">
-        <rect>
-         <x>5</x>
-         <y>15</y>
-         <width>151</width>
-         <height>25</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-        </font>
-       </property>
-       <property name="text">
-        <string>Save on exit enable</string>
-       </property>
-      </widget>
-      <widget class="caMessageButton" name="camessagebutton_4">
-       <property name="geometry">
-        <rect>
-         <x>195</x>
-         <y>45</y>
-         <width>100</width>
-         <height>26</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>9</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>Save</string>
-       </property>
-       <property name="fontScaleMode">
-        <enum>EPushButton::None</enum>
-       </property>
-       <property name="channel" stdset="0">
-        <string notr="true">$(DEVICE):persistence:save</string>
-       </property>
-       <property name="label">
-        <string notr="true">Save</string>
-       </property>
-       <property name="pressMessage">
-        <string notr="true">Execute</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_24">
-       <property name="geometry">
-        <rect>
-         <x>5</x>
-         <y>45</y>
-         <width>181</width>
-         <height>25</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-        </font>
-       </property>
-       <property name="text">
-        <string>Save current configuration</string>
-       </property>
-      </widget>
-     </widget>
-    </widget>
     <widget class="QWidget" name="dsp">
      <attribute name="title">
       <string>DSP</string>
@@ -1422,8 +1799,8 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>5</x>
-         <y>340</y>
-         <width>151</width>
+         <y>275</y>
+         <width>136</width>
          <height>25</height>
         </rect>
        </property>
@@ -1440,7 +1817,7 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>155</x>
-         <y>265</y>
+         <y>200</y>
          <width>100</width>
          <height>20</height>
         </rect>
@@ -1482,8 +1859,8 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>5</x>
-         <y>135</y>
-         <width>151</width>
+         <y>70</y>
+         <width>136</width>
          <height>25</height>
         </rect>
        </property>
@@ -1500,8 +1877,8 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>5</x>
-         <y>240</y>
-         <width>151</width>
+         <y>175</y>
+         <width>141</width>
          <height>25</height>
         </rect>
        </property>
@@ -1518,7 +1895,7 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>155</x>
-         <y>315</y>
+         <y>250</y>
          <width>100</width>
          <height>20</height>
         </rect>
@@ -1560,8 +1937,8 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>5</x>
-         <y>290</y>
-         <width>151</width>
+         <y>225</y>
+         <width>146</width>
          <height>25</height>
         </rect>
        </property>
@@ -1578,7 +1955,7 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>155</x>
-         <y>290</y>
+         <y>225</y>
          <width>100</width>
          <height>20</height>
         </rect>
@@ -1620,7 +1997,7 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>155</x>
-         <y>415</y>
+         <y>350</y>
          <width>100</width>
          <height>25</height>
         </rect>
@@ -1628,8 +2005,12 @@ color: rgb(0, 0, 0);</string>
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
-         <pointsize>10</pointsize>
+         <pointsize>9</pointsize>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">selection-color: rgb(0, 0, 0);
+color: rgb(0, 0, 0);</string>
        </property>
        <property name="frame">
         <bool>true</bool>
@@ -1641,30 +2022,11 @@ color: rgb(0, 0, 0);</string>
         <bool>false</bool>
        </property>
       </widget>
-      <widget class="QLabel" name="label_37">
-       <property name="geometry">
-        <rect>
-         <x>5</x>
-         <y>55</y>
-         <width>100</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>Trigger source</string>
-       </property>
-      </widget>
       <widget class="QLabel" name="label_12">
        <property name="geometry">
         <rect>
          <x>5</x>
-         <y>415</y>
+         <y>350</y>
          <width>131</width>
          <height>25</height>
         </rect>
@@ -1682,7 +2044,7 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>155</x>
-         <y>390</y>
+         <y>325</y>
          <width>100</width>
          <height>20</height>
         </rect>
@@ -1720,46 +2082,11 @@ color: rgb(0, 0, 0);</string>
         <double>8.000000000000000</double>
        </property>
       </widget>
-      <widget class="caMenu" name="camenu_4">
-       <property name="geometry">
-        <rect>
-         <x>155</x>
-         <y>55</y>
-         <width>100</width>
-         <height>25</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">selection-color: rgb(0, 0, 0);
-color: rgb(0, 0, 0);</string>
-       </property>
-       <property name="maxVisibleItems">
-        <number>4</number>
-       </property>
-       <property name="maxCount">
-        <number>4</number>
-       </property>
-       <property name="insertPolicy">
-        <enum>QComboBox::NoInsert</enum>
-       </property>
-       <property name="channel" stdset="0">
-        <string notr="true">$(DEVICE):triggers:t2:source</string>
-       </property>
-       <property name="colorMode">
-        <enum>caMenu::Default</enum>
-       </property>
-      </widget>
       <widget class="QLabel" name="label_8">
        <property name="geometry">
         <rect>
          <x>5</x>
-         <y>315</y>
+         <y>250</y>
          <width>126</width>
          <height>25</height>
         </rect>
@@ -1777,7 +2104,7 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>155</x>
-         <y>110</y>
+         <y>45</y>
          <width>100</width>
          <height>25</height>
         </rect>
@@ -1785,8 +2112,12 @@ color: rgb(0, 0, 0);</string>
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
-         <pointsize>10</pointsize>
+         <pointsize>9</pointsize>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">selection-color: rgb(0, 0, 0);
+color: rgb(0, 0, 0);</string>
        </property>
        <property name="frame">
         <bool>true</bool>
@@ -1802,8 +2133,8 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>5</x>
-         <y>190</y>
-         <width>151</width>
+         <y>125</y>
+         <width>136</width>
          <height>25</height>
         </rect>
        </property>
@@ -1820,7 +2151,7 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>155</x>
-         <y>240</y>
+         <y>175</y>
          <width>100</width>
          <height>20</height>
         </rect>
@@ -1862,8 +2193,8 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>5</x>
-         <y>365</y>
-         <width>151</width>
+         <y>300</y>
+         <width>141</width>
          <height>25</height>
         </rect>
        </property>
@@ -1880,7 +2211,7 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>155</x>
-         <y>135</y>
+         <y>70</y>
          <width>100</width>
          <height>25</height>
         </rect>
@@ -1888,8 +2219,12 @@ color: rgb(0, 0, 0);</string>
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
-         <pointsize>10</pointsize>
+         <pointsize>9</pointsize>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">selection-color: rgb(0, 0, 0);
+color: rgb(0, 0, 0);</string>
        </property>
        <property name="frame">
         <bool>true</bool>
@@ -1905,7 +2240,7 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>155</x>
-         <y>190</y>
+         <y>125</y>
          <width>100</width>
          <height>20</height>
         </rect>
@@ -1938,7 +2273,7 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>155</x>
-         <y>340</y>
+         <y>275</y>
          <width>100</width>
          <height>20</height>
         </rect>
@@ -1980,7 +2315,7 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>155</x>
-         <y>365</y>
+         <y>300</y>
          <width>100</width>
          <height>20</height>
         </rect>
@@ -2022,7 +2357,7 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>155</x>
-         <y>215</y>
+         <y>150</y>
          <width>100</width>
          <height>20</height>
         </rect>
@@ -2061,8 +2396,8 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>5</x>
-         <y>390</y>
-         <width>151</width>
+         <y>325</y>
+         <width>136</width>
          <height>25</height>
         </rect>
        </property>
@@ -2079,7 +2414,7 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>5</x>
-         <y>110</y>
+         <y>45</y>
          <width>146</width>
          <height>25</height>
         </rect>
@@ -2097,7 +2432,7 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>5</x>
-         <y>215</y>
+         <y>150</y>
          <width>146</width>
          <height>25</height>
         </rect>
@@ -2115,7 +2450,7 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>5</x>
-         <y>265</y>
+         <y>200</y>
          <width>141</width>
          <height>25</height>
         </rect>
@@ -2173,14 +2508,13 @@ color: rgb(0, 0, 0);</string>
         <rect>
          <x>5</x>
          <y>15</y>
-         <width>81</width>
+         <width>80</width>
          <height>21</height>
         </rect>
        </property>
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
-         <pointsize>10</pointsize>
         </font>
        </property>
        <property name="text">
@@ -2254,8 +2588,8 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>5</x>
-         <y>165</y>
-         <width>151</width>
+         <y>100</y>
+         <width>141</width>
          <height>25</height>
         </rect>
        </property>
@@ -2268,68 +2602,11 @@ color: rgb(0, 0, 0);</string>
         <string>Attenuator setting</string>
        </property>
       </widget>
-      <widget class="QLabel" name="label_14">
-       <property name="geometry">
-        <rect>
-         <x>5</x>
-         <y>85</y>
-         <width>151</width>
-         <height>25</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-        </font>
-       </property>
-       <property name="text">
-        <string>Trigger delay</string>
-       </property>
-      </widget>
-      <widget class="caTextEntry" name="catextentry_10">
-       <property name="geometry">
-        <rect>
-         <x>155</x>
-         <y>85</y>
-         <width>100</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>9</pointsize>
-         <stylestrategy>PreferDefault</stylestrategy>
-        </font>
-       </property>
-       <property name="toolTip">
-        <string>Set the trigger delay in ADC clocks</string>
-       </property>
-       <property name="whatsThis">
-        <string>Set the trigger delay in ADC clocks</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string notr="true">$(DEVICE):triggers:t2:delay</string>
-       </property>
-       <property name="background">
-        <color>
-         <red>255</red>
-         <green>255</green>
-         <blue>127</blue>
-        </color>
-       </property>
-       <property name="colorMode">
-        <enum>caLineEdit::Static</enum>
-       </property>
-      </widget>
       <widget class="caTextEntry" name="catextentry_11">
        <property name="geometry">
         <rect>
          <x>155</x>
-         <y>165</y>
+         <y>100</y>
          <width>100</width>
          <height>20</height>
         </rect>
@@ -2362,7 +2639,7 @@ color: rgb(0, 0, 0);</string>
     </widget>
     <widget class="QWidget" name="coeff">
      <attribute name="title">
-      <string>Coefficients</string>
+      <string>Coeff.</string>
      </attribute>
      <widget class="QTabWidget" name="MainSignalWindowTab_3">
       <property name="enabled">
@@ -2384,8 +2661,8 @@ color: rgb(0, 0, 0);</string>
       </property>
       <property name="minimumSize">
        <size>
-        <width>300</width>
-        <height>400</height>
+        <width>0</width>
+        <height>0</height>
        </size>
       </property>
       <property name="font">
@@ -2394,14 +2671,14 @@ color: rgb(0, 0, 0);</string>
         <pointsize>9</pointsize>
         <weight>75</weight>
         <bold>true</bold>
-        <kerning>false</kerning>
+        <kerning>true</kerning>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true"/>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <property name="iconSize">
        <size>
@@ -3950,6 +4227,327 @@ color: rgb(0, 0, 0);</string>
       </widget>
      </widget>
     </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>I/O lines</string>
+     </attribute>
+     <widget class="caFrame" name="caframe_11">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>5</y>
+        <width>306</width>
+        <height>741</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(226, 226, 226);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <widget class="QLabel" name="label_59">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>15</y>
+         <width>126</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>T2 trigger source</string>
+       </property>
+      </widget>
+      <widget class="caMenu" name="camenu_11">
+       <property name="geometry">
+        <rect>
+         <x>155</x>
+         <y>15</y>
+         <width>100</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">selection-color: rgb(0, 0, 0);
+color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="maxVisibleItems">
+        <number>4</number>
+       </property>
+       <property name="maxCount">
+        <number>4</number>
+       </property>
+       <property name="insertPolicy">
+        <enum>QComboBox::NoInsert</enum>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">$(DEVICE):triggers:t2:source</string>
+       </property>
+       <property name="colorMode">
+        <enum>caMenu::Default</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_34">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>45</y>
+         <width>121</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>T2 trigger delay</string>
+       </property>
+      </widget>
+      <widget class="caTextEntry" name="catextentry_25">
+       <property name="geometry">
+        <rect>
+         <x>155</x>
+         <y>45</y>
+         <width>100</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>9</pointsize>
+         <stylestrategy>PreferDefault</stylestrategy>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string>Set the trigger delay in ADC clocks</string>
+       </property>
+       <property name="whatsThis">
+        <string>Set the trigger delay in ADC clocks</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">$(DEVICE):triggers:t2:delay</string>
+       </property>
+       <property name="background">
+        <color>
+         <red>255</red>
+         <green>255</green>
+         <blue>127</blue>
+        </color>
+       </property>
+       <property name="colorMode">
+        <enum>caLineEdit::Static</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_35">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>130</y>
+         <width>121</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>T0 pulse length</string>
+       </property>
+      </widget>
+      <widget class="caMenu" name="camenu_12">
+       <property name="geometry">
+        <rect>
+         <x>155</x>
+         <y>100</y>
+         <width>100</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">selection-color: rgb(0, 0, 0);
+color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="maxVisibleItems">
+        <number>4</number>
+       </property>
+       <property name="maxCount">
+        <number>4</number>
+       </property>
+       <property name="insertPolicy">
+        <enum>QComboBox::NoInsert</enum>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">$(DEVICE):lemo_control:t0:direction</string>
+       </property>
+       <property name="colorMode">
+        <enum>caMenu::Default</enum>
+       </property>
+      </widget>
+      <widget class="caTextEntry" name="catextentry_26">
+       <property name="geometry">
+        <rect>
+         <x>155</x>
+         <y>130</y>
+         <width>100</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>9</pointsize>
+         <stylestrategy>PreferDefault</stylestrategy>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string>Set the trigger delay in ADC clocks</string>
+       </property>
+       <property name="whatsThis">
+        <string>Set the trigger delay in ADC clocks</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">$(DEVICE):bunch_detection:pulse_length</string>
+       </property>
+       <property name="background">
+        <color>
+         <red>255</red>
+         <green>255</green>
+         <blue>127</blue>
+        </color>
+       </property>
+       <property name="colorMode">
+        <enum>caLineEdit::Static</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_61">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>100</y>
+         <width>126</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>T0 direction</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Persistence</string>
+     </attribute>
+     <widget class="caFrame" name="caframe_5">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>5</y>
+        <width>306</width>
+        <height>741</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(226, 226, 226);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <widget class="caMessageButton" name="camessagebutton_4">
+       <property name="geometry">
+        <rect>
+         <x>195</x>
+         <y>15</y>
+         <width>100</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Save</string>
+       </property>
+       <property name="fontScaleMode">
+        <enum>EPushButton::None</enum>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">$(DEVICE):persistence:save</string>
+       </property>
+       <property name="label">
+        <string notr="true">Save</string>
+       </property>
+       <property name="pressMessage">
+        <string notr="true">Execute</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_24">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>15</y>
+         <width>181</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>Save current configuration</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
    </widget>
   </widget>
  </widget>
@@ -3963,6 +4561,11 @@ color: rgb(0, 0, 0);</string>
    <class>caMenu</class>
    <extends>QComboBox</extends>
    <header>caMenu</header>
+  </customwidget>
+  <customwidget>
+   <class>caRelatedDisplay</class>
+   <extends>QWidget</extends>
+   <header>caRelatedDisplay</header>
   </customwidget>
   <customwidget>
    <class>caTextEntry</class>
@@ -3999,11 +4602,13 @@ color: rgb(0, 0, 0);</string>
    <class>caCartesianPlot</class>
    <extends>QwtPlot</extends>
    <header>caCartesianPlot</header>
+   <container>1</container>
   </customwidget>
   <customwidget>
    <class>caStripPlot</class>
    <extends>QwtPlot</extends>
    <header>caStripPlot</header>
+   <container>1</container>
   </customwidget>
   <customwidget>
    <class>caWaveTable</class>
