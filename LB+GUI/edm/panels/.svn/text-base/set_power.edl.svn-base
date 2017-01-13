@@ -1,0 +1,93 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 876
+y 230
+w 700
+h 150
+font "helvetica-bold-r-12.0"
+ctlFont "helvetica-bold-r-12.0"
+btnFont "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+title "Signal processing chain"
+showGrid
+snapToGrid
+endScreenProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 10
+w 118
+h 27
+font "helvetica-bold-r-24.0"
+fgColor index 105
+bgColor index 0
+useDisplayBg
+value {
+  "Set power"
+}
+autoSize
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 140
+y 60
+w 500
+h 50
+fgColor index 85
+bgColor index 0
+2ndBgColor index 14
+topShadowColor index 0
+botShadowColor index 14
+increment 1
+controlPv "EPICS\\BPM-TEST-RSSMG:setPowerLevel"
+controlLabelType "pvName"
+font "helvetica-bold-r-12.0"
+precision 1
+scaleMin -60
+scaleMax 10
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 10
+y 60
+w 120
+h 50
+controlPv "EPICS\\BPM-TEST-RSSMG:setPowerLevel"
+font "helvetica-bold-r-24.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+

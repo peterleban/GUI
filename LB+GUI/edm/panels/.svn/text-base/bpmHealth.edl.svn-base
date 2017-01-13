@@ -1,0 +1,113 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 444
+y 630
+w 210
+h 130
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-18.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 5
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+title "#$(BOARD) HEALTH"
+showGrid
+snapToGrid
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 2
+y 3
+w 205
+h 35
+lineColor index 14
+fill
+fillColor index 90
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 35
+y 7
+w 242
+h 27
+font "helvetica-bold-r-24.0"
+fgColor index 89
+bgColor index 0
+useDisplayBg
+value {
+  "#$(BOARD) HEALTH"
+}
+autoSize
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 20
+y 90
+w 170
+h 40
+fgColor index 91
+bgColor index 92
+topShadowColor index 0
+botShadowColor index 14
+font "helvetica-medium-r-18.0"
+buttonLabel "Voltages"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "voltageBpm.edl"
+}
+menuLabel {
+  0 "Fans"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 20
+y 50
+w 170
+h 40
+fgColor index 91
+bgColor index 92
+topShadowColor index 0
+botShadowColor index 14
+font "helvetica-medium-r-18.0"
+buttonLabel "Temperatures"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "temperatureBpm.edl"
+}
+menuLabel {
+  0 "Fans"
+}
+endObjectProperties
+

@@ -1,0 +1,461 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1830
+y 182
+w 600
+h 800
+font "helvetica-bold-r-12.0"
+ctlFont "helvetica-bold-r-12.0"
+btnFont "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+title "TBT $(TYPE1) on $(HOSTNAME)/$(BPM)"
+showGrid
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+# Geometry
+x 10
+y 5
+w 580
+h 170
+# Appearance
+autoScaleBothDirections
+graphTitle "Channel A"
+fgColor index 14
+bgColor index 0
+gridColor index 2
+font "helvetica-medium-r-12.0"
+# Operating Modes
+plotMode "plotLastNPts"
+nPts 50
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMin 0
+xMax 10000
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+yShowLabelGrid
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 2
+yPv {
+  0 "EPICS\\$(HOSTNAME):$(BPM):$(DD1).Ia"
+  1 "EPICS\\$(HOSTNAME):$(BPM):$(DD1).Qa"
+}
+plotColor {
+  0 index 14
+  1 index 26
+}
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+# Geometry
+x 10
+y 180
+w 580
+h 170
+# Appearance
+autoScaleBothDirections
+graphTitle "Channel B"
+fgColor index 14
+bgColor index 0
+gridColor index 2
+font "helvetica-medium-r-12.0"
+# Operating Modes
+plotMode "plotLastNPts"
+nPts 50
+# X axis properties
+showXAxis
+xAxisSrc "fromUser"
+xMin 0
+xMax 10000
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+yShowLabelGrid
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 2
+yPv {
+  0 "EPICS\\$(HOSTNAME):$(BPM):$(DD1).VALC"
+  1 "EPICS\\$(HOSTNAME):$(BPM):$(DD1).VALD"
+}
+plotColor {
+  0 index 14
+  1 index 26
+}
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+# Geometry
+x 10
+y 355
+w 580
+h 170
+# Appearance
+autoScaleBothDirections
+graphTitle "Channel C"
+fgColor index 14
+bgColor index 0
+gridColor index 2
+font "helvetica-medium-r-12.0"
+# Operating Modes
+plotMode "plotLastNPts"
+nPts 50
+# X axis properties
+showXAxis
+xAxisSrc "fromUser"
+xMin 0
+xMax 10000
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+yShowLabelGrid
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 2
+yPv {
+  0 "EPICS\\$(HOSTNAME):$(BPM):$(DD1).VALE"
+  1 "EPICS\\$(HOSTNAME):$(BPM):$(DD1).VALF"
+}
+plotColor {
+  0 index 14
+  1 index 26
+}
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+# Geometry
+x 10
+y 530
+w 580
+h 180
+# Appearance
+autoScaleBothDirections
+graphTitle "Channel D"
+xLabel "samples"
+fgColor index 14
+bgColor index 0
+gridColor index 2
+font "helvetica-medium-r-12.0"
+# Operating Modes
+plotMode "plotLastNPts"
+nPts 50
+# X axis properties
+showXAxis
+xAxisSrc "fromUser"
+xMin 0
+xMax 10000
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+yShowLabelGrid
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 2
+yPv {
+  0 "EPICS\\$(HOSTNAME):$(BPM):$(DD1).VALG"
+  1 "EPICS\\$(HOSTNAME):$(BPM):$(DD1).VALH"
+}
+plotColor {
+  0 index 14
+  1 index 26
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 715
+w 580
+h 80
+lineColor index 14
+fill
+fillColor index 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 725
+w 90
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Scan mode:"
+}
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 140
+y 725
+w 95
+h 25
+fgColor index 14
+fgAlarm
+bgColor index 0
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(HOSTNAME):$(BPM):$(DD1).SCAN"
+indicatorPv "EPICS\\$(HOSTNAME):$(BPM):$(DD1).SCAN"
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 755
+w 115
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Acquisition mode:"
+}
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 140
+y 750
+w 95
+h 25
+fgColor index 14
+fgAlarm
+bgColor index 0
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(HOSTNAME):$(BPM):$(DD1).ACQM"
+indicatorPv "EPICS\\$(HOSTNAME):$(BPM):$(DD1).ACQM"
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 535
+y 740
+w 25
+h 0
+lineColor index 14
+fillColor index 0
+lineWidth 3
+numPoints 2
+xPoints {
+  0 535
+  1 560
+}
+yPoints {
+  0 740
+  1 740
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 535
+y 770
+w 25
+h 0
+lineColor index 26
+fillColor index 0
+lineWidth 3
+numPoints 2
+xPoints {
+  0 535
+  1 560
+}
+yPoints {
+  0 770
+  1 770
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 565
+y 730
+w 15
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "I"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 565
+y 760
+w 15
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Q"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 245
+y 725
+w 100
+h 25
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Read-out size:"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 350
+y 725
+w 70
+h 25
+controlPv "EPICS\\$(HOSTNAME):$(BPM):$(DD).NGRP"
+font "helvetica-medium-r-14.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+editable
+motifWidget
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 350
+y 760
+w 95
+h 20
+fgColor index 14
+onColor index 0
+offColor index 0
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(HOSTNAME):$(BPM):$(DD1).PROC"
+pressValue "0"
+onLabel "Reading..."
+offLabel "Read buffer"
+3d
+font "helvetica-medium-r-10.0"
+endObjectProperties
+

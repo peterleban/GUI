@@ -1,0 +1,169 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 2147
+y 584
+w 520
+h 360
+font "helvetica-bold-r-12.0"
+ctlFont "helvetica-bold-r-12.0"
+btnFont "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+title "RTC T2/$(HOSTNAME)"
+showGrid
+snapToGrid
+endScreenProperties
+
+# (Coef Table)
+object activeCoefTableClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 950
+y 290
+w 90
+h 450
+fgColor index 14
+bgColor index 0
+oddColBgColor index 0
+evenColBgColor index 1
+topShadowColor index 0
+botShadowColor index 14
+pv "EPICS\\$(HOSTNAME):$(BPM):calibration:polynomial:x:k"
+font "helvetica-bold-r-12.0"
+endObjectProperties
+
+# (Coef Table)
+object activeCoefTableClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 10
+y 40
+w 150
+h 310
+fgColor index 14
+bgColor index 3
+oddColBgColor index 2
+evenColBgColor index 1
+topShadowColor index 0
+botShadowColor index 14
+pv "EPICS\\$(HOSTNAME):evrx:rtc:t2:in_mask"
+labels "Event0,Event1,Event2,Event3,Event4,Event5,Event6,Event7,Event8,Event9,Event10,Event11,Event12,Event13,Event14,Event15"
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Coef Table)
+object activeCoefTableClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 180
+y 40
+w 150
+h 310
+fgColor index 14
+bgColor index 3
+oddColBgColor index 2
+evenColBgColor index 1
+topShadowColor index 0
+botShadowColor index 14
+pv "EPICS\\$(HOSTNAME):evrx:rtc:t2:in_function"
+labels "Event0,Event1,Event2,Event3,Event4,Event5,Event6,Event7,Event8,Event9,Event10,Event11,Event12,Event13,Event14,Event15"
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Coef Table)
+object activeCoefTableClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 350
+y 40
+w 150
+h 310
+fgColor index 14
+bgColor index 3
+oddColBgColor index 2
+evenColBgColor index 1
+topShadowColor index 0
+botShadowColor index 14
+pv "EPICS\\$(HOSTNAME):evrx:rtc:t2:code"
+labels "Event0,Event1,Event2,Event3,Event4,Event5,Event6,Event7,Event8,Event9,Event10,Event11,Event12,Event13,Event14,Event15"
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 50
+y 10
+w 70
+h 17
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Input mask"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 210
+y 10
+w 86
+h 17
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Input function"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 410
+y 10
+w 35
+h 17
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Code"
+}
+autoSize
+endObjectProperties
+

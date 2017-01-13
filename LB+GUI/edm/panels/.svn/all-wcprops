@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/1k5k/!svn/ver/19032/eBPM/branches/tailor/core/gui/edm/panels
+END
+interlock_tutorial.edl
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/1k5k/!svn/ver/19032/eBPM/branches/tailor/core/gui/edm/panels/interlock_tutorial.edl
+END
+streamSa.edl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/1k5k/!svn/ver/19032/eBPM/branches/tailor/core/gui/edm/panels/streamSa.edl
+END
+voltages.edl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/1k5k/!svn/ver/19032/eBPM/branches/tailor/core/gui/edm/panels/voltages.edl
+END
+hp_temperature.edl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/1k5k/!svn/ver/19032/eBPM/branches/tailor/core/gui/edm/panels/hp_temperature.edl
+END
+main.edl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/1k5k/!svn/ver/19032/eBPM/branches/tailor/core/gui/edm/panels/main.edl
+END
+adc.edl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/1k5k/!svn/ver/19032/eBPM/branches/tailor/core/gui/edm/panels/adc.edl
+END
+synchronize_time.edl
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/1k5k/!svn/ver/19032/eBPM/branches/tailor/core/gui/edm/panels/synchronize_time.edl
+END
+pm_tutorial.edl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/1k5k/!svn/ver/19032/eBPM/branches/tailor/core/gui/edm/panels/pm_tutorial.edl
+END
+sr.xcf
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/1k5k/!svn/ver/19032/eBPM/branches/tailor/core/gui/edm/panels/sr.xcf
+END
+dd_ddc.edl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/1k5k/!svn/ver/19032/eBPM/branches/tailor/core/gui/edm/panels/dd_ddc.edl
+END
+streamFa.edl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/1k5k/!svn/ver/19032/eBPM/branches/tailor/core/gui/edm/panels/streamFa.edl
+END
+adc_mask.edl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/1k5k/!svn/ver/19032/eBPM/branches/tailor/core/gui/edm/panels/adc_mask.edl
+END
+fofb_tps.edl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/1k5k/!svn/ver/19032/eBPM/branches/tailor/core/gui/edm/panels/fofb_tps.edl
+END
+bpmHealth.edl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/1k5k/!svn/ver/19032/eBPM/branches/tailor/core/gui/edm/panels/bpmHealth.edl
+END
+main.png
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/1k5k/!svn/ver/19032/eBPM/branches/tailor/core/gui/edm/panels/main.png
+END
+generalConfiguration.edl
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/1k5k/!svn/ver/19032/eBPM/branches/tailor/core/gui/edm/panels/generalConfiguration.edl
+END
+tbt_window.edl
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/1k5k/!svn/ver/19032/eBPM/branches/tailor/core/gui/edm/panels/tbt_window.edl
+END
+gdx.edl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/1k5k/!svn/ver/19032/eBPM/branches/tailor/core/gui/edm/panels/gdx.edl
+END
+fans_meter.edl
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/1k5k/!svn/ver/19032/eBPM/branches/tailor/core/gui/edm/panels/fans_meter.edl
+END
+gdx_fa.edl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/1k5k/!svn/ver/19032/eBPM/branches/tailor/core/gui/edm/panels/gdx_fa.edl
+END
+temperature.edl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/1k5k/!svn/ver/19032/eBPM/branches/tailor/core/gui/edm/panels/temperature.edl
+END
+temp_calc.list
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/1k5k/!svn/ver/19032/eBPM/branches/tailor/core/gui/edm/panels/temp_calc.list
+END
+dd_tdp.edl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/1k5k/!svn/ver/19032/eBPM/branches/tailor/core/gui/edm/panels/dd_tdp.edl
+END
+gain_scheme.edl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/1k5k/!svn/ver/19032/eBPM/branches/tailor/core/gui/edm/panels/gain_scheme.edl
+END
+signal_proc_aps.edl
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/1k5k/!svn/ver/19032/eBPM/branches/tailor/core/gui/edm/panels/signal_proc_aps.edl
+END
+sr_settings.edl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/1k5k/!svn/ver/19032/eBPM/branches/tailor/core/gui/edm/panels/sr_settings.edl
+END
+sr.png
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/1k5k/!svn/ver/19032/eBPM/branches/tailor/core/gui/edm/panels/sr.png
+END
+set_power_plot.edl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/1k5k/!svn/ver/19032/eBPM/branches/tailor/core/gui/edm/panels/set_power_plot.edl
+END
+set_power.edl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/1k5k/!svn/ver/19032/eBPM/branches/tailor/core/gui/edm/panels/set_power.edl
+END
+configuration.edl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/1k5k/!svn/ver/19032/eBPM/branches/tailor/core/gui/edm/panels/configuration.edl
+END
+signal_processing.edl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/1k5k/!svn/ver/19032/eBPM/branches/tailor/core/gui/edm/panels/signal_processing.edl
+END
