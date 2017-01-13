@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string/>
   </property>
+  <property name="Title" stdset="0">
+   <string>$(DEVICE)</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="caCircularGauge" name="fansaverage">
     <property name="geometry">
@@ -96,7 +99,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
       <stylestrategy>PreferDefault</stylestrategy>
      </font>
     </property>

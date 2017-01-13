@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string/>
   </property>
+  <property name="Title" stdset="0">
+   <string>$(BPM)</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="Line" name="line">
     <property name="geometry">

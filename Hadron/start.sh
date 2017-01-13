@@ -1,19 +1,10 @@
 #!/bin/bash
 
-[ $# -lt 1 ] && {
-    echo "Usage: $0 IOCname $1 IPaddress"
-    exit 255
-}
-
-DEVICE=$1
-IP=$2
-
 # Allow large waveform readout
 export EPICS_CA_MAX_ARRAY_BYTES=5000000
 
 # Tell EPICS clients where to look for the IOCs
-export EPICS_CA_ADDR_LIST=${IP}
+export EPICS_CA_ADDR_LIST="134.94.210.152 134.94.210.153 134.94.210.154 134.94.210.155 134.94.210.156 134.94.210.157 134.94.210.158 134.94.210.159"
 
-# Call caQtDM, specify IOC name and main window to open
-#/home/libera/epics/caqtdm-3.9.4/caQtDM_Binaries/caQtDM -macro "DEVICE=${DEVICE}" main.ui
-caQtDM -macro "DEVICE=${DEVICE}" main.ui
+# Call caQtDM
+/home/libera/epics/caqtdm-3.9.4/caQtDM_Binaries/caQtDM -macro "DEVICE1=libera01,DEVICE2=libera02,DEVICE3=libera03,DEVICE4=libera04,DEVICE5=libera05,DEVICE6=libera06,DEVICE7=libera07,DEVICE8=libera08,DEVICE9=libera09,DEVICE10=libera10" selection.ui

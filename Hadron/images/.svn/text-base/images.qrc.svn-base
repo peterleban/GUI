@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>sr.png</file>
+    <file>fan.png</file>
+  </qresource>
+</RCC>

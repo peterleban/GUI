@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>524</width>
+    <width>527</width>
     <height>147</height>
    </rect>
   </property>
@@ -24,6 +24,12 @@
   </property>
   <property name="unifiedTitleAndToolBarOnMac">
    <bool>true</bool>
+  </property>
+  <property name="$(DEVICE)" stdset="0">
+   <string>$(DEVICE)</string>
+  </property>
+  <property name="Title" stdset="0">
+   <string>$(DEVICE)</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="caRelatedDisplay" name="carelateddisplay">
@@ -302,9 +308,7 @@
    <header>caLed</header>
   </customwidget>
  </customwidgets>
- <resources>
-  <include location="images/images.qrc"/>
- </resources>
+ <resources/>
  <connections/>
  <designerdata>
   <property name="gridDeltaX">

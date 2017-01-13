@@ -14,7 +14,7 @@
    <string>FFT</string>
   </property>
   <property name="Title" stdset="0">
-   <string/>
+   <string>$(BPM)</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="Line" name="line">

@@ -14,7 +14,7 @@
    <string/>
   </property>
   <property name="Title" stdset="0">
-   <string>main &gt;&gt; $(BPM)</string>
+   <string>$(BPM)</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="caCartesianPlot" name="tbtddcsynth_x">

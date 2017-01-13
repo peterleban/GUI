@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string/>
   </property>
+  <property name="Text" stdset="0">
+   <string>$(DEVICE)</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="caWaveTable" name="cawavetable">
     <property name="geometry">

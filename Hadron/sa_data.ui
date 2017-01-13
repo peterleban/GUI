@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string/>
   </property>
+  <property name="Title" stdset="0">
+   <string>$(BPM)</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="caStripPlot" name="castripplot_2">
     <property name="geometry">
@@ -46,6 +49,9 @@
     </property>
     <property name="period">
      <double>10.000000000000000</double>
+    </property>
+    <property name="YAxisScaling" stdset="0">
+     <enum>caStripPlot::autoScale</enum>
     </property>
     <property name="YaxisLimitsMax_1">
      <double>1000000.000000000000000</double>
@@ -87,6 +93,9 @@
     <property name="YaxisEnabled">
      <bool>true</bool>
     </property>
+    <property name="LegendEnabled">
+     <bool>false</bool>
+    </property>
    </widget>
    <widget class="caStripPlot" name="castripplot">
     <property name="geometry">
@@ -117,6 +126,9 @@
     </property>
     <property name="period">
      <double>10.000000000000000</double>
+    </property>
+    <property name="YAxisScaling" stdset="0">
+     <enum>caStripPlot::autoScale</enum>
     </property>
     <property name="YaxisLimitsMax_1">
      <double>1000000.000000000000000</double>
@@ -157,6 +169,9 @@
     </property>
     <property name="YaxisEnabled">
      <bool>true</bool>
+    </property>
+    <property name="LegendEnabled">
+     <bool>false</bool>
     </property>
    </widget>
    <widget class="caMenu" name="tbtddcsynth_scan">

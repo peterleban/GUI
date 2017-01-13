@@ -14,7 +14,7 @@
    <string>FFT</string>
   </property>
   <property name="Title" stdset="0">
-   <string>FFT on: $(BPM)</string>
+   <string>$(BPM)</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="Line" name="line">
@@ -367,23 +367,28 @@
  <customwidgets>
   <customwidget>
    <class>QwtPlot</class>
-   <extends></extends>
+   <extends>QFrame</extends>
    <header>qwt_plot.h</header>
   </customwidget>
   <customwidget>
    <class>caMenu</class>
-   <extends></extends>
+   <extends>QComboBox</extends>
    <header>caMenu</header>
   </customwidget>
   <customwidget>
    <class>caTextEntry</class>
-   <extends></extends>
+   <extends>caLineEdit</extends>
    <header>caTextEntry</header>
   </customwidget>
   <customwidget>
    <class>caMessageButton</class>
-   <extends></extends>
+   <extends>QPushButton</extends>
    <header>caMessageButton</header>
+  </customwidget>
+  <customwidget>
+   <class>caLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>caLineEdit</header>
   </customwidget>
   <customwidget>
    <class>caCartesianPlot</class>

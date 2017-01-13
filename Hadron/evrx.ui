@@ -16,6 +16,9 @@
   <property name="styleSheet">
    <string notr="true"/>
   </property>
+  <property name="Title" stdset="0">
+   <string>$(DEVICE):evrx</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QTabWidget" name="MainSignalWindowTab_4">
     <property name="enabled">

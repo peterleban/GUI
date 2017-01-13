@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string/>
   </property>
+  <property name="Title" stdset="0">
+   <string>$(MODULE)</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="caLineEdit" name="calineedit">
     <property name="geometry">

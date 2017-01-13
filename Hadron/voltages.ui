@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string/>
   </property>
+  <property name="Title" stdset="0">
+   <string>$(MODULE)</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="caLineEdit" name="calineedit">
     <property name="geometry">
@@ -26,7 +29,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="channel" stdset="0">
@@ -45,7 +48,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="alignment">
@@ -86,7 +89,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="alignment">
@@ -108,7 +111,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="channel" stdset="0">
@@ -127,7 +130,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="channel" stdset="0">
@@ -146,7 +149,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="alignment">
@@ -168,7 +171,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="alignment">
@@ -190,7 +193,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="channel" stdset="0">
@@ -209,7 +212,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="channel" stdset="0">
@@ -228,7 +231,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="alignment">
@@ -250,7 +253,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="channel" stdset="0">
@@ -269,7 +272,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="alignment">
@@ -291,7 +294,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="channel" stdset="0">
@@ -310,7 +313,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="alignment">
@@ -332,7 +335,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="channel" stdset="0">
@@ -351,7 +354,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="alignment">
@@ -373,7 +376,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="channel" stdset="0">
@@ -392,7 +395,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="alignment">
@@ -414,7 +417,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="channel" stdset="0">
@@ -433,7 +436,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="alignment">
@@ -455,7 +458,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="channel" stdset="0">
@@ -474,7 +477,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="alignment">
@@ -496,7 +499,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="channel" stdset="0">
@@ -515,7 +518,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="alignment">
@@ -537,7 +540,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="alignment">
@@ -559,7 +562,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="alignment">
@@ -581,7 +584,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="alignment">
@@ -603,7 +606,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="alignment">
@@ -625,7 +628,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="alignment">
@@ -647,7 +650,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="alignment">
@@ -669,7 +672,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="alignment">
@@ -691,7 +694,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="alignment">
@@ -713,7 +716,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="alignment">
@@ -735,7 +738,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="alignment">
@@ -757,7 +760,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="alignment">
@@ -779,7 +782,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="alignment">
