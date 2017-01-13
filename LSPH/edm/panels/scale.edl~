@@ -1,0 +1,613 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 813
+y 548
+w 330
+h 360
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-18.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+title "#$(BOARD) AMPLITUDE SCALLING"
+showGrid
+snapToGrid
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 330
+h 40
+lineColor index 14
+fill
+fillColor index 9
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 30
+y 10
+w 314
+h 18
+font "helvetica-bold-r-14.0"
+fgColor index 89
+bgColor index 0
+useDisplayBg
+value {
+  "Amplitude scalling for processor #$(BOARD)"
+}
+autoSize
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 70
+y 50
+w 200
+h 20
+fgColor index 14
+bgColor index 0
+2ndBgColor index 14
+topShadowColor index 0
+botShadowColor index 14
+increment 0.001
+controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:ka:f1"
+controlLabel "Rough"
+font "helvetica-bold-r-12.0"
+precision 100
+scaleMin 0.1
+scaleMax 1
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 280
+y 50
+w 50
+h 19
+controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:ka:f1"
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+editable
+autoHeight
+motifWidget
+precision 3
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 50
+w 40
+h 15
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Ch A f1"
+}
+autoSize
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 70
+y 90
+w 200
+h 20
+fgColor index 14
+bgColor index 0
+2ndBgColor index 14
+topShadowColor index 0
+botShadowColor index 14
+increment 0.001
+controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:ka:f2"
+controlLabel "Rough"
+font "helvetica-bold-r-12.0"
+scaleMin 0.1
+scaleMax 1
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 280
+y 90
+w 50
+h 19
+controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:ka:f2"
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+editable
+autoHeight
+motifWidget
+precision 3
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 90
+w 40
+h 15
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Ch A f2						"
+}
+autoSize
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 70
+y 130
+w 200
+h 20
+fgColor index 14
+bgColor index 0
+2ndBgColor index 14
+topShadowColor index 0
+botShadowColor index 14
+increment 0.001
+controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:kb:f1"
+controlLabel "Rough"
+font "helvetica-bold-r-12.0"
+scaleMin 0.1
+scaleMax 1
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 280
+y 130
+w 50
+h 19
+controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:kb:f1"
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+editable
+autoHeight
+motifWidget
+precision 3
+nullColor index 0
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 130
+w 40
+h 15
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Ch B f1"
+}
+autoSize
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 70
+y 170
+w 200
+h 20
+fgColor index 14
+bgColor index 0
+2ndBgColor index 14
+topShadowColor index 0
+botShadowColor index 14
+increment 0.001
+controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:kb:f2"
+controlLabel "Rough"
+font "helvetica-bold-r-12.0"
+scaleMin 0.1
+scaleMax 1
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 280
+y 170
+w 50
+h 19
+controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:kb:f2"
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+editable
+autoHeight
+motifWidget
+precision 3
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 170
+w 40
+h 15
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Ch B f2"
+}
+autoSize
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 70
+y 210
+w 200
+h 20
+fgColor index 14
+bgColor index 0
+2ndBgColor index 14
+topShadowColor index 0
+botShadowColor index 14
+increment 0.001
+controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:kc:f1"
+controlLabel "Rough"
+font "helvetica-bold-r-12.0"
+precision 100
+scaleMin 0.1
+scaleMax 1
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 280
+y 210
+w 50
+h 19
+controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:kc:f1"
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+editable
+autoHeight
+motifWidget
+precision 3
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 210
+w 41
+h 15
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Ch C f1"
+}
+autoSize
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 70
+y 250
+w 200
+h 20
+fgColor index 14
+bgColor index 0
+2ndBgColor index 14
+topShadowColor index 0
+botShadowColor index 14
+increment 0.001
+controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:kc:f2"
+controlLabel "Rough"
+font "helvetica-bold-r-12.0"
+scaleMin 0.1
+scaleMax 1
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 280
+y 250
+w 50
+h 19
+controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:kc:f2"
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+editable
+autoHeight
+motifWidget
+precision 3
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 250
+w 41
+h 15
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Ch C f2						"
+}
+autoSize
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 70
+y 290
+w 200
+h 20
+fgColor index 14
+bgColor index 0
+2ndBgColor index 14
+topShadowColor index 0
+botShadowColor index 14
+increment 0.001
+controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:kd:f1"
+controlLabel "Rough"
+font "helvetica-bold-r-12.0"
+scaleMin 0.1
+scaleMax 1
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 280
+y 290
+w 50
+h 19
+controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:kd:f1"
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+editable
+autoHeight
+motifWidget
+precision 3
+nullColor index 0
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 290
+w 41
+h 15
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Ch D f1"
+}
+autoSize
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 70
+y 330
+w 200
+h 20
+fgColor index 14
+bgColor index 0
+2ndBgColor index 14
+topShadowColor index 0
+botShadowColor index 14
+increment 0.001
+controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:kd:f2"
+controlLabel "Rough"
+font "helvetica-bold-r-12.0"
+scaleMin 0.1
+scaleMax 1
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 280
+y 330
+w 50
+h 19
+controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:kd:f2"
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+editable
+autoHeight
+motifWidget
+precision 3
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 330
+w 41
+h 15
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Ch D f2"
+}
+autoSize
+endObjectProperties
+
