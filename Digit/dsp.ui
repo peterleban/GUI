@@ -52,7 +52,7 @@
       <pointsize>9</pointsize>
       <weight>75</weight>
       <bold>true</bold>
-      <kerning>false</kerning>
+      <kerning>true</kerning>
      </font>
     </property>
     <property name="styleSheet">
@@ -160,7 +160,7 @@
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>10</y>
+          <y>15</y>
           <width>91</width>
           <height>20</height>
          </rect>
@@ -168,7 +168,7 @@
         <property name="font">
          <font>
           <family>DejaVu Sans</family>
-          <pointsize>10</pointsize>
+          <pointsize>9</pointsize>
          </font>
         </property>
         <property name="text">
@@ -179,10 +179,16 @@
         <property name="geometry">
          <rect>
           <x>100</x>
-          <y>10</y>
+          <y>15</y>
           <width>71</width>
           <height>20</height>
          </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
         </property>
         <property name="alignment">
          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -213,7 +219,7 @@
         <property name="font">
          <font>
           <family>DejaVu Sans</family>
-          <pointsize>10</pointsize>
+          <pointsize>9</pointsize>
          </font>
         </property>
         <property name="styleSheet">
@@ -240,7 +246,7 @@ color: rgb(0, 0, 0);</string>
         <property name="geometry">
          <rect>
           <x>310</x>
-          <y>10</y>
+          <y>15</y>
           <width>41</width>
           <height>20</height>
          </rect>
@@ -248,7 +254,7 @@ color: rgb(0, 0, 0);</string>
         <property name="font">
          <font>
           <family>DejaVu Sans</family>
-          <pointsize>10</pointsize>
+          <pointsize>9</pointsize>
          </font>
         </property>
         <property name="text">
@@ -417,8 +423,8 @@ color: rgb(0, 0, 0);</string>
     </property>
     <property name="minimumSize">
      <size>
-      <width>300</width>
-      <height>400</height>
+      <width>0</width>
+      <height>0</height>
      </size>
     </property>
     <property name="font">
@@ -479,7 +485,7 @@ color: rgb(0, 0, 0);</string>
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
-         <pointsize>10</pointsize>
+         <pointsize>9</pointsize>
         </font>
        </property>
        <property name="frame">
@@ -504,6 +510,7 @@ color: rgb(0, 0, 0);</string>
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
+         <pointsize>9</pointsize>
         </font>
        </property>
        <property name="text">
@@ -518,6 +525,12 @@ color: rgb(0, 0, 0);</string>
          <width>100</width>
          <height>26</height>
         </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
        </property>
        <property name="font">
         <font>
@@ -553,6 +566,7 @@ color: rgb(0, 0, 0);</string>
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
+         <pointsize>9</pointsize>
         </font>
        </property>
        <property name="text">
@@ -589,10 +603,16 @@ color: rgb(0, 0, 0);</string>
          <height>16</height>
         </rect>
        </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
-         <pointsize>10</pointsize>
+         <pointsize>9</pointsize>
          <stylestrategy>PreferDefault</stylestrategy>
         </font>
        </property>
@@ -630,6 +650,12 @@ color: rgb(0, 0, 0);</string>
          <width>100</width>
          <height>20</height>
         </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
        </property>
        <property name="font">
         <font>
@@ -673,6 +699,7 @@ color: rgb(0, 0, 0);</string>
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
+         <pointsize>9</pointsize>
         </font>
        </property>
        <property name="text">
@@ -691,7 +718,7 @@ color: rgb(0, 0, 0);</string>
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
-         <pointsize>10</pointsize>
+         <pointsize>9</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -726,6 +753,7 @@ color: rgb(0, 0, 0);</string>
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
+         <pointsize>9</pointsize>
         </font>
        </property>
        <property name="text">
@@ -744,7 +772,7 @@ color: rgb(0, 0, 0);</string>
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
-         <pointsize>10</pointsize>
+         <pointsize>9</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -779,7 +807,7 @@ color: rgb(0, 0, 0);</string>
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
-         <pointsize>10</pointsize>
+         <pointsize>9</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -814,7 +842,7 @@ color: rgb(0, 0, 0);</string>
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
-         <pointsize>10</pointsize>
+         <pointsize>9</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -849,7 +877,7 @@ color: rgb(0, 0, 0);</string>
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
-         <pointsize>10</pointsize>
+         <pointsize>9</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -989,6 +1017,7 @@ color: rgb(0, 0, 0);</string>
    <class>caCartesianPlot</class>
    <extends>QwtPlot</extends>
    <header>caCartesianPlot</header>
+   <container>1</container>
   </customwidget>
  </customwidgets>
  <resources/>
