@@ -23,15 +23,18 @@
 
 GUI locations: /home/libera/GUI
 
-    \BLM       .............. Libera BLM (beam loss monitor)
-    \Digit     .............. Libera Digit (digitizer)
-    \Hadron    .............. Libera Hadron
-    \LB+GUI    .............. Libera Brilliance+
-    \LLRF_ELI  .............. Libera LLRF
-    \Photon    .............. Libera Photon (2016)
-    \SparkELHL .............. Libera Spark EL / HL
-    \SparkR    .............. Libera Spark ERXR
-    \SparkSCPI .............. Libera Spark ER/ERXR (<2016)
+    \BLM         .............. Libera BLM (beam loss monitor)
+    \CavityBPM   .............. Libera Cavity BPM
+    \Digit       .............. Libera Digit (digitizer)
+    \Hadron      .............. Libera Hadron
+    \LB+GUI      .............. Libera Brilliance+
+    \LLRF_ELI    .............. Libera LLRF
+    \LSPE        .............. Libera Single Pass E
+    \LSPH        .............. Libera Single Pass H
+    \Photon      .............. Libera Photon (2016)
+    \Spark_ELHL  .............. Libera Spark EL / HL
+    \SparkR      .............. Libera Spark ERXR
+    \SparkSCPI   .............. Libera Spark ER/ERXR (<2016)
 
 The GUIs are taken from the online GIT repository:
 
@@ -49,12 +52,7 @@ Specify the IOC name and the IP address.
 
   ./start.sh <IOCname> <IPaddress>
 
-There are some GUIs built for the EDM environment. Modify
-the start.sh script for correct environment variables.
-
-*******************************************************
-  The EDM environment is not installed in this image!
-*******************************************************
+There are some GUIs built for the EDM environment as well.
 
 -----------------------------------------------------------
 Feel free to modify the .uis!
