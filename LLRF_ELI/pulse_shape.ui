@@ -173,9 +173,9 @@
     <widget class="caMessageButton" name="camessagebutton">
      <property name="geometry">
       <rect>
-       <x>195</x>
+       <x>135</x>
        <y>575</y>
-       <width>100</width>
+       <width>81</width>
        <height>23</height>
       </rect>
      </property>
@@ -12636,6 +12636,25 @@
       </property>
      </item>
     </widget>
+    <widget class="caRelatedDisplay" name="carelateddisplay">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>575</y>
+       <width>86</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="labels">
+      <string notr="true">Set script</string>
+     </property>
+     <property name="files">
+      <string notr="true">pulse_shape_mask</string>
+     </property>
+     <property name="args">
+      <string notr="true">MODULE=$(MODULE)</string>
+     </property>
+    </widget>
    </widget>
    <widget class="caCartesianPlot" name="cacartesianplot">
     <property name="geometry">
@@ -12766,6 +12785,11 @@
    <class>QwtPlot</class>
    <extends>QFrame</extends>
    <header>qwt_plot.h</header>
+  </customwidget>
+  <customwidget>
+   <class>caRelatedDisplay</class>
+   <extends>QWidget</extends>
+   <header>caRelatedDisplay</header>
   </customwidget>
   <customwidget>
    <class>caMessageButton</class>

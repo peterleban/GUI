@@ -33,7 +33,7 @@
      <string notr="true">./set_adc_mask.bat</string>
     </property>
     <property name="scriptParameter" stdset="0">
-     <string notr="true">$(BPM)</string>
+     <string notr="true">$(BPM):tbt:adc_mask</string>
     </property>
    </widget>
    <widget class="QTextBrowser" name="textBrowser">

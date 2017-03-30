@@ -1,0 +1,477 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 679
+y 78
+w 600
+h 580
+font "helvetica-bold-r-12.0"
+ctlFont "helvetica-bold-r-12.0"
+btnFont "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+title "PAR cycle on $(HOSTNAME)"
+showGrid
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 255
+w 580
+h 30
+lineColor index 14
+fill
+fillColor index 1
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 8
+release 0
+# Geometry
+x 10
+y 10
+w 580
+h 240
+# Appearance
+autoScaleBothDirections
+graphTitle "Amplitudes and SUM"
+xLabel "samples"
+yLabel "[a.u.]"
+fgColor index 14
+bgColor index 1
+gridColor index 9
+font "helvetica-medium-r-14.0"
+# Operating Modes
+plotMode "plotLastNPts"
+nPts 256
+traceCtlPv "LOC\\$(BPM)_$(DD)_traces=i:0"
+resetPv "LOC\\$(BPM)_$(DD)_reset=i:0"
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMin 0
+xMax 10000
+xLabelIntervals 4
+xMajorsPerLabel 1
+xMinorsPerMajor 8
+xShowLabelGrid
+xShowMajorGrid
+xShowMinorGrid
+xUserSpecScaleDiv 1
+xAxisSmoothing 1
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+yLabelIntervals 4
+yMajorsPerLabel 1
+yMinorsPerMajor 4
+yShowLabelGrid
+yShowMajorGrid
+yShowMinorGrid
+yUserSpecScaleDiv 1
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 5
+yPv {
+  0 "EPICS\\$(HOSTNAME):signals:sp.va"
+  1 "EPICS\\$(HOSTNAME):signals:sp.vb"
+  2 "EPICS\\$(HOSTNAME):signals:sp.vc"
+  3 "EPICS\\$(HOSTNAME):signals:sp.vd"
+  4 "EPICS\\$(HOSTNAME):signals:sp.sum"
+}
+lineThickness {
+  0 3
+  1 3
+  2 3
+  3 3
+  4 3
+}
+ySigned {
+  0 1
+  1 1
+  2 1
+  3 1
+  4 1
+}
+plotColor {
+  0 index 16
+  1 index 83
+  2 index 46
+  3 index 43
+  4 index 14
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 125
+y 260
+w 70
+h 20
+fgColor index 14
+onColor index 6
+offColor index 16
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\$(BPM)_$(DD)_traces=i:0"
+indicatorPv "LOC\\$(BPM)_$(DD)_traces=i:0"
+onLabel "VA"
+offLabel "VA"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 195
+y 260
+w 70
+h 20
+fgColor index 14
+onColor index 6
+offColor index 83
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\$(BPM)_$(DD)_traces=i:0"
+indicatorPv "LOC\\$(BPM)_$(DD)_traces=i:0"
+onLabel "VB"
+offLabel "VB"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 1
+readBitPos 1
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 265
+y 260
+w 70
+h 20
+fgColor index 14
+onColor index 6
+offColor index 46
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\$(BPM)_$(DD)_traces=i:0"
+indicatorPv "LOC\\$(BPM)_$(DD)_traces=i:0"
+onLabel "VC"
+offLabel "VC"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 2
+readBitPos 2
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 335
+y 260
+w 70
+h 20
+fgColor index 14
+onColor index 6
+offColor index 43
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\$(BPM)_$(DD)_traces=i:0"
+indicatorPv "LOC\\$(BPM)_$(DD)_traces=i:0"
+onLabel "VD"
+offLabel "VD"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 3
+readBitPos 3
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 405
+y 260
+w 70
+h 20
+fgColor index 0
+onColor index 6
+offColor index 14
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\$(BPM)_$(DD)_traces=i:0"
+indicatorPv "LOC\\$(BPM)_$(DD)_traces=i:0"
+onLabel "SUM"
+offLabel "SUM"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 4
+readBitPos 4
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 260
+w 115
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Select to show:"
+}
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 8
+release 0
+# Geometry
+x 10
+y 295
+w 580
+h 240
+# Appearance
+autoScaleBothDirections
+graphTitle "Beam position"
+xLabel "samples"
+yLabel "position [nm]"
+fgColor index 14
+bgColor index 1
+gridColor index 9
+font "helvetica-medium-r-14.0"
+# Operating Modes
+plotMode "plotLastNPts"
+nPts 256
+traceCtlPv "LOC\\$(BPM)_$(DD)_traces=i:0"
+resetPv "LOC\\$(BPM)_$(DD)_reset=i:0"
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMin 0
+xMax 10000
+xLabelIntervals 4
+xMajorsPerLabel 1
+xMinorsPerMajor 8
+xShowLabelGrid
+xShowMinorGrid
+xUserSpecScaleDiv 1
+xAxisSmoothing 1
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+yLabelIntervals 4
+yMajorsPerLabel 1
+yMinorsPerMajor 4
+yShowLabelGrid
+yShowMinorGrid
+yUserSpecScaleDiv 1
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 3
+yPv {
+  0 "EPICS\\$(HOSTNAME):signals:sp:history.x"
+  1 "EPICS\\$(HOSTNAME):signals:sp:history.y"
+  2 "EPICS\\$(HOSTNAME):signals:sp:history.q"
+}
+lineThickness {
+  0 3
+  1 3
+  2 3
+}
+ySigned {
+  0 1
+  1 1
+  2 1
+}
+plotColor {
+  0 index 26
+  1 index 21
+  2 index 41
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 540
+w 580
+h 30
+lineColor index 14
+fill
+fillColor index 1
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 125
+y 545
+w 85
+h 20
+fgColor index 14
+onColor index 6
+offColor index 30
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\$(BPM)_$(DD)_traces=i:0"
+indicatorPv "LOC\\$(BPM)_$(DD)_traces=i:0"
+onLabel "Horizontal ON"
+offLabel "Hozirontal OFF"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 210
+y 545
+w 85
+h 20
+fgColor index 14
+onColor index 6
+offColor index 21
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\$(BPM)_$(DD)_traces=i:0"
+indicatorPv "LOC\\$(BPM)_$(DD)_traces=i:0"
+onLabel "Vertical ON"
+offLabel "Vertical OFF"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 1
+readBitPos 1
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 295
+y 545
+w 80
+h 20
+fgColor index 14
+onColor index 6
+offColor index 41
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\$(BPM)_$(DD)_traces=i:0"
+indicatorPv "LOC\\$(BPM)_$(DD)_traces=i:0"
+onLabel "Q ON"
+offLabel "Q OFF"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 2
+readBitPos 2
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 545
+w 115
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Select to show:"
+}
+endObjectProperties
+

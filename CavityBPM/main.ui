@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>270</width>
-    <height>601</height>
+    <width>525</width>
+    <height>485</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -26,7 +26,7 @@
       <x>5</x>
       <y>120</y>
       <width>256</width>
-      <height>216</height>
+      <height>111</height>
      </rect>
     </property>
     <property name="font">
@@ -59,229 +59,11 @@
     <property name="backgroundMode">
      <enum>caFrame::Filled</enum>
     </property>
-    <widget class="Line" name="line_14">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>40</y>
-       <width>236</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_41">
-     <property name="geometry">
-      <rect>
-       <x>110</x>
-       <y>105</y>
-       <width>36</width>
-       <height>26</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>Delay
-[us]</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-     </property>
-    </widget>
-    <widget class="caCalc" name="cacalc">
-     <property name="geometry">
-      <rect>
-       <x>160</x>
-       <y>105</y>
-       <width>86</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(236, 236, 236);</string>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="variable">
-      <string notr="true">trigdelay</string>
-     </property>
-     <property name="calc">
-      <string notr="true">(A*1000000)/B</string>
-     </property>
-     <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):triggers:t2:delay</string>
-     </property>
-     <property name="channelB">
-      <string notr="true">$(DEVICE):clocks:adc_frequency</string>
-     </property>
-     <property name="channelC">
-      <string notr="true"/>
-     </property>
-     <property name="precision" stdset="0">
-      <number>2</number>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_24">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>20</y>
-       <width>146</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>Sampling frequency [MHz]</string>
-     </property>
-    </widget>
-    <widget class="caCalc" name="cacalc_2">
-     <property name="geometry">
-      <rect>
-       <x>160</x>
-       <y>20</y>
-       <width>86</width>
-       <height>18</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);</string>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="variable">
-      <string notr="true">samplingfreq</string>
-     </property>
-     <property name="calc">
-      <string notr="true">A/1000000</string>
-     </property>
-     <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):clocks:adc_frequency</string>
-     </property>
-     <property name="channelB">
-      <string notr="true"/>
-     </property>
-     <property name="channelC">
-      <string notr="true"/>
-     </property>
-     <property name="precision" stdset="0">
-      <number>6</number>
-     </property>
-    </widget>
-    <widget class="caTextEntry" name="catextentry_13">
-     <property name="geometry">
-      <rect>
-       <x>160</x>
-       <y>80</y>
-       <width>86</width>
-       <height>22</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Monospace</family>
-       <pointsize>10</pointsize>
-      </font>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-     </property>
-     <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):triggers:t2:delay</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_43">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>80</y>
-       <width>146</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>Trigger (T2) delay</string>
-     </property>
-    </widget>
-    <widget class="caMenu" name="camenu_3">
-     <property name="geometry">
-      <rect>
-       <x>160</x>
-       <y>55</y>
-       <width>86</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(0, 0, 0);</string>
-     </property>
-     <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):triggers:t2:source</string>
-     </property>
-     <property name="colorMode">
-      <enum>caMenu::Default</enum>
-     </property>
-     <property name="background">
-      <color>
-       <red>122</red>
-       <green>122</green>
-       <blue>122</blue>
-      </color>
-     </property>
-     <property name="labelDisplay">
-      <bool>false</bool>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_30">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>55</y>
-       <width>146</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>Trigger (T2) source</string>
-     </property>
-    </widget>
     <widget class="caLed" name="caled">
      <property name="geometry">
       <rect>
-       <x>65</x>
-       <y>150</y>
+       <x>60</x>
+       <y>15</y>
        <width>30</width>
        <height>30</height>
       </rect>
@@ -290,8 +72,8 @@
     <widget class="QLabel" name="label_42">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>155</y>
+       <x>5</x>
+       <y>20</y>
        <width>51</width>
        <height>21</height>
       </rect>
@@ -311,8 +93,8 @@
     <widget class="caLed" name="caled_2">
      <property name="geometry">
       <rect>
-       <x>65</x>
-       <y>180</y>
+       <x>60</x>
+       <y>45</y>
        <width>30</width>
        <height>30</height>
       </rect>
@@ -321,8 +103,8 @@
     <widget class="QLabel" name="label_44">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>185</y>
+       <x>5</x>
+       <y>50</y>
        <width>51</width>
        <height>21</height>
       </rect>
@@ -342,8 +124,8 @@
     <widget class="caLabel" name="calabel">
      <property name="geometry">
       <rect>
-       <x>105</x>
-       <y>155</y>
+       <x>100</x>
+       <y>20</y>
        <width>91</width>
        <height>21</height>
       </rect>
@@ -365,8 +147,8 @@
     <widget class="caLabel" name="calabel_2">
      <property name="geometry">
       <rect>
-       <x>105</x>
-       <y>185</y>
+       <x>100</x>
+       <y>50</y>
        <width>91</width>
        <height>21</height>
       </rect>
@@ -388,8 +170,8 @@
     <widget class="caLabel" name="calabel_3">
      <property name="geometry">
       <rect>
-       <x>200</x>
-       <y>155</y>
+       <x>195</x>
+       <y>20</y>
        <width>51</width>
        <height>51</height>
       </rect>
@@ -412,22 +194,27 @@ ofsync!</string>
       </color>
      </property>
     </widget>
-    <widget class="Line" name="line_15">
+    <widget class="caMessageButton" name="camessagebutton">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>130</y>
-       <width>236</width>
-       <height>16</height>
+       <x>154</x>
+       <y>80</y>
+       <width>91</width>
+       <height>21</height>
       </rect>
      </property>
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
+     <property name="fontScaleMode">
+      <enum>EPushButton::WidthAndHeight</enum>
      </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+     <property name="label">
+      <string notr="true">Clear latched</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>127</blue>
+      </color>
      </property>
     </widget>
    </widget>
@@ -525,7 +312,7 @@ ofsync!</string>
     <property name="geometry">
      <rect>
       <x>5</x>
-      <y>450</y>
+      <y>345</y>
       <width>256</width>
       <height>136</height>
      </rect>
@@ -563,10 +350,10 @@ ofsync!</string>
     <widget class="caRelatedDisplay" name="TBT_buffer_11">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>40</y>
-       <width>236</width>
-       <height>51</height>
+       <x>5</x>
+       <y>20</y>
+       <width>171</width>
+       <height>21</height>
       </rect>
      </property>
      <property name="label">
@@ -589,14 +376,14 @@ ofsync!</string>
       <string notr="true">DEVICE=$(DEVICE), CH=X, UNITS=ADC_counts;DEVICE=$(DEVICE), CH=Y, UNITS=ADC_counts;DEVICE=$(DEVICE), CH=I, UNITS=ADC_counts;DEVICE=$(DEVICE), CH=REF, UNITS=ADC_counts</string>
      </property>
      <property name="stackingMode" stdset="0">
-      <enum>caRowColMenu::RowColumn</enum>
+      <enum>caRowColMenu::Menu</enum>
      </property>
     </widget>
     <widget class="caRelatedDisplay" name="buf_acq_settings">
      <property name="geometry">
       <rect>
-       <x>70</x>
-       <y>105</y>
+       <x>5</x>
+       <y>110</y>
        <width>116</width>
        <height>21</height>
       </rect>
@@ -618,25 +405,36 @@ ofsync!</string>
       <string notr="true">DEVICE=$(DEVICE)</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_45">
+    <widget class="caRelatedDisplay" name="TBT_buffer_12">
      <property name="geometry">
       <rect>
-       <x>70</x>
-       <y>15</y>
-       <width>116</width>
-       <height>20</height>
+       <x>5</x>
+       <y>45</y>
+       <width>171</width>
+       <height>21</height>
       </rect>
      </property>
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
+     <property name="label">
+      <string notr="true">ADC DATA deconv</string>
      </property>
-     <property name="text">
-      <string>Raw ADC</string>
+     <property name="background">
+      <color>
+       <red>255</red>
+       <green>170</green>
+       <blue>127</blue>
+      </color>
      </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
+     <property name="labels">
+      <string notr="true">X;Y;I;REF</string>
+     </property>
+     <property name="files">
+      <string notr="true">adc_channel_deconv;adc_channel_deconv;adc_channel_deconv</string>
+     </property>
+     <property name="args">
+      <string notr="true">DEVICE=$(DEVICE), CH=X, UNITS=ADC_counts;DEVICE=$(DEVICE), CH=Y, UNITS=ADC_counts;DEVICE=$(DEVICE), CH=I, UNITS=ADC_counts</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Menu</enum>
      </property>
     </widget>
    </widget>
@@ -644,7 +442,7 @@ ofsync!</string>
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>440</y>
+      <y>335</y>
       <width>81</width>
       <height>21</height>
      </rect>
@@ -670,7 +468,7 @@ ofsync!</string>
     <property name="geometry">
      <rect>
       <x>5</x>
-      <y>350</y>
+      <y>245</y>
       <width>256</width>
       <height>86</height>
      </rect>
@@ -729,7 +527,7 @@ ofsync!</string>
     <widget class="caSpinbox" name="caspinbox">
      <property name="geometry">
       <rect>
-       <x>15</x>
+       <x>45</x>
        <y>55</y>
        <width>45</width>
        <height>20</height>
@@ -745,7 +543,7 @@ ofsync!</string>
       <bool>false</bool>
      </property>
      <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):att:A</string>
+      <string notr="true">$(DEVICE):att:X</string>
      </property>
      <property name="background">
       <color>
@@ -773,7 +571,7 @@ ofsync!</string>
     <widget class="caSpinbox" name="caspinbox_2">
      <property name="geometry">
       <rect>
-       <x>75</x>
+       <x>105</x>
        <y>55</y>
        <width>46</width>
        <height>20</height>
@@ -789,7 +587,7 @@ ofsync!</string>
       <bool>false</bool>
      </property>
      <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):att:B</string>
+      <string notr="true">$(DEVICE):att:Y</string>
      </property>
      <property name="background">
       <color>
@@ -817,7 +615,7 @@ ofsync!</string>
     <widget class="caSpinbox" name="caspinbox_3">
      <property name="geometry">
       <rect>
-       <x>135</x>
+       <x>165</x>
        <y>55</y>
        <width>46</width>
        <height>20</height>
@@ -833,51 +631,7 @@ ofsync!</string>
       <bool>false</bool>
      </property>
      <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):att:C</string>
-     </property>
-     <property name="background">
-      <color>
-       <red>255</red>
-       <green>255</green>
-       <blue>127</blue>
-      </color>
-     </property>
-     <property name="precisionMode">
-      <enum>caSpinbox::User</enum>
-     </property>
-     <property name="fixedFormat">
-      <bool>true</bool>
-     </property>
-     <property name="limitsMode">
-      <enum>caSpinbox::User</enum>
-     </property>
-     <property name="maxValue">
-      <double>31.000000000000000</double>
-     </property>
-     <property name="minValue">
-      <double>0.000000000000000</double>
-     </property>
-    </widget>
-    <widget class="caSpinbox" name="caspinbox_4">
-     <property name="geometry">
-      <rect>
-       <x>195</x>
-       <y>55</y>
-       <width>45</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="integerDigits" stdset="0">
-      <number>2</number>
-     </property>
-     <property name="decimalDigits" stdset="0">
-      <number>0</number>
-     </property>
-     <property name="digitsFontScaleEnabled">
-      <bool>false</bool>
-     </property>
-     <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):att:D</string>
+      <string notr="true">$(DEVICE):att:I</string>
      </property>
      <property name="background">
       <color>
@@ -905,7 +659,7 @@ ofsync!</string>
     <widget class="QLabel" name="label_47">
      <property name="geometry">
       <rect>
-       <x>20</x>
+       <x>50</x>
        <y>34</y>
        <width>36</width>
        <height>16</height>
@@ -928,7 +682,7 @@ ofsync!</string>
     <widget class="QLabel" name="label_48">
      <property name="geometry">
       <rect>
-       <x>80</x>
+       <x>110</x>
        <y>35</y>
        <width>36</width>
        <height>16</height>
@@ -951,7 +705,7 @@ ofsync!</string>
     <widget class="QLabel" name="label_51">
      <property name="geometry">
       <rect>
-       <x>140</x>
+       <x>170</x>
        <y>35</y>
        <width>36</width>
        <height>16</height>
@@ -971,35 +725,12 @@ ofsync!</string>
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="label_52">
-     <property name="geometry">
-      <rect>
-       <x>200</x>
-       <y>35</y>
-       <width>36</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="text">
-      <string>REF</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
    </widget>
    <widget class="QLabel" name="label_34">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>340</y>
+      <y>235</y>
       <width>171</width>
       <height>21</height>
      </rect>
@@ -1021,14 +752,421 @@ ofsync!</string>
      <string>Analog signal processing</string>
     </property>
    </widget>
+   <widget class="caFrame" name="caframe_3">
+    <property name="geometry">
+     <rect>
+      <x>265</x>
+      <y>120</y>
+      <width>256</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(231, 231, 231);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="midLineWidth">
+     <number>1</number>
+    </property>
+    <property name="background">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="backgroundMode">
+     <enum>caFrame::Filled</enum>
+    </property>
+    <widget class="QLabel" name="label_43">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>20</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Trigger delay</string>
+     </property>
+    </widget>
+    <widget class="caTextEntry" name="catextentry_13">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>20</y>
+       <width>56</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Monospace</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(DEVICE):dsp:trigger_delay</string>
+     </property>
+    </widget>
+    <widget class="caCalc" name="cacalc">
+     <property name="geometry">
+      <rect>
+       <x>195</x>
+       <y>20</y>
+       <width>56</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(236, 236, 236);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="fontScaleMode">
+      <enum>ESimpleLabel::WidthAndHeight</enum>
+     </property>
+     <property name="variable">
+      <string notr="true">trigdelay</string>
+     </property>
+     <property name="calc">
+      <string notr="true">A*2/1000</string>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(DEVICE):dsp:trigger_delay</string>
+     </property>
+     <property name="channelB">
+      <string notr="true"/>
+     </property>
+     <property name="channelC">
+      <string notr="true"/>
+     </property>
+     <property name="precision" stdset="0">
+      <number>2</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_41">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>20</y>
+       <width>36</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Delay
+[us]</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="caMessageButton" name="camessagebutton_2">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>50</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Reset trigger counter</string>
+     </property>
+     <property name="fontScaleMode">
+      <enum>EPushButton::WidthAndHeight</enum>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(DEVICE):dsp:reset_trigger_counter</string>
+     </property>
+     <property name="label">
+      <string notr="true">Clear latched</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>127</blue>
+      </color>
+     </property>
+    </widget>
+    <widget class="caTextEntry" name="catextentry_14">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>80</y>
+       <width>56</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Monospace</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(DEVICE):dsp:offset</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_45">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>80</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>DSP offset</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_52">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>120</y>
+       <width>141</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ADC samples per bunch</string>
+     </property>
+    </widget>
+    <widget class="caTextEntry" name="catextentry_15">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>120</y>
+       <width>56</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Monospace</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(DEVICE):dsp:samples_per_bunch</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_53">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>145</y>
+       <width>141</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Number of bunches</string>
+     </property>
+    </widget>
+    <widget class="caTextEntry" name="catextentry_16">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>145</y>
+       <width>56</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Monospace</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(DEVICE):dsp:num_of_bunches</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_54">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>170</y>
+       <width>141</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Data averaging</string>
+     </property>
+    </widget>
+    <widget class="caTextEntry" name="catextentry_17">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>170</y>
+       <width>56</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Monospace</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(DEVICE):dsp:data_averaging</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_2">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>100</y>
+       <width>246</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_3">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>195</y>
+       <width>246</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="caRelatedDisplay" name="deconv_filter">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>210</y>
+       <width>166</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Deconvolution filters</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>252</red>
+       <green>220</green>
+       <blue>123</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">Deconv.filt. X;Deconv.filt. Y;Deconv.filt. I</string>
+     </property>
+     <property name="files">
+      <string notr="true">deconv_filter;deconv_filter;deconv_filter</string>
+     </property>
+     <property name="args">
+      <string notr="true">DEVICE=$(DEVICE),CH=X;DEVICE=$(DEVICE),CH=Y;DEVICE=$(DEVICE),CH=I;</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Menu</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_23">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>110</y>
+      <width>166</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>Digital signal processing</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <customwidgets>
-  <customwidget>
-   <class>caMenu</class>
-   <extends>QComboBox</extends>
-   <header>caMenu</header>
-  </customwidget>
   <customwidget>
    <class>caRelatedDisplay</class>
    <extends>QWidget</extends>
@@ -1038,6 +1176,11 @@ ofsync!</string>
    <class>caTextEntry</class>
    <extends>caLineEdit</extends>
    <header>caTextEntry</header>
+  </customwidget>
+  <customwidget>
+   <class>caMessageButton</class>
+   <extends>QPushButton</extends>
+   <header>caMessageButton</header>
   </customwidget>
   <customwidget>
    <class>caSpinbox</class>

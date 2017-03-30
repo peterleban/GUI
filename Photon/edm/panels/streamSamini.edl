@@ -1,0 +1,158 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 620
+y 528
+w 510
+h 380
+font "helvetica-bold-r-12.0"
+ctlFont "helvetica-bold-r-12.0"
+btnFont "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+title "SA on $(DEVICE)"
+showGrid
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 8
+release 0
+# Geometry
+x 10
+y 5
+w 490
+h 170
+# Appearance
+autoScaleBothDirections
+graphTitle "Horizontal position"
+xLabel "samples"
+yLabel "[mm]"
+fgColor index 14
+bgColor index 0
+gridColor index 2
+font "helvetica-medium-r-12.0"
+# Operating Modes
+plotMode "plotLastNPts"
+nPts 300
+updateTimerMs 100
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMin 0
+xMax 300
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+yLabelIntervals 3
+yShowLabelGrid
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 1
+yPv {
+  0 "CALC\\deljenje1k(EPICS\\$(DEVICE):$(BPM):sa.X,1000)"
+}
+lineThickness {
+  0 2
+}
+plotColor {
+  0 index 14
+}
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 8
+release 0
+# Geometry
+x 10
+y 180
+w 490
+h 170
+# Appearance
+autoScaleBothDirections
+graphTitle "Vertical position"
+xLabel "samples"
+yLabel "[mm]"
+fgColor index 14
+bgColor index 0
+gridColor index 2
+font "helvetica-medium-r-12.0"
+# Operating Modes
+plotMode "plotLastNPts"
+nPts 300
+updateTimerMs 100
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMin 0
+xMax 300
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+yLabelIntervals 3
+yShowLabelGrid
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 1
+yPv {
+  0 "CALC\\deljenje1k(EPICS\\$(DEVICE):$(BPM):sa.Y,1000)"
+}
+lineThickness {
+  0 2
+}
+plotColor {
+  0 index 14
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 410
+y 355
+w 90
+h 20
+fgColor index 91
+bgColor index 92
+topShadowColor index 0
+botShadowColor index 14
+font "helvetica-medium-r-12.0"
+buttonLabel "A,B,C,D"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "streamSa.edl"
+}
+menuLabel {
+  0 "SA"
+}
+symbols {
+  0 "SS=signals"
+}
+endObjectProperties
+
