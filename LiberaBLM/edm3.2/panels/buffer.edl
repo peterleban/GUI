@@ -1,0 +1,207 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 69
+y 418
+w 600
+h 520
+font "helvetica-bold-r-12.0"
+ctlFont "helvetica-bold-r-12.0"
+btnFont "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+title "$(DEVICE):$(SIG)"
+showGrid
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 450
+w 580
+h 65
+lineColor index 14
+fill
+fillColor index 1
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 8
+release 0
+# Geometry
+x 10
+y 10
+w 580
+h 430
+# Appearance
+autoScaleBothDirections
+graphTitle "Channel $(BLD)"
+xLabel "$(NAME) samples"
+yLabel "$(NAME) counts"
+fgColor index 14
+bgColor index 1
+gridColor index 9
+font "helvetica-medium-r-14.0"
+# Operating Modes
+plotMode "plotLastNPts"
+nPts 50
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMin 0
+xMax 2048
+xLabelIntervals 4
+xMajorsPerLabel 1
+xMinorsPerMajor 8
+xShowLabelGrid
+xShowMajorGrid
+xShowMinorGrid
+xUserSpecScaleDiv 1
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+yLabelIntervals 4
+yMajorsPerLabel 1
+yMinorsPerMajor 4
+yShowLabelGrid
+yShowMajorGrid
+yShowMinorGrid
+yUserSpecScaleDiv 1
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 1
+yPv {
+  0 "EPICS\\$(DEVICE):$(SIG).$(BLD)"
+}
+ySigned {
+  0 1
+}
+plotColor {
+  0 index 26
+}
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 355
+y 485
+w 90
+h 20
+fgColor index 14
+onColor index 0
+offColor index 0
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(DEVICE):$(SIG).PROC"
+pressValue "1"
+onLabel "Processing..."
+offLabel "Read data"
+3d
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 135
+y 480
+w 95
+h 25
+fgColor index 14
+fgAlarm
+bgColor index 0
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(DEVICE):$(SIG).ACQM"
+indicatorPv "EPICS\\$(DEVICE):$(SIG).ACQM"
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 485
+w 115
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Acquisition mode:"
+}
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 135
+y 455
+w 95
+h 25
+fgColor index 14
+fgAlarm
+bgColor index 0
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(DEVICE):$(SIG).SCAN"
+indicatorPv "EPICS\\$(DEVICE):$(SIG).SCAN"
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 460
+w 90
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Scan mode:"
+}
+endObjectProperties
+

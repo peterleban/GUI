@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 178
-y 51
+x 369
+y 166
 w 320
 h 200
 font "helvetica-medium-r-18.0"
@@ -234,11 +234,12 @@ y 185
 w 191
 h 10
 font "helvetica-medium-r-8.0"
+fontAlign "center"
 fgColor index 14
 bgColor index 0
 useDisplayBg
 value {
-  "This GUI works with libera-ioc 3.0 and libera-blm 1.4"
+  "This GUI works with libera-ioc 3.2 and libera-blm 1.4"
 }
 autoSize
 endObjectProperties

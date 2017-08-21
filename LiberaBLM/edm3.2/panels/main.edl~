@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 178
-y 51
+x 368
+y 139
 w 320
 h 200
 font "helvetica-medium-r-18.0"
@@ -44,7 +44,7 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 1
+release 0
 x 10
 y 10
 w 101
@@ -64,7 +64,7 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 1
+release 0
 x 10
 y 30
 w 180
@@ -83,7 +83,7 @@ endObjectProperties
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 4
+minor 2
 release 0
 x 10
 y 100
@@ -109,7 +109,7 @@ endObjectProperties
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 4
+minor 2
 release 0
 x 85
 y 100
@@ -135,7 +135,7 @@ endObjectProperties
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 4
+minor 2
 release 0
 x 160
 y 100
@@ -161,7 +161,7 @@ endObjectProperties
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 4
+minor 2
 release 0
 x 235
 y 100
@@ -188,7 +188,7 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 1
+release 0
 x 5
 y 60
 w 59
@@ -208,7 +208,7 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 1
+release 0
 x 75
 y 55
 w 115
@@ -219,9 +219,6 @@ fgColor index 14
 bgColor index 0
 value {
   "$(DEVICE)"
-}
-border
-endObjectProperties
 
 # (Static Text)
 object activeXTextClass
@@ -238,8 +235,8 @@ fgColor index 14
 bgColor index 0
 useDisplayBg
 value {
-  "This GUI works with libera-ioc 3.0 and libera-blm 1.4"
+  "This GUI works with libera-ioc 3.2 and libera-blm 1.4"
 }
-autoSize
+border
 endObjectProperties
 
