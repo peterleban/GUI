@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>480</width>
-    <height>270</height>
+    <height>340</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -48,7 +48,7 @@
      </font>
     </property>
     <property name="Title" stdset="0">
-     <string notr="true">ADC buffer</string>
+     <string notr="true">ADC buffer :: channel $(CH)</string>
     </property>
     <property name="TitleX">
      <string notr="true">ADC samples</string>
@@ -144,12 +144,131 @@
      <string>-1000000;-900000</string>
     </property>
    </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>275</y>
+      <width>471</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="caLineEdit" name="calineedit_2">
+     <property name="geometry">
+      <rect>
+       <x>115</x>
+       <y>10</y>
+       <width>86</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(DEVICE):signals:adc.ACQM</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>106</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Acquisition mode</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>35</y>
+       <width>106</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>SCAN mode</string>
+     </property>
+    </widget>
+    <widget class="caLineEdit" name="calineedit">
+     <property name="geometry">
+      <rect>
+       <x>115</x>
+       <y>35</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(DEVICE):signals:adc.SCAN</string>
+     </property>
+    </widget>
+    <widget class="caRelatedDisplay" name="carelateddisplay_6">
+     <property name="geometry">
+      <rect>
+       <x>435</x>
+       <y>5</y>
+       <width>31</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="background">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>127</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">:::</string>
+     </property>
+     <property name="files">
+      <string notr="true">acquisition_settings</string>
+     </property>
+     <property name="args">
+      <string notr="true">DEVICE=$(DEVICE)</string>
+     </property>
+    </widget>
+   </widget>
   </widget>
  </widget>
  <customwidgets>
   <customwidget>
-   <class>caCartesianPlot</class>
+   <class>QwtPlot</class>
    <extends>QFrame</extends>
+   <header>qwt_plot.h</header>
+  </customwidget>
+  <customwidget>
+   <class>caRelatedDisplay</class>
+   <extends>QWidget</extends>
+   <header>caRelatedDisplay</header>
+  </customwidget>
+  <customwidget>
+   <class>caLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>caLineEdit</header>
+  </customwidget>
+  <customwidget>
+   <class>caCartesianPlot</class>
+   <extends>QwtPlot</extends>
    <header>caCartesianPlot</header>
   </customwidget>
  </customwidgets>

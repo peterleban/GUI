@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>AVG</class>
- <widget class="QMainWindow" name="AVG">
+ <class>ADC</class>
+ <widget class="QMainWindow" name="ADC">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -17,13 +17,13 @@
    </sizepolicy>
   </property>
   <property name="windowTitle">
-   <string>AVG data</string>
+   <string>ADC raw data</string>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(255, 255, 255);</string>
   </property>
   <property name="Title" stdset="0">
-   <string>AVG data on $(DEVICE), channel $(CH)</string>
+   <string>ADC synth data on $(DEVICE), channel $(CH)</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="caCartesianPlot" name="adc">
@@ -48,16 +48,16 @@
      </font>
     </property>
     <property name="Title" stdset="0">
-     <string notr="true">AVG buffer :: channel $(CH)</string>
+     <string notr="true">ADC synth buffer :: channel $(CH)</string>
     </property>
     <property name="TitleX">
-     <string notr="true">AVG samples</string>
+     <string notr="true">ADC samples</string>
     </property>
     <property name="TitleY">
-     <string notr="true">AVG counts</string>
+     <string notr="true">ADC counts</string>
     </property>
     <property name="channels_1" stdset="0">
-     <string notr="true">;$(DEVICE):signals:average.$(CH)</string>
+     <string notr="true">;$(DEVICE):signals:adc_synth.$(CH)</string>
     </property>
     <property name="Style_1">
      <enum>caCartesianPlot::Lines</enum>
@@ -169,7 +169,7 @@
       </rect>
      </property>
      <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):signals:average.ACQM</string>
+      <string notr="true">$(DEVICE):signals:adc_synth.ACQM</string>
      </property>
     </widget>
     <widget class="QLabel" name="label">
@@ -218,47 +218,7 @@
       </rect>
      </property>
      <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):signals:average.SCAN</string>
-     </property>
-    </widget>
-    <widget class="caMessageButton" name="camessagebutton">
-     <property name="geometry">
-      <rect>
-       <x>220</x>
-       <y>30</y>
-       <width>100</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="fontScaleMode">
-      <enum>EPushButton::WidthAndHeight</enum>
-     </property>
-     <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):signals:average.PROC</string>
-     </property>
-     <property name="label">
-      <string notr="true">Read</string>
-     </property>
-     <property name="pressMessage">
-      <string notr="true">1</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_3">
-     <property name="geometry">
-      <rect>
-       <x>330</x>
-       <y>35</y>
-       <width>131</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>when SCAN=Passive</string>
+      <string notr="true">$(DEVICE):signals:adc_synth.SCAN</string>
      </property>
     </widget>
     <widget class="caRelatedDisplay" name="carelateddisplay_6">
@@ -300,11 +260,6 @@
    <class>caRelatedDisplay</class>
    <extends>QWidget</extends>
    <header>caRelatedDisplay</header>
-  </customwidget>
-  <customwidget>
-   <class>caMessageButton</class>
-   <extends>QPushButton</extends>
-   <header>caMessageButton</header>
   </customwidget>
   <customwidget>
    <class>caLineEdit</class>

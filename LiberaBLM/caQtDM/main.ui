@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>229</width>
-    <height>110</height>
+    <height>148</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -43,7 +43,7 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>40</y>
+      <y>60</y>
       <width>221</width>
       <height>61</height>
      </rect>
@@ -57,7 +57,7 @@
        <x>10</x>
        <y>10</y>
        <width>201</width>
-       <height>41</height>
+       <height>46</height>
       </rect>
      </property>
      <property name="background">
@@ -86,6 +86,44 @@
       <string>false;false;false;false</string>
      </property>
     </widget>
+   </widget>
+   <widget class="caLabel" name="calabel_2">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>35</y>
+      <width>221</width>
+      <height>11</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>by Instrumentation Technologies</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="caLabel" name="calabel_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>125</y>
+      <width>156</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>This GUI works with libera-ioc3.0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
    </widget>
   </widget>
  </widget>

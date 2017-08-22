@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>AVG</class>
- <widget class="QMainWindow" name="AVG">
+ <class>ADC</class>
+ <widget class="QMainWindow" name="ADC">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
     <width>480</width>
-    <height>340</height>
+    <height>360</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -17,13 +17,13 @@
    </sizepolicy>
   </property>
   <property name="windowTitle">
-   <string>AVG data</string>
+   <string>ADC raw data</string>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(255, 255, 255);</string>
   </property>
   <property name="Title" stdset="0">
-   <string>AVG data on $(DEVICE), channel $(CH)</string>
+   <string>ADC integrated data on $(DEVICE), channel $(CH)</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="caCartesianPlot" name="adc">
@@ -48,16 +48,16 @@
      </font>
     </property>
     <property name="Title" stdset="0">
-     <string notr="true">AVG buffer :: channel $(CH)</string>
+     <string notr="true">ADC integrated buffer :: channel $(CH)</string>
     </property>
     <property name="TitleX">
-     <string notr="true">AVG samples</string>
+     <string notr="true">ADC samples</string>
     </property>
     <property name="TitleY">
-     <string notr="true">AVG counts</string>
+     <string notr="true">ADC counts</string>
     </property>
     <property name="channels_1" stdset="0">
-     <string notr="true">;$(DEVICE):signals:average.$(CH)</string>
+     <string notr="true">;$(DEVICE):signals:adc_integrated.$(CH)</string>
     </property>
     <property name="Style_1">
      <enum>caCartesianPlot::Lines</enum>
@@ -149,8 +149,8 @@
      <rect>
       <x>5</x>
       <y>275</y>
-      <width>471</width>
-      <height>61</height>
+      <width>470</width>
+      <height>76</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -164,12 +164,12 @@
       <rect>
        <x>115</x>
        <y>10</y>
-       <width>86</width>
+       <width>71</width>
        <height>16</height>
       </rect>
      </property>
      <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):signals:average.ACQM</string>
+      <string notr="true">$(DEVICE):signals:adc_integrated.ACQM</string>
      </property>
     </widget>
     <widget class="QLabel" name="label">
@@ -213,52 +213,12 @@
       <rect>
        <x>115</x>
        <y>35</y>
-       <width>91</width>
+       <width>71</width>
        <height>16</height>
       </rect>
      </property>
      <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):signals:average.SCAN</string>
-     </property>
-    </widget>
-    <widget class="caMessageButton" name="camessagebutton">
-     <property name="geometry">
-      <rect>
-       <x>220</x>
-       <y>30</y>
-       <width>100</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="fontScaleMode">
-      <enum>EPushButton::WidthAndHeight</enum>
-     </property>
-     <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):signals:average.PROC</string>
-     </property>
-     <property name="label">
-      <string notr="true">Read</string>
-     </property>
-     <property name="pressMessage">
-      <string notr="true">1</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_3">
-     <property name="geometry">
-      <rect>
-       <x>330</x>
-       <y>35</y>
-       <width>131</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>when SCAN=Passive</string>
+      <string notr="true">$(DEVICE):signals:adc_integrated.SCAN</string>
      </property>
     </widget>
     <widget class="caRelatedDisplay" name="carelateddisplay_6">
@@ -287,6 +247,117 @@
       <string notr="true">DEVICE=$(DEVICE)</string>
      </property>
     </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>10</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>NGRP</string>
+     </property>
+    </widget>
+    <widget class="caLineEdit" name="calineedit_3">
+     <property name="geometry">
+      <rect>
+       <x>255</x>
+       <y>10</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(DEVICE):signals:adc_integrated.NGRP</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>55</y>
+       <width>236</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>NGRP and SUM decimation must be equal!</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>10</y>
+       <width>96</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>SUMDEC periods</string>
+     </property>
+    </widget>
+    <widget class="caLineEdit" name="calineedit_4">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>10</y>
+       <width>26</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(DEVICE):decimation:sumdec_periods</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>35</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>SUM decimation</string>
+     </property>
+    </widget>
+    <widget class="caLineEdit" name="calineedit_5">
+     <property name="geometry">
+      <rect>
+       <x>315</x>
+       <y>35</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(DEVICE):decimation:sum</string>
+     </property>
+    </widget>
    </widget>
   </widget>
  </widget>
@@ -300,11 +371,6 @@
    <class>caRelatedDisplay</class>
    <extends>QWidget</extends>
    <header>caRelatedDisplay</header>
-  </customwidget>
-  <customwidget>
-   <class>caMessageButton</class>
-   <extends>QPushButton</extends>
-   <header>caMessageButton</header>
   </customwidget>
   <customwidget>
    <class>caLineEdit</class>

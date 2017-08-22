@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>AVG</class>
- <widget class="QMainWindow" name="AVG">
+ <class>SUM</class>
+ <widget class="QMainWindow" name="SUM">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -17,13 +17,13 @@
    </sizepolicy>
   </property>
   <property name="windowTitle">
-   <string>AVG data</string>
+   <string>SUM data</string>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(255, 255, 255);</string>
   </property>
   <property name="Title" stdset="0">
-   <string>AVG data on $(DEVICE), channel $(CH)</string>
+   <string>Postmortem data on $(DEVICE), channel $(CH)</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="caCartesianPlot" name="adc">
@@ -48,16 +48,16 @@
      </font>
     </property>
     <property name="Title" stdset="0">
-     <string notr="true">AVG buffer :: channel $(CH)</string>
+     <string notr="true">Postmortem buffer :: channel $(CH)</string>
     </property>
     <property name="TitleX">
-     <string notr="true">AVG samples</string>
+     <string notr="true">PM SUM samples</string>
     </property>
     <property name="TitleY">
-     <string notr="true">AVG counts</string>
+     <string notr="true">PM SUM counts</string>
     </property>
     <property name="channels_1" stdset="0">
-     <string notr="true">;$(DEVICE):signals:average.$(CH)</string>
+     <string notr="true">;$(DEVICE):signals:pm.$(CH)</string>
     </property>
     <property name="Style_1">
      <enum>caCartesianPlot::Lines</enum>
@@ -169,7 +169,7 @@
       </rect>
      </property>
      <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):signals:average.ACQM</string>
+      <string notr="true">$(DEVICE):signals:pm.ACQM</string>
      </property>
     </widget>
     <widget class="QLabel" name="label">
@@ -218,7 +218,7 @@
       </rect>
      </property>
      <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):signals:average.SCAN</string>
+      <string notr="true">$(DEVICE):signals:pm.SCAN</string>
      </property>
     </widget>
     <widget class="caMessageButton" name="camessagebutton">
@@ -234,7 +234,7 @@
       <enum>EPushButton::WidthAndHeight</enum>
      </property>
      <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):signals:average.PROC</string>
+      <string notr="true">$(DEVICE):signals:pm.PROC</string>
      </property>
      <property name="label">
       <string notr="true">Read</string>
