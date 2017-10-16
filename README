@@ -5,7 +5,7 @@
 #  at PSI; check http://epics.web.psi.ch/software/caqtdm/    #
 #							     #
 #    Author: Peter Leban (peter.leban@i-tech.si)	     #
-#    Date: October 2, 2014				     #
+#    Date: August 22, 2017				     #
 #							     #
 #    Thanks to Anton Mezger (PSI) for support.		     #
 #							     #
@@ -23,17 +23,17 @@
 
 GUI locations: /home/libera/GUI
 
-    \BLM         .............. Libera BLM (beam loss monitor)
-    \CavityBPM   .............. Libera Cavity BPM
-    \Digit       .............. Libera Digit (digitizer)
-    \Hadron      .............. Libera Hadron
-    \LB+GUI      .............. Libera Brilliance+
-    \LLRF_ELI    .............. Libera LLRF
-    \LSPE        .............. Libera Single Pass E
-    \LSPH        .............. Libera Single Pass H
-    \Photon      .............. Libera Photon (2016)
-    \Spark_ELHL  .............. Libera Spark EL / HL
-    \SparkR      .............. Libera Spark ERXR
+    \LiberaBLM         .............. Libera BLM (beam loss monitor)
+    \LiberaCavityBPM   .............. Libera Cavity BPM
+    \LiberaDigit       .............. Libera Digit (digitizer)
+    \LiberaHadron      .............. Libera Hadron
+    \LiberaBrilliance+ .............. Libera Brilliance+
+    \LLRF_ELI          .............. Libera LLRF
+    \LiberaSinglePassE .............. Libera Single Pass E
+    \LiberaSinglePassH .............. Libera Single Pass H
+    \LiberaPhoton      .............. Libera Photon (2016)
+    \LiberaSparkELHL   .............. Libera Spark EL / HL
+    \LiberaSparkERXR   .............. Libera Spark ERXR
     \SparkSCPI   .............. Libera Spark ER/ERXR (<2016)
 
 The GUIs are taken from the online GIT repository:
@@ -46,7 +46,7 @@ To update your local copy, go to:
   cd /home/libera/GUI
   git pull
 
-Go to proper directory (e.g. BLM, LB+GUI, etc.) and
+Go to proper directory (e.g. LiberaBLM, etc.) and
 run start.sh script from select directory.
 Specify the IOC name and the IP address.
 

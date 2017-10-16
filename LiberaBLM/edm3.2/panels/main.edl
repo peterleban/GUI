@@ -3,10 +3,10 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 369
-y 166
+x 711
+y 636
 w 320
-h 200
+h 220
 font "helvetica-medium-r-18.0"
 ctlFont "helvetica-medium-r-18.0"
 btnFont "helvetica-medium-r-18.0"
@@ -32,7 +32,7 @@ major 4
 minor 0
 release 0
 x 5
-y 95
+y 115
 w 305
 h 85
 lineColor index 14
@@ -86,7 +86,7 @@ major 4
 minor 4
 release 0
 x 10
-y 100
+y 120
 w 70
 h 75
 fgColor index 91
@@ -112,7 +112,7 @@ major 4
 minor 4
 release 0
 x 85
-y 100
+y 120
 w 70
 h 75
 fgColor index 91
@@ -138,7 +138,7 @@ major 4
 minor 4
 release 0
 x 160
-y 100
+y 120
 w 70
 h 75
 fgColor index 91
@@ -164,7 +164,7 @@ major 4
 minor 4
 release 0
 x 235
-y 100
+y 120
 w 70
 h 75
 fgColor index 91
@@ -230,7 +230,7 @@ major 4
 minor 1
 release 1
 x 5
-y 185
+y 205
 w 191
 h 10
 font "helvetica-medium-r-8.0"
@@ -242,5 +242,48 @@ value {
   "This GUI works with libera-ioc 3.2 and libera-blm 1.4"
 }
 autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 5
+y 85
+w 65
+h 20
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "libera app:"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 75
+y 85
+w 115
+h 20
+controlPv "EPICS\\$(DEVICE):version"
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
 endObjectProperties
 

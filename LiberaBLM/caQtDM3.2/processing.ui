@@ -2313,6 +2313,25 @@ offset</string>
      <bool>false</bool>
     </property>
    </widget>
+   <widget class="caRelatedDisplay" name="carelateddisplay_12">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>385</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="labels">
+     <string notr="true">Calibration</string>
+    </property>
+    <property name="files">
+     <string notr="true">calibration</string>
+    </property>
+    <property name="args">
+     <string notr="true">DEVICE=$(DEVICE), CH=$(CH)</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <customwidgets>
