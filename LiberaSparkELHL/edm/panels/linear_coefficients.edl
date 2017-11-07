@@ -3,10 +3,10 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 250
-y 307
-w 350
-h 150
+x 583
+y 178
+w 280
+h 250
 font "helvetica-bold-r-12.0"
 ctlFont "helvetica-bold-r-12.0"
 btnFont "helvetica-medium-r-10.0"
@@ -22,6 +22,7 @@ botShadowColor index 14
 title "Linear equation coeff on $(HOSTNAME)"
 showGrid
 snapToGrid
+gridSize 5
 endScreenProperties
 
 # (Text Control)
@@ -30,17 +31,16 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 70
+x 90
 y 50
 w 80
 h 18
-controlPv "EPICS\\$(HOSTNAME):calibration:linear:kx"
+controlPv "EPICS\\$(HOSTNAME):calibration:linear:kx_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
 bgColor index 0
 editable
-autoHeight
 motifWidget
 limitsFromDb
 nullColor index 0
@@ -96,8 +96,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 160
-y 50
+x 10
+y 145
 w 75
 h 16
 font "helvetica-medium-r-14.0"
@@ -116,8 +116,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 160
-y 80
+x 10
+y 175
 w 74
 h 16
 font "helvetica-medium-r-14.0"
@@ -136,17 +136,16 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 240
-y 50
+x 90
+y 145
 w 80
 h 18
-controlPv "EPICS\\$(HOSTNAME):calibration:linear:xoff"
+controlPv "EPICS\\$(HOSTNAME):calibration:linear:xoff_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
 bgColor index 0
 editable
-autoHeight
 motifWidget
 limitsFromDb
 nullColor index 0
@@ -162,17 +161,16 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 70
+x 90
 y 80
 w 80
 h 18
-controlPv "EPICS\\$(HOSTNAME):calibration:linear:ky"
+controlPv "EPICS\\$(HOSTNAME):calibration:linear:ky_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
 bgColor index 0
 editable
-autoHeight
 motifWidget
 limitsFromDb
 nullColor index 0
@@ -188,17 +186,16 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 240
-y 80
+x 90
+y 175
 w 80
 h 18
-controlPv "EPICS\\$(HOSTNAME):calibration:linear:yoff"
+controlPv "EPICS\\$(HOSTNAME):calibration:linear:yoff_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
 bgColor index 0
 editable
-autoHeight
 motifWidget
 limitsFromDb
 nullColor index 0
@@ -237,17 +234,16 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 240
-y 110
+x 90
+y 205
 w 80
 h 18
-controlPv "EPICS\\$(HOSTNAME):calibration:linear:qoff"
+controlPv "EPICS\\$(HOSTNAME):calibration:linear:qoff_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
 bgColor index 0
 editable
-autoHeight
 motifWidget
 limitsFromDb
 nullColor index 0
@@ -263,8 +259,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 160
-y 110
+x 10
+y 205
 w 76
 h 16
 font "helvetica-medium-r-14.0"
@@ -283,17 +279,16 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 70
+x 90
 y 110
 w 80
 h 18
-controlPv "EPICS\\$(HOSTNAME):calibration:linear:kq"
+controlPv "EPICS\\$(HOSTNAME):calibration:linear:kq_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
 bgColor index 0
 editable
-autoHeight
 motifWidget
 limitsFromDb
 nullColor index 0
@@ -331,8 +326,8 @@ minor 1
 release 1
 x 10
 y 10
-w 330
-h 20
+w 317
+h 16
 font "helvetica-bold-r-14.0"
 fgColor index 14
 bgColor index 0
@@ -341,5 +336,149 @@ value {
   "Calibration coefficients for the linear equation"
 }
 autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 175
+y 205
+w 80
+h 18
+controlPv "EPICS\\$(HOSTNAME):calibration:linear:qoff_mon"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 175
+y 175
+w 80
+h 18
+controlPv "EPICS\\$(HOSTNAME):calibration:linear:yoff_mon"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 175
+y 145
+w 80
+h 18
+controlPv "EPICS\\$(HOSTNAME):calibration:linear:xoff_mon"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 175
+y 110
+w 80
+h 18
+controlPv "EPICS\\$(HOSTNAME):calibration:linear:kq_mon"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 175
+y 80
+w 80
+h 18
+controlPv "EPICS\\$(HOSTNAME):calibration:linear:ky_mon"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 175
+y 50
+w 80
+h 18
+controlPv "EPICS\\$(HOSTNAME):calibration:linear:kx_mon"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
 endObjectProperties
 

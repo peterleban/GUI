@@ -3,9 +3,9 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 253
-y 388
-w 170
+x 798
+y 444
+w 250
 h 160
 font "helvetica-bold-r-12.0"
 ctlFont "helvetica-bold-r-12.0"
@@ -22,6 +22,7 @@ botShadowColor index 14
 title "Channel scaling on $(HOSTNAME)"
 showGrid
 snapToGrid
+gridSize 5
 endScreenProperties
 
 # (Text Control)
@@ -34,13 +35,12 @@ x 70
 y 40
 w 80
 h 18
-controlPv "EPICS\\$(HOSTNAME):calibration:ka"
+controlPv "EPICS\\$(HOSTNAME):calibration:ka_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
 bgColor index 0
 editable
-autoHeight
 motifWidget
 precision 4
 nullColor index 0
@@ -100,13 +100,12 @@ x 70
 y 130
 w 80
 h 18
-controlPv "EPICS\\$(HOSTNAME):calibration:kd"
+controlPv "EPICS\\$(HOSTNAME):calibration:kd_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
 bgColor index 0
 editable
-autoHeight
 motifWidget
 precision 4
 nullColor index 0
@@ -126,13 +125,12 @@ x 70
 y 70
 w 80
 h 18
-controlPv "EPICS\\$(HOSTNAME):calibration:kb"
+controlPv "EPICS\\$(HOSTNAME):calibration:kb_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
 bgColor index 0
 editable
-autoHeight
 motifWidget
 precision 4
 nullColor index 0
@@ -175,13 +173,12 @@ x 70
 y 100
 w 80
 h 18
-controlPv "EPICS\\$(HOSTNAME):calibration:kc"
+controlPv "EPICS\\$(HOSTNAME):calibration:kc_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
 bgColor index 0
 editable
-autoHeight
 motifWidget
 precision 4
 nullColor index 0
@@ -249,5 +246,101 @@ value {
   "kD"
 }
 autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 155
+y 130
+w 80
+h 18
+controlPv "EPICS\\$(HOSTNAME):calibration:kd_mon"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+precision 4
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 155
+y 100
+w 80
+h 18
+controlPv "EPICS\\$(HOSTNAME):calibration:kc_mon"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+precision 4
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 155
+y 70
+w 80
+h 18
+controlPv "EPICS\\$(HOSTNAME):calibration:kb_mon"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+precision 4
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 155
+y 40
+w 80
+h 18
+controlPv "EPICS\\$(HOSTNAME):calibration:ka_mon"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+precision 4
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
 endObjectProperties
 

@@ -3,10 +3,10 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 173
-y 51
-w 500
-h 420
+x 559
+y 303
+w 520
+h 490
 font "helvetica-medium-r-18.0"
 ctlFont "helvetica-medium-r-18.0"
 btnFont "helvetica-medium-r-18.0"
@@ -32,7 +32,21 @@ major 4
 minor 0
 release 0
 x 10
-y 260
+y 65
+w 230
+h 130
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 325
 w 230
 h 90
 lineColor index 14
@@ -46,7 +60,7 @@ major 4
 minor 0
 release 0
 x 10
-y 145
+y 210
 w 230
 h 100
 lineColor index 14
@@ -93,20 +107,6 @@ value {
 autoSize
 endObjectProperties
 
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 10
-y 65
-w 230
-h 65
-lineColor index 14
-fillColor index 0
-endObjectProperties
-
 # (Static Text)
 object activeXTextClass
 beginObjectProperties
@@ -132,17 +132,16 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 100
-y 80
+x 110
+y 105
 w 60
 h 20
-controlPv "EPICS\\$(HOSTNAME):triggers:t2:delay"
+controlPv "EPICS\\$(HOSTNAME):triggers:t2:delay_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
 bgColor index 0
 editable
-autoHeight
 motifWidget
 limitsFromDb
 nullColor index 0
@@ -160,37 +159,16 @@ major 4
 minor 1
 release 1
 x 15
-y 80
-w 77
-h 14
-font "helvetica-medium-r-12.0"
-fgColor index 14
-bgColor index 0
-useDisplayBg
-value {
-  "Trigger delay:"
-}
-autoSize
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 15
 y 105
-w 77
-h 14
+w 95
+h 20
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
 useDisplayBg
 value {
-  "Trigger count:"
+  "T2 trigger delay:"
 }
-autoSize
 endObjectProperties
 
 # (Static Text)
@@ -200,7 +178,26 @@ major 4
 minor 1
 release 1
 x 15
-y 135
+y 80
+w 100
+h 20
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "T2 trigger source"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 200
 w 175
 h 20
 font "helvetica-bold-r-12.0"
@@ -219,7 +216,7 @@ major 4
 minor 1
 release 1
 x 15
-y 160
+y 225
 w 55
 h 14
 font "helvetica-medium-r-12.0"
@@ -239,15 +236,14 @@ major 4
 minor 7
 release 0
 x 80
-y 160
+y 225
 w 60
-h 14
+h 20
 controlPv "EPICS\\$(HOSTNAME):input:max_adc"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 23
 bgColor index 0
-autoHeight
 limitsFromDb
 nullColor index 0
 smartRefresh
@@ -264,8 +260,8 @@ major 4
 minor 0
 release 0
 x 10
-y 365
-w 230
+y 430
+w 500
 h 50
 lineColor index 14
 fillColor index 0
@@ -278,7 +274,7 @@ major 4
 minor 1
 release 1
 x 15
-y 355
+y 420
 w 175
 h 20
 font "helvetica-bold-r-12.0"
@@ -298,7 +294,7 @@ minor 0
 release 0
 x 245
 y 65
-w 245
+w 265
 h 350
 lineColor index 14
 fillColor index 0
@@ -330,7 +326,7 @@ major 4
 minor 4
 release 0
 x 15
-y 385
+y 450
 w 105
 h 25
 fgColor index 91
@@ -338,7 +334,7 @@ bgColor index 92
 topShadowColor index 0
 botShadowColor index 14
 font "helvetica-bold-r-12.0"
-buttonLabel "ADC buffer"
+buttonLabel "ADC Raw"
 numPvs 4
 numDsps 1
 displayFileName {
@@ -352,60 +348,6 @@ symbols {
 }
 endObjectProperties
 
-# (Related Display)
-object relatedDisplayClass
-beginObjectProperties
-major 4
-minor 4
-release 0
-x 125
-y 385
-w 105
-h 25
-fgColor index 91
-bgColor index 92
-topShadowColor index 0
-botShadowColor index 14
-font "helvetica-bold-r-12.0"
-buttonLabel "Stream data"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "streamSP.edl"
-}
-menuLabel {
-  0 "SP"
-}
-symbols {
-  0 "BPM=signals"
-}
-endObjectProperties
-
-# (Text Control)
-object activeXTextDspClass
-beginObjectProperties
-major 4
-minor 7
-release 0
-x 100
-y 105
-w 60
-h 14
-controlPv "EPICS\\$(HOSTNAME):signals:sp.trigger_cnt"
-font "helvetica-medium-r-12.0"
-fontAlign "right"
-fgColor index 24
-bgColor index 0
-autoHeight
-limitsFromDb
-nullColor index 0
-smartRefresh
-useHexPrefix
-newPos
-objType "controls"
-noExecuteClipMask
-endObjectProperties
-
 # (Bar)
 object activeBarClass
 beginObjectProperties
@@ -413,7 +355,7 @@ major 4
 minor 1
 release 2
 x 15
-y 180
+y 250
 w 220
 h 30
 indicatorColor index 83
@@ -435,16 +377,15 @@ major 4
 minor 7
 release 0
 x 110
-y 215
-w 30
-h 18
-controlPv "EPICS\\$(HOSTNAME):attenuation:att_id"
+y 285
+w 35
+h 20
+controlPv "EPICS\\$(HOSTNAME):attenuation:att_id_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
 bgColor index 0
 editable
-autoHeight
 motifWidget
 limitsFromDb
 nullColor index 0
@@ -462,17 +403,16 @@ major 4
 minor 1
 release 1
 x 15
-y 220
-w 88
-h 14
+y 285
+w 90
+h 20
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
 useDisplayBg
 value {
-  "Attenuation [dB]"
+  "Attenuation ID"
 }
-autoSize
 endObjectProperties
 
 # (Related Display)
@@ -482,7 +422,7 @@ major 4
 minor 4
 release 0
 x 15
-y 275
+y 340
 w 200
 h 20
 fgColor index 91
@@ -524,17 +464,16 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 405
+x 375
 y 140
 w 60
 h 18
-controlPv "EPICS\\$(HOSTNAME):dsp:num_of_bunches"
+controlPv "EPICS\\$(HOSTNAME):dsp:num_of_bunches_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
 bgColor index 0
 editable
-autoHeight
 motifWidget
 limitsFromDb
 nullColor index 0
@@ -551,17 +490,16 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 405
+x 375
 y 165
 w 60
 h 18
-controlPv "EPICS\\$(HOSTNAME):dsp:pre_trigger"
+controlPv "EPICS\\$(HOSTNAME):dsp:pre_trigger_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
 bgColor index 0
 editable
-autoHeight
 motifWidget
 limitsFromDb
 nullColor index 0
@@ -598,17 +536,16 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 405
+x 375
 y 190
 w 60
 h 18
-controlPv "EPICS\\$(HOSTNAME):dsp:post_trigger1"
+controlPv "EPICS\\$(HOSTNAME):dsp:post_trigger1_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
 bgColor index 0
 editable
-autoHeight
 motifWidget
 limitsFromDb
 nullColor index 0
@@ -665,17 +602,16 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 405
+x 375
 y 215
 w 60
 h 18
-controlPv "EPICS\\$(HOSTNAME):dsp:post_trigger2"
+controlPv "EPICS\\$(HOSTNAME):dsp:post_trigger2_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
 bgColor index 0
 editable
-autoHeight
 motifWidget
 limitsFromDb
 nullColor index 0
@@ -692,17 +628,16 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 405
+x 375
 y 265
 w 60
 h 18
-controlPv "EPICS\\$(HOSTNAME):dsp:bunch_thr2"
+controlPv "EPICS\\$(HOSTNAME):dsp:bunch_thr2_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
 bgColor index 0
 editable
-autoHeight
 motifWidget
 limitsFromDb
 nullColor index 0
@@ -739,17 +674,16 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 405
+x 375
 y 240
 w 60
 h 18
-controlPv "EPICS\\$(HOSTNAME):dsp:bunch_thr1"
+controlPv "EPICS\\$(HOSTNAME):dsp:bunch_thr1_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
 bgColor index 0
 editable
-autoHeight
 motifWidget
 limitsFromDb
 nullColor index 0
@@ -786,17 +720,16 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 405
+x 375
 y 290
 w 60
 h 18
-controlPv "EPICS\\$(HOSTNAME):dsp:scan_offset"
+controlPv "EPICS\\$(HOSTNAME):dsp:scan_offset_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
 bgColor index 0
 editable
-autoHeight
 motifWidget
 limitsFromDb
 nullColor index 0
@@ -833,17 +766,16 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 405
+x 375
 y 315
 w 60
 h 18
-controlPv "EPICS\\$(HOSTNAME):dsp:data_averaging"
+controlPv "EPICS\\$(HOSTNAME):dsp:data_averaging_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
 bgColor index 0
 editable
-autoHeight
 motifWidget
 limitsFromDb
 nullColor index 0
@@ -900,16 +832,17 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 405
+x 390
 y 340
-w 60
+w 90
 h 20
 fgColor index 14
 bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):dsp:insert_zeros"
+controlPv "EPICS\\$(HOSTNAME):dsp:insert_zeros_sp"
+indicatorPv "EPICS\\$(HOSTNAME):dsp:insert_zeros_mon"
 font "helvetica-medium-r-10.0"
 endObjectProperties
 
@@ -919,7 +852,7 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 375
+x 390
 y 365
 w 90
 h 20
@@ -928,7 +861,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):dsp:pickup_orientation"
+controlPv "EPICS\\$(HOSTNAME):dsp:pickup_orientation_sp"
+indicatorPv "EPICS\\$(HOSTNAME):dsp:pickup_orientation_mon"
 font "helvetica-medium-r-10.0"
 endObjectProperties
 
@@ -958,7 +892,7 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 375
+x 390
 y 390
 w 90
 h 20
@@ -967,7 +901,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):dsp:calculation_method"
+controlPv "EPICS\\$(HOSTNAME):dsp:calculation_method_sp"
+indicatorPv "EPICS\\$(HOSTNAME):dsp:calculation_method_mon"
 font "helvetica-medium-r-10.0"
 endObjectProperties
 
@@ -989,31 +924,6 @@ value {
   "Calculation equation:"
 }
 autoSize
-endObjectProperties
-
-# (Button)
-object activeButtonClass
-beginObjectProperties
-major 4
-minor 1
-release 0
-x 340
-y 110
-w 125
-h 25
-fgColor index 14
-onColor index 16
-offColor index 20
-inconsistentColor index 14
-topShadowColor index 0
-botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):dsp:enable"
-indicatorPv "EPICS\\$(HOSTNAME):dsp:enable"
-onLabel "ON"
-offLabel "OFF"
-3d
-font "helvetica-medium-r-14.0"
-objType "controls"
 endObjectProperties
 
 # (Static Text)
@@ -1060,7 +970,7 @@ major 4
 minor 1
 release 1
 x 15
-y 250
+y 315
 w 175
 h 20
 font "helvetica-bold-r-12.0"
@@ -1079,7 +989,7 @@ major 4
 minor 4
 release 0
 x 15
-y 300
+y 365
 w 200
 h 20
 fgColor index 91
@@ -1102,7 +1012,7 @@ major 4
 minor 4
 release 0
 x 15
-y 325
+y 390
 w 200
 h 20
 fgColor index 91
@@ -1115,6 +1025,525 @@ numPvs 4
 numDsps 1
 displayFileName {
   0 "polynomial_coefficients.edl"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 175
+y 105
+w 60
+h 20
+controlPv "EPICS\\$(HOSTNAME):triggers:t2:delay_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 150
+y 285
+w 50
+h 20
+controlPv "EPICS\\$(HOSTNAME):attenuation:att_id_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 440
+y 315
+w 60
+h 18
+controlPv "EPICS\\$(HOSTNAME):dsp:data_averaging_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+motifWidget
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 440
+y 290
+w 60
+h 18
+controlPv "EPICS\\$(HOSTNAME):dsp:scan_offset_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+motifWidget
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 440
+y 265
+w 60
+h 18
+controlPv "EPICS\\$(HOSTNAME):dsp:bunch_thr2_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+motifWidget
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 440
+y 240
+w 60
+h 18
+controlPv "EPICS\\$(HOSTNAME):dsp:bunch_thr1_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+motifWidget
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 440
+y 215
+w 60
+h 18
+controlPv "EPICS\\$(HOSTNAME):dsp:post_trigger2_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+motifWidget
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 440
+y 190
+w 60
+h 18
+controlPv "EPICS\\$(HOSTNAME):dsp:post_trigger1_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+motifWidget
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 440
+y 165
+w 60
+h 18
+controlPv "EPICS\\$(HOSTNAME):dsp:pre_trigger_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+motifWidget
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 440
+y 140
+w 60
+h 18
+controlPv "EPICS\\$(HOSTNAME):dsp:num_of_bunches_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+motifWidget
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 370
+y 110
+w 130
+h 20
+fgColor index 14
+onColor index 15
+offColor index 20
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(HOSTNAME):dsp:enable_sp"
+indicatorPv "EPICS\\$(HOSTNAME):dsp:enable_mon"
+onLabel "DSP ENABLED"
+offLabel "DSP DISABLED"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 115
+y 80
+w 120
+h 20
+fgColor index 14
+bgColor index 0
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(HOSTNAME):triggers:t2:source_sp"
+indicatorPv "EPICS\\$(HOSTNAME):triggers:t2:source_mon"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 115
+y 145
+w 120
+h 20
+fgColor index 14
+bgColor index 0
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(HOSTNAME):lemo_control:t0:direction_sp"
+indicatorPv "EPICS\\$(HOSTNAME):lemo_control:t0:direction_mon"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 145
+w 100
+h 20
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "T0 trigger source"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 175
+y 170
+w 60
+h 20
+controlPv "EPICS\\$(HOSTNAME):bunch_detection:pulse_length_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 110
+y 170
+w 60
+h 20
+controlPv "EPICS\\$(HOSTNAME):bunch_detection:pulse_length_sp"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 24
+bgColor index 0
+editable
+motifWidget
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 170
+w 95
+h 20
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "T0 pulse length:"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 125
+y 450
+w 105
+h 25
+fgColor index 91
+bgColor index 92
+topShadowColor index 0
+botShadowColor index 14
+font "helvetica-bold-r-12.0"
+buttonLabel "Position"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "streamSP.edl"
+}
+menuLabel {
+  0 "SP"
+}
+symbols {
+  0 "DD=signals:sp, DD1=Single Pass"
+}
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 410
+y 460
+w 95
+h 15
+fgColor index 14
+onColor index 0
+offColor index 0
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(HOSTNAME):dsp:reset_counters"
+pressValue "Execute"
+onLabel "Resetting..."
+offLabel "Reset counters"
+3d
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 305
+y 435
+w 105
+h 20
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "T2 trigger counter"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 410
+y 435
+w 95
+h 20
+controlPv "EPICS\\$(HOSTNAME):signals:sp.trigger_cnt"
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 485
+y 5
+w 25
+h 25
+fgColor index 91
+bgColor index 92
+topShadowColor index 0
+botShadowColor index 14
+font "helvetica-medium-r-12.0"
+buttonLabel "i"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "about.edl"
 }
 endObjectProperties
 

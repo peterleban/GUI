@@ -5,5 +5,8 @@ The start script (start.sh) contains settings
 for a particular system configuration. To use the
 EDM panels in your system, copy the /panels and /prefs
 
-Date: March 15, 2017
+This GUI works with libera-ioc3.2! The PV database must
+contain double PVs (monitor and set).
+
+Date: November 7, 2017
 Author: peter.leban@i-tech.si
