@@ -3,10 +3,10 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 585
-y 671
-w 650
-h 160
+x 505
+y 585
+w 660
+h 370
 font "helvetica-medium-r-18.0"
 ctlFont "helvetica-medium-r-18.0"
 btnFont "helvetica-medium-r-18.0"
@@ -19,11 +19,25 @@ ctlBgColor1 index 0
 ctlBgColor2 index 14
 topShadowColor index 0
 botShadowColor index 14
-title "Counting settings"
+title "Count and coincidence settings"
 showGrid
 snapToGrid
 gridSize 5
 endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 190
+w 270
+h 170
+lineColor index 14
+fillColor index 0
+endObjectProperties
 
 # (Static Text)
 object activeXTextClass
@@ -31,8 +45,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 95
-y 20
+x 90
+y 40
 w 100
 h 20
 font "helvetica-medium-r-12.0"
@@ -50,8 +64,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 15
-y 45
+x 10
+y 65
 w 60
 h 20
 font "helvetica-bold-r-12.0"
@@ -69,8 +83,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 150
-y 45
+x 145
+y 65
 w 60
 h 20
 controlPv "EPICS\\$(DEVICE):threshold:loss_count:A_mon"
@@ -93,8 +107,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 85
-y 45
+x 80
+y 65
 w 60
 h 18
 controlPv "EPICS\\$(DEVICE):threshold:loss_count:A_sp"
@@ -120,8 +134,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 150
-y 70
+x 145
+y 90
 w 60
 h 20
 controlPv "EPICS\\$(DEVICE):threshold:loss_count:B_mon"
@@ -144,8 +158,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 85
-y 70
+x 80
+y 90
 w 60
 h 18
 controlPv "EPICS\\$(DEVICE):threshold:loss_count:B_sp"
@@ -171,8 +185,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 15
-y 70
+x 10
+y 90
 w 60
 h 20
 font "helvetica-bold-r-12.0"
@@ -190,8 +204,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 150
-y 95
+x 145
+y 115
 w 60
 h 20
 controlPv "EPICS\\$(DEVICE):threshold:loss_count:C_mon"
@@ -214,8 +228,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 85
-y 95
+x 80
+y 115
 w 60
 h 18
 controlPv "EPICS\\$(DEVICE):threshold:loss_count:C_sp"
@@ -241,8 +255,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 15
-y 95
+x 10
+y 115
 w 60
 h 20
 font "helvetica-bold-r-12.0"
@@ -260,8 +274,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 150
-y 120
+x 145
+y 140
 w 60
 h 20
 controlPv "EPICS\\$(DEVICE):threshold:loss_count:D_mon"
@@ -284,8 +298,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 85
-y 120
+x 80
+y 140
 w 60
 h 18
 controlPv "EPICS\\$(DEVICE):threshold:loss_count:D_sp"
@@ -311,8 +325,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 15
-y 120
+x 10
+y 140
 w 60
 h 20
 font "helvetica-bold-r-12.0"
@@ -330,8 +344,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 230
-y 10
+x 225
+y 30
 w 120
 h 30
 font "helvetica-medium-r-12.0"
@@ -350,8 +364,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 295
-y 45
+x 290
+y 65
 w 60
 h 20
 controlPv "EPICS\\$(DEVICE):threshold:loss_count_high:A_mon"
@@ -374,8 +388,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 230
-y 45
+x 225
+y 65
 w 60
 h 18
 controlPv "EPICS\\$(DEVICE):threshold:loss_count_high:A_sp"
@@ -401,8 +415,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 295
-y 70
+x 290
+y 90
 w 60
 h 20
 controlPv "EPICS\\$(DEVICE):threshold:loss_count_high:B_mon"
@@ -425,8 +439,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 230
-y 70
+x 225
+y 90
 w 60
 h 18
 controlPv "EPICS\\$(DEVICE):threshold:loss_count_high:B_sp"
@@ -452,8 +466,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 295
-y 95
+x 290
+y 115
 w 60
 h 20
 controlPv "EPICS\\$(DEVICE):threshold:loss_count_high:C_mon"
@@ -476,8 +490,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 230
-y 95
+x 225
+y 115
 w 60
 h 18
 controlPv "EPICS\\$(DEVICE):threshold:loss_count_high:C_sp"
@@ -503,8 +517,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 295
-y 120
+x 290
+y 140
 w 60
 h 20
 controlPv "EPICS\\$(DEVICE):threshold:loss_count_high:D_mon"
@@ -527,8 +541,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 230
-y 120
+x 225
+y 140
 w 60
 h 18
 controlPv "EPICS\\$(DEVICE):threshold:loss_count_high:D_sp"
@@ -554,8 +568,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 375
-y 10
+x 370
+y 30
 w 120
 h 25
 font "helvetica-medium-r-12.0"
@@ -574,8 +588,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 440
-y 45
+x 435
+y 65
 w 60
 h 20
 controlPv "EPICS\\$(DEVICE):threshold:count_diff:A_mon"
@@ -598,8 +612,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 375
-y 45
+x 370
+y 65
 w 60
 h 18
 controlPv "EPICS\\$(DEVICE):threshold:count_diff:A_sp"
@@ -625,8 +639,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 440
-y 70
+x 435
+y 90
 w 60
 h 20
 controlPv "EPICS\\$(DEVICE):threshold:count_diff:B_mon"
@@ -649,8 +663,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 375
-y 70
+x 370
+y 90
 w 60
 h 18
 controlPv "EPICS\\$(DEVICE):threshold:count_diff:B_sp"
@@ -676,8 +690,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 440
-y 95
+x 435
+y 115
 w 60
 h 20
 controlPv "EPICS\\$(DEVICE):threshold:count_diff:C_mon"
@@ -700,8 +714,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 375
-y 95
+x 370
+y 115
 w 60
 h 18
 controlPv "EPICS\\$(DEVICE):threshold:count_diff:C_sp"
@@ -727,8 +741,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 440
-y 120
+x 435
+y 140
 w 60
 h 20
 controlPv "EPICS\\$(DEVICE):threshold:count_diff:D_mon"
@@ -751,8 +765,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 375
-y 120
+x 370
+y 140
 w 60
 h 18
 controlPv "EPICS\\$(DEVICE):threshold:count_diff:D_sp"
@@ -778,8 +792,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 515
-y 10
+x 510
+y 30
 w 120
 h 25
 font "helvetica-medium-r-12.0"
@@ -797,8 +811,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 580
-y 45
+x 575
+y 65
 w 60
 h 20
 controlPv "EPICS\\$(DEVICE):threshold:counter_dead_time:A_mon"
@@ -821,8 +835,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 515
-y 45
+x 510
+y 65
 w 60
 h 18
 controlPv "EPICS\\$(DEVICE):threshold:counter_dead_time:A_sp"
@@ -848,8 +862,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 580
-y 70
+x 575
+y 90
 w 60
 h 20
 controlPv "EPICS\\$(DEVICE):threshold:counter_dead_time:B_mon"
@@ -872,8 +886,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 515
-y 70
+x 510
+y 90
 w 60
 h 18
 controlPv "EPICS\\$(DEVICE):threshold:counter_dead_time:B_sp"
@@ -899,8 +913,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 580
-y 95
+x 575
+y 115
 w 60
 h 20
 controlPv "EPICS\\$(DEVICE):threshold:counter_dead_time:C_mon"
@@ -923,8 +937,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 515
-y 95
+x 510
+y 115
 w 60
 h 18
 controlPv "EPICS\\$(DEVICE):threshold:counter_dead_time:C_sp"
@@ -950,8 +964,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 580
-y 120
+x 575
+y 140
 w 60
 h 20
 controlPv "EPICS\\$(DEVICE):threshold:counter_dead_time:D_mon"
@@ -974,8 +988,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 515
-y 120
+x 510
+y 140
 w 60
 h 18
 controlPv "EPICS\\$(DEVICE):threshold:counter_dead_time:D_sp"
@@ -993,5 +1007,877 @@ useHexPrefix
 newPos
 objType "controls"
 noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 240
+w 25
+h 25
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+value {
+  "A"
+}
+border
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 270
+w 25
+h 25
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+value {
+  "B"
+}
+border
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 300
+w 25
+h 25
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+value {
+  "C"
+}
+border
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 330
+w 25
+h 25
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+value {
+  "D"
+}
+border
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 75
+y 240
+w 30
+h 25
+fgColor index 14
+onColor index 15
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(DEVICE):coincidence:mask:AC_sp"
+indicatorPv "EPICS\\$(DEVICE):coincidence:mask:AC_mon"
+onLabel "C"
+offLabel "-"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 40
+y 240
+w 30
+h 25
+fgColor index 14
+onColor index 15
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(DEVICE):coincidence:mask:AB_sp"
+indicatorPv "EPICS\\$(DEVICE):coincidence:mask:AB_mon"
+onLabel "B"
+offLabel "-"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 110
+y 240
+w 30
+h 25
+fgColor index 14
+onColor index 15
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(DEVICE):coincidence:mask:AD_sp"
+indicatorPv "EPICS\\$(DEVICE):coincidence:mask:AD_mon"
+onLabel "D"
+offLabel "-"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 40
+y 205
+w 100
+h 30
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Enable/disable"
+  "comparison with"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 110
+y 270
+w 30
+h 25
+fgColor index 14
+onColor index 15
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(DEVICE):coincidence:mask:BD_sp"
+indicatorPv "EPICS\\$(DEVICE):coincidence:mask:BD_mon"
+onLabel "D"
+offLabel "-"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 75
+y 270
+w 30
+h 25
+fgColor index 14
+onColor index 15
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(DEVICE):coincidence:mask:BC_sp"
+indicatorPv "EPICS\\$(DEVICE):coincidence:mask:BC_mon"
+onLabel "C"
+offLabel "-"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 40
+y 270
+w 30
+h 25
+fgColor index 14
+onColor index 15
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(DEVICE):coincidence:mask:BA_sp"
+indicatorPv "EPICS\\$(DEVICE):coincidence:mask:BA_mon"
+onLabel "A"
+offLabel "-"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 110
+y 300
+w 30
+h 25
+fgColor index 14
+onColor index 15
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(DEVICE):coincidence:mask:CD_sp"
+indicatorPv "EPICS\\$(DEVICE):coincidence:mask:CD_mon"
+onLabel "D"
+offLabel "-"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 75
+y 300
+w 30
+h 25
+fgColor index 14
+onColor index 15
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(DEVICE):coincidence:mask:CB_sp"
+indicatorPv "EPICS\\$(DEVICE):coincidence:mask:CB_mon"
+onLabel "B"
+offLabel "-"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 40
+y 300
+w 30
+h 25
+fgColor index 14
+onColor index 15
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(DEVICE):coincidence:mask:CA_sp"
+indicatorPv "EPICS\\$(DEVICE):coincidence:mask:CA_mon"
+onLabel "A"
+offLabel "-"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 110
+y 330
+w 30
+h 25
+fgColor index 14
+onColor index 15
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(DEVICE):coincidence:mask:DC_sp"
+indicatorPv "EPICS\\$(DEVICE):coincidence:mask:DC_mon"
+onLabel "C"
+offLabel "-"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 75
+y 330
+w 30
+h 25
+fgColor index 14
+onColor index 15
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(DEVICE):coincidence:mask:DB_sp"
+indicatorPv "EPICS\\$(DEVICE):coincidence:mask:DB_mon"
+onLabel "B"
+offLabel "-"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 40
+y 330
+w 30
+h 25
+fgColor index 14
+onColor index 15
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(DEVICE):coincidence:mask:DA_sp"
+indicatorPv "EPICS\\$(DEVICE):coincidence:mask:DA_mon"
+onLabel "A"
+offLabel "-"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 200
+y 240
+w 30
+h 25
+fgColor index 14
+onColor index 15
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(DEVICE):coincidence:correlation:AC_sp"
+indicatorPv "EPICS\\$(DEVICE):coincidence:correlation:AC_mon"
+onLabel "C"
+offLabel "notC"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 165
+y 240
+w 30
+h 25
+fgColor index 14
+onColor index 15
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(DEVICE):coincidence:correlation:AB_sp"
+indicatorPv "EPICS\\$(DEVICE):coincidence:correlation:AB_mon"
+onLabel "B"
+offLabel "notB"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 235
+y 240
+w 30
+h 25
+fgColor index 14
+onColor index 15
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(DEVICE):coincidence:correlation:AD_sp"
+indicatorPv "EPICS\\$(DEVICE):coincidence:correlation:AD_mon"
+onLabel "D"
+offLabel "notD"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 165
+y 205
+w 100
+h 30
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "State of channel"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 235
+y 270
+w 30
+h 25
+fgColor index 14
+onColor index 15
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(DEVICE):coincidence:correlation:BD_sp"
+indicatorPv "EPICS\\$(DEVICE):coincidence:correlation:BD_mon"
+onLabel "D"
+offLabel "notD"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 200
+y 270
+w 30
+h 25
+fgColor index 14
+onColor index 15
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(DEVICE):coincidence:correlation:BC_sp"
+indicatorPv "EPICS\\$(DEVICE):coincidence:correlation:BC_mon"
+onLabel "C"
+offLabel "notC"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 165
+y 270
+w 30
+h 25
+fgColor index 14
+onColor index 15
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(DEVICE):coincidence:correlation:BA_sp"
+indicatorPv "EPICS\\$(DEVICE):coincidence:correlation:BA_mon"
+onLabel "A"
+offLabel "notA"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 235
+y 300
+w 30
+h 25
+fgColor index 14
+onColor index 15
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(DEVICE):coincidence:correlation:CD_sp"
+indicatorPv "EPICS\\$(DEVICE):coincidence:correlation:CD_mon"
+onLabel "D"
+offLabel "notD"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 200
+y 300
+w 30
+h 25
+fgColor index 14
+onColor index 15
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(DEVICE):coincidence:correlation:CB_sp"
+indicatorPv "EPICS\\$(DEVICE):coincidence:correlation:CB_mon"
+onLabel "B"
+offLabel "notB"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 165
+y 300
+w 30
+h 25
+fgColor index 14
+onColor index 15
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(DEVICE):coincidence:correlation:CA_sp"
+indicatorPv "EPICS\\$(DEVICE):coincidence:correlation:CA_mon"
+onLabel "A"
+offLabel "notA"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 235
+y 330
+w 30
+h 25
+fgColor index 14
+onColor index 15
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(DEVICE):coincidence:correlation:DC_sp"
+indicatorPv "EPICS\\$(DEVICE):coincidence:correlation:DC_mon"
+onLabel "C"
+offLabel "notC"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 200
+y 330
+w 30
+h 25
+fgColor index 14
+onColor index 15
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(DEVICE):coincidence:correlation:DB_sp"
+indicatorPv "EPICS\\$(DEVICE):coincidence:correlation:DB_mon"
+onLabel "B"
+offLabel "notB"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 165
+y 330
+w 30
+h 25
+fgColor index 14
+onColor index 15
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(DEVICE):coincidence:correlation:DA_sp"
+indicatorPv "EPICS\\$(DEVICE):coincidence:correlation:DA_mon"
+onLabel "A"
+offLabel "notA"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 180
+w 210
+h 20
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 0
+value {
+  " Coincidence detection settings"
+}
+border
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 15
+w 645
+h 160
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 5
+w 210
+h 20
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 0
+value {
+  " Counting settings"
+}
+border
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 285
+y 190
+w 365
+h 170
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 53
+value {
+  " Counting:"
+  " count threshold ... signal fallin under the threshold increments a count"
+  " count threshold high ... signal must increase over this to restart detection"
+  " count difference thr ... diff. mode; a glitch > threshold increments a count"
+  " count dead time ... a minimum time to restart detection"
+  ""
+  " Coincidence:"
+  " Every white channel is compared to select other 3 channels"
+  " Every channel can be inverted (e.g. B or not B)"
+}
+border
 endObjectProperties
 

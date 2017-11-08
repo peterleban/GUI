@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 711
-y 636
+x 184
+y 51
 w 320
 h 220
 font "helvetica-medium-r-18.0"
@@ -271,7 +271,7 @@ minor 7
 release 0
 x 75
 y 85
-w 115
+w 235
 h 20
 controlPv "EPICS\\$(DEVICE):version"
 font "helvetica-medium-r-12.0"

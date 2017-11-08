@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 634
-y 150
+x 258
+y 159
 w 900
 h 600
 font "helvetica-medium-r-18.0"
@@ -181,27 +181,6 @@ bgColor index 0
 value {
   "Attenuation"
   "[dB]"
-}
-border
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 10
-y 450
-w 70
-h 40
-font "helvetica-medium-r-10.0"
-fontAlign "center"
-fgColor index 14
-bgColor index 0
-value {
-  "Sampling"
-  "frequency [Hz]"
 }
 border
 endObjectProperties
@@ -407,8 +386,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 85
-y 460
+x 385
+y 375
 w 70
 h 20
 controlPv "EPICS\\$(DEVICE):clock_info:adc_frequency_mon"
@@ -2212,8 +2191,8 @@ beginObjectProperties
 major 4
 minor 4
 release 0
-x 355
-y 350
+x 15
+y 455
 w 135
 h 30
 fgColor index 91
@@ -2553,8 +2532,8 @@ beginObjectProperties
 major 4
 minor 4
 release 0
-x 355
-y 390
+x 15
+y 495
 w 135
 h 30
 fgColor index 91
@@ -2718,16 +2697,16 @@ beginObjectProperties
 major 4
 minor 4
 release 0
-x 355
-y 430
-w 135
-h 30
+x 15
+y 535
+w 190
+h 35
 fgColor index 91
 bgColor index 92
 topShadowColor index 0
 botShadowColor index 14
 font "helvetica-medium-r-12.0"
-buttonLabel "Counting settings"
+buttonLabel "Count and coincidence settings"
 numPvs 4
 numDsps 1
 displayFileName {
@@ -2736,5 +2715,27 @@ displayFileName {
 symbols {
   0 "BLD=A"
 }
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 385
+y 330
+w 65
+h 40
+font "helvetica-medium-r-10.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+value {
+  "Sampling"
+  "frequency"
+  "[Hz]"
+}
+border
 endObjectProperties
 
