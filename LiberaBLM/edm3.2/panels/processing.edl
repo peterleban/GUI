@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 510
-y 64
+x 2
+y 103
 w 900
 h 600
 font "helvetica-medium-r-18.0"
@@ -2618,32 +2618,6 @@ objType "controls"
 noExecuteClipMask
 endObjectProperties
 
-# (Text Control)
-object activeXTextDspClass
-beginObjectProperties
-major 4
-minor 7
-release 0
-x 255
-y 65
-w 55
-h 20
-controlPv "EPICS\\$(DEVICE):ch_delay:$(BLD)_sp"
-font "helvetica-bold-r-12.0"
-fontAlign "center"
-fgColor index 24
-bgColor index 0
-editable
-motifWidget
-limitsFromDb
-nullColor index 0
-smartRefresh
-useHexPrefix
-newPos
-objType "controls"
-noExecuteClipMask
-endObjectProperties
-
 # (Static Text)
 object activeXTextClass
 beginObjectProperties
@@ -2763,5 +2737,26 @@ displayFileName {
 symbols {
   0 "BLD=A"
 }
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 250
+y 50
+w 65
+h 40
+font "helvetica-medium-r-10.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 53
+value {
+  "Set in the"
+  ".xml file"
+}
+border
 endObjectProperties
 
