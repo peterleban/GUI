@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 258
-y 159
+x 510
+y 64
 w 900
 h 600
 font "helvetica-medium-r-18.0"
@@ -2192,8 +2192,8 @@ major 4
 minor 4
 release 0
 x 15
-y 455
-w 135
+y 450
+w 190
 h 30
 fgColor index 91
 bgColor index 92
@@ -2533,8 +2533,8 @@ major 4
 minor 4
 release 0
 x 15
-y 495
-w 135
+y 485
+w 190
 h 30
 fgColor index 91
 bgColor index 92
@@ -2698,7 +2698,7 @@ major 4
 minor 4
 release 0
 x 15
-y 535
+y 520
 w 190
 h 35
 fgColor index 91
@@ -2737,5 +2737,31 @@ value {
   "[Hz]"
 }
 border
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 15
+y 560
+w 190
+h 35
+fgColor index 91
+bgColor index 92
+topShadowColor index 0
+botShadowColor index 14
+font "helvetica-medium-r-12.0"
+buttonLabel "Calibration"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "calibration.edl"
+}
+symbols {
+  0 "BLD=A"
+}
 endObjectProperties
 

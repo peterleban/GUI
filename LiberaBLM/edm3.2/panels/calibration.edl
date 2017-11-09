@@ -1,0 +1,435 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 661
+y 352
+w 330
+h 460
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-18.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 5
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+title "Calibration settings for ch.$(BLD)"
+showGrid
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 15
+w 315
+h 355
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 75
+w 155
+h 30
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "PMT correction coefficient"
+  "[1...10000]"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 245
+y 80
+w 70
+h 25
+controlPv "EPICS\\$(DEVICE):calib:bldcalib:$(BLD)_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 170
+y 80
+w 70
+h 25
+controlPv "EPICS\\$(DEVICE):calib:bldcalib:$(BLD)_sp"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 24
+bgColor index 0
+editable
+motifWidget
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 5
+w 210
+h 20
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 0
+value {
+  " Calibration for channel $(BLD)"
+}
+border
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 170
+y 35
+w 145
+h 30
+fgColor index 14
+onColor index 15
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(DEVICE):calib:enabled_sp"
+indicatorPv "EPICS\\$(DEVICE):calib:enabled_mon"
+onLabel "ENABLED"
+offLabel "DISABLED"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 35
+w 155
+h 30
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Calibration status"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 170
+y 155
+w 145
+h 25
+controlPv "EPICS\\$(DEVICE):bld:vgc:$(BLD)_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+precision 2
+nullColor index 0
+smartRefresh
+useHexPrefix
+showUnits
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 155
+w 155
+h 25
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Current Vgc"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 190
+w 155
+h 25
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Vgc reference points"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 190
+y 190
+w 155
+h 25
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Vgc correction coeff."
+}
+endObjectProperties
+
+# (Coef Table)
+object activeCoefTableClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 15
+y 215
+w 120
+h 145
+fgColor index 14
+bgColor index 0
+oddColBgColor index 0
+evenColBgColor index 0
+topShadowColor index 0
+botShadowColor index 14
+pv "EPICS\\$(DEVICE):calib:vgc:$(BLD)_mon"
+labels "Vgc1,Vgc2,Vgc3,Vgc4,Vgc5,Vgc6,Vgc7,Vgc8"
+numElements 8
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Coef Table)
+object activeCoefTableClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 190
+y 215
+w 120
+h 145
+fgColor index 14
+bgColor index 0
+oddColBgColor index 0
+evenColBgColor index 0
+topShadowColor index 0
+botShadowColor index 14
+pv "EPICS\\$(DEVICE):calib:g:$(BLD)_mon"
+labels "G1,G2,G3,G4,G5,G6,G7,G8"
+numElements 8
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 140
+y 275
+w 45
+h 15
+
+beginGroup
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 140
+y 275
+w 45
+h 8
+lineColor index 14
+fillColor index 0
+numPoints 3
+xPoints {
+  0 140
+  1 185
+  2 180
+}
+yPoints {
+  0 283
+  1 283
+  2 275
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 180
+y 283
+w 5
+h 8
+lineColor index 14
+fillColor index 0
+numPoints 2
+xPoints {
+  0 185
+  1 180
+}
+yPoints {
+  0 283
+  1 291
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 170
+y 120
+w 145
+h 25
+controlPv "EPICS\\$(DEVICE):att:$(BLD)_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+precision 2
+nullColor index 0
+smartRefresh
+useHexPrefix
+showUnits
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 120
+w 155
+h 25
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Current Att"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 5
+y 375
+w 315
+h 80
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 53
+value {
+  "   Calibration coefficient=PMT_corr x Vgc_corr x 10exp(Att/20)"
+  ""
+  " It is multiplied to the original amplitude at read-out."
+  " Vgc correction coeff is taken from the Vgc reference point."
+}
+border
+endObjectProperties
+
