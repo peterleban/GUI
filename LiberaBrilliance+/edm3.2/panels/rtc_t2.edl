@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 2147
-y 584
+x 51
+y 77
 w 520
 h 360
 font "helvetica-bold-r-12.0"
@@ -28,8 +28,8 @@ endScreenProperties
 object activeCoefTableClass
 beginObjectProperties
 major 4
-minor 0
-release 1
+minor 1
+release 0
 x 950
 y 290
 w 90
@@ -48,8 +48,8 @@ endObjectProperties
 object activeCoefTableClass
 beginObjectProperties
 major 4
-minor 0
-release 1
+minor 1
+release 0
 x 10
 y 40
 w 150
@@ -60,7 +60,7 @@ oddColBgColor index 2
 evenColBgColor index 1
 topShadowColor index 0
 botShadowColor index 14
-pv "EPICS\\$(HOSTNAME):evrx:rtc:t2:in_mask"
+pv "EPICS\\$(HOSTNAME):evrx:rtc:t2:in_mask_mon"
 labels "Event0,Event1,Event2,Event3,Event4,Event5,Event6,Event7,Event8,Event9,Event10,Event11,Event12,Event13,Event14,Event15"
 font "helvetica-medium-r-12.0"
 endObjectProperties
@@ -69,8 +69,8 @@ endObjectProperties
 object activeCoefTableClass
 beginObjectProperties
 major 4
-minor 0
-release 1
+minor 1
+release 0
 x 180
 y 40
 w 150
@@ -81,7 +81,7 @@ oddColBgColor index 2
 evenColBgColor index 1
 topShadowColor index 0
 botShadowColor index 14
-pv "EPICS\\$(HOSTNAME):evrx:rtc:t2:in_function"
+pv "EPICS\\$(HOSTNAME):evrx:rtc:t2:in_function_mon"
 labels "Event0,Event1,Event2,Event3,Event4,Event5,Event6,Event7,Event8,Event9,Event10,Event11,Event12,Event13,Event14,Event15"
 font "helvetica-medium-r-12.0"
 endObjectProperties
@@ -90,8 +90,8 @@ endObjectProperties
 object activeCoefTableClass
 beginObjectProperties
 major 4
-minor 0
-release 1
+minor 1
+release 0
 x 350
 y 40
 w 150
@@ -102,7 +102,7 @@ oddColBgColor index 2
 evenColBgColor index 1
 topShadowColor index 0
 botShadowColor index 14
-pv "EPICS\\$(HOSTNAME):evrx:rtc:t2:code"
+pv "EPICS\\$(HOSTNAME):evrx:rtc:t2:code_mon"
 labels "Event0,Event1,Event2,Event3,Event4,Event5,Event6,Event7,Event8,Event9,Event10,Event11,Event12,Event13,Event14,Event15"
 font "helvetica-medium-r-12.0"
 endObjectProperties
@@ -112,11 +112,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 50
 y 10
-w 70
-h 17
+w 71
+h 16
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 0
@@ -132,11 +132,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 210
 y 10
-w 86
-h 17
+w 87
+h 16
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 0
@@ -152,11 +152,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 410
 y 10
-w 35
-h 17
+w 34
+h 16
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 0
