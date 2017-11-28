@@ -3,10 +3,10 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 949
-y 456
-w 420
-h 450
+x 291
+y 197
+w 590
+h 460
 font "helvetica-bold-r-12.0"
 ctlFont "helvetica-bold-r-12.0"
 btnFont "helvetica-medium-r-10.0"
@@ -19,9 +19,10 @@ ctlBgColor1 index 0
 ctlBgColor2 index 14
 topShadowColor index 0
 botShadowColor index 14
-title "FA on $(HOSTNAME)"
+title "FA data | IOC: $(HOSTNAME)"
 showGrid
 snapToGrid
+gridSize 5
 endScreenProperties
 
 # (Rectangle)
@@ -30,9 +31,24 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 10
-y 370
-w 400
+x 5
+y 5
+w 580
+h 25
+lineColor index 14
+fill
+fillColor index 1
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 385
+w 580
 h 70
 lineColor index 14
 fill
@@ -44,12 +60,12 @@ endObjectProperties
 object xyGraphClass
 beginObjectProperties
 major 4
-minor 7
+minor 8
 release 0
 # Geometry
-x 10
-y 190
-w 400
+x 5
+y 210
+w 580
 h 170
 # Appearance
 autoScaleBothDirections
@@ -91,18 +107,18 @@ endObjectProperties
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 2
+minor 4
 release 0
-x 310
-y 410
-w 90
-h 20
+x 10
+y 425
+w 205
+h 25
 fgColor index 91
 bgColor index 92
 topShadowColor index 0
 botShadowColor index 14
-font "helvetica-medium-r-14.0"
-buttonLabel "A,B,C,D"
+font "helvetica-medium-r-12.0"
+buttonLabel "Read amplitudes A,B,C,D"
 numPvs 4
 numDsps 1
 displayFileName {
@@ -120,12 +136,12 @@ endObjectProperties
 object xyGraphClass
 beginObjectProperties
 major 4
-minor 7
+minor 8
 release 0
 # Geometry
-x 10
-y 10
-w 400
+x 5
+y 35
+w 580
 h 170
 # Appearance
 autoScaleBothDirections
@@ -167,22 +183,85 @@ endObjectProperties
 object activeMessageButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
-x 310
-y 380
+x 325
+y 390
 w 90
-h 20
+h 25
 fgColor index 14
-onColor index 0
-offColor index 0
+onColor index 53
+offColor index 53
 topShadowColor index 0
 botShadowColor index 14
 controlPv "EPICS\\$(HOSTNAME):signals:fa.PROC"
 pressValue "1"
-onLabel "Refresh plot"
-offLabel "Refresh plot"
+onLabel "Reading data"
+offLabel "Read data"
 3d
 font "helvetica-medium-r-10.0"
+visPv "EPICS\\$(HOSTNAME):signals:fa.SCAN"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 230
+y 390
+w 90
+h 25
+fgColor index 14
+fgAlarm
+bgColor index 0
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(HOSTNAME):signals:fa.SCAN"
+indicatorPv "EPICS\\$(HOSTNAME):signals:fa.SCAN"
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 390
+w 220
+h 25
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Enable FA (I/O Intr or periodic modes)"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 10
+w 565
+h 15
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "FA data | IOC: $(HOSTNAME)"
+}
 endObjectProperties
 

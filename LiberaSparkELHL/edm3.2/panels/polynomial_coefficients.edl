@@ -3,10 +3,10 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 616
-y 605
-w 500
-h 320
+x 786
+y 117
+w 270
+h 500
 font "helvetica-bold-r-12.0"
 ctlFont "helvetica-bold-r-12.0"
 btnFont "helvetica-medium-r-10.0"
@@ -19,376 +19,382 @@ ctlBgColor1 index 0
 ctlBgColor2 index 14
 topShadowColor index 0
 botShadowColor index 14
-title "$(HOSTNAME): ADC mask"
+title "Polynomial equation coeff on $(HOSTNAME)"
 showGrid
 snapToGrid
 gridSize 5
 endScreenProperties
 
-# (X-Y Graph)
-object xyGraphClass
+# (Text Control)
+object activeXTextDspClass
 beginObjectProperties
 major 4
-minor 8
+minor 7
 release 0
-# Geometry
+x 90
+y 440
+w 80
+h 18
+controlPv "EPICS\\$(HOSTNAME):calibration:polynomial:qoff_sp"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 24
+bgColor index 0
+editable
+motifWidget
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 440
+w 76
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Qoffset [nm]"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 90
+y 465
+w 80
+h 18
+controlPv "EPICS\\$(HOSTNAME):calibration:polynomial:kq_sp"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 24
+bgColor index 0
+editable
+motifWidget
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 465
+w 49
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Kq [nm]"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
 x 10
 y 10
-w 480
-h 190
-# Appearance
-border
-xLabel "ADC sample within decimation"
-yLabel "ADC data"
+w 209
+h 32
+font "helvetica-bold-r-14.0"
 fgColor index 14
-bgColor index 1
-gridColor index 0
-font "courier-medium-r-12.0"
-# Operating Modes
-plotMode "plotLastNPts"
-nPts 50
-# X axis properties
-showXAxis
-xAxisSrc "AutoScale"
-xMin -0.2
-xMax 2
-xShowLabelGrid
-xShowMajorGrid
-# Y axis properties
-showYAxis
-yAxisSrc "AutoScale"
-yMin 0
-yMax 1.5
-yShowLabelGrid
-yShowMajorGrid
-# Y2 axis properties
-y2AxisSrc "AutoScale"
-y2Max 1
-# Trace Properties
-numTraces 4
-yPv {
-  0 "EPICS\\$(HOSTNAME):signals:tbt_window.A"
-  1 "EPICS\\$(HOSTNAME):signals:tbt_window.B"
-  2 "EPICS\\$(HOSTNAME):signals:tbt_window.C"
-  3 "EPICS\\$(HOSTNAME):signals:tbt_window.D"
+bgColor index 0
+useDisplayBg
+value {
+  "Calibration coefficients for the"
+  "polynomial equation"
 }
-lineThickness {
-  0 3
-  1 3
-}
-ySigned {
-  0 1
-  1 1
-  2 1
-  3 1
-}
-plotColor {
-  0 index 20
-  1 index 26
-  2 index 19
-  3 index 38
-}
+autoSize
 endObjectProperties
 
-# (Message Button)
-object activeMessageButtonClass
+# (Coef Table)
+object activeCoefTableClass
 beginObjectProperties
 major 4
 minor 1
 release 0
-x 400
-y 285
-w 90
-h 20
+x 10
+y 70
+w 120
+h 310
 fgColor index 14
-onColor index 0
-offColor index 0
+bgColor index 0
+oddColBgColor index 0
+evenColBgColor index 1
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):signals:tbt_window.PROC"
-pressValue "1"
-onLabel "Refresh plot"
-offLabel "Refresh plot"
-3d
-font "helvetica-medium-r-10.0"
+pv "EPICS\\$(HOSTNAME):calibration:polynomial:kx_mon"
+font "helvetica-medium-r-12.0"
 endObjectProperties
 
-# (Static Text)
-object activeXTextClass
+# (Coef Table)
+object activeCoefTableClass
 beginObjectProperties
 major 4
 minor 1
-release 1
-x 10
-y 235
-w 185
-h 20
-font "helvetica-medium-r-12.0"
-fgColor index 14
-bgColor index 0
-useDisplayBg
-value {
-  "ADC window mask length:"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 10
-y 260
-w 190
-h 20
-font "helvetica-medium-r-12.0"
-fgColor index 14
-bgColor index 0
-useDisplayBg
-value {
-  "ADC window mask offset from 0:"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 10
-y 285
-w 70
-h 20
-font "helvetica-medium-r-12.0"
-fgColor index 14
-bgColor index 0
-useDisplayBg
-value {
-  "Phase offset:"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 10
-y 210
-w 190
-h 20
-font "helvetica-medium-r-12.0"
-fgColor index 14
-bgColor index 0
-useDisplayBg
-value {
-  "Number of ADC samples per turn:"
-}
-endObjectProperties
-
-# (Text Control)
-object activeXTextDspClass
-beginObjectProperties
-major 4
-minor 7
 release 0
-x 200
-y 210
-w 160
-h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:tbt_decimation"
-font "helvetica-medium-r-12.0"
-fontAlign "right"
-fgColor index 14
-bgColor index 0
-limitsFromDb
-nullColor index 0
-smartRefresh
-useHexPrefix
-showUnits
-newPos
-objType "controls"
-noExecuteClipMask
-endObjectProperties
-
-# (Text Control)
-object activeXTextDspClass
-beginObjectProperties
-major 4
-minor 7
-release 0
-x 260
-y 235
-w 100
-h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:adc_mask:window_mon"
-font "helvetica-medium-r-12.0"
-fontAlign "right"
-fgColor index 14
-bgColor index 0
-limitsFromDb
-nullColor index 0
-smartRefresh
-fastUpdate
-useHexPrefix
-showUnits
-newPos
-objType "controls"
-noExecuteClipMask
-endObjectProperties
-
-# (Text Control)
-object activeXTextDspClass
-beginObjectProperties
-major 4
-minor 7
-release 0
-x 200
-y 235
-w 55
-h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:adc_mask:window_sp"
-font "helvetica-medium-r-12.0"
-fontAlign "right"
-fgColor index 24
-bgColor index 0
-editable
-motifWidget
-limitsFromDb
-nullColor index 0
-smartRefresh
-useHexPrefix
-newPos
-objType "controls"
-noExecuteClipMask
-endObjectProperties
-
-# (Text Control)
-object activeXTextDspClass
-beginObjectProperties
-major 4
-minor 7
-release 0
-x 260
-y 260
-w 100
-h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:adc_mask:offset_mon"
-font "helvetica-medium-r-12.0"
-fontAlign "right"
-fgColor index 14
-bgColor index 0
-limitsFromDb
-nullColor index 0
-smartRefresh
-fastUpdate
-useHexPrefix
-showUnits
-newPos
-objType "controls"
-noExecuteClipMask
-endObjectProperties
-
-# (Text Control)
-object activeXTextDspClass
-beginObjectProperties
-major 4
-minor 7
-release 0
-x 200
-y 260
-w 55
-h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:adc_mask:offset_sp"
-font "helvetica-medium-r-12.0"
-fontAlign "right"
-fgColor index 24
-bgColor index 0
-editable
-motifWidget
-limitsFromDb
-nullColor index 0
-smartRefresh
-useHexPrefix
-newPos
-objType "controls"
-noExecuteClipMask
-endObjectProperties
-
-# (Text Control)
-object activeXTextDspClass
-beginObjectProperties
-major 4
-minor 7
-release 0
-x 260
-y 285
-w 100
-h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:phase_offset_mon"
-font "helvetica-medium-r-12.0"
-fontAlign "right"
-fgColor index 14
-bgColor index 0
-limitsFromDb
-nullColor index 0
-smartRefresh
-fastUpdate
-useHexPrefix
-showUnits
-newPos
-objType "controls"
-noExecuteClipMask
-endObjectProperties
-
-# (Text Control)
-object activeXTextDspClass
-beginObjectProperties
-major 4
-minor 7
-release 0
-x 200
-y 285
-w 55
-h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:phase_offset_sp"
-font "helvetica-medium-r-12.0"
-fontAlign "right"
-fgColor index 24
-bgColor index 0
-editable
-motifWidget
-limitsFromDb
-nullColor index 0
-smartRefresh
-useHexPrefix
-newPos
-objType "controls"
-noExecuteClipMask
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 370
-y 210
+x 135
+y 70
 w 120
-h 70
-font "helvetica-medium-r-10.0"
+h 310
 fgColor index 14
-bgColor index 53
+bgColor index 0
+oddColBgColor index 0
+evenColBgColor index 1
+topShadowColor index 0
+botShadowColor index 14
+pv "EPICS\\$(HOSTNAME):calibration:polynomial:ky_mon"
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 50
+w 48
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
 value {
-  " Set the NGRP field in"
-  " the database file to:"
-  " "
-  " <ioc>:dsp:tbt:decimation"
+  "Kx [nm]"
 }
-border
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 140
+y 50
+w 48
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Ky [nm]"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 90
+y 390
+w 80
+h 18
+controlPv "EPICS\\$(HOSTNAME):calibration:polynomial:xoff_sp"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 24
+bgColor index 0
+editable
+motifWidget
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 390
+w 75
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Xoffset [nm]"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 415
+w 74
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Yoffset [nm]"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 90
+y 415
+w 80
+h 18
+controlPv "EPICS\\$(HOSTNAME):calibration:polynomial:yoff_sp"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 24
+bgColor index 0
+editable
+motifWidget
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 175
+y 465
+w 80
+h 18
+controlPv "EPICS\\$(HOSTNAME):calibration:polynomial:kq_mon"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 175
+y 440
+w 80
+h 18
+controlPv "EPICS\\$(HOSTNAME):calibration:polynomial:qoff_mon"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 175
+y 415
+w 80
+h 18
+controlPv "EPICS\\$(HOSTNAME):calibration:polynomial:yoff_mon"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 175
+y 390
+w 80
+h 18
+controlPv "EPICS\\$(HOSTNAME):calibration:polynomial:xoff_mon"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
 endObjectProperties
 

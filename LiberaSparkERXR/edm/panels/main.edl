@@ -3,10 +3,10 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 1
-y 51
-w 490
-h 420
+x 4
+y 301
+w 250
+h 600
 font "helvetica-medium-r-18.0"
 ctlFont "helvetica-medium-r-18.0"
 btnFont "helvetica-medium-r-18.0"
@@ -31,10 +31,10 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 250
-y 65
+x 10
+y 205
 w 230
-h 130
+h 125
 lineColor index 14
 fillColor index 0
 endObjectProperties
@@ -44,7 +44,7 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 10
 y 10
 w 112
@@ -64,7 +64,7 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 10
 y 30
 w 180
@@ -88,7 +88,7 @@ release 0
 x 10
 y 65
 w 230
-h 190
+h 125
 lineColor index 14
 fillColor index 0
 endObjectProperties
@@ -98,7 +98,7 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 15
 y 55
 w 175
@@ -117,7 +117,7 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 15
 y 80
 w 90
@@ -136,7 +136,7 @@ endObjectProperties
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 2
+minor 4
 release 0
 x 195
 y 80
@@ -151,7 +151,7 @@ buttonLabel "more"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "synchronize_time.edl"
+  0 "timing.edl"
 }
 menuLabel {
   0 "clocks"
@@ -161,45 +161,23 @@ setPosition {
 }
 endObjectProperties
 
-# (Menu Button)
-object activeMenuButtonClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 130
-y 130
-w 75
-h 18
-fgColor index 14
-fgAlarm
-bgColor index 0
-inconsistentColor index 14
-topShadowColor index 0
-botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):triggers:t2:source"
-indicatorPv "EPICS\\$(HOSTNAME):triggers:t2:source"
-font "helvetica-medium-r-12.0"
-endObjectProperties
-
 # (Static Text)
 object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 15
 y 110
-w 110
-h 14
+w 105
+h 20
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
 useDisplayBg
 value {
-  "Trigger (T2) source:"
+  "T2 trig. source:"
 }
-autoSize
 endObjectProperties
 
 # (Lines)
@@ -225,115 +203,23 @@ yPoints {
 }
 endObjectProperties
 
-# (Text Control)
-object activeXTextDspClass
-beginObjectProperties
-major 4
-minor 5
-release 0
-x 95
-y 155
-w 60
-h 18
-controlPv "EPICS\\$(HOSTNAME):triggers:t2:delay"
-font "helvetica-medium-r-12.0"
-fontAlign "right"
-fgColor index 24
-bgColor index 0
-editable
-autoHeight
-motifWidget
-limitsFromDb
-nullColor index 0
-smartRefresh
-useHexPrefix
-newPos
-objType "controls"
-noExecuteClipMask
-endObjectProperties
-
 # (Static Text)
 object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
-x 15
-y 155
-w 77
-h 14
-font "helvetica-medium-r-12.0"
-fgColor index 14
-bgColor index 0
-useDisplayBg
-value {
-  "Trigger delay:"
-}
-autoSize
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 0
-x 15
-y 180
-w 77
-h 14
-font "helvetica-medium-r-12.0"
-fgColor index 14
-bgColor index 0
-useDisplayBg
-value {
-  "Trigger count:"
-}
-autoSize
-endObjectProperties
-
-# (Lines)
-object activeLineClass
-beginObjectProperties
-major 4
-minor 0
 release 1
 x 15
-y 205
-w 220
-h 0
-lineColor index 14
-fillColor index 0
-numPoints 2
-xPoints {
-  0 15
-  1 235
-}
-yPoints {
-  0 205
-  1 205
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 0
-x 15
-y 215
-w 114
-h 14
+y 135
+w 110
+h 20
 font "helvetica-medium-r-12.0"
-fontAlign "right"
 fgColor index 14
 bgColor index 0
 useDisplayBg
 value {
-  "Sync State Machine"
+  "T2 trig. delay:"
 }
-autoSize
 endObjectProperties
 
 # (Static Text)
@@ -341,9 +227,28 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
-x 255
-y 55
+release 1
+x 15
+y 160
+w 90
+h 20
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "T2 trig. counter"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 195
 w 175
 h 20
 font "helvetica-bold-r-12.0"
@@ -360,9 +265,9 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
-x 255
-y 80
+release 1
+x 15
+y 220
 w 55
 h 14
 font "helvetica-medium-r-12.0"
@@ -379,11 +284,11 @@ endObjectProperties
 object activeXTextDspClass
 beginObjectProperties
 major 4
-minor 5
+minor 7
 release 0
-x 320
-y 80
-w 60
+x 80
+y 220
+w 110
 h 14
 controlPv "EPICS\\$(HOSTNAME):max_adc"
 font "helvetica-bold-r-12.0"
@@ -395,6 +300,7 @@ limitsFromDb
 nullColor index 0
 smartRefresh
 useHexPrefix
+showUnits
 newPos
 objType "controls"
 noExecuteClipMask
@@ -407,9 +313,9 @@ major 4
 minor 0
 release 0
 x 10
-y 270
-w 470
-h 140
+y 430
+w 230
+h 165
 lineColor index 14
 fillColor index 0
 endObjectProperties
@@ -419,9 +325,9 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 15
-y 260
+y 420
 w 175
 h 20
 font "helvetica-bold-r-12.0"
@@ -439,10 +345,10 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 250
-y 210
+x 10
+y 345
 w 230
-h 45
+h 70
 lineColor index 14
 fillColor index 0
 endObjectProperties
@@ -452,9 +358,9 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
-x 255
-y 200
+release 1
+x 15
+y 335
 w 175
 h 20
 font "helvetica-bold-r-12.0"
@@ -470,11 +376,11 @@ endObjectProperties
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 2
+minor 4
 release 0
 x 15
-y 285
-w 105
+y 445
+w 125
 h 25
 fgColor index 91
 bgColor index 92
@@ -499,11 +405,11 @@ endObjectProperties
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 2
+minor 4
 release 0
 x 15
-y 375
-w 105
+y 565
+w 125
 h 25
 fgColor index 91
 bgColor index 92
@@ -521,32 +427,6 @@ menuLabel {
 }
 symbols {
   0 "BPM=signals"
-}
-endObjectProperties
-
-# (Related Display)
-object relatedDisplayClass
-beginObjectProperties
-major 4
-minor 2
-release 0
-x 15
-y 315
-w 105
-h 25
-fgColor index 91
-bgColor index 92
-topShadowColor index 0
-botShadowColor index 14
-font "helvetica-bold-r-12.0"
-buttonLabel "TBT - DDC"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "dd_tdp_mini.edl"
-}
-symbols {
-  0 "DD=signals:ddc_synth, TYPE=DDC"
 }
 endObjectProperties
 
@@ -593,68 +473,41 @@ endObjectProperties
 object activeXTextDspClass
 beginObjectProperties
 major 4
-minor 5
-release 0
-x 95
-y 180
-w 60
-h 14
-controlPv "EPICS\\$(HOSTNAME):triggers:t2:count"
-font "helvetica-medium-r-12.0"
-fontAlign "right"
-fgColor index 24
-bgColor index 0
-autoHeight
-limitsFromDb
-nullColor index 0
-smartRefresh
-useHexPrefix
-newPos
-objType "controls"
-noExecuteClipMask
-endObjectProperties
-
-# (Text Control)
-object activeXTextDspClass
-beginObjectProperties
-major 4
-minor 5
-release 0
-x 130
-y 110
-w 75
-h 14
-controlPv "EPICS\\$(HOSTNAME):triggers:t2:source"
-font "helvetica-medium-r-12.0"
-fontAlign "center"
-fgColor index 24
-bgColor index 0
-autoHeight
-limitsFromDb
-nullColor index 0
-smartRefresh
-useHexPrefix
-newPos
-objType "controls"
-noExecuteClipMask
-endObjectProperties
-
-# (Text Control)
-object activeXTextDspClass
-beginObjectProperties
-major 4
-minor 5
+minor 7
 release 0
 x 140
-y 215
+y 160
 w 95
-h 14
-controlPv "EPICS\\$(HOSTNAME):clocks:sync_st_m"
+h 20
+controlPv "EPICS\\$(HOSTNAME):triggers:t2:count_mon"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 140
+y 110
+w 95
+h 20
+controlPv "EPICS\\$(HOSTNAME):triggers:t2:source_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "center"
-fgColor index 24
+fgColor index 14
 bgColor index 0
-autoHeight
 limitsFromDb
 nullColor index 0
 smartRefresh
@@ -669,9 +522,9 @@ object activeBarClass
 beginObjectProperties
 major 4
 minor 1
-release 0
-x 255
-y 100
+release 2
+x 15
+y 245
 w 220
 h 30
 indicatorColor index 83
@@ -690,19 +543,18 @@ endObjectProperties
 object activeXTextDspClass
 beginObjectProperties
 major 4
-minor 5
+minor 7
 release 0
-x 270
-y 170
-w 30
-h 18
-controlPv "EPICS\\$(HOSTNAME):att:A"
+x 120
+y 280
+w 35
+h 20
+controlPv "EPICS\\$(HOSTNAME):att_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
 bgColor index 0
 editable
-autoHeight
 motifWidget
 limitsFromDb
 nullColor index 0
@@ -718,190 +570,54 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
-x 320
-y 140
-w 88
-h 14
+release 1
+x 15
+y 280
+w 65
+h 20
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
 useDisplayBg
 value {
-  "Attenuation [dB]"
+  "Attenuation"
 }
-autoSize
 endObjectProperties
 
 # (Text Control)
 object activeXTextDspClass
 beginObjectProperties
 major 4
-minor 5
+minor 7
 release 0
-x 320
-y 170
-w 30
-h 18
-controlPv "EPICS\\$(HOSTNAME):att:B"
+x 165
+y 280
+w 70
+h 20
+controlPv "EPICS\\$(HOSTNAME):att_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
-fgColor index 24
+fgColor index 14
 bgColor index 0
-editable
-autoHeight
-motifWidget
 limitsFromDb
 nullColor index 0
 smartRefresh
+fastUpdate
 useHexPrefix
+showUnits
 newPos
 objType "controls"
 noExecuteClipMask
-endObjectProperties
-
-# (Text Control)
-object activeXTextDspClass
-beginObjectProperties
-major 4
-minor 5
-release 0
-x 370
-y 170
-w 30
-h 18
-controlPv "EPICS\\$(HOSTNAME):att:C"
-font "helvetica-medium-r-12.0"
-fontAlign "right"
-fgColor index 24
-bgColor index 0
-editable
-autoHeight
-motifWidget
-limitsFromDb
-nullColor index 0
-smartRefresh
-useHexPrefix
-newPos
-objType "controls"
-noExecuteClipMask
-endObjectProperties
-
-# (Text Control)
-object activeXTextDspClass
-beginObjectProperties
-major 4
-minor 5
-release 0
-x 425
-y 170
-w 30
-h 18
-controlPv "EPICS\\$(HOSTNAME):att:D"
-font "helvetica-medium-r-12.0"
-fontAlign "right"
-fgColor index 24
-bgColor index 0
-editable
-autoHeight
-motifWidget
-limitsFromDb
-nullColor index 0
-smartRefresh
-useHexPrefix
-newPos
-objType "controls"
-noExecuteClipMask
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 0
-x 270
-y 155
-w 29
-h 14
-font "helvetica-medium-r-12.0"
-fgColor index 14
-bgColor index 0
-useDisplayBg
-value {
-  "Ch A"
-}
-autoSize
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 0
-x 320
-y 155
-w 28
-h 14
-font "helvetica-medium-r-12.0"
-fgColor index 14
-bgColor index 0
-useDisplayBg
-value {
-  "Ch B"
-}
-autoSize
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 0
-x 370
-y 155
-w 29
-h 14
-font "helvetica-medium-r-12.0"
-fgColor index 14
-bgColor index 0
-useDisplayBg
-value {
-  "Ch C"
-}
-autoSize
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 0
-x 425
-y 155
-w 29
-h 14
-font "helvetica-medium-r-12.0"
-fgColor index 14
-bgColor index 0
-useDisplayBg
-value {
-  "Ch D"
-}
-autoSize
 endObjectProperties
 
 # (Related Display)
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 2
+minor 4
 release 0
-x 260
-y 225
+x 15
+y 360
 w 95
 h 20
 fgColor index 91
@@ -921,11 +637,11 @@ endObjectProperties
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 2
+minor 4
 release 0
-x 380
-y 225
-w 85
+x 140
+y 360
+w 95
 h 20
 fgColor index 91
 bgColor index 92
@@ -944,115 +660,11 @@ endObjectProperties
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 2
-release 0
-x 125
-y 315
-w 105
-h 25
-fgColor index 91
-bgColor index 92
-topShadowColor index 0
-botShadowColor index 14
-font "helvetica-bold-r-12.0"
-buttonLabel "TBT - DDC D64"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "dd_tdp_mini.edl"
-}
-symbols {
-  0 "DD=signals:ddc_synth_d, TYPE=DDC_D64"
-}
-endObjectProperties
-
-# (Related Display)
-object relatedDisplayClass
-beginObjectProperties
-major 4
-minor 2
+minor 4
 release 0
 x 15
-y 345
-w 105
-h 25
-fgColor index 91
-bgColor index 92
-topShadowColor index 0
-botShadowColor index 14
-font "helvetica-bold-r-12.0"
-buttonLabel "TBT - TDP"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "dd_tdp_mini.edl"
-}
-symbols {
-  0 "DD=signals:tdp_synth, TYPE=TDP"
-}
-endObjectProperties
-
-# (Related Display)
-object relatedDisplayClass
-beginObjectProperties
-major 4
-minor 2
-release 0
-x 125
-y 345
-w 105
-h 25
-fgColor index 91
-bgColor index 92
-topShadowColor index 0
-botShadowColor index 14
-font "helvetica-bold-r-12.0"
-buttonLabel "TBT - TDP D64"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "dd_tdp_mini.edl"
-}
-symbols {
-  0 "DD=signals:tdp_synth_d, TYPE=TDP_D64"
-}
-endObjectProperties
-
-# (Related Display)
-object relatedDisplayClass
-beginObjectProperties
-major 4
-minor 2
-release 0
-x 235
-y 315
-w 105
-h 25
-fgColor index 91
-bgColor index 92
-topShadowColor index 0
-botShadowColor index 14
-font "helvetica-bold-r-12.0"
-buttonLabel "TBT - DDC RAW"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "dd_raw.edl"
-}
-symbols {
-  0 "DD1=signals:ddc_raw, TYPE=DDC_RAW"
-}
-endObjectProperties
-
-# (Related Display)
-object relatedDisplayClass
-beginObjectProperties
-major 4
-minor 2
-release 0
-x 125
-y 375
-w 105
+y 535
+w 125
 h 25
 fgColor index 91
 bgColor index 92
@@ -1067,26 +679,223 @@ displayFileName {
 }
 endObjectProperties
 
-# (Message Button)
-object activeMessageButtonClass
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 15
+y 475
+w 125
+h 25
+fgColor index 14
+bgColor index 0
+topShadowColor index 0
+botShadowColor index 14
+font "helvetica-bold-r-12.0"
+buttonLabel "Turn-by-turn DDC"
+numPvs 4
+numDsps 3
+displayFileName {
+  0 "dd_mini.edl"
+  1 "dd_mini.edl"
+  2 "dd_raw.edl"
+}
+menuLabel {
+  0 "DDC standard"
+  1 "DDC averaged"
+  2 "DDC raw (I/Q)"
+}
+symbols {
+  0 "DD=signals:ddc_synth, TYPE=DDC"
+  1 "DD=signals:ddc_synth_d, TYPE=DDC_averaged"
+  2 "DD1=signals:ddc_raw, TYPE=DDC_RAW"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 15
+y 505
+w 125
+h 25
+fgColor index 14
+bgColor index 0
+topShadowColor index 0
+botShadowColor index 14
+font "helvetica-bold-r-12.0"
+buttonLabel "Turn-by-turn TDP"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "dd_mini.edl"
+  1 "dd_mini.edl"
+}
+menuLabel {
+  0 "TDP standard"
+  1 "TDP averaged"
+}
+symbols {
+  0 "DD=signals:tdp_synth, TYPE=TDP"
+  1 "DD=signals:tdp_synth_d, TYPE=TDP_averaged"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 305
+w 95
+h 20
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "ADC sensitivity"
+}
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
 beginObjectProperties
 major 4
 minor 0
 release 0
-x 140
-y 230
-w 95
+x 120
+y 305
+w 115
 h 20
 fgColor index 14
-onColor index 53
-offColor index 53
+fgAlarm
+bgColor index 0
+inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):clocks:synchronize"
-pressValue "0"
-onLabel "Sending..."
-offLabel "Sync now"
-3d
+controlPv "EPICS\\$(HOSTNAME):adc_sens_sp"
+indicatorPv "EPICS\\$(HOSTNAME):adc_sens_mon"
 font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 140
+y 135
+w 95
+h 20
+controlPv "EPICS\\$(HOSTNAME):triggers:t2:delay_mon"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 140
+y 385
+w 95
+h 20
+fgColor index 91
+bgColor index 92
+topShadowColor index 0
+botShadowColor index 14
+font "helvetica-medium-r-12.0"
+buttonLabel "Calibration"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "calibration.edl"
+}
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 15
+y 390
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+alarmPv "EPICS\\$(HOSTNAME):calib:enabled_mon"
+visPv "EPICS\\$(HOSTNAME):calib:enabled_mon"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 35
+y 385
+w 95
+h 20
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+visPv "EPICS\\$(HOSTNAME):calib:enabled_mon"
+visMin "1"
+visMax "2"
+value {
+  "Calibrated mode"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 385
+w 120
+h 20
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+visPv "EPICS\\$(HOSTNAME):calib:enabled_mon"
+visInvert
+visMin "1"
+visMax "2"
+value {
+  "Calibrated mode OFF"
+}
 endObjectProperties
 

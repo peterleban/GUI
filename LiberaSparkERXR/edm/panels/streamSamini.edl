@@ -3,10 +3,10 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 619
-y 501
-w 510
-h 380
+x 385
+y 121
+w 590
+h 460
 font "helvetica-bold-r-12.0"
 ctlFont "helvetica-bold-r-12.0"
 btnFont "helvetica-medium-r-10.0"
@@ -19,22 +19,37 @@ ctlBgColor1 index 0
 ctlBgColor2 index 14
 topShadowColor index 0
 botShadowColor index 14
-title "SA on $(HOSTNAME)"
+title "SA data | IOC: $(HOSTNAME)"
 showGrid
 snapToGrid
 gridSize 5
 endScreenProperties
 
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 385
+w 580
+h 70
+lineColor index 14
+fill
+fillColor index 1
+endObjectProperties
+
 # (X-Y Graph)
 object xyGraphClass
 beginObjectProperties
 major 4
-minor 7
+minor 8
 release 0
 # Geometry
-x 10
-y 5
-w 490
+x 5
+y 35
+w 580
 h 170
 # Appearance
 autoScaleBothDirections
@@ -77,12 +92,12 @@ endObjectProperties
 object xyGraphClass
 beginObjectProperties
 major 4
-minor 7
+minor 8
 release 0
 # Geometry
-x 10
-y 180
-w 490
+x 5
+y 210
+w 580
 h 170
 # Appearance
 autoScaleBothDirections
@@ -125,18 +140,18 @@ endObjectProperties
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 2
+minor 4
 release 0
-x 410
-y 355
-w 90
-h 20
+x 10
+y 420
+w 195
+h 25
 fgColor index 91
 bgColor index 92
 topShadowColor index 0
 botShadowColor index 14
 font "helvetica-medium-r-12.0"
-buttonLabel "A,B,C,D"
+buttonLabel "Read amplitudes A,B,C,D"
 numPvs 4
 numDsps 1
 displayFileName {
@@ -156,18 +171,18 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 130
-y 355
-w 75
-h 18
+x 125
+y 390
+w 80
+h 25
 fgColor index 14
 fgAlarm
 bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):dsp:fa_data_type"
-indicatorPv "EPICS\\$(HOSTNAME):dsp:fa_data_type"
+controlPv "EPICS\\$(HOSTNAME):dsp:fa_data_type_sp"
+indicatorPv "EPICS\\$(HOSTNAME):dsp:fa_data_type_mon"
 font "helvetica-medium-r-12.0"
 endObjectProperties
 
@@ -176,11 +191,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 10
-y 355
-w 108
-h 14
+y 390
+w 115
+h 25
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -188,6 +203,40 @@ useDisplayBg
 value {
   "FA/SA data source"
 }
-autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 5
+w 580
+h 25
+lineColor index 14
+fill
+fillColor index 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 10
+w 565
+h 15
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "SA data | IOC: $(HOSTNAME)"
+}
 endObjectProperties
 

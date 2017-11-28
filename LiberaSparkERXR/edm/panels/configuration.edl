@@ -3,10 +3,10 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 217
-y 731
+x 654
+y 535
 w 470
-h 150
+h 170
 font "helvetica-bold-r-12.0"
 ctlFont "helvetica-bold-r-12.0"
 btnFont "helvetica-medium-r-10.0"
@@ -22,25 +22,25 @@ botShadowColor index 14
 title "Scale parameters on $(HOSTNAME)"
 showGrid
 snapToGrid
+gridSize 5
 endScreenProperties
 
 # (Text Control)
 object activeXTextDspClass
 beginObjectProperties
 major 4
-minor 5
+minor 7
 release 0
-x 200
-y 50
-w 80
-h 18
-controlPv "EPICS\\$(HOSTNAME):dsp:kx"
+x 230
+y 15
+w 95
+h 20
+controlPv "EPICS\\$(HOSTNAME):dsp:kx_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
 bgColor index 0
 editable
-autoHeight
 motifWidget
 limitsFromDb
 nullColor index 0
@@ -55,9 +55,9 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
-x 140
-y 50
+release 1
+x 170
+y 15
 w 48
 h 16
 font "helvetica-medium-r-14.0"
@@ -75,9 +75,9 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
-x 140
-y 80
+release 1
+x 170
+y 75
 w 48
 h 16
 font "helvetica-medium-r-14.0"
@@ -95,9 +95,9 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
-x 290
-y 50
+release 1
+x 150
+y 40
 w 75
 h 16
 font "helvetica-medium-r-14.0"
@@ -115,9 +115,9 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
-x 290
-y 80
+release 1
+x 150
+y 100
 w 74
 h 16
 font "helvetica-medium-r-14.0"
@@ -134,19 +134,18 @@ endObjectProperties
 object activeXTextDspClass
 beginObjectProperties
 major 4
-minor 5
+minor 7
 release 0
-x 370
-y 50
-w 80
-h 18
-controlPv "EPICS\\$(HOSTNAME):dsp:off_x"
+x 230
+y 40
+w 95
+h 20
+controlPv "EPICS\\$(HOSTNAME):dsp:off_x_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
 bgColor index 0
 editable
-autoHeight
 motifWidget
 limitsFromDb
 nullColor index 0
@@ -160,19 +159,18 @@ endObjectProperties
 object activeXTextDspClass
 beginObjectProperties
 major 4
-minor 5
+minor 7
 release 0
-x 200
-y 80
-w 80
-h 18
-controlPv "EPICS\\$(HOSTNAME):dsp:ky"
+x 230
+y 75
+w 95
+h 20
+controlPv "EPICS\\$(HOSTNAME):dsp:ky_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
 bgColor index 0
 editable
-autoHeight
 motifWidget
 limitsFromDb
 nullColor index 0
@@ -186,19 +184,18 @@ endObjectProperties
 object activeXTextDspClass
 beginObjectProperties
 major 4
-minor 5
+minor 7
 release 0
-x 370
-y 80
-w 80
-h 18
-controlPv "EPICS\\$(HOSTNAME):dsp:off_y"
+x 230
+y 100
+w 95
+h 20
+controlPv "EPICS\\$(HOSTNAME):dsp:off_y_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
 bgColor index 0
 editable
-autoHeight
 motifWidget
 limitsFromDb
 nullColor index 0
@@ -213,7 +210,7 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 30
 y 10
 w 13
@@ -368,7 +365,7 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 90
 y 10
 w 13
@@ -455,20 +452,20 @@ beginObjectProperties
 major 4
 minor 0
 release 1
-x 150
-y 60
+x 180
+y 25
 w 0
 h 0
 lineColor index 14
 fillColor index 0
 numPoints 2
 xPoints {
-  0 150
-  1 150
+  0 180
+  1 180
 }
 yPoints {
-  0 60
-  1 60
+  0 25
+  1 25
 }
 endObjectProperties
 
@@ -500,7 +497,7 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 30
 y 110
 w 14
@@ -611,7 +608,7 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 90
 y 110
 w 14
@@ -746,7 +743,7 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 80
 y 20
 w 9
@@ -791,7 +788,7 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 0
 y 70
 w 9
@@ -827,19 +824,18 @@ endObjectProperties
 object activeXTextDspClass
 beginObjectProperties
 major 4
-minor 5
+minor 7
 release 0
-x 370
-y 110
-w 80
-h 18
-controlPv "EPICS\\$(HOSTNAME):dsp:off_q"
+x 230
+y 130
+w 95
+h 20
+controlPv "EPICS\\$(HOSTNAME):dsp:off_q_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
 bgColor index 0
 editable
-autoHeight
 motifWidget
 limitsFromDb
 nullColor index 0
@@ -854,9 +850,9 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
-x 290
-y 110
+release 1
+x 150
+y 130
 w 76
 h 16
 font "helvetica-medium-r-14.0"
@@ -867,5 +863,130 @@ value {
   "Qoffset [nm]"
 }
 autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 335
+y 15
+w 105
+h 20
+controlPv "EPICS\\$(HOSTNAME):dsp:kx_mon"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+showUnits
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 335
+y 40
+w 105
+h 20
+controlPv "EPICS\\$(HOSTNAME):dsp:off_x_mon"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+showUnits
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 335
+y 100
+w 105
+h 20
+controlPv "EPICS\\$(HOSTNAME):dsp:off_y_mon"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+showUnits
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 335
+y 75
+w 105
+h 20
+controlPv "EPICS\\$(HOSTNAME):dsp:ky_mon"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+showUnits
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 335
+y 130
+w 105
+h 20
+controlPv "EPICS\\$(HOSTNAME):dsp:off_q_mon"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+showUnits
+newPos
+objType "controls"
+noExecuteClipMask
 endObjectProperties
 

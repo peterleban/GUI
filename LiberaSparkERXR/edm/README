@@ -3,7 +3,17 @@ Graphical User Interface for Libera Spark ERXR.
 
 The start script (start.sh) contains settings
 for a particular system configuration. To use the
-EDM panels in your system, copy the /panels and /prefs
+EDM panels in your system, copy these files:
 
-Date: November 14, 2016
+  /panels
+  /prefs/colors.list
+  /prefs/fonts.list
+  /prefs/calc.list
+
+This GUI works with these software versions:
+
+  libera-spark-r v1.2 and later
+  libera-ioc v3.2 and later
+
+Date: November 28, 2017
 Author: peter.leban@i-tech.si

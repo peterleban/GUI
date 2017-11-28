@@ -3,10 +3,10 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 52
-y 104
+x 743
+y 186
 w 740
-h 420
+h 480
 font "helvetica-bold-r-12.0"
 ctlFont "helvetica-bold-r-12.0"
 btnFont "helvetica-medium-r-10.0"
@@ -19,35 +19,22 @@ ctlBgColor1 index 0
 ctlBgColor2 index 14
 topShadowColor index 0
 botShadowColor index 14
-title "FA on $(HOSTNAME)"
+title "FA amplitudes | IOC: $(HOSTNAME)"
 showGrid
 snapToGrid
+gridSize 5
 endScreenProperties
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 620
-y 30
-w 110
-h 180
-lineColor index 14
-fillColor index 0
-endObjectProperties
 
 # (X-Y Graph)
 object xyGraphClass
 beginObjectProperties
 major 4
-minor 7
+minor 8
 release 0
 # Geometry
-x 10
-y 10
-w 600
+x 5
+y 35
+w 730
 h 400
 # Appearance
 autoScaleBothDirections
@@ -113,14 +100,48 @@ plotColor {
 }
 endObjectProperties
 
-# (Button)
-object activeButtonClass
+# (Rectangle)
+object activeRectangleClass
 beginObjectProperties
 major 4
 minor 0
 release 0
-x 640
-y 100
+x 5
+y 440
+w 730
+h 30
+lineColor index 14
+fill
+fillColor index 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 445
+w 115
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Select to show:"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 120
+y 445
 w 70
 h 20
 fgColor index 14
@@ -145,10 +166,10 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
-x 640
-y 120
+x 195
+y 445
 w 70
 h 20
 fgColor index 14
@@ -173,10 +194,10 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
-x 640
-y 140
+x 270
+y 445
 w 70
 h 20
 fgColor index 14
@@ -201,10 +222,10 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
-x 640
-y 160
+x 345
+y 445
 w 70
 h 20
 fgColor index 14
@@ -229,10 +250,10 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
-x 640
-y 180
+x 420
+y 445
 w 70
 h 20
 fgColor index 0
@@ -257,10 +278,10 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
-x 640
-y 50
+x 495
+y 445
 w 70
 h 20
 fgColor index 14
@@ -281,66 +302,64 @@ controlBitPos 5
 readBitPos 5
 endObjectProperties
 
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 0
-x 630
-y 30
-w 90
-h 20
-font "helvetica-medium-r-10.0"
-fontAlign "center"
-fgColor index 14
-bgColor index 0
-useDisplayBg
-value {
-  "Position"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 0
-x 630
-y 80
-w 90
-h 20
-font "helvetica-medium-r-10.0"
-fontAlign "center"
-fgColor index 14
-bgColor index 0
-useDisplayBg
-value {
-  "Amplitudes"
-}
-endObjectProperties
-
 # (Message Button)
 object activeMessageButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
-x 630
-y 220
+x 640
+y 445
 w 90
 h 20
 fgColor index 14
-onColor index 0
-offColor index 0
+onColor index 53
+offColor index 53
 topShadowColor index 0
 botShadowColor index 14
 controlPv "EPICS\\$(HOSTNAME):signals:fa.PROC"
 pressValue "1"
-onLabel "Refresh plot"
-offLabel "Refresh plot"
+onLabel "Read data"
+offLabel "Read data"
 3d
 font "helvetica-medium-r-10.0"
+visPv "EPICS\\$(HOSTNAME):signals:fa.SCAN"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 5
+w 730
+h 25
+lineColor index 14
+fill
+fillColor index 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 10
+w 715
+h 15
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "FA amplitudes | IOC: $(HOSTNAME)"
+}
 endObjectProperties
 
