@@ -1,0 +1,453 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 326
+y 138
+w 520
+h 770
+font "helvetica-bold-r-12.0"
+ctlFont "helvetica-bold-r-12.0"
+btnFont "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+title "Calibration | IOC: $(HOSTNAME)"
+showGrid
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 245
+y 60
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 53
+alarmPv "EPICS\\$(HOSTNAME):calib:active"
+visPv "EPICS\\$(HOSTNAME):calib:active"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 125
+y 50
+w 110
+h 45
+fgColor index 14
+onColor index 0
+offColor index 0
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(HOSTNAME):calib:calc_sp"
+pressValue "0"
+onLabel "Calculate coefficients"
+offLabel "Calculate coefficients"
+3d
+useEnumNumeric
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 5
+y 105
+w 135
+h 35
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Set #of SA samples for"
+  "calibration calculation"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 5
+y 10
+w 115
+h 25
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Calibration enabled"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 200
+y 110
+w 50
+h 20
+controlPv "EPICS\\$(HOSTNAME):calib:num_of_samples_mon"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 140
+y 110
+w 55
+h 20
+controlPv "EPICS\\$(HOSTNAME):calib:num_of_samples_sp"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 24
+bgColor index 0
+editable
+motifWidget
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 125
+y 10
+w 115
+h 25
+fgColor index 14
+bgColor index 0
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(HOSTNAME):calib:enabled_sp"
+indicatorPv "EPICS\\$(HOSTNAME):calib:enabled_mon"
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 270
+y 60
+w 110
+h 20
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+visPv "EPICS\\$(HOSTNAME):calib:active"
+visMin "0"
+visMax "1"
+value {
+  "Idle"
+}
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 245
+y 60
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 20
+alarmPv "EPICS\\$(HOSTNAME):calib:active"
+visPv "EPICS\\$(HOSTNAME):calib:active"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 270
+y 60
+w 115
+h 20
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+visPv "EPICS\\$(HOSTNAME):calib:active"
+visMin "1"
+visMax "2"
+value {
+  "Calculation in progress"
+}
+endObjectProperties
+
+# (Coef Table)
+object activeCoefTableClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 170
+w 120
+h 590
+fgColor index 14
+bgColor index 0
+oddColBgColor index 0
+evenColBgColor index 0
+topShadowColor index 0
+botShadowColor index 14
+pv "EPICS\\$(HOSTNAME):calib:coeff:A"
+labels "NoAtt,1 dB,2 dB,3 dB,4 dB,5 dB,6 dB,7 dB,8 dB,9 dB,10 dB,11 dB,12 dB,13 dB,14 dB,15 dB,16 dB,17 dB,18 dB,19 dB,20 dB,21 dB,22 dB,23 dB,24 dB,25 dB,26 dB,27 dB,28 dB,29 dB,30 dB,31 dB"
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Coef Table)
+object activeCoefTableClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 135
+y 170
+w 120
+h 590
+fgColor index 14
+bgColor index 0
+oddColBgColor index 0
+evenColBgColor index 0
+topShadowColor index 0
+botShadowColor index 14
+pv "EPICS\\$(HOSTNAME):calib:coeff:B"
+labels "NoAtt,1 dB,2 dB,3 dB,4 dB,5 dB,6 dB,7 dB,8 dB,9 dB,10 dB,11 dB,12 dB,13 dB,14 dB,15 dB,16 dB,17 dB,18 dB,19 dB,20 dB,21 dB,22 dB,23 dB,24 dB,25 dB,26 dB,27 dB,28 dB,29 dB,30 dB,31 dB"
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Coef Table)
+object activeCoefTableClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 260
+y 170
+w 120
+h 590
+fgColor index 14
+bgColor index 0
+oddColBgColor index 0
+evenColBgColor index 0
+topShadowColor index 0
+botShadowColor index 14
+pv "EPICS\\$(HOSTNAME):calib:coeff:C"
+labels "NoAtt,1 dB,2 dB,3 dB,4 dB,5 dB,6 dB,7 dB,8 dB,9 dB,10 dB,11 dB,12 dB,13 dB,14 dB,15 dB,16 dB,17 dB,18 dB,19 dB,20 dB,21 dB,22 dB,23 dB,24 dB,25 dB,26 dB,27 dB,28 dB,29 dB,30 dB,31 dB"
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Coef Table)
+object activeCoefTableClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 385
+y 170
+w 120
+h 590
+fgColor index 14
+bgColor index 0
+oddColBgColor index 0
+evenColBgColor index 0
+topShadowColor index 0
+botShadowColor index 14
+pv "EPICS\\$(HOSTNAME):calib:coeff:D"
+labels "NoAtt,1 dB,2 dB,3 dB,4 dB,5 dB,6 dB,7 dB,8 dB,9 dB,10 dB,11 dB,12 dB,13 dB,14 dB,15 dB,16 dB,17 dB,18 dB,19 dB,20 dB,21 dB,22 dB,23 dB,24 dB,25 dB,26 dB,27 dB,28 dB,29 dB,30 dB,31 dB"
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 145
+w 120
+h 25
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Coefficients A"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 135
+y 145
+w 120
+h 25
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Coefficients B"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 260
+y 145
+w 120
+h 25
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Coefficients C"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 385
+y 145
+w 115
+h 25
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Coefficients D"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 5
+y 50
+w 115
+h 25
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Current attenuation"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 20
+y 70
+w 70
+h 20
+controlPv "EPICS\\$(HOSTNAME):att_mon"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
