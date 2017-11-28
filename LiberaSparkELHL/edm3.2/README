@@ -1,12 +1,18 @@
 This directory contains the EDM
-Graphical User Interface for Libera Spark EL/HL.
+Graphical User Interface for Libera Spark EL or HL.
 
 The start script (start.sh) contains settings
 for a particular system configuration. To use the
-EDM panels in your system, copy the /panels and /prefs
+EDM panels in your system, copy these files:
 
-This GUI works with libera-ioc3.2! The PV database must
-contain double PVs (monitor and set).
+  /panels
+  /prefs/colors.list
+  /prefs/fonts.list
+  /prefs/calc.list
 
-Date: November 7, 2017
+This GUI works with these software versions:
+
+  libera-ioc v3.2 and later
+
+Date: November 28, 2017
 Author: peter.leban@i-tech.si
