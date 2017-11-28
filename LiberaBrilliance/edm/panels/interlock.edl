@@ -1,0 +1,643 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 183
+y 237
+w 230
+h 580
+font "helvetica-bold-r-12.0"
+ctlFont "helvetica-bold-r-12.0"
+btnFont "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+title "Interlock - Libera Brilliance"
+showGrid
+snapToGrid
+endScreenProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 10
+w 190
+h 40
+font "helvetica-bold-r-24.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Interlock"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 140
+w 200
+h 430
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 80
+y 70
+w 120
+h 20
+controlPv "EPICS\\$(DEVICE):ENV:ENV_INTERLOCK_MONITOR"
+fgColor index 14
+fgAlarm
+bgColor index 0
+font "courier-bold-r-12.0"
+fontAlign "center"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 300
+w 60
+h 20
+font "courier-bold-r-10.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Y min"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 260
+w 60
+h 20
+font "courier-bold-r-10.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "X max"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 220
+w 60
+h 20
+font "courier-bold-r-10.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "X min"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 70
+w 60
+h 20
+font "courier-bold-r-10.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Status"
+}
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 20
+y 240
+w 90
+h 20
+controlPv "EPICS\\$(DEVICE):ENV:ENV_ILK_X_LOW_MONITOR"
+fgColor index 14
+fgAlarm
+bgColor index 55
+fill
+font "courier-bold-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 340
+w 60
+h 20
+font "courier-bold-r-10.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Y max"
+}
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 20
+y 280
+w 90
+h 20
+controlPv "EPICS\\$(DEVICE):ENV:ENV_ILK_X_HIGH_MONITOR"
+fgColor index 14
+fgAlarm
+bgColor index 55
+fill
+font "courier-bold-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 20
+y 320
+w 90
+h 20
+controlPv "EPICS\\$(DEVICE):ENV:ENV_ILK_Y_LOW_MONITOR"
+fgColor index 14
+fgAlarm
+bgColor index 55
+fill
+font "courier-bold-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 20
+y 360
+w 90
+h 20
+controlPv "EPICS\\$(DEVICE):ENV:ENV_ILK_Y_HIGH_MONITOR"
+fgColor index 14
+fgAlarm
+bgColor index 55
+fill
+font "courier-bold-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 120
+y 230
+w 80
+h 30
+controlPv "EPICS\\$(DEVICE):ENV:ENV_ILK_X_LOW_SP"
+fgColor index 14
+fgAlarm
+bgColor index 0
+font "courier-bold-r-10.0"
+fontAlign "center"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 120
+y 270
+w 80
+h 30
+controlPv "EPICS\\$(DEVICE):ENV:ENV_ILK_X_HIGH_SP"
+fgColor index 14
+fgAlarm
+bgColor index 0
+font "courier-bold-r-10.0"
+fontAlign "center"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 120
+y 310
+w 80
+h 30
+controlPv "EPICS\\$(DEVICE):ENV:ENV_ILK_Y_LOW_SP"
+fgColor index 14
+fgAlarm
+bgColor index 0
+font "courier-bold-r-10.0"
+fontAlign "center"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 120
+y 350
+w 80
+h 30
+controlPv "EPICS\\$(DEVICE):ENV:ENV_ILK_Y_HIGH_SP"
+fgColor index 14
+fgAlarm
+bgColor index 0
+font "courier-bold-r-10.0"
+fontAlign "center"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 380
+w 90
+h 30
+font "courier-bold-r-10.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "ADC overflow"
+  "limit"
+}
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 120
+y 400
+w 80
+h 30
+controlPv "EPICS\\$(DEVICE):ENV:ENV_ILK_OF_LIMIT_SP"
+fgColor index 14
+fgAlarm
+bgColor index 0
+font "courier-bold-r-10.0"
+fontAlign "center"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 120
+y 450
+w 80
+h 30
+controlPv "EPICS\\$(DEVICE):ENV:ENV_ILK_OF_DUR_SP"
+fgColor index 14
+fgAlarm
+bgColor index 0
+font "courier-bold-r-10.0"
+fontAlign "center"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 120
+y 490
+w 80
+h 30
+controlPv "EPICS\\$(DEVICE):ENV:ENV_ILK_GAIN_LIMIT_SP"
+fgColor index 14
+fgAlarm
+bgColor index 0
+font "courier-bold-r-10.0"
+fontAlign "center"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Radio Box)
+object activeRadioButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 120
+y 160
+w 80
+h 60
+fgColor index 14
+bgColor index 3
+buttonColor index 14
+selectColor index 22
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(DEVICE):ENV:ENV_ILK_MODE_SP"
+font "courier-bold-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 430
+w 90
+h 30
+font "courier-bold-r-10.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "ADC overflow"
+  "duration"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 480
+w 90
+h 30
+font "courier-bold-r-10.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Level limit"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 150
+w 60
+h 30
+font "courier-bold-r-10.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Mode"
+}
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 20
+y 410
+w 90
+h 20
+controlPv "EPICS\\$(DEVICE):ENV:ENV_ILK_OF_LIMIT_MONITOR"
+fgColor index 14
+fgAlarm
+bgColor index 55
+fill
+font "courier-bold-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 20
+y 460
+w 90
+h 20
+controlPv "EPICS\\$(DEVICE):ENV:ENV_ILK_OF_DUR_MONITOR"
+fgColor index 14
+fgAlarm
+bgColor index 55
+fill
+font "courier-bold-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 20
+y 500
+w 90
+h 20
+controlPv "EPICS\\$(DEVICE):ENV:ENV_ILK_GAIN_LIMIT_MONITOR"
+fgColor index 14
+fgAlarm
+bgColor index 55
+fill
+font "courier-bold-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 120
+y 530
+w 80
+h 30
+fgColor index 14
+onColor index 0
+offColor index 0
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(DEVICE):ENV:ENV_SET_INTERLOCK_PARAM_CMD"
+onLabel "Apply"
+offLabel "Apply"
+labelType "literal"
+buttonType "push"
+font "helvetica-medium-r-10.0"
+objType "controls"
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 120
+y 100
+w 80
+h 30
+fgColor index 14
+onColor index 0
+offColor index 0
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(DEVICE):ENV:ENV_INTERLOCK_CLEAR_CMD"
+onLabel "Clear status"
+offLabel "Clear status"
+labelType "literal"
+buttonType "push"
+font "helvetica-medium-r-10.0"
+objType "controls"
+readBitPos 0
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 20
+y 170
+w 90
+h 20
+controlPv "EPICS\\$(DEVICE):ENV:ENV_ILK_MODE_MONITOR"
+fgColor index 14
+fgAlarm
+bgColor index 55
+fill
+font "courier-bold-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 740
+w 190
+h 20
+fgColor index 14
+bgColor index 0
+topShadowColor index 0
+botShadowColor index 14
+label "Close"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+

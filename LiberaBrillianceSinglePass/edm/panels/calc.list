@@ -1,0 +1,281 @@
+CALC1 -*- shell-script -*-
+
+# Example definition file for the CALC ProcessVariable
+#
+# *****************************
+# note: this file contains lines which need edm 1-10-1zb or later
+# *****************************
+#
+# First line "CALC1 ..." is magic and provides version number
+# as well as EMACS mode with is not necessary
+# but makes for - by definition - cool coloring
+# when this file is edited in emacs.
+
+# For now this file has to be called "calc.list"
+# and has to be
+# a) in the current directory
+# b) accessible as $EDMFILES/calc.list
+#
+# Suggestions are welcome regarding how EDM should
+# locate and load additional calculation definitions.
+#
+# Empty lines and comments like these,
+# beginning with '#', are ignored.
+#
+# Syntax for the rest of the file:
+#
+# <name>
+# <implementation>
+#
+# The name is used to refer to a CALC PV aa "CALC\name"
+# or "CALC\name(argA, argB, argC, ...).
+#
+# Implementation is in EPICS CALC record syntax,
+# with A, B, C, ... being variable names for the arguments.
+#
+# Usage Examples:
+#
+# "CALC\sum(fred, jane)"
+# executes the definition of "sum" with
+#  A = value of fred
+#  B = value of jane
+# whenever either PV changes.
+# The time stamp of the result is the most recent of the PVs'.
+# If no time stamp is available from any of the arguments,
+# the current host time is used.
+#
+# Status/severity are maximized,
+# i.e. if fred is in ??/MINOR and jane in READ/INVALID,
+# the result will be READ/INVALID.
+#
+# The remaining PV properties (display limits, ...)
+# are currently undefined for a CALC PV,
+# the plan is to add configuration parameters
+# that will become part of this file.
+#
+# Note: arguments are not checked!
+# If e.g. CALC\sum(a,b) requires two arguments,
+# nonone cares if you provide 0, 2 or 5 arguments instead of 2.
+# See the random example below on why this is a feature.
+#
+# kasemir@lanl.gov
+
+
+# Example: CALC\sum(x, y) will summarize the arguments
+sum   
+# Implementation:
+A+B
+
+
+# Example: CALC\F2C(t)
+# transforms given Fahrenheit-Temperature into much more
+# meaningful Deg. C
+F2C
+# Implementation:
+(A-32)*5/9
+
+
+
+# Formula to create random number.
+# This one does not need arguments.
+# With no PV input, this one will never update!
+# Possible circumvention: Provide a PV just to
+# trigger recalculation, e.g. use
+#    "CALC\random(some_1Hz_PV)"
+# to see changes at ~1Hz.
+random
+# Implementation:
+RNDM
+
+####################################################
+#### TRIUMF/ISAC ###################################
+
+# the following CALC expressions have the same names
+# as the edd/dm colour rules
+# the colour indices must match the corresponding
+# color definitions in the colors.list file
+# NOTE: generation of edl files with tadl2edl.pl needs
+#       identical names for
+#       - the edd/dm colour rule
+#       - the calc rule in this file
+#       - the dynamic color in colors.list
+#
+# 
+# the lines starting with @ define the expansion of
+#  "dm" style color rule macros A, B, .... onto the
+# edm calc parameters A,B,C (A, B, ... implied by position).
+# 
+# NOTE: tadl2edl NEEDS the line starting with # macro !!!
+#
+
+
+######### TRIUMF colour rules #####################
+
+# monitor colour rule
+# colours: 1 beam trip 2 beam alarm 3 beam warning
+# macros:  A=$(A):RDTRP B=$(A):$(B):HIHI C=$(A):$(B):HIGH
+monitor
+@$(A):RDTRP,$(A):$(B):HIHI,$(A):$(B):HIGH
+(A?1:(B?2:(C?3:4)))
+
+######### alarmrule - replaces the dm alarm rule
+# colours: 0
+# macros:  A=$(A):SEVR
+alarm
+@$(A):SEVR
+A
+
+######### outline and fill rules ###################
+
+# outline colour rule
+# colours: 0 off 1 on
+# macros:  A=$(A):STATON
+outline
+@$(A):STATON
+A?1:0
+
+# simple outline colour rule
+# colours: 0 off 1 on
+# macros:  A=$(A)
+outlinesimple
+@$(A)
+A?1:0
+
+# fill colour rule
+# colours: 1 tmo 2 int 3 on 4 off 5 trans
+# macros:  A=$(A):STATTMO B=$(A):STATON C=$(A):STATOFF D=$(A):STATINT E=$(A):STATDRV
+fill
+@$(A):STATTMO,$(A):STATON,$(A):STATOFF,$(A):STATINT,$(A):STATDRV
+A?1:(B&&C?1:(D=0?2:(B?3:(E&&(!B)?5:(C?4:4)))))
+
+
+# new fill calc rule (for fill2 and outline2 colors)
+# colours: 1 tmo 2 int 3 on 4 off 5 trans 6 on/bad 7 on/tmo
+# macros:  A=$(A):STATTMO B=$(A):STATON C=$(A):STATOFF D=$(A):STATINT E=$(A):STATDRV
+fill2
+@$(A):STATTMO,$(A):STATON,$(A):STATOFF,$(A):STATINT,$(A):STATDRV
+A&&C?1:(A&&B?7:(A?1:(B&&C?1:(D=0&&C?2:(D=0&&B?6:(B?3:(E&&(!B)?5:(C?4:4))))))))
+
+
+# new reverse fill calc rule (for fill2 and outline2 colors)
+# colours: 1 tmo 2 int 3 on 4 off 5 trans 6 on/bad 7 on/tmo
+# macros:  A=$(A):STATTMO B=$(A):STATOFF C=$(A):STATON D=$(A):STATINT E=$(A):STATDRV
+rfill2
+@$(A):STATTMO,$(A):STATOFF,$(A):STATON,$(A):STATINT,$(A):STATDRV
+A&&C?1:(A&&B?7:(A?1:(B&&C?1:(D=0&&C?2:(D=0&&B?6:(B?3:(E&&(!C)?5:(C?4:4))))))))
+
+# simple fill colour rule 
+# colours: 0 off 1 on
+# macros:  A=$(A)
+fillsimple
+A?1:0
+
+# simplified fill colour rule
+# colours: 0 off 1 tmo 2 int 3 on
+# macros:  A=$(A):STATTMO B=$(B):STATINT C=$(A):STATON 
+fillsmall
+@$(A):STATTMO,$(B):STATINT,$(A):STATON
+A?1:(!B?2:(C?3:0))
+
+
+# new simplified fill colour rule (for fillsmall2 and outlinesmall2 colors)
+# colours: 0 off 1 tmo 2 int 3 on 4 on/bad 5 on/tmo
+# macros:  A=$(A):STATTMO B=$(B):STATINT C=$(A):STATON 
+fillsmall2
+@$(A):STATTMO,$(B):STATINT,$(A):STATON
+A&&!C?1:(A&&C?5:(!B&&!C?2:(!B&&C?4:(C?3:0))))
+
+# fill/interlock colour rule
+# colours: 1 on 2 int
+# macros:  A=$(A):STATINT
+fillint
+@$(A):STATINT
+A?1:2
+
+
+######### vacuum rules ###################
+
+# rough vacuum space colour rule (1 convectron)
+# colours: 1..3 vacuum sequence
+# macros:  A=$(A):RDVAC
+vaclo
+@$(A):RDVAC
+A>750?1:(A>0.1?2:3)
+
+# high vacuum colour rule (1 convectron 1 iongauge)
+# colours: obvious
+# macros:  A=$(A):RDVAC B=$(B):STATON C=$(B):RDVAC
+vachi
+@$(A):RDVAC,$(B):STATON,$(B):RDVAC
+A>750?1:(A>0.1?2:(A<0.1&&(!B)?3:(B&&(C>0.000009)?4:(B&&(C<0.000009)?5:6))))
+
+
+# high vacuum colour rule (1 convectron 2 ion gauges)
+# colours: 0 invalid 1..5 vacuum sequence
+# macros:  A=$(A):RDVAC B=$(B):STATON C=$(B):RDVAC D=$(C):STATON E=$(C):RDVAC
+vachi2
+@$(A):RDVAC,$(B):STATON,$(B):RDVAC,$(C):STATON,$(C):RDVAC
+A>750?1:(A>0.1?2:(B&&(C>0.000009)?4:(B&&(C<0.000009)?5:(D&&(E>0.000009)?4:(D&&(E<0.000009)?5:(A<0.1?3:0))))))
+
+
+######### interlock rules ###################
+
+# interlock colour rule (for device panels)
+# colours: 0 off 1 int
+# macros:  A=$(A) B=$(B):STATINT C=$(B):DSPINTS
+int
+@$(A),$(B):STATINT,$(B):DSPINTS
+(A=0)?0:(B>0&&(C=0)?0:1)
+
+# bypass colour rule
+# colours: 0 off 1 int
+# macros:  A=$(A)
+bypass
+A?1:0
+
+# interlock ok colour rule
+# colours: 0 off 1 int
+# macros:  A=$(A)
+intok
+A?0:1
+
+# interlock bad colour rule
+# colours: 0 off 1 int
+# macros:  A=$(A)
+intbad
+A?1:0
+
+# ok colour rule
+# colours: 0 off 1 on
+# macros:  A=$(A) B=$(B)
+ok
+A&&B?1:0
+
+# interlock detail (no) colour rule
+# colours: 0 off 1 int
+# macros:  A=$(A) B=$(B):STATINT C=$(B):DSPINTS
+intdetail
+@$(A),$(B):STATINT,$(B):DSPINTS
+!(A||B)?1:((!A)&&C?1:0)
+
+# interlock detail (nc) colour rule
+# colours: 0 off 1 int
+# macros:  A=$(A) B=$(B):STATINT C=$(B):DSPINTS
+intdetailnc
+@$(A),$(B):STATINT,$(B):DSPINTS
+A&&(!B)?1:(A&&C?1:0)
+
+# interlock generalcolour rule
+# colours: 0 off 1 int
+# macros:  A=$(A) B=$(B)
+intgeneral
+A&&!B?1:0
+
+
+# test colour rule
+# colours: 0 off 1 on
+# macros:  A=$(A):DRVON
+test
+@$(A):DRVON
+A?2:1
+

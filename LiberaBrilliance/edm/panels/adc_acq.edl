@@ -1,0 +1,346 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 2
+y 441
+w 740
+h 580
+font "helvetica-bold-r-12.0"
+ctlFont "helvetica-bold-r-12.0"
+btnFont "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+title "ADC data - Libera Brilliance"
+showGrid
+snapToGrid
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 50
+w 720
+h 520
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 60
+w 90
+h 110
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 6
+release 0
+# Geometry
+x 20
+y 60
+w 600
+h 500
+# Appearance
+border
+autoScaleBothDirections
+fgColor index 14
+bgColor index 14
+gridColor index 0
+font "courier-medium-r-12.0"
+# Operating Modes
+plotMode "plotLastNPts"
+nPts 50
+traceCtlPv "LOC\\adc_traces=i:0"
+resetPv "LOC\\adc_reset=i:0"
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMax 1
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 4
+yPv {
+  0 "EPICS\\$(DEVICE):ADC:ADC_A_MONITOR"
+  1 "EPICS\\$(DEVICE):ADC:ADC_B_MONITOR"
+  2 "EPICS\\$(DEVICE):ADC:ADC_C_MONITOR"
+  3 "EPICS\\$(DEVICE):ADC:ADC_D_MONITOR"
+}
+ySigned {
+  0 1
+  1 1
+  2 1
+  3 1
+}
+plotColor {
+  0 index 21
+  1 index 26
+  2 index 31
+  3 index 36
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 10
+w 720
+h 40
+font "helvetica-bold-r-24.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "ADC raw acquisition"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 640
+y 80
+w 70
+h 20
+fgColor index 14
+onColor index 6
+offColor index 21
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\adc_traces=i:0"
+indicatorPv "LOC\\adc_traces=i:0"
+onLabel "A"
+offLabel "A"
+labelType "literal"
+font "courier-bold-r-12.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 640
+y 120
+w 70
+h 20
+fgColor index 14
+onColor index 6
+offColor index 31
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\adc_traces=i:0"
+indicatorPv "LOC\\adc_traces=i:0"
+onLabel "C"
+offLabel "C"
+labelType "literal"
+font "courier-bold-r-12.0"
+objType "controls"
+controlBitPos 2
+readBitPos 2
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 640
+y 140
+w 70
+h 20
+fgColor index 14
+onColor index 6
+offColor index 36
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\adc_traces=i:0"
+indicatorPv "LOC\\adc_traces=i:0"
+onLabel "D"
+offLabel "D"
+labelType "literal"
+font "courier-bold-r-12.0"
+objType "controls"
+controlBitPos 3
+readBitPos 3
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 640
+y 100
+w 70
+h 20
+fgColor index 14
+onColor index 6
+offColor index 26
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\adc_traces=i:0"
+indicatorPv "LOC\\adc_traces=i:0"
+onLabel "B"
+offLabel "B"
+labelType "literal"
+font "courier-bold-r-12.0"
+objType "controls"
+controlBitPos 1
+readBitPos 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 630
+y 60
+w 90
+h 20
+font "courier-bold-r-10.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Signals"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 430
+w 90
+h 130
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 630
+y 430
+w 90
+h 40
+font "courier-bold-r-10.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Refresh"
+  "type"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 640
+y 480
+w 70
+h 30
+fgColor index 14
+onColor index 0
+offColor index 0
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(DEVICE):ADC:ADC_IGNORE_TRIG_SP"
+indicatorPv "EPICS\\$(DEVICE):ADC:ADC_IGNORE_TRIG_SP"
+onLabel "Manual"
+offLabel "Auto"
+labelType "literal"
+font "helvetica-medium-r-10.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 640
+y 520
+w 70
+h 30
+fgColor index 14
+onColor index 0
+offColor index 0
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(DEVICE):ADC:ADC_ON_NEXT_TRIG_CMD"
+onLabel "Acquire"
+offLabel "Acquire"
+labelType "literal"
+buttonType "push"
+font "helvetica-medium-r-10.0"
+objType "controls"
+visPv "EPICS\\$(DEVICE):ADC:ADC_IGNORE_TRIG_MONITOR"
+visMin "1"
+visMax "2"
+endObjectProperties
+
