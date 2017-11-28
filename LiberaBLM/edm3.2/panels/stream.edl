@@ -19,7 +19,7 @@ ctlBgColor1 index 0
 ctlBgColor2 index 14
 topShadowColor index 0
 botShadowColor index 14
-title "$(DEVICE):$(SIG)"
+title "$(HOSTNAME):$(SIG)"
 showGrid
 snapToGrid
 gridSize 5
@@ -66,7 +66,7 @@ y2Max 1
 # Trace Properties
 numTraces 1
 yPv {
-  0 "EPICS\\$(DEVICE):$(SIG).$(BLD)"
+  0 "EPICS\\$(HOSTNAME):$(SIG).$(BLD)"
 }
 plotColor {
   0 index 14
