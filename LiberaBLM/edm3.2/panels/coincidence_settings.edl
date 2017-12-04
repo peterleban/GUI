@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 122
-y 482
+x 3
+y 522
 w 660
 h 400
 font "helvetica-medium-r-18.0"
@@ -1860,33 +1860,6 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 380
-y 225
-w 270
-h 170
-font "helvetica-medium-r-8.0"
-fgColor index 14
-bgColor index 53
-value {
-  " Counting:"
-  " count threshold ... signal fallin under the threshold increments a count"
-  " count threshold high ... signal must increase over this to restart detection"
-  " count difference thr ... diff. mode; a glitch > threshold increments a count"
-  " count dead time ... a minimum time to restart detection"
-  ""
-  " Coincidence:"
-  " Every white channel is compared to select other 3 channels"
-  " Every channel can be inverted (e.g. B or not B)"
-}
-border
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
 x 225
 y 65
 w 125
@@ -2139,5 +2112,409 @@ useHexPrefix
 newPos
 objType "controls"
 noExecuteClipMask
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 380
+y 225
+w 270
+h 170
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 450
+y 275
+w 140
+h 20
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 53
+value {
+  " offset+length =< t0 interval"
+}
+border
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 385
+y 215
+w 215
+h 20
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 0
+value {
+  " ADC mask for the Counter stream"
+}
+border
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 440
+y 350
+w 40
+h 18
+controlPv "EPICS\\$(HOSTNAME):adcmask_c1:window_sp"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 24
+bgColor index 0
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 385
+y 350
+w 45
+h 20
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "window"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 440
+y 325
+w 40
+h 18
+controlPv "EPICS\\$(HOSTNAME):adcmask_c1:offset_sp"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 24
+bgColor index 0
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 385
+y 325
+w 45
+h 20
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "offset"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 485
+y 325
+w 35
+h 20
+controlPv "EPICS\\$(HOSTNAME):adcmask_c1:offset_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 485
+y 350
+w 35
+h 20
+controlPv "EPICS\\$(HOSTNAME):adcmask_c1:window_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 505
+y 240
+w 35
+h 20
+controlPv "EPICS\\$(HOSTNAME):decimation:t0_interval_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 460
+y 240
+w 40
+h 18
+controlPv "EPICS\\$(HOSTNAME):decimation:t0_interval_sp"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 24
+bgColor index 0
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 390
+y 240
+w 65
+h 20
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "t0 interval"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 600
+y 350
+w 35
+h 20
+controlPv "EPICS\\$(HOSTNAME):adcmask_c2:window_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 600
+y 325
+w 35
+h 20
+controlPv "EPICS\\$(HOSTNAME):adcmask_c2:offset_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 555
+y 350
+w 40
+h 18
+controlPv "EPICS\\$(HOSTNAME):adcmask_c2:window_sp"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 24
+bgColor index 0
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 555
+y 325
+w 40
+h 18
+controlPv "EPICS\\$(HOSTNAME):adcmask_c2:offset_sp"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 24
+bgColor index 0
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 440
+y 300
+w 80
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "mask 1"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 555
+y 300
+w 80
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "mask 2"
+}
 endObjectProperties
 
