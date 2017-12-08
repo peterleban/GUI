@@ -3,10 +3,10 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 104
-y 619
-w 650
-h 250
+x 1135
+y 288
+w 300
+h 590
 font "helvetica-medium-r-18.0"
 ctlFont "helvetica-medium-r-18.0"
 btnFont "helvetica-medium-r-18.0"
@@ -19,7 +19,7 @@ ctlBgColor1 index 0
 ctlBgColor2 index 14
 topShadowColor index 0
 botShadowColor index 14
-title "$(HOSTNAME):$(BLD)"
+title "Proc. for buffers | IOC: $(HOSTNAME)"
 showGrid
 snapToGrid
 gridSize 5
@@ -31,24 +31,10 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 480
-y 20
-w 165
-h 225
-lineColor index 14
-fillColor index 0
-endObjectProperties
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 300
-y 20
-w 175
-h 120
+x 5
+y 450
+w 290
+h 135
 lineColor index 14
 fillColor index 0
 endObjectProperties
@@ -60,9 +46,23 @@ major 4
 minor 0
 release 0
 x 5
-y 155
-w 470
-h 90
+y 190
+w 290
+h 70
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 275
+w 290
+h 160
 lineColor index 14
 fillColor index 0
 endObjectProperties
@@ -74,7 +74,7 @@ major 4
 minor 1
 release 1
 x 10
-y 145
+y 265
 w 110
 h 20
 font "helvetica-bold-r-12.0"
@@ -92,8 +92,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 45
-y 190
+x 120
+y 295
 w 60
 h 20
 controlPv "EPICS\\$(HOSTNAME):decimation:sum_sp"
@@ -119,9 +119,9 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 205
-y 190
-w 30
+x 155
+y 350
+w 40
 h 20
 controlPv "EPICS\\$(HOSTNAME):decimation:avg:n_sp"
 font "helvetica-medium-r-12.0"
@@ -146,9 +146,9 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 355
-y 190
-w 35
+x 155
+y 405
+w 40
 h 20
 controlPv "EPICS\\$(HOSTNAME):decimation:sa:n_sp"
 font "helvetica-medium-r-12.0"
@@ -173,15 +173,16 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 305
-y 35
-w 165
+x 65
+y 205
+w 185
 h 20
 font "helvetica-medium-r-10.0"
+fontAlign "center"
 fgColor index 14
 bgColor index 53
 value {
-  " offset+length =< SUM decimation"
+  " offset+window =< SUM decimation"
 }
 border
 endObjectProperties
@@ -192,8 +193,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 45
-y 215
+x 185
+y 295
 w 60
 h 20
 controlPv "EPICS\\$(HOSTNAME):decimation:sum_mon"
@@ -216,9 +217,9 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 330
-y 215
-w 100
+x 155
+y 380
+w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):decimation:sa:val_mon"
 font "helvetica-bold-r-12.0"
@@ -240,9 +241,9 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 175
-y 215
-w 100
+x 155
+y 325
+w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):decimation:avg:val_mon"
 font "helvetica-bold-r-12.0"
@@ -264,12 +265,12 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 240
-y 190
-w 35
+x 200
+y 350
+w 45
 h 20
 controlPv "EPICS\\$(HOSTNAME):decimation:avg:n_mon"
-font "helvetica-bold-r-12.0"
+font "helvetica-medium-r-12.0"
 fontAlign "center"
 fgColor index 14
 bgColor index 0
@@ -288,8 +289,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 40
-y 170
+x 15
+y 295
 w 100
 h 20
 font "helvetica-medium-r-12.0"
@@ -307,8 +308,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 170
-y 170
+x 15
+y 325
 w 130
 h 20
 font "helvetica-medium-r-12.0"
@@ -326,8 +327,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 175
-y 190
+x 125
+y 350
 w 25
 h 20
 font "helvetica-medium-r-12.0"
@@ -345,8 +346,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 330
-y 190
+x 125
+y 405
 w 25
 h 20
 font "helvetica-medium-r-12.0"
@@ -364,8 +365,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 320
-y 170
+x 15
+y 380
 w 130
 h 20
 font "helvetica-medium-r-12.0"
@@ -383,12 +384,12 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 395
-y 190
-w 35
+x 200
+y 405
+w 45
 h 20
 controlPv "EPICS\\$(HOSTNAME):decimation:sa:n_mon"
-font "helvetica-bold-r-12.0"
+font "helvetica-medium-r-12.0"
 fontAlign "center"
 fgColor index 14
 bgColor index 0
@@ -408,7 +409,7 @@ major 4
 minor 0
 release 0
 x 5
-y 20
+y 55
 w 290
 h 120
 lineColor index 14
@@ -422,7 +423,7 @@ major 4
 minor 1
 release 1
 x 10
-y 10
+y 45
 w 165
 h 20
 font "helvetica-bold-r-12.0"
@@ -434,34 +435,15 @@ value {
 border
 endObjectProperties
 
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 15
-y 35
-w 60
-h 20
-font "helvetica-bold-r-12.0"
-fgColor index 14
-bgColor index 0
-useDisplayBg
-value {
-  "Channel A"
-}
-endObjectProperties
-
 # (Text Control)
 object activeXTextDspClass
 beginObjectProperties
 major 4
 minor 7
 release 0
-x 15
-y 80
-w 60
+x 140
+y 70
+w 85
 h 20
 controlPv "EPICS\\$(HOSTNAME):adc_offset:A_mon"
 font "helvetica-bold-r-12.0"
@@ -472,6 +454,7 @@ limitsFromDb
 nullColor index 0
 smartRefresh
 useHexPrefix
+showUnits
 newPos
 objType "controls"
 noExecuteClipMask
@@ -483,17 +466,16 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 15
-y 55
+x 75
+y 70
 w 60
-h 18
+h 20
 controlPv "EPICS\\$(HOSTNAME):adc_offset:A_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
 bgColor index 0
 editable
-autoHeight
 motifWidget
 limitsFromDb
 nullColor index 0
@@ -510,9 +492,9 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 85
-y 80
-w 60
+x 140
+y 95
+w 85
 h 20
 controlPv "EPICS\\$(HOSTNAME):adc_offset:B_mon"
 font "helvetica-bold-r-12.0"
@@ -523,6 +505,7 @@ limitsFromDb
 nullColor index 0
 smartRefresh
 useHexPrefix
+showUnits
 newPos
 objType "controls"
 noExecuteClipMask
@@ -534,17 +517,16 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 85
-y 55
+x 75
+y 95
 w 60
-h 18
+h 20
 controlPv "EPICS\\$(HOSTNAME):adc_offset:B_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
 bgColor index 0
 editable
-autoHeight
 motifWidget
 limitsFromDb
 nullColor index 0
@@ -555,34 +537,15 @@ objType "controls"
 noExecuteClipMask
 endObjectProperties
 
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 85
-y 35
-w 60
-h 20
-font "helvetica-bold-r-12.0"
-fgColor index 14
-bgColor index 0
-useDisplayBg
-value {
-  "Channel B"
-}
-endObjectProperties
-
 # (Text Control)
 object activeXTextDspClass
 beginObjectProperties
 major 4
 minor 7
 release 0
-x 155
-y 80
-w 60
+x 140
+y 120
+w 85
 h 20
 controlPv "EPICS\\$(HOSTNAME):adc_offset:C_mon"
 font "helvetica-bold-r-12.0"
@@ -593,6 +556,7 @@ limitsFromDb
 nullColor index 0
 smartRefresh
 useHexPrefix
+showUnits
 newPos
 objType "controls"
 noExecuteClipMask
@@ -604,17 +568,16 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 155
-y 55
+x 75
+y 120
 w 60
-h 18
+h 20
 controlPv "EPICS\\$(HOSTNAME):adc_offset:C_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
 bgColor index 0
 editable
-autoHeight
 motifWidget
 limitsFromDb
 nullColor index 0
@@ -625,34 +588,15 @@ objType "controls"
 noExecuteClipMask
 endObjectProperties
 
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 155
-y 35
-w 60
-h 20
-font "helvetica-bold-r-12.0"
-fgColor index 14
-bgColor index 0
-useDisplayBg
-value {
-  "Channel C"
-}
-endObjectProperties
-
 # (Text Control)
 object activeXTextDspClass
 beginObjectProperties
 major 4
 minor 7
 release 0
-x 225
-y 80
-w 60
+x 140
+y 145
+w 85
 h 20
 controlPv "EPICS\\$(HOSTNAME):adc_offset:D_mon"
 font "helvetica-bold-r-12.0"
@@ -663,6 +607,7 @@ limitsFromDb
 nullColor index 0
 smartRefresh
 useHexPrefix
+showUnits
 newPos
 objType "controls"
 noExecuteClipMask
@@ -674,17 +619,16 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 225
-y 55
+x 75
+y 145
 w 60
-h 18
+h 20
 controlPv "EPICS\\$(HOSTNAME):adc_offset:D_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
 bgColor index 0
 editable
-autoHeight
 motifWidget
 limitsFromDb
 nullColor index 0
@@ -701,27 +645,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 225
-y 35
-w 60
-h 20
-font "helvetica-bold-r-12.0"
-fgColor index 14
-bgColor index 0
-useDisplayBg
-value {
-  "Channel D"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 305
-y 10
+x 10
+y 180
 w 130
 h 20
 font "helvetica-bold-r-12.0"
@@ -739,8 +664,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 385
-y 85
+x 205
+y 230
 w 40
 h 20
 controlPv "EPICS\\$(HOSTNAME):adcmask:window_sp"
@@ -766,8 +691,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 310
-y 85
+x 155
+y 230
 w 45
 h 20
 font "helvetica-medium-r-12.0"
@@ -785,8 +710,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 385
-y 60
+x 65
+y 230
 w 40
 h 20
 controlPv "EPICS\\$(HOSTNAME):adcmask:offset_sp"
@@ -812,8 +737,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 310
-y 60
+x 15
+y 230
 w 45
 h 20
 font "helvetica-medium-r-12.0"
@@ -831,8 +756,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 430
-y 60
+x 110
+y 230
 w 35
 h 20
 controlPv "EPICS\\$(HOSTNAME):adcmask:offset_mon"
@@ -855,8 +780,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 430
-y 85
+x 250
+y 230
 w 35
 h 20
 controlPv "EPICS\\$(HOSTNAME):adcmask:window_mon"
@@ -879,8 +804,8 @@ beginObjectProperties
 major 4
 minor 1
 release 0
-x 15
-y 110
+x 230
+y 70
 w 60
 h 20
 fgColor index 14
@@ -905,8 +830,8 @@ beginObjectProperties
 major 4
 minor 1
 release 0
-x 85
-y 110
+x 230
+y 95
 w 60
 h 20
 fgColor index 14
@@ -931,8 +856,8 @@ beginObjectProperties
 major 4
 minor 1
 release 0
-x 155
-y 110
+x 230
+y 120
 w 60
 h 20
 fgColor index 14
@@ -957,8 +882,8 @@ beginObjectProperties
 major 4
 minor 1
 release 0
-x 225
-y 110
+x 230
+y 145
 w 60
 h 20
 fgColor index 14
@@ -983,8 +908,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 485
-y 70
+x 15
+y 470
 w 65
 h 20
 font "helvetica-medium-r-12.0"
@@ -1002,8 +927,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 555
-y 70
+x 100
+y 470
 w 40
 h 18
 controlPv "EPICS\\$(HOSTNAME):decimation:sum_mode_sp"
@@ -1029,8 +954,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 600
-y 70
+x 145
+y 470
 w 35
 h 20
 controlPv "EPICS\\$(HOSTNAME):decimation:sum_mode_mon"
@@ -1053,9 +978,9 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 555
-y 35
-w 85
+x 190
+y 465
+w 100
 h 30
 font "helvetica-medium-r-10.0"
 fgColor index 14
@@ -1073,8 +998,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 485
-y 10
+x 10
+y 440
 w 130
 h 20
 font "helvetica-bold-r-12.0"
@@ -1092,8 +1017,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 485
-y 130
+x 15
+y 500
 w 60
 h 30
 font "helvetica-medium-r-12.0"
@@ -1112,9 +1037,9 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 555
-y 100
-w 85
+x 190
+y 500
+w 100
 h 30
 font "helvetica-medium-r-10.0"
 fgColor index 14
@@ -1132,8 +1057,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 600
-y 135
+x 145
+y 505
 w 35
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:autotrig:edge_mon"
@@ -1156,8 +1081,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 555
-y 135
+x 100
+y 505
 w 40
 h 18
 controlPv "EPICS\\$(HOSTNAME):threshold:autotrig:edge_sp"
@@ -1183,8 +1108,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 600
-y 215
+x 145
+y 540
 w 35
 h 20
 controlPv "EPICS\\$(HOSTNAME):decimation:sumdec_periods_mon"
@@ -1207,8 +1132,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 555
-y 215
+x 100
+y 540
 w 40
 h 18
 controlPv "EPICS\\$(HOSTNAME):decimation:sumdec_periods_sp"
@@ -1234,16 +1159,17 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 485
-y 170
-w 155
-h 30
+x 190
+y 535
+w 100
+h 45
 font "helvetica-medium-r-10.0"
 fgColor index 14
 bgColor index 53
 value {
-  " ADC integrated .NGRP"
-  " must be equal to SUM DEC!"
+  " ADC integrated"
+  " .NGRP must be"
+  " equal to SUM DEC!"
 }
 border
 endObjectProperties
@@ -1254,8 +1180,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 485
-y 200
+x 15
+y 535
 w 65
 h 35
 font "helvetica-medium-r-12.0"
@@ -1266,5 +1192,105 @@ value {
   "DECSUM"
   "periods"
 }
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 5
+y 5
+w 290
+h 35
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 53
+value {
+  " Settings are used for buffered data processing"
+}
+border
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 70
+w 55
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+value {
+  "A"
+}
+border
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 145
+w 55
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+value {
+  "D"
+}
+border
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 120
+w 55
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+value {
+  "C"
+}
+border
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 95
+w 55
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+value {
+  "B"
+}
+border
 endObjectProperties
 
