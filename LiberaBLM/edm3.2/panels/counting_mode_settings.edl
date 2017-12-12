@@ -3,10 +3,10 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 450
-y 400
-w 630
-h 520
+x 282
+y 51
+w 430
+h 600
 font "helvetica-medium-r-18.0"
 ctlFont "helvetica-medium-r-18.0"
 btnFont "helvetica-medium-r-18.0"
@@ -32,8 +32,8 @@ major 4
 minor 0
 release 0
 x 5
-y 225
-w 615
+y 275
+w 415
 h 155
 lineColor index 14
 fillColor index 0
@@ -46,9 +46,9 @@ major 4
 minor 0
 release 0
 x 5
-y 55
-w 615
-h 155
+y 85
+w 415
+h 175
 lineColor index 14
 fillColor index 0
 endObjectProperties
@@ -60,7 +60,7 @@ major 4
 minor 1
 release 1
 x 80
-y 75
+y 125
 w 100
 h 20
 font "helvetica-medium-r-12.0"
@@ -80,7 +80,7 @@ major 4
 minor 7
 release 0
 x 140
-y 105
+y 155
 w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:loss_count:A_mon"
@@ -105,7 +105,7 @@ major 4
 minor 7
 release 0
 x 75
-y 105
+y 155
 w 60
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:loss_count:A_sp"
@@ -131,7 +131,7 @@ major 4
 minor 7
 release 0
 x 140
-y 130
+y 180
 w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:loss_count:B_mon"
@@ -156,7 +156,7 @@ major 4
 minor 7
 release 0
 x 75
-y 130
+y 180
 w 60
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:loss_count:B_sp"
@@ -182,7 +182,7 @@ major 4
 minor 7
 release 0
 x 140
-y 155
+y 205
 w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:loss_count:C_mon"
@@ -207,7 +207,7 @@ major 4
 minor 7
 release 0
 x 75
-y 155
+y 205
 w 60
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:loss_count:C_sp"
@@ -233,7 +233,7 @@ major 4
 minor 7
 release 0
 x 140
-y 180
+y 230
 w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:loss_count:D_mon"
@@ -258,7 +258,7 @@ major 4
 minor 7
 release 0
 x 75
-y 180
+y 230
 w 60
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:loss_count:D_sp"
@@ -284,7 +284,7 @@ major 4
 minor 1
 release 1
 x 265
-y 70
+y 120
 w 120
 h 30
 font "helvetica-medium-r-12.0"
@@ -305,7 +305,7 @@ major 4
 minor 7
 release 0
 x 320
-y 105
+y 155
 w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:loss_count_high:A_mon"
@@ -330,7 +330,7 @@ major 4
 minor 7
 release 0
 x 255
-y 105
+y 155
 w 60
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:loss_count_high:A_sp"
@@ -356,7 +356,7 @@ major 4
 minor 7
 release 0
 x 320
-y 130
+y 180
 w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:loss_count_high:B_mon"
@@ -381,7 +381,7 @@ major 4
 minor 7
 release 0
 x 255
-y 130
+y 180
 w 60
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:loss_count_high:B_sp"
@@ -407,7 +407,7 @@ major 4
 minor 7
 release 0
 x 320
-y 155
+y 205
 w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:loss_count_high:C_mon"
@@ -432,7 +432,7 @@ major 4
 minor 7
 release 0
 x 255
-y 155
+y 205
 w 60
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:loss_count_high:C_sp"
@@ -458,7 +458,7 @@ major 4
 minor 7
 release 0
 x 320
-y 180
+y 230
 w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:loss_count_high:D_mon"
@@ -483,7 +483,7 @@ major 4
 minor 7
 release 0
 x 255
-y 180
+y 230
 w 60
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:loss_count_high:D_sp"
@@ -509,7 +509,7 @@ major 4
 minor 1
 release 1
 x 75
-y 245
+y 295
 w 125
 h 25
 font "helvetica-medium-r-12.0"
@@ -529,7 +529,7 @@ major 4
 minor 7
 release 0
 x 140
-y 275
+y 325
 w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:count_diff:A_mon"
@@ -555,7 +555,7 @@ major 4
 minor 7
 release 0
 x 75
-y 275
+y 325
 w 60
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:count_diff:A_sp"
@@ -582,7 +582,7 @@ major 4
 minor 7
 release 0
 x 140
-y 300
+y 350
 w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:count_diff:B_mon"
@@ -607,7 +607,7 @@ major 4
 minor 7
 release 0
 x 75
-y 300
+y 350
 w 60
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:count_diff:B_sp"
@@ -634,7 +634,7 @@ major 4
 minor 7
 release 0
 x 140
-y 325
+y 375
 w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:count_diff:C_mon"
@@ -659,7 +659,7 @@ major 4
 minor 7
 release 0
 x 75
-y 325
+y 375
 w 60
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:count_diff:C_sp"
@@ -686,7 +686,7 @@ major 4
 minor 7
 release 0
 x 140
-y 350
+y 400
 w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:count_diff:D_mon"
@@ -711,7 +711,7 @@ major 4
 minor 7
 release 0
 x 75
-y 350
+y 400
 w 60
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:count_diff:D_sp"
@@ -738,7 +738,7 @@ major 4
 minor 1
 release 1
 x 250
-y 245
+y 295
 w 155
 h 25
 font "helvetica-medium-r-12.0"
@@ -758,7 +758,7 @@ major 4
 minor 7
 release 0
 x 320
-y 275
+y 325
 w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:counter_dead_time:A_mon"
@@ -783,7 +783,7 @@ major 4
 minor 7
 release 0
 x 255
-y 275
+y 325
 w 60
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:counter_dead_time:A_sp"
@@ -809,7 +809,7 @@ major 4
 minor 7
 release 0
 x 320
-y 300
+y 350
 w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:counter_dead_time:B_mon"
@@ -834,7 +834,7 @@ major 4
 minor 7
 release 0
 x 255
-y 300
+y 350
 w 60
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:counter_dead_time:B_sp"
@@ -860,7 +860,7 @@ major 4
 minor 7
 release 0
 x 320
-y 325
+y 375
 w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:counter_dead_time:C_mon"
@@ -885,7 +885,7 @@ major 4
 minor 7
 release 0
 x 255
-y 325
+y 375
 w 60
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:counter_dead_time:C_sp"
@@ -911,7 +911,7 @@ major 4
 minor 7
 release 0
 x 320
-y 350
+y 400
 w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:counter_dead_time:D_mon"
@@ -936,7 +936,7 @@ major 4
 minor 7
 release 0
 x 255
-y 350
+y 400
 w 60
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:counter_dead_time:D_sp"
@@ -962,7 +962,7 @@ major 4
 minor 1
 release 1
 x 10
-y 45
+y 75
 w 220
 h 20
 font "helvetica-bold-r-12.0"
@@ -980,11 +980,11 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 420
-y 155
-w 195
-h 45
-font "helvetica-bold-r-12.0"
+x 100
+y 100
+w 270
+h 20
+font "helvetica-medium-r-10.0"
 fontAlign "center"
 fgColor index 14
 bgColor index 53
@@ -1001,9 +1001,9 @@ major 4
 minor 0
 release 0
 x 5
-y 395
-w 615
-h 120
+y 445
+w 415
+h 150
 lineColor index 14
 fillColor index 0
 endObjectProperties
@@ -1015,7 +1015,7 @@ major 4
 minor 1
 release 1
 x 115
-y 410
+y 495
 w 200
 h 20
 font "helvetica-medium-r-10.0"
@@ -1035,7 +1035,7 @@ major 4
 minor 1
 release 1
 x 10
-y 385
+y 435
 w 220
 h 20
 font "helvetica-bold-r-12.0"
@@ -1054,7 +1054,7 @@ major 4
 minor 7
 release 0
 x 70
-y 485
+y 565
 w 40
 h 20
 controlPv "EPICS\\$(HOSTNAME):adcmask_c1:window_sp"
@@ -1080,7 +1080,7 @@ major 4
 minor 1
 release 1
 x 15
-y 485
+y 565
 w 45
 h 20
 font "helvetica-medium-r-12.0"
@@ -1099,7 +1099,7 @@ major 4
 minor 7
 release 0
 x 70
-y 460
+y 540
 w 40
 h 20
 controlPv "EPICS\\$(HOSTNAME):adcmask_c1:offset_sp"
@@ -1125,7 +1125,7 @@ major 4
 minor 1
 release 1
 x 15
-y 460
+y 540
 w 45
 h 20
 font "helvetica-medium-r-12.0"
@@ -1144,7 +1144,7 @@ major 4
 minor 7
 release 0
 x 115
-y 460
+y 540
 w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):adcmask_c1:offset_mon"
@@ -1169,7 +1169,7 @@ major 4
 minor 7
 release 0
 x 115
-y 485
+y 565
 w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):adcmask_c1:window_mon"
@@ -1193,8 +1193,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 505
-y 410
+x 130
+y 460
 w 105
 h 20
 controlPv "EPICS\\$(HOSTNAME):decimation:t0_interval_mon"
@@ -1218,8 +1218,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 460
-y 410
+x 85
+y 460
 w 40
 h 20
 controlPv "EPICS\\$(HOSTNAME):decimation:t0_interval_sp"
@@ -1244,8 +1244,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 390
-y 410
+x 15
+y 460
 w 65
 h 20
 font "helvetica-medium-r-12.0"
@@ -1264,7 +1264,7 @@ major 4
 minor 7
 release 0
 x 270
-y 485
+y 565
 w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):adcmask_c2:window_mon"
@@ -1289,7 +1289,7 @@ major 4
 minor 7
 release 0
 x 270
-y 460
+y 540
 w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):adcmask_c2:offset_mon"
@@ -1314,7 +1314,7 @@ major 4
 minor 7
 release 0
 x 225
-y 485
+y 565
 w 40
 h 20
 controlPv "EPICS\\$(HOSTNAME):adcmask_c2:window_sp"
@@ -1340,7 +1340,7 @@ major 4
 minor 7
 release 0
 x 225
-y 460
+y 540
 w 40
 h 20
 controlPv "EPICS\\$(HOSTNAME):adcmask_c2:offset_sp"
@@ -1366,7 +1366,7 @@ major 4
 minor 1
 release 1
 x 95
-y 435
+y 515
 w 80
 h 20
 font "helvetica-bold-r-12.0"
@@ -1386,7 +1386,7 @@ major 4
 minor 1
 release 1
 x 255
-y 435
+y 515
 w 80
 h 20
 font "helvetica-bold-r-12.0"
@@ -1406,7 +1406,7 @@ major 4
 minor 1
 release 1
 x 10
-y 180
+y 230
 w 55
 h 20
 font "helvetica-bold-r-12.0"
@@ -1415,6 +1415,46 @@ fgColor index 14
 bgColor index 0
 value {
   "D"
+}
+border
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 205
+w 55
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+value {
+  "C"
+}
+border
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 180
+w 55
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+value {
+  "B"
 }
 border
 endObjectProperties
@@ -1434,46 +1474,6 @@ fontAlign "center"
 fgColor index 14
 bgColor index 0
 value {
-  "C"
-}
-border
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 10
-y 130
-w 55
-h 20
-font "helvetica-bold-r-12.0"
-fontAlign "center"
-fgColor index 14
-bgColor index 0
-value {
-  "B"
-}
-border
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 10
-y 105
-w 55
-h 20
-font "helvetica-bold-r-12.0"
-fontAlign "center"
-fgColor index 14
-bgColor index 0
-value {
   "A"
 }
 border
@@ -1486,7 +1486,7 @@ major 4
 minor 1
 release 1
 x 10
-y 215
+y 265
 w 220
 h 20
 font "helvetica-bold-r-12.0"
@@ -1505,7 +1505,7 @@ major 4
 minor 1
 release 1
 x 10
-y 350
+y 400
 w 55
 h 20
 font "helvetica-bold-r-12.0"
@@ -1525,7 +1525,7 @@ major 4
 minor 1
 release 1
 x 10
-y 325
+y 375
 w 55
 h 20
 font "helvetica-bold-r-12.0"
@@ -1545,7 +1545,7 @@ major 4
 minor 1
 release 1
 x 10
-y 300
+y 350
 w 55
 h 20
 font "helvetica-bold-r-12.0"
@@ -1565,7 +1565,7 @@ major 4
 minor 1
 release 1
 x 10
-y 275
+y 325
 w 55
 h 20
 font "helvetica-bold-r-12.0"
@@ -1584,97 +1584,14 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 420
-y 280
-w 195
-h 85
-font "helvetica-bold-r-12.0"
-fontAlign "center"
-fgColor index 14
-bgColor index 53
-value {
-  " Set Threshold and"
-  " Threshold reset"
-  " to high values!"
-  " (e.g. 8000)"
-}
-border
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 420
-y 105
-w 195
-h 45
-font "helvetica-bold-r-12.0"
-fontAlign "center"
-fgColor index 14
-bgColor index 53
-value {
-  " Set Difference threshold"
-  " to 32767"
-}
-border
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 460
-y 70
-w 120
-h 30
-font "helvetica-medium-r-12.0"
-fontAlign "center"
-fgColor index 14
-bgColor index 0
-useDisplayBg
-value {
-  "Info"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 440
-y 245
-w 155
-h 25
-font "helvetica-medium-r-12.0"
-fontAlign "center"
-fgColor index 14
-bgColor index 0
-useDisplayBg
-value {
-  "Info"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 10
+x 5
 y 10
-w 220
-h 20
-font "helvetica-bold-r-12.0"
+w 130
+h 25
+font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 0
+useDisplayBg
 value {
   " Counting data rate"
 }
@@ -1686,10 +1603,10 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 290
+x 230
 y 10
 w 80
-h 20
+h 25
 controlPv "EPICS\\$(HOSTNAME):decimation:counter_datarate_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
@@ -1711,10 +1628,10 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 235
+x 175
 y 10
 w 50
-h 20
+h 25
 controlPv "EPICS\\$(HOSTNAME):decimation:counter_datarate_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "center"
@@ -1729,5 +1646,95 @@ useHexPrefix
 newPos
 objType "controls"
 noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 5
+y 45
+w 170
+h 25
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  " Counting mode selection"
+}
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 315
+y 45
+w 110
+h 20
+fgColor index 14
+onColor index 0
+offColor index 0
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(HOSTNAME):counting_mode_sp"
+pressValue "1"
+releaseValue "0"
+onLabel "switch to differential"
+offLabel "switch to normal"
+toggle
+3d
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 175
+y 45
+w 135
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+visPv "EPICS\\$(HOSTNAME):counting_mode_mon"
+visMin "1"
+visMax "2"
+value {
+  "normal"
+}
+border
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 175
+y 45
+w 135
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+visPv "EPICS\\$(HOSTNAME):counting_mode_mon"
+visMin "0"
+visMax "1"
+value {
+  "differential"
+}
+border
 endObjectProperties
 

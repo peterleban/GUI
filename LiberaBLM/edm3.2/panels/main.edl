@@ -3,10 +3,10 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 1
-y 153
+x 253
+y 53
 w 240
-h 800
+h 690
 font "helvetica-medium-r-18.0"
 ctlFont "helvetica-medium-r-18.0"
 btnFont "helvetica-medium-r-18.0"
@@ -46,9 +46,9 @@ major 4
 minor 0
 release 0
 x 5
-y 635
+y 595
 w 230
-h 140
+h 90
 lineColor index 14
 fillColor index 0
 endObjectProperties
@@ -100,100 +100,49 @@ major 4
 minor 4
 release 0
 x 10
-y 650
-w 70
-h 25
+y 610
+w 50
+h 35
 fgColor index 91
 bgColor index 92
 topShadowColor index 0
 botShadowColor index 14
-font "helvetica-medium-r-12.0"
-buttonLabel "Detector 1"
+font "helvetica-bold-r-14.0"
+buttonLabel "A"
 numPvs 4
-numDsps 1
+numDsps 9
 displayFileName {
   0 "processing.edl"
+  1 "buffer_adc.edl"
+  2 "buffer_adc.edl"
+  3 "buffer_sum.edl"
+  4 "buffer.edl"
+  5 "stream.edl"
+  6 "stream.edl"
+  7 "stream.edl"
+  8 "stream.edl"
+}
+menuLabel {
+  0 "Complete processing"
+  1 "raw ADC buffer"
+  2 "synthetic ADC buffer"
+  3 "SUM buffer"
+  4 "AVG buffer"
+  5 "SA data stream"
+  6 "Counter stream Mask1"
+  7 "Counter stream Mask2"
+  8 "Coincidence counter stream"
 }
 symbols {
   0 "BLD=A"
-}
-endObjectProperties
-
-# (Related Display)
-object relatedDisplayClass
-beginObjectProperties
-major 4
-minor 4
-release 0
-x 10
-y 680
-w 70
-h 25
-fgColor index 91
-bgColor index 92
-topShadowColor index 0
-botShadowColor index 14
-font "helvetica-medium-r-12.0"
-buttonLabel "Detector 2"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "processing.edl"
-}
-symbols {
-  0 "BLD=B"
-}
-endObjectProperties
-
-# (Related Display)
-object relatedDisplayClass
-beginObjectProperties
-major 4
-minor 4
-release 0
-x 10
-y 710
-w 70
-h 25
-fgColor index 91
-bgColor index 92
-topShadowColor index 0
-botShadowColor index 14
-font "helvetica-medium-r-12.0"
-buttonLabel "Detector 3"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "processing.edl"
-}
-symbols {
-  0 "BLD=C"
-}
-endObjectProperties
-
-# (Related Display)
-object relatedDisplayClass
-beginObjectProperties
-major 4
-minor 4
-release 0
-x 10
-y 740
-w 70
-h 25
-fgColor index 91
-bgColor index 92
-topShadowColor index 0
-botShadowColor index 14
-font "helvetica-medium-r-12.0"
-buttonLabel "Detector 4"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "processing.edl"
-}
-symbols {
-  0 "BLD=D"
+  1 "BLD=A,SIG=signals:adc,NAME=ADC"
+  2 "BLD=A,SIG=signals:adc_synth,NAME=ADC"
+  3 "BLD=A,SIG=signals:sum,NAME=SUM"
+  4 "BLD=A,SIG=signals:average,NAME=AVG"
+  5 "BLD=A,SIG=signals:sa,NAME=SA"
+  6 "BLD=A,SIG=signals:counter.A1,NAME=Loss Counter"
+  7 "BLD=A,SIG=signals:counter.A2,NAME=Loss Counter"
+  8 "BLD=A,SIG=signals:coincidence_counter.A,NAME=Coincidence loss events"
 }
 endObjectProperties
 
@@ -235,27 +184,6 @@ value {
   "$(HOSTNAME)"
 }
 border
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 5
-y 785
-w 191
-h 10
-font "helvetica-medium-r-8.0"
-fontAlign "center"
-fgColor index 14
-bgColor index 0
-useDisplayBg
-value {
-  "This GUI works with libera-ioc 3.2 and libera-blm 1.6"
-}
-autoSize
 endObjectProperties
 
 # (Static Text)
@@ -988,7 +916,7 @@ release 0
 x 5
 y 460
 w 230
-h 160
+h 120
 lineColor index 14
 fillColor index 0
 endObjectProperties
@@ -1019,7 +947,7 @@ major 4
 minor 1
 release 1
 x 10
-y 625
+y 585
 w 175
 h 20
 font "helvetica-bold-r-12.0"
@@ -1106,7 +1034,7 @@ beginObjectProperties
 major 4
 minor 4
 release 0
-x 160
+x 80
 y 650
 w 70
 h 30
@@ -1245,7 +1173,6 @@ font "helvetica-bold-r-10.0"
 fontAlign "center"
 fgColor index 14
 bgColor index 0
-useDisplayBg
 visPv "EPICS\\$(HOSTNAME):termination:A_mon"
 visMin "0"
 visMax "1"
@@ -1317,6 +1244,165 @@ visMin "0"
 visMax "1"
 value {
   "1MOhm"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 65
+y 610
+w 50
+h 35
+fgColor index 91
+bgColor index 92
+topShadowColor index 0
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "B"
+numPvs 4
+numDsps 9
+displayFileName {
+  0 "processing.edl"
+  1 "buffer_adc.edl"
+  2 "buffer_adc.edl"
+  3 "buffer_sum.edl"
+  4 "buffer.edl"
+  5 "stream.edl"
+  6 "stream.edl"
+  7 "stream.edl"
+  8 "stream.edl"
+}
+menuLabel {
+  0 "Complete processing"
+  1 "raw ADC buffer"
+  2 "synthetic ADC buffer"
+  3 "SUM buffer"
+  4 "AVG buffer"
+  5 "SA data stream"
+  6 "Counter stream Mask1"
+  7 "Counter stream Mask2"
+  8 "Coincidence counter stream"
+}
+symbols {
+  0 "BLD=B"
+  1 "BLD=B,SIG=signals:adc,NAME=ADC"
+  2 "BLD=B,SIG=signals:adc_synth,NAME=ADC"
+  3 "BLD=B,SIG=signals:sum,NAME=SUM"
+  4 "BLD=B,SIG=signals:average,NAME=AVG"
+  5 "BLD=B,SIG=signals:sa,NAME=SA"
+  6 "BLD=B,SIG=signals:counter.B1,NAME=Loss Counter"
+  7 "BLD=B,SIG=signals:counter.B2,NAME=Loss Counter"
+  8 "BLD=B,SIG=signals:coincidence_counter.B,NAME=Coincidence loss events"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 120
+y 610
+w 50
+h 35
+fgColor index 91
+bgColor index 92
+topShadowColor index 0
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "C"
+numPvs 4
+numDsps 9
+displayFileName {
+  0 "processing.edl"
+  1 "buffer_adc.edl"
+  2 "buffer_adc.edl"
+  3 "buffer_sum.edl"
+  4 "buffer.edl"
+  5 "stream.edl"
+  6 "stream.edl"
+  7 "stream.edl"
+  8 "stream.edl"
+}
+menuLabel {
+  0 "Complete processing"
+  1 "raw ADC buffer"
+  2 "synthetic ADC buffer"
+  3 "SUM buffer"
+  4 "AVG buffer"
+  5 "SA data stream"
+  6 "Counter stream Mask1"
+  7 "Counter stream Mask2"
+  8 "Coincidence counter stream"
+}
+symbols {
+  0 "BLD=C"
+  1 "BLD=C,SIG=signals:adc,NAME=ADC"
+  2 "BLD=C,SIG=signals:adc_synth,NAME=ADC"
+  3 "BLD=C,SIG=signals:sum,NAME=SUM"
+  4 "BLD=C,SIG=signals:average,NAME=AVG"
+  5 "BLD=C,SIG=signals:sa,NAME=SA"
+  6 "BLD=C,SIG=signals:counter.C1,NAME=Loss Counter"
+  7 "BLD=C,SIG=signals:counter.C2,NAME=Loss Counter"
+  8 "BLD=C,SIG=signals:coincidence_counter.C,NAME=Coincidence loss events"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 175
+y 610
+w 50
+h 35
+fgColor index 91
+bgColor index 92
+topShadowColor index 0
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "D"
+numPvs 4
+numDsps 9
+displayFileName {
+  0 "processing.edl"
+  1 "buffer_adc.edl"
+  2 "buffer_adc.edl"
+  3 "buffer_sum.edl"
+  4 "buffer.edl"
+  5 "stream.edl"
+  6 "stream.edl"
+  7 "stream.edl"
+  8 "stream.edl"
+}
+menuLabel {
+  0 "Complete processing"
+  1 "raw ADC buffer"
+  2 "synthetic ADC buffer"
+  3 "SUM buffer"
+  4 "AVG buffer"
+  5 "SA data stream"
+  6 "Counter stream Mask1"
+  7 "Counter stream Mask2"
+  8 "Coincidence counter stream"
+}
+symbols {
+  0 "BLD=D"
+  1 "BLD=D,SIG=signals:adc,NAME=ADC"
+  2 "BLD=D,SIG=signals:adc_synth,NAME=ADC"
+  3 "BLD=D,SIG=signals:sum,NAME=SUM"
+  4 "BLD=D,SIG=signals:average,NAME=AVG"
+  5 "BLD=D,SIG=signals:sa,NAME=SA"
+  6 "BLD=D,SIG=signals:counter.D1,NAME=Loss Counter"
+  7 "BLD=D,SIG=signals:counter.D2,NAME=Loss Counter"
+  8 "BLD=D,SIG=signals:coincidence_counter.D,NAME=Coincidence loss events"
 }
 endObjectProperties
 

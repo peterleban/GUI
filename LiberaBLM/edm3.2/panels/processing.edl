@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 399
-y 113
+x 245
+y 51
 w 830
 h 500
 font "helvetica-medium-r-18.0"
@@ -182,7 +182,7 @@ buttonLabel "ADC"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "buffer.edl"
+  0 "buffer_adc.edl"
 }
 menuLabel {
   0 "ADC"
@@ -472,7 +472,7 @@ buttonLabel "SUM"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "buffer.edl"
+  0 "buffer_sum.edl"
 }
 menuLabel {
   0 "ADC"
@@ -2115,13 +2115,13 @@ buttonLabel "ADC synth"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "buffer_synth.edl"
+  0 "buffer_adc.edl"
 }
 menuLabel {
   0 "ADC synth"
 }
 symbols {
-  0 "SIG=signals:adc_synth, NAME=ADC"
+  0 "SIG=signals:adc_synth, NAME=ADC synthetic"
 }
 endObjectProperties
 
@@ -2170,7 +2170,7 @@ buttonLabel "ADC integ"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "buffer.edl"
+  0 "buffer_int.edl"
 }
 menuLabel {
   0 "ADC integ"

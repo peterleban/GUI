@@ -3,7 +3,7 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 246
+x 245
 y 445
 w 590
 h 510
@@ -232,8 +232,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 325
-y 450
+x 320
+y 445
 w 100
 h 20
 font "helvetica-medium-r-12.0"
@@ -241,7 +241,7 @@ fgColor index 14
 bgColor index 0
 useDisplayBg
 value {
-  "AVG decimation"
+  "SUM decimation"
 }
 endObjectProperties
 
@@ -251,11 +251,11 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 425
-y 450
+x 420
+y 445
 w 60
 h 20
-controlPv "EPICS\\$(HOSTNAME):decimation:avg:val_mon"
+controlPv "EPICS\\$(HOSTNAME):decimation:sum_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -268,5 +268,229 @@ useHexPrefix
 newPos
 objType "controls"
 noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 485
+y 445
+w 95
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+visPv "EPICS\\$(HOSTNAME):decimation:sum_mode_mon"
+visMin "0"
+visMax "1"
+value {
+  "integrating"
+}
+border
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 485
+y 445
+w 95
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+visPv "EPICS\\$(HOSTNAME):decimation:sum_mode_mon"
+visMin "1"
+visMax "2"
+value {
+  "averaging"
+}
+border
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 320
+y 465
+w 65
+h 20
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "ADC mask"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 390
+y 465
+w 35
+h 20
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "offset"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 430
+y 465
+w 35
+h 20
+controlPv "EPICS\\$(HOSTNAME):adcmask:offset_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 475
+y 465
+w 50
+h 20
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "window"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 525
+y 465
+w 45
+h 20
+controlPv "EPICS\\$(HOSTNAME):adcmask:window_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 320
+y 490
+w 65
+h 15
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "ADC offset"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 390
+y 490
+w 85
+h 15
+controlPv "EPICS\\$(HOSTNAME):adc_offset:$(BLD)_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+showUnits
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 485
+y 490
+w 95
+h 15
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+visPv "EPICS\\$(HOSTNAME):abs_enabled:$(BLD)_mon"
+visMin "1"
+visMax "2"
+value {
+  "abs() enabled"
+}
+border
 endObjectProperties
 

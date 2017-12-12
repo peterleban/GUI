@@ -3,10 +3,10 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 548
-y 236
+x 531
+y 392
 w 440
-h 220
+h 210
 font "helvetica-medium-r-18.0"
 ctlFont "helvetica-medium-r-18.0"
 btnFont "helvetica-medium-r-18.0"
@@ -32,7 +32,7 @@ major 4
 minor 0
 release 0
 x 5
-y 55
+y 50
 w 425
 h 155
 lineColor index 14
@@ -46,7 +46,7 @@ major 4
 minor 1
 release 1
 x 10
-y 45
+y 40
 w 220
 h 20
 font "helvetica-bold-r-12.0"
@@ -64,13 +64,14 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 10
+x 245
 y 10
-w 220
+w 115
 h 20
 font "helvetica-bold-r-12.0"
 fgColor index 14
 bgColor index 0
+useDisplayBg
 value {
   " Counting data rate"
 }
@@ -82,9 +83,9 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 290
+x 365
 y 10
-w 80
+w 60
 h 20
 controlPv "EPICS\\$(HOSTNAME):decimation:counter_datarate_mon"
 font "helvetica-bold-r-12.0"
@@ -107,34 +108,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 235
-y 10
-w 50
-h 20
-controlPv "EPICS\\$(HOSTNAME):decimation:counter_datarate_sp"
-font "helvetica-medium-r-12.0"
-fontAlign "center"
-fgColor index 24
-bgColor index 0
-editable
-motifWidget
-limitsFromDb
-nullColor index 0
-smartRefresh
-useHexPrefix
-newPos
-objType "controls"
-noExecuteClipMask
-endObjectProperties
-
-# (Text Control)
-object activeXTextDspClass
-beginObjectProperties
-major 4
-minor 7
-release 0
 x 75
-y 100
+y 95
 w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):signals:counter.A1"
@@ -158,7 +133,7 @@ major 4
 minor 7
 release 0
 x 75
-y 125
+y 120
 w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):signals:counter.B1"
@@ -182,7 +157,7 @@ major 4
 minor 7
 release 0
 x 75
-y 175
+y 170
 w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):signals:counter.D1"
@@ -206,7 +181,7 @@ major 4
 minor 7
 release 0
 x 75
-y 150
+y 145
 w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):signals:counter.C1"
@@ -230,7 +205,7 @@ major 4
 minor 7
 release 0
 x 180
-y 100
+y 95
 w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):signals:counter.A2"
@@ -254,7 +229,7 @@ major 4
 minor 7
 release 0
 x 180
-y 125
+y 120
 w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):signals:counter.B2"
@@ -278,7 +253,7 @@ major 4
 minor 7
 release 0
 x 180
-y 175
+y 170
 w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):signals:counter.D2"
@@ -302,7 +277,7 @@ major 4
 minor 7
 release 0
 x 180
-y 150
+y 145
 w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):signals:counter.C2"
@@ -326,7 +301,7 @@ major 4
 minor 1
 release 1
 x 75
-y 75
+y 70
 w 90
 h 20
 font "helvetica-medium-r-12.0"
@@ -346,7 +321,7 @@ major 4
 minor 1
 release 1
 x 180
-y 75
+y 70
 w 90
 h 20
 font "helvetica-medium-r-12.0"
@@ -366,7 +341,7 @@ major 4
 minor 7
 release 0
 x 325
-y 175
+y 170
 w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):signals:coincidence_counter.D"
@@ -390,7 +365,7 @@ major 4
 minor 7
 release 0
 x 325
-y 100
+y 95
 w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):signals:coincidence_counter.A"
@@ -414,7 +389,7 @@ major 4
 minor 7
 release 0
 x 325
-y 125
+y 120
 w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):signals:coincidence_counter.B"
@@ -438,7 +413,7 @@ major 4
 minor 7
 release 0
 x 325
-y 150
+y 145
 w 90
 h 20
 controlPv "EPICS\\$(HOSTNAME):signals:coincidence_counter.C"
@@ -462,7 +437,7 @@ major 4
 minor 1
 release 1
 x 325
-y 65
+y 60
 w 90
 h 30
 font "helvetica-medium-r-12.0"
@@ -483,7 +458,7 @@ major 4
 minor 1
 release 1
 x 10
-y 175
+y 170
 w 55
 h 20
 font "helvetica-bold-r-12.0"
@@ -503,7 +478,7 @@ major 4
 minor 1
 release 1
 x 10
-y 150
+y 145
 w 55
 h 20
 font "helvetica-bold-r-12.0"
@@ -523,7 +498,7 @@ major 4
 minor 1
 release 1
 x 10
-y 125
+y 120
 w 55
 h 20
 font "helvetica-bold-r-12.0"
@@ -543,7 +518,7 @@ major 4
 minor 1
 release 1
 x 10
-y 100
+y 95
 w 55
 h 20
 font "helvetica-bold-r-12.0"
@@ -552,6 +527,177 @@ fgColor index 14
 bgColor index 0
 value {
   "A"
+}
+border
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 10
+y 610
+w 50
+h 35
+fgColor index 91
+bgColor index 92
+topShadowColor index 0
+botShadowColor index 14
+font "helvetica-medium-r-12.0"
+buttonLabel "A"
+numPvs 4
+numDsps 9
+displayFileName {
+  0 "processing.edl"
+  1 "buffer_adc.edl"
+  2 "buffer_adc.edl"
+  3 "buffer_sum.edl"
+  4 "buffer.edl"
+  5 "stream.edl"
+  6 "stream.edl"
+  7 "stream.edl"
+  8 "stream.edl"
+}
+menuLabel {
+  0 "Complete processing"
+  1 "raw ADC buffer"
+  2 "synthetic ADC buffer"
+  3 "SUM buffer"
+  4 "AVG buffer"
+  5 "SA data stream"
+  6 "Counter stream Mask1"
+  7 "Counter stream Mask2"
+  8 "Coincidence counter stream"
+}
+symbols {
+  0 "BLD=A"
+  1 "BLD=A,SIG=signals:adc,NAME=ADC"
+  2 "BLD=A,SIG=signals:adc_synth,NAME=ADC"
+  3 "BLD=A,SIG=signals:sum,NAME=SUM"
+  4 "BLD=A,SIG=signals:average,NAME=AVG"
+  5 "BLD=A,SIG=signals:sa,NAME=SA"
+  6 "BLD=A,SIG=signals:counter.A1,NAME=Loss Counter"
+  7 "BLD=A,SIG=signals:counter.A2,NAME=Loss Counter"
+  8 "BLD=A,SIG=signals:coincidence_counter.A,NAME=Coincidence loss events"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 10
+y 610
+w 50
+h 35
+fgColor index 91
+bgColor index 92
+topShadowColor index 0
+botShadowColor index 14
+font "helvetica-medium-r-12.0"
+buttonLabel "A"
+numPvs 4
+numDsps 9
+displayFileName {
+  0 "processing.edl"
+  1 "buffer_adc.edl"
+  2 "buffer_adc.edl"
+  3 "buffer_sum.edl"
+  4 "buffer.edl"
+  5 "stream.edl"
+  6 "stream.edl"
+  7 "stream.edl"
+  8 "stream.edl"
+}
+menuLabel {
+  0 "Complete processing"
+  1 "raw ADC buffer"
+  2 "synthetic ADC buffer"
+  3 "SUM buffer"
+  4 "AVG buffer"
+  5 "SA data stream"
+  6 "Counter stream Mask1"
+  7 "Counter stream Mask2"
+  8 "Coincidence counter stream"
+}
+symbols {
+  0 "BLD=A"
+  1 "BLD=A,SIG=signals:adc,NAME=ADC"
+  2 "BLD=A,SIG=signals:adc_synth,NAME=ADC"
+  3 "BLD=A,SIG=signals:sum,NAME=SUM"
+  4 "BLD=A,SIG=signals:average,NAME=AVG"
+  5 "BLD=A,SIG=signals:sa,NAME=SA"
+  6 "BLD=A,SIG=signals:counter.A1,NAME=Loss Counter"
+  7 "BLD=A,SIG=signals:counter.A2,NAME=Loss Counter"
+  8 "BLD=A,SIG=signals:coincidence_counter.A,NAME=Coincidence loss events"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 10
+w 100
+h 20
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  " Counting mode"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 115
+y 10
+w 115
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+visPv "EPICS\\$(HOSTNAME):counting_mode_mon"
+visMin "1"
+visMax "2"
+value {
+  "normal"
+}
+border
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 115
+y 10
+w 115
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+visPv "EPICS\\$(HOSTNAME):counting_mode_mon"
+visMin "0"
+visMax "1"
+value {
+  "differential"
 }
 border
 endObjectProperties
