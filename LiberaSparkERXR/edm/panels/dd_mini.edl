@@ -3,7 +3,7 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 464
+x 465
 y 385
 w 590
 h 570
@@ -111,6 +111,9 @@ numTraces 1
 yPv {
   0 "EPICS\\$(HOSTNAME):$(DD).X"
 }
+ySigned {
+  0 1
+}
 plotColor {
   0 index 14
 }
@@ -156,6 +159,9 @@ y2Max 1
 numTraces 1
 yPv {
   0 "EPICS\\$(HOSTNAME):$(DD).Y"
+}
+ySigned {
+  0 1
 }
 plotColor {
   0 index 14

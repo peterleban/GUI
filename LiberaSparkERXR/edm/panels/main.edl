@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 4
-y 301
+x 205
+y 158
 w 250
 h 600
 font "helvetica-medium-r-18.0"
@@ -696,21 +696,24 @@ botShadowColor index 14
 font "helvetica-bold-r-12.0"
 buttonLabel "Turn-by-turn DDC"
 numPvs 4
-numDsps 3
+numDsps 4
 displayFileName {
   0 "dd_mini.edl"
   1 "dd_mini.edl"
   2 "dd_raw.edl"
+  3 "dd_raw.edl"
 }
 menuLabel {
   0 "DDC standard"
   1 "DDC averaged"
   2 "DDC raw (I/Q)"
+  3 "DDC raw (I/Q) averaged"
 }
 symbols {
   0 "DD=signals:ddc_synth, TYPE=DDC"
   1 "DD=signals:ddc_synth_d, TYPE=DDC_averaged"
   2 "DD1=signals:ddc_raw, TYPE=DDC_RAW"
+  3 "DD1=signals:ddc_raw_d, TYPE=DDC_RAW_averaged"
 }
 endObjectProperties
 
@@ -896,6 +899,32 @@ visMin "1"
 visMax "2"
 value {
   "Calibrated mode OFF"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 165
+y 445
+w 70
+h 25
+fgColor index 91
+bgColor index 53
+topShadowColor index 0
+botShadowColor index 14
+font "helvetica-medium-r-10.0"
+buttonLabel "Acq.settings"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acq_settings.edl"
+}
+menuLabel {
+  0 "Acq.settings"
 }
 endObjectProperties
 
