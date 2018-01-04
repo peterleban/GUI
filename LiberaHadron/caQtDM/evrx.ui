@@ -1,0 +1,1393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>336</width>
+    <height>353</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="Title" stdset="0">
+   <string>$(DEVICE):evrx</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="MainSignalWindowTab_4">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>100</y>
+      <width>326</width>
+      <height>246</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>300</width>
+      <height>75</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <kerning>false</kerning>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="elideMode">
+     <enum>Qt::ElideNone</enum>
+    </property>
+    <property name="usesScrollButtons">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>Clocks</string>
+     </attribute>
+     <widget class="caFrame" name="caframe_6">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>5</y>
+        <width>311</width>
+        <height>206</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+      <property name="midLineWidth">
+       <number>1</number>
+      </property>
+      <property name="background">
+       <color>
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </property>
+      <widget class="caLed" name="caled">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>165</x>
+         <y>105</y>
+         <width>16</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="rectangular">
+        <bool>false</bool>
+       </property>
+       <property name="linearGradient">
+        <bool>false</bool>
+       </property>
+       <property name="scaleContents">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">$(DEVICE):evrx:pll:locked</string>
+       </property>
+       <property name="falseColor">
+        <color>
+         <red>255</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="trueColor">
+        <color>
+         <red>0</red>
+         <green>255</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="trueValue">
+        <string>true</string>
+       </property>
+       <property name="falseValue">
+        <string>false</string>
+       </property>
+      </widget>
+      <widget class="caMenu" name="camenu_2">
+       <property name="geometry">
+        <rect>
+         <x>205</x>
+         <y>50</y>
+         <width>96</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">$(DEVICE):evrx:triggers:mc:source</string>
+       </property>
+      </widget>
+      <widget class="caLed" name="caled_2">
+       <property name="geometry">
+        <rect>
+         <x>285</x>
+         <y>105</y>
+         <width>16</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="scaleContents">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">$(DEVICE):evrx:pll:clk_good</string>
+       </property>
+       <property name="falseColor">
+        <color>
+         <red>255</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="trueColor">
+        <color>
+         <red>0</red>
+         <green>255</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="trueValue">
+        <string>true</string>
+       </property>
+       <property name="falseValue">
+        <string>false</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_20">
+       <property name="geometry">
+        <rect>
+         <x>215</x>
+         <y>105</y>
+         <width>66</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Clk good</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_28">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>55</y>
+         <width>196</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Reference (MC) Clock source</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_9">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>40</y>
+         <width>296</width>
+         <height>10</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_23">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>10</y>
+         <width>186</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>ADC sampling freq. [Hz]</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_19">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>105</y>
+         <width>151</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Reference Clock locked</string>
+       </property>
+      </widget>
+      <widget class="caMenu" name="camenu_6">
+       <property name="geometry">
+        <rect>
+         <x>205</x>
+         <y>140</y>
+         <width>96</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">$(DEVICE):evrx:triggers:t0:source</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_33">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>155</y>
+         <width>171</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>RF Clock (T0) source</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_16">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>130</y>
+         <width>296</width>
+         <height>10</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="caLineEdit" name="calineedit_12">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>10</y>
+         <width>111</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sans Serif</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">$(DEVICE):evrx:clock_info:adc_frequency</string>
+       </property>
+      </widget>
+      <widget class="caRelatedDisplay" name="rtc_t2_4">
+       <property name="geometry">
+        <rect>
+         <x>205</x>
+         <y>170</y>
+         <width>96</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="background">
+        <color>
+         <red>252</red>
+         <green>220</green>
+         <blue>123</blue>
+        </color>
+       </property>
+       <property name="labels">
+        <string notr="true">RTC</string>
+       </property>
+       <property name="files">
+        <string notr="true">rtc</string>
+       </property>
+       <property name="args">
+        <string notr="true">DEVICE=$(DEVICE):evrx:rtc:t0</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QTabWidget" name="MainSignalWindowTab_5">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>480</y>
+        <width>556</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>300</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>DejaVu Sans</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <kerning>false</kerning>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+      <property name="elideMode">
+       <enum>Qt::ElideNone</enum>
+      </property>
+      <property name="usesScrollButtons">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>Sensors</string>
+       </attribute>
+       <widget class="caFrame" name="caframe_10">
+        <property name="geometry">
+         <rect>
+          <x>5</x>
+          <y>5</y>
+          <width>541</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(231, 231, 231);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="midLineWidth">
+         <number>1</number>
+        </property>
+        <property name="background">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <widget class="caRelatedDisplay" name="bpm_temp_3">
+         <property name="geometry">
+          <rect>
+           <x>295</x>
+           <y>10</y>
+           <width>111</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Sans Serif</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="background">
+          <color>
+           <red>252</red>
+           <green>220</green>
+           <blue>123</blue>
+          </color>
+         </property>
+         <property name="labels">
+          <string notr="true">BPM T°C</string>
+         </property>
+         <property name="files">
+          <string notr="true">temperatures</string>
+         </property>
+         <property name="args">
+          <string notr="true">MODULE=$(BPM);</string>
+         </property>
+        </widget>
+        <widget class="caRelatedDisplay" name="bpm_temp_4">
+         <property name="geometry">
+          <rect>
+           <x>420</x>
+           <y>10</y>
+           <width>111</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Sans Serif</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="background">
+          <color>
+           <red>252</red>
+           <green>220</green>
+           <blue>123</blue>
+          </color>
+         </property>
+         <property name="labels">
+          <string notr="true">BPM U/I</string>
+         </property>
+         <property name="files">
+          <string notr="true">voltages</string>
+         </property>
+         <property name="args">
+          <string notr="true">MODULE=$(BPM);</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_34">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>10</y>
+           <width>151</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>FPGA temp. [° C]</string>
+         </property>
+        </widget>
+        <widget class="caLineEdit" name="calineedit_14">
+         <property name="geometry">
+          <rect>
+           <x>155</x>
+           <y>10</y>
+           <width>46</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Sans Serif</family>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+         <property name="channel" stdset="0">
+          <string notr="true">$(BPM):ID_2:value</string>
+         </property>
+         <property name="precision">
+          <number>2</number>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Triggers</string>
+     </attribute>
+     <widget class="caFrame" name="caframe_17">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>5</y>
+        <width>311</width>
+        <height>206</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+      <property name="midLineWidth">
+       <number>1</number>
+      </property>
+      <property name="background">
+       <color>
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </property>
+      <widget class="QLabel" name="label_36">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>145</y>
+         <width>166</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Postmortem (T1) source</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_46">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>105</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Debouncer [x 8 ns]</string>
+       </property>
+      </widget>
+      <widget class="caMenu" name="camenu_9">
+       <property name="geometry">
+        <rect>
+         <x>205</x>
+         <y>50</y>
+         <width>96</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">$(DEVICE):evrx:triggers:t2:source</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_17">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>130</y>
+         <width>296</width>
+         <height>10</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="caMenu" name="camenu_10">
+       <property name="geometry">
+        <rect>
+         <x>205</x>
+         <y>140</y>
+         <width>96</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">$(DEVICE):evrx:triggers:t1:source</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_30">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>55</y>
+         <width>191</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Acquisition trigger (T2) source</string>
+       </property>
+      </widget>
+      <widget class="caTextEntry" name="catextentry_52">
+       <property name="geometry">
+        <rect>
+         <x>205</x>
+         <y>105</y>
+         <width>96</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>9</pointsize>
+         <stylestrategy>PreferDefault</stylestrategy>
+        </font>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">$(DEVICE):evrx:triggers:t2:debouncer</string>
+       </property>
+       <property name="background">
+        <color>
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </property>
+       <property name="colorMode">
+        <enum>caLineEdit::Static</enum>
+       </property>
+       <property name="precision">
+        <number>4</number>
+       </property>
+       <property name="precisionMode">
+        <enum>caLineEdit::Channel</enum>
+       </property>
+       <property name="maxValue">
+        <double>2.000000000000000</double>
+       </property>
+       <property name="minValue">
+        <double>0.100000000000000</double>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_26">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>10</y>
+         <width>186</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>ADC sampling freq. [Hz]</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_10">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>40</y>
+         <width>296</width>
+         <height>10</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="caLineEdit" name="calineedit_13">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>10</y>
+         <width>111</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sans Serif</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">$(DEVICE):evrx:clock_info:adc_frequency</string>
+       </property>
+      </widget>
+      <widget class="caRelatedDisplay" name="rtc_t2">
+       <property name="geometry">
+        <rect>
+         <x>205</x>
+         <y>80</y>
+         <width>96</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="background">
+        <color>
+         <red>252</red>
+         <green>220</green>
+         <blue>123</blue>
+        </color>
+       </property>
+       <property name="labels">
+        <string notr="true">RTC</string>
+       </property>
+       <property name="files">
+        <string notr="true">rtc</string>
+       </property>
+       <property name="args">
+        <string notr="true">DEVICE=$(DEVICE):evrx:rtc:t2</string>
+       </property>
+      </widget>
+      <widget class="caRelatedDisplay" name="rtc_t2_2">
+       <property name="geometry">
+        <rect>
+         <x>205</x>
+         <y>170</y>
+         <width>96</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="background">
+        <color>
+         <red>252</red>
+         <green>220</green>
+         <blue>123</blue>
+        </color>
+       </property>
+       <property name="labels">
+        <string notr="true">RTC</string>
+       </property>
+       <property name="files">
+        <string notr="true">rtc</string>
+       </property>
+       <property name="args">
+        <string notr="true">DEVICE=$(DEVICE):evrx:rtc:t1</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Synchronization</string>
+     </attribute>
+     <widget class="caFrame" name="caframe_16">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>5</y>
+        <width>311</width>
+        <height>206</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+      <property name="midLineWidth">
+       <number>1</number>
+      </property>
+      <property name="background">
+       <color>
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </property>
+      <widget class="caMessageButton" name="camessagebutton">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>291</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Sync now</string>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+       <property name="fontScaleMode">
+        <enum>EPushButton::WidthAndHeight</enum>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">$(DEVICE):application:synchronize</string>
+       </property>
+       <property name="background">
+        <color>
+         <red>254</red>
+         <green>217</green>
+         <blue>188</blue>
+        </color>
+       </property>
+       <property name="pressMessage">
+        <string notr="true">1</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QTabWidget" name="MainSignalWindowTab_9">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>10</y>
+      <width>326</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>300</width>
+      <height>75</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <kerning>false</kerning>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="elideMode">
+     <enum>Qt::ElideNone</enum>
+    </property>
+    <property name="usesScrollButtons">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="tab_12">
+     <attribute name="title">
+      <string>Sensors</string>
+     </attribute>
+     <widget class="caFrame" name="caframe_14">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>5</y>
+        <width>311</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+      <property name="midLineWidth">
+       <number>1</number>
+      </property>
+      <property name="background">
+       <color>
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </property>
+      <widget class="caRelatedDisplay" name="bpm_temp">
+       <property name="geometry">
+        <rect>
+         <x>25</x>
+         <y>10</y>
+         <width>110</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sans Serif</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="background">
+        <color>
+         <red>252</red>
+         <green>220</green>
+         <blue>123</blue>
+        </color>
+       </property>
+       <property name="labels">
+        <string notr="true">EVRX T°C</string>
+       </property>
+       <property name="files">
+        <string notr="true">temperatures</string>
+       </property>
+       <property name="args">
+        <string notr="true">MODULE=$(DEVICE):evrx;</string>
+       </property>
+      </widget>
+      <widget class="caRelatedDisplay" name="bpm_temp_2">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>10</y>
+         <width>110</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sans Serif</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="background">
+        <color>
+         <red>252</red>
+         <green>220</green>
+         <blue>123</blue>
+        </color>
+       </property>
+       <property name="labels">
+        <string notr="true">EVRX U/I</string>
+       </property>
+       <property name="files">
+        <string notr="true">voltages</string>
+       </property>
+       <property name="args">
+        <string notr="true">MODULE=$(DEVICE):evrx;</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QTabWidget" name="MainSignalWindowTab_11">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>480</y>
+        <width>556</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>300</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>DejaVu Sans</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <kerning>false</kerning>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+      <property name="elideMode">
+       <enum>Qt::ElideNone</enum>
+      </property>
+      <property name="usesScrollButtons">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="tab_13">
+       <attribute name="title">
+        <string>Sensors</string>
+       </attribute>
+       <widget class="caFrame" name="caframe_15">
+        <property name="geometry">
+         <rect>
+          <x>5</x>
+          <y>5</y>
+          <width>541</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(231, 231, 231);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="midLineWidth">
+         <number>1</number>
+        </property>
+        <property name="background">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <widget class="caRelatedDisplay" name="bpm_temp_11">
+         <property name="geometry">
+          <rect>
+           <x>295</x>
+           <y>10</y>
+           <width>111</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Sans Serif</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="background">
+          <color>
+           <red>252</red>
+           <green>220</green>
+           <blue>123</blue>
+          </color>
+         </property>
+         <property name="labels">
+          <string notr="true">BPM T°C</string>
+         </property>
+         <property name="files">
+          <string notr="true">temperatures</string>
+         </property>
+         <property name="args">
+          <string notr="true">MODULE=$(BPM);</string>
+         </property>
+        </widget>
+        <widget class="caRelatedDisplay" name="bpm_temp_12">
+         <property name="geometry">
+          <rect>
+           <x>420</x>
+           <y>10</y>
+           <width>111</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Sans Serif</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="background">
+          <color>
+           <red>252</red>
+           <green>220</green>
+           <blue>123</blue>
+          </color>
+         </property>
+         <property name="labels">
+          <string notr="true">BPM U/I</string>
+         </property>
+         <property name="files">
+          <string notr="true">voltages</string>
+         </property>
+         <property name="args">
+          <string notr="true">MODULE=$(BPM);</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_37">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>10</y>
+           <width>151</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>FPGA temp. [° C]</string>
+         </property>
+        </widget>
+        <widget class="caLineEdit" name="calineedit_9">
+         <property name="geometry">
+          <rect>
+           <x>155</x>
+           <y>10</y>
+           <width>46</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Sans Serif</family>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+         <property name="channel" stdset="0">
+          <string notr="true">$(BPM):ID_2:value</string>
+         </property>
+         <property name="precision">
+          <number>2</number>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>caMenu</class>
+   <extends>QComboBox</extends>
+   <header>caMenu</header>
+  </customwidget>
+  <customwidget>
+   <class>caRelatedDisplay</class>
+   <extends>QWidget</extends>
+   <header>caRelatedDisplay</header>
+  </customwidget>
+  <customwidget>
+   <class>caTextEntry</class>
+   <extends>caLineEdit</extends>
+   <header>caTextEntry</header>
+  </customwidget>
+  <customwidget>
+   <class>caMessageButton</class>
+   <extends>QPushButton</extends>
+   <header>caMessageButton</header>
+  </customwidget>
+  <customwidget>
+   <class>caFrame</class>
+   <extends>QFrame</extends>
+   <header>caFrame</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>caLed</class>
+   <extends>QWidget</extends>
+   <header>caLed</header>
+  </customwidget>
+  <customwidget>
+   <class>caLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>caLineEdit</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>5</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>5</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>true</bool>
+  </property>
+ </designerdata>
+</ui>
