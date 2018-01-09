@@ -36,7 +36,7 @@
       <x>4</x>
       <y>9</y>
       <width>551</width>
-      <height>561</height>
+      <height>546</height>
      </rect>
     </property>
     <property name="font">
@@ -365,6 +365,108 @@
      <string>FFT atom size</string>
     </property>
    </widget>
+   <widget class="caRelatedDisplay" name="ADC_buffer">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>560</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="labels">
+     <string notr="true"/>
+    </property>
+    <property name="files">
+     <string notr="true"/>
+    </property>
+    <property name="args">
+     <string notr="true">DEVICE=$(DEVICE)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_24">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>560</y>
+      <width>46</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>FFT X</string>
+    </property>
+   </widget>
+   <widget class="caRelatedDisplay" name="ADC_buffer_3">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>560</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="background">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="labels">
+     <string notr="true"/>
+    </property>
+    <property name="files">
+     <string notr="true"/>
+    </property>
+    <property name="args">
+     <string notr="true">DEVICE=$(DEVICE)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_25">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>560</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>FFT Y</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <customwidgets>
@@ -377,6 +479,11 @@
    <class>caMenu</class>
    <extends>QComboBox</extends>
    <header>caMenu</header>
+  </customwidget>
+  <customwidget>
+   <class>caRelatedDisplay</class>
+   <extends>QWidget</extends>
+   <header>caRelatedDisplay</header>
   </customwidget>
   <customwidget>
    <class>caTextEntry</class>
