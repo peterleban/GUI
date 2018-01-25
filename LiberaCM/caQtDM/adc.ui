@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>485</width>
-    <height>325</height>
+    <width>550</width>
+    <height>350</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -31,7 +31,7 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>480</width>
+      <width>550</width>
       <height>270</height>
      </rect>
     </property>
@@ -135,23 +135,29 @@
      </color>
     </property>
     <property name="XaxisScaling" stdset="0">
-     <enum>caCartesianPlot::Channel</enum>
+     <enum>caCartesianPlot::Auto</enum>
+    </property>
+    <property name="YaxisScaling" stdset="0">
+     <enum>caCartesianPlot::User</enum>
     </property>
     <property name="XaxisLimits">
      <string>0;100</string>
     </property>
     <property name="YaxisLimits">
-     <string>-1000000;-900000</string>
+     <string>-32768;32768</string>
     </property>
    </widget>
    <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
       <x>5</x>
-      <y>275</y>
-      <width>476</width>
-      <height>41</height>
+      <y>270</y>
+      <width>541</width>
+      <height>76</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(221, 226, 232);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -159,265 +165,13 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="caLabel" name="calabel_3">
-     <property name="geometry">
-      <rect>
-       <x>215</x>
-       <y>5</y>
-       <width>56</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>2 mA</string>
-     </property>
-     <property name="fontScaleMode">
-      <enum>ESimpleLabel::WidthAndHeight</enum>
-     </property>
-     <property name="foreground">
-      <color>
-       <red>255</red>
-       <green>0</green>
-       <blue>0</blue>
-      </color>
-     </property>
-     <property name="background">
-      <color>
-       <red>255</red>
-       <green>255</green>
-       <blue>127</blue>
-      </color>
-     </property>
-     <property name="colorMode">
-      <enum>caLabel::Static</enum>
-     </property>
-     <property name="visibility">
-      <enum>caLabel::Calc</enum>
-     </property>
-     <property name="visibilityCalc">
-      <string notr="true">A=6</string>
-     </property>
-     <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):current_range</string>
-     </property>
-    </widget>
-    <widget class="caLabel" name="calabel_4">
-     <property name="geometry">
-      <rect>
-       <x>215</x>
-       <y>5</y>
-       <width>56</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>200 uA</string>
-     </property>
-     <property name="fontScaleMode">
-      <enum>ESimpleLabel::WidthAndHeight</enum>
-     </property>
-     <property name="foreground">
-      <color>
-       <red>255</red>
-       <green>0</green>
-       <blue>0</blue>
-      </color>
-     </property>
-     <property name="background">
-      <color>
-       <red>255</red>
-       <green>255</green>
-       <blue>127</blue>
-      </color>
-     </property>
-     <property name="colorMode">
-      <enum>caLabel::Static</enum>
-     </property>
-     <property name="visibility">
-      <enum>caLabel::Calc</enum>
-     </property>
-     <property name="visibilityCalc">
-      <string notr="true">A=5</string>
-     </property>
-     <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):current_range</string>
-     </property>
-    </widget>
-    <widget class="caLabel" name="calabel_6">
-     <property name="geometry">
-      <rect>
-       <x>215</x>
-       <y>5</y>
-       <width>56</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>2 uA</string>
-     </property>
-     <property name="fontScaleMode">
-      <enum>ESimpleLabel::WidthAndHeight</enum>
-     </property>
-     <property name="foreground">
-      <color>
-       <red>255</red>
-       <green>0</green>
-       <blue>0</blue>
-      </color>
-     </property>
-     <property name="background">
-      <color>
-       <red>255</red>
-       <green>255</green>
-       <blue>127</blue>
-      </color>
-     </property>
-     <property name="colorMode">
-      <enum>caLabel::Static</enum>
-     </property>
-     <property name="visibility">
-      <enum>caLabel::Calc</enum>
-     </property>
-     <property name="visibilityCalc">
-      <string notr="true">A=3</string>
-     </property>
-     <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):current_range</string>
-     </property>
-    </widget>
-    <widget class="caLabel" name="calabel_5">
-     <property name="geometry">
-      <rect>
-       <x>215</x>
-       <y>5</y>
-       <width>56</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>20 uA</string>
-     </property>
-     <property name="fontScaleMode">
-      <enum>ESimpleLabel::WidthAndHeight</enum>
-     </property>
-     <property name="foreground">
-      <color>
-       <red>255</red>
-       <green>0</green>
-       <blue>0</blue>
-      </color>
-     </property>
-     <property name="background">
-      <color>
-       <red>255</red>
-       <green>255</green>
-       <blue>127</blue>
-      </color>
-     </property>
-     <property name="colorMode">
-      <enum>caLabel::Static</enum>
-     </property>
-     <property name="visibility">
-      <enum>caLabel::Calc</enum>
-     </property>
-     <property name="visibilityCalc">
-      <string notr="true">A=4</string>
-     </property>
-     <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):current_range</string>
-     </property>
-    </widget>
-    <widget class="caLabel" name="calabel_8">
-     <property name="geometry">
-      <rect>
-       <x>215</x>
-       <y>5</y>
-       <width>56</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>60 nA</string>
-     </property>
-     <property name="fontScaleMode">
-      <enum>ESimpleLabel::WidthAndHeight</enum>
-     </property>
-     <property name="foreground">
-      <color>
-       <red>255</red>
-       <green>0</green>
-       <blue>0</blue>
-      </color>
-     </property>
-     <property name="background">
-      <color>
-       <red>255</red>
-       <green>255</green>
-       <blue>127</blue>
-      </color>
-     </property>
-     <property name="colorMode">
-      <enum>caLabel::Static</enum>
-     </property>
-     <property name="visibility">
-      <enum>caLabel::Calc</enum>
-     </property>
-     <property name="visibilityCalc">
-      <string notr="true">A=1</string>
-     </property>
-     <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):current_range</string>
-     </property>
-    </widget>
-    <widget class="caLabel" name="calabel_7">
-     <property name="geometry">
-      <rect>
-       <x>215</x>
-       <y>5</y>
-       <width>56</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>200 nA</string>
-     </property>
-     <property name="fontScaleMode">
-      <enum>ESimpleLabel::WidthAndHeight</enum>
-     </property>
-     <property name="foreground">
-      <color>
-       <red>255</red>
-       <green>0</green>
-       <blue>0</blue>
-      </color>
-     </property>
-     <property name="background">
-      <color>
-       <red>255</red>
-       <green>255</green>
-       <blue>127</blue>
-      </color>
-     </property>
-     <property name="colorMode">
-      <enum>caLabel::Static</enum>
-     </property>
-     <property name="visibility">
-      <enum>caLabel::Calc</enum>
-     </property>
-     <property name="visibilityCalc">
-      <string notr="true">A=2</string>
-     </property>
-     <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):current_range</string>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_42">
      <property name="geometry">
       <rect>
        <x>5</x>
        <y>5</y>
-       <width>201</width>
-       <height>31</height>
+       <width>106</width>
+       <height>21</height>
       </rect>
      </property>
      <property name="font">
@@ -426,8 +180,292 @@
       </font>
      </property>
      <property name="text">
-      <string>Maximum current at ADC full scale:
-(-32768 ... 32767)</string>
+      <string>Full scale current</string>
+     </property>
+    </widget>
+    <widget class="caToggleButton" name="catogglebutton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>55</y>
+       <width>156</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Update plot on trigger</string>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(DEVICE):signals:$(SIG).SCAN</string>
+     </property>
+     <property name="trueValue">
+      <string>2</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_43">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>35</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Current trigger source:</string>
+     </property>
+    </widget>
+    <widget class="caLabel" name="calabel">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>35</y>
+       <width>86</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>External T2</string>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>170</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>221</red>
+       <green>226</green>
+       <blue>232</blue>
+      </color>
+     </property>
+     <property name="visibility">
+      <enum>caLabel::Calc</enum>
+     </property>
+     <property name="visibilityCalc">
+      <string notr="true">A=1</string>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(DEVICE):triggers:t2:source_mon</string>
+     </property>
+    </widget>
+    <widget class="caLabel" name="calabel_2">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>35</y>
+       <width>86</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Periodic</string>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>170</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>221</red>
+       <green>226</green>
+       <blue>232</blue>
+      </color>
+     </property>
+     <property name="visibility">
+      <enum>caLabel::Calc</enum>
+     </property>
+     <property name="visibilityCalc">
+      <string notr="true">A=2</string>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(DEVICE):triggers:t2:source_mon</string>
+     </property>
+    </widget>
+    <widget class="caLabel" name="calabel_9">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>35</y>
+       <width>86</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Single pulse</string>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>170</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>221</red>
+       <green>226</green>
+       <blue>232</blue>
+      </color>
+     </property>
+     <property name="visibility">
+      <enum>caLabel::Calc</enum>
+     </property>
+     <property name="visibilityCalc">
+      <string notr="true">A=3</string>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(DEVICE):triggers:t2:source_mon</string>
+     </property>
+    </widget>
+    <widget class="caLineEdit" name="calineedit_14">
+     <property name="geometry">
+      <rect>
+       <x>115</x>
+       <y>5</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Sans Serif</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(DEVICE):fullscale</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>170</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="colorMode">
+      <enum>caLineEdit::Static</enum>
+     </property>
+     <property name="frameLineWidth" stdset="0">
+      <number>1</number>
+     </property>
+     <property name="fontScaleMode">
+      <enum>caLineEdit::WidthAndHeight</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_61">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>10</y>
+       <width>56</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Current</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="caLineEdit" name="calineedit_15">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>5</y>
+       <width>161</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Sans Serif</family>
+       <pointsize>13</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(DEVICE):current:A</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>170</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="colorMode">
+      <enum>caLineEdit::Static</enum>
+     </property>
+     <property name="frameLineWidth" stdset="0">
+      <number>1</number>
+     </property>
+     <property name="fontScaleMode">
+      <enum>caLineEdit::WidthAndHeight</enum>
+     </property>
+     <property name="unitsEnabled">
+      <bool>true</bool>
      </property>
     </widget>
    </widget>
@@ -440,9 +478,19 @@
    <header>qwt_plot.h</header>
   </customwidget>
   <customwidget>
+   <class>caToggleButton</class>
+   <extends>QCheckBox</extends>
+   <header>caToggleButton</header>
+  </customwidget>
+  <customwidget>
    <class>caLabel</class>
    <extends>QLabel</extends>
    <header>caLabel</header>
+  </customwidget>
+  <customwidget>
+   <class>caLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>caLineEdit</header>
   </customwidget>
   <customwidget>
    <class>caCartesianPlot</class>
