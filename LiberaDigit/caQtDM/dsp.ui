@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1280</width>
+    <width>1276</width>
     <height>800</height>
    </rect>
   </property>
@@ -266,9 +266,9 @@ color: rgb(0, 0, 0);</string>
      <widget class="caCartesianPlot" name="adc">
       <property name="geometry">
        <rect>
-        <x>0</x>
+        <x>5</x>
         <y>5</y>
-        <width>926</width>
+        <width>921</width>
         <height>686</height>
        </rect>
       </property>
@@ -612,7 +612,7 @@ color: rgb(0, 0, 0);</string>
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
-         <pointsize>9</pointsize>
+         <pointsize>10</pointsize>
          <stylestrategy>PreferDefault</stylestrategy>
         </font>
        </property>
@@ -764,7 +764,7 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>155</x>
-         <y>115</y>
+         <y>95</y>
          <width>100</width>
          <height>25</height>
         </rect>
@@ -799,7 +799,7 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>155</x>
-         <y>145</y>
+         <y>125</y>
          <width>100</width>
          <height>25</height>
         </rect>
@@ -834,7 +834,7 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>155</x>
-         <y>175</y>
+         <y>155</y>
          <width>100</width>
          <height>25</height>
         </rect>
@@ -869,7 +869,7 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>155</x>
-         <y>205</y>
+         <y>185</y>
          <width>100</width>
          <height>25</height>
         </rect>
@@ -904,7 +904,7 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>5</x>
-         <y>115</y>
+         <y>95</y>
          <width>126</width>
          <height>21</height>
         </rect>
@@ -923,7 +923,7 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>5</x>
-         <y>145</y>
+         <y>125</y>
          <width>126</width>
          <height>21</height>
         </rect>
@@ -942,7 +942,7 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>5</x>
-         <y>175</y>
+         <y>155</y>
          <width>126</width>
          <height>21</height>
         </rect>
@@ -961,7 +961,7 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>5</x>
-         <y>205</y>
+         <y>185</y>
          <width>126</width>
          <height>21</height>
         </rect>
@@ -974,6 +974,214 @@ color: rgb(0, 0, 0);</string>
        </property>
        <property name="text">
         <string>Termination ch. D</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_62">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>245</y>
+         <width>126</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Attenuation ch. A</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_63">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>335</y>
+         <width>126</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Attenuation ch. D</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_64">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>275</y>
+         <width>126</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Attenuation ch. B</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_65">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>305</y>
+         <width>126</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Attenuation ch. C</string>
+       </property>
+      </widget>
+      <widget class="caTextEntry" name="catextentry_11">
+       <property name="geometry">
+        <rect>
+         <x>155</x>
+         <y>245</y>
+         <width>100</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>9</pointsize>
+         <stylestrategy>PreferDefault</stylestrategy>
+        </font>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">$(DEVICE):hk:attenuation:A</string>
+       </property>
+       <property name="background">
+        <color>
+         <red>255</red>
+         <green>255</green>
+         <blue>127</blue>
+        </color>
+       </property>
+       <property name="colorMode">
+        <enum>caLineEdit::Static</enum>
+       </property>
+      </widget>
+      <widget class="caTextEntry" name="catextentry_13">
+       <property name="geometry">
+        <rect>
+         <x>155</x>
+         <y>275</y>
+         <width>100</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>9</pointsize>
+         <stylestrategy>PreferDefault</stylestrategy>
+        </font>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">$(DEVICE):hk:attenuation:B</string>
+       </property>
+       <property name="background">
+        <color>
+         <red>255</red>
+         <green>255</green>
+         <blue>127</blue>
+        </color>
+       </property>
+       <property name="colorMode">
+        <enum>caLineEdit::Static</enum>
+       </property>
+      </widget>
+      <widget class="caTextEntry" name="catextentry_14">
+       <property name="geometry">
+        <rect>
+         <x>155</x>
+         <y>305</y>
+         <width>100</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>9</pointsize>
+         <stylestrategy>PreferDefault</stylestrategy>
+        </font>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">$(DEVICE):hk:attenuation:C</string>
+       </property>
+       <property name="background">
+        <color>
+         <red>255</red>
+         <green>255</green>
+         <blue>127</blue>
+        </color>
+       </property>
+       <property name="colorMode">
+        <enum>caLineEdit::Static</enum>
+       </property>
+      </widget>
+      <widget class="caTextEntry" name="catextentry_15">
+       <property name="geometry">
+        <rect>
+         <x>155</x>
+         <y>335</y>
+         <width>100</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>9</pointsize>
+         <stylestrategy>PreferDefault</stylestrategy>
+        </font>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">$(DEVICE):hk:attenuation:D</string>
+       </property>
+       <property name="background">
+        <color>
+         <red>255</red>
+         <green>255</green>
+         <blue>127</blue>
+        </color>
+       </property>
+       <property name="colorMode">
+        <enum>caLineEdit::Static</enum>
        </property>
       </widget>
      </widget>

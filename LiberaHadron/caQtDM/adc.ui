@@ -207,6 +207,9 @@
     <property name="flat">
      <bool>false</bool>
     </property>
+    <property name="fontScaleMode">
+     <enum>EPushButton::WidthAndHeight</enum>
+    </property>
     <property name="channel" stdset="0">
      <string notr="true">$(BPM):adc.PROC</string>
     </property>
@@ -395,6 +398,9 @@
     </property>
    </widget>
    <widget class="caRelatedDisplay" name="ADC_buffer">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -421,6 +427,9 @@
     </property>
    </widget>
    <widget class="caRelatedDisplay" name="ADC_buffer_3">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>230</x>
@@ -469,6 +478,9 @@
     </property>
    </widget>
    <widget class="caRelatedDisplay" name="ADC_buffer_2">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>125</x>
@@ -517,6 +529,9 @@
     </property>
    </widget>
    <widget class="caRelatedDisplay" name="ADC_buffer_4">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>345</x>

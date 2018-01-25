@@ -7,6 +7,7 @@
 
 DEVICE=$1
 IP=$2
+#IP=10.0.3.106
 
 # Allow large waveform readout
 export EPICS_CA_MAX_ARRAY_BYTES=5000000
@@ -15,4 +16,4 @@ export EPICS_CA_MAX_ARRAY_BYTES=5000000
 export EPICS_CA_ADDR_LIST=${IP}
 
 # Call caQtDM, specify IOC name and main window to open
-caQtDM -macro "DEVICE=${DEVICE}" main.ui
+/home/libera/epics/caqtdm-3.9.4/caQtDM_Binaries/caQtDM -macro "DEVICE=${DEVICE}" main.ui

@@ -29,7 +29,7 @@
       <x>5</x>
       <y>95</y>
       <width>556</width>
-      <height>451</height>
+      <height>446</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -57,7 +57,7 @@
      <string notr="true"/>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <property name="iconSize">
      <size>
@@ -486,7 +486,7 @@
       <widget class="caMenu" name="camenu_2">
        <property name="geometry">
         <rect>
-         <x>134</x>
+         <x>135</x>
          <y>85</y>
          <width>101</width>
          <height>25</height>
@@ -694,7 +694,7 @@
       <widget class="caMenu" name="camenu_5">
        <property name="geometry">
         <rect>
-         <x>134</x>
+         <x>135</x>
          <y>165</y>
          <width>101</width>
          <height>25</height>
@@ -722,7 +722,7 @@
       <widget class="QLabel" name="label_5">
        <property name="geometry">
         <rect>
-         <x>291</x>
+         <x>290</x>
          <y>165</y>
          <width>121</width>
          <height>25</height>
@@ -905,7 +905,7 @@
         <x>-2</x>
         <y>215</y>
         <width>561</width>
-        <height>211</height>
+        <height>206</height>
        </rect>
       </property>
       <property name="sizePolicy">
@@ -954,10 +954,10 @@
        <widget class="caFrame" name="caframe_7">
         <property name="geometry">
          <rect>
-          <x>3</x>
+          <x>4</x>
           <y>5</y>
           <width>546</width>
-          <height>166</height>
+          <height>161</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -1404,8 +1404,8 @@
        <widget class="caFrame" name="caframe_12">
         <property name="geometry">
          <rect>
-          <x>3</x>
-          <y>4</y>
+          <x>4</x>
+          <y>5</y>
           <width>546</width>
           <height>161</height>
          </rect>
@@ -1440,7 +1440,7 @@
         <widget class="caToggleButton" name="catogglebutton_5">
          <property name="geometry">
           <rect>
-           <x>215</x>
+           <x>220</x>
            <y>10</y>
            <width>16</width>
            <height>16</height>
@@ -1459,7 +1459,7 @@
         <widget class="caLed" name="caled_3">
          <property name="geometry">
           <rect>
-           <x>235</x>
+           <x>240</x>
            <y>10</y>
            <width>16</width>
            <height>16</height>
@@ -1570,7 +1570,7 @@
          <property name="geometry">
           <rect>
            <x>135</x>
-           <y>35</y>
+           <y>30</y>
            <width>121</width>
            <height>25</height>
           </rect>
@@ -1629,7 +1629,7 @@
         <widget class="QLabel" name="label_6">
          <property name="geometry">
           <rect>
-           <x>6</x>
+           <x>5</x>
            <y>35</y>
            <width>101</width>
            <height>25</height>
@@ -1707,7 +1707,7 @@
        <string notr="true"/>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>3</number>
       </property>
       <property name="iconSize">
        <size>
@@ -1728,7 +1728,7 @@
        <widget class="caFrame" name="caframe_14">
         <property name="geometry">
          <rect>
-          <x>3</x>
+          <x>4</x>
           <y>4</y>
           <width>546</width>
           <height>381</height>
@@ -1967,9 +1967,9 @@
         <widget class="QLabel" name="label_70">
          <property name="geometry">
           <rect>
-           <x>85</x>
+           <x>5</x>
            <y>80</y>
-           <width>101</width>
+           <width>251</width>
            <height>21</height>
           </rect>
          </property>
@@ -1982,13 +1982,16 @@
          <property name="text">
           <string>bbb processing</string>
          </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
         </widget>
         <widget class="QLabel" name="label_71">
          <property name="geometry">
           <rect>
-           <x>360</x>
+           <x>290</x>
            <y>80</y>
-           <width>96</width>
+           <width>251</width>
            <height>20</height>
           </rect>
          </property>
@@ -2000,6 +2003,9 @@
          </property>
          <property name="text">
           <string>nba processing</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
          </property>
         </widget>
         <widget class="Line" name="line_6">
@@ -2169,7 +2175,7 @@
        <widget class="caFrame" name="caframe_4">
         <property name="geometry">
          <rect>
-          <x>3</x>
+          <x>4</x>
           <y>4</y>
           <width>546</width>
           <height>381</height>
@@ -2466,9 +2472,9 @@
         <widget class="QLabel" name="label_74">
          <property name="geometry">
           <rect>
-           <x>360</x>
+           <x>290</x>
            <y>5</y>
-           <width>96</width>
+           <width>251</width>
            <height>20</height>
           </rect>
          </property>
@@ -2480,6 +2486,9 @@
          </property>
          <property name="text">
           <string>nba processing</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
          </property>
         </widget>
         <widget class="Line" name="line_9">
@@ -2498,9 +2507,9 @@
         <widget class="QLabel" name="label_76">
          <property name="geometry">
           <rect>
-           <x>85</x>
+           <x>5</x>
            <y>5</y>
-           <width>101</width>
+           <width>251</width>
            <height>21</height>
           </rect>
          </property>
@@ -2512,6 +2521,9 @@
          </property>
          <property name="text">
           <string>bbb processing</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
          </property>
         </widget>
         <widget class="QLabel" name="label_29">
@@ -2792,7 +2804,7 @@
        <widget class="caFrame" name="caframe_8">
         <property name="geometry">
          <rect>
-          <x>3</x>
+          <x>4</x>
           <y>3</y>
           <width>546</width>
           <height>381</height>
@@ -3213,25 +3225,6 @@
           <enum>Qt::Horizontal</enum>
          </property>
         </widget>
-        <widget class="QLabel" name="label_78">
-         <property name="geometry">
-          <rect>
-           <x>360</x>
-           <y>5</y>
-           <width>96</width>
-           <height>20</height>
-          </rect>
-         </property>
-         <property name="font">
-          <font>
-           <family>DejaVu Sans</family>
-           <pointsize>9</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>nba processing</string>
-         </property>
-        </widget>
         <widget class="Line" name="line_11">
          <property name="geometry">
           <rect>
@@ -3243,25 +3236,6 @@
          </property>
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
-         </property>
-        </widget>
-        <widget class="QLabel" name="label_79">
-         <property name="geometry">
-          <rect>
-           <x>85</x>
-           <y>5</y>
-           <width>101</width>
-           <height>21</height>
-          </rect>
-         </property>
-         <property name="font">
-          <font>
-           <family>DejaVu Sans</family>
-           <pointsize>9</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>bbb processing</string>
          </property>
         </widget>
         <widget class="caTextEntry" name="catextentry_33">
@@ -3660,6 +3634,50 @@
           <string>Y offset [nm]</string>
          </property>
         </widget>
+        <widget class="QLabel" name="label_78">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>6</y>
+           <width>251</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>bbb processing</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_79">
+         <property name="geometry">
+          <rect>
+           <x>290</x>
+           <y>7</y>
+           <width>251</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>nba processing</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
        </widget>
       </widget>
       <widget class="QWidget" name="Poly_2">
@@ -3669,7 +3687,7 @@
        <widget class="caFrame" name="caframe_9">
         <property name="geometry">
          <rect>
-          <x>3</x>
+          <x>4</x>
           <y>3</y>
           <width>546</width>
           <height>381</height>
@@ -4381,9 +4399,9 @@
      <widget class="caFrame" name="caframe_6">
       <property name="geometry">
        <rect>
-        <x>5</x>
+        <x>3</x>
         <y>5</y>
-        <width>541</width>
+        <width>546</width>
         <height>41</height>
        </rect>
       </property>
@@ -4781,9 +4799,9 @@
      <widget class="caFrame" name="caframe_11">
       <property name="geometry">
        <rect>
-        <x>5</x>
+        <x>3</x>
         <y>5</y>
-        <width>541</width>
+        <width>546</width>
         <height>41</height>
        </rect>
       </property>

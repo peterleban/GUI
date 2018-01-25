@@ -107,13 +107,22 @@
        </color>
       </property>
       <widget class="caLed" name="caled">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
        <property name="geometry">
         <rect>
          <x>165</x>
-         <y>85</y>
+         <y>105</y>
          <width>16</width>
          <height>16</height>
         </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
        </property>
        <property name="rectangular">
         <bool>false</bool>
@@ -174,7 +183,7 @@
        <property name="geometry">
         <rect>
          <x>285</x>
-         <y>85</y>
+         <y>105</y>
          <width>16</width>
          <height>16</height>
         </rect>
@@ -210,7 +219,7 @@
        <property name="geometry">
         <rect>
          <x>215</x>
-         <y>85</y>
+         <y>105</y>
          <width>66</width>
          <height>20</height>
         </rect>
@@ -248,9 +257,9 @@
        <property name="geometry">
         <rect>
          <x>5</x>
-         <y>35</y>
+         <y>40</y>
          <width>296</width>
-         <height>16</height>
+         <height>10</height>
         </rect>
        </property>
        <property name="orientation">
@@ -280,7 +289,7 @@
        <property name="geometry">
         <rect>
          <x>5</x>
-         <y>85</y>
+         <y>105</y>
          <width>151</width>
          <height>20</height>
         </rect>
@@ -299,7 +308,7 @@
        <property name="geometry">
         <rect>
          <x>205</x>
-         <y>125</y>
+         <y>140</y>
          <width>96</width>
          <height>26</height>
         </rect>
@@ -321,7 +330,7 @@
        <property name="geometry">
         <rect>
          <x>5</x>
-         <y>130</y>
+         <y>155</y>
          <width>171</width>
          <height>20</height>
         </rect>
@@ -340,9 +349,9 @@
        <property name="geometry">
         <rect>
          <x>5</x>
-         <y>110</y>
+         <y>130</y>
          <width>296</width>
-         <height>16</height>
+         <height>10</height>
         </rect>
        </property>
        <property name="orientation">
@@ -369,6 +378,32 @@
        </property>
        <property name="channel" stdset="0">
         <string notr="true">$(DEVICE):evrx:clock_info:adc_frequency</string>
+       </property>
+      </widget>
+      <widget class="caRelatedDisplay" name="rtc_t2_4">
+       <property name="geometry">
+        <rect>
+         <x>205</x>
+         <y>170</y>
+         <width>96</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="background">
+        <color>
+         <red>252</red>
+         <green>220</green>
+         <blue>123</blue>
+        </color>
+       </property>
+       <property name="labels">
+        <string notr="true">RTC</string>
+       </property>
+       <property name="files">
+        <string notr="true">rtc</string>
+       </property>
+       <property name="args">
+        <string notr="true">DEVICE=$(DEVICE):evrx:rtc:t0</string>
        </property>
       </widget>
      </widget>
@@ -608,7 +643,7 @@
        <property name="geometry">
         <rect>
          <x>5</x>
-         <y>130</y>
+         <y>145</y>
          <width>166</width>
          <height>20</height>
         </rect>
@@ -627,7 +662,7 @@
        <property name="geometry">
         <rect>
          <x>5</x>
-         <y>80</y>
+         <y>105</y>
          <width>161</width>
          <height>20</height>
         </rect>
@@ -668,9 +703,9 @@
        <property name="geometry">
         <rect>
          <x>5</x>
-         <y>105</y>
+         <y>130</y>
          <width>296</width>
-         <height>16</height>
+         <height>10</height>
         </rect>
        </property>
        <property name="orientation">
@@ -681,7 +716,7 @@
        <property name="geometry">
         <rect>
          <x>205</x>
-         <y>125</y>
+         <y>140</y>
          <width>96</width>
          <height>26</height>
         </rect>
@@ -722,7 +757,7 @@
        <property name="geometry">
         <rect>
          <x>205</x>
-         <y>80</y>
+         <y>105</y>
          <width>96</width>
          <height>20</height>
         </rect>
@@ -786,9 +821,9 @@
        <property name="geometry">
         <rect>
          <x>5</x>
-         <y>35</y>
+         <y>40</y>
          <width>296</width>
-         <height>16</height>
+         <height>10</height>
         </rect>
        </property>
        <property name="orientation">
@@ -815,6 +850,58 @@
        </property>
        <property name="channel" stdset="0">
         <string notr="true">$(DEVICE):evrx:clock_info:adc_frequency</string>
+       </property>
+      </widget>
+      <widget class="caRelatedDisplay" name="rtc_t2">
+       <property name="geometry">
+        <rect>
+         <x>205</x>
+         <y>80</y>
+         <width>96</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="background">
+        <color>
+         <red>252</red>
+         <green>220</green>
+         <blue>123</blue>
+        </color>
+       </property>
+       <property name="labels">
+        <string notr="true">RTC</string>
+       </property>
+       <property name="files">
+        <string notr="true">rtc</string>
+       </property>
+       <property name="args">
+        <string notr="true">DEVICE=$(DEVICE):evrx:rtc:t2</string>
+       </property>
+      </widget>
+      <widget class="caRelatedDisplay" name="rtc_t2_2">
+       <property name="geometry">
+        <rect>
+         <x>205</x>
+         <y>170</y>
+         <width>96</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="background">
+        <color>
+         <red>252</red>
+         <green>220</green>
+         <blue>123</blue>
+        </color>
+       </property>
+       <property name="labels">
+        <string notr="true">RTC</string>
+       </property>
+       <property name="files">
+        <string notr="true">rtc</string>
+       </property>
+       <property name="args">
+        <string notr="true">DEVICE=$(DEVICE):evrx:rtc:t1</string>
        </property>
       </widget>
      </widget>
@@ -854,13 +941,13 @@
         <blue>0</blue>
        </color>
       </property>
-      <widget class="caMessageButton" name="camessagebutton_2">
+      <widget class="caMessageButton" name="camessagebutton">
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>15</y>
+         <y>10</y>
          <width>291</width>
-         <height>30</height>
+         <height>24</height>
         </rect>
        </property>
        <property name="font">
@@ -869,17 +956,23 @@
          <pointsize>10</pointsize>
         </font>
        </property>
+       <property name="text">
+        <string>Sync now</string>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+       <property name="fontScaleMode">
+        <enum>EPushButton::WidthAndHeight</enum>
+       </property>
        <property name="channel" stdset="0">
         <string notr="true">$(DEVICE):application:synchronize</string>
-       </property>
-       <property name="label">
-        <string notr="true">Sync now</string>
        </property>
        <property name="background">
         <color>
          <red>254</red>
-         <green>254</green>
-         <blue>254</blue>
+         <green>217</green>
+         <blue>188</blue>
         </color>
        </property>
        <property name="pressMessage">
