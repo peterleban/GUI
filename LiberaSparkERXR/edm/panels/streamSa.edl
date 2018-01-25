@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 868
-y 204
+x 321
+y 70
 w 740
 h 480
 font "helvetica-bold-r-12.0"
@@ -85,6 +85,14 @@ yPv {
   3 "EPICS\\$(HOSTNAME):$(BPM):sa.D"
   4 "EPICS\\$(HOSTNAME):$(BPM):sa.Sum"
   5 "EPICS\\$(HOSTNAME):$(BPM):sa.Q"
+}
+lineThickness {
+  0 2
+  1 2
+  2 2
+  3 2
+  4 2
+  5 2
 }
 ySigned {
   0 1

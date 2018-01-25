@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 964
-y 105
+x 515
+y 51
 w 590
 h 460
 font "helvetica-bold-r-12.0"
@@ -62,13 +62,13 @@ gridColor index 2
 font "helvetica-medium-r-12.0"
 # Operating Modes
 plotMode "plotLastNPts"
-nPts 300
-updateTimerMs 100
+nPts 1200
+updateTimerMs 25
 # X axis properties
 showXAxis
-xAxisSrc "AutoScale"
+xAxisSrc "fromUser"
 xMin 0
-xMax 300
+xMax 1200
 # Y axis properties
 showYAxis
 yAxisSrc "AutoScale"
@@ -82,6 +82,9 @@ y2Max 1
 numTraces 1
 yPv {
   0 "EPICS\\$(HOSTNAME):signals:sa.X"
+}
+lineThickness {
+  0 2
 }
 ySigned {
   0 1
@@ -113,13 +116,13 @@ gridColor index 2
 font "helvetica-medium-r-12.0"
 # Operating Modes
 plotMode "plotLastNPts"
-nPts 300
-updateTimerMs 100
+nPts 1200
+updateTimerMs 25
 # X axis properties
 showXAxis
-xAxisSrc "AutoScale"
+xAxisSrc "fromUser"
 xMin 0
-xMax 300
+xMax 1200
 # Y axis properties
 showYAxis
 yAxisSrc "AutoScale"
@@ -133,6 +136,9 @@ y2Max 1
 numTraces 1
 yPv {
   0 "EPICS\\$(HOSTNAME):signals:sa.Y"
+}
+lineThickness {
+  0 2
 }
 ySigned {
   0 1
