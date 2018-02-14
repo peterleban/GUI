@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 1730
-y 684
+x 52
+y 104
 w 400
 h 250
 font "helvetica-medium-r-18.0"
@@ -45,7 +45,7 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 240
 y 100
 w 125
@@ -82,7 +82,7 @@ endObjectProperties
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 2
+minor 4
 release 0
 x 70
 y 135
@@ -111,7 +111,7 @@ endObjectProperties
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 2
+minor 4
 release 0
 x 195
 y 175
@@ -140,7 +140,7 @@ endObjectProperties
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 2
+minor 4
 release 0
 x 260
 y 135
@@ -169,7 +169,7 @@ endObjectProperties
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 2
+minor 4
 release 0
 x 260
 y 175
@@ -198,7 +198,7 @@ endObjectProperties
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 2
+minor 4
 release 0
 x 70
 y 175
@@ -227,7 +227,7 @@ endObjectProperties
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 2
+minor 4
 release 0
 x 15
 y 100
@@ -253,7 +253,7 @@ endObjectProperties
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 2
+minor 4
 release 0
 x 195
 y 135
@@ -273,7 +273,7 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 5
+minor 7
 release 0
 x 310
 y 10
@@ -297,11 +297,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 220
 y 10
-w 76
-h 15
+w 77
+h 14
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -316,7 +316,7 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 5
+minor 7
 release 0
 x 80
 y 10
@@ -340,11 +340,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 10
 y 10
-w 41
-h 15
+w 42
+h 14
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -359,7 +359,7 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 5
+minor 7
 release 0
 x 80
 y 30
@@ -383,11 +383,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 10
 y 30
-w 59
-h 15
+w 58
+h 14
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -402,7 +402,7 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 5
+minor 7
 release 0
 x 80
 y 70
@@ -426,11 +426,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 10
 y 70
 w 29
-h 15
+h 14
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -446,11 +446,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 10
 y 50
-w 42
-h 15
+w 40
+h 14
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -465,7 +465,7 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 5
+minor 7
 release 0
 x 80
 y 50
@@ -488,7 +488,7 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 5
+minor 7
 release 0
 x 310
 y 30
@@ -512,11 +512,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 220
 y 30
-w 51
-h 15
+w 52
+h 14
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -532,11 +532,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 220
 y 50
 w 76
-h 15
+h 14
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -551,7 +551,7 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 5
+minor 7
 release 0
 x 310
 y 50
@@ -574,7 +574,7 @@ endObjectProperties
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 2
+minor 4
 release 0
 x 70
 y 100
@@ -603,7 +603,7 @@ endObjectProperties
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 2
+minor 4
 release 0
 x 135
 y 100
@@ -629,7 +629,7 @@ endObjectProperties
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 2
+minor 4
 release 0
 x 370
 y 100

@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 2230
-y 372
+x 51
+y 77
 w 600
 h 530
 font "helvetica-bold-r-12.0"
@@ -44,7 +44,7 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 5
+minor 7
 release 0
 x 360
 y 450
@@ -69,7 +69,7 @@ endObjectProperties
 object xyGraphClass
 beginObjectProperties
 major 4
-minor 7
+minor 8
 release 0
 # Geometry
 x 10
@@ -106,6 +106,9 @@ numTraces 1
 yPv {
   0 "EPICS\\$(HOSTNAME):$(BPM):$(DD).X"
 }
+ySigned {
+  0 1
+}
 plotColor {
   0 index 14
 }
@@ -115,7 +118,7 @@ endObjectProperties
 object xyGraphClass
 beginObjectProperties
 major 4
-minor 7
+minor 8
 release 0
 # Geometry
 x 10
@@ -152,6 +155,9 @@ numTraces 1
 yPv {
   0 "EPICS\\$(HOSTNAME):$(BPM):$(DD).Y"
 }
+ySigned {
+  0 1
+}
 plotColor {
   0 index 14
 }
@@ -162,7 +168,7 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 280
 y 450
 w 80
@@ -181,7 +187,7 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 280
 y 475
 w 120
@@ -199,7 +205,7 @@ endObjectProperties
 object activeXTextDspClass
 beginObjectProperties
 major 4
-minor 5
+minor 7
 release 0
 x 400
 y 475
@@ -226,7 +232,7 @@ endObjectProperties
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 2
+minor 4
 release 0
 x 495
 y 450
@@ -255,7 +261,7 @@ endObjectProperties
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 2
+minor 4
 release 0
 x 495
 y 475
@@ -285,7 +291,7 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 20
 y 450
 w 90
@@ -325,7 +331,7 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 20
 y 475
 w 115
@@ -365,7 +371,7 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 20
 y 500
 w 120
@@ -383,7 +389,7 @@ endObjectProperties
 object activeXTextDspClass
 beginObjectProperties
 major 4
-minor 5
+minor 7
 release 0
 x 145
 y 500
@@ -410,7 +416,7 @@ endObjectProperties
 object activeMessageButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 395
 y 500

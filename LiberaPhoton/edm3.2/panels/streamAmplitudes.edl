@@ -3,10 +3,10 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 321
-y 70
-w 740
-h 480
+x 664
+y 109
+w 590
+h 510
 font "helvetica-bold-r-12.0"
 ctlFont "helvetica-bold-r-12.0"
 btnFont "helvetica-medium-r-10.0"
@@ -19,11 +19,26 @@ ctlBgColor1 index 0
 ctlBgColor2 index 14
 topShadowColor index 0
 botShadowColor index 14
-title "SA amplitudes | IOC: $(HOSTNAME)"
+title "$(DD1) on $(HOSTNAME)"
 showGrid
 snapToGrid
 gridSize 5
 endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 5
+w 580
+h 25
+lineColor index 14
+fill
+fillColor index 1
+endObjectProperties
 
 # (X-Y Graph)
 object xyGraphClass
@@ -34,11 +49,12 @@ release 0
 # Geometry
 x 5
 y 35
-w 730
-h 400
+w 580
+h 430
 # Appearance
 autoScaleBothDirections
 xLabel "samples"
+yLabel "amplitudes [a.u.]"
 fgColor index 14
 bgColor index 1
 gridColor index 9
@@ -77,14 +93,13 @@ y2AxisSrc "AutoScale"
 y2Max 1
 y2MinorsPerMajor 4
 # Trace Properties
-numTraces 6
+numTraces 5
 yPv {
-  0 "EPICS\\$(HOSTNAME):$(BPM):sa.A"
-  1 "EPICS\\$(HOSTNAME):$(BPM):sa.B"
-  2 "EPICS\\$(HOSTNAME):$(BPM):sa.C"
-  3 "EPICS\\$(HOSTNAME):$(BPM):sa.D"
-  4 "EPICS\\$(HOSTNAME):$(BPM):sa.Sum"
-  5 "EPICS\\$(HOSTNAME):$(BPM):sa.Q"
+  0 "EPICS\\$(HOSTNAME):$(DD).A"
+  1 "EPICS\\$(HOSTNAME):$(DD).B"
+  2 "EPICS\\$(HOSTNAME):$(DD).C"
+  3 "EPICS\\$(HOSTNAME):$(DD).D"
+  4 "EPICS\\$(HOSTNAME):$(DD).Sum"
 }
 lineThickness {
   0 2
@@ -92,7 +107,6 @@ lineThickness {
   2 2
   3 2
   4 2
-  5 2
 }
 ySigned {
   0 1
@@ -100,7 +114,6 @@ ySigned {
   2 1
   3 1
   4 1
-  5 1
 }
 plotColor {
   0 index 16
@@ -108,7 +121,26 @@ plotColor {
   2 index 46
   3 index 43
   4 index 14
-  5 index 36
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 10
+w 565
+h 15
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "$(DD1) | IOC: $(HOSTNAME)"
 }
 endObjectProperties
 
@@ -119,8 +151,8 @@ major 4
 minor 0
 release 0
 x 5
-y 440
-w 730
+y 470
+w 580
 h 30
 lineColor index 14
 fill
@@ -133,11 +165,11 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 15
-y 445
+x 10
+y 475
 w 115
 h 20
-font "helvetica-medium-r-14.0"
+font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
 useDisplayBg
@@ -152,8 +184,8 @@ beginObjectProperties
 major 4
 minor 1
 release 0
-x 125
-y 445
+x 130
+y 475
 w 70
 h 20
 fgColor index 14
@@ -180,8 +212,8 @@ beginObjectProperties
 major 4
 minor 1
 release 0
-x 200
-y 445
+x 205
+y 475
 w 70
 h 20
 fgColor index 14
@@ -208,8 +240,8 @@ beginObjectProperties
 major 4
 minor 1
 release 0
-x 275
-y 445
+x 280
+y 475
 w 70
 h 20
 fgColor index 14
@@ -236,8 +268,8 @@ beginObjectProperties
 major 4
 minor 1
 release 0
-x 350
-y 445
+x 355
+y 475
 w 70
 h 20
 fgColor index 14
@@ -264,8 +296,8 @@ beginObjectProperties
 major 4
 minor 1
 release 0
-x 425
-y 445
+x 430
+y 475
 w 70
 h 20
 fgColor index 0
@@ -284,68 +316,5 @@ font "helvetica-medium-r-10.0"
 objType "controls"
 controlBitPos 4
 readBitPos 4
-endObjectProperties
-
-# (Button)
-object activeButtonClass
-beginObjectProperties
-major 4
-minor 1
-release 0
-x 500
-y 445
-w 70
-h 20
-fgColor index 14
-onColor index 6
-offColor index 36
-inconsistentColor index 14
-topShadowColor index 0
-botShadowColor index 14
-controlPv "LOC\\$(BPM)_$(SS)_traces=i:0"
-indicatorPv "LOC\\$(BPM)_$(SS)_traces=i:0"
-onLabel "Q"
-offLabel "Q"
-labelType "literal"
-3d
-font "helvetica-medium-r-10.0"
-objType "controls"
-controlBitPos 5
-readBitPos 5
-endObjectProperties
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 5
-y 5
-w 730
-h 25
-lineColor index 14
-fill
-fillColor index 1
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 15
-y 10
-w 715
-h 15
-font "helvetica-bold-r-12.0"
-fontAlign "center"
-fgColor index 14
-bgColor index 0
-useDisplayBg
-value {
-  "SA amplitudes | IOC: $(HOSTNAME)"
-}
 endObjectProperties
 

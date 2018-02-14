@@ -3,10 +3,10 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 515
-y 115
-w 590
-h 570
+x 988
+y 262
+w 600
+h 520
 font "helvetica-bold-r-12.0"
 ctlFont "helvetica-bold-r-12.0"
 btnFont "helvetica-medium-r-10.0"
@@ -19,7 +19,7 @@ ctlBgColor1 index 0
 ctlBgColor2 index 14
 topShadowColor index 0
 botShadowColor index 14
-title "$(DD1) data | IOC: $(HOSTNAME)"
+title "PM amplitudes on $(HOSTNAME)"
 showGrid
 snapToGrid
 gridSize 5
@@ -31,40 +31,10 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 320
-y 505
-w 265
-h 60
-lineColor index 14
-fill
-fillColor index 1
-endObjectProperties
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
 x 5
-y 470
-w 580
+y 410
+w 590
 h 30
-lineColor index 14
-fill
-fillColor index 1
-endObjectProperties
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 5
-y 505
-w 310
-h 60
 lineColor index 14
 fill
 fillColor index 1
@@ -78,13 +48,14 @@ minor 8
 release 0
 # Geometry
 x 5
-y 35
-w 580
-h 430
+y 5
+w 590
+h 400
 # Appearance
 autoScaleBothDirections
-xLabel "ADC samples"
-yLabel "ADC counts"
+graphTitle "Amplitudes in the postmortem buffer"
+xLabel "samples"
+yLabel "amplitude [a.u.]"
 fgColor index 14
 bgColor index 1
 gridColor index 9
@@ -98,7 +69,7 @@ resetPv "LOC\\$(BPM)_$(DD)_reset=i:0"
 showXAxis
 xAxisSrc "AutoScale"
 xMin 0
-xMax 2048
+xMax 10000
 xLabelIntervals 4
 xMajorsPerLabel 1
 xMinorsPerMajor 8
@@ -124,10 +95,16 @@ y2Max 1
 # Trace Properties
 numTraces 4
 yPv {
-  0 "EPICS\\$(HOSTNAME):$(DD).A"
-  1 "EPICS\\$(HOSTNAME):$(DD).B"
-  2 "EPICS\\$(HOSTNAME):$(DD).C"
-  3 "EPICS\\$(HOSTNAME):$(DD).D"
+  0 "EPICS\\$(HOSTNAME):signals:postmortem.A"
+  1 "EPICS\\$(HOSTNAME):signals:postmortem.B"
+  2 "EPICS\\$(HOSTNAME):signals:postmortem.C"
+  3 "EPICS\\$(HOSTNAME):signals:postmortem.D"
+}
+lineThickness {
+  0 2
+  1 2
+  2 2
+  3 2
 }
 ySigned {
   0 1
@@ -149,8 +126,8 @@ beginObjectProperties
 major 4
 minor 1
 release 0
-x 115
-y 475
+x 125
+y 415
 w 70
 h 20
 fgColor index 14
@@ -161,8 +138,8 @@ topShadowColor index 0
 botShadowColor index 14
 controlPv "LOC\\$(BPM)_$(DD)_traces=i:0"
 indicatorPv "LOC\\$(BPM)_$(DD)_traces=i:0"
-onLabel "Channel A"
-offLabel "Channel A"
+onLabel "VA"
+offLabel "VA"
 labelType "literal"
 3d
 font "helvetica-medium-r-10.0"
@@ -177,8 +154,36 @@ beginObjectProperties
 major 4
 minor 1
 release 0
+x 195
+y 415
+w 70
+h 20
+fgColor index 14
+onColor index 6
+offColor index 83
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\$(BPM)_$(DD)_traces=i:0"
+indicatorPv "LOC\\$(BPM)_$(DD)_traces=i:0"
+onLabel "VB"
+offLabel "VB"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 1
+readBitPos 1
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
 x 265
-y 475
+y 415
 w 70
 h 20
 fgColor index 14
@@ -189,8 +194,8 @@ topShadowColor index 0
 botShadowColor index 14
 controlPv "LOC\\$(BPM)_$(DD)_traces=i:0"
 indicatorPv "LOC\\$(BPM)_$(DD)_traces=i:0"
-onLabel "Channel C"
-offLabel "Channel C"
+onLabel "VC"
+offLabel "VC"
 labelType "literal"
 3d
 font "helvetica-medium-r-10.0"
@@ -205,8 +210,8 @@ beginObjectProperties
 major 4
 minor 1
 release 0
-x 340
-y 475
+x 335
+y 415
 w 70
 h 20
 fgColor index 14
@@ -217,8 +222,8 @@ topShadowColor index 0
 botShadowColor index 14
 controlPv "LOC\\$(BPM)_$(DD)_traces=i:0"
 indicatorPv "LOC\\$(BPM)_$(DD)_traces=i:0"
-onLabel "Channel D"
-offLabel "Channel D"
+onLabel "VD"
+offLabel "VD"
 labelType "literal"
 3d
 font "helvetica-medium-r-10.0"
@@ -227,69 +232,15 @@ controlBitPos 3
 readBitPos 3
 endObjectProperties
 
-# (Button)
-object activeButtonClass
-beginObjectProperties
-major 4
-minor 1
-release 0
-x 190
-y 475
-w 70
-h 20
-fgColor index 14
-onColor index 6
-offColor index 83
-inconsistentColor index 14
-topShadowColor index 0
-botShadowColor index 14
-controlPv "LOC\\$(BPM)_$(DD)_traces=i:0"
-indicatorPv "LOC\\$(BPM)_$(DD)_traces=i:0"
-onLabel "Channel B"
-offLabel "Channel B"
-labelType "literal"
-3d
-font "helvetica-medium-r-10.0"
-objType "controls"
-controlBitPos 1
-readBitPos 1
-endObjectProperties
-
-# (Message Button)
-object activeMessageButtonClass
-beginObjectProperties
-major 4
-minor 1
-release 0
-x 230
-y 510
-w 80
-h 50
-fgColor index 14
-onColor index 8
-offColor index 53
-topShadowColor index 0
-botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(DD).PROC"
-pressValue "1"
-onLabel "Reading..."
-offLabel "Read data"
-3d
-font "helvetica-medium-r-10.0"
-visPv "EPICS\\$(HOSTNAME):$(DD).SCAN"
-visMin "0"
-visMax "2"
-endObjectProperties
-
 # (Static Text)
 object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
 release 1
-x 10
-y 475
-w 115
+x 15
+y 415
+w 110
 h 20
 font "helvetica-medium-r-14.0"
 fgColor index 14
@@ -300,14 +251,89 @@ value {
 }
 endObjectProperties
 
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 290
+y 445
+w 305
+h 65
+lineColor index 14
+fill
+fillColor index 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 300
+y 450
+w 195
+h 20
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Offset for reading from the buffer:"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 445
+w 280
+h 65
+lineColor index 14
+fill
+fillColor index 1
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 205
+y 450
+w 75
+h 55
+fgColor index 14
+onColor index 8
+offColor index 53
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(HOSTNAME):signals:postmortem.PROC"
+pressValue "1"
+onLabel "Reading..."
+offLabel "Read data"
+3d
+font "helvetica-medium-r-10.0"
+visPv "EPICS\\$(HOSTNAME):signals:postmortem.SCAN"
+visMin "0"
+visMax "1"
+endObjectProperties
+
 # (Menu Button)
 object activeMenuButtonClass
 beginObjectProperties
 major 4
 minor 0
 release 0
-x 130
-y 510
+x 105
+y 450
 w 95
 h 25
 fgColor index 14
@@ -316,8 +342,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(DD).SCAN"
-indicatorPv "EPICS\\$(HOSTNAME):$(DD).SCAN"
+controlPv "EPICS\\$(HOSTNAME):signals:postmortem.SCAN"
+indicatorPv "EPICS\\$(HOSTNAME):signals:postmortem.SCAN"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -328,7 +354,7 @@ major 4
 minor 1
 release 1
 x 10
-y 515
+y 455
 w 90
 h 20
 font "helvetica-medium-r-12.0"
@@ -346,189 +372,95 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 330
-y 510
-w 65
-h 20
-font "helvetica-medium-r-12.0"
-fgColor index 14
-bgColor index 0
-useDisplayBg
-value {
-  "Attenuation"
-}
-endObjectProperties
-
-# (Text Control)
-object activeXTextDspClass
-beginObjectProperties
-major 4
-minor 7
-release 0
-x 400
-y 510
-w 35
-h 20
-controlPv "EPICS\\$(HOSTNAME):att_mon"
-font "helvetica-bold-r-12.0"
-fontAlign "right"
-fgColor index 14
-bgColor index 0
-useDisplayBg
-limitsFromDb
-nullColor index 0
-smartRefresh
-fastUpdate
-useHexPrefix
-showUnits
-newPos
-objType "controls"
-noExecuteClipMask
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 445
-y 510
-w 50
-h 20
-font "helvetica-medium-r-12.0"
-fgColor index 14
-bgColor index 0
-useDisplayBg
-value {
-  "MaxADC"
-}
-endObjectProperties
-
-# (Text Control)
-object activeXTextDspClass
-beginObjectProperties
-major 4
-minor 7
-release 0
-x 500
-y 510
-w 80
-h 20
-controlPv "EPICS\\$(HOSTNAME):max_adc"
-font "helvetica-bold-r-12.0"
-fgColor index 23
-bgColor index 0
-useDisplayBg
-limitsFromDb
-nullColor index 0
-smartRefresh
-useHexPrefix
-showUnits
-newPos
-objType "controls"
-noExecuteClipMask
-endObjectProperties
-
-# (Text Control)
-object activeXTextDspClass
-beginObjectProperties
-major 4
-minor 7
-release 0
-x 420
-y 535
-w 95
-h 20
-controlPv "EPICS\\$(HOSTNAME):triggers:t2:count_mon"
-font "helvetica-bold-r-12.0"
-fgColor index 14
-bgColor index 0
-useDisplayBg
-limitsFromDb
-nullColor index 0
-smartRefresh
-fastUpdate
-useHexPrefix
-newPos
-objType "controls"
-noExecuteClipMask
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 330
-y 535
-w 90
-h 20
-font "helvetica-medium-r-12.0"
-fgColor index 14
-bgColor index 0
-useDisplayBg
-value {
-  "T2 trig. counter"
-}
-endObjectProperties
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 5
-y 5
-w 580
-h 25
-lineColor index 14
-fill
-fillColor index 1
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 15
-y 10
-w 565
-h 15
-font "helvetica-bold-r-12.0"
-fontAlign "center"
-fgColor index 14
-bgColor index 0
-useDisplayBg
-value {
-  "ADC raw | IOC: $(HOSTNAME)"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
 x 10
-y 540
-w 215
-h 20
+y 480
+w 190
+h 25
 font "helvetica-medium-r-10.0"
 fontAlign "center"
 fgColor index 14
 bgColor index 0
-visPv "EPICS\\$(HOSTNAME):$(DD).SCAN"
+visPv "EPICS\\$(HOSTNAME):signals:postmortem.SCAN"
 visMin "2"
 visMax "3"
 value {
   "Updates on Trigger"
 }
 border
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 365
+y 470
+w 60
+h 20
+controlPv "EPICS\\$(HOSTNAME):signals:postmortem.OFFS"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 24
+bgColor index 0
+editable
+motifWidget
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 300
+y 470
+w 60
+h 20
+controlPv "EPICS\\$(HOSTNAME):signals:postmortem.OFFS"
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+useHexPrefix
+showUnits
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 470
+y 470
+w 110
+h 25
+fgColor index 14
+onColor index 8
+offColor index 53
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(HOSTNAME):signals:postmortem.PROC"
+pressValue "1"
+onLabel "Reading..."
+offLabel "Refresh plot"
+3d
+font "helvetica-medium-r-10.0"
+visPv "EPICS\\$(HOSTNAME):signals:postmortem.SCAN"
+visMin "0"
+visMax "1"
 endObjectProperties
 

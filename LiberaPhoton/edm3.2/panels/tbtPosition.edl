@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 515
-y 115
+x 870
+y 204
 w 590
 h 570
 font "helvetica-bold-r-12.0"
@@ -83,8 +83,8 @@ w 580
 h 430
 # Appearance
 autoScaleBothDirections
-xLabel "ADC samples"
-yLabel "ADC counts"
+xLabel "Turn samples"
+yLabel "position [nm]"
 fgColor index 14
 bgColor index 1
 gridColor index 9
@@ -122,24 +122,18 @@ yUserSpecScaleDiv 1
 y2AxisSrc "AutoScale"
 y2Max 1
 # Trace Properties
-numTraces 4
+numTraces 2
 yPv {
-  0 "EPICS\\$(HOSTNAME):$(DD).A"
-  1 "EPICS\\$(HOSTNAME):$(DD).B"
-  2 "EPICS\\$(HOSTNAME):$(DD).C"
-  3 "EPICS\\$(HOSTNAME):$(DD).D"
+  0 "EPICS\\$(HOSTNAME):$(DD).X"
+  1 "EPICS\\$(HOSTNAME):$(DD).Y"
 }
 ySigned {
   0 1
   1 1
-  2 1
-  3 1
 }
 plotColor {
-  0 index 16
-  1 index 83
-  2 index 46
-  3 index 43
+  0 index 20
+  1 index 25
 }
 endObjectProperties
 
@@ -155,14 +149,14 @@ w 70
 h 20
 fgColor index 14
 onColor index 6
-offColor index 16
+offColor index 20
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
 controlPv "LOC\\$(BPM)_$(DD)_traces=i:0"
 indicatorPv "LOC\\$(BPM)_$(DD)_traces=i:0"
-onLabel "Channel A"
-offLabel "Channel A"
+onLabel "Horizontal (X)"
+offLabel "Horizontal (X)"
 labelType "literal"
 3d
 font "helvetica-medium-r-10.0"
@@ -177,76 +171,20 @@ beginObjectProperties
 major 4
 minor 1
 release 0
-x 265
-y 475
-w 70
-h 20
-fgColor index 14
-onColor index 6
-offColor index 46
-inconsistentColor index 14
-topShadowColor index 0
-botShadowColor index 14
-controlPv "LOC\\$(BPM)_$(DD)_traces=i:0"
-indicatorPv "LOC\\$(BPM)_$(DD)_traces=i:0"
-onLabel "Channel C"
-offLabel "Channel C"
-labelType "literal"
-3d
-font "helvetica-medium-r-10.0"
-objType "controls"
-controlBitPos 2
-readBitPos 2
-endObjectProperties
-
-# (Button)
-object activeButtonClass
-beginObjectProperties
-major 4
-minor 1
-release 0
-x 340
-y 475
-w 70
-h 20
-fgColor index 14
-onColor index 6
-offColor index 43
-inconsistentColor index 14
-topShadowColor index 0
-botShadowColor index 14
-controlPv "LOC\\$(BPM)_$(DD)_traces=i:0"
-indicatorPv "LOC\\$(BPM)_$(DD)_traces=i:0"
-onLabel "Channel D"
-offLabel "Channel D"
-labelType "literal"
-3d
-font "helvetica-medium-r-10.0"
-objType "controls"
-controlBitPos 3
-readBitPos 3
-endObjectProperties
-
-# (Button)
-object activeButtonClass
-beginObjectProperties
-major 4
-minor 1
-release 0
 x 190
 y 475
 w 70
 h 20
-fgColor index 14
+fgColor index 0
 onColor index 6
-offColor index 83
+offColor index 25
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
 controlPv "LOC\\$(BPM)_$(DD)_traces=i:0"
 indicatorPv "LOC\\$(BPM)_$(DD)_traces=i:0"
-onLabel "Channel B"
-offLabel "Channel B"
+onLabel "Vertical (Y)"
+offLabel "Vertical (Y)"
 labelType "literal"
 3d
 font "helvetica-medium-r-10.0"
@@ -291,7 +229,7 @@ x 10
 y 475
 w 115
 h 20
-font "helvetica-medium-r-14.0"
+font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
 useDisplayBg
@@ -355,35 +293,8 @@ fgColor index 14
 bgColor index 0
 useDisplayBg
 value {
-  "Attenuation"
+  "Fullscale:"
 }
-endObjectProperties
-
-# (Text Control)
-object activeXTextDspClass
-beginObjectProperties
-major 4
-minor 7
-release 0
-x 400
-y 510
-w 35
-h 20
-controlPv "EPICS\\$(HOSTNAME):att_mon"
-font "helvetica-bold-r-12.0"
-fontAlign "right"
-fgColor index 14
-bgColor index 0
-useDisplayBg
-limitsFromDb
-nullColor index 0
-smartRefresh
-fastUpdate
-useHexPrefix
-showUnits
-newPos
-objType "controls"
-noExecuteClipMask
 endObjectProperties
 
 # (Static Text)
@@ -415,7 +326,7 @@ x 500
 y 510
 w 80
 h 20
-controlPv "EPICS\\$(HOSTNAME):max_adc"
+controlPv "EPICS\\$(HOSTNAME):maxadc"
 font "helvetica-bold-r-12.0"
 fgColor index 23
 bgColor index 0
@@ -505,7 +416,7 @@ fgColor index 14
 bgColor index 0
 useDisplayBg
 value {
-  "ADC raw | IOC: $(HOSTNAME)"
+  "$(DD1) | IOC: $(HOSTNAME)"
 }
 endObjectProperties
 
@@ -530,5 +441,137 @@ value {
   "Updates on Trigger"
 }
 border
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 390
+y 510
+w 50
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 23
+bgColor index 0
+visPv "EPICS\\$(HOSTNAME):current_range_mon"
+visMin "1"
+visMax "2"
+value {
+  "60 nA"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 390
+y 510
+w 50
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 23
+bgColor index 0
+visPv "EPICS\\$(HOSTNAME):current_range_mon"
+visMin "2"
+visMax "3"
+value {
+  "200 nA"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 390
+y 510
+w 50
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 23
+bgColor index 0
+visPv "EPICS\\$(HOSTNAME):current_range_mon"
+visMin "3"
+visMax "4"
+value {
+  "2 uA"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 390
+y 510
+w 50
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 23
+bgColor index 0
+visPv "EPICS\\$(HOSTNAME):current_range_mon"
+visMin "4"
+visMax "5"
+value {
+  "20 uA"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 390
+y 510
+w 50
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 23
+bgColor index 0
+visPv "EPICS\\$(HOSTNAME):current_range_mon"
+visMin "5"
+visMax "6"
+value {
+  "200 uA"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 390
+y 510
+w 50
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 23
+bgColor index 0
+visPv "EPICS\\$(HOSTNAME):current_range_mon"
+visMin "6"
+visMax "7"
+value {
+  "2 mA"
+}
 endObjectProperties
 

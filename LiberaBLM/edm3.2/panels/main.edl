@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 253
-y 53
+x 240
+y 230
 w 240
 h 690
 font "helvetica-medium-r-18.0"
@@ -584,6 +584,7 @@ bgColor index 0
 limitsFromDb
 nullColor index 0
 smartRefresh
+useKp
 fastUpdate
 useHexPrefix
 showUnits
@@ -1071,182 +1072,6 @@ value {
 }
 endObjectProperties
 
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 185
-y 340
-w 45
-h 20
-font "helvetica-bold-r-10.0"
-fontAlign "center"
-fgColor index 14
-bgColor index 0
-visPv "EPICS\\$(HOSTNAME):termination:A_mon"
-visMin "1"
-visMax "2"
-value {
-  "50 Ohm"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 185
-y 365
-w 45
-h 20
-font "helvetica-bold-r-10.0"
-fontAlign "center"
-fgColor index 14
-bgColor index 0
-visPv "EPICS\\$(HOSTNAME):termination:B_mon"
-visMin "1"
-visMax "2"
-value {
-  "50 Ohm"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 185
-y 390
-w 45
-h 20
-font "helvetica-bold-r-10.0"
-fontAlign "center"
-fgColor index 14
-bgColor index 0
-visPv "EPICS\\$(HOSTNAME):termination:C_mon"
-visMin "1"
-visMax "2"
-value {
-  "50 Ohm"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 185
-y 415
-w 45
-h 20
-font "helvetica-bold-r-10.0"
-fontAlign "center"
-fgColor index 14
-bgColor index 0
-visPv "EPICS\\$(HOSTNAME):termination:D_mon"
-visMin "1"
-visMax "2"
-value {
-  "50 Ohm"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 185
-y 340
-w 45
-h 20
-font "helvetica-bold-r-10.0"
-fontAlign "center"
-fgColor index 14
-bgColor index 0
-visPv "EPICS\\$(HOSTNAME):termination:A_mon"
-visMin "0"
-visMax "1"
-value {
-  "1MOhm"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 185
-y 365
-w 45
-h 20
-font "helvetica-bold-r-10.0"
-fontAlign "center"
-fgColor index 14
-bgColor index 0
-visPv "EPICS\\$(HOSTNAME):termination:B_mon"
-visMin "0"
-visMax "1"
-value {
-  "1MOhm"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 185
-y 390
-w 45
-h 20
-font "helvetica-bold-r-10.0"
-fontAlign "center"
-fgColor index 14
-bgColor index 0
-visPv "EPICS\\$(HOSTNAME):termination:C_mon"
-visMin "0"
-visMax "1"
-value {
-  "1MOhm"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 185
-y 415
-w 45
-h 20
-font "helvetica-bold-r-10.0"
-fontAlign "center"
-fgColor index 14
-bgColor index 0
-visPv "EPICS\\$(HOSTNAME):termination:D_mon"
-visMin "0"
-visMax "1"
-value {
-  "1MOhm"
-}
-endObjectProperties
-
 # (Related Display)
 object relatedDisplayClass
 beginObjectProperties
@@ -1404,5 +1229,143 @@ symbols {
   7 "BLD=D,SIG=signals:counter.D2,NAME=Loss Counter"
   8 "BLD=D,SIG=signals:coincidence_counter.D,NAME=Coincidence loss events"
 }
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 200
+y 55
+w 35
+h 25
+fgColor index 91
+bgColor index 53
+topShadowColor index 0
+botShadowColor index 14
+font "helvetica-medium-r-10.0"
+buttonLabel "info"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "about.edl"
+}
+setPosition {
+  0 "button"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 185
+y 340
+w 45
+h 20
+fgColor index 14
+onColor index 53
+offColor index 0
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(HOSTNAME):termination:A_sp"
+indicatorPv "EPICS\\$(HOSTNAME):termination:A_mon"
+onLabel "50 Ohm"
+offLabel "1MOhm"
+labelType "literal"
+3d
+font "helvetica-bold-r-10.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 185
+y 365
+w 45
+h 20
+fgColor index 14
+onColor index 53
+offColor index 0
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(HOSTNAME):termination:B_sp"
+indicatorPv "EPICS\\$(HOSTNAME):termination:B_mon"
+onLabel "50 Ohm"
+offLabel "1MOhm"
+labelType "literal"
+3d
+font "helvetica-bold-r-10.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 185
+y 390
+w 45
+h 20
+fgColor index 14
+onColor index 53
+offColor index 0
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(HOSTNAME):termination:C_sp"
+indicatorPv "EPICS\\$(HOSTNAME):termination:C_mon"
+onLabel "50 Ohm"
+offLabel "1MOhm"
+labelType "literal"
+3d
+font "helvetica-bold-r-10.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 185
+y 415
+w 45
+h 20
+fgColor index 14
+onColor index 53
+offColor index 0
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(HOSTNAME):termination:D_sp"
+indicatorPv "EPICS\\$(HOSTNAME):termination:D_mon"
+onLabel "50 Ohm"
+offLabel "1MOhm"
+labelType "literal"
+3d
+font "helvetica-bold-r-10.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
 endObjectProperties
 
