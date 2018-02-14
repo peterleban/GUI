@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>564</width>
-    <height>685</height>
+    <width>829</width>
+    <height>669</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -28,7 +28,7 @@
      <rect>
       <x>9</x>
       <y>9</y>
-      <width>546</width>
+      <width>811</width>
       <height>546</height>
      </rect>
     </property>
@@ -125,7 +125,7 @@
      <rect>
       <x>5</x>
       <y>575</y>
-      <width>551</width>
+      <width>816</width>
       <height>16</height>
      </rect>
     </property>
@@ -142,29 +142,10 @@
    <widget class="QLabel" name="label_19">
     <property name="geometry">
      <rect>
-      <x>295</x>
-      <y>650</y>
+      <x>445</x>
+      <y>640</y>
       <width>156</width>
       <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Buffer size [mul. of 8]</string>
-    </property>
-   </widget>
-   <widget class="caTextEntry" name="adc_ngrp">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>650</y>
-      <width>96</width>
-      <height>21</height>
      </rect>
     </property>
     <property name="font">
@@ -173,24 +154,15 @@
       <pointsize>10</pointsize>
      </font>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-    </property>
-    <property name="channel" stdset="0">
-     <string notr="true">$(BPM):adc.NGRP</string>
-    </property>
-    <property name="maxValue">
-     <double>10000.000000000000000</double>
-    </property>
-    <property name="minValue">
-     <double>10.000000000000000</double>
+    <property name="text">
+     <string>Buffer size [mul. of 8]</string>
     </property>
    </widget>
    <widget class="caMessageButton" name="camessagebutton">
     <property name="geometry">
      <rect>
       <x>125</x>
-      <y>620</y>
+      <y>615</y>
       <width>101</width>
       <height>21</height>
      </rect>
@@ -236,7 +208,7 @@
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="styleSheet">
@@ -246,111 +218,42 @@
      <string>Scan type</string>
     </property>
    </widget>
-   <widget class="caMenu" name="adc_scan">
+   <widget class="QLabel" name="label_23">
     <property name="geometry">
      <rect>
-      <x>125</x>
+      <x>445</x>
       <y>590</y>
-      <width>101</width>
+      <width>126</width>
       <height>21</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
-     </font>
-    </property>
-    <property name="channel" stdset="0">
-     <string notr="true">$(BPM):adc.SCAN</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_23">
-    <property name="geometry">
-     <rect>
-      <x>295</x>
-      <y>590</y>
-      <width>126</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="text">
      <string>Captured atoms</string>
     </property>
    </widget>
-   <widget class="caTextEntry" name="tbtddcsynth_offs">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>620</y>
-      <width>96</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>DejaVu Sans</family>
-      <pointsize>10</pointsize>
-     </font>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-    </property>
-    <property name="channel" stdset="0">
-     <string notr="true">$(BPM):adc.OFFS</string>
-    </property>
-    <property name="fontScaleMode">
-     <enum>caLineEdit::WidthAndHeight</enum>
-    </property>
-   </widget>
-   <widget class="caTextEntry" name="tbtddcsynth_offs_2">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>590</y>
-      <width>96</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>DejaVu Sans</family>
-      <pointsize>10</pointsize>
-     </font>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-    </property>
-    <property name="channel" stdset="0">
-     <string notr="true">$(BPM):adc:captured_atoms</string>
-    </property>
-    <property name="fontScaleMode">
-     <enum>caLineEdit::WidthAndHeight</enum>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_22">
     <property name="geometry">
      <rect>
-      <x>295</x>
-      <y>620</y>
-      <width>161</width>
+      <x>445</x>
+      <y>615</y>
+      <width>116</width>
       <height>20</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="text">
-     <string>Readout offset [mul. of 8]</string>
+     <string>Offset [mul. of 8]</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_25">
@@ -399,7 +302,7 @@
    </widget>
    <widget class="caRelatedDisplay" name="ADC_buffer">
     <property name="enabled">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="geometry">
      <rect>
@@ -420,15 +323,15 @@
      <string notr="true"/>
     </property>
     <property name="files">
-     <string notr="true">adc_a</string>
+     <string notr="true">adc</string>
     </property>
     <property name="args">
-     <string notr="true">BPM=$(BPM)</string>
+     <string notr="true">DEVICE=$(DEVICE)</string>
     </property>
    </widget>
    <widget class="caRelatedDisplay" name="ADC_buffer_3">
     <property name="enabled">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="geometry">
      <rect>
@@ -449,10 +352,10 @@
      <string notr="true"/>
     </property>
     <property name="files">
-     <string notr="true">adc_c</string>
+     <string notr="true">adc</string>
     </property>
     <property name="args">
-     <string notr="true">BPM=$(BPM)</string>
+     <string notr="true">DEVICE=$(DEVICE)</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_24">
@@ -479,7 +382,7 @@
    </widget>
    <widget class="caRelatedDisplay" name="ADC_buffer_2">
     <property name="enabled">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="geometry">
      <rect>
@@ -500,10 +403,10 @@
      <string notr="true"/>
     </property>
     <property name="files">
-     <string notr="true">adc_b</string>
+     <string notr="true">adc</string>
     </property>
     <property name="args">
-     <string notr="true">BPM=$(BPM)</string>
+     <string notr="true">DEVICE=$(DEVICE)</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_27">
@@ -530,7 +433,7 @@
    </widget>
    <widget class="caRelatedDisplay" name="ADC_buffer_4">
     <property name="enabled">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="geometry">
      <rect>
@@ -551,10 +454,161 @@
      <string notr="true"/>
     </property>
     <property name="files">
-     <string notr="true">adc_d</string>
+     <string notr="true">adc</string>
     </property>
     <property name="args">
-     <string notr="true">BPM=$(BPM)</string>
+     <string notr="true">DEVICE=$(DEVICE)</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_34">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>590</y>
+      <width>121</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>11</pointsize>
+      <stylestrategy>PreferDefault</stylestrategy>
+     </font>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(BPM):adc:captured_atoms</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_51">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>615</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <stylestrategy>PreferDefault</stylestrategy>
+     </font>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(BPM):adc.OFFS</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>230</red>
+      <green>230</green>
+      <blue>230</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+    <property name="precision">
+     <number>4</number>
+    </property>
+    <property name="precisionMode">
+     <enum>caLineEdit::Channel</enum>
+    </property>
+    <property name="maxValue">
+     <double>2.000000000000000</double>
+    </property>
+    <property name="minValue">
+     <double>0.100000000000000</double>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_35">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>640</y>
+      <width>121</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>11</pointsize>
+      <stylestrategy>PreferDefault</stylestrategy>
+     </font>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(BPM):adc.NGRP</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caMenu" name="camenu_14">
+    <property name="geometry">
+     <rect>
+      <x>125</x>
+      <y>590</y>
+      <width>100</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(BPM):adc.SCAN</string>
+    </property>
+    <property name="labelDisplay">
+     <bool>false</bool>
     </property>
    </widget>
   </widget>

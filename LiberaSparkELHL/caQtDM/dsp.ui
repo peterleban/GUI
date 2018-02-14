@@ -1774,7 +1774,7 @@ color: rgb(0, 0, 0);</string>
      <string notr="true"/>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>0</number>
     </property>
     <property name="iconSize">
      <size>
@@ -5113,7 +5113,7 @@ color: rgb(0, 0, 0);</string>
         </font>
        </property>
        <property name="text">
-        <string>Reconnect</string>
+        <string>Save</string>
        </property>
        <property name="fontScaleMode">
         <enum>EPushButton::None</enum>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TBTSYNTH</class>
+ <widget class="QMainWindow" name="TBTSYNTH">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>561</width>
+    <height>563</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FFT</string>
+  </property>
+  <property name="Title" stdset="0">
+   <string>$(BPM)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="caCartesianPlot" name="tbtddcsynth_y">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>9</y>
+      <width>551</width>
+      <height>546</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans</family>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="Title" stdset="0">
+     <string notr="true">FFT on Y position</string>
+    </property>
+    <property name="TitleX">
+     <string notr="true">Samples</string>
+    </property>
+    <property name="TitleY">
+     <string notr="true">Arbitrary units</string>
+    </property>
+    <property name="channels_1" stdset="0">
+     <string notr="true"/>
+    </property>
+    <property name="color_1">
+     <color>
+      <red>255</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="channels_2" stdset="0">
+     <string notr="true">;$(BPM):fft.Y</string>
+    </property>
+    <property name="color_2">
+     <color>
+      <red>33</red>
+      <green>0</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="countNumOrChannel" stdset="0">
+     <string notr="true"/>
+    </property>
+    <property name="triggerChannel" stdset="0">
+     <string notr="true"/>
+    </property>
+    <property name="foreground">
+     <color alpha="0">
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="gridColor">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="XaxisLimits">
+     <string>0;100</string>
+    </property>
+    <property name="YaxisLimits">
+     <string>-1000000;-900000</string>
+    </property>
+    <property name="YAxisType" stdset="0">
+     <enum>caCartesianPlot::log10</enum>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QwtPlot</class>
+   <extends>QFrame</extends>
+   <header>qwt_plot.h</header>
+  </customwidget>
+  <customwidget>
+   <class>caCartesianPlot</class>
+   <extends>QwtPlot</extends>
+   <header>caCartesianPlot</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

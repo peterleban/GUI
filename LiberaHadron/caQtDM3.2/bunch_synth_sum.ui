@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>TBTSYNTH</class>
- <widget class="QMainWindow" name="TBTSYNTH">
+ <class>mainWindow</class>
+ <widget class="QMainWindow" name="mainWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>561</width>
-    <height>714</height>
+    <width>827</width>
+    <height>691</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>FFT</string>
+   <string/>
   </property>
   <property name="Title" stdset="0">
    <string>$(BPM)</string>
@@ -22,7 +22,7 @@
      <rect>
       <x>5</x>
       <y>575</y>
-      <width>551</width>
+      <width>816</width>
       <height>16</height>
      </rect>
     </property>
@@ -30,13 +30,13 @@
      <enum>Qt::Horizontal</enum>
     </property>
    </widget>
-   <widget class="caCartesianPlot" name="tbtddcsynth_y">
+   <widget class="caCartesianPlot" name="caCartesianPlot">
     <property name="geometry">
      <rect>
       <x>4</x>
-      <y>9</y>
-      <width>551</width>
-      <height>546</height>
+      <y>10</y>
+      <width>816</width>
+      <height>561</height>
      </rect>
     </property>
     <property name="font">
@@ -46,33 +46,45 @@
      </font>
     </property>
     <property name="Title" stdset="0">
-     <string notr="true">FFT on position</string>
+     <string notr="true">SUM signal</string>
     </property>
     <property name="TitleX">
-     <string notr="true">Samples</string>
+     <string notr="true">Bunches</string>
     </property>
     <property name="TitleY">
      <string notr="true">Arbitrary units</string>
     </property>
     <property name="channels_1" stdset="0">
-     <string notr="true">;$(BPM):fft.X</string>
+     <string notr="true">;$(BPM):bunch_synth.Sum</string>
+    </property>
+    <property name="Style_1">
+     <enum>caCartesianPlot::Lines</enum>
+    </property>
+    <property name="symbol_1">
+     <enum>caCartesianPlot::Star1</enum>
     </property>
     <property name="color_1">
      <color>
       <red>255</red>
-      <green>0</green>
+      <green>170</green>
       <blue>0</blue>
      </color>
     </property>
     <property name="channels_2" stdset="0">
-     <string notr="true">;$(BPM):fft.Y</string>
+     <string notr="true"/>
+    </property>
+    <property name="symbol_2">
+     <enum>caCartesianPlot::Star2</enum>
     </property>
     <property name="color_2">
      <color>
-      <red>33</red>
+      <red>6</red>
       <green>0</green>
       <blue>255</blue>
      </color>
+    </property>
+    <property name="plotMode">
+     <enum>caCartesianPlot::PlotNPointsAndStop</enum>
     </property>
     <property name="countNumOrChannel" stdset="0">
      <string notr="true"/>
@@ -94,41 +106,22 @@
       <blue>0</blue>
      </color>
     </property>
+    <property name="XaxisScaling" stdset="0">
+     <enum>caCartesianPlot::Auto</enum>
+    </property>
     <property name="XaxisLimits">
      <string>0;100</string>
     </property>
     <property name="YaxisLimits">
      <string>-1000000;-900000</string>
     </property>
-    <property name="YAxisType" stdset="0">
-     <enum>caCartesianPlot::log10</enum>
-    </property>
    </widget>
-   <widget class="QLabel" name="label_19">
+   <widget class="QLabel" name="label_24">
     <property name="geometry">
      <rect>
-      <x>315</x>
+      <x>445</x>
       <y>590</y>
-      <width>116</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Acquisition size</string>
-    </property>
-   </widget>
-   <widget class="caTextEntry" name="adc_ngrp">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>590</y>
-      <width>96</width>
+      <width>126</width>
       <height>21</height>
      </rect>
     </property>
@@ -138,46 +131,140 @@
       <pointsize>10</pointsize>
      </font>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-    </property>
-    <property name="channel" stdset="0">
-     <string notr="true">$(BPM):fft.NGRP</string>
-    </property>
-    <property name="maxValue">
-     <double>10000.000000000000000</double>
-    </property>
-    <property name="minValue">
-     <double>10.000000000000000</double>
+    <property name="text">
+     <string>Captured atoms</string>
     </property>
    </widget>
-   <widget class="caMenu" name="adc_scan">
+   <widget class="caTextEntry" name="catextentry_51">
     <property name="geometry">
      <rect>
-      <x>125</x>
-      <y>590</y>
-      <width>101</width>
-      <height>21</height>
+      <x>700</x>
+      <y>615</y>
+      <width>121</width>
+      <height>20</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
       <pointsize>9</pointsize>
+      <stylestrategy>PreferDefault</stylestrategy>
+     </font>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(BPM):bunch_synth.OFFS</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>230</red>
+      <green>230</green>
+      <blue>230</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+    <property name="precision">
+     <number>4</number>
+    </property>
+    <property name="precisionMode">
+     <enum>caLineEdit::Channel</enum>
+    </property>
+    <property name="maxValue">
+     <double>2.000000000000000</double>
+    </property>
+    <property name="minValue">
+     <double>0.100000000000000</double>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_23">
+    <property name="geometry">
+     <rect>
+      <x>445</x>
+      <y>615</y>
+      <width>146</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Source data offset</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_34">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>590</y>
+      <width>121</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>11</pointsize>
+      <stylestrategy>PreferDefault</stylestrategy>
+     </font>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(BPM):bunch:captured_atoms</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_21">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>590</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true"/>
+     <string notr="true">color: rgb(0, 0, 0);</string>
     </property>
-    <property name="channel" stdset="0">
-     <string notr="true">$(BPM):fft.SCAN</string>
+    <property name="text">
+     <string>Scan type</string>
     </property>
    </widget>
    <widget class="caMessageButton" name="camessagebutton">
     <property name="geometry">
      <rect>
       <x>125</x>
-      <y>620</y>
+      <y>615</y>
       <width>101</width>
       <height>21</height>
      </rect>
@@ -198,7 +285,7 @@
      <enum>EPushButton::WidthAndHeight</enum>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(BPM):fft.PROC</string>
+     <string notr="true">$(BPM):bunch_synth.PROC</string>
     </property>
     <property name="background">
      <color>
@@ -211,33 +298,88 @@
      <string notr="true">1</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_21">
+   <widget class="caLineEdit" name="calineedit_35">
     <property name="geometry">
      <rect>
-      <x>5</x>
-      <y>590</y>
-      <width>101</width>
+      <x>700</x>
+      <y>640</y>
+      <width>121</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>11</pointsize>
+      <stylestrategy>PreferDefault</stylestrategy>
+     </font>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(BPM):bunch_synth.NGRP</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>445</x>
+      <y>640</y>
+      <width>156</width>
       <height>20</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(0, 0, 0);</string>
-    </property>
     <property name="text">
-     <string>Scan type</string>
+     <string>Buffer size</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_22">
     <property name="geometry">
      <rect>
-      <x>315</x>
-      <y>650</y>
+      <x>445</x>
+      <y>665</y>
+      <width>181</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Decimation</string>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_52">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>665</y>
       <width>121</width>
       <height>20</height>
      </rect>
@@ -246,160 +388,44 @@
      <font>
       <family>DejaVu Sans</family>
       <pointsize>9</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Source data offset</string>
-    </property>
-   </widget>
-   <widget class="caTextEntry" name="tbtddcsynth_offs">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>650</y>
-      <width>96</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>DejaVu Sans</family>
-      <pointsize>10</pointsize>
+      <stylestrategy>PreferDefault</stylestrategy>
      </font>
     </property>
     <property name="alignment">
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(BPM):fft.OFFS</string>
-    </property>
-    <property name="fontScaleMode">
-     <enum>caLineEdit::WidthAndHeight</enum>
-    </property>
-   </widget>
-   <widget class="caTextEntry" name="tbtddcsynth_offs_2">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>680</y>
-      <width>96</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>DejaVu Sans</family>
-      <pointsize>10</pointsize>
-     </font>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-    </property>
-    <property name="channel" stdset="0">
-     <string notr="true">$(BPM):fft:request_qualifiers:decimation</string>
-    </property>
-    <property name="fontScaleMode">
-     <enum>caLineEdit::WidthAndHeight</enum>
-    </property>
-   </widget>
-   <widget class="caTextEntry" name="tbtddcsynth_offs_3">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>620</y>
-      <width>96</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>DejaVu Sans</family>
-      <pointsize>10</pointsize>
-     </font>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-    </property>
-    <property name="channel" stdset="0">
-     <string notr="true">$(BPM):fft:request_qualifiers:window</string>
-    </property>
-    <property name="fontScaleMode">
-     <enum>caLineEdit::WidthAndHeight</enum>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_20">
-    <property name="geometry">
-     <rect>
-      <x>315</x>
-      <y>680</y>
-      <width>131</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Source data dec.</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_23">
-    <property name="geometry">
-     <rect>
-      <x>315</x>
-      <y>620</y>
-      <width>121</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>FFT atom size</string>
-    </property>
-   </widget>
-   <widget class="caRelatedDisplay" name="ADC_buffer">
-    <property name="enabled">
-     <bool>true</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>5</x>
-      <y>560</y>
-      <width>16</width>
-      <height>16</height>
-     </rect>
+     <string notr="true">$(BPM):bunch_synth:request_qualifiers:decimation</string>
     </property>
     <property name="background">
      <color>
-      <red>255</red>
-      <green>0</green>
-      <blue>0</blue>
+      <red>230</red>
+      <green>230</green>
+      <blue>230</blue>
      </color>
     </property>
-    <property name="labels">
-     <string notr="true"/>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
     </property>
-    <property name="files">
-     <string notr="true">fft_x</string>
+    <property name="precision">
+     <number>4</number>
     </property>
-    <property name="args">
-     <string notr="true">BPM=$(BPM)</string>
+    <property name="precisionMode">
+     <enum>caLineEdit::Channel</enum>
+    </property>
+    <property name="maxValue">
+     <double>2.000000000000000</double>
+    </property>
+    <property name="minValue">
+     <double>0.100000000000000</double>
     </property>
    </widget>
-   <widget class="QLabel" name="label_24">
+   <widget class="caMenu" name="camenu_14">
     <property name="geometry">
      <rect>
-      <x>25</x>
-      <y>560</y>
-      <width>46</width>
+      <x>125</x>
+      <y>590</y>
+      <width>100</width>
       <height>21</height>
      </rect>
     </property>
@@ -412,59 +438,14 @@
     <property name="styleSheet">
      <string notr="true">color: rgb(0, 0, 0);</string>
     </property>
-    <property name="text">
-     <string>FFT X</string>
-    </property>
-   </widget>
-   <widget class="caRelatedDisplay" name="ADC_buffer_3">
-    <property name="enabled">
+    <property name="frame">
      <bool>true</bool>
     </property>
-    <property name="geometry">
-     <rect>
-      <x>80</x>
-      <y>560</y>
-      <width>16</width>
-      <height>16</height>
-     </rect>
+    <property name="channel" stdset="0">
+     <string notr="true">$(BPM):bunch_synth.SCAN</string>
     </property>
-    <property name="background">
-     <color>
-      <red>0</red>
-      <green>0</green>
-      <blue>255</blue>
-     </color>
-    </property>
-    <property name="labels">
-     <string notr="true"/>
-    </property>
-    <property name="files">
-     <string notr="true">fft_y</string>
-    </property>
-    <property name="args">
-     <string notr="true">BPM=$(BPM)</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_25">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>560</y>
-      <width>51</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>DejaVu Sans</family>
-      <pointsize>9</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(0, 0, 0);</string>
-    </property>
-    <property name="text">
-     <string>FFT Y</string>
+    <property name="labelDisplay">
+     <bool>false</bool>
     </property>
    </widget>
   </widget>
@@ -479,11 +460,6 @@
    <class>caMenu</class>
    <extends>QComboBox</extends>
    <header>caMenu</header>
-  </customwidget>
-  <customwidget>
-   <class>caRelatedDisplay</class>
-   <extends>QWidget</extends>
-   <header>caRelatedDisplay</header>
   </customwidget>
   <customwidget>
    <class>caTextEntry</class>
