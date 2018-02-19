@@ -57,7 +57,7 @@
      <string notr="true"/>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>2</number>
     </property>
     <property name="iconSize">
      <size>
@@ -933,7 +933,7 @@
        <string notr="true"/>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>2</number>
       </property>
       <property name="iconSize">
        <size>
@@ -1884,7 +1884,7 @@
           </font>
          </property>
          <property name="text">
-          <string>Gate size [%]</string>
+          <string>Gate end [%]</string>
          </property>
         </widget>
         <widget class="caTextEntry" name="caTextEntry_13">
