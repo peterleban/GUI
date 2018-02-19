@@ -57,7 +57,7 @@
      <string notr="true"/>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>0</number>
     </property>
     <property name="iconSize">
      <size>
@@ -1800,7 +1800,7 @@
           <rect>
            <x>5</x>
            <y>35</y>
-           <width>121</width>
+           <width>126</width>
            <height>20</height>
           </rect>
          </property>
@@ -1810,7 +1810,7 @@
           </font>
          </property>
          <property name="text">
-          <string>Sync offset</string>
+          <string>Sync offset [x 8 ns]</string>
          </property>
         </widget>
         <widget class="QLabel" name="label_87">
@@ -5864,7 +5864,7 @@
           </color>
          </property>
          <property name="pressMessage">
-          <string notr="true">1</string>
+          <string notr="true">0</string>
          </property>
         </widget>
         <widget class="QLabel" name="label_131">
@@ -5920,7 +5920,7 @@
           </color>
          </property>
          <property name="pressMessage">
-          <string notr="true">1</string>
+          <string notr="true">0</string>
          </property>
         </widget>
         <widget class="QLabel" name="label_132">
@@ -5976,7 +5976,7 @@
           </color>
          </property>
          <property name="pressMessage">
-          <string notr="true">1</string>
+          <string notr="true">0</string>
          </property>
         </widget>
         <widget class="caTextEntry" name="tbtddcsynth_offs_7">

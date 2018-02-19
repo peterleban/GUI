@@ -2738,7 +2738,7 @@
           <rect>
            <x>5</x>
            <y>35</y>
-           <width>116</width>
+           <width>126</width>
            <height>20</height>
           </rect>
          </property>
@@ -2748,7 +2748,7 @@
           </font>
          </property>
          <property name="text">
-          <string>Sync offset</string>
+          <string>Sync offset [x 8 ns]</string>
          </property>
         </widget>
         <widget class="caTextEntry" name="caTextEntry_14">
