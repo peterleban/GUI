@@ -1528,7 +1528,7 @@ color: rgb(0, 0, 0);</string>
        <string>0;100</string>
       </property>
       <property name="YaxisLimits">
-       <string>-1000000;-900000</string>
+       <string>-1000000;1000000</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_25">

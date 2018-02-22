@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 196
-y 425
+x 531
+y 367
 w 800
 h 550
 font "helvetica-bold-r-12.0"
@@ -283,7 +283,7 @@ x 610
 y 450
 w 85
 h 25
-controlPv "EPICS\\$(HOSTNAME):$(BPM):$(DD):captured_atoms"
+controlPv "EPICS\\$(HOSTNAME):$(BPM):bunch:captured_atoms"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14

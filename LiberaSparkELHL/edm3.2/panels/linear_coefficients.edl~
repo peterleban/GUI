@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 584
-y 205
+x 583
+y 178
 w 280
 h 250
 font "helvetica-bold-r-12.0"
@@ -326,14 +326,14 @@ minor 1
 release 1
 x 10
 y 10
-w 244
+w 317
 h 16
 font "helvetica-bold-r-14.0"
 fgColor index 14
 bgColor index 0
 useDisplayBg
 value {
-  "Calibration coeff. for the linear equ."
+  "Calibration coefficients for the linear equation"
 }
 autoSize
 endObjectProperties

@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 585
-y 181
+x 321
+y 121
 w 1058
 h 750
 font "helvetica-bold-r-12.0"
@@ -698,6 +698,7 @@ bgColor index 0
 limitsFromDb
 nullColor index 0
 smartRefresh
+fastUpdate
 useHexPrefix
 showUnits
 newPos
@@ -2001,7 +2002,7 @@ buttonLabel "Position FFT"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "buffer1_fft.edl"
+  0 "buffer2_fft.edl"
 }
 symbols {
   0 "DD=fft"
@@ -2252,7 +2253,7 @@ font "helvetica-bold-r-14.0"
 fontAlign "right"
 fgColor index 14
 bgColor index 0
-limitsFromDb
+precision 6
 nullColor index 0
 smartRefresh
 useHexPrefix
@@ -2279,7 +2280,7 @@ fgColor index 24
 bgColor index 0
 editable
 motifWidget
-limitsFromDb
+precision 6
 nullColor index 0
 useHexPrefix
 newPos
@@ -2302,7 +2303,7 @@ font "helvetica-bold-r-14.0"
 fontAlign "right"
 fgColor index 14
 bgColor index 0
-limitsFromDb
+precision 6
 nullColor index 0
 smartRefresh
 useHexPrefix
@@ -2329,7 +2330,7 @@ fgColor index 24
 bgColor index 0
 editable
 motifWidget
-limitsFromDb
+precision 6
 nullColor index 0
 useHexPrefix
 newPos

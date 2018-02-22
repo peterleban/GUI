@@ -59,7 +59,7 @@
      <string notr="true"/>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>3</number>
     </property>
     <property name="iconSize">
      <size>
@@ -106,7 +106,7 @@
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
-         <pointsize>10</pointsize>
+         <pointsize>11</pointsize>
          <stylestrategy>PreferDefault</stylestrategy>
         </font>
        </property>
@@ -496,7 +496,7 @@ color: rgb(0, 0, 0);</string>
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
-         <pointsize>10</pointsize>
+         <pointsize>11</pointsize>
          <stylestrategy>PreferDefault</stylestrategy>
         </font>
        </property>
@@ -1140,7 +1140,7 @@ color: rgb(0, 0, 0);</string>
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
-         <pointsize>10</pointsize>
+         <pointsize>11</pointsize>
          <stylestrategy>PreferDefault</stylestrategy>
         </font>
        </property>
@@ -1564,7 +1564,10 @@ color: rgb(0, 0, 0);</string>
        <string>0;100</string>
       </property>
       <property name="YaxisLimits">
-       <string>-1000000;-900000</string>
+       <string>-1000;1000</string>
+      </property>
+      <property name="YaxisEnabled">
+       <bool>true</bool>
       </property>
      </widget>
      <widget class="QLabel" name="label_25">
