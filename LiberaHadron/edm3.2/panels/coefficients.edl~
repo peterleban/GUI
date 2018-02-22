@@ -3,9 +3,9 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 764
+x 769
 y 375
-w 915
+w 910
 h 600
 font "helvetica-bold-r-12.0"
 ctlFont "helvetica-bold-r-12.0"
@@ -672,7 +672,7 @@ font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
 bgColor index 0
-limitsFromDb
+precision 5
 nullColor index 0
 smartRefresh
 useHexPrefix
@@ -699,7 +699,7 @@ fgColor index 24
 bgColor index 0
 editable
 motifWidget
-limitsFromDb
+precision 5
 nullColor index 0
 useHexPrefix
 newPos
@@ -741,7 +741,7 @@ font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
 bgColor index 0
-limitsFromDb
+precision 5
 nullColor index 0
 smartRefresh
 useHexPrefix
@@ -768,7 +768,7 @@ fgColor index 24
 bgColor index 0
 editable
 motifWidget
-limitsFromDb
+precision 5
 nullColor index 0
 useHexPrefix
 newPos
@@ -810,7 +810,7 @@ font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
 bgColor index 0
-limitsFromDb
+precision 5
 nullColor index 0
 smartRefresh
 useHexPrefix
@@ -837,7 +837,7 @@ fgColor index 24
 bgColor index 0
 editable
 motifWidget
-limitsFromDb
+precision 5
 nullColor index 0
 useHexPrefix
 newPos
@@ -881,7 +881,7 @@ fgColor index 24
 bgColor index 0
 editable
 motifWidget
-limitsFromDb
+precision 5
 nullColor index 0
 useHexPrefix
 newPos
@@ -923,7 +923,7 @@ font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
 bgColor index 0
-limitsFromDb
+precision 5
 nullColor index 0
 smartRefresh
 useHexPrefix
@@ -998,7 +998,7 @@ fgColor index 14
 bgColor index 0
 useDisplayBg
 value {
-  "Kq [nm]"
+  "Kq"
 }
 endObjectProperties
 
@@ -1067,7 +1067,7 @@ fgColor index 14
 bgColor index 0
 useDisplayBg
 value {
-  "Ky [nm]"
+  "Kq "
 }
 endObjectProperties
 
@@ -3363,7 +3363,7 @@ fgColor index 14
 bgColor index 0
 useDisplayBg
 value {
-  "Kq [nm]"
+  "Kq"
 }
 endObjectProperties
 
