@@ -50,7 +50,7 @@ x 360
 y 450
 w 110
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):$(DD).MT"
+controlPv "$(HOSTNAME):$(BPM):$(DD).MT"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -104,7 +104,7 @@ y2Max 1
 # Trace Properties
 numTraces 1
 yPv {
-  0 "EPICS\\$(HOSTNAME):$(BPM):$(DD).X"
+  0 "$(HOSTNAME):$(BPM):$(DD).X"
 }
 ySigned {
   0 1
@@ -153,7 +153,7 @@ y2Max 1
 # Trace Properties
 numTraces 1
 yPv {
-  0 "EPICS\\$(HOSTNAME):$(BPM):$(DD).Y"
+  0 "$(HOSTNAME):$(BPM):$(DD).Y"
 }
 ySigned {
   0 1
@@ -211,7 +211,7 @@ x 400
 y 475
 w 70
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):$(DD).OFFS"
+controlPv "$(HOSTNAME):$(BPM):$(DD).OFFS"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -321,8 +321,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):$(DD).SCAN"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):$(DD).SCAN"
+controlPv "$(HOSTNAME):$(BPM):$(DD).SCAN"
+indicatorPv "$(HOSTNAME):$(BPM):$(DD).SCAN"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -361,8 +361,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):$(DD).ACQM"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):$(DD).ACQM"
+controlPv "$(HOSTNAME):$(BPM):$(DD).ACQM"
+indicatorPv "$(HOSTNAME):$(BPM):$(DD).ACQM"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -395,7 +395,7 @@ x 145
 y 500
 w 90
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):$(DD).NGRP"
+controlPv "$(HOSTNAME):$(BPM):$(DD).NGRP"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -427,7 +427,7 @@ onColor index 0
 offColor index 0
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):$(DD).PROC"
+controlPv "$(HOSTNAME):$(BPM):$(DD).PROC"
 pressValue "1"
 onLabel "Processing..."
 offLabel "Read data"

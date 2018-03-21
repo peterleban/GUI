@@ -81,7 +81,7 @@ y2Max 1
 # Trace Properties
 numTraces 1
 yPv {
-  0 "EPICS\\$(HOSTNAME):$(BPM):sa.Sum"
+  0 "$(HOSTNAME):$(BPM):sa.Sum"
 }
 plotColor {
   0 index 14
@@ -123,8 +123,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):sa.SCAN"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):sa.SCAN"
+controlPv "$(HOSTNAME):$(BPM):sa.SCAN"
+indicatorPv "$(HOSTNAME):$(BPM):sa.SCAN"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 

@@ -107,7 +107,7 @@ x 10
 y 470
 w 260
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):pm:timestamp"
+controlPv "$(HOSTNAME):$(BPM):pm:timestamp"
 fgColor index 14
 fgAlarm
 bgColor index 1
@@ -126,7 +126,7 @@ x 10
 y 425
 w 260
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):pm:os_time"
+controlPv "$(HOSTNAME):$(BPM):pm:os_time"
 fgColor index 14
 fgAlarm
 bgColor index 1
@@ -174,14 +174,14 @@ y2Max 1
 # Trace Properties
 numTraces 8
 yPv {
-  0 "EPICS\\$(HOSTNAME):$(BPM):pm:ddc_synth.Va"
-  1 "EPICS\\$(HOSTNAME):$(BPM):pm:ddc_synth.Vb"
-  2 "EPICS\\$(HOSTNAME):$(BPM):pm:ddc_synth.Vc"
-  3 "EPICS\\$(HOSTNAME):$(BPM):pm:ddc_synth.Vd"
-  4 "EPICS\\$(HOSTNAME):$(BPM):pm:ddc_synth.Sum"
-  5 "EPICS\\$(HOSTNAME):$(BPM):pm:ddc_synth.Q"
-  6 "EPICS\\$(HOSTNAME):$(BPM):pm:ddc_synth.X"
-  7 "EPICS\\$(HOSTNAME):$(BPM):pm:ddc_synth.Y"
+  0 "$(HOSTNAME):$(BPM):pm:ddc_synth.Va"
+  1 "$(HOSTNAME):$(BPM):pm:ddc_synth.Vb"
+  2 "$(HOSTNAME):$(BPM):pm:ddc_synth.Vc"
+  3 "$(HOSTNAME):$(BPM):pm:ddc_synth.Vd"
+  4 "$(HOSTNAME):$(BPM):pm:ddc_synth.Sum"
+  5 "$(HOSTNAME):$(BPM):pm:ddc_synth.Q"
+  6 "$(HOSTNAME):$(BPM):pm:ddc_synth.X"
+  7 "$(HOSTNAME):$(BPM):pm:ddc_synth.Y"
 }
 ySigned {
   0 1
@@ -499,8 +499,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):pm:source_select_sp"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):pm:source_select_mon"
+controlPv "$(HOSTNAME):$(BPM):pm:source_select_sp"
+indicatorPv "$(HOSTNAME):$(BPM):pm:source_select_mon"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -714,8 +714,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):$(DD).SCAN"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):$(DD).SCAN"
+controlPv "$(HOSTNAME):$(BPM):$(DD).SCAN"
+indicatorPv "$(HOSTNAME):$(BPM):$(DD).SCAN"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -754,8 +754,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):$(DD).ACQM"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):$(DD).ACQM"
+controlPv "$(HOSTNAME):$(BPM):$(DD).ACQM"
+indicatorPv "$(HOSTNAME):$(BPM):$(DD).ACQM"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -793,7 +793,7 @@ onColor index 0
 offColor index 0
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):pm:ddc_synth.PROC"
+controlPv "$(HOSTNAME):$(BPM):pm:ddc_synth.PROC"
 pressValue "0"
 onLabel "Reading..."
 offLabel "Read buffer"
@@ -830,7 +830,7 @@ x 135
 y 580
 w 70
 h 25
-controlPv "EPICS\\$(HOSTNAME):$(BPM):$(DD).NGRP"
+controlPv "$(HOSTNAME):$(BPM):$(DD).NGRP"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -856,7 +856,7 @@ x 180
 y 60
 w 90
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):pm:capacity_mon"
+controlPv "$(HOSTNAME):$(BPM):pm:capacity_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -881,7 +881,7 @@ x 100
 y 60
 w 75
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):pm:capacity_sp"
+controlPv "$(HOSTNAME):$(BPM):pm:capacity_sp"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 24
@@ -906,7 +906,7 @@ x 180
 y 85
 w 90
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):pm:offset_mon"
+controlPv "$(HOSTNAME):$(BPM):pm:offset_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -931,7 +931,7 @@ x 100
 y 85
 w 75
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):pm:offset_sp"
+controlPv "$(HOSTNAME):$(BPM):pm:offset_sp"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 24
@@ -1019,7 +1019,7 @@ x 85
 y 170
 w 85
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):pm:limits:max_x_sp"
+controlPv "$(HOSTNAME):$(BPM):pm:limits:max_x_sp"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 24
@@ -1044,7 +1044,7 @@ x 175
 y 170
 w 90
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):pm:limits:max_x_mon"
+controlPv "$(HOSTNAME):$(BPM):pm:limits:max_x_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -1069,7 +1069,7 @@ x 175
 y 195
 w 90
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):pm:limits:min_x_mon"
+controlPv "$(HOSTNAME):$(BPM):pm:limits:min_x_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -1094,7 +1094,7 @@ x 85
 y 195
 w 85
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):pm:limits:min_x_sp"
+controlPv "$(HOSTNAME):$(BPM):pm:limits:min_x_sp"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 24
@@ -1182,7 +1182,7 @@ x 85
 y 240
 w 85
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):pm:limits:max_y_sp"
+controlPv "$(HOSTNAME):$(BPM):pm:limits:max_y_sp"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 24
@@ -1207,7 +1207,7 @@ x 175
 y 240
 w 90
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):pm:limits:max_y_mon"
+controlPv "$(HOSTNAME):$(BPM):pm:limits:max_y_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -1232,7 +1232,7 @@ x 175
 y 265
 w 90
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):pm:limits:min_y_mon"
+controlPv "$(HOSTNAME):$(BPM):pm:limits:min_y_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -1257,7 +1257,7 @@ x 85
 y 265
 w 85
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):pm:limits:min_y_sp"
+controlPv "$(HOSTNAME):$(BPM):pm:limits:min_y_sp"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 24
@@ -1321,7 +1321,7 @@ x 170
 y 305
 w 95
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):pm:limits:ovf_threshold_mon"
+controlPv "$(HOSTNAME):$(BPM):pm:limits:ovf_threshold_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -1346,7 +1346,7 @@ x 90
 y 305
 w 75
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):pm:limits:ovf_threshold_sp"
+controlPv "$(HOSTNAME):$(BPM):pm:limits:ovf_threshold_sp"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 24
@@ -1371,7 +1371,7 @@ x 170
 y 330
 w 95
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):pm:limits:ovf_duration_mon"
+controlPv "$(HOSTNAME):$(BPM):pm:limits:ovf_duration_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -1396,7 +1396,7 @@ x 90
 y 330
 w 75
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):pm:limits:ovf_duration_sp"
+controlPv "$(HOSTNAME):$(BPM):pm:limits:ovf_duration_sp"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 24

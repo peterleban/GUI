@@ -191,7 +191,7 @@ x 70
 y 330
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:fa:iir0:num0_mon"
+controlPv "$(HOSTNAME):dsp:fa:iir0:num0_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -215,7 +215,7 @@ x 180
 y 330
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:fa:iir0:num0_sp"
+controlPv "$(HOSTNAME):dsp:fa:iir0:num0_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -240,7 +240,7 @@ x 180
 y 360
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:fa:iir0:num1_sp"
+controlPv "$(HOSTNAME):dsp:fa:iir0:num1_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -265,7 +265,7 @@ x 70
 y 360
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:fa:iir0:num1_mon"
+controlPv "$(HOSTNAME):dsp:fa:iir0:num1_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -289,7 +289,7 @@ x 180
 y 390
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:fa:iir0:num2_sp"
+controlPv "$(HOSTNAME):dsp:fa:iir0:num2_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -314,7 +314,7 @@ x 70
 y 390
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:fa:iir0:num2_mon"
+controlPv "$(HOSTNAME):dsp:fa:iir0:num2_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -338,7 +338,7 @@ x 180
 y 420
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:fa:iir0:den1_sp"
+controlPv "$(HOSTNAME):dsp:fa:iir0:den1_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -363,7 +363,7 @@ x 70
 y 420
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:fa:iir0:den1_mon"
+controlPv "$(HOSTNAME):dsp:fa:iir0:den1_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -387,7 +387,7 @@ x 180
 y 450
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:fa:iir0:den2_sp"
+controlPv "$(HOSTNAME):dsp:fa:iir0:den2_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -412,7 +412,7 @@ x 70
 y 450
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:fa:iir0:den2_mon"
+controlPv "$(HOSTNAME):dsp:fa:iir0:den2_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -436,7 +436,7 @@ x 180
 y 480
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:fa:iir0:gain_sp"
+controlPv "$(HOSTNAME):dsp:fa:iir0:gain_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -461,7 +461,7 @@ x 70
 y 480
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:fa:iir0:gain_mon"
+controlPv "$(HOSTNAME):dsp:fa:iir0:gain_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -599,7 +599,7 @@ x 360
 y 330
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:fa:iir1:num0_mon"
+controlPv "$(HOSTNAME):dsp:fa:iir1:num0_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -623,7 +623,7 @@ x 470
 y 330
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:fa:iir1:num0_sp"
+controlPv "$(HOSTNAME):dsp:fa:iir1:num0_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -648,7 +648,7 @@ x 470
 y 360
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:fa:iir1:num1_sp"
+controlPv "$(HOSTNAME):dsp:fa:iir1:num1_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -673,7 +673,7 @@ x 360
 y 360
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:fa:iir1:num1_mon"
+controlPv "$(HOSTNAME):dsp:fa:iir1:num1_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -697,7 +697,7 @@ x 470
 y 390
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:fa:iir1:num2_sp"
+controlPv "$(HOSTNAME):dsp:fa:iir1:num2_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -722,7 +722,7 @@ x 360
 y 390
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:fa:iir1:num2_mon"
+controlPv "$(HOSTNAME):dsp:fa:iir1:num2_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -746,7 +746,7 @@ x 470
 y 420
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:fa:iir1:den1_sp"
+controlPv "$(HOSTNAME):dsp:fa:iir1:den1_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -771,7 +771,7 @@ x 360
 y 420
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:fa:iir1:den1_mon"
+controlPv "$(HOSTNAME):dsp:fa:iir1:den1_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -795,7 +795,7 @@ x 470
 y 450
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:fa:iir1:den2_sp"
+controlPv "$(HOSTNAME):dsp:fa:iir1:den2_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -820,7 +820,7 @@ x 360
 y 450
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:fa:iir1:den2_mon"
+controlPv "$(HOSTNAME):dsp:fa:iir1:den2_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -844,7 +844,7 @@ x 470
 y 480
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:fa:iir1:gain_sp"
+controlPv "$(HOSTNAME):dsp:fa:iir1:gain_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -869,7 +869,7 @@ x 360
 y 480
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:fa:iir1:gain_mon"
+controlPv "$(HOSTNAME):dsp:fa:iir1:gain_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -936,7 +936,7 @@ onColor index 53
 offColor index 0
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):dsp:fa:iir0:apply"
+controlPv "$(HOSTNAME):dsp:fa:iir0:apply"
 pressValue "Exec"
 onLabel "Apply values"
 offLabel "Apply values"
@@ -960,7 +960,7 @@ onColor index 53
 offColor index 0
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):dsp:fa:iir1:apply"
+controlPv "$(HOSTNAME):dsp:fa:iir1:apply"
 pressValue "Exec"
 onLabel "Apply values"
 offLabel "Apply values"
@@ -1121,7 +1121,7 @@ x 70
 y 580
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:sa:iir0:num0_mon"
+controlPv "$(HOSTNAME):dsp:sa:iir0:num0_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -1145,7 +1145,7 @@ x 180
 y 580
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:sa:iir0:num0_sp"
+controlPv "$(HOSTNAME):dsp:sa:iir0:num0_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -1170,7 +1170,7 @@ x 180
 y 610
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:sa:iir0:num1_sp"
+controlPv "$(HOSTNAME):dsp:sa:iir0:num1_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -1195,7 +1195,7 @@ x 70
 y 610
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:sa:iir0:num1_mon"
+controlPv "$(HOSTNAME):dsp:sa:iir0:num1_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -1219,7 +1219,7 @@ x 180
 y 640
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:sa:iir0:num2_sp"
+controlPv "$(HOSTNAME):dsp:sa:iir0:num2_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -1244,7 +1244,7 @@ x 70
 y 640
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:sa:iir0:num2_mon"
+controlPv "$(HOSTNAME):dsp:sa:iir0:num2_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -1268,7 +1268,7 @@ x 180
 y 670
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:sa:iir0:den1_sp"
+controlPv "$(HOSTNAME):dsp:sa:iir0:den1_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -1293,7 +1293,7 @@ x 70
 y 670
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:sa:iir0:den1_mon"
+controlPv "$(HOSTNAME):dsp:sa:iir0:den1_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -1317,7 +1317,7 @@ x 180
 y 700
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:sa:iir0:den2_sp"
+controlPv "$(HOSTNAME):dsp:sa:iir0:den2_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -1342,7 +1342,7 @@ x 70
 y 700
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:sa:iir0:den2_mon"
+controlPv "$(HOSTNAME):dsp:sa:iir0:den2_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -1366,7 +1366,7 @@ x 180
 y 730
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:sa:iir0:gain_sp"
+controlPv "$(HOSTNAME):dsp:sa:iir0:gain_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -1391,7 +1391,7 @@ x 70
 y 730
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:sa:iir0:gain_mon"
+controlPv "$(HOSTNAME):dsp:sa:iir0:gain_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -1529,7 +1529,7 @@ x 360
 y 580
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:sa:iir1:num0_mon"
+controlPv "$(HOSTNAME):dsp:sa:iir1:num0_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -1553,7 +1553,7 @@ x 470
 y 580
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:sa:iir1:num0_sp"
+controlPv "$(HOSTNAME):dsp:sa:iir1:num0_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -1578,7 +1578,7 @@ x 470
 y 610
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:sa:iir1:num1_sp"
+controlPv "$(HOSTNAME):dsp:sa:iir1:num1_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -1603,7 +1603,7 @@ x 360
 y 610
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:sa:iir1:num1_mon"
+controlPv "$(HOSTNAME):dsp:sa:iir1:num1_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -1627,7 +1627,7 @@ x 470
 y 640
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:sa:iir1:num2_sp"
+controlPv "$(HOSTNAME):dsp:sa:iir1:num2_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -1652,7 +1652,7 @@ x 360
 y 640
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:sa:iir1:num2_mon"
+controlPv "$(HOSTNAME):dsp:sa:iir1:num2_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -1676,7 +1676,7 @@ x 470
 y 670
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:sa:iir1:den1_sp"
+controlPv "$(HOSTNAME):dsp:sa:iir1:den1_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -1701,7 +1701,7 @@ x 360
 y 670
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:sa:iir1:den1_mon"
+controlPv "$(HOSTNAME):dsp:sa:iir1:den1_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -1725,7 +1725,7 @@ x 470
 y 700
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:sa:iir1:den2_sp"
+controlPv "$(HOSTNAME):dsp:sa:iir1:den2_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -1750,7 +1750,7 @@ x 360
 y 700
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:sa:iir1:den2_mon"
+controlPv "$(HOSTNAME):dsp:sa:iir1:den2_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -1774,7 +1774,7 @@ x 470
 y 730
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:sa:iir1:gain_sp"
+controlPv "$(HOSTNAME):dsp:sa:iir1:gain_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -1799,7 +1799,7 @@ x 360
 y 730
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:sa:iir1:gain_mon"
+controlPv "$(HOSTNAME):dsp:sa:iir1:gain_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -1866,7 +1866,7 @@ onColor index 53
 offColor index 0
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):dsp:sa:iir0:apply"
+controlPv "$(HOSTNAME):dsp:sa:iir0:apply"
 pressValue "Exec"
 onLabel "Apply values"
 offLabel "Apply values"
@@ -1890,7 +1890,7 @@ onColor index 53
 offColor index 0
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):dsp:sa:iir1:apply"
+controlPv "$(HOSTNAME):dsp:sa:iir1:apply"
 pressValue "Exec"
 onLabel "Apply values"
 offLabel "Apply values"
@@ -2713,7 +2713,7 @@ x 190
 y 270
 w 50
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:fa:decimation_sp"
+controlPv "$(HOSTNAME):dsp:fa:decimation_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -2738,7 +2738,7 @@ x 130
 y 270
 w 50
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:fa:decimation_mon"
+controlPv "$(HOSTNAME):dsp:fa:decimation_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -2781,7 +2781,7 @@ x 480
 y 270
 w 50
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:sa:decimation_sp"
+controlPv "$(HOSTNAME):dsp:sa:decimation_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -2806,7 +2806,7 @@ x 420
 y 270
 w 50
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:sa:decimation_mon"
+controlPv "$(HOSTNAME):dsp:sa:decimation_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14

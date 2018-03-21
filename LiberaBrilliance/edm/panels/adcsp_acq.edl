@@ -138,9 +138,9 @@ y2Max 1
 # Trace Properties
 numTraces 3
 yPv {
-  0 "EPICS\\$(DEVICE):ADCSP:ADCSP_X_MONITOR"
-  1 "EPICS\\$(DEVICE):ADCSP:ADCSP_Y_MONITOR"
-  2 "EPICS\\$(DEVICE):ADCSP:ADCSP_SUM_MONITOR"
+  0 "$(DEVICE):ADCSP:ADCSP_X_MONITOR"
+  1 "$(DEVICE):ADCSP:ADCSP_Y_MONITOR"
+  2 "$(DEVICE):ADCSP:ADCSP_SUM_MONITOR"
 }
 ySigned {
   0 1
@@ -285,7 +285,7 @@ x 630
 y 190
 w 110
 h 30
-controlPv "EPICS\\$(DEVICE):ADCSP:ADCSP_FINISHED_MONITOR"
+controlPv "$(DEVICE):ADCSP:ADCSP_FINISHED_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -387,7 +387,7 @@ x 680
 y 360
 w 50
 h 30
-controlPv "EPICS\\$(DEVICE):ENV:ENV_ADCSP_THRESHOLD_SP"
+controlPv "$(DEVICE):ENV:ENV_ADCSP_THRESHOLD_SP"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -427,7 +427,7 @@ x 680
 y 420
 w 50
 h 30
-controlPv "EPICS\\$(DEVICE):ENV:ENV_ADCSP_NBEFORE_SP"
+controlPv "$(DEVICE):ENV:ENV_ADCSP_NBEFORE_SP"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -467,7 +467,7 @@ x 680
 y 480
 w 50
 h 30
-controlPv "EPICS\\$(DEVICE):ENV:ENV_ADCSP_NAFTER_SP"
+controlPv "$(DEVICE):ENV:ENV_ADCSP_NAFTER_SP"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -501,7 +501,7 @@ x 800
 y 630
 w 90
 h 30
-controlPv "EPICS\\$(DEVICE):ADCSP:ADCSP_SAMPLE_MONITOR"
+controlPv "$(DEVICE):ADCSP:ADCSP_SAMPLE_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -541,7 +541,7 @@ x 640
 y 360
 w 40
 h 30
-controlPv "EPICS\\$(DEVICE):ADCSP:ADCSP_THRESHOLD_MONITOR"
+controlPv "$(DEVICE):ADCSP:ADCSP_THRESHOLD_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 55
@@ -561,7 +561,7 @@ x 640
 y 420
 w 40
 h 30
-controlPv "EPICS\\$(DEVICE):ADCSP:ADCSP_BEFORE_MONITOR"
+controlPv "$(DEVICE):ADCSP:ADCSP_BEFORE_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 55
@@ -581,7 +581,7 @@ x 640
 y 480
 w 40
 h 30
-controlPv "EPICS\\$(DEVICE):ADCSP:ADCSP_AFTER_MONITOR"
+controlPv "$(DEVICE):ADCSP:ADCSP_AFTER_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 55

@@ -54,7 +54,7 @@ x 150
 y 110
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsp_control:num_of_bunches"
+controlPv "$(HOSTNAME):$(BPM):dsp_control:num_of_bunches"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -100,7 +100,7 @@ x 150
 y 130
 w 100
 h 19
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsp_control:bunch_thr1"
+controlPv "$(HOSTNAME):$(BPM):dsp_control:bunch_thr1"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -146,7 +146,7 @@ x 150
 y 150
 w 100
 h 19
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsp_control:bunch_thr2"
+controlPv "$(HOSTNAME):$(BPM):dsp_control:bunch_thr2"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -192,7 +192,7 @@ x 150
 y 170
 w 100
 h 19
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsp_control:pre_trigger"
+controlPv "$(HOSTNAME):$(BPM):dsp_control:pre_trigger"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -238,7 +238,7 @@ x 150
 y 190
 w 100
 h 19
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsp_control:post_trigger1"
+controlPv "$(HOSTNAME):$(BPM):dsp_control:post_trigger1"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -284,7 +284,7 @@ x 150
 y 210
 w 100
 h 19
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsp_control:post_trigger2"
+controlPv "$(HOSTNAME):$(BPM):dsp_control:post_trigger2"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -330,7 +330,7 @@ x 150
 y 240
 w 100
 h 19
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsp_control:scan_offset"
+controlPv "$(HOSTNAME):$(BPM):dsp_control:scan_offset"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -376,7 +376,7 @@ x 150
 y 260
 w 100
 h 19
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsp_control:scan_timeout"
+controlPv "$(HOSTNAME):$(BPM):dsp_control:scan_timeout"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -422,7 +422,7 @@ x 150
 y 280
 w 100
 h 19
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsp_control:data_averaging"
+controlPv "$(HOSTNAME):$(BPM):dsp_control:data_averaging"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -529,7 +529,7 @@ buttonColor index 14
 selectColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsp_control:calculation_method"
+controlPv "$(HOSTNAME):$(BPM):dsp_control:calculation_method"
 font "helvetica-medium-r-12.0"
 endObjectProperties
 
@@ -549,7 +549,7 @@ buttonColor index 14
 selectColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsp_control:insert_zeros"
+controlPv "$(HOSTNAME):$(BPM):dsp_control:insert_zeros"
 font "helvetica-medium-r-12.0"
 endObjectProperties
 

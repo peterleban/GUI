@@ -77,7 +77,7 @@ x 110
 y 375
 w 55
 h 20
-controlPv "EPICS\\$(DEVICE):pm:decimation"
+controlPv "$(DEVICE):pm:decimation"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -194,7 +194,7 @@ x 15
 y 210
 w 60
 h 18
-controlPv "EPICS\\$(DEVICE):pm:adc_offset:A"
+controlPv "$(DEVICE):pm:adc_offset:A"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -221,7 +221,7 @@ x 85
 y 210
 w 60
 h 18
-controlPv "EPICS\\$(DEVICE):pm:adc_offset:B"
+controlPv "$(DEVICE):pm:adc_offset:B"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -267,7 +267,7 @@ x 155
 y 210
 w 60
 h 18
-controlPv "EPICS\\$(DEVICE):pm:adc_offset:C"
+controlPv "$(DEVICE):pm:adc_offset:C"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -313,7 +313,7 @@ x 225
 y 210
 w 60
 h 18
-controlPv "EPICS\\$(DEVICE):pm:adc_offset:D"
+controlPv "$(DEVICE):pm:adc_offset:D"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -378,7 +378,7 @@ x 165
 y 315
 w 40
 h 18
-controlPv "EPICS\\$(DEVICE):pm:adcmask:window"
+controlPv "$(DEVICE):pm:adcmask:window"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -424,7 +424,7 @@ x 55
 y 315
 w 40
 h 18
-controlPv "EPICS\\$(DEVICE):pm:adcmask:offset"
+controlPv "$(DEVICE):pm:adcmask:offset"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -476,8 +476,8 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(DEVICE):pm:abs_enabled:A"
-indicatorPv "EPICS\\$(DEVICE):pm:abs_enabled:A"
+controlPv "$(DEVICE):pm:abs_enabled:A"
+indicatorPv "$(DEVICE):pm:abs_enabled:A"
 onLabel "abs() ON"
 offLabel "abs() OFF"
 labelType "literal"
@@ -502,8 +502,8 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(DEVICE):pm:abs_enabled:B"
-indicatorPv "EPICS\\$(DEVICE):pm:abs_enabled:B"
+controlPv "$(DEVICE):pm:abs_enabled:B"
+indicatorPv "$(DEVICE):pm:abs_enabled:B"
 onLabel "abs() ON"
 offLabel "abs() OFF"
 labelType "literal"
@@ -528,8 +528,8 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(DEVICE):pm:abs_enabled:C"
-indicatorPv "EPICS\\$(DEVICE):pm:abs_enabled:C"
+controlPv "$(DEVICE):pm:abs_enabled:C"
+indicatorPv "$(DEVICE):pm:abs_enabled:C"
 onLabel "abs() ON"
 offLabel "abs() OFF"
 labelType "literal"
@@ -554,8 +554,8 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(DEVICE):pm:abs_enabled:D"
-indicatorPv "EPICS\\$(DEVICE):pm:abs_enabled:D"
+controlPv "$(DEVICE):pm:abs_enabled:D"
+indicatorPv "$(DEVICE):pm:abs_enabled:D"
 onLabel "abs() ON"
 offLabel "abs() OFF"
 labelType "literal"
@@ -593,7 +593,7 @@ x 110
 y 405
 w 40
 h 18
-controlPv "EPICS\\$(DEVICE):pm:sum_mode"
+controlPv "$(DEVICE):pm:sum_mode"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -664,7 +664,7 @@ onColor index 0
 offColor index 0
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(DEVICE):pm:enable.PROC"
+controlPv "$(DEVICE):pm:enable.PROC"
 pressValue "0"
 onLabel "Enabling..."
 offLabel "Enable Postmortem"
@@ -682,7 +682,7 @@ x 180
 y 125
 w 60
 h 20
-controlPv "EPICS\\$(DEVICE):pm:running"
+controlPv "$(DEVICE):pm:running"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -706,7 +706,7 @@ x 270
 y 125
 w 60
 h 20
-controlPv "EPICS\\$(DEVICE):pm:data_available"
+controlPv "$(DEVICE):pm:data_available"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14

@@ -96,7 +96,7 @@ x 45
 y 160
 w 60
 h 18
-controlPv "EPICS\\$(DEVICE):decimation:sum"
+controlPv "$(DEVICE):decimation:sum"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -123,7 +123,7 @@ x 205
 y 160
 w 30
 h 18
-controlPv "EPICS\\$(DEVICE):decimation:avg:n"
+controlPv "$(DEVICE):decimation:avg:n"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -150,7 +150,7 @@ x 355
 y 160
 w 35
 h 18
-controlPv "EPICS\\$(DEVICE):decimation:sa:n"
+controlPv "$(DEVICE):decimation:sa:n"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -343,7 +343,7 @@ x 15
 y 55
 w 60
 h 18
-controlPv "EPICS\\$(DEVICE):adc_offset:A"
+controlPv "$(DEVICE):adc_offset:A"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -370,7 +370,7 @@ x 85
 y 55
 w 60
 h 18
-controlPv "EPICS\\$(DEVICE):adc_offset:B"
+controlPv "$(DEVICE):adc_offset:B"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -416,7 +416,7 @@ x 155
 y 55
 w 60
 h 18
-controlPv "EPICS\\$(DEVICE):adc_offset:C"
+controlPv "$(DEVICE):adc_offset:C"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -462,7 +462,7 @@ x 225
 y 55
 w 60
 h 18
-controlPv "EPICS\\$(DEVICE):adc_offset:D"
+controlPv "$(DEVICE):adc_offset:D"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -527,7 +527,7 @@ x 385
 y 85
 w 40
 h 18
-controlPv "EPICS\\$(DEVICE):adcmask:window"
+controlPv "$(DEVICE):adcmask:window"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -573,7 +573,7 @@ x 385
 y 60
 w 40
 h 18
-controlPv "EPICS\\$(DEVICE):adcmask:offset"
+controlPv "$(DEVICE):adcmask:offset"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -625,8 +625,8 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(DEVICE):abs_enabled:A"
-indicatorPv "EPICS\\$(DEVICE):abs_enabled:A"
+controlPv "$(DEVICE):abs_enabled:A"
+indicatorPv "$(DEVICE):abs_enabled:A"
 onLabel "abs() ON"
 offLabel "abs() OFF"
 labelType "literal"
@@ -651,8 +651,8 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(DEVICE):abs_enabled:B"
-indicatorPv "EPICS\\$(DEVICE):abs_enabled:B"
+controlPv "$(DEVICE):abs_enabled:B"
+indicatorPv "$(DEVICE):abs_enabled:B"
 onLabel "abs() ON"
 offLabel "abs() OFF"
 labelType "literal"
@@ -677,8 +677,8 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(DEVICE):abs_enabled:C"
-indicatorPv "EPICS\\$(DEVICE):abs_enabled:C"
+controlPv "$(DEVICE):abs_enabled:C"
+indicatorPv "$(DEVICE):abs_enabled:C"
 onLabel "abs() ON"
 offLabel "abs() OFF"
 labelType "literal"
@@ -703,8 +703,8 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(DEVICE):abs_enabled:D"
-indicatorPv "EPICS\\$(DEVICE):abs_enabled:D"
+controlPv "$(DEVICE):abs_enabled:D"
+indicatorPv "$(DEVICE):abs_enabled:D"
 onLabel "abs() ON"
 offLabel "abs() OFF"
 labelType "literal"
@@ -742,7 +742,7 @@ x 555
 y 70
 w 40
 h 18
-controlPv "EPICS\\$(DEVICE):decimation:sum_mode"
+controlPv "$(DEVICE):decimation:sum_mode"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -848,7 +848,7 @@ x 555
 y 135
 w 40
 h 18
-controlPv "EPICS\\$(DEVICE):threshold:autotrig:edge"
+controlPv "$(DEVICE):threshold:autotrig:edge"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -875,7 +875,7 @@ x 555
 y 215
 w 40
 h 18
-controlPv "EPICS\\$(DEVICE):decimation:sumdec_periods"
+controlPv "$(DEVICE):decimation:sumdec_periods"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -942,7 +942,7 @@ x 175
 y 185
 w 90
 h 18
-controlPv "EPICS\\$(DEVICE):decimation:avg:val"
+controlPv "$(DEVICE):decimation:avg:val"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -968,7 +968,7 @@ x 330
 y 185
 w 90
 h 18
-controlPv "EPICS\\$(DEVICE):decimation:sa:val"
+controlPv "$(DEVICE):decimation:sa:val"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14

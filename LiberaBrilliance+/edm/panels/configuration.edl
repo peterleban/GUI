@@ -34,7 +34,7 @@ x 200
 y 50
 w 80
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):kx"
+controlPv "$(HOSTNAME):$(BPM):kx"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -140,7 +140,7 @@ x 370
 y 50
 w 80
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):off_x"
+controlPv "$(HOSTNAME):$(BPM):off_x"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -166,7 +166,7 @@ x 200
 y 80
 w 80
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):ky"
+controlPv "$(HOSTNAME):$(BPM):ky"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -192,7 +192,7 @@ x 370
 y 80
 w 80
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):off_y"
+controlPv "$(HOSTNAME):$(BPM):off_y"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14

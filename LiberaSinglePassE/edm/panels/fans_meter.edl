@@ -71,7 +71,7 @@ fgColor index 14
 bgColor index 1
 topShadowColor index 0
 botShadowColor index 14
-readPv "EPICS\\$(HOSTNAME):fans:left_front"
+readPv "$(HOSTNAME):fans:left_front"
 label "Left front fan rotation speed (rpm)"
 showScale
 scaleFormat "FFloat"
@@ -126,7 +126,7 @@ fgColor index 14
 bgColor index 1
 topShadowColor index 0
 botShadowColor index 14
-readPv "EPICS\\$(HOSTNAME):fans:left_middle"
+readPv "$(HOSTNAME):fans:left_middle"
 label "Left middle fan rotation speed (rpm)"
 showScale
 scaleFormat "FFloat"
@@ -160,7 +160,7 @@ fgColor index 14
 bgColor index 1
 topShadowColor index 0
 botShadowColor index 14
-readPv "EPICS\\$(HOSTNAME):fans:left_rear"
+readPv "$(HOSTNAME):fans:left_rear"
 label "Left read fan rotation speed (rpm)"
 showScale
 scaleFormat "FFloat"
@@ -187,7 +187,7 @@ x 220
 y 120
 w 60
 h 35
-controlPv "EPICS\\$(HOSTNAME):fans:left_front"
+controlPv "$(HOSTNAME):fans:left_front"
 fgColor index 14
 fgAlarm
 bgColor index 103
@@ -208,7 +208,7 @@ x 220
 y 250
 w 60
 h 35
-controlPv "EPICS\\$(HOSTNAME):fans:left_middle"
+controlPv "$(HOSTNAME):fans:left_middle"
 fgColor index 14
 fgAlarm
 bgColor index 103
@@ -229,7 +229,7 @@ x 220
 y 380
 w 60
 h 35
-controlPv "EPICS\\$(HOSTNAME):fans:left_rear"
+controlPv "$(HOSTNAME):fans:left_rear"
 fgColor index 14
 fgAlarm
 bgColor index 103
@@ -250,7 +250,7 @@ x 300
 y 70
 w 60
 h 35
-controlPv "EPICS\\$(HOSTNAME):fans_set"
+controlPv "$(HOSTNAME):fans_set"
 fgColor index 14
 fgAlarm
 bgColor index 103
@@ -271,7 +271,7 @@ x 370
 y 120
 w 60
 h 35
-controlPv "EPICS\\$(HOSTNAME):fans:right_front"
+controlPv "$(HOSTNAME):fans:right_front"
 fgColor index 14
 fgAlarm
 bgColor index 103
@@ -292,7 +292,7 @@ x 370
 y 250
 w 60
 h 35
-controlPv "EPICS\\$(HOSTNAME):fans:right_middle"
+controlPv "$(HOSTNAME):fans:right_middle"
 fgColor index 14
 fgAlarm
 bgColor index 103
@@ -313,7 +313,7 @@ x 370
 y 380
 w 60
 h 35
-controlPv "EPICS\\$(HOSTNAME):fans:right_rear"
+controlPv "$(HOSTNAME):fans:right_rear"
 fgColor index 14
 fgAlarm
 bgColor index 103
@@ -341,7 +341,7 @@ fgColor index 14
 bgColor index 1
 topShadowColor index 0
 botShadowColor index 14
-readPv "EPICS\\$(HOSTNAME):fans:right_front"
+readPv "$(HOSTNAME):fans:right_front"
 label "Right front fan rotation speed (rpm)"
 showScale
 scaleFormat "FFloat"
@@ -375,7 +375,7 @@ fgColor index 14
 bgColor index 1
 topShadowColor index 0
 botShadowColor index 14
-readPv "EPICS\\$(HOSTNAME):fans:right_middle"
+readPv "$(HOSTNAME):fans:right_middle"
 label "Right middle fan rotation speed (rpm)"
 showScale
 scaleFormat "FFloat"
@@ -409,7 +409,7 @@ fgColor index 14
 bgColor index 1
 topShadowColor index 0
 botShadowColor index 14
-readPv "EPICS\\$(HOSTNAME):fans:right_rear"
+readPv "$(HOSTNAME):fans:right_rear"
 label "Right rear fan rotation speed (rpm)"
 showScale
 scaleFormat "FFloat"

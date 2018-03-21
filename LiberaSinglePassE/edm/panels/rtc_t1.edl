@@ -55,7 +55,7 @@ oddColBgColor index 0
 evenColBgColor index 1
 topShadowColor index 0
 botShadowColor index 14
-pv "EPICS\\$(HOSTNAME):$(BPM):calibration:polynomial:x:k"
+pv "$(HOSTNAME):$(BPM):calibration:polynomial:x:k"
 font "helvetica-bold-r-12.0"
 endObjectProperties
 

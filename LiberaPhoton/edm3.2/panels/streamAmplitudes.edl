@@ -95,11 +95,11 @@ y2MinorsPerMajor 4
 # Trace Properties
 numTraces 5
 yPv {
-  0 "EPICS\\$(HOSTNAME):$(DD).A"
-  1 "EPICS\\$(HOSTNAME):$(DD).B"
-  2 "EPICS\\$(HOSTNAME):$(DD).C"
-  3 "EPICS\\$(HOSTNAME):$(DD).D"
-  4 "EPICS\\$(HOSTNAME):$(DD).Sum"
+  0 "$(HOSTNAME):$(DD).A"
+  1 "$(HOSTNAME):$(DD).B"
+  2 "$(HOSTNAME):$(DD).C"
+  3 "$(HOSTNAME):$(DD).D"
+  4 "$(HOSTNAME):$(DD).Sum"
 }
 lineThickness {
   0 2

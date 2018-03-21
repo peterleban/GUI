@@ -76,10 +76,10 @@ y2Max 1
 # Trace Properties
 numTraces 4
 yPv {
-  0 "EPICS\\$(HOSTNAME):$(BPM):adc.A"
-  1 "EPICS\\$(HOSTNAME):$(BPM):adc.B"
-  2 "EPICS\\$(HOSTNAME):$(BPM):adc.C"
-  3 "EPICS\\$(HOSTNAME):$(BPM):adc.D"
+  0 "$(HOSTNAME):$(BPM):adc.A"
+  1 "$(HOSTNAME):$(BPM):adc.B"
+  2 "$(HOSTNAME):$(BPM):adc.C"
+  3 "$(HOSTNAME):$(BPM):adc.D"
 }
 ySigned {
   0 1
@@ -243,7 +243,7 @@ buttonColor index 14
 selectColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):adc.SCAN"
+controlPv "$(HOSTNAME):$(BPM):adc.SCAN"
 font "helvetica-medium-r-10.0"
 endObjectProperties
 
@@ -263,7 +263,7 @@ buttonColor index 14
 selectColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):adc.ACQM"
+controlPv "$(HOSTNAME):$(BPM):adc.ACQM"
 font "helvetica-medium-r-10.0"
 endObjectProperties
 
@@ -357,7 +357,7 @@ onColor index 0
 offColor index 6
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):adc.PROC"
+controlPv "$(HOSTNAME):$(BPM):adc.PROC"
 pressValue "1"
 onLabel "Reading"
 offLabel "Read"

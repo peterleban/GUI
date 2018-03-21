@@ -81,7 +81,7 @@ y2Max 1
 # Trace Properties
 numTraces 1
 yPv {
-  0 "CALC\\deljenje1k(EPICS\\$(HOSTNAME):$(BPM):sp.X,1000)"
+  0 "CALC\\deljenje1k($(HOSTNAME):$(BPM):sp.X,1000)"
 }
 plotColor {
   0 index 14
@@ -129,7 +129,7 @@ y2Max 1
 # Trace Properties
 numTraces 1
 yPv {
-  0 "CALC\\deljenje1k(EPICS\\$(HOSTNAME):$(BPM):sp.Y,1000)"
+  0 "CALC\\deljenje1k($(HOSTNAME):$(BPM):sp.Y,1000)"
 }
 plotColor {
   0 index 14
@@ -146,7 +146,7 @@ x 130
 y 380
 w 60
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):sp:adc_thr"
+controlPv "$(HOSTNAME):$(BPM):sp:adc_thr"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -192,7 +192,7 @@ x 200
 y 400
 w 60
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):sp:n_before"
+controlPv "$(HOSTNAME):$(BPM):sp:n_before"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -238,7 +238,7 @@ x 200
 y 420
 w 60
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):sp:n_after"
+controlPv "$(HOSTNAME):$(BPM):sp:n_after"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -310,8 +310,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):sp:orientation"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):sp:orientation"
+controlPv "$(HOSTNAME):$(BPM):sp:orientation"
+indicatorPv "$(HOSTNAME):$(BPM):sp:orientation"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 

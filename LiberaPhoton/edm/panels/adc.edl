@@ -108,10 +108,10 @@ y2Max 1
 # Trace Properties
 numTraces 4
 yPv {
-  0 "EPICS\\$(DEVICE):$(DD).A"
-  1 "EPICS\\$(DEVICE):$(DD).B"
-  2 "EPICS\\$(DEVICE):$(DD).C"
-  3 "EPICS\\$(DEVICE):$(DD).D"
+  0 "$(DEVICE):$(DD).A"
+  1 "$(DEVICE):$(DD).B"
+  2 "$(DEVICE):$(DD).C"
+  3 "$(DEVICE):$(DD).D"
 }
 ySigned {
   0 1
@@ -268,7 +268,7 @@ x 355
 y 490
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):$(DD).NGRP"
+controlPv "$(DEVICE):$(DD).NGRP"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -298,7 +298,7 @@ onColor index 0
 offColor index 0
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(DEVICE):$(DD).PROC"
+controlPv "$(DEVICE):$(DD).PROC"
 pressValue "1"
 onLabel "Processing..."
 offLabel "Read data"
@@ -341,8 +341,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(DEVICE):$(DD).ACQM"
-indicatorPv "EPICS\\$(DEVICE):$(DD).ACQM"
+controlPv "$(DEVICE):$(DD).ACQM"
+indicatorPv "$(DEVICE):$(DD).ACQM"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -381,8 +381,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(DEVICE):$(DD).SCAN"
-indicatorPv "EPICS\\$(DEVICE):$(DD).SCAN"
+controlPv "$(DEVICE):$(DD).SCAN"
+indicatorPv "$(DEVICE):$(DD).SCAN"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 

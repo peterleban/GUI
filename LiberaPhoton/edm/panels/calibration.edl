@@ -34,7 +34,7 @@ x 40
 y 30
 w 80
 h 18
-controlPv "EPICS\\$(DEVICE):dsp:amp_scale:A"
+controlPv "$(DEVICE):dsp:amp_scale:A"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -123,7 +123,7 @@ x 40
 y 60
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):dsp:amp_scale:B"
+controlPv "$(DEVICE):dsp:amp_scale:B"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -149,7 +149,7 @@ x 40
 y 30
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):dsp:amp_scale:A"
+controlPv "$(DEVICE):dsp:amp_scale:A"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -175,7 +175,7 @@ x 40
 y 120
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):dsp:amp_scale:D"
+controlPv "$(DEVICE):dsp:amp_scale:D"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -221,7 +221,7 @@ x 40
 y 90
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):dsp:amp_scale:C"
+controlPv "$(DEVICE):dsp:amp_scale:C"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -287,7 +287,7 @@ x 140
 y 30
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):dsp:dark_values:A"
+controlPv "$(DEVICE):dsp:dark_values:A"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 0
@@ -333,7 +333,7 @@ x 140
 y 60
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):dsp:dark_values:B"
+controlPv "$(DEVICE):dsp:dark_values:B"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 0
@@ -359,7 +359,7 @@ x 140
 y 90
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):dsp:dark_values:C"
+controlPv "$(DEVICE):dsp:dark_values:C"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 0
@@ -385,7 +385,7 @@ x 140
 y 120
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):dsp:dark_values:D"
+controlPv "$(DEVICE):dsp:dark_values:D"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 0

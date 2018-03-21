@@ -109,7 +109,7 @@ x 150
 y 160
 w 100
 h 19
-controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:offs:x:f1"
+controlPv "$(HOSTNAME):$(BPM):calibration:offs:x:f1"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -155,7 +155,7 @@ x 150
 y 180
 w 100
 h 19
-controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:offs:y:f1"
+controlPv "$(HOSTNAME):$(BPM):calibration:offs:y:f1"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -201,7 +201,7 @@ x 150
 y 80
 w 100
 h 19
-controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:k:s:f1"
+controlPv "$(HOSTNAME):$(BPM):calibration:k:s:f1"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -247,7 +247,7 @@ x 150
 y 100
 w 100
 h 19
-controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:offs:s:f1"
+controlPv "$(HOSTNAME):$(BPM):calibration:offs:s:f1"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -293,7 +293,7 @@ x 150
 y 120
 w 100
 h 19
-controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:k:q:f1"
+controlPv "$(HOSTNAME):$(BPM):calibration:k:q:f1"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -339,7 +339,7 @@ x 150
 y 140
 w 100
 h 19
-controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:offs:q:f1"
+controlPv "$(HOSTNAME):$(BPM):calibration:offs:q:f1"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -371,7 +371,7 @@ oddColBgColor index 0
 evenColBgColor index 1
 topShadowColor index 0
 botShadowColor index 14
-pv "EPICS\\$(HOSTNAME):$(BPM):calibration:polynomial:x:k"
+pv "$(HOSTNAME):$(BPM):calibration:polynomial:x:k"
 font "helvetica-bold-r-12.0"
 endObjectProperties
 
@@ -405,7 +405,7 @@ x 150
 y 200
 w 100
 h 19
-controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:offs:ph:f1"
+controlPv "$(HOSTNAME):$(BPM):calibration:offs:ph:f1"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -471,7 +471,7 @@ x 150
 y 350
 w 100
 h 19
-controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:offs:x:f2"
+controlPv "$(HOSTNAME):$(BPM):calibration:offs:x:f2"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -517,7 +517,7 @@ x 150
 y 370
 w 100
 h 19
-controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:offs:y:f2"
+controlPv "$(HOSTNAME):$(BPM):calibration:offs:y:f2"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -563,7 +563,7 @@ x 150
 y 270
 w 100
 h 19
-controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:k:s:f2"
+controlPv "$(HOSTNAME):$(BPM):calibration:k:s:f2"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -609,7 +609,7 @@ x 150
 y 290
 w 100
 h 19
-controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:offs:s:f2"
+controlPv "$(HOSTNAME):$(BPM):calibration:offs:s:f2"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -655,7 +655,7 @@ x 150
 y 310
 w 100
 h 19
-controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:k:q:f2"
+controlPv "$(HOSTNAME):$(BPM):calibration:k:q:f2"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -701,7 +701,7 @@ x 150
 y 330
 w 100
 h 19
-controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:offs:q:f2"
+controlPv "$(HOSTNAME):$(BPM):calibration:offs:q:f2"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -747,7 +747,7 @@ x 150
 y 390
 w 100
 h 19
-controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:offs:ph:f2"
+controlPv "$(HOSTNAME):$(BPM):calibration:offs:ph:f2"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14

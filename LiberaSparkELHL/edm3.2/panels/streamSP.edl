@@ -95,11 +95,11 @@ y2Max 1
 # Trace Properties
 numTraces 5
 yPv {
-  0 "EPICS\\$(HOSTNAME):signals:sp.va"
-  1 "EPICS\\$(HOSTNAME):signals:sp.vb"
-  2 "EPICS\\$(HOSTNAME):signals:sp.vc"
-  3 "EPICS\\$(HOSTNAME):signals:sp.vd"
-  4 "EPICS\\$(HOSTNAME):signals:sp.sum"
+  0 "$(HOSTNAME):signals:sp.va"
+  1 "$(HOSTNAME):signals:sp.vb"
+  2 "$(HOSTNAME):signals:sp.vc"
+  3 "$(HOSTNAME):signals:sp.vd"
+  4 "$(HOSTNAME):signals:sp.sum"
 }
 lineThickness {
   0 3
@@ -336,9 +336,9 @@ y2Max 1
 # Trace Properties
 numTraces 3
 yPv {
-  0 "EPICS\\$(HOSTNAME):signals:sp.x"
-  1 "EPICS\\$(HOSTNAME):signals:sp.y"
-  2 "EPICS\\$(HOSTNAME):signals:sp.q"
+  0 "$(HOSTNAME):signals:sp.x"
+  1 "$(HOSTNAME):signals:sp.y"
+  2 "$(HOSTNAME):signals:sp.q"
 }
 lineThickness {
   0 3

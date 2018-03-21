@@ -228,7 +228,7 @@ x 170
 y 35
 w 80
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(TIM):pll:locked"
+controlPv "$(HOSTNAME):$(TIM):pll:locked"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -272,8 +272,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(TIM):triggers:t2:source_sp"
-indicatorPv "EPICS\\$(HOSTNAME):$(TIM):triggers:t2:source_mon"
+controlPv "$(HOSTNAME):$(TIM):triggers:t2:source_sp"
+indicatorPv "$(HOSTNAME):$(TIM):triggers:t2:source_mon"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -332,8 +332,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(TIM):triggers:t1:source_sp"
-indicatorPv "EPICS\\$(HOSTNAME):$(TIM):triggers:t1:source_mon"
+controlPv "$(HOSTNAME):$(TIM):triggers:t1:source_sp"
+indicatorPv "$(HOSTNAME):$(TIM):triggers:t1:source_mon"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -352,7 +352,7 @@ onColor index 53
 offColor index 53
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):sync"
+controlPv "$(HOSTNAME):sync"
 pressValue "0"
 onLabel "Sending..."
 offLabel "Synchronize now"
@@ -462,8 +462,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(TIM):triggers:mc:source_sp"
-indicatorPv "EPICS\\$(HOSTNAME):$(TIM):triggers:mc:source_mon"
+controlPv "$(HOSTNAME):$(TIM):triggers:mc:source_sp"
+indicatorPv "$(HOSTNAME):$(TIM):triggers:mc:source_mon"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -483,8 +483,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(TIM):triggers:t0:source_sp"
-indicatorPv "EPICS\\$(HOSTNAME):$(TIM):triggers:t0:source_mon"
+controlPv "$(HOSTNAME):$(TIM):triggers:t0:source_sp"
+indicatorPv "$(HOSTNAME):$(TIM):triggers:t0:source_mon"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -517,7 +517,7 @@ x 170
 y 245
 w 80
 h 25
-controlPv "EPICS\\$(HOSTNAME):$(TIM):triggers:t2:debouncer_sp"
+controlPv "$(HOSTNAME):$(TIM):triggers:t2:debouncer_sp"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 24
@@ -637,7 +637,7 @@ x 170
 y 65
 w 80
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(TIM):pll:clk_good"
+controlPv "$(HOSTNAME):$(TIM):pll:clk_good"
 fgColor index 14
 fgAlarm
 bgColor index 0

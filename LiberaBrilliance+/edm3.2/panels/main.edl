@@ -282,7 +282,7 @@ x 310
 y 10
 w 85
 h 15
-controlPv "EPICS\\$(HOSTNAME):ioc:cpu"
+controlPv "$(HOSTNAME):ioc:cpu"
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -325,7 +325,7 @@ x 80
 y 10
 w 95
 h 14
-controlPv "EPICS\\$(HOSTNAME):ioc:ip:eth1"
+controlPv "$(HOSTNAME):ioc:ip:eth1"
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -368,7 +368,7 @@ x 80
 y 30
 w 95
 h 14
-controlPv "EPICS\\$(HOSTNAME):ioc:hostname"
+controlPv "$(HOSTNAME):ioc:hostname"
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -411,7 +411,7 @@ x 80
 y 70
 w 295
 h 15
-controlPv "EPICS\\$(HOSTNAME):ioc:date"
+controlPv "$(HOSTNAME):ioc:date"
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -474,7 +474,7 @@ x 80
 y 50
 w 130
 h 15
-controlPv "EPICS\\$(HOSTNAME):ioc:uptime"
+controlPv "$(HOSTNAME):ioc:uptime"
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -497,7 +497,7 @@ x 310
 y 30
 w 85
 h 15
-controlPv "EPICS\\$(HOSTNAME):ioc:loadavg"
+controlPv "$(HOSTNAME):ioc:loadavg"
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -560,7 +560,7 @@ x 310
 y 50
 w 85
 h 15
-controlPv "EPICS\\$(HOSTNAME):ioc:free_mem"
+controlPv "$(HOSTNAME):ioc:free_mem"
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0

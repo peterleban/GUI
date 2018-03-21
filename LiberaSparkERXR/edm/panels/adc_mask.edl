@@ -67,10 +67,10 @@ y2Max 1
 # Trace Properties
 numTraces 4
 yPv {
-  0 "EPICS\\$(HOSTNAME):signals:tbt_window.A"
-  1 "EPICS\\$(HOSTNAME):signals:tbt_window.B"
-  2 "EPICS\\$(HOSTNAME):signals:tbt_window.C"
-  3 "EPICS\\$(HOSTNAME):signals:tbt_window.D"
+  0 "$(HOSTNAME):signals:tbt_window.A"
+  1 "$(HOSTNAME):signals:tbt_window.B"
+  2 "$(HOSTNAME):signals:tbt_window.C"
+  3 "$(HOSTNAME):signals:tbt_window.D"
 }
 lineThickness {
   0 3
@@ -105,7 +105,7 @@ onColor index 0
 offColor index 0
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):signals:tbt_window.PROC"
+controlPv "$(HOSTNAME):signals:tbt_window.PROC"
 pressValue "1"
 onLabel "Refresh plot"
 offLabel "Refresh plot"
@@ -199,7 +199,7 @@ x 200
 y 210
 w 160
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:tbt_decimation"
+controlPv "$(HOSTNAME):dsp:tbt_decimation"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -224,7 +224,7 @@ x 260
 y 235
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:adc_mask:window_mon"
+controlPv "$(HOSTNAME):dsp:adc_mask:window_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -250,7 +250,7 @@ x 200
 y 235
 w 55
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:adc_mask:window_sp"
+controlPv "$(HOSTNAME):dsp:adc_mask:window_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -276,7 +276,7 @@ x 260
 y 260
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:adc_mask:offset_mon"
+controlPv "$(HOSTNAME):dsp:adc_mask:offset_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -302,7 +302,7 @@ x 200
 y 260
 w 55
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:adc_mask:offset_sp"
+controlPv "$(HOSTNAME):dsp:adc_mask:offset_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -328,7 +328,7 @@ x 260
 y 285
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:phase_offset_mon"
+controlPv "$(HOSTNAME):dsp:phase_offset_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -354,7 +354,7 @@ x 200
 y 285
 w 55
 h 20
-controlPv "EPICS\\$(HOSTNAME):dsp:phase_offset_sp"
+controlPv "$(HOSTNAME):dsp:phase_offset_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24

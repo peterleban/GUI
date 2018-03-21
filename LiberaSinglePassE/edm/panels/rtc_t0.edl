@@ -89,7 +89,7 @@ x 150
 y 520
 w 100
 h 19
-controlPv "EPICS\\$(HOSTNAME):evrx:rtc:t0:in_mask:set"
+controlPv "$(HOSTNAME):evrx:rtc:t0:in_mask:set"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -135,7 +135,7 @@ x 150
 y 500
 w 100
 h 19
-controlPv "EPICS\\$(HOSTNAME):evrx:rtc:t0:in_mask:indx"
+controlPv "$(HOSTNAME):evrx:rtc:t0:in_mask:indx"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -167,7 +167,7 @@ oddColBgColor index 0
 evenColBgColor index 1
 topShadowColor index 0
 botShadowColor index 14
-pv "EPICS\\$(HOSTNAME):$(BPM):calibration:polynomial:x:k"
+pv "$(HOSTNAME):$(BPM):calibration:polynomial:x:k"
 font "helvetica-bold-r-12.0"
 endObjectProperties
 
@@ -187,7 +187,7 @@ oddColBgColor index 2
 evenColBgColor index 1
 topShadowColor index 0
 botShadowColor index 14
-pv "EPICS\\$(HOSTNAME):evrx:rtc:t0:in_mask"
+pv "$(HOSTNAME):evrx:rtc:t0:in_mask"
 numElements 333
 font "helvetica-bold-r-12.0"
 endObjectProperties

@@ -75,8 +75,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):adc.ACQM"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):adc.ACQM"
+controlPv "$(HOSTNAME):$(BPM):adc.ACQM"
+indicatorPv "$(HOSTNAME):$(BPM):adc.ACQM"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -96,8 +96,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):adc.SCAN"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):adc.SCAN"
+controlPv "$(HOSTNAME):$(BPM):adc.SCAN"
+indicatorPv "$(HOSTNAME):$(BPM):adc.SCAN"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -174,8 +174,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):ddc_synth.ACQM"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):ddc_synth.ACQM"
+controlPv "$(HOSTNAME):$(BPM):ddc_synth.ACQM"
+indicatorPv "$(HOSTNAME):$(BPM):ddc_synth.ACQM"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -195,8 +195,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):ddc_synth.SCAN"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):ddc_synth.SCAN"
+controlPv "$(HOSTNAME):$(BPM):ddc_synth.SCAN"
+indicatorPv "$(HOSTNAME):$(BPM):ddc_synth.SCAN"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -254,8 +254,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):tdp_synth.ACQM"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):tdp_synth.ACQM"
+controlPv "$(HOSTNAME):$(BPM):tdp_synth.ACQM"
+indicatorPv "$(HOSTNAME):$(BPM):tdp_synth.ACQM"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -275,8 +275,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):tdp_synth.SCAN"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):tdp_synth.SCAN"
+controlPv "$(HOSTNAME):$(BPM):tdp_synth.SCAN"
+indicatorPv "$(HOSTNAME):$(BPM):tdp_synth.SCAN"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -391,8 +391,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):ddc_raw.ACQM"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):ddc_raw.ACQM"
+controlPv "$(HOSTNAME):$(BPM):ddc_raw.ACQM"
+indicatorPv "$(HOSTNAME):$(BPM):ddc_raw.ACQM"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -412,8 +412,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):ddc_raw.SCAN"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):ddc_raw.SCAN"
+controlPv "$(HOSTNAME):$(BPM):ddc_raw.SCAN"
+indicatorPv "$(HOSTNAME):$(BPM):ddc_raw.SCAN"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -490,8 +490,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):sp.ACQM"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):sp.ACQM"
+controlPv "$(HOSTNAME):$(BPM):sp.ACQM"
+indicatorPv "$(HOSTNAME):$(BPM):sp.ACQM"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -511,8 +511,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):sp.SCAN"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):sp.SCAN"
+controlPv "$(HOSTNAME):$(BPM):sp.SCAN"
+indicatorPv "$(HOSTNAME):$(BPM):sp.SCAN"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -570,8 +570,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):sa.SCAN"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):sa.SCAN"
+controlPv "$(HOSTNAME):$(BPM):sa.SCAN"
+indicatorPv "$(HOSTNAME):$(BPM):sa.SCAN"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -629,8 +629,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):fa.SCAN"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):fa.SCAN"
+controlPv "$(HOSTNAME):$(BPM):fa.SCAN"
+indicatorPv "$(HOSTNAME):$(BPM):fa.SCAN"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -723,8 +723,8 @@ offColor index 15
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):adc.SCAN"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):adc.SCAN"
+controlPv "$(HOSTNAME):$(BPM):adc.SCAN"
+indicatorPv "$(HOSTNAME):$(BPM):adc.SCAN"
 onLabel "Enabled"
 offLabel "Disabled"
 labelType "literal"
@@ -751,8 +751,8 @@ offColor index 15
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):ddc_raw.SCAN"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):ddc_raw.SCAN"
+controlPv "$(HOSTNAME):$(BPM):ddc_raw.SCAN"
+indicatorPv "$(HOSTNAME):$(BPM):ddc_raw.SCAN"
 onLabel "Enabled"
 offLabel "Disabled"
 labelType "literal"
@@ -779,8 +779,8 @@ offColor index 15
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):ddc_synth.SCAN"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):ddc_synth.SCAN"
+controlPv "$(HOSTNAME):$(BPM):ddc_synth.SCAN"
+indicatorPv "$(HOSTNAME):$(BPM):ddc_synth.SCAN"
 onLabel "Enabled"
 offLabel "Disabled"
 labelType "literal"
@@ -807,8 +807,8 @@ offColor index 15
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):tdp_synth.SCAN"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):tdp_synth.SCAN"
+controlPv "$(HOSTNAME):$(BPM):tdp_synth.SCAN"
+indicatorPv "$(HOSTNAME):$(BPM):tdp_synth.SCAN"
 onLabel "Enabled"
 offLabel "Disabled"
 labelType "literal"
@@ -835,8 +835,8 @@ offColor index 15
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):sp.SCAN"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):sp.SCAN"
+controlPv "$(HOSTNAME):$(BPM):sp.SCAN"
+indicatorPv "$(HOSTNAME):$(BPM):sp.SCAN"
 onLabel "Enabled"
 offLabel "Disabled"
 labelType "literal"
@@ -863,8 +863,8 @@ offColor index 15
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):sa.SCAN"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):sa.SCAN"
+controlPv "$(HOSTNAME):$(BPM):sa.SCAN"
+indicatorPv "$(HOSTNAME):$(BPM):sa.SCAN"
 onLabel "Enabled"
 offLabel "Disabled"
 labelType "literal"
@@ -891,8 +891,8 @@ offColor index 15
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):fa.SCAN"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):fa.SCAN"
+controlPv "$(HOSTNAME):$(BPM):fa.SCAN"
+indicatorPv "$(HOSTNAME):$(BPM):fa.SCAN"
 onLabel "Enabled"
 offLabel "Disabled"
 labelType "literal"

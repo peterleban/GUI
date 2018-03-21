@@ -47,7 +47,7 @@ x 30
 y 210
 w 40
 h 34
-controlPv "EPICS\\$(HOSTNAME):$(BPM):tbt:sr:avg_window"
+controlPv "$(HOSTNAME):$(BPM):tbt:sr:avg_window"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -65,7 +65,7 @@ x 120
 y 270
 w 40
 h 34
-controlPv "EPICS\\$(HOSTNAME):$(BPM):tbt:sr:avg_stop"
+controlPv "$(HOSTNAME):$(BPM):tbt:sr:avg_stop"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -83,7 +83,7 @@ x 190
 y 20
 w 40
 h 34
-controlPv "EPICS\\$(HOSTNAME):$(BPM):tbt:sr:start"
+controlPv "$(HOSTNAME):$(BPM):tbt:sr:start"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -101,7 +101,7 @@ x 260
 y 80
 w 40
 h 34
-controlPv "EPICS\\$(HOSTNAME):$(BPM):tbt:sr:window"
+controlPv "$(HOSTNAME):$(BPM):tbt:sr:window"
 fgColor index 14
 fgAlarm
 bgColor index 0

@@ -193,7 +193,7 @@ x 125
 y 420
 w 40
 h 17
-controlPv "CALC\\mult(CALC\\diff(EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_b:phase_avg,EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_a:phase_avg),57.29582)"
+controlPv "CALC\\mult(CALC\\diff($(HOSTNAME):$(BPM):dsc:coeff:ch_b:phase_avg,$(HOSTNAME):$(BPM):dsc:coeff:ch_a:phase_avg),57.29582)"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -218,7 +218,7 @@ x 125
 y 445
 w 40
 h 17
-controlPv "CALC\\mult(CALC\\diff(EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_c:phase_avg,EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_a:phase_avg),57.29582)"
+controlPv "CALC\\mult(CALC\\diff($(HOSTNAME):$(BPM):dsc:coeff:ch_c:phase_avg,$(HOSTNAME):$(BPM):dsc:coeff:ch_a:phase_avg),57.29582)"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -243,7 +243,7 @@ x 125
 y 470
 w 40
 h 17
-controlPv "CALC\\mult(CALC\\diff(EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_b:phase_avg,EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_d:phase_avg),57.29582)"
+controlPv "CALC\\mult(CALC\\diff($(HOSTNAME):$(BPM):dsc:coeff:ch_b:phase_avg,$(HOSTNAME):$(BPM):dsc:coeff:ch_d:phase_avg),57.29582)"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -368,7 +368,7 @@ x 230
 y 5
 w 30
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:avg_gain_patt"
+controlPv "$(HOSTNAME):$(BPM):dsc:avg_gain_patt"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -394,7 +394,7 @@ x 230
 y 30
 w 30
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:avg_ph_patt"
+controlPv "$(HOSTNAME):$(BPM):dsc:avg_ph_patt"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -440,7 +440,7 @@ x 250
 y 55
 w 60
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:maxadc_thr"
+controlPv "$(HOSTNAME):$(BPM):dsc:maxadc_thr"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -545,7 +545,7 @@ x 95
 y 145
 w 40
 h 16
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_a:gain_0"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:ch_a:gain_0"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -571,7 +571,7 @@ x 155
 y 145
 w 40
 h 16
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_a:gain_1"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:ch_a:gain_1"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -597,7 +597,7 @@ x 215
 y 145
 w 40
 h 16
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_a:gain_2"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:ch_a:gain_2"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -623,7 +623,7 @@ x 275
 y 145
 w 40
 h 16
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_a:gain_3"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:ch_a:gain_3"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -649,7 +649,7 @@ x 275
 y 165
 w 40
 h 16
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_b:gain_3"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:ch_b:gain_3"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -675,7 +675,7 @@ x 215
 y 165
 w 40
 h 16
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_b:gain_2"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:ch_b:gain_2"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -701,7 +701,7 @@ x 155
 y 165
 w 40
 h 16
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_b:gain_1"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:ch_b:gain_1"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -727,7 +727,7 @@ x 95
 y 165
 w 40
 h 16
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_b:gain_0"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:ch_b:gain_0"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -753,7 +753,7 @@ x 95
 y 185
 w 40
 h 16
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_c:gain_0"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:ch_c:gain_0"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -779,7 +779,7 @@ x 155
 y 185
 w 40
 h 16
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_c:gain_1"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:ch_c:gain_1"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -805,7 +805,7 @@ x 215
 y 185
 w 40
 h 16
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_c:gain_2"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:ch_c:gain_2"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -831,7 +831,7 @@ x 275
 y 185
 w 40
 h 16
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_c:gain_3"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:ch_c:gain_3"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -857,7 +857,7 @@ x 275
 y 205
 w 40
 h 16
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_d:gain_3"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:ch_d:gain_3"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -883,7 +883,7 @@ x 215
 y 205
 w 40
 h 16
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_d:gain_2"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:ch_d:gain_2"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -909,7 +909,7 @@ x 155
 y 205
 w 40
 h 16
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_d:gain_1"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:ch_d:gain_1"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -935,7 +935,7 @@ x 95
 y 205
 w 40
 h 16
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_d:gain_0"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:ch_d:gain_0"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -1228,7 +1228,7 @@ x 95
 y 295
 w 40
 h 16
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_a:phase_0"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:ch_a:phase_0"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -1254,7 +1254,7 @@ x 155
 y 295
 w 40
 h 16
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_a:phase_1"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:ch_a:phase_1"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -1280,7 +1280,7 @@ x 215
 y 295
 w 40
 h 16
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_a:phase_2"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:ch_a:phase_2"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -1306,7 +1306,7 @@ x 275
 y 295
 w 40
 h 16
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_a:phase_3"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:ch_a:phase_3"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -1332,7 +1332,7 @@ x 275
 y 315
 w 40
 h 16
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_b:phase_3"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:ch_b:phase_3"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -1358,7 +1358,7 @@ x 215
 y 315
 w 40
 h 16
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_b:phase_2"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:ch_b:phase_2"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -1384,7 +1384,7 @@ x 155
 y 315
 w 40
 h 16
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_b:phase_1"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:ch_b:phase_1"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -1410,7 +1410,7 @@ x 95
 y 315
 w 40
 h 16
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_b:phase_0"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:ch_b:phase_0"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -1436,7 +1436,7 @@ x 95
 y 335
 w 40
 h 16
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_c:phase_0"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:ch_c:phase_0"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -1462,7 +1462,7 @@ x 155
 y 335
 w 40
 h 16
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_c:phase_1"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:ch_c:phase_1"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -1488,7 +1488,7 @@ x 215
 y 335
 w 40
 h 16
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_c:phase_2"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:ch_c:phase_2"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -1514,7 +1514,7 @@ x 275
 y 335
 w 40
 h 16
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_c:phase_3"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:ch_c:phase_3"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -1540,7 +1540,7 @@ x 275
 y 355
 w 40
 h 16
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_d:phase_3"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:ch_d:phase_3"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -1566,7 +1566,7 @@ x 215
 y 355
 w 40
 h 16
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_d:phase_2"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:ch_d:phase_2"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -1592,7 +1592,7 @@ x 155
 y 355
 w 40
 h 16
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_d:phase_1"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:ch_d:phase_1"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -1618,7 +1618,7 @@ x 95
 y 355
 w 40
 h 16
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:ch_d:phase_0"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:ch_d:phase_0"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14

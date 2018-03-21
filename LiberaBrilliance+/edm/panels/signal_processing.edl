@@ -238,7 +238,7 @@ x 80
 y 300
 w 55
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):maxadc"
+controlPv "$(HOSTNAME):$(BPM):maxadc"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -622,8 +622,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):switching:enable"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):switching:enable"
+controlPv "$(HOSTNAME):$(BPM):switching:enable"
+indicatorPv "$(HOSTNAME):$(BPM):switching:enable"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -662,8 +662,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):switching:source"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):switching:source"
+controlPv "$(HOSTNAME):$(BPM):switching:source"
+indicatorPv "$(HOSTNAME):$(BPM):switching:source"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -702,8 +702,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:adjust"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:adjust"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:adjust"
+indicatorPv "$(HOSTNAME):$(BPM):dsc:coeff:adjust"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -742,8 +742,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:type"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:type"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:type"
+indicatorPv "$(HOSTNAME):$(BPM):dsc:coeff:type"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -777,7 +777,7 @@ x 355
 y 90
 w 95
 h 25
-controlPv "EPICS\\$(HOSTNAME):$(BPM):switching:delay"
+controlPv "$(HOSTNAME):$(BPM):switching:delay"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -803,7 +803,7 @@ x 410
 y 210
 w 55
 h 25
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:tolerance_thr"
+controlPv "$(HOSTNAME):$(BPM):dsc:tolerance_thr"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -940,7 +940,7 @@ offColor index 55
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):tbt:sr:fa_enable"
+controlPv "$(HOSTNAME):$(BPM):tbt:sr:fa_enable"
 onLabel "FA ON"
 offLabel "FA OFF"
 labelType "literal"
@@ -967,7 +967,7 @@ offColor index 55
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):tbt:sr:tbt_enable"
+controlPv "$(HOSTNAME):$(BPM):tbt:sr:tbt_enable"
 onLabel "TBT ON"
 offLabel "TBT OFF"
 labelType "literal"
@@ -994,8 +994,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):agc:enabled"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):agc:enabled"
+controlPv "$(HOSTNAME):$(BPM):agc:enabled"
+indicatorPv "$(HOSTNAME):$(BPM):agc:enabled"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -1049,7 +1049,7 @@ x 100
 y 240
 w 40
 h 25
-controlPv "EPICS\\$(HOSTNAME):$(BPM):agc:power_level"
+controlPv "$(HOSTNAME):$(BPM):agc:power_level"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -1097,7 +1097,7 @@ x 200
 y 240
 w 30
 h 25
-controlPv "EPICS\\$(HOSTNAME):$(BPM):agc:att"
+controlPv "$(HOSTNAME):$(BPM):agc:att"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -1195,7 +1195,7 @@ x 70
 y 30
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):id"
+controlPv "$(HOSTNAME):$(BPM):id"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -1241,7 +1241,7 @@ x 110
 y 60
 w 60
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):trig_delay"
+controlPv "$(HOSTNAME):$(BPM):trig_delay"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -1267,7 +1267,7 @@ x 110
 y 85
 w 60
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):tbt:phase_offset"
+controlPv "$(HOSTNAME):$(BPM):tbt:phase_offset"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -1313,7 +1313,7 @@ offColor index 55
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):pm:capture"
+controlPv "$(HOSTNAME):$(BPM):pm:capture"
 onLabel "En."
 offLabel "Dis."
 labelType "literal"
@@ -1339,7 +1339,7 @@ offColor index 55
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):ilk:enabled"
+controlPv "$(HOSTNAME):$(BPM):ilk:enabled"
 onLabel "En."
 offLabel "Dis."
 labelType "literal"
@@ -1383,8 +1383,8 @@ font "helvetica-medium-r-10.0"
 fontAlign "center"
 fgColor index 14
 bgColor index 20
-alarmPv "EPICS\\$(HOSTNAME):$(BPM):ilk:status:il_status"
-visPv "EPICS\\$(HOSTNAME):$(BPM):ilk:status:il_status"
+alarmPv "$(HOSTNAME):$(BPM):ilk:status:il_status"
+visPv "$(HOSTNAME):$(BPM):ilk:status:il_status"
 visInvert
 visMin "0"
 visMax "1"
@@ -1408,8 +1408,8 @@ font "helvetica-medium-r-10.0"
 fontAlign "center"
 fgColor index 14
 bgColor index 15
-alarmPv "EPICS\\$(HOSTNAME):$(BPM):ilk:status"
-visPv "EPICS\\$(HOSTNAME):$(BPM):ilk:status"
+alarmPv "$(HOSTNAME):$(BPM):ilk:status"
+visPv "$(HOSTNAME):$(BPM):ilk:status"
 visMin "0"
 visMax "1"
 value {
@@ -1518,7 +1518,7 @@ x 365
 y 490
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):ID_2:value"
+controlPv "$(HOSTNAME):$(BPM):ID_2:value"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -1558,7 +1558,7 @@ x 410
 y 235
 w 55
 h 25
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:tolerance_curr"
+controlPv "$(HOSTNAME):$(BPM):dsc:tolerance_curr"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -1629,8 +1629,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:att_dependent"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):dsc:coeff:att_dependent"
+controlPv "$(HOSTNAME):$(BPM):dsc:coeff:att_dependent"
+indicatorPv "$(HOSTNAME):$(BPM):dsc:coeff:att_dependent"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -1664,7 +1664,7 @@ x 350
 y 265
 w 45
 h 25
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsc:frequency"
+controlPv "$(HOSTNAME):$(BPM):dsc:frequency"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -1739,8 +1739,8 @@ font "helvetica-medium-r-10.0"
 fontAlign "center"
 fgColor index 14
 bgColor index 15
-alarmPv "EPICS\\$(HOSTNAME):$(BPM):ilk:status:il_status"
-visPv "EPICS\\$(HOSTNAME):$(BPM):ilk:status:il_status"
+alarmPv "$(HOSTNAME):$(BPM):ilk:status:il_status"
+visPv "$(HOSTNAME):$(BPM):ilk:status:il_status"
 visMin "0"
 visMax "1"
 value {
@@ -1763,8 +1763,8 @@ font "helvetica-medium-r-10.0"
 fontAlign "center"
 fgColor index 0
 bgColor index 20
-alarmPv "EPICS\\$(HOSTNAME):$(BPM):ilk:status:x"
-visPv "EPICS\\$(HOSTNAME):$(BPM):ilk:status:x"
+alarmPv "$(HOSTNAME):$(BPM):ilk:status:x"
+visPv "$(HOSTNAME):$(BPM):ilk:status:x"
 visInvert
 visMax "1"
 value {
@@ -1787,8 +1787,8 @@ font "helvetica-medium-r-10.0"
 fontAlign "center"
 fgColor index 0
 bgColor index 20
-alarmPv "EPICS\\$(HOSTNAME):$(BPM):ilk:status:y"
-visPv "EPICS\\$(HOSTNAME):$(BPM):ilk:status:y"
+alarmPv "$(HOSTNAME):$(BPM):ilk:status:y"
+visPv "$(HOSTNAME):$(BPM):ilk:status:y"
 visInvert
 visMax "1"
 value {
@@ -1811,8 +1811,8 @@ font "helvetica-medium-r-10.0"
 fontAlign "center"
 fgColor index 0
 bgColor index 20
-alarmPv "EPICS\\$(HOSTNAME):$(BPM):ilk:status:adc_ovf"
-visPv "EPICS\\$(HOSTNAME):$(BPM):ilk:status:adc_ovf"
+alarmPv "$(HOSTNAME):$(BPM):ilk:status:adc_ovf"
+visPv "$(HOSTNAME):$(BPM):ilk:status:adc_ovf"
 visInvert
 visMax "1"
 value {
@@ -1835,8 +1835,8 @@ font "helvetica-medium-r-10.0"
 fontAlign "center"
 fgColor index 0
 bgColor index 20
-alarmPv "EPICS\\$(HOSTNAME):$(BPM):ilk:status:adc_ovf_filtered"
-visPv "EPICS\\$(HOSTNAME):$(BPM):ilk:status:adc_ovf_filtered"
+alarmPv "$(HOSTNAME):$(BPM):ilk:status:adc_ovf_filtered"
+visPv "$(HOSTNAME):$(BPM):ilk:status:adc_ovf_filtered"
 visInvert
 visMax "1"
 value {
@@ -1859,8 +1859,8 @@ font "helvetica-medium-r-10.0"
 fontAlign "center"
 fgColor index 0
 bgColor index 20
-alarmPv "EPICS\\$(HOSTNAME):$(BPM):ilk:status:attenuator"
-visPv "EPICS\\$(HOSTNAME):$(BPM):ilk:status:attenuator"
+alarmPv "$(HOSTNAME):$(BPM):ilk:status:attenuator"
+visPv "$(HOSTNAME):$(BPM):ilk:status:attenuator"
 visInvert
 visMax "1"
 value {
@@ -1884,7 +1884,7 @@ onColor index 0
 offColor index 0
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):ilk:status:reset.PROC"
+controlPv "$(HOSTNAME):$(BPM):ilk:status:reset.PROC"
 pressValue "0"
 onLabel "Resetting..."
 offLabel "IL status reset"
@@ -1955,7 +1955,7 @@ x 20
 y 345
 w 85
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):stat:sa:x_mean"
+controlPv "$(HOSTNAME):$(BPM):stat:sa:x_mean"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -1994,7 +1994,7 @@ x 115
 y 345
 w 85
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):stat:sa:y_mean"
+controlPv "$(HOSTNAME):$(BPM):stat:sa:y_mean"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -2013,7 +2013,7 @@ x 115
 y 390
 w 85
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):stat:sa:y_std"
+controlPv "$(HOSTNAME):$(BPM):stat:sa:y_std"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -2032,7 +2032,7 @@ x 20
 y 390
 w 85
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):stat:sa:x_std"
+controlPv "$(HOSTNAME):$(BPM):stat:sa:x_std"
 fgColor index 14
 fgAlarm
 bgColor index 0

@@ -66,7 +66,7 @@ y2Max 1
 # Trace Properties
 numTraces 1
 yPv {
-  0 "CALC\\deljenje1k(EPICS\\$(HOSTNAME):$(BPM):sa.X,1000)"
+  0 "CALC\\deljenje1k($(HOSTNAME):$(BPM):sa.X,1000)"
 }
 plotColor {
   0 index 14
@@ -114,7 +114,7 @@ y2Max 1
 # Trace Properties
 numTraces 1
 yPv {
-  0 "CALC\\deljenje1k(EPICS\\$(HOSTNAME):$(BPM):sa.Y,1000)"
+  0 "CALC\\deljenje1k($(HOSTNAME):$(BPM):sa.Y,1000)"
 }
 plotColor {
   0 index 14
@@ -180,7 +180,7 @@ x 415
 y 55
 w 85
 h 20
-controlPv "CALC\\deljenje1k(EPICS\\$(HOSTNAME):$(BPM):stat:sa:x_mean,1000)"
+controlPv "CALC\\deljenje1k($(HOSTNAME):$(BPM):stat:sa:x_mean,1000)"
 displayMode "decimal"
 precision 6
 fgColor index 14
@@ -201,7 +201,7 @@ x 415
 y 105
 w 85
 h 20
-controlPv "CALC\\deljenje1k(EPICS\\$(HOSTNAME):$(BPM):stat:sa:x_std,1)"
+controlPv "CALC\\deljenje1k($(HOSTNAME):$(BPM):stat:sa:x_std,1)"
 displayMode "decimal"
 precision 3
 fgColor index 14
@@ -262,7 +262,7 @@ x 415
 y 235
 w 85
 h 20
-controlPv "CALC\\deljenje1k(EPICS\\$(HOSTNAME):$(BPM):stat:sa:y_mean,1000)"
+controlPv "CALC\\deljenje1k($(HOSTNAME):$(BPM):stat:sa:y_mean,1000)"
 displayMode "decimal"
 precision 6
 fgColor index 14
@@ -283,7 +283,7 @@ x 415
 y 290
 w 85
 h 20
-controlPv "CALC\\deljenje1k(EPICS\\$(HOSTNAME):$(BPM):stat:sa:y_std,1)"
+controlPv "CALC\\deljenje1k($(HOSTNAME):$(BPM):stat:sa:y_std,1)"
 displayMode "decimal"
 precision 3
 fgColor index 14

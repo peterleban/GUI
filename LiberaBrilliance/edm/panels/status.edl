@@ -118,7 +118,7 @@ x 70
 y 90
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):ENV:ENV_VOLTAGE0_MONITOR"
+controlPv "$(DEVICE):ENV:ENV_VOLTAGE0_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -136,7 +136,7 @@ x 70
 y 110
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):ENV:ENV_VOLTAGE1_MONITOR"
+controlPv "$(DEVICE):ENV:ENV_VOLTAGE1_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -154,7 +154,7 @@ x 70
 y 130
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):ENV:ENV_VOLTAGE2_MONITOR"
+controlPv "$(DEVICE):ENV:ENV_VOLTAGE2_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -172,7 +172,7 @@ x 70
 y 150
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):ENV:ENV_VOLTAGE3_MONITOR"
+controlPv "$(DEVICE):ENV:ENV_VOLTAGE3_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -190,7 +190,7 @@ x 70
 y 170
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):ENV:ENV_VOLTAGE4_MONITOR"
+controlPv "$(DEVICE):ENV:ENV_VOLTAGE4_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -208,7 +208,7 @@ x 70
 y 190
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):ENV:ENV_VOLTAGE5_MONITOR"
+controlPv "$(DEVICE):ENV:ENV_VOLTAGE5_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -226,7 +226,7 @@ x 70
 y 210
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):ENV:ENV_VOLTAGE6_MONITOR"
+controlPv "$(DEVICE):ENV:ENV_VOLTAGE6_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -244,7 +244,7 @@ x 70
 y 230
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):ENV:ENV_VOLTAGE7_MONITOR"
+controlPv "$(DEVICE):ENV:ENV_VOLTAGE7_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -262,7 +262,7 @@ x 70
 y 350
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):ENV:ENV_FRONT_VENT_ACT_MONITOR"
+controlPv "$(DEVICE):ENV:ENV_FRONT_VENT_ACT_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -280,7 +280,7 @@ x 70
 y 370
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):ENV:ENV_BACK_VENT_ACT_MONITOR"
+controlPv "$(DEVICE):ENV:ENV_BACK_VENT_ACT_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -298,7 +298,7 @@ x 70
 y 290
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):ENV:ENV_TEMP_MONITOR"
+controlPv "$(DEVICE):ENV:ENV_TEMP_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -316,7 +316,7 @@ x 70
 y 590
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):ENV:ENV_MAX_ADC_MONITOR"
+controlPv "$(DEVICE):ENV:ENV_MAX_ADC_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -334,7 +334,7 @@ x 70
 y 570
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):ENV:ENV_GAIN_MONITOR"
+controlPv "$(DEVICE):ENV:ENV_GAIN_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -352,7 +352,7 @@ x 70
 y 610
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):ENV:ENV_AGC_MONITOR"
+controlPv "$(DEVICE):ENV:ENV_AGC_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -370,7 +370,7 @@ x 70
 y 630
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):ENV:ENV_DSC_MONITOR"
+controlPv "$(DEVICE):ENV:ENV_DSC_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -388,7 +388,7 @@ x 70
 y 490
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):ENV:ENV_MC_PLL_MONITOR"
+controlPv "$(DEVICE):ENV:ENV_MC_PLL_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -406,7 +406,7 @@ x 70
 y 510
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):ENV:ENV_SC_PLL_MONITOR"
+controlPv "$(DEVICE):ENV:ENV_SC_PLL_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -424,7 +424,7 @@ x 70
 y 690
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):ENV:ENV_SWITCHES_MONITOR"
+controlPv "$(DEVICE):ENV:ENV_SWITCHES_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -442,7 +442,7 @@ x 70
 y 710
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):ENV:ENV_EXTSWITCH_MONITOR"
+controlPv "$(DEVICE):ENV:ENV_EXTSWITCH_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -460,7 +460,7 @@ x 70
 y 730
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):ENV:ENV_TRIGDELAY_MONITOR"
+controlPv "$(DEVICE):ENV:ENV_TRIGDELAY_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -1033,7 +1033,7 @@ x 20
 y 430
 w 130
 h 20
-controlPv "EPICS\\$(DEVICE):ENV:ENV_INTERLOCK_MONITOR"
+controlPv "$(DEVICE):ENV:ENV_INTERLOCK_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 0

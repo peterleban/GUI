@@ -60,7 +60,7 @@ indicatorAlarm
 fgColor index 9
 fgAlarm
 bgColor index 0
-indicatorPv "EPICS\\$(HOSTNAME):$(BSENS):hp_temp:pt1"
+indicatorPv "$(HOSTNAME):$(BSENS):hp_temp:pt1"
 label "pt1"
 showScale
 font "helvetica-medium-r-10.0"
@@ -83,7 +83,7 @@ x 100
 y 280
 w 45
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):hp_temp:pt1"
+controlPv "$(HOSTNAME):$(BSENS):hp_temp:pt1"
 displayMode "decimal"
 precision 4
 fgColor index 14
@@ -345,14 +345,14 @@ y2Max 1
 # Trace Properties
 numTraces 8
 yPv {
-  0 "EPICS\\$(HOSTNAME):$(BSENS):hp_temp:pt1"
-  1 "EPICS\\$(HOSTNAME):$(BSENS):hp_temp:pt2"
-  2 "EPICS\\$(HOSTNAME):$(BSENS):hp_temp:pt3"
-  3 "EPICS\\$(HOSTNAME):$(BSENS):hp_temp:pt4"
-  4 "EPICS\\$(HOSTNAME):$(BSENS):hp_temp:ts1"
-  5 "EPICS\\$(HOSTNAME):$(BSENS):hp_temp:ts2"
-  6 "EPICS\\$(HOSTNAME):$(BSENS):hp_temp:ts3"
-  7 "EPICS\\$(HOSTNAME):$(BSENS):hp_temp:ts4"
+  0 "$(HOSTNAME):$(BSENS):hp_temp:pt1"
+  1 "$(HOSTNAME):$(BSENS):hp_temp:pt2"
+  2 "$(HOSTNAME):$(BSENS):hp_temp:pt3"
+  3 "$(HOSTNAME):$(BSENS):hp_temp:pt4"
+  4 "$(HOSTNAME):$(BSENS):hp_temp:ts1"
+  5 "$(HOSTNAME):$(BSENS):hp_temp:ts2"
+  6 "$(HOSTNAME):$(BSENS):hp_temp:ts3"
+  7 "$(HOSTNAME):$(BSENS):hp_temp:ts4"
 }
 ySigned {
   0 1
@@ -406,7 +406,7 @@ x 100
 y 310
 w 40
 h 10
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):hp_temp:pt1.SCAN"
+controlPv "$(HOSTNAME):$(BSENS):hp_temp:pt1.SCAN"
 font "helvetica-medium-r-8.0"
 fontAlign "right"
 fgColor index 14
@@ -436,7 +436,7 @@ indicatorAlarm
 fgColor index 9
 fgAlarm
 bgColor index 0
-indicatorPv "EPICS\\$(HOSTNAME):$(BSENS):hp_temp:pt2"
+indicatorPv "$(HOSTNAME):$(BSENS):hp_temp:pt2"
 label "pt2"
 showScale
 font "helvetica-medium-r-10.0"
@@ -459,7 +459,7 @@ x 150
 y 280
 w 45
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):hp_temp:pt2"
+controlPv "$(HOSTNAME):$(BSENS):hp_temp:pt2"
 displayMode "decimal"
 precision 4
 fgColor index 14
@@ -480,7 +480,7 @@ x 150
 y 310
 w 40
 h 10
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):hp_temp:pt2.SCAN"
+controlPv "$(HOSTNAME):$(BSENS):hp_temp:pt2.SCAN"
 font "helvetica-medium-r-8.0"
 fontAlign "right"
 fgColor index 14
@@ -510,7 +510,7 @@ indicatorAlarm
 fgColor index 9
 fgAlarm
 bgColor index 0
-indicatorPv "EPICS\\$(HOSTNAME):$(BSENS):hp_temp:pt3"
+indicatorPv "$(HOSTNAME):$(BSENS):hp_temp:pt3"
 label "pt3"
 showScale
 font "helvetica-medium-r-10.0"
@@ -533,7 +533,7 @@ x 200
 y 280
 w 45
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):hp_temp:pt3"
+controlPv "$(HOSTNAME):$(BSENS):hp_temp:pt3"
 displayMode "decimal"
 precision 4
 fgColor index 14
@@ -554,7 +554,7 @@ x 200
 y 310
 w 40
 h 10
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):hp_temp:pt3.SCAN"
+controlPv "$(HOSTNAME):$(BSENS):hp_temp:pt3.SCAN"
 font "helvetica-medium-r-8.0"
 fontAlign "right"
 fgColor index 14
@@ -584,7 +584,7 @@ indicatorAlarm
 fgColor index 9
 fgAlarm
 bgColor index 0
-indicatorPv "EPICS\\$(HOSTNAME):$(BSENS):hp_temp:pt4"
+indicatorPv "$(HOSTNAME):$(BSENS):hp_temp:pt4"
 label "pt4"
 showScale
 font "helvetica-medium-r-10.0"
@@ -607,7 +607,7 @@ x 250
 y 280
 w 45
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):hp_temp:pt4"
+controlPv "$(HOSTNAME):$(BSENS):hp_temp:pt4"
 displayMode "decimal"
 precision 4
 fgColor index 14
@@ -628,7 +628,7 @@ x 250
 y 310
 w 40
 h 10
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):hp_temp:pt4.SCAN"
+controlPv "$(HOSTNAME):$(BSENS):hp_temp:pt4.SCAN"
 font "helvetica-medium-r-8.0"
 fontAlign "right"
 fgColor index 14
@@ -658,7 +658,7 @@ indicatorAlarm
 fgColor index 9
 fgAlarm
 bgColor index 0
-indicatorPv "EPICS\\$(HOSTNAME):$(BSENS):hp_temp:ts1"
+indicatorPv "$(HOSTNAME):$(BSENS):hp_temp:ts1"
 label "ts1"
 showScale
 font "helvetica-medium-r-10.0"
@@ -681,7 +681,7 @@ x 300
 y 280
 w 45
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):hp_temp:ts1"
+controlPv "$(HOSTNAME):$(BSENS):hp_temp:ts1"
 displayMode "decimal"
 precision 4
 fgColor index 14
@@ -702,7 +702,7 @@ x 300
 y 310
 w 40
 h 10
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):hp_temp:ts1.SCAN"
+controlPv "$(HOSTNAME):$(BSENS):hp_temp:ts1.SCAN"
 font "helvetica-medium-r-8.0"
 fontAlign "right"
 fgColor index 14
@@ -732,7 +732,7 @@ indicatorAlarm
 fgColor index 9
 fgAlarm
 bgColor index 0
-indicatorPv "EPICS\\$(HOSTNAME):$(BSENS):hp_temp:ts2"
+indicatorPv "$(HOSTNAME):$(BSENS):hp_temp:ts2"
 label "ts2"
 showScale
 font "helvetica-medium-r-10.0"
@@ -755,7 +755,7 @@ x 350
 y 280
 w 45
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):hp_temp:ts2"
+controlPv "$(HOSTNAME):$(BSENS):hp_temp:ts2"
 displayMode "decimal"
 precision 4
 fgColor index 14
@@ -776,7 +776,7 @@ x 350
 y 310
 w 40
 h 10
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):hp_temp:ts2.SCAN"
+controlPv "$(HOSTNAME):$(BSENS):hp_temp:ts2.SCAN"
 font "helvetica-medium-r-8.0"
 fontAlign "right"
 fgColor index 14
@@ -806,7 +806,7 @@ indicatorAlarm
 fgColor index 9
 fgAlarm
 bgColor index 0
-indicatorPv "EPICS\\$(HOSTNAME):$(BSENS):hp_temp:ts3"
+indicatorPv "$(HOSTNAME):$(BSENS):hp_temp:ts3"
 label "ts3"
 showScale
 font "helvetica-medium-r-10.0"
@@ -829,7 +829,7 @@ x 400
 y 280
 w 45
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):hp_temp:ts3"
+controlPv "$(HOSTNAME):$(BSENS):hp_temp:ts3"
 displayMode "decimal"
 precision 4
 fgColor index 14
@@ -850,7 +850,7 @@ x 400
 y 310
 w 40
 h 10
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):hp_temp:ts3.SCAN"
+controlPv "$(HOSTNAME):$(BSENS):hp_temp:ts3.SCAN"
 font "helvetica-medium-r-8.0"
 fontAlign "right"
 fgColor index 14
@@ -880,7 +880,7 @@ indicatorAlarm
 fgColor index 9
 fgAlarm
 bgColor index 0
-indicatorPv "EPICS\\$(HOSTNAME):$(BSENS):hp_temp:ts4"
+indicatorPv "$(HOSTNAME):$(BSENS):hp_temp:ts4"
 label "ts4"
 showScale
 font "helvetica-medium-r-10.0"
@@ -903,7 +903,7 @@ x 450
 y 280
 w 45
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):hp_temp:ts4"
+controlPv "$(HOSTNAME):$(BSENS):hp_temp:ts4"
 displayMode "decimal"
 precision 4
 fgColor index 14
@@ -924,7 +924,7 @@ x 450
 y 310
 w 40
 h 10
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):hp_temp:ts4.SCAN"
+controlPv "$(HOSTNAME):$(BSENS):hp_temp:ts4.SCAN"
 font "helvetica-medium-r-8.0"
 fontAlign "right"
 fgColor index 14

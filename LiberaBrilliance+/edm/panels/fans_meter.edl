@@ -148,7 +148,7 @@ x 180
 y 10
 w 60
 h 20
-controlPv "EPICS\\$(HOSTNAME):fans_set"
+controlPv "$(HOSTNAME):fans_set"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -234,7 +234,7 @@ x 120
 y 70
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):fans:left_front"
+controlPv "$(HOSTNAME):fans:left_front"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -254,7 +254,7 @@ x 120
 y 100
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):fans:left_middle"
+controlPv "$(HOSTNAME):fans:left_middle"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -274,7 +274,7 @@ x 120
 y 130
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):fans:left_rear"
+controlPv "$(HOSTNAME):fans:left_rear"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -354,7 +354,7 @@ x 290
 y 70
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):fans:right_front"
+controlPv "$(HOSTNAME):fans:right_front"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -374,7 +374,7 @@ x 290
 y 100
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):fans:right_middle"
+controlPv "$(HOSTNAME):fans:right_middle"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -394,7 +394,7 @@ x 290
 y 130
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):fans:right_rear"
+controlPv "$(HOSTNAME):fans:right_rear"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -414,7 +414,7 @@ x 250
 y 10
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):fans"
+controlPv "$(HOSTNAME):fans"
 displayMode "decimal"
 fgColor index 14
 fgAlarm

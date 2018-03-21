@@ -92,11 +92,11 @@ y2MinorsPerMajor 4
 # Trace Properties
 numTraces 5
 yPv {
-  0 "EPICS\\$(DEVICE):$(BPM):sa.A"
-  1 "EPICS\\$(DEVICE):$(BPM):sa.B"
-  2 "EPICS\\$(DEVICE):$(BPM):sa.C"
-  3 "EPICS\\$(DEVICE):$(BPM):sa.D"
-  4 "EPICS\\$(DEVICE):$(BPM):sa.Sum"
+  0 "$(DEVICE):$(BPM):sa.A"
+  1 "$(DEVICE):$(BPM):sa.B"
+  2 "$(DEVICE):$(BPM):sa.C"
+  3 "$(DEVICE):$(BPM):sa.D"
+  4 "$(DEVICE):$(BPM):sa.Sum"
 }
 lineThickness {
   0 2

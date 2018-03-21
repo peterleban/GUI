@@ -144,14 +144,14 @@ y2Max 1
 # Trace Properties
 numTraces 8
 yPv {
-  0 "EPICS\\$(DEVICE):SA:SA_X_MONITOR"
-  1 "EPICS\\$(DEVICE):SA:SA_Y_MONITOR"
-  2 "EPICS\\$(DEVICE):SA:SA_A_MONITOR"
-  3 "EPICS\\$(DEVICE):SA:SA_B_MONITOR"
-  4 "EPICS\\$(DEVICE):SA:SA_C_MONITOR"
-  5 "EPICS\\$(DEVICE):SA:SA_D_MONITOR"
-  6 "EPICS\\$(DEVICE):SA:SA_SUM_MONITOR"
-  7 "EPICS\\$(DEVICE):SA:SA_Q_MONITOR"
+  0 "$(DEVICE):SA:SA_X_MONITOR"
+  1 "$(DEVICE):SA:SA_Y_MONITOR"
+  2 "$(DEVICE):SA:SA_A_MONITOR"
+  3 "$(DEVICE):SA:SA_B_MONITOR"
+  4 "$(DEVICE):SA:SA_C_MONITOR"
+  5 "$(DEVICE):SA:SA_D_MONITOR"
+  6 "$(DEVICE):SA:SA_SUM_MONITOR"
+  7 "$(DEVICE):SA:SA_Q_MONITOR"
 }
 ySigned {
   0 1
@@ -441,7 +441,7 @@ x 630
 y 310
 w 90
 h 30
-controlPv "EPICS\\$(DEVICE):SA:SA_FINISHED_MONITOR"
+controlPv "$(DEVICE):SA:SA_FINISHED_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -481,7 +481,7 @@ x 20
 y 610
 w 90
 h 30
-controlPv "EPICS\\$(DEVICE):SA:SA_STATUS_MONITOR"
+controlPv "$(DEVICE):SA:SA_STATUS_MONITOR"
 displayMode "hex"
 fgColor index 14
 fgAlarm
@@ -638,7 +638,7 @@ x 230
 y 640
 w 90
 h 30
-controlPv "EPICS\\$(DEVICE):ENV:ENV_ADCSP_THRESHOLD_SP"
+controlPv "$(DEVICE):ENV:ENV_ADCSP_THRESHOLD_SP"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -692,7 +692,7 @@ x 350
 y 640
 w 90
 h 30
-controlPv "EPICS\\$(DEVICE):ENV:ENV_ADCSP_NBEFORE_SP"
+controlPv "$(DEVICE):ENV:ENV_ADCSP_NBEFORE_SP"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -746,7 +746,7 @@ x 470
 y 640
 w 90
 h 30
-controlPv "EPICS\\$(DEVICE):ENV:ENV_ADCSP_NAFTER_SP"
+controlPv "$(DEVICE):ENV:ENV_ADCSP_NAFTER_SP"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -766,7 +766,7 @@ x 230
 y 610
 w 90
 h 30
-controlPv "EPICS\\$(DEVICE):ENV:ENV_ADCSP_THRESHOLD_MONITOR"
+controlPv "$(DEVICE):ENV:ENV_ADCSP_THRESHOLD_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -785,7 +785,7 @@ x 350
 y 610
 w 90
 h 30
-controlPv "EPICS\\$(DEVICE):ENV:ENV_ADCSP_NBEFORE_MONITOR"
+controlPv "$(DEVICE):ENV:ENV_ADCSP_NBEFORE_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -804,7 +804,7 @@ x 470
 y 610
 w 90
 h 30
-controlPv "EPICS\\$(DEVICE):ENV:ENV_ADCSP_NAFTER_MONITOR"
+controlPv "$(DEVICE):ENV:ENV_ADCSP_NAFTER_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -829,7 +829,7 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(DEVICE):ENV:ENV_RESET_COUNTER_CMD"
+controlPv "$(DEVICE):ENV:ENV_RESET_COUNTER_CMD"
 onLabel "Reset"
 offLabel "Reset"
 labelType "literal"
@@ -850,7 +850,7 @@ x 120
 y 610
 w 90
 h 30
-controlPv "EPICS\\$(DEVICE):SA:SA_COUNTER_MONITOR"
+controlPv "$(DEVICE):SA:SA_COUNTER_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 0
