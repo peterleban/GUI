@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 245
-y 51
+x 330
+y 455
 w 830
 h 500
 font "helvetica-medium-r-18.0"
@@ -129,13 +129,14 @@ release 1
 x 355
 y 5
 w 70
-h 40
+h 55
 font "helvetica-medium-r-10.0"
 fontAlign "center"
 fgColor index 14
 bgColor index 0
 value {
-  "Threshold"
+  "Auto-trigger"
+  "threshold"
   "[ADC counts]"
 }
 border
@@ -200,7 +201,7 @@ minor 0
 release 0
 x 530
 y 180
-w 100
+w 150
 h 60
 lineColor index 14
 fillColor index 0
@@ -215,7 +216,7 @@ release 1
 x 455
 y 195
 w 70
-h 20
+h 30
 font "helvetica-medium-r-10.0"
 fgColor index 14
 bgColor index 0
@@ -720,56 +721,10 @@ fontAlign "center"
 fgColor index 14
 bgColor index 0
 value {
-  "Loss threshold"
-  "[ADC counts]"
-}
-border
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 540
-y 415
-w 90
-h 25
-font "helvetica-medium-r-10.0"
-fontAlign "center"
-fgColor index 14
-bgColor index 0
-value {
   "Data rate"
   "[Samples/s]"
 }
 border
-endObjectProperties
-
-# (Lines)
-object activeLineClass
-beginObjectProperties
-major 4
-minor 0
-release 1
-x 615
-y 455
-w 45
-h 0
-lineColor index 14
-fillColor index 0
-numPoints 3
-xPoints {
-  0 615
-  1 660
-  2 660
-}
-yPoints {
-  0 455
-  1 455
-  2 455
-}
 endObjectProperties
 
 # (Lines)
@@ -1798,9 +1753,9 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 360
+x 340
 y 95
-w 55
+w 100
 h 20
 controlPv "EPICS\\$(HOSTNAME):threshold:autotrig:$(BLD)_mon"
 font "helvetica-bold-r-12.0"
@@ -1811,6 +1766,7 @@ limitsFromDb
 nullColor index 0
 smartRefresh
 useHexPrefix
+showUnits
 newPos
 objType "controls"
 noExecuteClipMask
@@ -1846,7 +1802,7 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 555
+x 665
 y 445
 w 55
 h 20
@@ -1860,30 +1816,6 @@ nullColor index 0
 smartRefresh
 useHexPrefix
 showUnits
-newPos
-objType "controls"
-noExecuteClipMask
-endObjectProperties
-
-# (Text Control)
-object activeXTextDspClass
-beginObjectProperties
-major 4
-minor 7
-release 0
-x 665
-y 445
-w 55
-h 20
-controlPv "EPICS\\$(HOSTNAME):threshold:loss_count:$(BLD)_mon"
-font "helvetica-bold-r-12.0"
-fontAlign "center"
-fgColor index 14
-bgColor index 0
-limitsFromDb
-nullColor index 0
-smartRefresh
-useHexPrefix
 newPos
 objType "controls"
 noExecuteClipMask
@@ -1968,9 +1900,9 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 590
+x 580
 y 185
-w 35
+w 95
 h 20
 controlPv "EPICS\\$(HOSTNAME):adcmask:offset_mon"
 font "helvetica-bold-r-12.0"
@@ -1981,6 +1913,7 @@ limitsFromDb
 nullColor index 0
 smartRefresh
 useHexPrefix
+showUnits
 newPos
 objType "controls"
 noExecuteClipMask
@@ -1992,9 +1925,9 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 590
+x 580
 y 215
-w 35
+w 95
 h 20
 controlPv "EPICS\\$(HOSTNAME):adcmask:window_mon"
 font "helvetica-bold-r-12.0"
@@ -2005,6 +1938,7 @@ limitsFromDb
 nullColor index 0
 smartRefresh
 useHexPrefix
+showUnits
 newPos
 objType "controls"
 noExecuteClipMask
@@ -2325,7 +2259,7 @@ beginObjectProperties
 major 4
 minor 0
 release 1
-x 345
+x 330
 y 105
 w 0
 h 350
@@ -2333,8 +2267,8 @@ lineColor index 14
 fillColor index 0
 numPoints 2
 xPoints {
-  0 345
-  1 345
+  0 330
+  1 330
 }
 yPoints {
   0 105
@@ -2348,16 +2282,16 @@ beginObjectProperties
 major 4
 minor 0
 release 1
-x 345
+x 330
 y 455
-w 205
+w 330
 h 0
 lineColor index 14
 fillColor index 0
 numPoints 2
 xPoints {
-  0 345
-  1 550
+  0 330
+  1 660
 }
 yPoints {
   0 455

@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 834
-y 88
+x 83
+y 393
 w 650
 h 250
 font "helvetica-medium-r-18.0"
@@ -856,8 +856,8 @@ onColor index 0
 offColor index 0
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):pm:enable.PROC"
-pressValue "0"
+controlPv "EPICS\\$(HOSTNAME):pm:enable"
+pressValue "Execute"
 onLabel "Enabling..."
 offLabel "Enable Postmortem"
 3d
