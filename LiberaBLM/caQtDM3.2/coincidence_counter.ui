@@ -23,7 +23,7 @@
    <string notr="true">background-color: rgb(255, 255, 255);</string>
   </property>
   <property name="Title" stdset="0">
-   <string>Counter data on $(DEVICE), channel $(CH)</string>
+   <string>Coincidence counter data on $(DEVICE), channel $(CH)</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="caStripPlot" name="castripplot">
@@ -36,16 +36,16 @@
      </rect>
     </property>
     <property name="Title" stdset="0">
-     <string notr="true">Counter stream - $(CH)</string>
+     <string notr="true">Coincidence stream - $(CH)</string>
     </property>
     <property name="TitleX">
-     <string notr="true">Counts (at select data rate)</string>
+     <string notr="true">Data stream (at select data rate)</string>
     </property>
     <property name="TitleY">
-     <string notr="true">counts</string>
+     <string notr="true">Simultaneous events</string>
     </property>
     <property name="channels" stdset="0">
-     <string notr="true">$(DEVICE):signals:counter.$(CH)</string>
+     <string notr="true">$(DEVICE):signals:coincidence_counter.$(CH)</string>
     </property>
     <property name="YAxisScaling" stdset="0">
      <enum>caStripPlot::autoScale</enum>
