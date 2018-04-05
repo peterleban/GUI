@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 2005
-y 193
+x 399
+y 78
 w 600
 h 800
 font "helvetica-bold-r-12.0"
@@ -29,7 +29,7 @@ endScreenProperties
 object xyGraphClass
 beginObjectProperties
 major 4
-minor 7
+minor 8
 release 0
 # Geometry
 x 10
@@ -65,6 +65,10 @@ yPv {
   0 "EPICS\\$(HOSTNAME):$(BPM):$(DD1).Ia"
   1 "EPICS\\$(HOSTNAME):$(BPM):$(DD1).Qa"
 }
+ySigned {
+  0 1
+  1 1
+}
 plotColor {
   0 index 14
   1 index 26
@@ -75,7 +79,7 @@ endObjectProperties
 object xyGraphClass
 beginObjectProperties
 major 4
-minor 7
+minor 8
 release 0
 # Geometry
 x 10
@@ -111,6 +115,10 @@ yPv {
   0 "EPICS\\$(HOSTNAME):$(BPM):$(DD1).Ib"
   1 "EPICS\\$(HOSTNAME):$(BPM):$(DD1).Qb"
 }
+ySigned {
+  0 1
+  1 1
+}
 plotColor {
   0 index 14
   1 index 26
@@ -121,7 +129,7 @@ endObjectProperties
 object xyGraphClass
 beginObjectProperties
 major 4
-minor 7
+minor 8
 release 0
 # Geometry
 x 10
@@ -157,6 +165,10 @@ yPv {
   0 "EPICS\\$(HOSTNAME):$(BPM):$(DD1).Ic"
   1 "EPICS\\$(HOSTNAME):$(BPM):$(DD1).Qc"
 }
+ySigned {
+  0 1
+  1 1
+}
 plotColor {
   0 index 14
   1 index 26
@@ -167,7 +179,7 @@ endObjectProperties
 object xyGraphClass
 beginObjectProperties
 major 4
-minor 7
+minor 8
 release 0
 # Geometry
 x 10
@@ -204,6 +216,10 @@ yPv {
   0 "EPICS\\$(HOSTNAME):$(BPM):$(DD1).Id"
   1 "EPICS\\$(HOSTNAME):$(BPM):$(DD1).Qd"
 }
+ySigned {
+  0 1
+  1 1
+}
 plotColor {
   0 index 14
   1 index 26
@@ -229,7 +245,7 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 5
+minor 7
 release 0
 x 360
 y 730
@@ -255,7 +271,7 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 280
 y 730
 w 80
@@ -274,7 +290,7 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 280
 y 760
 w 120
@@ -292,7 +308,7 @@ endObjectProperties
 object activeXTextDspClass
 beginObjectProperties
 major 4
-minor 5
+minor 7
 release 0
 x 400
 y 760
@@ -320,7 +336,7 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 20
 y 720
 w 115
@@ -360,7 +376,7 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 20
 y 745
 w 115
@@ -448,7 +464,7 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 565
 y 730
 w 15
@@ -467,7 +483,7 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 565
 y 760
 w 15
@@ -485,12 +501,12 @@ endObjectProperties
 object activeMessageButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 140
 y 770
 w 95
-h 25
+h 20
 fgColor index 14
 onColor index 0
 offColor index 0
