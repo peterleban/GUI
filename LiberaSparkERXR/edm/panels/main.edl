@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 205
-y 158
+x 1
+y 51
 w 250
 h 600
 font "helvetica-medium-r-18.0"
@@ -734,18 +734,21 @@ botShadowColor index 14
 font "helvetica-bold-r-12.0"
 buttonLabel "Turn-by-turn TDP"
 numPvs 4
-numDsps 2
+numDsps 3
 displayFileName {
   0 "dd_mini.edl"
   1 "dd_mini.edl"
+  2 "dd_mini.edl"
 }
 menuLabel {
   0 "TDP standard"
   1 "TDP averaged"
+  2 "TDP long"
 }
 symbols {
   0 "DD=signals:tdp_synth, TYPE=TDP"
   1 "DD=signals:tdp_synth_d, TYPE=TDP_averaged"
+  2 "DD=signals:tdp_synth_long, TYPE=TDP_long"
 }
 endObjectProperties
 

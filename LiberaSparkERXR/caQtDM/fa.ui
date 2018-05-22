@@ -23,7 +23,7 @@
    <string notr="true">background-color: rgb(255, 255, 255);</string>
   </property>
   <property name="Title" stdset="0">
-   <string>$(DEVICE) &gt;&gt; FA position</string>
+   <string>$(DEVICE): FA position</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="caCartesianPlot" name="cacartesianplot">
@@ -37,6 +37,9 @@
     </property>
     <property name="Title" stdset="0">
      <string notr="true">FA data: X position</string>
+    </property>
+    <property name="TitleX">
+     <string notr="true">FA samples</string>
     </property>
     <property name="TitleY">
      <string notr="true">position [nm]</string>
@@ -63,6 +66,9 @@
     </property>
     <property name="Title" stdset="0">
      <string notr="true">FA data: Y position</string>
+    </property>
+    <property name="TitleX">
+     <string notr="true">FA samples</string>
     </property>
     <property name="TitleY">
      <string notr="true">position [nm]</string>

@@ -23,7 +23,7 @@
    <string notr="true">background-color: rgb(255, 255, 255);</string>
   </property>
   <property name="Title" stdset="0">
-   <string>$(DEVICE) &gt;&gt; SA position</string>
+   <string>$(DEVICE): SA position</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="caStripPlot" name="castripplot">
