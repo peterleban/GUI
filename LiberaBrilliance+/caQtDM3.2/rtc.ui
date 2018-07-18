@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>425</width>
+    <height>370</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>RTC</string>
+  </property>
+  <property name="Title" stdset="0">
+   <string>RTC settings &gt;&gt; $(DEVICE)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="caWaveTable" name="cawavetable">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>25</y>
+      <width>131</width>
+      <height>336</height>
+     </rect>
+    </property>
+    <property name="rowCount">
+     <number>16</number>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(DEVICE):in_mask</string>
+    </property>
+    <property name="numberOfRows">
+     <number>16</number>
+    </property>
+    <property name="numberOfColumns">
+     <number>1</number>
+    </property>
+    <property name="columnSize">
+     <number>100</number>
+    </property>
+    <property name="precisionMode">
+     <enum>caWaveTable::User</enum>
+    </property>
+    <property name="formatType">
+     <enum>caWaveTable::string</enum>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <column/>
+    <item row="0" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="1" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="2" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="3" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="4" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="5" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="6" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="7" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="8" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="9" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="10" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="11" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="12" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="13" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="14" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="15" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>5</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>in_mask</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>5</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>in_function</string>
+    </property>
+   </widget>
+   <widget class="caWaveTable" name="cawavetable_2">
+    <property name="geometry">
+     <rect>
+      <x>145</x>
+      <y>25</y>
+      <width>131</width>
+      <height>336</height>
+     </rect>
+    </property>
+    <property name="rowCount">
+     <number>16</number>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(DEVICE):in_function</string>
+    </property>
+    <property name="numberOfRows">
+     <number>16</number>
+    </property>
+    <property name="numberOfColumns">
+     <number>1</number>
+    </property>
+    <property name="columnSize">
+     <number>100</number>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <column/>
+    <item row="0" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="1" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="2" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="3" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="4" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="5" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="6" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="7" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="8" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="9" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="10" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="11" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="12" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="13" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="14" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="15" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+   </widget>
+   <widget class="caWaveTable" name="cawavetable_3">
+    <property name="geometry">
+     <rect>
+      <x>285</x>
+      <y>25</y>
+      <width>131</width>
+      <height>336</height>
+     </rect>
+    </property>
+    <property name="rowCount">
+     <number>16</number>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(DEVICE):code</string>
+    </property>
+    <property name="numberOfRows">
+     <number>16</number>
+    </property>
+    <property name="numberOfColumns">
+     <number>1</number>
+    </property>
+    <property name="columnSize">
+     <number>100</number>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <column/>
+    <item row="0" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="1" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="2" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="3" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="4" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="5" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="6" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="7" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="8" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="9" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="10" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="11" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="12" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="13" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="14" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+    <item row="15" column="0">
+     <property name="font">
+      <font/>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>5</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>code</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>caWaveTable</class>
+   <extends>QTableWidget</extends>
+   <header>caWaveTable</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -3,7 +3,7 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 1054
+x 1
 y 51
 w 550
 h 560
@@ -400,12 +400,14 @@ botShadowColor index 14
 font "helvetica-medium-r-14.0"
 buttonLabel "TBT - DDC"
 numPvs 4
-numDsps 1
+numDsps 2
 displayFileName {
   0 "dd_ddc_mini.edl"
+  1 "dd_phase"
 }
 menuLabel {
   0 "DDVAR"
+  1 "Phase space"
 }
 symbols {
   0 "DD=ddc_synth, TYPE=DDC"
@@ -1024,7 +1026,7 @@ x 110
 y 85
 w 60
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):tbt:phase_offset_mon"
+controlPv "EPICS\\$(HOSTNAME):$(BPM):tbt:phase_offset_sp"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 24
