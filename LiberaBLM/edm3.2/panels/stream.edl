@@ -66,7 +66,7 @@ y2Max 1
 # Trace Properties
 numTraces 1
 yPv {
-  0 "EPICS\\$(HOSTNAME):$(SIG)"
+  0 "EPICS\\$(HOSTNAME):$(SIG).$(BLD)"
 }
 ySigned {
   0 1
