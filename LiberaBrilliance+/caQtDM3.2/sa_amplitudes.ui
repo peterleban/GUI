@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>960</width>
-    <height>300</height>
+    <height>307</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -23,7 +23,7 @@
    <string notr="true">background-color: rgb(255, 255, 255);</string>
   </property>
   <property name="Title" stdset="0">
-   <string>SA data on $(DEVICE)</string>
+   <string>$(BPM): SA amplitudes</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="caStripPlot" name="castripplot">
@@ -45,7 +45,7 @@
      <string notr="true">amplitude</string>
     </property>
     <property name="channels" stdset="0">
-     <string notr="true">$(DEVICE):signals:sa.A</string>
+     <string notr="true">;$(BPM):sa.Va</string>
     </property>
     <property name="YAxisScaling" stdset="0">
      <enum>caStripPlot::autoScale</enum>
@@ -80,7 +80,7 @@
    <widget class="caStripPlot" name="castripplot_2">
     <property name="geometry">
      <rect>
-      <x>480</x>
+      <x>0</x>
       <y>150</y>
       <width>480</width>
       <height>150</height>
@@ -96,7 +96,7 @@
      <string notr="true">amplitude</string>
     </property>
     <property name="channels" stdset="0">
-     <string notr="true">$(DEVICE):signals:sa.C</string>
+     <string notr="true">;$(BPM):sa.Vc</string>
     </property>
     <property name="YAxisScaling" stdset="0">
      <enum>caStripPlot::autoScale</enum>
@@ -147,7 +147,7 @@
      <string notr="true">amplitude</string>
     </property>
     <property name="channels" stdset="0">
-     <string notr="true">$(DEVICE):signals:sa.B</string>
+     <string notr="true">;$(BPM):sa.Vb</string>
     </property>
     <property name="YAxisScaling" stdset="0">
      <enum>caStripPlot::autoScale</enum>
@@ -182,7 +182,7 @@
    <widget class="caStripPlot" name="castripplot_4">
     <property name="geometry">
      <rect>
-      <x>0</x>
+      <x>480</x>
       <y>150</y>
       <width>480</width>
       <height>150</height>
@@ -198,7 +198,7 @@
      <string notr="true">amplitude</string>
     </property>
     <property name="channels" stdset="0">
-     <string notr="true">$(DEVICE):signals:sa.D</string>
+     <string notr="true">;$(BPM):sa.Vd</string>
     </property>
     <property name="YAxisScaling" stdset="0">
      <enum>caStripPlot::autoScale</enum>

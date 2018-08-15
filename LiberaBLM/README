@@ -1,8 +1,10 @@
-Date: August 21, 2017
+Date: April 24, 2018
 
 Directory content:
 
+  edm3.2    ... EDM panels for libera-ioc version 3.2 and libera-blm version 1.6
+  caQtDM3.2 ... Qt panels for libera-ioc version 3.2 and libera-blm version 1.6
+
+Will soon be removed from Github:
   edm       ... EDM panels for libera-ioc version 3.0 and libera-blm version 1.4
   caQtDM    ... Qt panels for libera-ioc version 3.0 and libera-blm version 1.4
-  edm3.2    ... EDM panels for libera-ioc version 3.2 and libera-blm version 1.4
-  caQtDM3.2 ... Qt panels for libera-ioc version 3.2 and libera-blm version 1.4

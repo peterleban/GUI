@@ -3,9 +3,9 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 2627
-y 497
-w 510
+x 336
+y 159
+w 700
 h 380
 font "helvetica-bold-r-12.0"
 ctlFont "helvetica-bold-r-12.0"
@@ -29,12 +29,12 @@ endScreenProperties
 object xyGraphClass
 beginObjectProperties
 major 4
-minor 7
+minor 8
 release 0
 # Geometry
 x 10
 y 10
-w 400
+w 585
 h 170
 # Appearance
 autoScaleBothDirections
@@ -47,13 +47,13 @@ gridColor index 2
 font "helvetica-medium-r-12.0"
 # Operating Modes
 plotMode "plotLastNPts"
-nPts 300
+nPts 600
 updateTimerMs 100
 # X axis properties
 showXAxis
 xAxisSrc "AutoScale"
 xMin 0
-xMax 300
+xMax 600
 # Y axis properties
 showYAxis
 yAxisSrc "AutoScale"
@@ -77,12 +77,12 @@ endObjectProperties
 object xyGraphClass
 beginObjectProperties
 major 4
-minor 7
+minor 8
 release 0
 # Geometry
 x 10
 y 190
-w 400
+w 585
 h 170
 # Appearance
 autoScaleBothDirections
@@ -95,13 +95,13 @@ gridColor index 2
 font "helvetica-medium-r-12.0"
 # Operating Modes
 plotMode "plotLastNPts"
-nPts 300
+nPts 600
 updateTimerMs 100
 # X axis properties
 showXAxis
 xAxisSrc "AutoScale"
 xMin 0
-xMax 300
+xMax 600
 # Y axis properties
 showYAxis
 yAxisSrc "AutoScale"
@@ -125,10 +125,10 @@ endObjectProperties
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 2
+minor 4
 release 0
-x 415
-y 340
+x 605
+y 345
 w 90
 h 30
 fgColor index 91
@@ -155,11 +155,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
-x 415
-y 35
-w 86
-h 17
+release 1
+x 605
+y 40
+w 83
+h 16
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 0
@@ -176,8 +176,8 @@ beginObjectProperties
 major 10
 minor 0
 release 0
-x 415
-y 55
+x 605
+y 60
 w 85
 h 20
 controlPv "CALC\\deljenje1k($(HOSTNAME):$(BPM):stat:sa:x_mean,1000)"
@@ -197,8 +197,8 @@ beginObjectProperties
 major 10
 minor 0
 release 0
-x 415
-y 105
+x 605
+y 110
 w 85
 h 20
 controlPv "CALC\\deljenje1k($(HOSTNAME):$(BPM):stat:sa:x_std,1)"
@@ -217,11 +217,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
-x 415
-y 215
-w 86
-h 17
+release 1
+x 605
+y 220
+w 82
+h 16
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 0
@@ -237,11 +237,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
-x 415
-y 270
-w 61
-h 17
+release 1
+x 605
+y 275
+w 60
+h 16
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 0
@@ -258,8 +258,8 @@ beginObjectProperties
 major 10
 minor 0
 release 0
-x 415
-y 235
+x 605
+y 240
 w 85
 h 20
 controlPv "CALC\\deljenje1k($(HOSTNAME):$(BPM):stat:sa:y_mean,1000)"
@@ -279,8 +279,8 @@ beginObjectProperties
 major 10
 minor 0
 release 0
-x 415
-y 290
+x 605
+y 295
 w 85
 h 20
 controlPv "CALC\\deljenje1k($(HOSTNAME):$(BPM):stat:sa:y_std,1)"
@@ -299,11 +299,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
-x 415
-y 85
+release 1
+x 605
+y 90
 w 61
-h 17
+h 16
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 0

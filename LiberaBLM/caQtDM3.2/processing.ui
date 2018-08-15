@@ -411,7 +411,7 @@
      <string notr="true">buffer_adc</string>
     </property>
     <property name="args">
-     <string notr="true">DEVICE=$(DEVICE),CH=$(CH)</string>
+     <string notr="true">DEVICE=$(DEVICE),CH=$(CH),SIG=adc</string>
     </property>
    </widget>
    <widget class="caRelatedDisplay" name="carelateddisplay_2">
@@ -430,7 +430,7 @@
      <string notr="true">sum</string>
     </property>
     <property name="args">
-     <string notr="true">DEVICE=$(DEVICE),CH=$(CH)</string>
+     <string notr="true">DEVICE=$(DEVICE),CH=$(CH),SIG=sum</string>
     </property>
    </widget>
    <widget class="caRelatedDisplay" name="carelateddisplay_3">
@@ -449,7 +449,7 @@
      <string notr="true">avg</string>
     </property>
     <property name="args">
-     <string notr="true">DEVICE=$(DEVICE),CH=$(CH)</string>
+     <string notr="true">DEVICE=$(DEVICE),CH=$(CH),SIG=avg</string>
     </property>
    </widget>
    <widget class="caRelatedDisplay" name="carelateddisplay_4">
@@ -468,26 +468,26 @@
      <string notr="true">sa</string>
     </property>
     <property name="args">
-     <string notr="true">DEVICE=$(DEVICE),CH=$(CH)</string>
+     <string notr="true">DEVICE=$(DEVICE),CH=$(CH),SIG=sa</string>
     </property>
    </widget>
    <widget class="caRelatedDisplay" name="carelateddisplay_5">
     <property name="geometry">
      <rect>
       <x>740</x>
-      <y>380</y>
-      <width>86</width>
+      <y>365</y>
+      <width>41</width>
       <height>26</height>
      </rect>
     </property>
     <property name="labels">
-     <string notr="true">count</string>
+     <string notr="true">count1</string>
     </property>
     <property name="files">
      <string notr="true">counter</string>
     </property>
     <property name="args">
-     <string notr="true">DEVICE=$(DEVICE),CH=$(CH)</string>
+     <string notr="true">DEVICE=$(DEVICE),CH=$(CH)1,SIG=counter</string>
     </property>
    </widget>
    <widget class="Line" name="line_18">
@@ -720,7 +720,7 @@
      <string notr="true">buffer_adc</string>
     </property>
     <property name="args">
-     <string notr="true">DEVICE=$(DEVICE),CH=$(CH)</string>
+     <string notr="true">DEVICE=$(DEVICE),CH=$(CH),SIG=adc_synth</string>
     </property>
    </widget>
    <widget class="caRelatedDisplay" name="carelateddisplay_9">
@@ -824,7 +824,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Reset auto</string>
+     <string>Reset auto-trigger</string>
     </property>
     <property name="fontScaleMode">
      <enum>EPushButton::WidthAndHeight</enum>
@@ -1064,7 +1064,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(170, 255, 127);</string>
+     <string notr="true">background-color: rgba(255, 255, 255, 255); color: rgba(0, 0, 0, 255);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1093,7 +1093,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(170, 255, 127);</string>
+     <string notr="true">background-color: rgba(255, 255, 255, 255); color: rgba(0, 0, 0, 255);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2050,6 +2050,44 @@ channel</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="caRelatedDisplay" name="carelateddisplay_6">
+    <property name="geometry">
+     <rect>
+      <x>785</x>
+      <y>365</y>
+      <width>41</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="labels">
+     <string notr="true">count2</string>
+    </property>
+    <property name="files">
+     <string notr="true">counter</string>
+    </property>
+    <property name="args">
+     <string notr="true">DEVICE=$(DEVICE),CH=$(CH)2,SIG=counter</string>
+    </property>
+   </widget>
+   <widget class="caRelatedDisplay" name="carelateddisplay_7">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>395</y>
+      <width>86</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="labels">
+     <string notr="true">coincidence</string>
+    </property>
+    <property name="files">
+     <string notr="true">coincidence_counter</string>
+    </property>
+    <property name="args">
+     <string notr="true">DEVICE=$(DEVICE),CH=$(CH),SIG=coincidence_counter</string>
     </property>
    </widget>
   </widget>

@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>679</width>
+    <height>736</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Single pass</string>
+  </property>
+  <property name="Title" stdset="0">
+   <string>Single Pass &gt;&gt; $(BPM)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="caMenu" name="sp_orientation">
+    <property name="geometry">
+     <rect>
+      <x>145</x>
+      <y>5</y>
+      <width>116</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(BPM):sp:orientation_sp</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>5</y>
+      <width>106</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Orientation</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>35</y>
+      <width>196</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>ADC threshold [ADC counts]</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>65</y>
+      <width>196</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>ADC smp before threshold</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>90</y>
+      <width>196</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>ADC smp after threshold</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>375</x>
+      <y>30</y>
+      <width>10</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>397</x>
+      <y>35</y>
+      <width>206</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Bunch detected at ADC smp</string>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="adc_threshold_2">
+    <property name="geometry">
+     <rect>
+      <x>602</x>
+      <y>35</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(BPM):sp.Thr_Idx</string>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>170</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>127</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>392</x>
+      <y>65</y>
+      <width>166</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Last Trigger counter</string>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="adc_threshold_3">
+    <property name="geometry">
+     <rect>
+      <x>557</x>
+      <y>65</y>
+      <width>96</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(BPM):events:trigger:count</string>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>170</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>127</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="adc_threshold_4">
+    <property name="geometry">
+     <rect>
+      <x>557</x>
+      <y>90</y>
+      <width>96</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(BPM):events:trigger:timestamp</string>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>170</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>127</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>392</x>
+      <y>90</y>
+      <width>166</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Last Trigger timestamp</string>
+    </property>
+   </widget>
+   <widget class="caCartesianPlot" name="cacartesianplot">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>130</y>
+      <width>661</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="Title" stdset="0">
+     <string notr="true">Horizontal position</string>
+    </property>
+    <property name="TitleX">
+     <string notr="true">shots</string>
+    </property>
+    <property name="TitleY">
+     <string notr="true">position [nm]</string>
+    </property>
+    <property name="channels_1" stdset="0">
+     <string notr="true">;$(BPM):sp.X</string>
+    </property>
+    <property name="symbol_1">
+     <enum>caCartesianPlot::Diamond</enum>
+    </property>
+    <property name="color_1">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="plotMode">
+     <enum>caCartesianPlot::PlotLastNPoints</enum>
+    </property>
+    <property name="countNumOrChannel" stdset="0">
+     <string notr="true">60</string>
+    </property>
+    <property name="eraseMode">
+     <enum>caCartesianPlot::ifnotzero</enum>
+    </property>
+   </widget>
+   <widget class="caCartesianPlot" name="cacartesianplot_2">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>330</y>
+      <width>661</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="Title" stdset="0">
+     <string notr="true">Vertical position</string>
+    </property>
+    <property name="TitleX">
+     <string notr="true">shots</string>
+    </property>
+    <property name="TitleY">
+     <string notr="true">position [nm]</string>
+    </property>
+    <property name="channels_1" stdset="0">
+     <string notr="true">;$(BPM):sp.Y</string>
+    </property>
+    <property name="symbol_1">
+     <enum>caCartesianPlot::Diamond</enum>
+    </property>
+    <property name="color_1">
+     <color>
+      <red>255</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="plotMode">
+     <enum>caCartesianPlot::PlotLastNPoints</enum>
+    </property>
+    <property name="countNumOrChannel" stdset="0">
+     <string notr="true">60</string>
+    </property>
+    <property name="eraseMode">
+     <enum>caCartesianPlot::ifnotzero</enum>
+    </property>
+   </widget>
+   <widget class="caCartesianPlot" name="cacartesianplot_3">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>530</y>
+      <width>661</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="Title" stdset="0">
+     <string notr="true">SUM</string>
+    </property>
+    <property name="TitleX">
+     <string notr="true">shots</string>
+    </property>
+    <property name="TitleY">
+     <string notr="true">amplitude [a.u.]</string>
+    </property>
+    <property name="channels_1" stdset="0">
+     <string notr="true">;$(BPM):sp.Sum</string>
+    </property>
+    <property name="symbol_1">
+     <enum>caCartesianPlot::Diamond</enum>
+    </property>
+    <property name="color_1">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="plotMode">
+     <enum>caCartesianPlot::PlotLastNPoints</enum>
+    </property>
+    <property name="countNumOrChannel" stdset="0">
+     <string notr="true">60</string>
+    </property>
+    <property name="eraseMode">
+     <enum>caCartesianPlot::ifnotzero</enum>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_15">
+    <property name="geometry">
+     <rect>
+      <x>265</x>
+      <y>35</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans Serif</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(BPM):sp:adc_thr_mon</string>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+    <property name="frameLineWidth" stdset="0">
+     <number>1</number>
+    </property>
+    <property name="fontScaleMode">
+     <enum>caLineEdit::WidthAndHeight</enum>
+    </property>
+    <property name="unitsEnabled">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="bpmid">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>35</y>
+      <width>50</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>FreeSans</family>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
+    </property>
+    <property name="cursorPosition">
+     <number>0</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(BPM):sp:adc_thr_sp</string>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>170</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>127</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+    <property name="fontScaleMode">
+     <enum>caLineEdit::WidthAndHeight</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="bpmid_2">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>60</y>
+      <width>50</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>FreeSans</family>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
+    </property>
+    <property name="cursorPosition">
+     <number>0</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(BPM):sp:n_before_sp</string>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>170</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>127</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+    <property name="fontScaleMode">
+     <enum>caLineEdit::WidthAndHeight</enum>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_16">
+    <property name="geometry">
+     <rect>
+      <x>265</x>
+      <y>60</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans Serif</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(BPM):sp:n_before_mon</string>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+    <property name="frameLineWidth" stdset="0">
+     <number>1</number>
+    </property>
+    <property name="fontScaleMode">
+     <enum>caLineEdit::WidthAndHeight</enum>
+    </property>
+    <property name="unitsEnabled">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="bpmid_3">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>85</y>
+      <width>50</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>FreeSans</family>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
+    </property>
+    <property name="cursorPosition">
+     <number>0</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(BPM):sp:n_after_sp</string>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>170</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>127</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+    <property name="fontScaleMode">
+     <enum>caLineEdit::WidthAndHeight</enum>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_17">
+    <property name="geometry">
+     <rect>
+      <x>265</x>
+      <y>85</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans Serif</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(BPM):sp:n_after_mon</string>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+    <property name="frameLineWidth" stdset="0">
+     <number>1</number>
+    </property>
+    <property name="fontScaleMode">
+     <enum>caLineEdit::WidthAndHeight</enum>
+    </property>
+    <property name="unitsEnabled">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_18">
+    <property name="geometry">
+     <rect>
+      <x>265</x>
+      <y>10</y>
+      <width>86</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans Serif</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(BPM):sp:orientation_mon</string>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+    <property name="frameLineWidth" stdset="0">
+     <number>1</number>
+    </property>
+    <property name="fontScaleMode">
+     <enum>caLineEdit::WidthAndHeight</enum>
+    </property>
+    <property name="unitsEnabled">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QwtPlot</class>
+   <extends>QFrame</extends>
+   <header>qwt_plot.h</header>
+  </customwidget>
+  <customwidget>
+   <class>caMenu</class>
+   <extends>QComboBox</extends>
+   <header>caMenu</header>
+  </customwidget>
+  <customwidget>
+   <class>caTextEntry</class>
+   <extends>caLineEdit</extends>
+   <header>caTextEntry</header>
+  </customwidget>
+  <customwidget>
+   <class>caLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>caLineEdit</header>
+  </customwidget>
+  <customwidget>
+   <class>caCartesianPlot</class>
+   <extends>QwtPlot</extends>
+   <header>caCartesianPlot</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>5</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>5</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>true</bool>
+  </property>
+ </designerdata>
+</ui>

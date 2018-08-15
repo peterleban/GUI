@@ -1,0 +1,1160 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 449
+y 240
+w 410
+h 620
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-18.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+title "GDX module on $(HOSTNAME)"
+showGrid
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 320
+w 395
+h 295
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 15
+w 395
+h 285
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 5
+w 175
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 0
+bgColor index 9
+value {
+  "Grouping status"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 5
+w 175
+h 20
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 40
+w 50
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "SFP3"
+}
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 60
+y 40
+w 65
+h 20
+controlPv "$(HOSTNAME):gdx:grouping:sfp:status3"
+fgColor index 14
+fgAlarm
+bgColor index 0
+fill
+font "helvetica-medium-r-14.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 90
+w 116
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Grouping timeout"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 85
+y 20
+w 55
+h 22
+font "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+id "timing"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 60
+y 65
+w 65
+h 20
+controlPv "$(HOSTNAME):gdx:grouping:sfp:status4"
+fgColor index 14
+fgAlarm
+bgColor index 0
+fill
+font "helvetica-medium-r-14.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 65
+w 50
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "SFP4"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 205
+y 90
+w 110
+h 20
+controlPv "$(HOSTNAME):gdx:grouping:timeout_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+showUnits
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 130
+y 90
+w 70
+h 20
+controlPv "$(HOSTNAME):gdx:grouping:timeout_sp"
+font "helvetica-medium-r-14.0"
+fontAlign "right"
+fgColor index 24
+bgColor index 0
+editable
+motifWidget
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 130
+y 40
+w 70
+h 20
+font "helvetica-medium-r-10.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "15 is OK"
+}
+border
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 130
+y 65
+w 70
+h 20
+font "helvetica-medium-r-10.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "15 is OK"
+}
+border
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 205
+y 40
+w 80
+h 20
+fgColor index 14
+onColor index 53
+offColor index 53
+topShadowColor index 0
+botShadowColor index 14
+controlPv "$(HOSTNAME):gdx:grouping:sfp:status3:clear"
+pressValue "Execute"
+onLabel "Reseting"
+offLabel "Clear status"
+3d
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 205
+y 65
+w 80
+h 20
+fgColor index 14
+onColor index 53
+offColor index 53
+topShadowColor index 0
+botShadowColor index 14
+controlPv "$(HOSTNAME):gdx:grouping:sfp:status4:clear"
+pressValue "Execute"
+onLabel "Reseting"
+offLabel "Clear status"
+3d
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Coef Table)
+object activeCoefTableClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 15
+y 155
+w 80
+h 100
+fgColor index 14
+bgColor index 3
+oddColBgColor index 0
+evenColBgColor index 1
+topShadowColor index 0
+botShadowColor index 3
+pv "$(HOSTNAME):gdx:i2c:SI5338:MsP1"
+labels "SFP3,SFP4,SFP1,SFP2,gen."
+numElements 5
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Coef Table)
+object activeCoefTableClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 95
+y 155
+w 80
+h 100
+fgColor index 14
+bgColor index 3
+oddColBgColor index 0
+evenColBgColor index 1
+topShadowColor index 0
+botShadowColor index 3
+pv "$(HOSTNAME):gdx:i2c:SI5338:MsP2"
+labels "SFP3,SFP4,SFP1,SFP2,gen."
+numElements 5
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Coef Table)
+object activeCoefTableClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 175
+y 155
+w 80
+h 100
+fgColor index 14
+bgColor index 3
+oddColBgColor index 0
+evenColBgColor index 1
+topShadowColor index 0
+botShadowColor index 3
+pv "$(HOSTNAME):gdx:i2c:SI5338:MsP3"
+labels "SFP3,SFP4,SFP1,SFP2,gen."
+numElements 5
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Coef Table)
+object activeCoefTableClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 255
+y 155
+w 80
+h 100
+fgColor index 14
+bgColor index 3
+oddColBgColor index 0
+evenColBgColor index 1
+topShadowColor index 0
+botShadowColor index 3
+pv "$(HOSTNAME):gdx:i2c:SI5338:outDx"
+labels "SFP3,SFP4,SFP1,SFP2,gen."
+numElements 4
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 30
+y 130
+w 50
+h 20
+font "helvetica-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "MsP1"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 110
+y 130
+w 50
+h 20
+font "helvetica-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "MsP2"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 190
+y 130
+w 50
+h 20
+font "helvetica-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "MsP3"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 270
+y 130
+w 50
+h 20
+font "helvetica-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "outDx"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 265
+w 50
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "kphi"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 175
+y 265
+w 50
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "mcal"
+}
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 65
+y 265
+w 65
+h 20
+controlPv "$(HOSTNAME):gdx:i2c:SI5338:pll_kphi"
+fgColor index 14
+fgAlarm
+bgColor index 0
+fill
+font "helvetica-medium-r-14.0"
+fontAlign "center"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 230
+y 265
+w 65
+h 20
+controlPv "$(HOSTNAME):gdx:i2c:SI5338:pll_mcal"
+fgColor index 14
+fgAlarm
+bgColor index 0
+fill
+font "helvetica-medium-r-14.0"
+fontAlign "center"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 195
+y 340
+w 115
+h 25
+fgColor index 14
+bgColor index 0
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "$(HOSTNAME):gdx:gbe:enable_sp"
+indicatorPv "$(HOSTNAME):gdx:gbe:enable_mon"
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 340
+w 180
+h 25
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GbE output (SFP) enabled"
+}
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 195
+y 370
+w 115
+h 20
+fgColor index 14
+onColor index 53
+offColor index 53
+topShadowColor index 0
+botShadowColor index 14
+controlPv "$(HOSTNAME):gdx:gbe:reconnect"
+pressValue "Execute"
+onLabel "Reconnecting"
+offLabel "Reconnect"
+3d
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 400
+w 170
+h 25
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Group size (no.of BPMs)"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 250
+y 400
+w 60
+h 20
+controlPv "$(HOSTNAME):gdx:group_size_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+showUnits
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 195
+y 400
+w 50
+h 20
+controlPv "$(HOSTNAME):gdx:group_size_sp"
+font "helvetica-medium-r-14.0"
+fontAlign "right"
+fgColor index 24
+bgColor index 0
+editable
+motifWidget
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 450
+w 80
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "SFP2 IP"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 475
+w 80
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "SFP2 MAC"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 500
+w 80
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "SFP2 PORT"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 270
+y 450
+w 115
+h 20
+controlPv "$(HOSTNAME):gdx:gbe:src:ip_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 135
+y 450
+w 130
+h 20
+controlPv "$(HOSTNAME):gdx:gbe:src:ip_sp"
+font "helvetica-medium-r-14.0"
+fontAlign "right"
+fgColor index 24
+bgColor index 0
+editable
+motifWidget
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 270
+y 475
+w 115
+h 20
+controlPv "$(HOSTNAME):gdx:gbe:src:mac_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 135
+y 475
+w 130
+h 20
+controlPv "$(HOSTNAME):gdx:gbe:src:mac_sp"
+font "helvetica-medium-r-14.0"
+fontAlign "right"
+fgColor index 24
+bgColor index 0
+editable
+motifWidget
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 135
+y 500
+w 130
+h 20
+controlPv "$(HOSTNAME):gdx:gbe:src:port_sp"
+font "helvetica-medium-r-14.0"
+fontAlign "right"
+fgColor index 24
+bgColor index 0
+editable
+motifWidget
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 270
+y 500
+w 115
+h 20
+controlPv "$(HOSTNAME):gdx:gbe:src:port_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 530
+w 115
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Receiver's IP"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 555
+w 115
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Receiver's MAC"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 580
+w 115
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Receiver's PORT"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 270
+y 530
+w 115
+h 20
+controlPv "$(HOSTNAME):gdx:gbe:dest:ip_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 135
+y 530
+w 130
+h 20
+controlPv "$(HOSTNAME):gdx:gbe:dest:ip_sp"
+font "helvetica-medium-r-14.0"
+fontAlign "right"
+fgColor index 24
+bgColor index 0
+editable
+motifWidget
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 270
+y 555
+w 115
+h 20
+controlPv "$(HOSTNAME):gdx:gbe:dest:mac_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 135
+y 555
+w 130
+h 20
+controlPv "$(HOSTNAME):gdx:gbe:dest:mac_sp"
+font "helvetica-medium-r-14.0"
+fontAlign "right"
+fgColor index 24
+bgColor index 0
+editable
+motifWidget
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 135
+y 580
+w 130
+h 20
+controlPv "$(HOSTNAME):gdx:gbe:dest:port_sp"
+font "helvetica-medium-r-14.0"
+fontAlign "right"
+fgColor index 24
+bgColor index 0
+editable
+motifWidget
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 270
+y 580
+w 115
+h 20
+controlPv "$(HOSTNAME):gdx:gbe:dest:port_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 310
+w 175
+h 20
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 310
+w 175
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 0
+bgColor index 9
+value {
+  "Grouping output"
+}
+endObjectProperties
+

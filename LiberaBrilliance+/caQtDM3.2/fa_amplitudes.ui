@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>960</width>
-    <height>300</height>
+    <height>320</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -23,14 +23,14 @@
    <string notr="true">background-color: rgb(255, 255, 255);</string>
   </property>
   <property name="Title" stdset="0">
-   <string>FA data on $(DEVICE)</string>
+   <string>$(BPM): FA amplitudes</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="caCartesianPlot" name="cacartesianplot">
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>0</y>
+      <y>20</y>
       <width>480</width>
       <height>150</height>
      </rect>
@@ -45,7 +45,7 @@
      <string notr="true">amplitude</string>
     </property>
     <property name="channels_1" stdset="0">
-     <string notr="true">;$(DEVICE):signals:fa.A</string>
+     <string notr="true">;$(BPM):fa.Va</string>
     </property>
     <property name="color_1">
      <color>
@@ -58,8 +58,8 @@
    <widget class="caCartesianPlot" name="cacartesianplot_2">
     <property name="geometry">
      <rect>
-      <x>480</x>
-      <y>150</y>
+      <x>0</x>
+      <y>170</y>
       <width>480</width>
       <height>150</height>
      </rect>
@@ -74,36 +74,7 @@
      <string notr="true">amplitude</string>
     </property>
     <property name="channels_1" stdset="0">
-     <string notr="true">;$(DEVICE):signals:fa.C</string>
-    </property>
-    <property name="color_1">
-     <color>
-      <red>0</red>
-      <green>0</green>
-      <blue>0</blue>
-     </color>
-    </property>
-   </widget>
-   <widget class="caCartesianPlot" name="cacartesianplot_4">
-    <property name="geometry">
-     <rect>
-      <x>480</x>
-      <y>0</y>
-      <width>480</width>
-      <height>150</height>
-     </rect>
-    </property>
-    <property name="Title" stdset="0">
-     <string notr="true">FA data: B</string>
-    </property>
-    <property name="TitleX">
-     <string notr="true">FA samples</string>
-    </property>
-    <property name="TitleY">
-     <string notr="true">amplitude</string>
-    </property>
-    <property name="channels_1" stdset="0">
-     <string notr="true">;$(DEVICE):signals:fa.B</string>
+     <string notr="true">;$(BPM):fa.Vc</string>
     </property>
     <property name="color_1">
      <color>
@@ -116,8 +87,8 @@
    <widget class="caCartesianPlot" name="cacartesianplot_3">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>150</y>
+      <x>480</x>
+      <y>170</y>
       <width>480</width>
       <height>150</height>
      </rect>
@@ -132,7 +103,7 @@
      <string notr="true">amplitude</string>
     </property>
     <property name="channels_1" stdset="0">
-     <string notr="true">;$(DEVICE):signals:fa.D</string>
+     <string notr="true">;$(BPM):fa.Vd</string>
     </property>
     <property name="color_1">
      <color>
@@ -142,6 +113,54 @@
      </color>
     </property>
    </widget>
+   <widget class="caCartesianPlot" name="cacartesianplot_4">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>20</y>
+      <width>480</width>
+      <height>150</height>
+     </rect>
+    </property>
+    <property name="Title" stdset="0">
+     <string notr="true">FA data: B</string>
+    </property>
+    <property name="TitleX">
+     <string notr="true">FA samples</string>
+    </property>
+    <property name="TitleY">
+     <string notr="true">amplitude</string>
+    </property>
+    <property name="channels_1" stdset="0">
+     <string notr="true">;$(BPM):fa.Vb</string>
+    </property>
+    <property name="color_1">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+   </widget>
+   <widget class="caToggleButton" name="catogglebutton">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>0</y>
+      <width>136</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Enable FA readout</string>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(BPM):fa.SCAN</string>
+    </property>
+    <property name="trueValue">
+     <string>2</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <customwidgets>
@@ -149,6 +168,11 @@
    <class>QwtPlot</class>
    <extends>QFrame</extends>
    <header>qwt_plot.h</header>
+  </customwidget>
+  <customwidget>
+   <class>caToggleButton</class>
+   <extends>QCheckBox</extends>
+   <header>caToggleButton</header>
   </customwidget>
   <customwidget>
    <class>caCartesianPlot</class>

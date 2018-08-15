@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 2419
-y 359
+x 51
+y 77
 w 740
 h 430
 font "helvetica-bold-r-12.0"
@@ -42,7 +42,7 @@ endObjectProperties
 object xyGraphClass
 beginObjectProperties
 major 4
-minor 7
+minor 8
 release 0
 # Geometry
 x 10
@@ -58,14 +58,14 @@ gridColor index 9
 font "helvetica-medium-r-12.0"
 # Operating Modes
 plotMode "plotLastNPts"
-nPts 300
+nPts 600
 traceCtlPv "LOC\\$(BPM)_$(SS)_traces=i:0"
 resetPv "LOC\\$(BPM)_$(SS)_reset=i:0"
 # X axis properties
 showXAxis
 xAxisSrc "fromUser"
 xMin 0
-xMax 300
+xMax 600
 xLabelIntervals 4
 xMajorsPerLabel 1
 xMinorsPerMajor 8
@@ -120,7 +120,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 640
 y 80
@@ -148,7 +148,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 640
 y 100
@@ -176,7 +176,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 640
 y 120
@@ -204,7 +204,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 640
 y 140
@@ -232,7 +232,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 640
 y 160
@@ -260,7 +260,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 640
 y 30
@@ -289,7 +289,7 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 630
 y 10
 w 90
@@ -309,7 +309,7 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 630
 y 60
 w 90

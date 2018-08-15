@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>866</width>
+    <height>393</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FOFB</string>
+  </property>
+  <property name="Title" stdset="0">
+   <string>GDX2</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="caFrame" name="caframe_2">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>55</y>
+      <width>856</width>
+      <height>176</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(231, 231, 231);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="midLineWidth">
+     <number>1</number>
+    </property>
+    <property name="background">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="backgroundMode">
+     <enum>caFrame::Filled</enum>
+    </property>
+    <widget class="QLabel" name="label_39">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>146</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Allowed consecutive
+missing FA samples</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="caToggleButton" name="catogglebutton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>5</y>
+       <width>231</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Enable missing BPM ID detection</string>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(DEVICE):grdiag:detection_enable</string>
+     </property>
+    </widget>
+    <widget class="caApplyNumeric" name="caapplynumeric">
+     <property name="geometry">
+      <rect>
+       <x>135</x>
+       <y>30</y>
+       <width>91</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="decimalDigits" stdset="0">
+      <number>0</number>
+     </property>
+     <property name="buttonPos" stdset="0">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="buttonText">
+      <string>(re)Set</string>
+     </property>
+     <property name="digitsFontScaleEnabled">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(DEVICE):grdiag:zeros_allowed</string>
+     </property>
+     <property name="precisionMode">
+      <enum>caApplyNumeric::User</enum>
+     </property>
+     <property name="fixedFormat">
+      <bool>true</bool>
+     </property>
+     <property name="limitsMode">
+      <enum>caApplyNumeric::User</enum>
+     </property>
+     <property name="maxValue">
+      <double>15.000000000000000</double>
+     </property>
+     <property name="minValue">
+      <double>0.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="caCartesianPlot" name="cacartesianplot_2">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>70</y>
+       <width>826</width>
+       <height>100</height>
+      </rect>
+     </property>
+     <property name="TitleX">
+      <string notr="true">BPM IDs</string>
+     </property>
+     <property name="channels_1" stdset="0">
+      <string notr="true">;$(DEVICE):grdiag:missing_ids</string>
+     </property>
+     <property name="Style_1">
+      <enum>caCartesianPlot::Dots</enum>
+     </property>
+     <property name="symbol_1">
+      <enum>caCartesianPlot::Ellipse</enum>
+     </property>
+     <property name="color_1">
+      <color>
+       <red>170</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="grid">
+      <bool>false</bool>
+     </property>
+     <property name="XaxisScaling" stdset="0">
+      <enum>caCartesianPlot::Channel</enum>
+     </property>
+     <property name="YaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="YaxisLimits">
+      <string>not present;present</string>
+     </property>
+     <property name="YaxisEnabled">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="caLed" name="caled">
+     <property name="geometry">
+      <rect>
+       <x>825</x>
+       <y>5</y>
+       <width>30</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="rectangular">
+      <bool>true</bool>
+     </property>
+     <property name="angle">
+      <number>0</number>
+     </property>
+     <property name="linearGradient">
+      <bool>false</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(DEVICE):grdiag:zeros_detected</string>
+     </property>
+     <property name="falseColor">
+      <color>
+       <red>0</red>
+       <green>255</green>
+       <blue>0</blue>
+      </color>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_40">
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>5</y>
+       <width>106</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Zeros detected</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_41">
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>25</y>
+       <width>106</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>FOFB running</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="caLed" name="caled_2">
+     <property name="geometry">
+      <rect>
+       <x>825</x>
+       <y>25</y>
+       <width>30</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="rectangular">
+      <bool>true</bool>
+     </property>
+     <property name="angle">
+      <number>0</number>
+     </property>
+     <property name="linearGradient">
+      <bool>false</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(DEVICE):grdiag:fofb_stopped</string>
+     </property>
+     <property name="falseColor">
+      <color>
+       <red>0</red>
+       <green>255</green>
+       <blue>0</blue>
+      </color>
+     </property>
+    </widget>
+    <widget class="caMessageButton" name="camessagebutton">
+     <property name="geometry">
+      <rect>
+       <x>699</x>
+       <y>5</y>
+       <width>16</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(DEVICE):grdiag:zeros_detected_reset</string>
+     </property>
+     <property name="label">
+      <string notr="true">C</string>
+     </property>
+     <property name="releaseMessage">
+      <string notr="true">0</string>
+     </property>
+     <property name="pressMessage">
+      <string notr="true">0</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_26">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>35</y>
+      <width>191</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>Grouping diagnostics</string>
+    </property>
+   </widget>
+   <widget class="caFrame" name="caframe_3">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>260</y>
+      <width>856</width>
+      <height>126</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(231, 231, 231);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="midLineWidth">
+     <number>1</number>
+    </property>
+    <property name="background">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="backgroundMode">
+     <enum>caFrame::Filled</enum>
+    </property>
+    <widget class="caWaveTable" name="cawavetable">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>826</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="showGrid">
+      <bool>true</bool>
+     </property>
+     <property name="cornerButtonEnabled">
+      <bool>false</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(DEVICE):mdiag:magnet_values</string>
+     </property>
+     <property name="numberOfColumns">
+      <number>8</number>
+     </property>
+     <attribute name="horizontalHeaderCascadingSectionResizes">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderCascadingSectionResizes">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <row/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <item row="0" column="0">
+      <property name="font">
+       <font/>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="font">
+       <font/>
+      </property>
+     </item>
+     <item row="0" column="2">
+      <property name="font">
+       <font/>
+      </property>
+     </item>
+     <item row="0" column="3">
+      <property name="font">
+       <font/>
+      </property>
+     </item>
+     <item row="0" column="4">
+      <property name="font">
+       <font/>
+      </property>
+     </item>
+     <item row="0" column="5">
+      <property name="font">
+       <font/>
+      </property>
+     </item>
+     <item row="0" column="6">
+      <property name="font">
+       <font/>
+      </property>
+     </item>
+     <item row="0" column="7">
+      <property name="font">
+       <font/>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_42">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>396</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Number of output packets (header + magnet packets + footer)</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_43">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>396</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>DAC values (first 8 packets; 1st is a header)</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="caTextEntry" name="bpmid">
+     <property name="geometry">
+      <rect>
+       <x>405</x>
+       <y>5</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Monospace</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(231, 231, 231, 255); color: rgba(60, 60, 60, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(115, 115, 115, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(115, 115, 115, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
+     </property>
+     <property name="cursorPosition">
+      <number>0</number>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(DEVICE):mdiag:output_packets</string>
+     </property>
+     <property name="fontScaleMode">
+      <enum>caLineEdit::WidthAndHeight</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_27">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>240</y>
+      <width>191</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>Magnet diagnostics</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QwtPlot</class>
+   <extends>QFrame</extends>
+   <header>qwt_plot.h</header>
+  </customwidget>
+  <customwidget>
+   <class>caApplyNumeric</class>
+   <extends>QWidget</extends>
+   <header>caApplyNumeric</header>
+  </customwidget>
+  <customwidget>
+   <class>caTextEntry</class>
+   <extends>caLineEdit</extends>
+   <header>caTextEntry</header>
+  </customwidget>
+  <customwidget>
+   <class>caMessageButton</class>
+   <extends>QPushButton</extends>
+   <header>caMessageButton</header>
+  </customwidget>
+  <customwidget>
+   <class>caToggleButton</class>
+   <extends>QCheckBox</extends>
+   <header>caToggleButton</header>
+  </customwidget>
+  <customwidget>
+   <class>caFrame</class>
+   <extends>QFrame</extends>
+   <header>caFrame</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>caLed</class>
+   <extends>QWidget</extends>
+   <header>caLed</header>
+  </customwidget>
+  <customwidget>
+   <class>caLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>caLineEdit</header>
+  </customwidget>
+  <customwidget>
+   <class>caCartesianPlot</class>
+   <extends>QwtPlot</extends>
+   <header>caCartesianPlot</header>
+  </customwidget>
+  <customwidget>
+   <class>caWaveTable</class>
+   <extends>QTableWidget</extends>
+   <header>caWaveTable</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>5</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>5</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>true</bool>
+  </property>
+ </designerdata>
+</ui>

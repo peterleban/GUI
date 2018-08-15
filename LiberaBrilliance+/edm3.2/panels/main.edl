@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 174
-y 51
+x 175
+y 78
 w 400
 h 250
 font "helvetica-medium-r-18.0"
@@ -269,7 +269,10 @@ botShadowColor index 14
 font "helvetica-medium-r-14.0"
 buttonLabel "GDX"
 numPvs 4
-numDsps 0
+numDsps 1
+displayFileName {
+  0 "gdx3"
+}
 endObjectProperties
 
 # (Text Monitor)

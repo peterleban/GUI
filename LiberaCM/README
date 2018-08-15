@@ -1,0 +1,10 @@
+Date: April 3, 2018
+
+Directory content:
+
+  caQtDM ... Qt panels for Libera Photon / Current Meter
+
+Pre-requisites:
+
+  libera-ioc3.2
+  libera-ioc-photon-cm

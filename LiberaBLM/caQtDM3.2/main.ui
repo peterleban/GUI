@@ -1602,81 +1602,6 @@
       <enum>caRowColMenu::Menu</enum>
      </property>
     </widget>
-    <widget class="caRelatedDisplay" name="carelateddisplay_4">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>35</y>
-       <width>126</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="label">
-      <string notr="true">Channel B</string>
-     </property>
-     <property name="labels">
-      <string notr="true">complete processing;raw ADC buffer;synthetic ADC buffer;SUM buffer;AVG buffer;SA data stream;Counter stream Mask1;Counter stream Mask2;Coincidence counter stream</string>
-     </property>
-     <property name="files">
-      <string notr="true">processing;buffer_adc;buffer_adc;buffer_sum;buffer_avg;stream;stream;stream;stream;</string>
-     </property>
-     <property name="args">
-      <string notr="true">DEVICE=$(DEVICE),CH=B;DEVICE=$(DEVICE),CH=B,SIG=adc;DEVICE=$(DEVICE);DEVICE=$(DEVICE);DEVICE=$(DEVICE);DEVICE=$(DEVICE);DEVICE=$(DEVICE);DEVICE=$(DEVICE);DEVICE=$(DEVICE);</string>
-     </property>
-     <property name="stackingMode" stdset="0">
-      <enum>caRowColMenu::Menu</enum>
-     </property>
-    </widget>
-    <widget class="caRelatedDisplay" name="carelateddisplay_5">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>60</y>
-       <width>126</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="label">
-      <string notr="true">Channel C</string>
-     </property>
-     <property name="labels">
-      <string notr="true">complete processing;raw ADC buffer;synthetic ADC buffer;SUM buffer;AVG buffer;SA data stream;Counter stream Mask1;Counter stream Mask2;Coincidence counter stream</string>
-     </property>
-     <property name="files">
-      <string notr="true">processing;buffer_adc;buffer_adc;buffer_sum;buffer_avg;stream;stream;stream;stream;</string>
-     </property>
-     <property name="args">
-      <string notr="true">DEVICE=$(DEVICE),CH=C;DEVICE=$(DEVICE),CH=C,SIG=adc;DEVICE=$(DEVICE);DEVICE=$(DEVICE);DEVICE=$(DEVICE);DEVICE=$(DEVICE);DEVICE=$(DEVICE);DEVICE=$(DEVICE);DEVICE=$(DEVICE);</string>
-     </property>
-     <property name="stackingMode" stdset="0">
-      <enum>caRowColMenu::Menu</enum>
-     </property>
-    </widget>
-    <widget class="caRelatedDisplay" name="carelateddisplay_6">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>85</y>
-       <width>126</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="label">
-      <string notr="true">Channel D</string>
-     </property>
-     <property name="labels">
-      <string notr="true">complete processing;raw ADC buffer;synthetic ADC buffer;SUM buffer;AVG buffer;SA data stream;Counter stream Mask1;Counter stream Mask2;Coincidence counter stream</string>
-     </property>
-     <property name="files">
-      <string notr="true">processing;buffer_adc;buffer_adc;buffer_sum;buffer_avg;stream;stream;stream;stream;</string>
-     </property>
-     <property name="args">
-      <string notr="true">DEVICE=$(DEVICE),CH=D;DEVICE=$(DEVICE),CH=D,SIG=adc;DEVICE=$(DEVICE);DEVICE=$(DEVICE);DEVICE=$(DEVICE);DEVICE=$(DEVICE);DEVICE=$(DEVICE);DEVICE=$(DEVICE);DEVICE=$(DEVICE);</string>
-     </property>
-     <property name="stackingMode" stdset="0">
-      <enum>caRowColMenu::Menu</enum>
-     </property>
-    </widget>
     <widget class="caRelatedDisplay" name="carelateddisplay_7">
      <property name="geometry">
       <rect>
@@ -1752,6 +1677,81 @@
      </property>
      <property name="args">
       <string notr="true">DEVICE=$(DEVICE)</string>
+     </property>
+    </widget>
+    <widget class="caRelatedDisplay" name="carelateddisplay_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>35</y>
+       <width>126</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Channel B</string>
+     </property>
+     <property name="labels">
+      <string notr="true">complete processing;raw ADC buffer;synthetic ADC buffer;SUM buffer;AVG buffer;SA data stream;Counter stream Mask1;Counter stream Mask2;Coincidence counter stream</string>
+     </property>
+     <property name="files">
+      <string notr="true">processing;buffer_adc;buffer_adc;buffer_sum;buffer_avg;stream;counter;counter;coincidence_counter</string>
+     </property>
+     <property name="args">
+      <string notr="true">DEVICE=$(DEVICE),CH=B;DEVICE=$(DEVICE),CH=B,SIG=adc;DEVICE=$(DEVICE),CH=B,SIG=adc_synth;DEVICE=$(DEVICE),CH=B,SIG=sum;DEVICE=$(DEVICE),CH=B,SIG=avg;DEVICE=$(DEVICE),CH=B,SIG=sa;DEVICE=$(DEVICE),CH=B1,SIG=counter;DEVICE=$(DEVICE),CH=B2,SIG=counter;DEVICE=$(DEVICE),CH=B,SIG=coincidence_counter;</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Menu</enum>
+     </property>
+    </widget>
+    <widget class="caRelatedDisplay" name="carelateddisplay_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>126</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Channel C</string>
+     </property>
+     <property name="labels">
+      <string notr="true">complete processing;raw ADC buffer;synthetic ADC buffer;SUM buffer;AVG buffer;SA data stream;Counter stream Mask1;Counter stream Mask2;Coincidence counter stream</string>
+     </property>
+     <property name="files">
+      <string notr="true">processing;buffer_adc;buffer_adc;buffer_sum;buffer_avg;stream;counter;counter;coincidence_counter</string>
+     </property>
+     <property name="args">
+      <string notr="true">DEVICE=$(DEVICE),CH=C;DEVICE=$(DEVICE),CH=C,SIG=adc;DEVICE=$(DEVICE),CH=C,SIG=adc_synth;DEVICE=$(DEVICE),CH=C,SIG=sum;DEVICE=$(DEVICE),CH=C,SIG=avg;DEVICE=$(DEVICE),CH=C,SIG=sa;DEVICE=$(DEVICE),CH=C1,SIG=counter;DEVICE=$(DEVICE),CH=C2,SIG=counter;DEVICE=$(DEVICE),CH=C,SIG=coincidence_counter;</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Menu</enum>
+     </property>
+    </widget>
+    <widget class="caRelatedDisplay" name="carelateddisplay_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>85</y>
+       <width>126</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Channel D</string>
+     </property>
+     <property name="labels">
+      <string notr="true">complete processing;raw ADC buffer;synthetic ADC buffer;SUM buffer;AVG buffer;SA data stream;Counter stream Mask1;Counter stream Mask2;Coincidence counter stream</string>
+     </property>
+     <property name="files">
+      <string notr="true">processing;buffer_adc;buffer_adc;buffer_sum;buffer_avg;stream;counter;counter;coincidence_counter</string>
+     </property>
+     <property name="args">
+      <string notr="true">DEVICE=$(DEVICE),CH=D;DEVICE=$(DEVICE),CH=D,SIG=adc;DEVICE=$(DEVICE),CH=D,SIG=adc_synth;DEVICE=$(DEVICE),CH=D,SIG=sum;DEVICE=$(DEVICE),CH=D,SIG=avg;DEVICE=$(DEVICE),CH=D,SIG=sa;DEVICE=$(DEVICE),CH=D1,SIG=counter;DEVICE=$(DEVICE),CH=D2,SIG=counter;DEVICE=$(DEVICE),CH=D,SIG=coincidence_counter;</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Menu</enum>
      </property>
     </widget>
    </widget>

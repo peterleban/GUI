@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>569</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DSC compensation table</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="caCartesianPlot" name="dsc_amplitude_coeff">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>781</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="Title" stdset="0">
+     <string notr="true">Amplitude coefficients</string>
+    </property>
+    <property name="TitleX">
+     <string notr="true">power_level</string>
+    </property>
+    <property name="TitleY">
+     <string notr="true">coeff</string>
+    </property>
+    <property name="channels_1" stdset="0">
+     <string notr="true">;$(BPM):dsc:ac</string>
+    </property>
+    <property name="color_1">
+     <color>
+      <red>255</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+   </widget>
+   <widget class="caCartesianPlot" name="dsc_phase_coeff">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>290</y>
+      <width>781</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="Title" stdset="0">
+     <string notr="true">Phase coefficients</string>
+    </property>
+    <property name="TitleX">
+     <string notr="true">power_level</string>
+    </property>
+    <property name="TitleY">
+     <string notr="true">coeff</string>
+    </property>
+    <property name="channels_1" stdset="0">
+     <string notr="true">;$(BPM):dsc:pc</string>
+    </property>
+    <property name="color_1">
+     <color>
+      <red>255</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>caCartesianPlot</class>
+   <extends>QFrame</extends>
+   <header>caCartesianPlot</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

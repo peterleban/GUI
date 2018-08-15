@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 1
-y 51
+x 535
+y 204
 w 600
 h 550
 font "helvetica-bold-r-12.0"
@@ -112,6 +112,12 @@ yPv {
   1 "$(HOSTNAME):$(BPM):$(DD).ChannelB"
   2 "$(HOSTNAME):$(BPM):$(DD).ChannelC"
   3 "$(HOSTNAME):$(BPM):$(DD).ChannelD"
+}
+plotSymbolType {
+  0 "circle"
+  1 "circle"
+  2 "circle"
+  3 "circle"
 }
 ySigned {
   0 1
@@ -358,6 +364,29 @@ bgColor index 0
 useDisplayBg
 value {
   "Scan mode:"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 495
+y 450
+w 90
+h 20
+fgColor index 14
+bgColor index 0
+topShadowColor index 0
+botShadowColor index 14
+font "helvetica-medium-r-10.0"
+buttonLabel "Remove offset"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "adcoffset"
 }
 endObjectProperties
 
