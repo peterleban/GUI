@@ -3,9 +3,9 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 72
-y 109
-w 590
+x 267
+y 227
+w 620
 h 570
 font "helvetica-bold-r-12.0"
 ctlFont "helvetica-bold-r-12.0"
@@ -33,7 +33,7 @@ minor 0
 release 0
 x 320
 y 505
-w 265
+w 295
 h 60
 lineColor index 14
 fill
@@ -48,7 +48,7 @@ minor 0
 release 0
 x 5
 y 470
-w 580
+w 610
 h 30
 lineColor index 14
 fill
@@ -79,12 +79,12 @@ release 0
 # Geometry
 x 5
 y 35
-w 580
+w 610
 h 430
 # Appearance
 autoScaleBothDirections
 xLabel "ADC samples"
-yLabel "ADC counts"
+yLabel "$(YLABEL)"
 fgColor index 14
 bgColor index 1
 gridColor index 9
@@ -359,50 +359,6 @@ value {
 }
 endObjectProperties
 
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 445
-y 510
-w 50
-h 20
-font "helvetica-medium-r-12.0"
-fgColor index 14
-bgColor index 0
-useDisplayBg
-value {
-  "MaxADC"
-}
-endObjectProperties
-
-# (Text Control)
-object activeXTextDspClass
-beginObjectProperties
-major 4
-minor 7
-release 0
-x 500
-y 510
-w 80
-h 20
-controlPv "EPICS\\$(HOSTNAME):maxadc"
-font "helvetica-bold-r-12.0"
-fgColor index 23
-bgColor index 0
-useDisplayBg
-limitsFromDb
-nullColor index 0
-smartRefresh
-useHexPrefix
-showUnits
-newPos
-objType "controls"
-noExecuteClipMask
-endObjectProperties
-
 # (Text Control)
 object activeXTextDspClass
 beginObjectProperties
@@ -455,7 +411,7 @@ minor 0
 release 0
 x 5
 y 5
-w 580
+w 610
 h 25
 lineColor index 14
 fill
@@ -470,7 +426,7 @@ minor 1
 release 1
 x 15
 y 10
-w 565
+w 590
 h 15
 font "helvetica-bold-r-12.0"
 fontAlign "center"
@@ -635,5 +591,185 @@ visMax "7"
 value {
   "2 mA"
 }
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 545
+y 510
+w 30
+h 10
+font "helvetica-medium-r-8.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "chA"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 545
+y 525
+w 30
+h 10
+font "helvetica-medium-r-8.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "chB"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 545
+y 540
+w 30
+h 10
+font "helvetica-medium-r-8.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "chC"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 545
+y 555
+w 30
+h 10
+font "helvetica-medium-r-8.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "chD"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 575
+y 510
+w 30
+h 10
+controlPv "EPICS\\$(HOSTNAME):current_load:A"
+font "helvetica-medium-r-8.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+limitsFromDb
+nullColor index 0
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 575
+y 525
+w 30
+h 10
+controlPv "EPICS\\$(HOSTNAME):current_load:B"
+font "helvetica-medium-r-8.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+limitsFromDb
+nullColor index 0
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 575
+y 540
+w 30
+h 10
+controlPv "EPICS\\$(HOSTNAME):current_load:C"
+font "helvetica-medium-r-8.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+limitsFromDb
+nullColor index 0
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 575
+y 555
+w 30
+h 10
+controlPv "EPICS\\$(HOSTNAME):current_load:D"
+font "helvetica-medium-r-8.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+limitsFromDb
+nullColor index 0
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+newPos
+objType "controls"
+noExecuteClipMask
 endObjectProperties
 

@@ -432,14 +432,15 @@ T2</string>
        <x>10</x>
        <y>20</y>
        <width>76</width>
-       <height>66</height>
+       <height>76</height>
       </rect>
      </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
      </property>
      <property name="text">
-      <string>2 ... 200 nA
+      <string>1 ... 60 nA
+2 ... 200 nA
 3 ... 2 uA
 4 ... 20 uA
 5 ... 200 uA
@@ -503,7 +504,7 @@ T2</string>
       <double>6.000000000000000</double>
      </property>
      <property name="minValue">
-      <double>2.000000000000000</double>
+      <double>1.000000000000000</double>
      </property>
     </widget>
     <widget class="caLineEdit" name="calineedit_14">
@@ -1497,7 +1498,7 @@ T2</string>
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):current:A</string>
+      <string notr="true">$(DEVICE):signals:current.A</string>
      </property>
      <property name="foreground">
       <color>
@@ -1550,7 +1551,7 @@ T2</string>
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):current:D</string>
+      <string notr="true">$(DEVICE):signals:current.D</string>
      </property>
      <property name="foreground">
       <color>
@@ -1603,7 +1604,7 @@ T2</string>
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):current:B</string>
+      <string notr="true">$(DEVICE):signals:current.B</string>
      </property>
      <property name="foreground">
       <color>
@@ -1656,7 +1657,7 @@ T2</string>
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):current:C</string>
+      <string notr="true">$(DEVICE):signals:current.C</string>
      </property>
      <property name="foreground">
       <color>

@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 1
-y 215
+x 6
+y 160
 w 240
 h 790
 font "helvetica-medium-r-18.0"
@@ -416,15 +416,18 @@ botShadowColor index 14
 font "helvetica-bold-r-12.0"
 buttonLabel "ADC buffer"
 numPvs 4
-numDsps 1
+numDsps 2
 displayFileName {
   0 "adc.edl"
+  1 "adc.edl"
 }
 menuLabel {
   0 "ADC"
+  1 "ADC currents"
 }
 symbols {
-  0 "DD=signals:adc, DD1=ADC"
+  0 "DD=signals:adc, DD1=ADC, YLABEL=ADC counts"
+  1 "DD=signals:adc_current, DD1=ADC CURRENTS, YLABEL=picoAmps"
 }
 endObjectProperties
 
@@ -528,18 +531,21 @@ botShadowColor index 14
 font "helvetica-bold-r-12.0"
 buttonLabel "Slow data"
 numPvs 4
-numDsps 2
+numDsps 3
 displayFileName {
   0 "streamAmplitudes.edl"
   1 "streamPosition.edl"
+  2 "streamCurrent.edl"
 }
 menuLabel {
   0 "SA amplitudes"
   1 "SA position"
+  2 "Currents"
 }
 symbols {
   0 "DD=signals:sa, DD1=Slow data"
   1 "DD=signals:sa, DD1=Slow data"
+  2 "DD=signals:current, DD1=Current"
 }
 endObjectProperties
 

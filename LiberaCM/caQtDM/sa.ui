@@ -42,10 +42,10 @@
      <string notr="true">Time</string>
     </property>
     <property name="TitleY">
-     <string notr="true">Current [uA]</string>
+     <string notr="true">Current [pA]</string>
     </property>
     <property name="channels" stdset="0">
-     <string notr="true">$(DEVICE):current:$(CH)</string>
+     <string notr="true">$(DEVICE):signals:current.$(CH)</string>
     </property>
     <property name="period">
      <double>30.000000000000000</double>
@@ -182,7 +182,7 @@
      <property name="font">
       <font>
        <family>Sans Serif</family>
-       <pointsize>14</pointsize>
+       <pointsize>13</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
@@ -194,7 +194,7 @@
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):current:A</string>
+      <string notr="true">$(DEVICE):signals:current.$(CH)</string>
      </property>
      <property name="foreground">
       <color>

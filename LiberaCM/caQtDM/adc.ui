@@ -23,7 +23,7 @@
    <string notr="true">background-color: rgb(255, 255, 255);</string>
   </property>
   <property name="Title" stdset="0">
-   <string>ADC data on $(DEVICE), channel $(CH)</string>
+   <string>ADC buffer current on $(DEVICE), channel $(CH)</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="caCartesianPlot" name="adc">
@@ -54,7 +54,7 @@
      <string notr="true">Window length: $(SCALE)</string>
     </property>
     <property name="TitleY">
-     <string notr="true">ADC counts</string>
+     <string notr="true">picoamperes</string>
     </property>
     <property name="channels_1" stdset="0">
      <string notr="true">;$(DEVICE):signals:$(SIG).$(CH)</string>
@@ -138,7 +138,7 @@
      <enum>caCartesianPlot::Auto</enum>
     </property>
     <property name="YaxisScaling" stdset="0">
-     <enum>caCartesianPlot::User</enum>
+     <enum>caCartesianPlot::Auto</enum>
     </property>
     <property name="XaxisLimits">
      <string>0;100</string>
@@ -439,7 +439,7 @@
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):current:A</string>
+      <string notr="true">$(DEVICE):signals:current.$(CH)</string>
      </property>
      <property name="foreground">
       <color>
