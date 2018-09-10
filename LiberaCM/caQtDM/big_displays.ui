@@ -103,7 +103,7 @@
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):current:A</string>
+      <string notr="true">$(DEVICE):signals:current.A</string>
      </property>
      <property name="foreground">
       <color>
@@ -145,10 +145,10 @@
       <bool>false</bool>
      </property>
      <property name="TitleY">
-      <string notr="true">[uA]</string>
+      <string notr="true">[pA]</string>
      </property>
      <property name="channels" stdset="0">
-      <string notr="true">;$(DEVICE):current:A</string>
+      <string notr="true">;$(DEVICE):signals:current.A</string>
      </property>
      <property name="period">
       <double>30.000000000000000</double>
@@ -190,10 +190,10 @@
       </rect>
      </property>
      <property name="TitleY">
-      <string notr="true">[uA]</string>
+      <string notr="true">[pA]</string>
      </property>
      <property name="channels" stdset="0">
-      <string notr="true">;$(DEVICE):current:B</string>
+      <string notr="true">;$(DEVICE):signals:current.B</string>
      </property>
      <property name="period">
       <double>30.000000000000000</double>
@@ -249,7 +249,7 @@
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):current:B</string>
+      <string notr="true">$(DEVICE):signals:current.B</string>
      </property>
      <property name="foreground">
       <color>
@@ -328,10 +328,10 @@
       </rect>
      </property>
      <property name="TitleY">
-      <string notr="true">[uA]</string>
+      <string notr="true">[pA]</string>
      </property>
      <property name="channels" stdset="0">
-      <string notr="true">;$(DEVICE):current:C</string>
+      <string notr="true">;$(DEVICE):signals:current.C</string>
      </property>
      <property name="period">
       <double>30.000000000000000</double>
@@ -387,7 +387,7 @@
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):current:C</string>
+      <string notr="true">$(DEVICE):signals:current.C</string>
      </property>
      <property name="foreground">
       <color>
@@ -440,7 +440,7 @@
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):current:D</string>
+      <string notr="true">$(DEVICE):signals:current.D</string>
      </property>
      <property name="foreground">
       <color>
@@ -499,10 +499,10 @@
       </rect>
      </property>
      <property name="TitleY">
-      <string notr="true">[uA]</string>
+      <string notr="true">[pA]</string>
      </property>
      <property name="channels" stdset="0">
-      <string notr="true">;$(DEVICE):current:D</string>
+      <string notr="true">;$(DEVICE):signals:current.D</string>
      </property>
      <property name="period">
       <double>30.000000000000000</double>

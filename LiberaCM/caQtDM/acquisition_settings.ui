@@ -87,7 +87,7 @@
      <string>Enable monitoring</string>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(DEVICE):signals:sa.SCAN</string>
+     <string notr="true">$(DEVICE):signals:current.SCAN</string>
     </property>
     <property name="trueValue">
      <string>2</string>
