@@ -23,9 +23,6 @@
       <height>201</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(231, 231, 231);</string>
-    </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
     </property>
@@ -46,7 +43,10 @@
      </color>
     </property>
     <property name="backgroundMode">
-     <enum>caFrame::Filled</enum>
+     <enum>caFrame::Outline</enum>
+    </property>
+    <property name="styleSheet" stdset="0">
+     <string notr="true"/>
     </property>
     <widget class="QLabel" name="label_19">
      <property name="geometry">
@@ -262,7 +262,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -281,11 +281,8 @@
      <property name="font">
       <font>
        <family>FreeSans</family>
-       <pointsize>8</pointsize>
+       <pointsize>10</pointsize>
       </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
      <property name="cursorPosition">
       <number>0</number>
@@ -313,8 +310,11 @@
      <property name="colorMode">
       <enum>caLineEdit::Static</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
+     </property>
+     <property name="styleSheet" stdset="0">
+      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
     </widget>
     <widget class="caLineEdit" name="calineedit_17">
@@ -361,7 +361,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -412,7 +412,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -463,7 +463,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -479,9 +479,6 @@
        <height>16</height>
       </rect>
      </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
      <property name="text">
       <string>disabled</string>
      </property>
@@ -494,6 +491,9 @@
        <green>217</green>
        <blue>188</blue>
       </color>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
      </property>
      <property name="visibility">
       <enum>caLabel::IfZero</enum>
@@ -511,9 +511,6 @@
        <height>16</height>
       </rect>
      </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
      <property name="text">
       <string>enabled</string>
      </property>
@@ -526,6 +523,9 @@
        <green>255</green>
        <blue>127</blue>
       </color>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
      </property>
      <property name="visibility">
       <enum>caLabel::IfNotZero</enum>
@@ -615,9 +615,6 @@
       <height>366</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(231, 231, 231);</string>
-    </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
     </property>
@@ -638,7 +635,10 @@
      </color>
     </property>
     <property name="backgroundMode">
-     <enum>caFrame::Filled</enum>
+     <enum>caFrame::Outline</enum>
+    </property>
+    <property name="styleSheet" stdset="0">
+     <string notr="true"/>
     </property>
     <widget class="QLabel" name="label_28">
      <property name="geometry">
@@ -893,7 +893,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -1026,7 +1026,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -1077,7 +1077,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -1256,7 +1256,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -1307,7 +1307,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -1358,7 +1358,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -1409,7 +1409,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -1460,7 +1460,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -1636,9 +1636,6 @@
       <height>201</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(231, 231, 231);</string>
-    </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
     </property>
@@ -1659,7 +1656,10 @@
      </color>
     </property>
     <property name="backgroundMode">
-     <enum>caFrame::Filled</enum>
+     <enum>caFrame::Outline</enum>
+    </property>
+    <property name="styleSheet" stdset="0">
+     <string notr="true"/>
     </property>
     <widget class="QLabel" name="label_36">
      <property name="geometry">
@@ -1899,13 +1899,13 @@
        <x>30</x>
        <y>130</y>
        <width>141</width>
-       <height>36</height>
+       <height>31</height>
       </rect>
      </property>
      <property name="font">
       <font>
        <family>Sans Serif</family>
-       <pointsize>10</pointsize>
+       <pointsize>15</pointsize>
       </font>
      </property>
      <property name="channel" stdset="0">
@@ -1969,7 +1969,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -2020,7 +2020,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -2071,7 +2071,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -2122,7 +2122,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">

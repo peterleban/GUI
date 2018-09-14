@@ -26,9 +26,6 @@
       <height>226</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(231, 231, 231);</string>
-    </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
     </property>
@@ -49,7 +46,10 @@
      </color>
     </property>
     <property name="backgroundMode">
-     <enum>caFrame::Filled</enum>
+     <enum>caFrame::Outline</enum>
+    </property>
+    <property name="styleSheet" stdset="0">
+     <string notr="true"/>
     </property>
     <widget class="QLabel" name="label_8">
      <property name="geometry">
@@ -283,33 +283,6 @@
      <attribute name="verticalHeaderShowSortIndicator" stdset="0">
       <bool>false</bool>
      </attribute>
-     <attribute name="verticalHeaderVisible">
-      <bool>false</bool>
-     </attribute>
-     <attribute name="verticalHeaderDefaultSectionSize">
-      <number>15</number>
-     </attribute>
-     <attribute name="horizontalHeaderVisible">
-      <bool>false</bool>
-     </attribute>
-     <attribute name="horizontalHeaderMinimumSectionSize">
-      <number>15</number>
-     </attribute>
-     <attribute name="verticalHeaderMinimumSectionSize">
-      <number>15</number>
-     </attribute>
-     <attribute name="verticalHeaderShowSortIndicator" stdset="0">
-      <bool>false</bool>
-     </attribute>
-     <attribute name="horizontalHeaderHighlightSections">
-      <bool>false</bool>
-     </attribute>
-     <attribute name="verticalHeaderHighlightSections">
-      <bool>false</bool>
-     </attribute>
-     <attribute name="horizontalHeaderDefaultSectionSize">
-      <number>15</number>
-     </attribute>
      <row/>
      <column/>
      <column/>
@@ -422,33 +395,6 @@
      <attribute name="verticalHeaderShowSortIndicator" stdset="0">
       <bool>false</bool>
      </attribute>
-     <attribute name="verticalHeaderVisible">
-      <bool>false</bool>
-     </attribute>
-     <attribute name="verticalHeaderDefaultSectionSize">
-      <number>15</number>
-     </attribute>
-     <attribute name="horizontalHeaderVisible">
-      <bool>false</bool>
-     </attribute>
-     <attribute name="horizontalHeaderMinimumSectionSize">
-      <number>15</number>
-     </attribute>
-     <attribute name="verticalHeaderMinimumSectionSize">
-      <number>15</number>
-     </attribute>
-     <attribute name="verticalHeaderShowSortIndicator" stdset="0">
-      <bool>false</bool>
-     </attribute>
-     <attribute name="horizontalHeaderHighlightSections">
-      <bool>false</bool>
-     </attribute>
-     <attribute name="verticalHeaderHighlightSections">
-      <bool>false</bool>
-     </attribute>
-     <attribute name="horizontalHeaderDefaultSectionSize">
-      <number>15</number>
-     </attribute>
      <row/>
      <column/>
      <column/>
@@ -560,33 +506,6 @@
      </attribute>
      <attribute name="verticalHeaderShowSortIndicator" stdset="0">
       <bool>false</bool>
-     </attribute>
-     <attribute name="verticalHeaderVisible">
-      <bool>false</bool>
-     </attribute>
-     <attribute name="verticalHeaderDefaultSectionSize">
-      <number>15</number>
-     </attribute>
-     <attribute name="horizontalHeaderVisible">
-      <bool>false</bool>
-     </attribute>
-     <attribute name="horizontalHeaderMinimumSectionSize">
-      <number>15</number>
-     </attribute>
-     <attribute name="verticalHeaderMinimumSectionSize">
-      <number>15</number>
-     </attribute>
-     <attribute name="verticalHeaderShowSortIndicator" stdset="0">
-      <bool>false</bool>
-     </attribute>
-     <attribute name="horizontalHeaderHighlightSections">
-      <bool>false</bool>
-     </attribute>
-     <attribute name="verticalHeaderHighlightSections">
-      <bool>false</bool>
-     </attribute>
-     <attribute name="horizontalHeaderDefaultSectionSize">
-      <number>15</number>
      </attribute>
      <row/>
      <column/>
@@ -753,33 +672,6 @@
      </attribute>
      <attribute name="verticalHeaderShowSortIndicator" stdset="0">
       <bool>false</bool>
-     </attribute>
-     <attribute name="verticalHeaderVisible">
-      <bool>false</bool>
-     </attribute>
-     <attribute name="verticalHeaderDefaultSectionSize">
-      <number>15</number>
-     </attribute>
-     <attribute name="horizontalHeaderVisible">
-      <bool>false</bool>
-     </attribute>
-     <attribute name="horizontalHeaderMinimumSectionSize">
-      <number>15</number>
-     </attribute>
-     <attribute name="verticalHeaderMinimumSectionSize">
-      <number>15</number>
-     </attribute>
-     <attribute name="verticalHeaderShowSortIndicator" stdset="0">
-      <bool>false</bool>
-     </attribute>
-     <attribute name="horizontalHeaderHighlightSections">
-      <bool>false</bool>
-     </attribute>
-     <attribute name="verticalHeaderHighlightSections">
-      <bool>false</bool>
-     </attribute>
-     <attribute name="horizontalHeaderDefaultSectionSize">
-      <number>15</number>
      </attribute>
      <row/>
      <column/>
@@ -1059,7 +951,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -1110,7 +1002,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -1129,11 +1021,8 @@
      <property name="font">
       <font>
        <family>FreeSans</family>
-       <pointsize>8</pointsize>
+       <pointsize>10</pointsize>
       </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
      <property name="cursorPosition">
       <number>0</number>
@@ -1161,8 +1050,11 @@
      <property name="colorMode">
       <enum>caLineEdit::Static</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
+     </property>
+     <property name="styleSheet" stdset="0">
+      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
     </widget>
     <widget class="caLineEdit" name="calineedit_17">
@@ -1209,7 +1101,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -1260,7 +1152,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -1311,7 +1203,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -1327,9 +1219,6 @@
       <width>376</width>
       <height>266</height>
      </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(231, 231, 231);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1351,7 +1240,10 @@
      </color>
     </property>
     <property name="backgroundMode">
-     <enum>caFrame::Filled</enum>
+     <enum>caFrame::Outline</enum>
+    </property>
+    <property name="styleSheet" stdset="0">
+     <string notr="true"/>
     </property>
     <widget class="QLabel" name="label_36">
      <property name="geometry">
@@ -1383,7 +1275,7 @@
      <property name="font">
       <font>
        <family>Sans Serif</family>
-       <pointsize>8</pointsize>
+       <pointsize>9</pointsize>
       </font>
      </property>
      <property name="text">
@@ -1610,11 +1502,8 @@
      <property name="font">
       <font>
        <family>FreeSans</family>
-       <pointsize>8</pointsize>
+       <pointsize>10</pointsize>
       </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
      <property name="cursorPosition">
       <number>0</number>
@@ -1642,8 +1531,11 @@
      <property name="colorMode">
       <enum>caLineEdit::Static</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
+     </property>
+     <property name="styleSheet" stdset="0">
+      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
     </widget>
     <widget class="caLineEdit" name="calineedit_18">
@@ -1690,7 +1582,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -1709,11 +1601,8 @@
      <property name="font">
       <font>
        <family>FreeSans</family>
-       <pointsize>8</pointsize>
+       <pointsize>10</pointsize>
       </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
      <property name="cursorPosition">
       <number>0</number>
@@ -1741,8 +1630,11 @@
      <property name="colorMode">
       <enum>caLineEdit::Static</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
+     </property>
+     <property name="styleSheet" stdset="0">
+      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
     </widget>
     <widget class="caTextEntry" name="srcmac">
@@ -1757,11 +1649,8 @@
      <property name="font">
       <font>
        <family>FreeSans</family>
-       <pointsize>8</pointsize>
+       <pointsize>10</pointsize>
       </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
      <property name="cursorPosition">
       <number>0</number>
@@ -1789,8 +1678,11 @@
      <property name="colorMode">
       <enum>caLineEdit::Static</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
+     </property>
+     <property name="styleSheet" stdset="0">
+      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
     </widget>
     <widget class="caTextEntry" name="srcport">
@@ -1805,11 +1697,8 @@
      <property name="font">
       <font>
        <family>FreeSans</family>
-       <pointsize>8</pointsize>
+       <pointsize>10</pointsize>
       </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
      <property name="cursorPosition">
       <number>0</number>
@@ -1837,8 +1726,11 @@
      <property name="colorMode">
       <enum>caLineEdit::Static</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
+     </property>
+     <property name="styleSheet" stdset="0">
+      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
     </widget>
     <widget class="caTextEntry" name="rcvip">
@@ -1853,11 +1745,8 @@
      <property name="font">
       <font>
        <family>FreeSans</family>
-       <pointsize>8</pointsize>
+       <pointsize>10</pointsize>
       </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
      <property name="cursorPosition">
       <number>0</number>
@@ -1885,8 +1774,11 @@
      <property name="colorMode">
       <enum>caLineEdit::Static</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
+     </property>
+     <property name="styleSheet" stdset="0">
+      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
     </widget>
     <widget class="caTextEntry" name="rcvmac">
@@ -1901,11 +1793,8 @@
      <property name="font">
       <font>
        <family>FreeSans</family>
-       <pointsize>8</pointsize>
+       <pointsize>10</pointsize>
       </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
      <property name="cursorPosition">
       <number>0</number>
@@ -1933,8 +1822,11 @@
      <property name="colorMode">
       <enum>caLineEdit::Static</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
+     </property>
+     <property name="styleSheet" stdset="0">
+      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
     </widget>
     <widget class="caTextEntry" name="rcvport">
@@ -1949,11 +1841,8 @@
      <property name="font">
       <font>
        <family>FreeSans</family>
-       <pointsize>8</pointsize>
+       <pointsize>10</pointsize>
       </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
      <property name="cursorPosition">
       <number>0</number>
@@ -1981,8 +1870,11 @@
      <property name="colorMode">
       <enum>caLineEdit::Static</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
+     </property>
+     <property name="styleSheet" stdset="0">
+      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
     </widget>
     <widget class="caLineEdit" name="calineedit_19">
@@ -2029,7 +1921,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -2080,7 +1972,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -2131,7 +2023,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -2182,7 +2074,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -2233,7 +2125,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -2284,7 +2176,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -2335,7 +2227,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">

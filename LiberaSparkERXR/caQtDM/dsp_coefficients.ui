@@ -54,7 +54,7 @@
      </color>
     </property>
     <property name="backgroundMode">
-     <enum>caFrame::Filled</enum>
+     <enum>caFrame::Outline</enum>
     </property>
     <widget class="QLabel" name="label_20">
      <property name="geometry">
@@ -121,7 +121,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -277,7 +277,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -328,7 +328,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -421,7 +421,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -619,7 +619,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">

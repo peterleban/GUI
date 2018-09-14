@@ -47,7 +47,7 @@
      <number>1</number>
     </property>
     <property name="backgroundMode">
-     <enum>caFrame::Filled</enum>
+     <enum>caFrame::Outline</enum>
     </property>
     <widget class="QLabel" name="label_24">
      <property name="geometry">
@@ -159,7 +159,7 @@ calculation</string>
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -191,9 +191,6 @@ calculation</string>
        <height>21</height>
       </rect>
      </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
      <property name="text">
       <string>Calibrated mode ON</string>
      </property>
@@ -206,6 +203,9 @@ calculation</string>
        <green>255</green>
        <blue>127</blue>
       </color>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
      </property>
      <property name="visibility">
       <enum>caLabel::IfNotZero</enum>
@@ -223,9 +223,6 @@ calculation</string>
        <height>21</height>
       </rect>
      </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
      <property name="text">
       <string>Calibrated mode OFF</string>
      </property>
@@ -238,6 +235,9 @@ calculation</string>
        <green>217</green>
        <blue>188</blue>
       </color>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
      </property>
      <property name="visibility">
       <enum>caLabel::IfZero</enum>
@@ -304,7 +304,7 @@ calculation</string>
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -354,9 +354,6 @@ coefficients</string>
        <height>41</height>
       </rect>
      </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
      <property name="text">
       <string>Calibration
 in progress</string>
@@ -378,6 +375,9 @@ in progress</string>
        <blue>127</blue>
       </color>
      </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
      <property name="visibility">
       <enum>caLabel::IfNotZero</enum>
      </property>
@@ -394,9 +394,6 @@ in progress</string>
        <height>21</height>
       </rect>
      </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
      <property name="text">
       <string>Idle</string>
      </property>
@@ -410,6 +407,9 @@ in progress</string>
        <blue>255</blue>
       </color>
      </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
      <property name="visibility">
       <enum>caLabel::IfZero</enum>
      </property>
@@ -417,6 +417,17 @@ in progress</string>
       <string notr="true">$(DEVICE):calib:active</string>
      </property>
     </widget>
+    <zorder>catextentry_18</zorder>
+    <zorder>calineedit_21</zorder>
+    <zorder>catogglebutton</zorder>
+    <zorder>calabel_2</zorder>
+    <zorder>calabel</zorder>
+    <zorder>calineedit_7</zorder>
+    <zorder>camessagebutton_5</zorder>
+    <zorder>calabel_3</zorder>
+    <zorder>calabel_4</zorder>
+    <zorder>label_24</zorder>
+    <zorder>label_25</zorder>
    </widget>
    <widget class="caWaveTable" name="cawavetable">
     <property name="geometry">
@@ -474,18 +485,6 @@ in progress</string>
     </attribute>
     <attribute name="verticalHeaderDefaultSectionSize">
      <number>15</number>
-    </attribute>
-    <attribute name="verticalHeaderMinimumSectionSize">
-     <number>15</number>
-    </attribute>
-    <attribute name="verticalHeaderVisible">
-     <bool>false</bool>
-    </attribute>
-    <attribute name="verticalHeaderDefaultSectionSize">
-     <number>15</number>
-    </attribute>
-    <attribute name="horizontalHeaderVisible">
-     <bool>false</bool>
     </attribute>
     <attribute name="verticalHeaderMinimumSectionSize">
      <number>15</number>
@@ -738,18 +737,6 @@ in progress</string>
     <attribute name="verticalHeaderMinimumSectionSize">
      <number>15</number>
     </attribute>
-    <attribute name="verticalHeaderVisible">
-     <bool>false</bool>
-    </attribute>
-    <attribute name="verticalHeaderDefaultSectionSize">
-     <number>15</number>
-    </attribute>
-    <attribute name="horizontalHeaderVisible">
-     <bool>false</bool>
-    </attribute>
-    <attribute name="verticalHeaderMinimumSectionSize">
-     <number>15</number>
-    </attribute>
     <row/>
     <row/>
     <row/>
@@ -998,18 +985,6 @@ in progress</string>
     <attribute name="verticalHeaderMinimumSectionSize">
      <number>15</number>
     </attribute>
-    <attribute name="verticalHeaderVisible">
-     <bool>false</bool>
-    </attribute>
-    <attribute name="verticalHeaderDefaultSectionSize">
-     <number>15</number>
-    </attribute>
-    <attribute name="horizontalHeaderVisible">
-     <bool>false</bool>
-    </attribute>
-    <attribute name="verticalHeaderMinimumSectionSize">
-     <number>15</number>
-    </attribute>
     <row/>
     <row/>
     <row/>
@@ -1254,18 +1229,6 @@ in progress</string>
     </attribute>
     <attribute name="verticalHeaderDefaultSectionSize">
      <number>15</number>
-    </attribute>
-    <attribute name="verticalHeaderMinimumSectionSize">
-     <number>15</number>
-    </attribute>
-    <attribute name="verticalHeaderVisible">
-     <bool>false</bool>
-    </attribute>
-    <attribute name="verticalHeaderDefaultSectionSize">
-     <number>15</number>
-    </attribute>
-    <attribute name="horizontalHeaderVisible">
-     <bool>false</bool>
     </attribute>
     <attribute name="verticalHeaderMinimumSectionSize">
      <number>15</number>

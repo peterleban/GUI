@@ -99,9 +99,6 @@
       <height>56</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(231, 231, 231);</string>
-    </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
     </property>
@@ -122,7 +119,10 @@
      </color>
     </property>
     <property name="backgroundMode">
-     <enum>caFrame::Filled</enum>
+     <enum>caFrame::Outline</enum>
+    </property>
+    <property name="styleSheet" stdset="0">
+     <string notr="true"/>
     </property>
     <widget class="QLabel" name="label_16">
      <property name="geometry">
@@ -389,7 +389,7 @@ bit</string>
      <property name="font">
       <font>
        <family>Sans Serif</family>
-       <pointsize>8</pointsize>
+       <pointsize>9</pointsize>
       </font>
      </property>
      <property name="text">
@@ -450,9 +450,6 @@ bit</string>
       <height>161</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(231, 231, 231);</string>
-    </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
     </property>
@@ -473,7 +470,10 @@ bit</string>
      </color>
     </property>
     <property name="backgroundMode">
-     <enum>caFrame::Filled</enum>
+     <enum>caFrame::Outline</enum>
+    </property>
+    <property name="styleSheet" stdset="0">
+     <string notr="true"/>
     </property>
     <widget class="QLabel" name="label_4">
      <property name="geometry">
@@ -610,7 +610,7 @@ bit</string>
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -629,11 +629,8 @@ bit</string>
      <property name="font">
       <font>
        <family>FreeSans</family>
-       <pointsize>8</pointsize>
+       <pointsize>10</pointsize>
       </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
      <property name="echoMode">
       <enum>QLineEdit::Normal</enum>
@@ -664,8 +661,11 @@ bit</string>
      <property name="colorMode">
       <enum>caLineEdit::Static</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
+     </property>
+     <property name="styleSheet" stdset="0">
+      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
     </widget>
     <widget class="caTextEntry" name="bpmid_2">
@@ -680,11 +680,8 @@ bit</string>
      <property name="font">
       <font>
        <family>FreeSans</family>
-       <pointsize>8</pointsize>
+       <pointsize>10</pointsize>
       </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
      <property name="echoMode">
       <enum>QLineEdit::Normal</enum>
@@ -715,8 +712,11 @@ bit</string>
      <property name="colorMode">
       <enum>caLineEdit::Static</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
+     </property>
+     <property name="styleSheet" stdset="0">
+      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
     </widget>
     <widget class="caLineEdit" name="calineedit_16">
@@ -763,7 +763,7 @@ bit</string>
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -814,7 +814,7 @@ bit</string>
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -865,7 +865,7 @@ bit</string>
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -884,11 +884,8 @@ bit</string>
      <property name="font">
       <font>
        <family>FreeSans</family>
-       <pointsize>8</pointsize>
+       <pointsize>10</pointsize>
       </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
      <property name="echoMode">
       <enum>QLineEdit::Normal</enum>
@@ -919,8 +916,11 @@ bit</string>
      <property name="colorMode">
       <enum>caLineEdit::Static</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
+     </property>
+     <property name="styleSheet" stdset="0">
+      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
     </widget>
     <widget class="caTextEntry" name="bpmid_4">
@@ -935,11 +935,8 @@ bit</string>
      <property name="font">
       <font>
        <family>FreeSans</family>
-       <pointsize>8</pointsize>
+       <pointsize>10</pointsize>
       </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
      <property name="echoMode">
       <enum>QLineEdit::Normal</enum>
@@ -970,8 +967,11 @@ bit</string>
      <property name="colorMode">
       <enum>caLineEdit::Static</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
+     </property>
+     <property name="styleSheet" stdset="0">
+      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
     </widget>
     <widget class="caTextEntry" name="bpmid_5">
@@ -986,11 +986,8 @@ bit</string>
      <property name="font">
       <font>
        <family>FreeSans</family>
-       <pointsize>8</pointsize>
+       <pointsize>10</pointsize>
       </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
      <property name="echoMode">
       <enum>QLineEdit::Normal</enum>
@@ -1021,8 +1018,11 @@ bit</string>
      <property name="colorMode">
       <enum>caLineEdit::Static</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
+     </property>
+     <property name="styleSheet" stdset="0">
+      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
     </widget>
     <widget class="caLineEdit" name="calineedit_20">
@@ -1069,7 +1069,7 @@ bit</string>
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -1111,9 +1111,6 @@ bit</string>
       <height>146</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(231, 231, 231);</string>
-    </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
     </property>
@@ -1134,7 +1131,10 @@ bit</string>
      </color>
     </property>
     <property name="backgroundMode">
-     <enum>caFrame::Filled</enum>
+     <enum>caFrame::Outline</enum>
+    </property>
+    <property name="styleSheet" stdset="0">
+     <string notr="true"/>
     </property>
     <widget class="QLabel" name="label_8">
      <property name="geometry">
@@ -1254,7 +1254,7 @@ libera-ebpm.xml</string>
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -1273,11 +1273,8 @@ libera-ebpm.xml</string>
      <property name="font">
       <font>
        <family>FreeSans</family>
-       <pointsize>8</pointsize>
+       <pointsize>10</pointsize>
       </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
      <property name="echoMode">
       <enum>QLineEdit::Normal</enum>
@@ -1308,8 +1305,11 @@ libera-ebpm.xml</string>
      <property name="colorMode">
       <enum>caLineEdit::Static</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
+     </property>
+     <property name="styleSheet" stdset="0">
+      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
     </widget>
     <widget class="caLineEdit" name="calineedit_21">
@@ -1356,7 +1356,7 @@ libera-ebpm.xml</string>
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -1375,11 +1375,8 @@ libera-ebpm.xml</string>
      <property name="font">
       <font>
        <family>FreeSans</family>
-       <pointsize>8</pointsize>
+       <pointsize>10</pointsize>
       </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
      <property name="echoMode">
       <enum>QLineEdit::Normal</enum>
@@ -1410,8 +1407,11 @@ libera-ebpm.xml</string>
      <property name="colorMode">
       <enum>caLineEdit::Static</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
+     </property>
+     <property name="styleSheet" stdset="0">
+      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
     </widget>
     <widget class="caLineEdit" name="calineedit_22">
@@ -1458,7 +1458,7 @@ libera-ebpm.xml</string>
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -1509,7 +1509,7 @@ libera-ebpm.xml</string>
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -1528,11 +1528,8 @@ libera-ebpm.xml</string>
      <property name="font">
       <font>
        <family>FreeSans</family>
-       <pointsize>8</pointsize>
+       <pointsize>10</pointsize>
       </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
      <property name="echoMode">
       <enum>QLineEdit::Normal</enum>
@@ -1563,8 +1560,11 @@ libera-ebpm.xml</string>
      <property name="colorMode">
       <enum>caLineEdit::Static</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
+     </property>
+     <property name="styleSheet" stdset="0">
+      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
     </widget>
     <widget class="QLabel" name="label_14">
@@ -1596,9 +1596,6 @@ libera-ebpm.xml</string>
       <height>16</height>
      </rect>
     </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
-    </property>
     <property name="text">
      <string>disabled</string>
     </property>
@@ -1611,6 +1608,9 @@ libera-ebpm.xml</string>
       <green>217</green>
       <blue>188</blue>
      </color>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
     </property>
     <property name="visibility">
      <enum>caLabel::IfZero</enum>
@@ -1628,9 +1628,6 @@ libera-ebpm.xml</string>
       <height>16</height>
      </rect>
     </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
-    </property>
     <property name="text">
      <string>enabled</string>
     </property>
@@ -1643,6 +1640,9 @@ libera-ebpm.xml</string>
       <green>255</green>
       <blue>127</blue>
      </color>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
     </property>
     <property name="visibility">
      <enum>caLabel::IfNotZero</enum>
@@ -1660,9 +1660,6 @@ libera-ebpm.xml</string>
       <height>16</height>
      </rect>
     </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
-    </property>
     <property name="text">
      <string>enabled</string>
     </property>
@@ -1675,6 +1672,9 @@ libera-ebpm.xml</string>
       <green>255</green>
       <blue>127</blue>
      </color>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
     </property>
     <property name="visibility">
      <enum>caLabel::IfNotZero</enum>
@@ -1692,9 +1692,6 @@ libera-ebpm.xml</string>
       <height>16</height>
      </rect>
     </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
-    </property>
     <property name="text">
      <string>disabled</string>
     </property>
@@ -1707,6 +1704,9 @@ libera-ebpm.xml</string>
       <green>217</green>
       <blue>188</blue>
      </color>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
     </property>
     <property name="visibility">
      <enum>caLabel::IfZero</enum>
@@ -1784,7 +1784,7 @@ libera-ebpm.xml</string>
     <property name="frameLineWidth" stdset="0">
      <number>1</number>
     </property>
-    <property name="fontScaleMode">
+    <property name="fontScaleMode" stdset="0">
      <enum>caLineEdit::WidthAndHeight</enum>
     </property>
     <property name="unitsEnabled">
@@ -1803,11 +1803,8 @@ libera-ebpm.xml</string>
     <property name="font">
      <font>
       <family>FreeSans</family>
-      <pointsize>8</pointsize>
+      <pointsize>10</pointsize>
      </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
     </property>
     <property name="echoMode">
      <enum>QLineEdit::Normal</enum>
@@ -1838,8 +1835,11 @@ libera-ebpm.xml</string>
     <property name="colorMode">
      <enum>caLineEdit::Static</enum>
     </property>
-    <property name="fontScaleMode">
+    <property name="fontScaleMode" stdset="0">
      <enum>caLineEdit::WidthAndHeight</enum>
+    </property>
+    <property name="styleSheet" stdset="0">
+     <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
     </property>
    </widget>
    <widget class="caLineEdit" name="calineedit_25">
@@ -1886,7 +1886,7 @@ libera-ebpm.xml</string>
     <property name="frameLineWidth" stdset="0">
      <number>1</number>
     </property>
-    <property name="fontScaleMode">
+    <property name="fontScaleMode" stdset="0">
      <enum>caLineEdit::WidthAndHeight</enum>
     </property>
     <property name="unitsEnabled">
