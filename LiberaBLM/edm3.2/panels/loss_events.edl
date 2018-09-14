@@ -121,6 +121,7 @@ bgColor index 0
 limitsFromDb
 nullColor index 0
 smartRefresh
+fastUpdate
 useHexPrefix
 newPos
 objType "controls"
@@ -220,6 +221,7 @@ bgColor index 0
 limitsFromDb
 nullColor index 0
 smartRefresh
+fastUpdate
 useHexPrefix
 newPos
 objType "controls"
@@ -384,6 +386,7 @@ bgColor index 0
 limitsFromDb
 nullColor index 0
 smartRefresh
+fastUpdate
 useHexPrefix
 newPos
 objType "controls"

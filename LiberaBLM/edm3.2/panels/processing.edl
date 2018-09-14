@@ -702,7 +702,7 @@ displayFileName {
   0 "stream.edl"
 }
 symbols {
-  0 "SIG=signals:sa, NAME=SA"
+  0 "SIG=signals:sa.$(BLD), NAME=SA"
 }
 endObjectProperties
 
@@ -781,7 +781,7 @@ menuLabel {
   2 "Coincidence stream"
 }
 symbols {
-  0 "SIG=signals:counter, NAME=Loss events"
+  0 "SIG=signals:counter.$(BLD)1, NAME=Loss events"
   1 "SIG=signals:counter.$(BLD)2, NAME=Loss events"
   2 "SIG=signals:coincidence_counter.$(BLD), NAME=Coincidence events"
 }

@@ -10,6 +10,9 @@
     <height>525</height>
    </rect>
   </property>
+  <property name="windowTitle">
+   <string>GDX</string>
+  </property>
   <property name="Title" stdset="0">
    <string>Grouping+ &gt;&gt; $(DEVICE)</string>
   </property>
@@ -1540,10 +1543,10 @@
       </color>
      </property>
      <property name="releaseMessage">
-      <string notr="true">0</string>
+      <string notr="true"/>
      </property>
      <property name="pressMessage">
-      <string notr="true">0</string>
+      <string notr="true">Execute</string>
      </property>
     </widget>
     <widget class="caLed" name="caled_7">
