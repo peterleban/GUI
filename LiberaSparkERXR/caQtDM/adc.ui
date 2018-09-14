@@ -162,7 +162,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(231, 231, 231);</string>
+     <string notr="true">background-color: rgb(221, 226, 232);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -175,13 +175,6 @@
     </property>
     <property name="midLineWidth">
      <number>1</number>
-    </property>
-    <property name="background">
-     <color>
-      <red>0</red>
-      <green>0</green>
-      <blue>0</blue>
-     </color>
     </property>
     <property name="backgroundMode">
      <enum>caFrame::Filled</enum>
@@ -306,7 +299,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(231, 231, 231);</string>
+     <string notr="true">background-color: rgb(221, 226, 232);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -319,13 +312,6 @@
     </property>
     <property name="midLineWidth">
      <number>1</number>
-    </property>
-    <property name="background">
-     <color>
-      <red>0</red>
-      <green>0</green>
-      <blue>0</blue>
-     </color>
     </property>
     <property name="backgroundMode">
      <enum>caFrame::Filled</enum>

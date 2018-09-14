@@ -33,7 +33,7 @@
      </font>
     </property>
     <property name="alignment">
-     <set>Qt::AlignCenter</set>
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
     <property name="channel" stdset="0">
      <string notr="true">$(BPM):hp_temp:pt1</string>
@@ -82,7 +82,7 @@
      </font>
     </property>
     <property name="alignment">
-     <set>Qt::AlignCenter</set>
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
     <property name="channel" stdset="0">
      <string notr="true">$(BPM):hp_temp:pt2</string>
@@ -113,7 +113,7 @@
      </font>
     </property>
     <property name="alignment">
-     <set>Qt::AlignCenter</set>
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
     <property name="channel" stdset="0">
      <string notr="true">$(BPM):hp_temp:pt3</string>
@@ -144,7 +144,7 @@
      </font>
     </property>
     <property name="alignment">
-     <set>Qt::AlignCenter</set>
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
     <property name="channel" stdset="0">
      <string notr="true">$(BPM):hp_temp:pt4</string>
@@ -175,7 +175,7 @@
      </font>
     </property>
     <property name="alignment">
-     <set>Qt::AlignCenter</set>
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
     <property name="channel" stdset="0">
      <string notr="true">$(BPM):hp_temp:ts2</string>
@@ -206,7 +206,7 @@
      </font>
     </property>
     <property name="alignment">
-     <set>Qt::AlignCenter</set>
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
     <property name="channel" stdset="0">
      <string notr="true">$(BPM):hp_temp:ts1</string>
@@ -237,7 +237,7 @@
      </font>
     </property>
     <property name="alignment">
-     <set>Qt::AlignCenter</set>
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
     <property name="channel" stdset="0">
      <string notr="true">$(BPM):hp_temp:ts3</string>
@@ -268,7 +268,7 @@
      </font>
     </property>
     <property name="alignment">
-     <set>Qt::AlignCenter</set>
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
     <property name="channel" stdset="0">
      <string notr="true">$(BPM):hp_temp:ts4</string>

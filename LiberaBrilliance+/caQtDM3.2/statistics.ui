@@ -751,6 +751,9 @@
        <height>21</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 0);</string>
+     </property>
      <property name="channel" stdset="0">
       <string notr="true">$(BPM):stat:tbt:mode_sp</string>
      </property>
@@ -777,7 +780,7 @@
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string notr="true">$(BPM):stat:sa:window_mon</string>
+      <string notr="true">$(BPM):stat:tbt:window_mon</string>
      </property>
      <property name="foreground">
       <color>

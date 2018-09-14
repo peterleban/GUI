@@ -1179,7 +1179,7 @@ removal</string>
       </font>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
      </property>
      <property name="readOnly">
       <bool>true</bool>
@@ -2806,7 +2806,7 @@ temperature sensors</string>
       </font>
      </property>
      <property name="label">
-      <string notr="true">Menu</string>
+      <string notr="true">ADC buffer</string>
      </property>
      <property name="background">
       <color>
@@ -2816,16 +2816,19 @@ temperature sensors</string>
       </color>
      </property>
      <property name="labels">
-      <string notr="true">ADC buffer</string>
+      <string notr="true">short;long</string>
      </property>
      <property name="files">
-      <string notr="true">adc_buffer</string>
+      <string notr="true">adc_buffer;adc_buffer</string>
      </property>
      <property name="args">
-      <string notr="true">BPM=$(BPM)</string>
+      <string notr="true">BPM=$(BPM),SIG=adc;BPM=$(BPM),SIG=adc_long</string>
      </property>
      <property name="fontScaleMode">
       <enum>EPushButton::WidthAndHeight</enum>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Menu</enum>
      </property>
     </widget>
     <widget class="caRelatedDisplay" name="tbtddc_buff">
@@ -2949,6 +2952,10 @@ Frequency Domain</string>
        <pointsize>10</pointsize>
       </font>
      </property>
+     <property name="label">
+      <string notr="true">TBT
+time domain</string>
+     </property>
      <property name="background">
       <color>
        <red>252</red>
@@ -2957,17 +2964,19 @@ Frequency Domain</string>
       </color>
      </property>
      <property name="labels">
-      <string notr="true">TBT
-Time Domain</string>
+      <string notr="true">short;long</string>
      </property>
      <property name="files">
-      <string notr="true">tbt_synth</string>
+      <string notr="true">tbt_synth;tbt_synth</string>
      </property>
      <property name="args">
-      <string notr="true">BPM=$(BPM), SIG=tdp_synth</string>
+      <string notr="true">BPM=$(BPM), SIG=tdp_synth;BPM=$(BPM), SIG=tdp_synth_long</string>
      </property>
      <property name="fontScaleMode">
       <enum>EPushButton::WidthAndHeight</enum>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Menu</enum>
      </property>
     </widget>
     <widget class="caRelatedDisplay" name="fa_data">

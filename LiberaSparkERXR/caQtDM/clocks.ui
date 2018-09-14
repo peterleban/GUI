@@ -31,8 +31,11 @@
       <pointsize>8</pointsize>
      </font>
     </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(231, 231, 231);</string>
+     <string notr="true">background-color: rgb(221, 226, 232);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -235,8 +238,11 @@
       <pointsize>8</pointsize>
      </font>
     </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(231, 231, 231);</string>
+     <string notr="true">background-color: rgb(221, 226, 232);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -868,8 +874,11 @@
       <pointsize>8</pointsize>
      </font>
     </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(231, 231, 231);</string>
+     <string notr="true">background-color: rgb(221, 226, 232);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>

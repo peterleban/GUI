@@ -10,9 +10,6 @@
     <height>600</height>
    </rect>
   </property>
-  <property name="windowTitle">
-   <string>EvRx</string>
-  </property>
   <property name="Title" stdset="0">
    <string>Timing module &gt;&gt; $(DEVICE):$(MODULE)</string>
   </property>
@@ -982,7 +979,7 @@
       </color>
      </property>
      <property name="pressMessage">
-      <string notr="true">Pulse</string>
+      <string notr="true">RTC</string>
      </property>
     </widget>
     <widget class="caLineEdit" name="calineedit_20">
@@ -1912,7 +1909,7 @@
       </font>
      </property>
      <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):$(MODULE):sync_sp</string>
+      <string notr="true">$(DEVICE):sync</string>
      </property>
      <property name="label">
       <string notr="true">Sync now</string>
@@ -1925,7 +1922,7 @@
       </color>
      </property>
      <property name="pressMessage">
-      <string notr="true">Execute</string>
+      <string notr="true">1</string>
      </property>
     </widget>
     <widget class="caLineEdit" name="calineedit_27">
