@@ -64,10 +64,10 @@ y2Max 1
 # Trace Properties
 numTraces 1
 xPv {
-  0 "EPICS\\$(HOSTNAME):$(BPM):ddc_raw.Ia"
+  0 "$(HOSTNAME):$(BPM):ddc_raw.Ia"
 }
 yPv {
-  0 "EPICS\\$(HOSTNAME):$(BPM):ddc_raw.Qa"
+  0 "$(HOSTNAME):$(BPM):ddc_raw.Qa"
 }
 plotStyle {
   0 "point"
@@ -104,7 +104,7 @@ onColor index 0
 offColor index 0
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):ddc_raw.PROC"
+controlPv "$(HOSTNAME):$(BPM):ddc_raw.PROC"
 pressValue "1"
 onLabel "Processing..."
 offLabel "Read data"
@@ -151,10 +151,10 @@ y2Max 1
 # Trace Properties
 numTraces 1
 xPv {
-  0 "EPICS\\$(HOSTNAME):$(BPM):ddc_raw.Ib"
+  0 "$(HOSTNAME):$(BPM):ddc_raw.Ib"
 }
 yPv {
-  0 "EPICS\\$(HOSTNAME):$(BPM):ddc_raw.Qb"
+  0 "$(HOSTNAME):$(BPM):ddc_raw.Qb"
 }
 plotStyle {
   0 "point"
@@ -215,10 +215,10 @@ y2Max 1
 # Trace Properties
 numTraces 1
 xPv {
-  0 "EPICS\\$(HOSTNAME):$(BPM):ddc_raw.Ic"
+  0 "$(HOSTNAME):$(BPM):ddc_raw.Ic"
 }
 yPv {
-  0 "EPICS\\$(HOSTNAME):$(BPM):ddc_raw.Qc"
+  0 "$(HOSTNAME):$(BPM):ddc_raw.Qc"
 }
 plotStyle {
   0 "point"
@@ -279,10 +279,10 @@ y2Max 1
 # Trace Properties
 numTraces 1
 xPv {
-  0 "EPICS\\$(HOSTNAME):$(BPM):ddc_raw.Id"
+  0 "$(HOSTNAME):$(BPM):ddc_raw.Id"
 }
 yPv {
-  0 "EPICS\\$(HOSTNAME):$(BPM):ddc_raw.Qd"
+  0 "$(HOSTNAME):$(BPM):ddc_raw.Qd"
 }
 plotStyle {
   0 "point"

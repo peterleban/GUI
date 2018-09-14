@@ -91,12 +91,12 @@ y2MinorsPerMajor 4
 # Trace Properties
 numTraces 6
 yPv {
-  0 "EPICS\\$(HOSTNAME):$(BPM):sa.Va"
-  1 "EPICS\\$(HOSTNAME):$(BPM):sa.Vb"
-  2 "EPICS\\$(HOSTNAME):$(BPM):sa.Vc"
-  3 "EPICS\\$(HOSTNAME):$(BPM):sa.Vd"
-  4 "EPICS\\$(HOSTNAME):$(BPM):sa.Sum"
-  5 "EPICS\\$(HOSTNAME):$(BPM):sa.Q"
+  0 "$(HOSTNAME):$(BPM):sa.Va"
+  1 "$(HOSTNAME):$(BPM):sa.Vb"
+  2 "$(HOSTNAME):$(BPM):sa.Vc"
+  3 "$(HOSTNAME):$(BPM):sa.Vd"
+  4 "$(HOSTNAME):$(BPM):sa.Sum"
+  5 "$(HOSTNAME):$(BPM):sa.Q"
 }
 ySigned {
   0 1

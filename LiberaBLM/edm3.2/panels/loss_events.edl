@@ -87,7 +87,7 @@ x 365
 y 10
 w 60
 h 20
-controlPv "EPICS\\$(HOSTNAME):decimation:counter_datarate_mon"
+controlPv "$(HOSTNAME):decimation:counter_datarate_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -113,7 +113,7 @@ x 75
 y 95
 w 90
 h 20
-controlPv "EPICS\\$(HOSTNAME):signals:counter.A1"
+controlPv "$(HOSTNAME):signals:counter.A1"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -138,7 +138,7 @@ x 75
 y 120
 w 90
 h 20
-controlPv "EPICS\\$(HOSTNAME):signals:counter.B1"
+controlPv "$(HOSTNAME):signals:counter.B1"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -163,7 +163,7 @@ x 75
 y 170
 w 90
 h 20
-controlPv "EPICS\\$(HOSTNAME):signals:counter.D1"
+controlPv "$(HOSTNAME):signals:counter.D1"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -188,7 +188,7 @@ x 75
 y 145
 w 90
 h 20
-controlPv "EPICS\\$(HOSTNAME):signals:counter.C1"
+controlPv "$(HOSTNAME):signals:counter.C1"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -213,7 +213,7 @@ x 180
 y 95
 w 90
 h 20
-controlPv "EPICS\\$(HOSTNAME):signals:counter.A2"
+controlPv "$(HOSTNAME):signals:counter.A2"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -238,7 +238,7 @@ x 180
 y 120
 w 90
 h 20
-controlPv "EPICS\\$(HOSTNAME):signals:counter.B2"
+controlPv "$(HOSTNAME):signals:counter.B2"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -263,7 +263,7 @@ x 180
 y 170
 w 90
 h 20
-controlPv "EPICS\\$(HOSTNAME):signals:counter.D2"
+controlPv "$(HOSTNAME):signals:counter.D2"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -288,7 +288,7 @@ x 180
 y 145
 w 90
 h 20
-controlPv "EPICS\\$(HOSTNAME):signals:counter.C2"
+controlPv "$(HOSTNAME):signals:counter.C2"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -353,7 +353,7 @@ x 325
 y 170
 w 90
 h 20
-controlPv "EPICS\\$(HOSTNAME):signals:coincidence_counter.D"
+controlPv "$(HOSTNAME):signals:coincidence_counter.D"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -378,7 +378,7 @@ x 325
 y 95
 w 90
 h 20
-controlPv "EPICS\\$(HOSTNAME):signals:coincidence_counter.A"
+controlPv "$(HOSTNAME):signals:coincidence_counter.A"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -403,7 +403,7 @@ x 325
 y 120
 w 90
 h 20
-controlPv "EPICS\\$(HOSTNAME):signals:coincidence_counter.B"
+controlPv "$(HOSTNAME):signals:coincidence_counter.B"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -428,7 +428,7 @@ x 325
 y 145
 w 90
 h 20
-controlPv "EPICS\\$(HOSTNAME):signals:coincidence_counter.C"
+controlPv "$(HOSTNAME):signals:coincidence_counter.C"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -683,7 +683,7 @@ font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
 bgColor index 0
-visPv "EPICS\\$(HOSTNAME):counting_mode_mon"
+visPv "$(HOSTNAME):counting_mode_mon"
 visMin "1"
 visMax "2"
 value {
@@ -706,7 +706,7 @@ font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
 bgColor index 0
-visPv "EPICS\\$(HOSTNAME):counting_mode_mon"
+visPv "$(HOSTNAME):counting_mode_mon"
 visMin "0"
 visMax "1"
 value {

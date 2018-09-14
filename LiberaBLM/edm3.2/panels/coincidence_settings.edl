@@ -135,8 +135,8 @@ offColor index 4
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):coincidence:mask:AC_sp"
-indicatorPv "EPICS\\$(HOSTNAME):coincidence:mask:AC_mon"
+controlPv "$(HOSTNAME):coincidence:mask:AC_sp"
+indicatorPv "$(HOSTNAME):coincidence:mask:AC_mon"
 onLabel "C"
 offLabel "-"
 labelType "literal"
@@ -163,8 +163,8 @@ offColor index 4
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):coincidence:mask:AB_sp"
-indicatorPv "EPICS\\$(HOSTNAME):coincidence:mask:AB_mon"
+controlPv "$(HOSTNAME):coincidence:mask:AB_sp"
+indicatorPv "$(HOSTNAME):coincidence:mask:AB_mon"
 onLabel "B"
 offLabel "-"
 labelType "literal"
@@ -191,8 +191,8 @@ offColor index 4
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):coincidence:mask:AD_sp"
-indicatorPv "EPICS\\$(HOSTNAME):coincidence:mask:AD_mon"
+controlPv "$(HOSTNAME):coincidence:mask:AD_sp"
+indicatorPv "$(HOSTNAME):coincidence:mask:AD_mon"
 onLabel "D"
 offLabel "-"
 labelType "literal"
@@ -240,8 +240,8 @@ offColor index 4
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):coincidence:mask:BD_sp"
-indicatorPv "EPICS\\$(HOSTNAME):coincidence:mask:BD_mon"
+controlPv "$(HOSTNAME):coincidence:mask:BD_sp"
+indicatorPv "$(HOSTNAME):coincidence:mask:BD_mon"
 onLabel "D"
 offLabel "-"
 labelType "literal"
@@ -268,8 +268,8 @@ offColor index 4
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):coincidence:mask:BC_sp"
-indicatorPv "EPICS\\$(HOSTNAME):coincidence:mask:BC_mon"
+controlPv "$(HOSTNAME):coincidence:mask:BC_sp"
+indicatorPv "$(HOSTNAME):coincidence:mask:BC_mon"
 onLabel "C"
 offLabel "-"
 labelType "literal"
@@ -296,8 +296,8 @@ offColor index 4
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):coincidence:mask:BA_sp"
-indicatorPv "EPICS\\$(HOSTNAME):coincidence:mask:BA_mon"
+controlPv "$(HOSTNAME):coincidence:mask:BA_sp"
+indicatorPv "$(HOSTNAME):coincidence:mask:BA_mon"
 onLabel "A"
 offLabel "-"
 labelType "literal"
@@ -324,8 +324,8 @@ offColor index 4
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):coincidence:mask:CD_sp"
-indicatorPv "EPICS\\$(HOSTNAME):coincidence:mask:CD_mon"
+controlPv "$(HOSTNAME):coincidence:mask:CD_sp"
+indicatorPv "$(HOSTNAME):coincidence:mask:CD_mon"
 onLabel "D"
 offLabel "-"
 labelType "literal"
@@ -352,8 +352,8 @@ offColor index 4
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):coincidence:mask:CB_sp"
-indicatorPv "EPICS\\$(HOSTNAME):coincidence:mask:CB_mon"
+controlPv "$(HOSTNAME):coincidence:mask:CB_sp"
+indicatorPv "$(HOSTNAME):coincidence:mask:CB_mon"
 onLabel "B"
 offLabel "-"
 labelType "literal"
@@ -380,8 +380,8 @@ offColor index 4
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):coincidence:mask:CA_sp"
-indicatorPv "EPICS\\$(HOSTNAME):coincidence:mask:CA_mon"
+controlPv "$(HOSTNAME):coincidence:mask:CA_sp"
+indicatorPv "$(HOSTNAME):coincidence:mask:CA_mon"
 onLabel "A"
 offLabel "-"
 labelType "literal"
@@ -408,8 +408,8 @@ offColor index 4
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):coincidence:mask:DC_sp"
-indicatorPv "EPICS\\$(HOSTNAME):coincidence:mask:DC_mon"
+controlPv "$(HOSTNAME):coincidence:mask:DC_sp"
+indicatorPv "$(HOSTNAME):coincidence:mask:DC_mon"
 onLabel "C"
 offLabel "-"
 labelType "literal"
@@ -436,8 +436,8 @@ offColor index 4
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):coincidence:mask:DB_sp"
-indicatorPv "EPICS\\$(HOSTNAME):coincidence:mask:DB_mon"
+controlPv "$(HOSTNAME):coincidence:mask:DB_sp"
+indicatorPv "$(HOSTNAME):coincidence:mask:DB_mon"
 onLabel "B"
 offLabel "-"
 labelType "literal"
@@ -464,8 +464,8 @@ offColor index 4
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):coincidence:mask:DA_sp"
-indicatorPv "EPICS\\$(HOSTNAME):coincidence:mask:DA_mon"
+controlPv "$(HOSTNAME):coincidence:mask:DA_sp"
+indicatorPv "$(HOSTNAME):coincidence:mask:DA_mon"
 onLabel "A"
 offLabel "-"
 labelType "literal"
@@ -492,8 +492,8 @@ offColor index 4
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):coincidence:correlation:AC_sp"
-indicatorPv "EPICS\\$(HOSTNAME):coincidence:correlation:AC_mon"
+controlPv "$(HOSTNAME):coincidence:correlation:AC_sp"
+indicatorPv "$(HOSTNAME):coincidence:correlation:AC_mon"
 onLabel "C"
 offLabel "notC"
 labelType "literal"
@@ -520,8 +520,8 @@ offColor index 4
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):coincidence:correlation:AB_sp"
-indicatorPv "EPICS\\$(HOSTNAME):coincidence:correlation:AB_mon"
+controlPv "$(HOSTNAME):coincidence:correlation:AB_sp"
+indicatorPv "$(HOSTNAME):coincidence:correlation:AB_mon"
 onLabel "B"
 offLabel "notB"
 labelType "literal"
@@ -548,8 +548,8 @@ offColor index 4
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):coincidence:correlation:AD_sp"
-indicatorPv "EPICS\\$(HOSTNAME):coincidence:correlation:AD_mon"
+controlPv "$(HOSTNAME):coincidence:correlation:AD_sp"
+indicatorPv "$(HOSTNAME):coincidence:correlation:AD_mon"
 onLabel "D"
 offLabel "notD"
 labelType "literal"
@@ -596,8 +596,8 @@ offColor index 4
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):coincidence:correlation:BD_sp"
-indicatorPv "EPICS\\$(HOSTNAME):coincidence:correlation:BD_mon"
+controlPv "$(HOSTNAME):coincidence:correlation:BD_sp"
+indicatorPv "$(HOSTNAME):coincidence:correlation:BD_mon"
 onLabel "D"
 offLabel "notD"
 labelType "literal"
@@ -624,8 +624,8 @@ offColor index 4
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):coincidence:correlation:BC_sp"
-indicatorPv "EPICS\\$(HOSTNAME):coincidence:correlation:BC_mon"
+controlPv "$(HOSTNAME):coincidence:correlation:BC_sp"
+indicatorPv "$(HOSTNAME):coincidence:correlation:BC_mon"
 onLabel "C"
 offLabel "notC"
 labelType "literal"
@@ -652,8 +652,8 @@ offColor index 4
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):coincidence:correlation:BA_sp"
-indicatorPv "EPICS\\$(HOSTNAME):coincidence:correlation:BA_mon"
+controlPv "$(HOSTNAME):coincidence:correlation:BA_sp"
+indicatorPv "$(HOSTNAME):coincidence:correlation:BA_mon"
 onLabel "A"
 offLabel "notA"
 labelType "literal"
@@ -680,8 +680,8 @@ offColor index 4
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):coincidence:correlation:CD_sp"
-indicatorPv "EPICS\\$(HOSTNAME):coincidence:correlation:CD_mon"
+controlPv "$(HOSTNAME):coincidence:correlation:CD_sp"
+indicatorPv "$(HOSTNAME):coincidence:correlation:CD_mon"
 onLabel "D"
 offLabel "notD"
 labelType "literal"
@@ -708,8 +708,8 @@ offColor index 4
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):coincidence:correlation:CB_sp"
-indicatorPv "EPICS\\$(HOSTNAME):coincidence:correlation:CB_mon"
+controlPv "$(HOSTNAME):coincidence:correlation:CB_sp"
+indicatorPv "$(HOSTNAME):coincidence:correlation:CB_mon"
 onLabel "B"
 offLabel "notB"
 labelType "literal"
@@ -736,8 +736,8 @@ offColor index 4
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):coincidence:correlation:CA_sp"
-indicatorPv "EPICS\\$(HOSTNAME):coincidence:correlation:CA_mon"
+controlPv "$(HOSTNAME):coincidence:correlation:CA_sp"
+indicatorPv "$(HOSTNAME):coincidence:correlation:CA_mon"
 onLabel "A"
 offLabel "notA"
 labelType "literal"
@@ -764,8 +764,8 @@ offColor index 4
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):coincidence:correlation:DC_sp"
-indicatorPv "EPICS\\$(HOSTNAME):coincidence:correlation:DC_mon"
+controlPv "$(HOSTNAME):coincidence:correlation:DC_sp"
+indicatorPv "$(HOSTNAME):coincidence:correlation:DC_mon"
 onLabel "C"
 offLabel "notC"
 labelType "literal"
@@ -792,8 +792,8 @@ offColor index 4
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):coincidence:correlation:DB_sp"
-indicatorPv "EPICS\\$(HOSTNAME):coincidence:correlation:DB_mon"
+controlPv "$(HOSTNAME):coincidence:correlation:DB_sp"
+indicatorPv "$(HOSTNAME):coincidence:correlation:DB_mon"
 onLabel "B"
 offLabel "notB"
 labelType "literal"
@@ -820,8 +820,8 @@ offColor index 4
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):coincidence:correlation:DA_sp"
-indicatorPv "EPICS\\$(HOSTNAME):coincidence:correlation:DA_mon"
+controlPv "$(HOSTNAME):coincidence:correlation:DA_sp"
+indicatorPv "$(HOSTNAME):coincidence:correlation:DA_mon"
 onLabel "A"
 offLabel "notA"
 labelType "literal"
@@ -882,7 +882,7 @@ x 420
 y 70
 w 90
 h 25
-controlPv "EPICS\\$(HOSTNAME):coincidence:window:A_mon"
+controlPv "$(HOSTNAME):coincidence:window:A_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -907,7 +907,7 @@ x 380
 y 70
 w 35
 h 25
-controlPv "EPICS\\$(HOSTNAME):coincidence:window:A_sp"
+controlPv "$(HOSTNAME):coincidence:window:A_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -933,7 +933,7 @@ x 420
 y 100
 w 90
 h 25
-controlPv "EPICS\\$(HOSTNAME):coincidence:window:B_mon"
+controlPv "$(HOSTNAME):coincidence:window:B_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -958,7 +958,7 @@ x 380
 y 100
 w 35
 h 25
-controlPv "EPICS\\$(HOSTNAME):coincidence:window:B_sp"
+controlPv "$(HOSTNAME):coincidence:window:B_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -984,7 +984,7 @@ x 380
 y 130
 w 35
 h 25
-controlPv "EPICS\\$(HOSTNAME):coincidence:window:C_sp"
+controlPv "$(HOSTNAME):coincidence:window:C_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -1010,7 +1010,7 @@ x 420
 y 130
 w 90
 h 25
-controlPv "EPICS\\$(HOSTNAME):coincidence:window:C_mon"
+controlPv "$(HOSTNAME):coincidence:window:C_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -1035,7 +1035,7 @@ x 380
 y 160
 w 35
 h 25
-controlPv "EPICS\\$(HOSTNAME):coincidence:window:D_sp"
+controlPv "$(HOSTNAME):coincidence:window:D_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -1061,7 +1061,7 @@ x 420
 y 160
 w 90
 h 25
-controlPv "EPICS\\$(HOSTNAME):coincidence:window:D_mon"
+controlPv "$(HOSTNAME):coincidence:window:D_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -1241,7 +1241,7 @@ x 605
 y 130
 w 85
 h 20
-controlPv "EPICS\\$(HOSTNAME):adcmask_c1:window_mon"
+controlPv "$(HOSTNAME):adcmask_c1:window_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -1266,7 +1266,7 @@ x 605
 y 105
 w 85
 h 20
-controlPv "EPICS\\$(HOSTNAME):adcmask_c1:offset_mon"
+controlPv "$(HOSTNAME):adcmask_c1:offset_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -1329,7 +1329,7 @@ x 605
 y 80
 w 85
 h 20
-controlPv "EPICS\\$(HOSTNAME):decimation:t0_interval_mon"
+controlPv "$(HOSTNAME):decimation:t0_interval_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -1411,7 +1411,7 @@ x 115
 y 315
 w 35
 h 20
-controlPv "EPICS\\$(HOSTNAME):adcmask_c1:offset_mon"
+controlPv "$(HOSTNAME):adcmask_c1:offset_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -1435,7 +1435,7 @@ x 70
 y 315
 w 40
 h 18
-controlPv "EPICS\\$(HOSTNAME):adcmask_c1:offset_sp"
+controlPv "$(HOSTNAME):adcmask_c1:offset_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -1462,7 +1462,7 @@ x 70
 y 340
 w 40
 h 18
-controlPv "EPICS\\$(HOSTNAME):adcmask_c1:window_sp"
+controlPv "$(HOSTNAME):adcmask_c1:window_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -1489,7 +1489,7 @@ x 115
 y 340
 w 35
 h 20
-controlPv "EPICS\\$(HOSTNAME):adcmask_c1:window_mon"
+controlPv "$(HOSTNAME):adcmask_c1:window_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -1513,7 +1513,7 @@ x 185
 y 340
 w 40
 h 18
-controlPv "EPICS\\$(HOSTNAME):adcmask_c2:window_sp"
+controlPv "$(HOSTNAME):adcmask_c2:window_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -1540,7 +1540,7 @@ x 230
 y 340
 w 35
 h 20
-controlPv "EPICS\\$(HOSTNAME):adcmask_c2:window_mon"
+controlPv "$(HOSTNAME):adcmask_c2:window_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -1564,7 +1564,7 @@ x 230
 y 315
 w 35
 h 20
-controlPv "EPICS\\$(HOSTNAME):adcmask_c2:offset_mon"
+controlPv "$(HOSTNAME):adcmask_c2:offset_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -1588,7 +1588,7 @@ x 185
 y 315
 w 40
 h 18
-controlPv "EPICS\\$(HOSTNAME):adcmask_c2:offset_sp"
+controlPv "$(HOSTNAME):adcmask_c2:offset_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -1674,7 +1674,7 @@ x 135
 y 230
 w 35
 h 20
-controlPv "EPICS\\$(HOSTNAME):decimation:t0_interval_mon"
+controlPv "$(HOSTNAME):decimation:t0_interval_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -1698,7 +1698,7 @@ x 90
 y 230
 w 40
 h 18
-controlPv "EPICS\\$(HOSTNAME):decimation:t0_interval_sp"
+controlPv "$(HOSTNAME):decimation:t0_interval_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -1782,7 +1782,7 @@ x 115
 y 315
 w 35
 h 20
-controlPv "EPICS\\$(HOSTNAME):adcmask_c1:offset_mon"
+controlPv "$(HOSTNAME):adcmask_c1:offset_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -1806,7 +1806,7 @@ x 70
 y 315
 w 40
 h 18
-controlPv "EPICS\\$(HOSTNAME):adcmask_c1:offset_sp"
+controlPv "$(HOSTNAME):adcmask_c1:offset_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -1833,7 +1833,7 @@ x 70
 y 340
 w 40
 h 18
-controlPv "EPICS\\$(HOSTNAME):adcmask_c1:window_sp"
+controlPv "$(HOSTNAME):adcmask_c1:window_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -1860,7 +1860,7 @@ x 115
 y 340
 w 35
 h 20
-controlPv "EPICS\\$(HOSTNAME):adcmask_c1:window_mon"
+controlPv "$(HOSTNAME):adcmask_c1:window_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -1884,7 +1884,7 @@ x 185
 y 340
 w 40
 h 18
-controlPv "EPICS\\$(HOSTNAME):adcmask_c2:window_sp"
+controlPv "$(HOSTNAME):adcmask_c2:window_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -1911,7 +1911,7 @@ x 230
 y 340
 w 35
 h 20
-controlPv "EPICS\\$(HOSTNAME):adcmask_c2:window_mon"
+controlPv "$(HOSTNAME):adcmask_c2:window_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -1935,7 +1935,7 @@ x 230
 y 315
 w 35
 h 20
-controlPv "EPICS\\$(HOSTNAME):adcmask_c2:offset_mon"
+controlPv "$(HOSTNAME):adcmask_c2:offset_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -1959,7 +1959,7 @@ x 185
 y 315
 w 40
 h 18
-controlPv "EPICS\\$(HOSTNAME):adcmask_c2:offset_sp"
+controlPv "$(HOSTNAME):adcmask_c2:offset_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -2045,7 +2045,7 @@ x 135
 y 230
 w 35
 h 20
-controlPv "EPICS\\$(HOSTNAME):decimation:t0_interval_mon"
+controlPv "$(HOSTNAME):decimation:t0_interval_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -2069,7 +2069,7 @@ x 90
 y 230
 w 40
 h 18
-controlPv "EPICS\\$(HOSTNAME):decimation:t0_interval_sp"
+controlPv "$(HOSTNAME):decimation:t0_interval_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24

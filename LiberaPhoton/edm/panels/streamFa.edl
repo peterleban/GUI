@@ -88,11 +88,11 @@ y2Max 1
 # Trace Properties
 numTraces 5
 yPv {
-  0 "EPICS\\$(DEVICE):signals:fa.A"
-  1 "EPICS\\$(DEVICE):signals:fa.B"
-  2 "EPICS\\$(DEVICE):signals:fa.C"
-  3 "EPICS\\$(DEVICE):signals:fa.D"
-  4 "EPICS\\$(DEVICE):signals:fa.Sum"
+  0 "$(DEVICE):signals:fa.A"
+  1 "$(DEVICE):signals:fa.B"
+  2 "$(DEVICE):signals:fa.C"
+  3 "$(DEVICE):signals:fa.D"
+  4 "$(DEVICE):signals:fa.Sum"
 }
 lineThickness {
   0 2

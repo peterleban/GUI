@@ -129,7 +129,7 @@ x 150
 y 300
 w 100
 h 19
-controlPv "EPICS\\$(HOSTNAME):$(BPM):att:window:offset"
+controlPv "$(HOSTNAME):$(BPM):att:window:offset"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -175,7 +175,7 @@ x 150
 y 330
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):att:window:duration"
+controlPv "$(HOSTNAME):$(BPM):att:window:duration"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -247,7 +247,7 @@ buttonColor index 14
 selectColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):att:mode"
+controlPv "$(HOSTNAME):$(BPM):att:mode"
 font "helvetica-medium-r-12.0"
 endObjectProperties
 
@@ -267,7 +267,7 @@ buttonColor index 14
 selectColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):att:source"
+controlPv "$(HOSTNAME):$(BPM):att:source"
 font "helvetica-medium-r-12.0"
 endObjectProperties
 
@@ -301,7 +301,7 @@ x 150
 y 170
 w 120
 h 15
-controlPv "EPICS\\$(HOSTNAME):$(BPM):att:att_id"
+controlPv "$(HOSTNAME):$(BPM):att:att_id"
 font "helvetica-bold-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -385,7 +385,7 @@ x 150
 y 360
 w 120
 h 15
-controlPv "EPICS\\$(HOSTNAME):$(BPM):att:event_id"
+controlPv "$(HOSTNAME):$(BPM):att:event_id"
 font "helvetica-bold-r-12.0"
 fgColor index 14
 bgColor index 0

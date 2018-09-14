@@ -89,10 +89,10 @@ y2Max 1
 # Trace Properties
 numTraces 4
 yPv {
-  0 "EPICS\\$(DEVICE):ADC:ADC_A_MONITOR"
-  1 "EPICS\\$(DEVICE):ADC:ADC_B_MONITOR"
-  2 "EPICS\\$(DEVICE):ADC:ADC_C_MONITOR"
-  3 "EPICS\\$(DEVICE):ADC:ADC_D_MONITOR"
+  0 "$(DEVICE):ADC:ADC_A_MONITOR"
+  1 "$(DEVICE):ADC:ADC_B_MONITOR"
+  2 "$(DEVICE):ADC:ADC_C_MONITOR"
+  3 "$(DEVICE):ADC:ADC_D_MONITOR"
 }
 ySigned {
   0 1
@@ -307,8 +307,8 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(DEVICE):ADC:ADC_IGNORE_TRIG_SP"
-indicatorPv "EPICS\\$(DEVICE):ADC:ADC_IGNORE_TRIG_SP"
+controlPv "$(DEVICE):ADC:ADC_IGNORE_TRIG_SP"
+indicatorPv "$(DEVICE):ADC:ADC_IGNORE_TRIG_SP"
 onLabel "Manual"
 offLabel "Auto"
 labelType "literal"
@@ -332,14 +332,14 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(DEVICE):ADC:ADC_ON_NEXT_TRIG_CMD"
+controlPv "$(DEVICE):ADC:ADC_ON_NEXT_TRIG_CMD"
 onLabel "Acquire"
 offLabel "Acquire"
 labelType "literal"
 buttonType "push"
 font "helvetica-medium-r-10.0"
 objType "controls"
-visPv "EPICS\\$(DEVICE):ADC:ADC_IGNORE_TRIG_MONITOR"
+visPv "$(DEVICE):ADC:ADC_IGNORE_TRIG_MONITOR"
 visMin "1"
 visMax "2"
 endObjectProperties

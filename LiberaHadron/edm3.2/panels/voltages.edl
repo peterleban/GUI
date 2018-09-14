@@ -35,7 +35,7 @@ x 5
 y 30
 w 140
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_7:name"
+controlPv "$(HOSTNAME):$(BSENS):ID_7:name"
 precision 3
 fgColor index 14
 bgColor index 104
@@ -54,7 +54,7 @@ x 155
 y 30
 w 70
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_7:value"
+controlPv "$(HOSTNAME):$(BSENS):ID_7:value"
 displayMode "decimal"
 precision 3
 fgColor index 14
@@ -74,7 +74,7 @@ x 235
 y 30
 w 80
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_7:units"
+controlPv "$(HOSTNAME):$(BSENS):ID_7:units"
 displayMode "decimal"
 precision 3
 fgColor index 14
@@ -94,7 +94,7 @@ x 235
 y 55
 w 80
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_8:units"
+controlPv "$(HOSTNAME):$(BSENS):ID_8:units"
 displayMode "decimal"
 precision 3
 fgColor index 14
@@ -114,7 +114,7 @@ x 155
 y 55
 w 70
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_8:value"
+controlPv "$(HOSTNAME):$(BSENS):ID_8:value"
 displayMode "decimal"
 precision 3
 fgColor index 14
@@ -134,7 +134,7 @@ x 5
 y 55
 w 140
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_8:name"
+controlPv "$(HOSTNAME):$(BSENS):ID_8:name"
 precision 3
 fgColor index 14
 bgColor index 104
@@ -153,7 +153,7 @@ x 235
 y 80
 w 80
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_9:units"
+controlPv "$(HOSTNAME):$(BSENS):ID_9:units"
 displayMode "decimal"
 precision 3
 fgColor index 14
@@ -173,7 +173,7 @@ x 155
 y 80
 w 70
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_9:value"
+controlPv "$(HOSTNAME):$(BSENS):ID_9:value"
 displayMode "decimal"
 precision 3
 fgColor index 14
@@ -193,7 +193,7 @@ x 5
 y 80
 w 140
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_9:name"
+controlPv "$(HOSTNAME):$(BSENS):ID_9:name"
 precision 3
 fgColor index 14
 bgColor index 104
@@ -212,7 +212,7 @@ x 5
 y 105
 w 140
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_10:name"
+controlPv "$(HOSTNAME):$(BSENS):ID_10:name"
 precision 3
 fgColor index 14
 bgColor index 104
@@ -231,7 +231,7 @@ x 155
 y 105
 w 70
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_10:value"
+controlPv "$(HOSTNAME):$(BSENS):ID_10:value"
 displayMode "decimal"
 precision 3
 fgColor index 14
@@ -251,7 +251,7 @@ x 235
 y 105
 w 80
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_10:units"
+controlPv "$(HOSTNAME):$(BSENS):ID_10:units"
 displayMode "decimal"
 precision 3
 fgColor index 14
@@ -271,7 +271,7 @@ x 5
 y 130
 w 140
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_11:name"
+controlPv "$(HOSTNAME):$(BSENS):ID_11:name"
 precision 3
 fgColor index 14
 bgColor index 104
@@ -290,7 +290,7 @@ x 155
 y 130
 w 70
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_11:value"
+controlPv "$(HOSTNAME):$(BSENS):ID_11:value"
 displayMode "decimal"
 precision 3
 fgColor index 14
@@ -310,7 +310,7 @@ x 235
 y 130
 w 80
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_11:units"
+controlPv "$(HOSTNAME):$(BSENS):ID_11:units"
 displayMode "decimal"
 precision 3
 fgColor index 14
@@ -330,7 +330,7 @@ x 5
 y 155
 w 140
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_12:name"
+controlPv "$(HOSTNAME):$(BSENS):ID_12:name"
 precision 3
 fgColor index 14
 bgColor index 104
@@ -349,7 +349,7 @@ x 155
 y 155
 w 70
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_12:value"
+controlPv "$(HOSTNAME):$(BSENS):ID_12:value"
 displayMode "decimal"
 precision 3
 fgColor index 14
@@ -369,7 +369,7 @@ x 235
 y 155
 w 80
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_12:units"
+controlPv "$(HOSTNAME):$(BSENS):ID_12:units"
 displayMode "decimal"
 precision 3
 fgColor index 14
@@ -389,7 +389,7 @@ x 5
 y 180
 w 140
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_13:name"
+controlPv "$(HOSTNAME):$(BSENS):ID_13:name"
 precision 3
 fgColor index 14
 bgColor index 104
@@ -408,7 +408,7 @@ x 155
 y 180
 w 70
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_13:value"
+controlPv "$(HOSTNAME):$(BSENS):ID_13:value"
 displayMode "decimal"
 precision 3
 fgColor index 14
@@ -428,7 +428,7 @@ x 235
 y 180
 w 80
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_13:units"
+controlPv "$(HOSTNAME):$(BSENS):ID_13:units"
 displayMode "decimal"
 precision 3
 fgColor index 14
@@ -448,7 +448,7 @@ x 5
 y 205
 w 140
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_14:name"
+controlPv "$(HOSTNAME):$(BSENS):ID_14:name"
 precision 3
 fgColor index 14
 bgColor index 104
@@ -467,7 +467,7 @@ x 155
 y 205
 w 70
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_14:value"
+controlPv "$(HOSTNAME):$(BSENS):ID_14:value"
 displayMode "decimal"
 precision 3
 fgColor index 14
@@ -487,7 +487,7 @@ x 235
 y 205
 w 80
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_14:units"
+controlPv "$(HOSTNAME):$(BSENS):ID_14:units"
 displayMode "decimal"
 precision 3
 fgColor index 14
@@ -507,7 +507,7 @@ x 5
 y 230
 w 140
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_15:name"
+controlPv "$(HOSTNAME):$(BSENS):ID_15:name"
 precision 3
 fgColor index 14
 bgColor index 104
@@ -526,7 +526,7 @@ x 155
 y 230
 w 70
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_15:value"
+controlPv "$(HOSTNAME):$(BSENS):ID_15:value"
 displayMode "decimal"
 precision 3
 fgColor index 14
@@ -546,7 +546,7 @@ x 235
 y 230
 w 80
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_15:units"
+controlPv "$(HOSTNAME):$(BSENS):ID_15:units"
 displayMode "decimal"
 precision 3
 fgColor index 14
@@ -566,7 +566,7 @@ x 5
 y 255
 w 140
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_16:name"
+controlPv "$(HOSTNAME):$(BSENS):ID_16:name"
 precision 3
 fgColor index 14
 bgColor index 104
@@ -585,7 +585,7 @@ x 155
 y 255
 w 70
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_16:value"
+controlPv "$(HOSTNAME):$(BSENS):ID_16:value"
 displayMode "decimal"
 precision 3
 fgColor index 14
@@ -605,7 +605,7 @@ x 235
 y 255
 w 80
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_16:units"
+controlPv "$(HOSTNAME):$(BSENS):ID_16:units"
 displayMode "decimal"
 precision 3
 fgColor index 14
@@ -625,7 +625,7 @@ x 5
 y 280
 w 140
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_17:name"
+controlPv "$(HOSTNAME):$(BSENS):ID_17:name"
 precision 3
 fgColor index 14
 bgColor index 104
@@ -644,7 +644,7 @@ x 155
 y 280
 w 70
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_17:value"
+controlPv "$(HOSTNAME):$(BSENS):ID_17:value"
 displayMode "decimal"
 precision 3
 fgColor index 14
@@ -664,7 +664,7 @@ x 235
 y 280
 w 80
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_17:units"
+controlPv "$(HOSTNAME):$(BSENS):ID_17:units"
 displayMode "decimal"
 precision 3
 fgColor index 14
@@ -684,7 +684,7 @@ x 235
 y 305
 w 80
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_18:units"
+controlPv "$(HOSTNAME):$(BSENS):ID_18:units"
 displayMode "decimal"
 precision 3
 fgColor index 14
@@ -704,7 +704,7 @@ x 155
 y 305
 w 70
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_18:value"
+controlPv "$(HOSTNAME):$(BSENS):ID_18:value"
 displayMode "decimal"
 precision 3
 fgColor index 14
@@ -724,7 +724,7 @@ x 5
 y 305
 w 140
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_18:name"
+controlPv "$(HOSTNAME):$(BSENS):ID_18:name"
 precision 3
 fgColor index 14
 bgColor index 104

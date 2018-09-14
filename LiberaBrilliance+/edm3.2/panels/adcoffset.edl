@@ -119,7 +119,7 @@ x 220
 y 30
 w 105
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):conf:adc_offset:A_mon"
+controlPv "$(HOSTNAME):$(BPM):conf:adc_offset:A_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -144,7 +144,7 @@ x 110
 y 30
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):conf:adc_offset:A_sp"
+controlPv "$(HOSTNAME):$(BPM):conf:adc_offset:A_sp"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 24
@@ -169,7 +169,7 @@ x 220
 y 60
 w 105
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):conf:adc_offset:B_mon"
+controlPv "$(HOSTNAME):$(BPM):conf:adc_offset:B_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -194,7 +194,7 @@ x 110
 y 60
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):conf:adc_offset:B_sp"
+controlPv "$(HOSTNAME):$(BPM):conf:adc_offset:B_sp"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 24
@@ -238,7 +238,7 @@ x 110
 y 90
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):conf:adc_offset:C_sp"
+controlPv "$(HOSTNAME):$(BPM):conf:adc_offset:C_sp"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 24
@@ -263,7 +263,7 @@ x 220
 y 90
 w 105
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):conf:adc_offset:C_mon"
+controlPv "$(HOSTNAME):$(BPM):conf:adc_offset:C_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -307,7 +307,7 @@ x 110
 y 120
 w 100
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):conf:adc_offset:D_sp"
+controlPv "$(HOSTNAME):$(BPM):conf:adc_offset:D_sp"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 24
@@ -332,7 +332,7 @@ x 220
 y 120
 w 105
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):conf:adc_offset:D_mon"
+controlPv "$(HOSTNAME):$(BPM):conf:adc_offset:D_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14

@@ -66,7 +66,7 @@ y2Max 1
 # Trace Properties
 numTraces 1
 yPv {
-  0 "EPICS\\$(HOSTNAME):$(BPM):tbt:adc_mask"
+  0 "$(HOSTNAME):$(BPM):tbt:adc_mask"
 }
 plotStyle {
   0 "needle"
@@ -112,7 +112,7 @@ x 210
 y 360
 w 60
 h 18
-controlPv "EPICS\\$(HOSTNAME):$(BPM):tbt:adc_mask:indx"
+controlPv "$(HOSTNAME):$(BPM):tbt:adc_mask:indx"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -207,8 +207,8 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):tbt:adc_mask:set"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):tbt:adc_mask:set"
+controlPv "$(HOSTNAME):$(BPM):tbt:adc_mask:set"
+indicatorPv "$(HOSTNAME):$(BPM):tbt:adc_mask:set"
 3d
 font "helvetica-bold-r-10.0"
 objType "controls"

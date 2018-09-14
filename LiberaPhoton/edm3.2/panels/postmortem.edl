@@ -79,7 +79,7 @@ y2Max 1
 # Trace Properties
 numTraces 1
 yPv {
-  0 "EPICS\\$(HOSTNAME):signals:postmortem.X"
+  0 "$(HOSTNAME):signals:postmortem.X"
 }
 lineThickness {
   0 2
@@ -131,7 +131,7 @@ y2Max 1
 # Trace Properties
 numTraces 1
 yPv {
-  0 "EPICS\\$(HOSTNAME):signals:postmortem.Y"
+  0 "$(HOSTNAME):signals:postmortem.Y"
 }
 lineThickness {
   0 2
@@ -267,7 +267,7 @@ x 760
 y 70
 w 60
 h 20
-controlPv "EPICS\\$(HOSTNAME):postmortem:capacity_sp"
+controlPv "$(HOSTNAME):postmortem:capacity_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -292,7 +292,7 @@ x 695
 y 70
 w 60
 h 20
-controlPv "EPICS\\$(HOSTNAME):postmortem:capacity_mon"
+controlPv "$(HOSTNAME):postmortem:capacity_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -334,7 +334,7 @@ x 760
 y 125
 w 60
 h 20
-controlPv "EPICS\\$(HOSTNAME):postmortem:offset_sp"
+controlPv "$(HOSTNAME):postmortem:offset_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -359,7 +359,7 @@ x 695
 y 125
 w 60
 h 20
-controlPv "EPICS\\$(HOSTNAME):postmortem:offset_mon"
+controlPv "$(HOSTNAME):postmortem:offset_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -383,7 +383,7 @@ x 695
 y 160
 w 60
 h 20
-controlPv "EPICS\\$(HOSTNAME):postmortem:length"
+controlPv "$(HOSTNAME):postmortem:length"
 font "helvetica-medium-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -426,7 +426,7 @@ x 695
 y 185
 w 60
 h 20
-controlPv "EPICS\\$(HOSTNAME):triggers:t1:count"
+controlPv "$(HOSTNAME):triggers:t1:count"
 font "helvetica-medium-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -468,7 +468,7 @@ x 625
 y 235
 w 195
 h 20
-controlPv "EPICS\\$(HOSTNAME):postmortem:os_time"
+controlPv "$(HOSTNAME):postmortem:os_time"
 font "helvetica-medium-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -529,7 +529,7 @@ x 625
 y 285
 w 195
 h 20
-controlPv "EPICS\\$(HOSTNAME):postmortem:timestamp"
+controlPv "$(HOSTNAME):postmortem:timestamp"
 font "helvetica-medium-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -572,13 +572,13 @@ onColor index 8
 offColor index 53
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):signals:postmortem.PROC"
+controlPv "$(HOSTNAME):signals:postmortem.PROC"
 pressValue "1"
 onLabel "Reading..."
 offLabel "Read data"
 3d
 font "helvetica-medium-r-10.0"
-visPv "EPICS\\$(HOSTNAME):signals:postmortem.SCAN"
+visPv "$(HOSTNAME):signals:postmortem.SCAN"
 visMin "0"
 visMax "1"
 endObjectProperties
@@ -599,8 +599,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):signals:postmortem.SCAN"
-indicatorPv "EPICS\\$(HOSTNAME):signals:postmortem.SCAN"
+controlPv "$(HOSTNAME):signals:postmortem.SCAN"
+indicatorPv "$(HOSTNAME):signals:postmortem.SCAN"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -637,7 +637,7 @@ font "helvetica-medium-r-10.0"
 fontAlign "center"
 fgColor index 14
 bgColor index 0
-visPv "EPICS\\$(HOSTNAME):signals:postmortem.SCAN"
+visPv "$(HOSTNAME):signals:postmortem.SCAN"
 visMin "2"
 visMax "3"
 value {
@@ -656,7 +656,7 @@ x 365
 y 460
 w 60
 h 20
-controlPv "EPICS\\$(HOSTNAME):signals:postmortem.OFFS"
+controlPv "$(HOSTNAME):signals:postmortem.OFFS"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -681,7 +681,7 @@ x 300
 y 460
 w 60
 h 20
-controlPv "EPICS\\$(HOSTNAME):signals:postmortem.OFFS"
+controlPv "$(HOSTNAME):signals:postmortem.OFFS"
 font "helvetica-medium-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -710,13 +710,13 @@ onColor index 8
 offColor index 53
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):signals:postmortem.PROC"
+controlPv "$(HOSTNAME):signals:postmortem.PROC"
 pressValue "1"
 onLabel "Reading..."
 offLabel "Refresh plot"
 3d
 font "helvetica-medium-r-10.0"
-visPv "EPICS\\$(HOSTNAME):signals:postmortem.SCAN"
+visPv "$(HOSTNAME):signals:postmortem.SCAN"
 visMin "0"
 visMax "1"
 endObjectProperties
@@ -736,8 +736,8 @@ bgColor index 0
 inconsistentColor index 53
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):postmortem:capture_sp"
-indicatorPv "EPICS\\$(HOSTNAME):postmortem:capture_mon"
+controlPv "$(HOSTNAME):postmortem:capture_sp"
+indicatorPv "$(HOSTNAME):postmortem:capture_mon"
 font "helvetica-medium-r-10.0"
 endObjectProperties
 

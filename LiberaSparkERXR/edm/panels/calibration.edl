@@ -38,8 +38,8 @@ h 20
 lineColor index 14
 fill
 fillColor index 53
-alarmPv "EPICS\\$(HOSTNAME):calib:active"
-visPv "EPICS\\$(HOSTNAME):calib:active"
+alarmPv "$(HOSTNAME):calib:active"
+visPv "$(HOSTNAME):calib:active"
 visMin "0"
 visMax "1"
 endObjectProperties
@@ -59,7 +59,7 @@ onColor index 0
 offColor index 0
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):calib:calc_sp"
+controlPv "$(HOSTNAME):calib:calc_sp"
 pressValue "0"
 onLabel "Calculate coefficients"
 offLabel "Calculate coefficients"
@@ -117,7 +117,7 @@ x 200
 y 110
 w 50
 h 20
-controlPv "EPICS\\$(HOSTNAME):calib:num_of_samples_mon"
+controlPv "$(HOSTNAME):calib:num_of_samples_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -143,7 +143,7 @@ x 140
 y 110
 w 55
 h 20
-controlPv "EPICS\\$(HOSTNAME):calib:num_of_samples_sp"
+controlPv "$(HOSTNAME):calib:num_of_samples_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -174,8 +174,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):calib:enabled_sp"
-indicatorPv "EPICS\\$(HOSTNAME):calib:enabled_mon"
+controlPv "$(HOSTNAME):calib:enabled_sp"
+indicatorPv "$(HOSTNAME):calib:enabled_mon"
 font "helvetica-medium-r-12.0"
 endObjectProperties
 
@@ -193,7 +193,7 @@ font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
 useDisplayBg
-visPv "EPICS\\$(HOSTNAME):calib:active"
+visPv "$(HOSTNAME):calib:active"
 visMin "0"
 visMax "1"
 value {
@@ -214,8 +214,8 @@ h 20
 lineColor index 14
 fill
 fillColor index 20
-alarmPv "EPICS\\$(HOSTNAME):calib:active"
-visPv "EPICS\\$(HOSTNAME):calib:active"
+alarmPv "$(HOSTNAME):calib:active"
+visPv "$(HOSTNAME):calib:active"
 visMin "1"
 visMax "2"
 endObjectProperties
@@ -234,7 +234,7 @@ font "helvetica-medium-r-10.0"
 fgColor index 14
 bgColor index 0
 useDisplayBg
-visPv "EPICS\\$(HOSTNAME):calib:active"
+visPv "$(HOSTNAME):calib:active"
 visMin "1"
 visMax "2"
 value {
@@ -258,7 +258,7 @@ oddColBgColor index 0
 evenColBgColor index 0
 topShadowColor index 0
 botShadowColor index 14
-pv "EPICS\\$(HOSTNAME):calib:coeff:A"
+pv "$(HOSTNAME):calib:coeff:A"
 labels "NoAtt,1 dB,2 dB,3 dB,4 dB,5 dB,6 dB,7 dB,8 dB,9 dB,10 dB,11 dB,12 dB,13 dB,14 dB,15 dB,16 dB,17 dB,18 dB,19 dB,20 dB,21 dB,22 dB,23 dB,24 dB,25 dB,26 dB,27 dB,28 dB,29 dB,30 dB,31 dB"
 font "helvetica-medium-r-12.0"
 endObjectProperties
@@ -279,7 +279,7 @@ oddColBgColor index 0
 evenColBgColor index 0
 topShadowColor index 0
 botShadowColor index 14
-pv "EPICS\\$(HOSTNAME):calib:coeff:B"
+pv "$(HOSTNAME):calib:coeff:B"
 labels "NoAtt,1 dB,2 dB,3 dB,4 dB,5 dB,6 dB,7 dB,8 dB,9 dB,10 dB,11 dB,12 dB,13 dB,14 dB,15 dB,16 dB,17 dB,18 dB,19 dB,20 dB,21 dB,22 dB,23 dB,24 dB,25 dB,26 dB,27 dB,28 dB,29 dB,30 dB,31 dB"
 font "helvetica-medium-r-12.0"
 endObjectProperties
@@ -300,7 +300,7 @@ oddColBgColor index 0
 evenColBgColor index 0
 topShadowColor index 0
 botShadowColor index 14
-pv "EPICS\\$(HOSTNAME):calib:coeff:C"
+pv "$(HOSTNAME):calib:coeff:C"
 labels "NoAtt,1 dB,2 dB,3 dB,4 dB,5 dB,6 dB,7 dB,8 dB,9 dB,10 dB,11 dB,12 dB,13 dB,14 dB,15 dB,16 dB,17 dB,18 dB,19 dB,20 dB,21 dB,22 dB,23 dB,24 dB,25 dB,26 dB,27 dB,28 dB,29 dB,30 dB,31 dB"
 font "helvetica-medium-r-12.0"
 endObjectProperties
@@ -321,7 +321,7 @@ oddColBgColor index 0
 evenColBgColor index 0
 topShadowColor index 0
 botShadowColor index 14
-pv "EPICS\\$(HOSTNAME):calib:coeff:D"
+pv "$(HOSTNAME):calib:coeff:D"
 labels "NoAtt,1 dB,2 dB,3 dB,4 dB,5 dB,6 dB,7 dB,8 dB,9 dB,10 dB,11 dB,12 dB,13 dB,14 dB,15 dB,16 dB,17 dB,18 dB,19 dB,20 dB,21 dB,22 dB,23 dB,24 dB,25 dB,26 dB,27 dB,28 dB,29 dB,30 dB,31 dB"
 font "helvetica-medium-r-12.0"
 endObjectProperties
@@ -435,7 +435,7 @@ x 20
 y 70
 w 70
 h 20
-controlPv "EPICS\\$(HOSTNAME):att_mon"
+controlPv "$(HOSTNAME):att_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14

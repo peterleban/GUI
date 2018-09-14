@@ -49,7 +49,7 @@ x 360
 y 85
 w 50
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):clock_info:decimation:fa"
+controlPv "$(HOSTNAME):$(BPM):clock_info:decimation:fa"
 fgColor index 14
 fgAlarm
 bgColor index 104
@@ -68,7 +68,7 @@ x 360
 y 115
 w 50
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):clock_info:decimation:sa"
+controlPv "$(HOSTNAME):$(BPM):clock_info:decimation:sa"
 fgColor index 14
 fgAlarm
 bgColor index 104
@@ -87,7 +87,7 @@ x 360
 y 55
 w 50
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):clock_info:decimation:tbt"
+controlPv "$(HOSTNAME):$(BPM):clock_info:decimation:tbt"
 fgColor index 14
 fgAlarm
 bgColor index 104
@@ -126,7 +126,7 @@ x 210
 y 60
 w 75
 h 15
-controlPv "CALC\\deljenje1k(EPICS\\$(HOSTNAME):$(BPM):clock_info:rf_frequency,EPICS\\$(HOSTNAME):$(BPM):clock_info:harmonic_number)"
+controlPv "CALC\\deljenje1k($(HOSTNAME):$(BPM):clock_info:rf_frequency,$(HOSTNAME):$(BPM):clock_info:harmonic_number)"
 font "helvetica-bold-r-14.0"
 fgColor index 14
 bgColor index 0
@@ -191,7 +191,7 @@ x 210
 y 90
 w 75
 h 15
-controlPv "CALC\\deljenje(CALC\\deljenje1k(EPICS\\$(HOSTNAME):$(BPM):clock_info:rf_frequency,EPICS\\$(HOSTNAME):$(BPM):clock_info:harmonic_number),EPICS\\$(HOSTNAME):$(BPM):clock_info:decimation:fa)"
+controlPv "CALC\\deljenje(CALC\\deljenje1k($(HOSTNAME):$(BPM):clock_info:rf_frequency,$(HOSTNAME):$(BPM):clock_info:harmonic_number),$(HOSTNAME):$(BPM):clock_info:decimation:fa)"
 font "helvetica-bold-r-14.0"
 fgColor index 14
 bgColor index 0
@@ -235,7 +235,7 @@ x 210
 y 120
 w 75
 h 15
-controlPv "CALC\\deljenje(CALC\\deljenje(CALC\\deljenje(EPICS\\$(HOSTNAME):$(BPM):clock_info:rf_frequency,EPICS\\$(HOSTNAME):$(BPM):clock_info:harmonic_number),EPICS\\$(HOSTNAME):$(BPM):clock_info:decimation:fa),EPICS\\$(HOSTNAME):$(BPM):clock_info:decimation:sa)"
+controlPv "CALC\\deljenje(CALC\\deljenje(CALC\\deljenje($(HOSTNAME):$(BPM):clock_info:rf_frequency,$(HOSTNAME):$(BPM):clock_info:harmonic_number),$(HOSTNAME):$(BPM):clock_info:decimation:fa),$(HOSTNAME):$(BPM):clock_info:decimation:sa)"
 font "helvetica-bold-r-14.0"
 fgColor index 14
 bgColor index 0
@@ -279,7 +279,7 @@ x 210
 y 30
 w 75
 h 20
-controlPv "CALC\\deljenje1k(EPICS\\$(HOSTNAME):$(BPM):clock_info:adc_frequency,1000)"
+controlPv "CALC\\deljenje1k($(HOSTNAME):$(BPM):clock_info:adc_frequency,1000)"
 displayMode "decimal"
 precision 4
 fgColor index 14

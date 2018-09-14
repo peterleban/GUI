@@ -96,7 +96,7 @@ x 120
 y 295
 w 60
 h 20
-controlPv "EPICS\\$(HOSTNAME):decimation:sum_sp"
+controlPv "$(HOSTNAME):decimation:sum_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -123,7 +123,7 @@ x 155
 y 350
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):decimation:avg:n_sp"
+controlPv "$(HOSTNAME):decimation:avg:n_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -150,7 +150,7 @@ x 155
 y 405
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):decimation:sa:n_sp"
+controlPv "$(HOSTNAME):decimation:sa:n_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -197,7 +197,7 @@ x 185
 y 295
 w 60
 h 20
-controlPv "EPICS\\$(HOSTNAME):decimation:sum_mon"
+controlPv "$(HOSTNAME):decimation:sum_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -221,7 +221,7 @@ x 155
 y 380
 w 90
 h 20
-controlPv "EPICS\\$(HOSTNAME):decimation:sa:val_mon"
+controlPv "$(HOSTNAME):decimation:sa:val_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -245,7 +245,7 @@ x 155
 y 325
 w 90
 h 20
-controlPv "EPICS\\$(HOSTNAME):decimation:avg:val_mon"
+controlPv "$(HOSTNAME):decimation:avg:val_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -269,7 +269,7 @@ x 200
 y 350
 w 45
 h 20
-controlPv "EPICS\\$(HOSTNAME):decimation:avg:n_mon"
+controlPv "$(HOSTNAME):decimation:avg:n_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -388,7 +388,7 @@ x 200
 y 405
 w 45
 h 20
-controlPv "EPICS\\$(HOSTNAME):decimation:sa:n_mon"
+controlPv "$(HOSTNAME):decimation:sa:n_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -445,7 +445,7 @@ x 140
 y 70
 w 85
 h 20
-controlPv "EPICS\\$(HOSTNAME):adc_offset:A_mon"
+controlPv "$(HOSTNAME):adc_offset:A_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -470,7 +470,7 @@ x 75
 y 70
 w 60
 h 20
-controlPv "EPICS\\$(HOSTNAME):adc_offset:A_sp"
+controlPv "$(HOSTNAME):adc_offset:A_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -496,7 +496,7 @@ x 140
 y 95
 w 85
 h 20
-controlPv "EPICS\\$(HOSTNAME):adc_offset:B_mon"
+controlPv "$(HOSTNAME):adc_offset:B_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -521,7 +521,7 @@ x 75
 y 95
 w 60
 h 20
-controlPv "EPICS\\$(HOSTNAME):adc_offset:B_sp"
+controlPv "$(HOSTNAME):adc_offset:B_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -547,7 +547,7 @@ x 140
 y 120
 w 85
 h 20
-controlPv "EPICS\\$(HOSTNAME):adc_offset:C_mon"
+controlPv "$(HOSTNAME):adc_offset:C_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -572,7 +572,7 @@ x 75
 y 120
 w 60
 h 20
-controlPv "EPICS\\$(HOSTNAME):adc_offset:C_sp"
+controlPv "$(HOSTNAME):adc_offset:C_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -598,7 +598,7 @@ x 140
 y 145
 w 85
 h 20
-controlPv "EPICS\\$(HOSTNAME):adc_offset:D_mon"
+controlPv "$(HOSTNAME):adc_offset:D_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -623,7 +623,7 @@ x 75
 y 145
 w 60
 h 20
-controlPv "EPICS\\$(HOSTNAME):adc_offset:D_sp"
+controlPv "$(HOSTNAME):adc_offset:D_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -668,7 +668,7 @@ x 205
 y 230
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):adcmask:window_sp"
+controlPv "$(HOSTNAME):adcmask:window_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -714,7 +714,7 @@ x 65
 y 230
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):adcmask:offset_sp"
+controlPv "$(HOSTNAME):adcmask:offset_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -760,7 +760,7 @@ x 110
 y 230
 w 35
 h 20
-controlPv "EPICS\\$(HOSTNAME):adcmask:offset_mon"
+controlPv "$(HOSTNAME):adcmask:offset_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -784,7 +784,7 @@ x 250
 y 230
 w 35
 h 20
-controlPv "EPICS\\$(HOSTNAME):adcmask:window_mon"
+controlPv "$(HOSTNAME):adcmask:window_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -814,8 +814,8 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):abs_enabled:A_sp"
-indicatorPv "EPICS\\$(HOSTNAME):abs_enabled:A_mon"
+controlPv "$(HOSTNAME):abs_enabled:A_sp"
+indicatorPv "$(HOSTNAME):abs_enabled:A_mon"
 onLabel "abs() ON"
 offLabel "abs() OFF"
 labelType "literal"
@@ -840,8 +840,8 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):abs_enabled:B_sp"
-indicatorPv "EPICS\\$(HOSTNAME):abs_enabled:B_mon"
+controlPv "$(HOSTNAME):abs_enabled:B_sp"
+indicatorPv "$(HOSTNAME):abs_enabled:B_mon"
 onLabel "abs() ON"
 offLabel "abs() OFF"
 labelType "literal"
@@ -866,8 +866,8 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):abs_enabled:C_sp"
-indicatorPv "EPICS\\$(HOSTNAME):abs_enabled:C_mon"
+controlPv "$(HOSTNAME):abs_enabled:C_sp"
+indicatorPv "$(HOSTNAME):abs_enabled:C_mon"
 onLabel "abs() ON"
 offLabel "abs() OFF"
 labelType "literal"
@@ -892,8 +892,8 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):abs_enabled:D_sp"
-indicatorPv "EPICS\\$(HOSTNAME):abs_enabled:D_mon"
+controlPv "$(HOSTNAME):abs_enabled:D_sp"
+indicatorPv "$(HOSTNAME):abs_enabled:D_mon"
 onLabel "abs() ON"
 offLabel "abs() OFF"
 labelType "literal"
@@ -931,7 +931,7 @@ x 100
 y 470
 w 40
 h 18
-controlPv "EPICS\\$(HOSTNAME):decimation:sum_mode_sp"
+controlPv "$(HOSTNAME):decimation:sum_mode_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -958,7 +958,7 @@ x 145
 y 470
 w 35
 h 20
-controlPv "EPICS\\$(HOSTNAME):decimation:sum_mode_mon"
+controlPv "$(HOSTNAME):decimation:sum_mode_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -1061,7 +1061,7 @@ x 145
 y 505
 w 35
 h 20
-controlPv "EPICS\\$(HOSTNAME):threshold:autotrig:edge_mon"
+controlPv "$(HOSTNAME):threshold:autotrig:edge_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -1085,7 +1085,7 @@ x 100
 y 505
 w 40
 h 18
-controlPv "EPICS\\$(HOSTNAME):threshold:autotrig:edge_sp"
+controlPv "$(HOSTNAME):threshold:autotrig:edge_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -1112,7 +1112,7 @@ x 145
 y 540
 w 35
 h 20
-controlPv "EPICS\\$(HOSTNAME):decimation:sumdec_periods_mon"
+controlPv "$(HOSTNAME):decimation:sumdec_periods_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -1136,7 +1136,7 @@ x 100
 y 540
 w 40
 h 18
-controlPv "EPICS\\$(HOSTNAME):decimation:sumdec_periods_sp"
+controlPv "$(HOSTNAME):decimation:sumdec_periods_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24

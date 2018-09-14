@@ -80,7 +80,7 @@ y2Max 1
 # Trace Properties
 numTraces 1
 yPv {
-  0 "EPICS\\$(HOSTNAME):$(BPM):fa.Y"
+  0 "$(HOSTNAME):$(BPM):fa.Y"
 }
 plotColor {
   0 index 14
@@ -176,7 +176,7 @@ y2Max 1
 # Trace Properties
 numTraces 1
 yPv {
-  0 "EPICS\\$(HOSTNAME):$(BPM):fa.X"
+  0 "$(HOSTNAME):$(BPM):fa.X"
 }
 plotColor {
   0 index 14
@@ -198,7 +198,7 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):tbt:data_type"
+controlPv "$(HOSTNAME):$(BPM):tbt:data_type"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -217,7 +217,7 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):fa.SCAN"
+controlPv "$(HOSTNAME):$(BPM):fa.SCAN"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 

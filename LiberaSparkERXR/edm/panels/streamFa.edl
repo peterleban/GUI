@@ -75,12 +75,12 @@ y2Max 1
 # Trace Properties
 numTraces 6
 yPv {
-  0 "EPICS\\$(HOSTNAME):signals:fa.A"
-  1 "EPICS\\$(HOSTNAME):signals:fa.B"
-  2 "EPICS\\$(HOSTNAME):signals:fa.C"
-  3 "EPICS\\$(HOSTNAME):signals:fa.D"
-  4 "EPICS\\$(HOSTNAME):signals:fa.Sum"
-  5 "EPICS\\$(HOSTNAME):signals:fa.Q"
+  0 "$(HOSTNAME):signals:fa.A"
+  1 "$(HOSTNAME):signals:fa.B"
+  2 "$(HOSTNAME):signals:fa.C"
+  3 "$(HOSTNAME):signals:fa.D"
+  4 "$(HOSTNAME):signals:fa.Sum"
+  5 "$(HOSTNAME):signals:fa.Q"
 }
 ySigned {
   0 1
@@ -317,13 +317,13 @@ onColor index 53
 offColor index 53
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):signals:fa.PROC"
+controlPv "$(HOSTNAME):signals:fa.PROC"
 pressValue "1"
 onLabel "Read data"
 offLabel "Read data"
 3d
 font "helvetica-medium-r-10.0"
-visPv "EPICS\\$(HOSTNAME):signals:fa.SCAN"
+visPv "$(HOSTNAME):signals:fa.SCAN"
 visMin "0"
 visMax "1"
 endObjectProperties

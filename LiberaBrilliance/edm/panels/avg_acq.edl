@@ -103,7 +103,7 @@ y2Max 1
 # Trace Properties
 numTraces 1
 yPv {
-  0 "EPICS\\$(DEVICE):AVGSUM:AVGSUM_MONITOR"
+  0 "$(DEVICE):AVGSUM:AVGSUM_MONITOR"
 }
 ySigned {
   0 1
@@ -190,7 +190,7 @@ x 630
 y 150
 w 90
 h 30
-controlPv "EPICS\\$(DEVICE):AVGSUM:AVGSUM_FINISHED_MONITOR"
+controlPv "$(DEVICE):AVGSUM:AVGSUM_FINISHED_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 0

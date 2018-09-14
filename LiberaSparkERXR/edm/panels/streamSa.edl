@@ -79,12 +79,12 @@ y2MinorsPerMajor 4
 # Trace Properties
 numTraces 6
 yPv {
-  0 "EPICS\\$(HOSTNAME):$(BPM):sa.A"
-  1 "EPICS\\$(HOSTNAME):$(BPM):sa.B"
-  2 "EPICS\\$(HOSTNAME):$(BPM):sa.C"
-  3 "EPICS\\$(HOSTNAME):$(BPM):sa.D"
-  4 "EPICS\\$(HOSTNAME):$(BPM):sa.Sum"
-  5 "EPICS\\$(HOSTNAME):$(BPM):sa.Q"
+  0 "$(HOSTNAME):$(BPM):sa.A"
+  1 "$(HOSTNAME):$(BPM):sa.B"
+  2 "$(HOSTNAME):$(BPM):sa.C"
+  3 "$(HOSTNAME):$(BPM):sa.D"
+  4 "$(HOSTNAME):$(BPM):sa.Sum"
+  5 "$(HOSTNAME):$(BPM):sa.Q"
 }
 lineThickness {
   0 2

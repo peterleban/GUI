@@ -115,7 +115,7 @@ x 60
 y 40
 w 65
 h 20
-controlPv "EPICS\\$(HOSTNAME):gdx:grouping:sfp:status3"
+controlPv "$(HOSTNAME):gdx:grouping:sfp:status3"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -176,7 +176,7 @@ x 60
 y 65
 w 65
 h 20
-controlPv "EPICS\\$(HOSTNAME):gdx:grouping:sfp:status4"
+controlPv "$(HOSTNAME):gdx:grouping:sfp:status4"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -214,7 +214,7 @@ x 205
 y 90
 w 110
 h 20
-controlPv "EPICS\\$(HOSTNAME):gdx:grouping:timeout_mon"
+controlPv "$(HOSTNAME):gdx:grouping:timeout_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -239,7 +239,7 @@ x 130
 y 90
 w 70
 h 20
-controlPv "EPICS\\$(HOSTNAME):gdx:grouping:timeout_sp"
+controlPv "$(HOSTNAME):gdx:grouping:timeout_sp"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 24
@@ -311,7 +311,7 @@ onColor index 53
 offColor index 53
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):gdx:grouping:sfp:status3:clear"
+controlPv "$(HOSTNAME):gdx:grouping:sfp:status3:clear"
 pressValue "Execute"
 onLabel "Reseting"
 offLabel "Clear status"
@@ -334,7 +334,7 @@ onColor index 53
 offColor index 53
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):gdx:grouping:sfp:status4:clear"
+controlPv "$(HOSTNAME):gdx:grouping:sfp:status4:clear"
 pressValue "Execute"
 onLabel "Reseting"
 offLabel "Clear status"
@@ -358,7 +358,7 @@ oddColBgColor index 0
 evenColBgColor index 1
 topShadowColor index 0
 botShadowColor index 3
-pv "EPICS\\$(HOSTNAME):gdx:i2c:SI5338:MsP1"
+pv "$(HOSTNAME):gdx:i2c:SI5338:MsP1"
 labels "SFP3,SFP4,SFP1,SFP2,gen."
 numElements 5
 font "helvetica-medium-r-12.0"
@@ -380,7 +380,7 @@ oddColBgColor index 0
 evenColBgColor index 1
 topShadowColor index 0
 botShadowColor index 3
-pv "EPICS\\$(HOSTNAME):gdx:i2c:SI5338:MsP2"
+pv "$(HOSTNAME):gdx:i2c:SI5338:MsP2"
 labels "SFP3,SFP4,SFP1,SFP2,gen."
 numElements 5
 font "helvetica-medium-r-12.0"
@@ -402,7 +402,7 @@ oddColBgColor index 0
 evenColBgColor index 1
 topShadowColor index 0
 botShadowColor index 3
-pv "EPICS\\$(HOSTNAME):gdx:i2c:SI5338:MsP3"
+pv "$(HOSTNAME):gdx:i2c:SI5338:MsP3"
 labels "SFP3,SFP4,SFP1,SFP2,gen."
 numElements 5
 font "helvetica-medium-r-12.0"
@@ -424,7 +424,7 @@ oddColBgColor index 0
 evenColBgColor index 1
 topShadowColor index 0
 botShadowColor index 3
-pv "EPICS\\$(HOSTNAME):gdx:i2c:SI5338:outDx"
+pv "$(HOSTNAME):gdx:i2c:SI5338:outDx"
 labels "SFP3,SFP4,SFP1,SFP2,gen."
 numElements 4
 font "helvetica-medium-r-12.0"
@@ -558,7 +558,7 @@ x 65
 y 265
 w 65
 h 20
-controlPv "EPICS\\$(HOSTNAME):gdx:i2c:SI5338:pll_kphi"
+controlPv "$(HOSTNAME):gdx:i2c:SI5338:pll_kphi"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -577,7 +577,7 @@ x 230
 y 265
 w 65
 h 20
-controlPv "EPICS\\$(HOSTNAME):gdx:i2c:SI5338:pll_mcal"
+controlPv "$(HOSTNAME):gdx:i2c:SI5338:pll_mcal"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -601,8 +601,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):gdx:gbe:enable_sp"
-indicatorPv "EPICS\\$(HOSTNAME):gdx:gbe:enable_mon"
+controlPv "$(HOSTNAME):gdx:gbe:enable_sp"
+indicatorPv "$(HOSTNAME):gdx:gbe:enable_mon"
 font "helvetica-medium-r-12.0"
 endObjectProperties
 
@@ -640,7 +640,7 @@ onColor index 53
 offColor index 53
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):gdx:gbe:reconnect"
+controlPv "$(HOSTNAME):gdx:gbe:reconnect"
 pressValue "Execute"
 onLabel "Reconnecting"
 offLabel "Reconnect"
@@ -677,7 +677,7 @@ x 250
 y 400
 w 60
 h 20
-controlPv "EPICS\\$(HOSTNAME):gdx:group_size_mon"
+controlPv "$(HOSTNAME):gdx:group_size_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -702,7 +702,7 @@ x 195
 y 400
 w 50
 h 20
-controlPv "EPICS\\$(HOSTNAME):gdx:group_size_sp"
+controlPv "$(HOSTNAME):gdx:group_size_sp"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 24
@@ -784,7 +784,7 @@ x 270
 y 450
 w 115
 h 20
-controlPv "EPICS\\$(HOSTNAME):gdx:gbe:src:ip_mon"
+controlPv "$(HOSTNAME):gdx:gbe:src:ip_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -808,7 +808,7 @@ x 135
 y 450
 w 130
 h 20
-controlPv "EPICS\\$(HOSTNAME):gdx:gbe:src:ip_sp"
+controlPv "$(HOSTNAME):gdx:gbe:src:ip_sp"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 24
@@ -833,7 +833,7 @@ x 270
 y 475
 w 115
 h 20
-controlPv "EPICS\\$(HOSTNAME):gdx:gbe:src:mac_mon"
+controlPv "$(HOSTNAME):gdx:gbe:src:mac_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -857,7 +857,7 @@ x 135
 y 475
 w 130
 h 20
-controlPv "EPICS\\$(HOSTNAME):gdx:gbe:src:mac_sp"
+controlPv "$(HOSTNAME):gdx:gbe:src:mac_sp"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 24
@@ -882,7 +882,7 @@ x 135
 y 500
 w 130
 h 20
-controlPv "EPICS\\$(HOSTNAME):gdx:gbe:src:port_sp"
+controlPv "$(HOSTNAME):gdx:gbe:src:port_sp"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 24
@@ -907,7 +907,7 @@ x 270
 y 500
 w 115
 h 20
-controlPv "EPICS\\$(HOSTNAME):gdx:gbe:src:port_mon"
+controlPv "$(HOSTNAME):gdx:gbe:src:port_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -988,7 +988,7 @@ x 270
 y 530
 w 115
 h 20
-controlPv "EPICS\\$(HOSTNAME):gdx:gbe:dest:ip_mon"
+controlPv "$(HOSTNAME):gdx:gbe:dest:ip_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -1012,7 +1012,7 @@ x 135
 y 530
 w 130
 h 20
-controlPv "EPICS\\$(HOSTNAME):gdx:gbe:dest:ip_sp"
+controlPv "$(HOSTNAME):gdx:gbe:dest:ip_sp"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 24
@@ -1037,7 +1037,7 @@ x 270
 y 555
 w 115
 h 20
-controlPv "EPICS\\$(HOSTNAME):gdx:gbe:dest:mac_mon"
+controlPv "$(HOSTNAME):gdx:gbe:dest:mac_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -1061,7 +1061,7 @@ x 135
 y 555
 w 130
 h 20
-controlPv "EPICS\\$(HOSTNAME):gdx:gbe:dest:mac_sp"
+controlPv "$(HOSTNAME):gdx:gbe:dest:mac_sp"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 24
@@ -1086,7 +1086,7 @@ x 135
 y 580
 w 130
 h 20
-controlPv "EPICS\\$(HOSTNAME):gdx:gbe:dest:port_sp"
+controlPv "$(HOSTNAME):gdx:gbe:dest:port_sp"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 24
@@ -1111,7 +1111,7 @@ x 270
 y 580
 w 115
 h 20
-controlPv "EPICS\\$(HOSTNAME):gdx:gbe:dest:port_mon"
+controlPv "$(HOSTNAME):gdx:gbe:dest:port_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14

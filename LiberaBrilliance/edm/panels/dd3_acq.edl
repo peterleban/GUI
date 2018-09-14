@@ -89,14 +89,14 @@ y2Max 1
 # Trace Properties
 numTraces 8
 yPv {
-  0 "EPICS\\$(DEVICE):DD3:DD_X_MONITOR"
-  1 "EPICS\\$(DEVICE):DD3:DD_Y_MONITOR"
-  2 "EPICS\\$(DEVICE):DD3:DD_VA_MONITOR"
-  3 "EPICS\\$(DEVICE):DD3:DD_VB_MONITOR"
-  4 "EPICS\\$(DEVICE):DD3:DD_VC_MONITOR"
-  5 "EPICS\\$(DEVICE):DD3:DD_VD_MONITOR"
-  6 "EPICS\\$(DEVICE):DD3:DD_SUM_MONITOR"
-  7 "EPICS\\$(DEVICE):DD3:DD_Q_MONITOR"
+  0 "$(DEVICE):DD3:DD_X_MONITOR"
+  1 "$(DEVICE):DD3:DD_Y_MONITOR"
+  2 "$(DEVICE):DD3:DD_VA_MONITOR"
+  3 "$(DEVICE):DD3:DD_VB_MONITOR"
+  4 "$(DEVICE):DD3:DD_VC_MONITOR"
+  5 "$(DEVICE):DD3:DD_VD_MONITOR"
+  6 "$(DEVICE):DD3:DD_SUM_MONITOR"
+  7 "$(DEVICE):DD3:DD_Q_MONITOR"
 }
 ySigned {
   0 1
@@ -489,8 +489,8 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(DEVICE):DD3:DD_IGNORE_TRIG_SP"
-indicatorPv "EPICS\\$(DEVICE):DD3:DD_IGNORE_TRIG_SP"
+controlPv "$(DEVICE):DD3:DD_IGNORE_TRIG_SP"
+indicatorPv "$(DEVICE):DD3:DD_IGNORE_TRIG_SP"
 onLabel "Manual"
 offLabel "Auto"
 labelType "literal"
@@ -514,14 +514,14 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(DEVICE):DD3:DD_ON_NEXT_TRIG_CMD"
+controlPv "$(DEVICE):DD3:DD_ON_NEXT_TRIG_CMD"
 onLabel "Acquire"
 offLabel "Acquire"
 labelType "literal"
 buttonType "push"
 font "helvetica-medium-r-10.0"
 objType "controls"
-visPv "EPICS\\$(DEVICE):DD3:DD_IGNORE_TRIG_MONITOR"
+visPv "$(DEVICE):DD3:DD_IGNORE_TRIG_MONITOR"
 visMin "1"
 visMax "2"
 endObjectProperties
@@ -542,14 +542,14 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(DEVICE):DD3:DD_REQUEST_CMD"
+controlPv "$(DEVICE):DD3:DD_REQUEST_CMD"
 onLabel "Acquire single"
 offLabel "Acquire single"
 labelType "literal"
 buttonType "push"
 font "helvetica-medium-r-10.0"
 objType "controls"
-visPv "EPICS\\$(DEVICE):DD3:DD_IGNORE_TRIG_MONITOR"
+visPv "$(DEVICE):DD3:DD_IGNORE_TRIG_MONITOR"
 visMin "1"
 visMax "2"
 endObjectProperties
@@ -583,7 +583,7 @@ x 150
 y 600
 w 120
 h 20
-controlPv "EPICS\\$(DEVICE):DD3:DD_MT_MONITOR"
+controlPv "$(DEVICE):DD3:DD_MT_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -620,7 +620,7 @@ x 150
 y 580
 w 250
 h 20
-controlPv "EPICS\\$(DEVICE):DD3:DD_ST_MONITOR"
+controlPv "$(DEVICE):DD3:DD_ST_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -692,7 +692,7 @@ x 640
 y 290
 w 70
 h 30
-controlPv "EPICS\\$(DEVICE):DD3:DD_MT_OFFSET_SP"
+controlPv "$(DEVICE):DD3:DD_MT_OFFSET_SP"
 fgColor index 14
 fgAlarm
 bgColor index 0

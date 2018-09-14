@@ -35,7 +35,7 @@ x 205
 y 25
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_0:value"
+controlPv "$(HOSTNAME):$(BSENS):ID_0:value"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -60,7 +60,7 @@ lineAlarm
 fill
 fillColor index 106
 fillAlarm
-alarmPv "EPICS\\$(HOSTNAME):$(BSENS):ID_0:value"
+alarmPv "$(HOSTNAME):$(BSENS):ID_0:value"
 endObjectProperties
 
 # (Text Update)
@@ -73,7 +73,7 @@ x 205
 y 50
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_1:value"
+controlPv "$(HOSTNAME):$(BSENS):ID_1:value"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -93,7 +93,7 @@ x 205
 y 75
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_2:value"
+controlPv "$(HOSTNAME):$(BSENS):ID_2:value"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -113,7 +113,7 @@ x 205
 y 100
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_3:value"
+controlPv "$(HOSTNAME):$(BSENS):ID_3:value"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -133,7 +133,7 @@ x 205
 y 125
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_4:value"
+controlPv "$(HOSTNAME):$(BSENS):ID_4:value"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -153,7 +153,7 @@ x 205
 y 150
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_5:value"
+controlPv "$(HOSTNAME):$(BSENS):ID_5:value"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -173,7 +173,7 @@ x 205
 y 175
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_6:value"
+controlPv "$(HOSTNAME):$(BSENS):ID_6:value"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -198,7 +198,7 @@ lineAlarm
 fill
 fillColor index 106
 fillAlarm
-alarmPv "EPICS\\$(HOSTNAME):$(BSENS):ID_1:value"
+alarmPv "$(HOSTNAME):$(BSENS):ID_1:value"
 endObjectProperties
 
 # (Circle)
@@ -216,7 +216,7 @@ lineAlarm
 fill
 fillColor index 106
 fillAlarm
-alarmPv "EPICS\\$(HOSTNAME):$(BSENS):ID_2:value"
+alarmPv "$(HOSTNAME):$(BSENS):ID_2:value"
 endObjectProperties
 
 # (Circle)
@@ -234,7 +234,7 @@ lineAlarm
 fill
 fillColor index 106
 fillAlarm
-alarmPv "EPICS\\$(HOSTNAME):$(BSENS):ID_3:value"
+alarmPv "$(HOSTNAME):$(BSENS):ID_3:value"
 endObjectProperties
 
 # (Circle)
@@ -252,7 +252,7 @@ lineAlarm
 fill
 fillColor index 106
 fillAlarm
-alarmPv "EPICS\\$(HOSTNAME):$(BSENS):ID_4:value"
+alarmPv "$(HOSTNAME):$(BSENS):ID_4:value"
 endObjectProperties
 
 # (Circle)
@@ -270,7 +270,7 @@ lineAlarm
 fill
 fillColor index 106
 fillAlarm
-alarmPv "EPICS\\$(HOSTNAME):$(BSENS):ID_5:value"
+alarmPv "$(HOSTNAME):$(BSENS):ID_5:value"
 endObjectProperties
 
 # (Circle)
@@ -288,7 +288,7 @@ lineAlarm
 fill
 fillColor index 106
 fillAlarm
-alarmPv "EPICS\\$(HOSTNAME):$(BSENS):ID_6:value"
+alarmPv "$(HOSTNAME):$(BSENS):ID_6:value"
 endObjectProperties
 
 # (Text Update)
@@ -301,7 +301,7 @@ x 35
 y 175
 w 145
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_6:name"
+controlPv "$(HOSTNAME):$(BSENS):ID_6:name"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -320,7 +320,7 @@ x 35
 y 150
 w 145
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_5:name"
+controlPv "$(HOSTNAME):$(BSENS):ID_5:name"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -339,7 +339,7 @@ x 35
 y 125
 w 145
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_4:name"
+controlPv "$(HOSTNAME):$(BSENS):ID_4:name"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -358,7 +358,7 @@ x 35
 y 100
 w 145
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_3:name"
+controlPv "$(HOSTNAME):$(BSENS):ID_3:name"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -377,7 +377,7 @@ x 35
 y 75
 w 145
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_2:name"
+controlPv "$(HOSTNAME):$(BSENS):ID_2:name"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -396,7 +396,7 @@ x 35
 y 50
 w 145
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_1:name"
+controlPv "$(HOSTNAME):$(BSENS):ID_1:name"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -415,7 +415,7 @@ x 35
 y 25
 w 145
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_0:name"
+controlPv "$(HOSTNAME):$(BSENS):ID_0:name"
 displayMode "decimal"
 fgColor index 14
 fgAlarm

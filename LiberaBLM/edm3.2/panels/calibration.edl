@@ -69,7 +69,7 @@ x 245
 y 80
 w 70
 h 25
-controlPv "EPICS\\$(HOSTNAME):calib:bldcalib:$(BLD)_mon"
+controlPv "$(HOSTNAME):calib:bldcalib:$(BLD)_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -93,7 +93,7 @@ x 170
 y 80
 w 70
 h 25
-controlPv "EPICS\\$(HOSTNAME):calib:bldcalib:$(BLD)_sp"
+controlPv "$(HOSTNAME):calib:bldcalib:$(BLD)_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -144,8 +144,8 @@ offColor index 4
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):calib:enabled_sp"
-indicatorPv "EPICS\\$(HOSTNAME):calib:enabled_mon"
+controlPv "$(HOSTNAME):calib:enabled_sp"
+indicatorPv "$(HOSTNAME):calib:enabled_mon"
 onLabel "ENABLED"
 offLabel "DISABLED"
 labelType "literal"
@@ -185,7 +185,7 @@ x 170
 y 155
 w 145
 h 25
-controlPv "EPICS\\$(HOSTNAME):bld:vgc:$(BLD)_mon"
+controlPv "$(HOSTNAME):bld:vgc:$(BLD)_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -273,7 +273,7 @@ oddColBgColor index 0
 evenColBgColor index 0
 topShadowColor index 0
 botShadowColor index 14
-pv "EPICS\\$(HOSTNAME):calib:vgc:$(BLD)_mon"
+pv "$(HOSTNAME):calib:vgc:$(BLD)_mon"
 labels "Vgc1,Vgc2,Vgc3,Vgc4,Vgc5,Vgc6,Vgc7,Vgc8"
 numElements 8
 font "helvetica-medium-r-10.0"
@@ -295,7 +295,7 @@ oddColBgColor index 0
 evenColBgColor index 0
 topShadowColor index 0
 botShadowColor index 14
-pv "EPICS\\$(HOSTNAME):calib:g:$(BLD)_mon"
+pv "$(HOSTNAME):calib:g:$(BLD)_mon"
 labels "G1,G2,G3,G4,G5,G6,G7,G8"
 numElements 8
 font "helvetica-medium-r-10.0"
@@ -376,7 +376,7 @@ x 170
 y 120
 w 145
 h 25
-controlPv "EPICS\\$(HOSTNAME):att:$(BLD)_mon"
+controlPv "$(HOSTNAME):att:$(BLD)_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14

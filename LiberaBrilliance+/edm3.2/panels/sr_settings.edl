@@ -47,7 +47,7 @@ x 370
 y 30
 w 70
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):tbt:sr:start_mon"
+controlPv "$(HOSTNAME):$(BPM):tbt:sr:start_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -72,7 +72,7 @@ x 320
 y 30
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):tbt:sr:start_sp"
+controlPv "$(HOSTNAME):$(BPM):tbt:sr:start_sp"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 24
@@ -137,7 +137,7 @@ x 370
 y 80
 w 70
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):tbt:sr:window_mon"
+controlPv "$(HOSTNAME):$(BPM):tbt:sr:window_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -162,7 +162,7 @@ x 320
 y 80
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):tbt:sr:window_sp"
+controlPv "$(HOSTNAME):$(BPM):tbt:sr:window_sp"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 24
@@ -187,7 +187,7 @@ x 370
 y 130
 w 70
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):tbt:sr:avg_window_mon"
+controlPv "$(HOSTNAME):$(BPM):tbt:sr:avg_window_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -212,7 +212,7 @@ x 320
 y 130
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):tbt:sr:avg_window_sp"
+controlPv "$(HOSTNAME):$(BPM):tbt:sr:avg_window_sp"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 24
@@ -257,7 +257,7 @@ x 370
 y 180
 w 70
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):tbt:sr:avg_stop_mon"
+controlPv "$(HOSTNAME):$(BPM):tbt:sr:avg_stop_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -282,7 +282,7 @@ x 320
 y 180
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):tbt:sr:avg_stop_sp"
+controlPv "$(HOSTNAME):$(BPM):tbt:sr:avg_stop_sp"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 24

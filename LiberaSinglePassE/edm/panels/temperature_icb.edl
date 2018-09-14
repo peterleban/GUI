@@ -40,7 +40,7 @@ indicatorAlarm
 fgColor index 9
 fgAlarm
 bgColor index 0
-indicatorPv "EPICS\\$(HOSTNAME):$(BSENS):ID_0:value"
+indicatorPv "$(HOSTNAME):$(BSENS):ID_0:value"
 label "ID 0"
 showScale
 font "helvetica-medium-r-10.0"
@@ -68,7 +68,7 @@ indicatorAlarm
 fgColor index 9
 fgAlarm
 bgColor index 0
-indicatorPv "EPICS\\$(HOSTNAME):$(BSENS):ID_1:value"
+indicatorPv "$(HOSTNAME):$(BSENS):ID_1:value"
 label "ID 1"
 showScale
 font "helvetica-medium-r-10.0"
@@ -96,7 +96,7 @@ indicatorAlarm
 fgColor index 9
 fgAlarm
 bgColor index 0
-indicatorPv "EPICS\\$(HOSTNAME):$(BSENS):ID_2:value"
+indicatorPv "$(HOSTNAME):$(BSENS):ID_2:value"
 label "ID 2"
 showScale
 font "helvetica-medium-r-10.0"
@@ -119,7 +119,7 @@ x 100
 y 280
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_0:value"
+controlPv "$(HOSTNAME):$(BSENS):ID_0:value"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -424,14 +424,14 @@ y2Max 1
 # Trace Properties
 numTraces 8
 yPv {
-  0 "EPICS\\$(HOSTNAME):$(BSENS):ID_0:value"
-  1 "EPICS\\$(HOSTNAME):$(BSENS):ID_1:value"
-  2 "EPICS\\$(HOSTNAME):$(BSENS):ID_2:value"
-  3 "EPICS\\$(HOSTNAME):$(BSENS):ID_3:value"
-  4 "EPICS\\$(HOSTNAME):$(BSENS):ID_4:value"
-  5 "EPICS\\$(HOSTNAME):$(BSENS):ID_5:value"
-  6 "EPICS\\$(HOSTNAME):$(BSENS):ID_6:value"
-  7 "EPICS\\$(HOSTNAME):$(BSENS):ID_7:value"
+  0 "$(HOSTNAME):$(BSENS):ID_0:value"
+  1 "$(HOSTNAME):$(BSENS):ID_1:value"
+  2 "$(HOSTNAME):$(BSENS):ID_2:value"
+  3 "$(HOSTNAME):$(BSENS):ID_3:value"
+  4 "$(HOSTNAME):$(BSENS):ID_4:value"
+  5 "$(HOSTNAME):$(BSENS):ID_5:value"
+  6 "$(HOSTNAME):$(BSENS):ID_6:value"
+  7 "$(HOSTNAME):$(BSENS):ID_7:value"
 }
 ySigned {
   0 1
@@ -470,7 +470,7 @@ lineAlarm
 fill
 fillColor index 106
 fillAlarm
-alarmPv "EPICS\\$(HOSTNAME):$(BSENS):ID_0:value"
+alarmPv "$(HOSTNAME):$(BSENS):ID_0:value"
 endObjectProperties
 
 # (Bar)
@@ -488,7 +488,7 @@ indicatorAlarm
 fgColor index 9
 fgAlarm
 bgColor index 0
-indicatorPv "EPICS\\$(HOSTNAME):$(BSENS):ID_3:value"
+indicatorPv "$(HOSTNAME):$(BSENS):ID_3:value"
 label "ID 3"
 showScale
 font "helvetica-medium-r-10.0"
@@ -516,7 +516,7 @@ indicatorAlarm
 fgColor index 9
 fgAlarm
 bgColor index 0
-indicatorPv "EPICS\\$(HOSTNAME):$(BSENS):ID_4:value"
+indicatorPv "$(HOSTNAME):$(BSENS):ID_4:value"
 label "ID 4"
 showScale
 font "helvetica-medium-r-10.0"
@@ -544,7 +544,7 @@ indicatorAlarm
 fgColor index 9
 fgAlarm
 bgColor index 0
-indicatorPv "EPICS\\$(HOSTNAME):$(BSENS):ID_5:value"
+indicatorPv "$(HOSTNAME):$(BSENS):ID_5:value"
 label "ID 5"
 showScale
 font "helvetica-medium-r-10.0"
@@ -572,7 +572,7 @@ indicatorAlarm
 fgColor index 9
 fgAlarm
 bgColor index 0
-indicatorPv "EPICS\\$(HOSTNAME):$(BSENS):ID_6:value"
+indicatorPv "$(HOSTNAME):$(BSENS):ID_6:value"
 label "ID 6"
 showScale
 font "helvetica-medium-r-10.0"
@@ -595,7 +595,7 @@ x 150
 y 280
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_1:value"
+controlPv "$(HOSTNAME):$(BSENS):ID_1:value"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -615,7 +615,7 @@ x 200
 y 280
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_2:value"
+controlPv "$(HOSTNAME):$(BSENS):ID_2:value"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -635,7 +635,7 @@ x 250
 y 280
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_3:value"
+controlPv "$(HOSTNAME):$(BSENS):ID_3:value"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -655,7 +655,7 @@ x 300
 y 280
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_4:value"
+controlPv "$(HOSTNAME):$(BSENS):ID_4:value"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -675,7 +675,7 @@ x 350
 y 280
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_5:value"
+controlPv "$(HOSTNAME):$(BSENS):ID_5:value"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -695,7 +695,7 @@ x 400
 y 280
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_6:value"
+controlPv "$(HOSTNAME):$(BSENS):ID_6:value"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -720,7 +720,7 @@ lineAlarm
 fill
 fillColor index 106
 fillAlarm
-alarmPv "EPICS\\$(HOSTNAME):$(BSENS):ID_1:value"
+alarmPv "$(HOSTNAME):$(BSENS):ID_1:value"
 endObjectProperties
 
 # (Circle)
@@ -738,7 +738,7 @@ lineAlarm
 fill
 fillColor index 106
 fillAlarm
-alarmPv "EPICS\\$(HOSTNAME):$(BSENS):ID_2:value"
+alarmPv "$(HOSTNAME):$(BSENS):ID_2:value"
 endObjectProperties
 
 # (Circle)
@@ -756,7 +756,7 @@ lineAlarm
 fill
 fillColor index 106
 fillAlarm
-alarmPv "EPICS\\$(HOSTNAME):$(BSENS):ID_3:value"
+alarmPv "$(HOSTNAME):$(BSENS):ID_3:value"
 endObjectProperties
 
 # (Circle)
@@ -774,7 +774,7 @@ lineAlarm
 fill
 fillColor index 106
 fillAlarm
-alarmPv "EPICS\\$(HOSTNAME):$(BSENS):ID_4:value"
+alarmPv "$(HOSTNAME):$(BSENS):ID_4:value"
 endObjectProperties
 
 # (Circle)
@@ -792,7 +792,7 @@ lineAlarm
 fill
 fillColor index 106
 fillAlarm
-alarmPv "EPICS\\$(HOSTNAME):$(BSENS):ID_5:value"
+alarmPv "$(HOSTNAME):$(BSENS):ID_5:value"
 endObjectProperties
 
 # (Circle)
@@ -810,7 +810,7 @@ lineAlarm
 fill
 fillColor index 106
 fillAlarm
-alarmPv "EPICS\\$(HOSTNAME):$(BSENS):ID_6:value"
+alarmPv "$(HOSTNAME):$(BSENS):ID_6:value"
 endObjectProperties
 
 # (Static Text)
@@ -843,7 +843,7 @@ x 860
 y 205
 w 85
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_6:name"
+controlPv "$(HOSTNAME):$(BSENS):ID_6:name"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -863,7 +863,7 @@ x 860
 y 180
 w 85
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_5:name"
+controlPv "$(HOSTNAME):$(BSENS):ID_5:name"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -883,7 +883,7 @@ x 860
 y 155
 w 85
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_4:name"
+controlPv "$(HOSTNAME):$(BSENS):ID_4:name"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -903,7 +903,7 @@ x 860
 y 130
 w 85
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_3:name"
+controlPv "$(HOSTNAME):$(BSENS):ID_3:name"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -923,7 +923,7 @@ x 860
 y 105
 w 85
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_2:name"
+controlPv "$(HOSTNAME):$(BSENS):ID_2:name"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -943,7 +943,7 @@ x 860
 y 80
 w 85
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_1:name"
+controlPv "$(HOSTNAME):$(BSENS):ID_1:name"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -963,7 +963,7 @@ x 860
 y 55
 w 85
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_0:name"
+controlPv "$(HOSTNAME):$(BSENS):ID_0:name"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -983,7 +983,7 @@ x 400
 y 305
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_6:nom"
+controlPv "$(HOSTNAME):$(BSENS):ID_6:nom"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -1003,7 +1003,7 @@ x 350
 y 305
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_5:nom"
+controlPv "$(HOSTNAME):$(BSENS):ID_5:nom"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -1023,7 +1023,7 @@ x 300
 y 305
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_4:nom"
+controlPv "$(HOSTNAME):$(BSENS):ID_4:nom"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -1043,7 +1043,7 @@ x 250
 y 305
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_3:nom"
+controlPv "$(HOSTNAME):$(BSENS):ID_3:nom"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -1063,7 +1063,7 @@ x 200
 y 305
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_2:nom"
+controlPv "$(HOSTNAME):$(BSENS):ID_2:nom"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -1083,7 +1083,7 @@ x 150
 y 305
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_1:nom"
+controlPv "$(HOSTNAME):$(BSENS):ID_1:nom"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -1103,7 +1103,7 @@ x 100
 y 305
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_0:nom"
+controlPv "$(HOSTNAME):$(BSENS):ID_0:nom"
 displayMode "decimal"
 fgColor index 14
 fgAlarm
@@ -1143,7 +1143,7 @@ x 100
 y 340
 w 40
 h 10
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_0:value.SCAN"
+controlPv "$(HOSTNAME):$(BSENS):ID_0:value.SCAN"
 font "helvetica-bold-r-8.0"
 fontAlign "right"
 fgColor index 14
@@ -1168,7 +1168,7 @@ x 150
 y 340
 w 40
 h 10
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_1:value.SCAN"
+controlPv "$(HOSTNAME):$(BSENS):ID_1:value.SCAN"
 font "helvetica-bold-r-8.0"
 fontAlign "right"
 fgColor index 14
@@ -1193,7 +1193,7 @@ x 200
 y 340
 w 40
 h 10
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_2:value.SCAN"
+controlPv "$(HOSTNAME):$(BSENS):ID_2:value.SCAN"
 font "helvetica-bold-r-8.0"
 fontAlign "right"
 fgColor index 14
@@ -1218,7 +1218,7 @@ x 250
 y 340
 w 40
 h 10
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_3:value.SCAN"
+controlPv "$(HOSTNAME):$(BSENS):ID_3:value.SCAN"
 font "helvetica-bold-r-8.0"
 fontAlign "right"
 fgColor index 14
@@ -1243,7 +1243,7 @@ x 295
 y 340
 w 40
 h 10
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_4:value.SCAN"
+controlPv "$(HOSTNAME):$(BSENS):ID_4:value.SCAN"
 font "helvetica-bold-r-8.0"
 fontAlign "right"
 fgColor index 14
@@ -1268,7 +1268,7 @@ x 350
 y 340
 w 40
 h 10
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_5:value.SCAN"
+controlPv "$(HOSTNAME):$(BSENS):ID_5:value.SCAN"
 font "helvetica-bold-r-8.0"
 fontAlign "right"
 fgColor index 14
@@ -1293,7 +1293,7 @@ x 405
 y 340
 w 40
 h 10
-controlPv "EPICS\\$(HOSTNAME):$(BSENS):ID_6:value.SCAN"
+controlPv "$(HOSTNAME):$(BSENS):ID_6:value.SCAN"
 font "helvetica-bold-r-8.0"
 fontAlign "right"
 fgColor index 14

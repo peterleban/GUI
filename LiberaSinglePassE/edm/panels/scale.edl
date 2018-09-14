@@ -75,7 +75,7 @@ bgColor index 0
 topShadowColor index 0
 botShadowColor index 14
 increment 0.001
-controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:ka"
+controlPv "$(HOSTNAME):$(BPM):calibration:ka"
 controlLabel "Rough"
 font "helvetica-bold-r-12.0"
 precision 100
@@ -93,7 +93,7 @@ x 260
 y 60
 w 50
 h 19
-controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:ka"
+controlPv "$(HOSTNAME):$(BPM):calibration:ka"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -145,7 +145,7 @@ bgColor index 0
 topShadowColor index 0
 botShadowColor index 14
 increment 0.001
-controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:kb"
+controlPv "$(HOSTNAME):$(BPM):calibration:kb"
 controlLabel "Rough"
 font "helvetica-bold-r-12.0"
 scaleMin 0.1
@@ -162,7 +162,7 @@ x 260
 y 100
 w 50
 h 19
-controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:kb"
+controlPv "$(HOSTNAME):$(BPM):calibration:kb"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -214,7 +214,7 @@ bgColor index 0
 topShadowColor index 0
 botShadowColor index 14
 increment 0.001
-controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:kc"
+controlPv "$(HOSTNAME):$(BPM):calibration:kc"
 controlLabel "Rough"
 font "helvetica-bold-r-12.0"
 scaleMin 0.1
@@ -231,7 +231,7 @@ x 260
 y 140
 w 50
 h 19
-controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:kc"
+controlPv "$(HOSTNAME):$(BPM):calibration:kc"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -282,7 +282,7 @@ bgColor index 0
 topShadowColor index 0
 botShadowColor index 14
 increment 0.001
-controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:kd"
+controlPv "$(HOSTNAME):$(BPM):calibration:kd"
 controlLabel "Rough"
 font "helvetica-bold-r-12.0"
 scaleMin 0.1
@@ -299,7 +299,7 @@ x 260
 y 180
 w 50
 h 19
-controlPv "EPICS\\$(HOSTNAME):$(BPM):calibration:kd"
+controlPv "$(HOSTNAME):$(BPM):calibration:kd"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14

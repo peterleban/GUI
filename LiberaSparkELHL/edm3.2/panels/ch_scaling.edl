@@ -35,7 +35,7 @@ x 70
 y 40
 w 80
 h 18
-controlPv "EPICS\\$(HOSTNAME):calibration:ka_sp"
+controlPv "$(HOSTNAME):calibration:ka_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -100,7 +100,7 @@ x 70
 y 130
 w 80
 h 18
-controlPv "EPICS\\$(HOSTNAME):calibration:kd_sp"
+controlPv "$(HOSTNAME):calibration:kd_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -125,7 +125,7 @@ x 70
 y 70
 w 80
 h 18
-controlPv "EPICS\\$(HOSTNAME):calibration:kb_sp"
+controlPv "$(HOSTNAME):calibration:kb_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -173,7 +173,7 @@ x 70
 y 100
 w 80
 h 18
-controlPv "EPICS\\$(HOSTNAME):calibration:kc_sp"
+controlPv "$(HOSTNAME):calibration:kc_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -258,7 +258,7 @@ x 155
 y 130
 w 80
 h 18
-controlPv "EPICS\\$(HOSTNAME):calibration:kd_mon"
+controlPv "$(HOSTNAME):calibration:kd_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -282,7 +282,7 @@ x 155
 y 100
 w 80
 h 18
-controlPv "EPICS\\$(HOSTNAME):calibration:kc_mon"
+controlPv "$(HOSTNAME):calibration:kc_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -306,7 +306,7 @@ x 155
 y 70
 w 80
 h 18
-controlPv "EPICS\\$(HOSTNAME):calibration:kb_mon"
+controlPv "$(HOSTNAME):calibration:kb_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -330,7 +330,7 @@ x 155
 y 40
 w 80
 h 18
-controlPv "EPICS\\$(HOSTNAME):calibration:ka_mon"
+controlPv "$(HOSTNAME):calibration:ka_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14

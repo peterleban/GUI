@@ -35,7 +35,7 @@ x 90
 y 440
 w 80
 h 18
-controlPv "EPICS\\$(HOSTNAME):calibration:polynomial:qoff_sp"
+controlPv "$(HOSTNAME):calibration:polynomial:qoff_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -79,7 +79,7 @@ x 90
 y 465
 w 80
 h 18
-controlPv "EPICS\\$(HOSTNAME):calibration:polynomial:kq_sp"
+controlPv "$(HOSTNAME):calibration:polynomial:kq_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -150,7 +150,7 @@ oddColBgColor index 0
 evenColBgColor index 1
 topShadowColor index 0
 botShadowColor index 14
-pv "EPICS\\$(HOSTNAME):calibration:polynomial:kx_mon"
+pv "$(HOSTNAME):calibration:polynomial:kx_mon"
 font "helvetica-medium-r-12.0"
 endObjectProperties
 
@@ -170,7 +170,7 @@ oddColBgColor index 0
 evenColBgColor index 1
 topShadowColor index 0
 botShadowColor index 14
-pv "EPICS\\$(HOSTNAME):calibration:polynomial:ky_mon"
+pv "$(HOSTNAME):calibration:polynomial:ky_mon"
 font "helvetica-medium-r-12.0"
 endObjectProperties
 
@@ -224,7 +224,7 @@ x 90
 y 390
 w 80
 h 18
-controlPv "EPICS\\$(HOSTNAME):calibration:polynomial:xoff_sp"
+controlPv "$(HOSTNAME):calibration:polynomial:xoff_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -287,7 +287,7 @@ x 90
 y 415
 w 80
 h 18
-controlPv "EPICS\\$(HOSTNAME):calibration:polynomial:yoff_sp"
+controlPv "$(HOSTNAME):calibration:polynomial:yoff_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -312,7 +312,7 @@ x 175
 y 465
 w 80
 h 18
-controlPv "EPICS\\$(HOSTNAME):calibration:polynomial:kq_mon"
+controlPv "$(HOSTNAME):calibration:polynomial:kq_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -336,7 +336,7 @@ x 175
 y 440
 w 80
 h 18
-controlPv "EPICS\\$(HOSTNAME):calibration:polynomial:qoff_mon"
+controlPv "$(HOSTNAME):calibration:polynomial:qoff_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -360,7 +360,7 @@ x 175
 y 415
 w 80
 h 18
-controlPv "EPICS\\$(HOSTNAME):calibration:polynomial:yoff_mon"
+controlPv "$(HOSTNAME):calibration:polynomial:yoff_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -384,7 +384,7 @@ x 175
 y 390
 w 80
 h 18
-controlPv "EPICS\\$(HOSTNAME):calibration:polynomial:xoff_mon"
+controlPv "$(HOSTNAME):calibration:polynomial:xoff_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14

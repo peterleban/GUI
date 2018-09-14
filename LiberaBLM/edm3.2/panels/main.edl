@@ -215,7 +215,7 @@ x 75
 y 85
 w 160
 h 20
-controlPv "EPICS\\$(HOSTNAME):version"
+controlPv "$(HOSTNAME):version"
 font "helvetica-medium-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -390,8 +390,8 @@ h 10
 lineColor index 14
 fill
 fillColor index 15
-alarmPv "EPICS\\$(HOSTNAME):pll:locked"
-visPv "EPICS\\$(HOSTNAME):pll:locked"
+alarmPv "$(HOSTNAME):pll:locked"
+visPv "$(HOSTNAME):pll:locked"
 visMin "1"
 visMax "2"
 endObjectProperties
@@ -411,8 +411,8 @@ lineAlarm
 fill
 fillColor index 107
 fillAlarm
-alarmPv "EPICS\\$(HOSTNAME):pll:locked"
-visPv "EPICS\\$(HOSTNAME):pll:locked"
+alarmPv "$(HOSTNAME):pll:locked"
+visPv "$(HOSTNAME):pll:locked"
 visMax "1"
 endObjectProperties
 
@@ -426,7 +426,7 @@ x 135
 y 255
 w 95
 h 20
-controlPv "EPICS\\$(HOSTNAME):triggers:t2:count_mon"
+controlPv "$(HOSTNAME):triggers:t2:count_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -450,7 +450,7 @@ x 135
 y 205
 w 95
 h 20
-controlPv "EPICS\\$(HOSTNAME):triggers:t2:source_mon"
+controlPv "$(HOSTNAME):triggers:t2:source_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -474,7 +474,7 @@ x 135
 y 230
 w 95
 h 20
-controlPv "EPICS\\$(HOSTNAME):triggers:t2:delay_mon"
+controlPv "$(HOSTNAME):triggers:t2:delay_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -552,7 +552,7 @@ x 70
 y 340
 w 50
 h 20
-controlPv "EPICS\\$(HOSTNAME):maxadc:A_mon"
+controlPv "$(HOSTNAME):maxadc:A_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 23
@@ -576,7 +576,7 @@ x 130
 y 340
 w 45
 h 20
-controlPv "EPICS\\$(HOSTNAME):att:A_mon"
+controlPv "$(HOSTNAME):att:A_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -623,7 +623,7 @@ x 135
 y 165
 w 95
 h 20
-controlPv "EPICS\\$(HOSTNAME):decimation:t0_interval_mon"
+controlPv "$(HOSTNAME):decimation:t0_interval_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -768,7 +768,7 @@ x 130
 y 365
 w 45
 h 20
-controlPv "EPICS\\$(HOSTNAME):att:B_mon"
+controlPv "$(HOSTNAME):att:B_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -794,7 +794,7 @@ x 70
 y 365
 w 50
 h 20
-controlPv "EPICS\\$(HOSTNAME):maxadc:B_mon"
+controlPv "$(HOSTNAME):maxadc:B_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 23
@@ -818,7 +818,7 @@ x 130
 y 390
 w 45
 h 20
-controlPv "EPICS\\$(HOSTNAME):att:C_mon"
+controlPv "$(HOSTNAME):att:C_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -844,7 +844,7 @@ x 70
 y 390
 w 50
 h 20
-controlPv "EPICS\\$(HOSTNAME):maxadc:C_mon"
+controlPv "$(HOSTNAME):maxadc:C_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 23
@@ -868,7 +868,7 @@ x 130
 y 415
 w 45
 h 20
-controlPv "EPICS\\$(HOSTNAME):att:D_mon"
+controlPv "$(HOSTNAME):att:D_mon"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -894,7 +894,7 @@ x 70
 y 415
 w 50
 h 20
-controlPv "EPICS\\$(HOSTNAME):maxadc:D_mon"
+controlPv "$(HOSTNAME):maxadc:D_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 23
@@ -1273,8 +1273,8 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):termination:A_sp"
-indicatorPv "EPICS\\$(HOSTNAME):termination:A_mon"
+controlPv "$(HOSTNAME):termination:A_sp"
+indicatorPv "$(HOSTNAME):termination:A_mon"
 onLabel "50 Ohm"
 offLabel "1MOhm"
 labelType "literal"
@@ -1301,8 +1301,8 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):termination:B_sp"
-indicatorPv "EPICS\\$(HOSTNAME):termination:B_mon"
+controlPv "$(HOSTNAME):termination:B_sp"
+indicatorPv "$(HOSTNAME):termination:B_mon"
 onLabel "50 Ohm"
 offLabel "1MOhm"
 labelType "literal"
@@ -1329,8 +1329,8 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):termination:C_sp"
-indicatorPv "EPICS\\$(HOSTNAME):termination:C_mon"
+controlPv "$(HOSTNAME):termination:C_sp"
+indicatorPv "$(HOSTNAME):termination:C_mon"
 onLabel "50 Ohm"
 offLabel "1MOhm"
 labelType "literal"
@@ -1357,8 +1357,8 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):termination:D_sp"
-indicatorPv "EPICS\\$(HOSTNAME):termination:D_mon"
+controlPv "$(HOSTNAME):termination:D_sp"
+indicatorPv "$(HOSTNAME):termination:D_mon"
 onLabel "50 Ohm"
 offLabel "1MOhm"
 labelType "literal"

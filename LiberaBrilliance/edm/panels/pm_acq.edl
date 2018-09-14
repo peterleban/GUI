@@ -76,14 +76,14 @@ y2Max 1
 # Trace Properties
 numTraces 8
 yPv {
-  0 "EPICS\\$(DEVICE):PM:PM_X_MONITOR"
-  1 "EPICS\\$(DEVICE):PM:PM_Y_MONITOR"
-  2 "EPICS\\$(DEVICE):PM:PM_VA_MONITOR"
-  3 "EPICS\\$(DEVICE):PM:PM_VB_MONITOR"
-  4 "EPICS\\$(DEVICE):PM:PM_VC_MONITOR"
-  5 "EPICS\\$(DEVICE):PM:PM_VD_MONITOR"
-  6 "EPICS\\$(DEVICE):PM:PM_SUM_MONITOR"
-  7 "EPICS\\$(DEVICE):PM:PM_Q_MONITOR"
+  0 "$(DEVICE):PM:PM_X_MONITOR"
+  1 "$(DEVICE):PM:PM_Y_MONITOR"
+  2 "$(DEVICE):PM:PM_VA_MONITOR"
+  3 "$(DEVICE):PM:PM_VB_MONITOR"
+  4 "$(DEVICE):PM:PM_VC_MONITOR"
+  5 "$(DEVICE):PM:PM_VD_MONITOR"
+  6 "$(DEVICE):PM:PM_SUM_MONITOR"
+  7 "$(DEVICE):PM:PM_Q_MONITOR"
 }
 ySigned {
   0 1
@@ -373,7 +373,7 @@ x 730
 y 150
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):ENV:ENV_PMOFFSET_MONITOR"
+controlPv "$(DEVICE):ENV:ENV_PMOFFSET_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 55
@@ -412,7 +412,7 @@ x 140
 y 570
 w 250
 h 20
-controlPv "EPICS\\$(DEVICE):PM:PM_ST_MONITOR"
+controlPv "$(DEVICE):PM:PM_ST_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -430,7 +430,7 @@ x 820
 y 140
 w 80
 h 30
-controlPv "EPICS\\$(DEVICE):ENV:ENV_PMOFFSET_SP"
+controlPv "$(DEVICE):ENV:ENV_PMOFFSET_SP"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -469,7 +469,7 @@ x 140
 y 590
 w 230
 h 20
-controlPv "EPICS\\$(DEVICE):PM:PM_MT_MONITOR"
+controlPv "$(DEVICE):PM:PM_MT_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -534,7 +534,7 @@ buttonColor index 14
 selectColor index 22
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(DEVICE):ENV:ENV_PMDEC_SP"
+controlPv "$(DEVICE):ENV:ENV_PMDEC_SP"
 font "courier-bold-r-12.0"
 endObjectProperties
 
@@ -661,7 +661,7 @@ x 730
 y 260
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):ENV:ENV_PM_X_LOW_MONITOR"
+controlPv "$(DEVICE):ENV:ENV_PM_X_LOW_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 55
@@ -700,7 +700,7 @@ x 730
 y 300
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):ENV:ENV_PM_X_HIGH_MONITOR"
+controlPv "$(DEVICE):ENV:ENV_PM_X_HIGH_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 55
@@ -719,7 +719,7 @@ x 730
 y 340
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):ENV:ENV_PM_Y_LOW_MONITOR"
+controlPv "$(DEVICE):ENV:ENV_PM_Y_LOW_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 55
@@ -738,7 +738,7 @@ x 730
 y 380
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):ENV:ENV_PM_Y_HIGH_MONITOR"
+controlPv "$(DEVICE):ENV:ENV_PM_Y_HIGH_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 55
@@ -784,7 +784,7 @@ buttonColor index 14
 selectColor index 22
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(DEVICE):ENV:ENV_PM_MODE_SP"
+controlPv "$(DEVICE):ENV:ENV_PM_MODE_SP"
 font "courier-bold-r-12.0"
 endObjectProperties
 
@@ -819,7 +819,7 @@ x 730
 y 430
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):ENV:ENV_PM_OF_LIMIT_MONITOR"
+controlPv "$(DEVICE):ENV:ENV_PM_OF_LIMIT_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 55
@@ -838,7 +838,7 @@ x 730
 y 480
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):ENV:ENV_PM_OF_DUR_MONITOR"
+controlPv "$(DEVICE):ENV:ENV_PM_OF_DUR_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 55
@@ -863,7 +863,7 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(DEVICE):ENV:ENV_SET_POSTMORTEM_PARAM_CMD"
+controlPv "$(DEVICE):ENV:ENV_SET_POSTMORTEM_PARAM_CMD"
 onLabel "Apply settings"
 offLabel "Apply"
 labelType "literal"
@@ -883,7 +883,7 @@ x 820
 y 250
 w 80
 h 30
-controlPv "EPICS\\$(DEVICE):ENV:ENV_PM_X_LOW_SP"
+controlPv "$(DEVICE):ENV:ENV_PM_X_LOW_SP"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -903,7 +903,7 @@ x 820
 y 290
 w 80
 h 30
-controlPv "EPICS\\$(DEVICE):ENV:ENV_PM_X_HIGH_SP"
+controlPv "$(DEVICE):ENV:ENV_PM_X_HIGH_SP"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -923,7 +923,7 @@ x 820
 y 330
 w 80
 h 30
-controlPv "EPICS\\$(DEVICE):ENV:ENV_PM_Y_LOW_SP"
+controlPv "$(DEVICE):ENV:ENV_PM_Y_LOW_SP"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -943,7 +943,7 @@ x 820
 y 370
 w 80
 h 30
-controlPv "EPICS\\$(DEVICE):ENV:ENV_PM_Y_HIGH_SP"
+controlPv "$(DEVICE):ENV:ENV_PM_Y_HIGH_SP"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -963,7 +963,7 @@ x 820
 y 420
 w 80
 h 30
-controlPv "EPICS\\$(DEVICE):ENV:ENV_PM_OF_LIMIT_SP"
+controlPv "$(DEVICE):ENV:ENV_PM_OF_LIMIT_SP"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -983,7 +983,7 @@ x 820
 y 470
 w 80
 h 30
-controlPv "EPICS\\$(DEVICE):ENV:ENV_PM_OF_DUR_SP"
+controlPv "$(DEVICE):ENV:ENV_PM_OF_DUR_SP"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -1003,7 +1003,7 @@ x 730
 y 200
 w 80
 h 20
-controlPv "EPICS\\$(DEVICE):ENV:ENV_PM_MODE_MONITOR"
+controlPv "$(DEVICE):ENV:ENV_PM_MODE_MONITOR"
 fgColor index 14
 fgAlarm
 bgColor index 55
@@ -1081,8 +1081,8 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(DEVICE):PM:PM_IGNORE_TRIG_SP"
-indicatorPv "EPICS\\$(DEVICE):PM:PM_IGNORE_TRIG_SP"
+controlPv "$(DEVICE):PM:PM_IGNORE_TRIG_SP"
+indicatorPv "$(DEVICE):PM:PM_IGNORE_TRIG_SP"
 onLabel "Manual"
 offLabel "Auto"
 labelType "literal"
@@ -1106,14 +1106,14 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(DEVICE):PM:PM_ON_NEXT_TRIG_CMD"
+controlPv "$(DEVICE):PM:PM_ON_NEXT_TRIG_CMD"
 onLabel "Acquire"
 offLabel "Acquire"
 labelType "literal"
 buttonType "push"
 font "helvetica-medium-r-10.0"
 objType "controls"
-visPv "EPICS\\$(DEVICE):PM:PM_IGNORE_TRIG_MONITOR"
+visPv "$(DEVICE):PM:PM_IGNORE_TRIG_MONITOR"
 visMin "1"
 visMax "2"
 endObjectProperties
@@ -1134,14 +1134,14 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(DEVICE):PM:PM_REQUEST_CMD"
+controlPv "$(DEVICE):PM:PM_REQUEST_CMD"
 onLabel "Acquire single"
 offLabel "Acquire single"
 labelType "literal"
 buttonType "push"
 font "helvetica-medium-r-10.0"
 objType "controls"
-visPv "EPICS\\$(DEVICE):PM:PM_IGNORE_TRIG_MONITOR"
+visPv "$(DEVICE):PM:PM_IGNORE_TRIG_MONITOR"
 visMin "1"
 visMax "2"
 endObjectProperties

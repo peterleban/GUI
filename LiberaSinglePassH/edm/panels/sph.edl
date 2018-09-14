@@ -76,16 +76,16 @@ y2Max 1
 # Trace Properties
 numTraces 10
 yPv {
-  0 "EPICS\\$(HOSTNAME):$(BPM):sph.Va"
-  1 "EPICS\\$(HOSTNAME):$(BPM):sph.Vb"
-  2 "EPICS\\$(HOSTNAME):$(BPM):sph.Vc"
-  3 "EPICS\\$(HOSTNAME):$(BPM):sph.Vd"
-  4 "EPICS\\$(HOSTNAME):$(BPM):sph.sum"
-  5 "EPICS\\$(HOSTNAME):$(BPM):sph.q"
-  6 "EPICS\\$(HOSTNAME):$(BPM):sph.x11"
-  7 "EPICS\\$(HOSTNAME):$(BPM):sph.x22"
-  8 "EPICS\\$(HOSTNAME):$(BPM):sph.y11"
-  9 "EPICS\\$(HOSTNAME):$(BPM):sph.y22"
+  0 "$(HOSTNAME):$(BPM):sph.Va"
+  1 "$(HOSTNAME):$(BPM):sph.Vb"
+  2 "$(HOSTNAME):$(BPM):sph.Vc"
+  3 "$(HOSTNAME):$(BPM):sph.Vd"
+  4 "$(HOSTNAME):$(BPM):sph.sum"
+  5 "$(HOSTNAME):$(BPM):sph.q"
+  6 "$(HOSTNAME):$(BPM):sph.x11"
+  7 "$(HOSTNAME):$(BPM):sph.x22"
+  8 "$(HOSTNAME):$(BPM):sph.y11"
+  9 "$(HOSTNAME):$(BPM):sph.y22"
 }
 ySigned {
   0 1
@@ -416,8 +416,8 @@ y2Max 1
 # Trace Properties
 numTraces 2
 yPv {
-  0 "EPICS\\$(HOSTNAME):$(BPM):sph.phase11"
-  1 "EPICS\\$(HOSTNAME):$(BPM):sph.phase22"
+  0 "$(HOSTNAME):$(BPM):sph.phase11"
+  1 "$(HOSTNAME):$(BPM):sph.phase22"
 }
 ySigned {
   0 1
@@ -674,7 +674,7 @@ onColor index 0
 offColor index 6
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):adc.PROC"
+controlPv "$(HOSTNAME):$(BPM):adc.PROC"
 pressValue "1"
 onLabel "Reading"
 offLabel "Read"
@@ -698,7 +698,7 @@ buttonColor index 14
 selectColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):sph.SCAN"
+controlPv "$(HOSTNAME):$(BPM):sph.SCAN"
 font "helvetica-medium-r-10.0"
 endObjectProperties
 
@@ -738,7 +738,7 @@ buttonColor index 14
 selectColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):sph.ACQM"
+controlPv "$(HOSTNAME):$(BPM):sph.ACQM"
 font "helvetica-medium-r-10.0"
 endObjectProperties
 
@@ -772,7 +772,7 @@ x 20
 y 940
 w 90
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):sph.trig_counter"
+controlPv "$(HOSTNAME):$(BPM):sph.trig_counter"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -809,7 +809,7 @@ x 120
 y 940
 w 90
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):sph.packet_counter"
+controlPv "$(HOSTNAME):$(BPM):sph.packet_counter"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -852,7 +852,7 @@ offColor index 6
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):dsp_control:reset_trigger_counter"
+controlPv "$(HOSTNAME):$(BPM):dsp_control:reset_trigger_counter"
 offLabel "Reset counters"
 labelType "literal"
 buttonType "push"
@@ -872,7 +872,7 @@ x 510
 y 940
 w 90
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):sph.ilk_flags"
+controlPv "$(HOSTNAME):$(BPM):sph.ilk_flags"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -909,7 +909,7 @@ x 410
 y 940
 w 90
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):sph.rfl_flags"
+controlPv "$(HOSTNAME):$(BPM):sph.rfl_flags"
 fgColor index 14
 fgAlarm
 bgColor index 0

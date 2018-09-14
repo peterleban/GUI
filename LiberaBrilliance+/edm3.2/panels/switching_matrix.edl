@@ -614,7 +614,7 @@ x 185
 y 130
 w 45
 h 20
-controlPv "CALC\\deljenje1k(EPICS\\$(HOSTNAME):$(BPM):clock_info:tbt_frequency,EPICS\\$(HOSTNAME):$(BPM):clock_info:decimation:sw)"
+controlPv "CALC\\deljenje1k($(HOSTNAME):$(BPM):clock_info:tbt_frequency,$(HOSTNAME):$(BPM):clock_info:decimation:sw)"
 displayMode "decimal"
 precision 2
 fgColor index 14
@@ -654,7 +654,7 @@ x 185
 y 155
 w 45
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(BPM):clock_info:decimation:sw"
+controlPv "$(HOSTNAME):$(BPM):clock_info:decimation:sw"
 fgColor index 14
 fgAlarm
 bgColor index 104

@@ -163,7 +163,7 @@ x 120
 y 35
 w 60
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(TIM):pll:locked"
+controlPv "$(HOSTNAME):$(TIM):pll:locked"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -202,7 +202,7 @@ x 90
 y 60
 w 45
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(TIM):pll:vcxo_offset_sp"
+controlPv "$(HOSTNAME):$(TIM):pll:vcxo_offset_sp"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -228,7 +228,7 @@ x 140
 y 60
 w 55
 h 20
-controlPv "CALC\\mult(EPICS\\$(HOSTNAME):$(TIM):pll:vcxo_offset_mon,40)"
+controlPv "CALC\\mult($(HOSTNAME):$(TIM):pll:vcxo_offset_mon,40)"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -293,8 +293,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(TIM):pll:compensate_offset_sp"
-indicatorPv "EPICS\\$(HOSTNAME):$(TIM):pll:compensate_offset_mon"
+controlPv "$(HOSTNAME):$(TIM):pll:compensate_offset_sp"
+indicatorPv "$(HOSTNAME):$(TIM):pll:compensate_offset_mon"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -328,7 +328,7 @@ x 140
 y 180
 w 80
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(TIM):pll.Freq"
+controlPv "$(HOSTNAME):$(TIM):pll.Freq"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -387,7 +387,7 @@ x 195
 y 205
 w 50
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(TIM):pll.Dac"
+controlPv "$(HOSTNAME):$(TIM):pll.Dac"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -426,7 +426,7 @@ x 75
 y 205
 w 40
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(TIM):pll.Err"
+controlPv "$(HOSTNAME):$(TIM):pll.Err"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -605,7 +605,7 @@ x 55
 y 265
 w 105
 h 20
-controlPv "EPICS\\$(HOSTNAME):bpm1:sync_st_m"
+controlPv "$(HOSTNAME):bpm1:sync_st_m"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -624,7 +624,7 @@ x 55
 y 290
 w 105
 h 20
-controlPv "EPICS\\$(HOSTNAME):bpm2:sync_st_m"
+controlPv "$(HOSTNAME):bpm2:sync_st_m"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -643,7 +643,7 @@ x 55
 y 315
 w 105
 h 20
-controlPv "EPICS\\$(HOSTNAME):bpm3:sync_st_m"
+controlPv "$(HOSTNAME):bpm3:sync_st_m"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -662,7 +662,7 @@ x 55
 y 340
 w 105
 h 20
-controlPv "EPICS\\$(HOSTNAME):bpm4:sync_st_m"
+controlPv "$(HOSTNAME):bpm4:sync_st_m"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -701,7 +701,7 @@ x 55
 y 365
 w 105
 h 20
-controlPv "EPICS\\$(HOSTNAME):gdx:sync_st_m"
+controlPv "$(HOSTNAME):gdx:sync_st_m"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -746,8 +746,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(TIM):triggers:mc:source_sp"
-indicatorPv "EPICS\\$(HOSTNAME):$(TIM):triggers:mc:source_mon"
+controlPv "$(HOSTNAME):$(TIM):triggers:mc:source_sp"
+indicatorPv "$(HOSTNAME):$(TIM):triggers:mc:source_mon"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -787,8 +787,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(TIM):triggers:t2:source_sp"
-indicatorPv "EPICS\\$(HOSTNAME):$(TIM):triggers:t2:source_mon"
+controlPv "$(HOSTNAME):$(TIM):triggers:t2:source_sp"
+indicatorPv "$(HOSTNAME):$(TIM):triggers:t2:source_mon"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -842,7 +842,7 @@ x 55
 y 485
 w 70
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(TIM):events:t2:count"
+controlPv "$(HOSTNAME):$(TIM):events:t2:count"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -861,7 +861,7 @@ x 90
 y 515
 w 160
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(TIM):events:t2:timestamp"
+controlPv "$(HOSTNAME):$(TIM):events:t2:timestamp"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -906,8 +906,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(TIM):triggers:t1:source_sp"
-indicatorPv "EPICS\\$(HOSTNAME):$(TIM):triggers:t1:source_mon"
+controlPv "$(HOSTNAME):$(TIM):triggers:t1:source_sp"
+indicatorPv "$(HOSTNAME):$(TIM):triggers:t1:source_mon"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -961,7 +961,7 @@ x 55
 y 570
 w 70
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(TIM):events:t1:count"
+controlPv "$(HOSTNAME):$(TIM):events:t1:count"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -980,7 +980,7 @@ x 90
 y 600
 w 160
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(TIM):events:t1:timestamp"
+controlPv "$(HOSTNAME):$(TIM):events:t1:timestamp"
 fgColor index 14
 fgAlarm
 bgColor index 0
@@ -1005,8 +1005,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(TIM):pll.SCAN"
-indicatorPv "EPICS\\$(HOSTNAME):$(TIM):pll.SCAN"
+controlPv "$(HOSTNAME):$(TIM):pll.SCAN"
+indicatorPv "$(HOSTNAME):$(TIM):pll.SCAN"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -1025,7 +1025,7 @@ onColor index 53
 offColor index 53
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):sync"
+controlPv "$(HOSTNAME):sync"
 pressValue "0"
 onLabel "Sending..."
 offLabel "Sync now"
@@ -1153,7 +1153,7 @@ x 180
 y 635
 w 70
 h 20
-controlPv "EPICS\\$(HOSTNAME):$(TIM):sensors:temp_mon"
+controlPv "$(HOSTNAME):$(TIM):sensors:temp_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14

@@ -66,7 +66,7 @@ y2Max 1
 # Trace Properties
 numTraces 1
 yPv {
-  0 "EPICS\\$(HOSTNAME):$(BPM):tbt:adc_mask_mon"
+  0 "$(HOSTNAME):$(BPM):tbt:adc_mask_mon"
 }
 lineThickness {
   0 3

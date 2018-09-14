@@ -136,7 +136,7 @@ x 110
 y 105
 w 60
 h 20
-controlPv "EPICS\\$(HOSTNAME):triggers:t2:delay_sp"
+controlPv "$(HOSTNAME):triggers:t2:delay_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -239,7 +239,7 @@ x 80
 y 225
 w 60
 h 20
-controlPv "EPICS\\$(HOSTNAME):input:max_adc"
+controlPv "$(HOSTNAME):input:max_adc"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 23
@@ -361,7 +361,7 @@ h 30
 indicatorColor index 83
 fgColor index 14
 bgColor index 0
-indicatorPv "EPICS\\$(HOSTNAME):input:max_adc"
+indicatorPv "$(HOSTNAME):input:max_adc"
 label "ADC load"
 font "helvetica-medium-r-8.0"
 border
@@ -380,7 +380,7 @@ x 110
 y 285
 w 35
 h 20
-controlPv "EPICS\\$(HOSTNAME):attenuation:att_id_sp"
+controlPv "$(HOSTNAME):attenuation:att_id_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -468,7 +468,7 @@ x 375
 y 140
 w 60
 h 18
-controlPv "EPICS\\$(HOSTNAME):dsp:num_of_bunches_sp"
+controlPv "$(HOSTNAME):dsp:num_of_bunches_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -494,7 +494,7 @@ x 375
 y 165
 w 60
 h 18
-controlPv "EPICS\\$(HOSTNAME):dsp:pre_trigger_sp"
+controlPv "$(HOSTNAME):dsp:pre_trigger_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -540,7 +540,7 @@ x 375
 y 190
 w 60
 h 18
-controlPv "EPICS\\$(HOSTNAME):dsp:post_trigger1_sp"
+controlPv "$(HOSTNAME):dsp:post_trigger1_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -606,7 +606,7 @@ x 375
 y 215
 w 60
 h 18
-controlPv "EPICS\\$(HOSTNAME):dsp:post_trigger2_sp"
+controlPv "$(HOSTNAME):dsp:post_trigger2_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -632,7 +632,7 @@ x 375
 y 265
 w 60
 h 18
-controlPv "EPICS\\$(HOSTNAME):dsp:bunch_thr2_sp"
+controlPv "$(HOSTNAME):dsp:bunch_thr2_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -678,7 +678,7 @@ x 375
 y 240
 w 60
 h 18
-controlPv "EPICS\\$(HOSTNAME):dsp:bunch_thr1_sp"
+controlPv "$(HOSTNAME):dsp:bunch_thr1_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -724,7 +724,7 @@ x 375
 y 290
 w 60
 h 18
-controlPv "EPICS\\$(HOSTNAME):dsp:scan_offset_sp"
+controlPv "$(HOSTNAME):dsp:scan_offset_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -770,7 +770,7 @@ x 375
 y 315
 w 60
 h 18
-controlPv "EPICS\\$(HOSTNAME):dsp:data_averaging_sp"
+controlPv "$(HOSTNAME):dsp:data_averaging_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -841,8 +841,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):dsp:insert_zeros_sp"
-indicatorPv "EPICS\\$(HOSTNAME):dsp:insert_zeros_mon"
+controlPv "$(HOSTNAME):dsp:insert_zeros_sp"
+indicatorPv "$(HOSTNAME):dsp:insert_zeros_mon"
 font "helvetica-medium-r-10.0"
 endObjectProperties
 
@@ -861,8 +861,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):dsp:pickup_orientation_sp"
-indicatorPv "EPICS\\$(HOSTNAME):dsp:pickup_orientation_mon"
+controlPv "$(HOSTNAME):dsp:pickup_orientation_sp"
+indicatorPv "$(HOSTNAME):dsp:pickup_orientation_mon"
 font "helvetica-medium-r-10.0"
 endObjectProperties
 
@@ -901,8 +901,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):dsp:calculation_method_sp"
-indicatorPv "EPICS\\$(HOSTNAME):dsp:calculation_method_mon"
+controlPv "$(HOSTNAME):dsp:calculation_method_sp"
+indicatorPv "$(HOSTNAME):dsp:calculation_method_mon"
 font "helvetica-medium-r-10.0"
 endObjectProperties
 
@@ -1038,7 +1038,7 @@ x 175
 y 105
 w 60
 h 20
-controlPv "EPICS\\$(HOSTNAME):triggers:t2:delay_mon"
+controlPv "$(HOSTNAME):triggers:t2:delay_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -1062,7 +1062,7 @@ x 150
 y 285
 w 50
 h 20
-controlPv "EPICS\\$(HOSTNAME):attenuation:att_id_mon"
+controlPv "$(HOSTNAME):attenuation:att_id_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -1086,7 +1086,7 @@ x 440
 y 315
 w 60
 h 18
-controlPv "EPICS\\$(HOSTNAME):dsp:data_averaging_mon"
+controlPv "$(HOSTNAME):dsp:data_averaging_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -1111,7 +1111,7 @@ x 440
 y 290
 w 60
 h 18
-controlPv "EPICS\\$(HOSTNAME):dsp:scan_offset_mon"
+controlPv "$(HOSTNAME):dsp:scan_offset_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -1136,7 +1136,7 @@ x 440
 y 265
 w 60
 h 18
-controlPv "EPICS\\$(HOSTNAME):dsp:bunch_thr2_mon"
+controlPv "$(HOSTNAME):dsp:bunch_thr2_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -1161,7 +1161,7 @@ x 440
 y 240
 w 60
 h 18
-controlPv "EPICS\\$(HOSTNAME):dsp:bunch_thr1_mon"
+controlPv "$(HOSTNAME):dsp:bunch_thr1_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -1186,7 +1186,7 @@ x 440
 y 215
 w 60
 h 18
-controlPv "EPICS\\$(HOSTNAME):dsp:post_trigger2_mon"
+controlPv "$(HOSTNAME):dsp:post_trigger2_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -1211,7 +1211,7 @@ x 440
 y 190
 w 60
 h 18
-controlPv "EPICS\\$(HOSTNAME):dsp:post_trigger1_mon"
+controlPv "$(HOSTNAME):dsp:post_trigger1_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -1236,7 +1236,7 @@ x 440
 y 165
 w 60
 h 18
-controlPv "EPICS\\$(HOSTNAME):dsp:pre_trigger_mon"
+controlPv "$(HOSTNAME):dsp:pre_trigger_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -1261,7 +1261,7 @@ x 440
 y 140
 w 60
 h 18
-controlPv "EPICS\\$(HOSTNAME):dsp:num_of_bunches_mon"
+controlPv "$(HOSTNAME):dsp:num_of_bunches_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -1292,8 +1292,8 @@ offColor index 20
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):dsp:enable_sp"
-indicatorPv "EPICS\\$(HOSTNAME):dsp:enable_mon"
+controlPv "$(HOSTNAME):dsp:enable_sp"
+indicatorPv "$(HOSTNAME):dsp:enable_mon"
 onLabel "DSP ENABLED"
 offLabel "DSP DISABLED"
 3d
@@ -1316,8 +1316,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):triggers:t2:source_sp"
-indicatorPv "EPICS\\$(HOSTNAME):triggers:t2:source_mon"
+controlPv "$(HOSTNAME):triggers:t2:source_sp"
+indicatorPv "$(HOSTNAME):triggers:t2:source_mon"
 font "helvetica-medium-r-10.0"
 endObjectProperties
 
@@ -1336,8 +1336,8 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):lemo_control:t0:direction_sp"
-indicatorPv "EPICS\\$(HOSTNAME):lemo_control:t0:direction_mon"
+controlPv "$(HOSTNAME):lemo_control:t0:direction_sp"
+indicatorPv "$(HOSTNAME):lemo_control:t0:direction_mon"
 font "helvetica-medium-r-10.0"
 endObjectProperties
 
@@ -1370,7 +1370,7 @@ x 175
 y 170
 w 60
 h 20
-controlPv "EPICS\\$(HOSTNAME):bunch_detection:pulse_length_mon"
+controlPv "$(HOSTNAME):bunch_detection:pulse_length_mon"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -1394,7 +1394,7 @@ x 110
 y 170
 w 60
 h 20
-controlPv "EPICS\\$(HOSTNAME):bunch_detection:pulse_length_sp"
+controlPv "$(HOSTNAME):bunch_detection:pulse_length_sp"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 24
@@ -1473,7 +1473,7 @@ onColor index 0
 offColor index 0
 topShadowColor index 0
 botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):dsp:reset_counters"
+controlPv "$(HOSTNAME):dsp:reset_counters"
 pressValue "Execute"
 onLabel "Resetting..."
 offLabel "Reset counters"
@@ -1510,7 +1510,7 @@ x 410
 y 435
 w 95
 h 20
-controlPv "EPICS\\$(HOSTNAME):signals:sp.trigger_cnt"
+controlPv "$(HOSTNAME):signals:sp.trigger_cnt"
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14

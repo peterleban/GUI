@@ -88,12 +88,12 @@ y2Max 1
 # Trace Properties
 numTraces 6
 yPv {
-  0 "EPICS\\$(HOSTNAME):$(BPM):fa.Va"
-  1 "EPICS\\$(HOSTNAME):$(BPM):fa.Vb"
-  2 "EPICS\\$(HOSTNAME):$(BPM):fa.Vc"
-  3 "EPICS\\$(HOSTNAME):$(BPM):fa.Vd"
-  4 "EPICS\\$(HOSTNAME):$(BPM):fa.Sum"
-  5 "EPICS\\$(HOSTNAME):$(BPM):fa.Q"
+  0 "$(HOSTNAME):$(BPM):fa.Va"
+  1 "$(HOSTNAME):$(BPM):fa.Vb"
+  2 "$(HOSTNAME):$(BPM):fa.Vc"
+  3 "$(HOSTNAME):$(BPM):fa.Vd"
+  4 "$(HOSTNAME):$(BPM):fa.Sum"
+  5 "$(HOSTNAME):$(BPM):fa.Q"
 }
 ySigned {
   0 1

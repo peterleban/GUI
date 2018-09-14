@@ -80,7 +80,7 @@ y2Max 1
 # Trace Properties
 numTraces 1
 yPv {
-  0 "EPICS\\$(DEVICE):signals:fa.Y"
+  0 "$(DEVICE):signals:fa.Y"
 }
 plotColor {
   0 index 14
@@ -156,7 +156,7 @@ y2Max 1
 # Trace Properties
 numTraces 1
 yPv {
-  0 "EPICS\\$(DEVICE):signals:fa.X"
+  0 "$(DEVICE):signals:fa.X"
 }
 plotColor {
   0 index 14
