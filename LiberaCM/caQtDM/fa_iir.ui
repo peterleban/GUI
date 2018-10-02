@@ -31,9 +31,6 @@
       <pointsize>8</pointsize>
      </font>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(231, 231, 231);</string>
-    </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
     </property>
@@ -54,7 +51,10 @@
      </color>
     </property>
     <property name="backgroundMode">
-     <enum>caFrame::Filled</enum>
+     <enum>caFrame::Outline</enum>
+    </property>
+    <property name="styleSheet" stdset="0">
+     <string notr="true"/>
     </property>
     <widget class="QLabel" name="label_28">
      <property name="geometry">
@@ -118,7 +118,7 @@
      <property name="precisionMode">
       <enum>caLineEdit::User</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::Height</enum>
      </property>
     </widget>
@@ -166,7 +166,7 @@
      <property name="precisionMode">
       <enum>caLineEdit::User</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::Height</enum>
      </property>
     </widget>
@@ -232,7 +232,7 @@
      <property name="precisionMode">
       <enum>caLineEdit::User</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::Height</enum>
      </property>
     </widget>
@@ -280,7 +280,7 @@
      <property name="precisionMode">
       <enum>caLineEdit::User</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::Height</enum>
      </property>
     </widget>
@@ -364,7 +364,7 @@
      <property name="precisionMode">
       <enum>caLineEdit::User</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::Height</enum>
      </property>
     </widget>
@@ -412,7 +412,7 @@
      <property name="precisionMode">
       <enum>caLineEdit::User</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::Height</enum>
      </property>
     </widget>
@@ -493,9 +493,6 @@
       <pointsize>8</pointsize>
      </font>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(231, 231, 231);</string>
-    </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
     </property>
@@ -516,7 +513,10 @@
      </color>
     </property>
     <property name="backgroundMode">
-     <enum>caFrame::Filled</enum>
+     <enum>caFrame::Outline</enum>
+    </property>
+    <property name="styleSheet" stdset="0">
+     <string notr="true"/>
     </property>
     <widget class="QLabel" name="label_29">
      <property name="geometry">
@@ -580,7 +580,7 @@
      <property name="precisionMode">
       <enum>caLineEdit::User</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::Height</enum>
      </property>
     </widget>
@@ -628,7 +628,7 @@
      <property name="precisionMode">
       <enum>caLineEdit::User</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::Height</enum>
      </property>
     </widget>
@@ -694,7 +694,7 @@
      <property name="precisionMode">
       <enum>caLineEdit::User</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::Height</enum>
      </property>
     </widget>
@@ -742,7 +742,7 @@
      <property name="precisionMode">
       <enum>caLineEdit::User</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::Height</enum>
      </property>
     </widget>
@@ -826,7 +826,7 @@
      <property name="precisionMode">
       <enum>caLineEdit::User</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::Height</enum>
      </property>
     </widget>
@@ -874,7 +874,7 @@
      <property name="precisionMode">
       <enum>caLineEdit::User</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::Height</enum>
      </property>
     </widget>

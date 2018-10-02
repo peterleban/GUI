@@ -31,9 +31,6 @@
       <pointsize>8</pointsize>
      </font>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(231, 231, 231);</string>
-    </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
     </property>
@@ -54,7 +51,10 @@
      </color>
     </property>
     <property name="backgroundMode">
-     <enum>caFrame::Filled</enum>
+     <enum>caFrame::Outline</enum>
+    </property>
+    <property name="styleSheet" stdset="0">
+     <string notr="true"/>
     </property>
     <layout class="QGridLayout" name="gridLayout">
      <item row="0" column="0">
@@ -80,7 +80,7 @@
        <property name="font">
         <font>
          <family>Monospace</family>
-         <pointsize>11</pointsize>
+         <pointsize>12</pointsize>
         </font>
        </property>
        <property name="alignment">
@@ -99,7 +99,7 @@
        <property name="colorMode">
         <enum>caLineEdit::Static</enum>
        </property>
-       <property name="fontScaleMode">
+       <property name="fontScaleMode" stdset="0">
         <enum>caLineEdit::WidthAndHeight</enum>
        </property>
       </widget>
@@ -127,7 +127,7 @@
        <property name="font">
         <font>
          <family>Monospace</family>
-         <pointsize>11</pointsize>
+         <pointsize>12</pointsize>
         </font>
        </property>
        <property name="alignment">
@@ -171,7 +171,7 @@
        <property name="font">
         <font>
          <family>Monospace</family>
-         <pointsize>11</pointsize>
+         <pointsize>12</pointsize>
         </font>
        </property>
        <property name="alignment">
@@ -215,7 +215,7 @@
        <property name="font">
         <font>
          <family>Monospace</family>
-         <pointsize>11</pointsize>
+         <pointsize>12</pointsize>
         </font>
        </property>
        <property name="alignment">
@@ -259,7 +259,7 @@
        <property name="font">
         <font>
          <family>Monospace</family>
-         <pointsize>11</pointsize>
+         <pointsize>12</pointsize>
         </font>
        </property>
        <property name="alignment">
@@ -322,7 +322,7 @@
        <property name="colorMode">
         <enum>caLineEdit::Static</enum>
        </property>
-       <property name="fontScaleMode">
+       <property name="fontScaleMode" stdset="0">
         <enum>caLineEdit::WidthAndHeight</enum>
        </property>
       </widget>
@@ -526,7 +526,7 @@
        <property name="font">
         <font>
          <family>Monospace</family>
-         <pointsize>11</pointsize>
+         <pointsize>12</pointsize>
         </font>
        </property>
        <property name="alignment">
@@ -545,7 +545,7 @@
        <property name="colorMode">
         <enum>caLineEdit::Static</enum>
        </property>
-       <property name="fontScaleMode">
+       <property name="fontScaleMode" stdset="0">
         <enum>caLineEdit::WidthAndHeight</enum>
        </property>
       </widget>
@@ -573,7 +573,7 @@
        <property name="font">
         <font>
          <family>Monospace</family>
-         <pointsize>11</pointsize>
+         <pointsize>12</pointsize>
         </font>
        </property>
        <property name="alignment">
@@ -617,7 +617,7 @@
        <property name="font">
         <font>
          <family>Monospace</family>
-         <pointsize>11</pointsize>
+         <pointsize>12</pointsize>
         </font>
        </property>
        <property name="alignment">
@@ -661,7 +661,7 @@
        <property name="font">
         <font>
          <family>Monospace</family>
-         <pointsize>11</pointsize>
+         <pointsize>12</pointsize>
         </font>
        </property>
        <property name="alignment">
@@ -705,7 +705,7 @@
        <property name="font">
         <font>
          <family>Monospace</family>
-         <pointsize>11</pointsize>
+         <pointsize>12</pointsize>
         </font>
        </property>
        <property name="alignment">
@@ -749,7 +749,7 @@
        <property name="font">
         <font>
          <family>Monospace</family>
-         <pointsize>11</pointsize>
+         <pointsize>12</pointsize>
         </font>
        </property>
        <property name="alignment">
@@ -768,7 +768,7 @@
        <property name="colorMode">
         <enum>caLineEdit::Static</enum>
        </property>
-       <property name="fontScaleMode">
+       <property name="fontScaleMode" stdset="0">
         <enum>caLineEdit::WidthAndHeight</enum>
        </property>
       </widget>
@@ -796,7 +796,7 @@
        <property name="font">
         <font>
          <family>Monospace</family>
-         <pointsize>11</pointsize>
+         <pointsize>12</pointsize>
         </font>
        </property>
        <property name="alignment">
@@ -840,7 +840,7 @@
        <property name="font">
         <font>
          <family>Monospace</family>
-         <pointsize>11</pointsize>
+         <pointsize>12</pointsize>
         </font>
        </property>
        <property name="alignment">
@@ -884,7 +884,7 @@
        <property name="font">
         <font>
          <family>Monospace</family>
-         <pointsize>11</pointsize>
+         <pointsize>12</pointsize>
         </font>
        </property>
        <property name="alignment">
@@ -928,7 +928,7 @@
        <property name="font">
         <font>
          <family>Monospace</family>
-         <pointsize>11</pointsize>
+         <pointsize>12</pointsize>
         </font>
        </property>
        <property name="alignment">
@@ -991,9 +991,6 @@
       <pointsize>8</pointsize>
      </font>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(231, 231, 231);</string>
-    </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
     </property>
@@ -1014,7 +1011,10 @@
      </color>
     </property>
     <property name="backgroundMode">
-     <enum>caFrame::Filled</enum>
+     <enum>caFrame::Outline</enum>
+    </property>
+    <property name="styleSheet" stdset="0">
+     <string notr="true"/>
     </property>
     <layout class="QGridLayout" name="gridLayout_2">
      <item row="0" column="0">
@@ -1089,7 +1089,7 @@
        <property name="colorMode">
         <enum>caLineEdit::Static</enum>
        </property>
-       <property name="fontScaleMode">
+       <property name="fontScaleMode" stdset="0">
         <enum>caLineEdit::None</enum>
        </property>
       </widget>
@@ -1118,7 +1118,7 @@
        <property name="colorMode">
         <enum>caLineEdit::Static</enum>
        </property>
-       <property name="fontScaleMode">
+       <property name="fontScaleMode" stdset="0">
         <enum>caLineEdit::None</enum>
        </property>
       </widget>
@@ -1147,7 +1147,7 @@
        <property name="colorMode">
         <enum>caLineEdit::Static</enum>
        </property>
-       <property name="fontScaleMode">
+       <property name="fontScaleMode" stdset="0">
         <enum>caLineEdit::None</enum>
        </property>
       </widget>
@@ -1176,7 +1176,7 @@
        <property name="colorMode">
         <enum>caLineEdit::Static</enum>
        </property>
-       <property name="fontScaleMode">
+       <property name="fontScaleMode" stdset="0">
         <enum>caLineEdit::None</enum>
        </property>
       </widget>

@@ -31,9 +31,6 @@
       <pointsize>8</pointsize>
      </font>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(231, 231, 231);</string>
-    </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
     </property>
@@ -54,7 +51,10 @@
      </color>
     </property>
     <property name="backgroundMode">
-     <enum>caFrame::Filled</enum>
+     <enum>caFrame::Outline</enum>
+    </property>
+    <property name="styleSheet" stdset="0">
+     <string notr="true"/>
     </property>
     <widget class="caMessageButton" name="camessagebutton">
      <property name="geometry">
@@ -68,7 +68,7 @@
      <property name="font">
       <font>
        <family>Sans Serif</family>
-       <pointsize>8</pointsize>
+       <pointsize>9</pointsize>
       </font>
      </property>
      <property name="text">
@@ -149,7 +149,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
     </widget>
@@ -229,7 +229,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
     </widget>
@@ -265,9 +265,6 @@
        <pointsize>8</pointsize>
       </font>
      </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(0, 0, 0);</string>
-     </property>
      <property name="channel" stdset="0">
       <string notr="true">$(DEVICE):triggers:t2:source</string>
      </property>
@@ -284,6 +281,9 @@
      <property name="labelDisplay">
       <bool>false</bool>
      </property>
+     <property name="styleSheet" stdset="0">
+      <string notr="true">background-color: rgba(255, 255, 255, 255); color: rgba(0, 0, 0, 255);</string>
+     </property>
     </widget>
     <widget class="caTextEntry" name="catextentry_13">
      <property name="geometry">
@@ -297,7 +297,7 @@
      <property name="font">
       <font>
        <family>Monospace</family>
-       <pointsize>10</pointsize>
+       <pointsize>11</pointsize>
       </font>
      </property>
      <property name="alignment">
@@ -339,11 +339,11 @@
        <pointsize>8</pointsize>
       </font>
      </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(0, 0, 0);</string>
-     </property>
      <property name="channel" stdset="0">
       <string notr="true">$(DEVICE):triggers:t1:source</string>
+     </property>
+     <property name="styleSheet" stdset="0">
+      <string notr="true"/>
      </property>
     </widget>
     <widget class="QLabel" name="label_43">
@@ -505,7 +505,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
     </widget>
@@ -567,7 +567,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
     </widget>

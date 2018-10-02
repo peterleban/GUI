@@ -34,9 +34,6 @@
     <property name="autoFillBackground">
      <bool>false</bool>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
-    </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
     </property>
@@ -57,7 +54,10 @@
      </color>
     </property>
     <property name="backgroundMode">
-     <enum>caFrame::Filled</enum>
+     <enum>caFrame::Outline</enum>
+    </property>
+    <property name="styleSheet" stdset="0">
+     <string notr="true"/>
     </property>
     <widget class="QLabel" name="label_42">
      <property name="geometry">
@@ -121,7 +121,7 @@
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
     </widget>
@@ -133,9 +133,6 @@
        <width>0</width>
        <height>0</height>
       </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true"/>
      </property>
      <property name="frameShape">
       <enum>QFrame::NoFrame</enum>
@@ -160,6 +157,9 @@
      </property>
      <property name="channelB">
       <string notr="true">$(DEVICE):clocks:osc_frequency</string>
+     </property>
+     <property name="styleSheet" stdset="0">
+      <string notr="true">background-color: rgba(192, 192, 192, 255); color: rgba(0, 0, 0, 255);</string>
      </property>
     </widget>
     <widget class="caMessageButton" name="camessagebutton_3">
@@ -401,9 +401,6 @@ T2</string>
     <property name="autoFillBackground">
      <bool>false</bool>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
-    </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
     </property>
@@ -424,7 +421,10 @@ T2</string>
      </color>
     </property>
     <property name="backgroundMode">
-     <enum>caFrame::Filled</enum>
+     <enum>caFrame::Outline</enum>
+    </property>
+    <property name="styleSheet" stdset="0">
+     <string notr="true"/>
     </property>
     <widget class="caLabel" name="label_30">
      <property name="geometry">
@@ -434,9 +434,6 @@ T2</string>
        <width>76</width>
        <height>76</height>
       </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
      </property>
      <property name="text">
       <string>1 ... 60 nA
@@ -456,55 +453,8 @@ T2</string>
        <blue>255</blue>
       </color>
      </property>
-    </widget>
-    <widget class="caApplyNumeric" name="caapplynumeric">
-     <property name="geometry">
-      <rect>
-       <x>95</x>
-       <y>25</y>
-       <width>91</width>
-       <height>56</height>
-      </rect>
-     </property>
-     <property name="value">
-      <double>6.000000000000000</double>
-     </property>
-     <property name="integerDigits" stdset="0">
-      <number>1</number>
-     </property>
-     <property name="decimalDigits" stdset="0">
-      <number>0</number>
-     </property>
-     <property name="buttonPos" stdset="0">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="digitsFontScaleEnabled">
-      <bool>true</bool>
-     </property>
-     <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):current_range_sp</string>
-     </property>
-     <property name="background">
-      <color>
-       <red>255</red>
-       <green>255</green>
-       <blue>255</blue>
-      </color>
-     </property>
-     <property name="precisionMode">
-      <enum>caApplyNumeric::Channel</enum>
-     </property>
-     <property name="fixedFormat">
-      <bool>true</bool>
-     </property>
-     <property name="limitsMode">
-      <enum>caApplyNumeric::User</enum>
-     </property>
-     <property name="maxValue">
-      <double>6.000000000000000</double>
-     </property>
-     <property name="minValue">
-      <double>1.000000000000000</double>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
      </property>
     </widget>
     <widget class="caLineEdit" name="calineedit_14">
@@ -519,7 +469,7 @@ T2</string>
      <property name="font">
       <font>
        <family>Sans Serif</family>
-       <pointsize>13</pointsize>
+       <pointsize>14</pointsize>
       </font>
      </property>
      <property name="alignment">
@@ -551,7 +501,7 @@ T2</string>
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
     </widget>
@@ -746,7 +696,7 @@ T2</string>
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -799,7 +749,7 @@ T2</string>
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -852,7 +802,7 @@ T2</string>
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -905,11 +855,109 @@ T2</string>
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
       <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="caTextEntry" name="catextentry">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>40</y>
+       <width>31</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(DEVICE):current_range_sp</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>170</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="limitsMode">
+      <enum>caLineEdit::User</enum>
+     </property>
+     <property name="maxValue">
+      <double>6.000000000000000</double>
+     </property>
+     <property name="minValue">
+      <double>1.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_63">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>15</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Set range</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="caLineEdit" name="calineedit_21">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>40</y>
+       <width>31</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Sans Serif</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(DEVICE):current_range_mon</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="colorMode">
+      <enum>caLineEdit::Static</enum>
+     </property>
+     <property name="frameLineWidth" stdset="0">
+      <number>1</number>
+     </property>
+     <property name="fontScaleMode" stdset="0">
+      <enum>caLineEdit::WidthAndHeight</enum>
      </property>
     </widget>
    </widget>
@@ -953,9 +1001,6 @@ T2</string>
       <pointsize>8</pointsize>
      </font>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(221, 226, 232);</string>
-    </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
     </property>
@@ -976,7 +1021,10 @@ T2</string>
      </color>
     </property>
     <property name="backgroundMode">
-     <enum>caFrame::Filled</enum>
+     <enum>caFrame::Outline</enum>
+    </property>
+    <property name="styleSheet" stdset="0">
+     <string notr="true"/>
     </property>
     <widget class="caRelatedDisplay" name="ADC_buffer">
      <property name="geometry">
@@ -1520,7 +1568,7 @@ T2</string>
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -1573,7 +1621,7 @@ T2</string>
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -1626,7 +1674,7 @@ T2</string>
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -1679,7 +1727,7 @@ T2</string>
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -1931,14 +1979,14 @@ T2</string>
  </widget>
  <customwidgets>
   <customwidget>
-   <class>caApplyNumeric</class>
-   <extends>QWidget</extends>
-   <header>caApplyNumeric</header>
-  </customwidget>
-  <customwidget>
    <class>caRelatedDisplay</class>
    <extends>QWidget</extends>
    <header>caRelatedDisplay</header>
+  </customwidget>
+  <customwidget>
+   <class>caTextEntry</class>
+   <extends>caLineEdit</extends>
+   <header>caTextEntry</header>
   </customwidget>
   <customwidget>
    <class>caMessageButton</class>
