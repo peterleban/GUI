@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>315</width>
+    <height>125</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="Title" stdset="0">
+   <string>About $(DEVICE)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_25">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>5</y>
+      <width>136</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>About</string>
+    </property>
+   </widget>
+   <widget class="caFrame" name="caframe_5">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>15</y>
+      <width>306</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="midLineWidth">
+     <number>1</number>
+    </property>
+    <property name="background">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="backgroundMode">
+     <enum>caFrame::Outline</enum>
+    </property>
+    <property name="styleSheet" stdset="0">
+     <string notr="true"/>
+    </property>
+    <widget class="caLineEdit" name="calineedit_2">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>45</y>
+       <width>141</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Sans Serif</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(DEVICE):version&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;caLineEdit&quot; name=&quot;calineedit&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;135&lt;/x&gt;
+     &lt;y&gt;45&lt;/y&gt;
+     &lt;width&gt;141&lt;/width&gt;
+     &lt;height&gt;20&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;font&quot;&gt;
+    &lt;font&gt;
+     &lt;family&gt;Sans Serif&lt;/family&gt;
+     &lt;pointsize&gt;10&lt;/pointsize&gt;
+    &lt;/font&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;alignment&quot;&gt;
+    &lt;set&gt;Qt::AlignCenter&lt;/set&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;readOnly&quot;&gt;
+    &lt;bool&gt;true&lt;/bool&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;channel&quot; stdset=&quot;0&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;$(DEVICE):app-name&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;background&quot;&gt;
+    &lt;color&gt;
+     &lt;red&gt;255&lt;/red&gt;
+     &lt;green&gt;255&lt;/green&gt;
+     &lt;blue&gt;255&lt;/blue&gt;
+    &lt;/color&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;colorMode&quot;&gt;
+    &lt;enum&gt;caLineEdit::Static&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameLineWidth&quot; stdset=&quot;0&quot;&gt;
+    &lt;number&gt;1&lt;/number&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;fontScaleMode&quot; stdset=&quot;0&quot;&gt;
+    &lt;enum&gt;caLineEdit::WidthAndHeight&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;customwidgets&gt;
+  &lt;customwidget&gt;
+   &lt;class&gt;caLineEdit&lt;/class&gt;
+   &lt;extends&gt;QLineEdit&lt;/extends&gt;
+   &lt;header&gt;caLineEdit&lt;/header&gt;
+  &lt;/customwidget&gt;
+ &lt;/customwidgets&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="colorMode">
+      <enum>caLineEdit::Static</enum>
+     </property>
+     <property name="frameLineWidth" stdset="0">
+      <number>1</number>
+     </property>
+     <property name="fontScaleMode" stdset="0">
+      <enum>caLineEdit::WidthAndHeight</enum>
+     </property>
+    </widget>
+    <widget class="caLineEdit" name="calineedit">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>20</y>
+       <width>141</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Sans Serif</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(DEVICE):app-name</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="colorMode">
+      <enum>caLineEdit::Static</enum>
+     </property>
+     <property name="frameLineWidth" stdset="0">
+      <number>1</number>
+     </property>
+     <property name="fontScaleMode" stdset="0">
+      <enum>caLineEdit::WidthAndHeight</enum>
+     </property>
+    </widget>
+    <widget class="caLineEdit" name="calineedit_3">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>70</y>
+       <width>141</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Sans Serif</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(DEVICE)</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="colorMode">
+      <enum>caLineEdit::Static</enum>
+     </property>
+     <property name="frameLineWidth" stdset="0">
+      <number>1</number>
+     </property>
+     <property name="fontScaleMode" stdset="0">
+      <enum>caLineEdit::WidthAndHeight</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_23">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>19</y>
+       <width>126</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>DejaVu Sans</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Application name</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_26">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>126</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>DejaVu Sans</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>IOC name</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_24">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>45</y>
+       <width>126</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>DejaVu Sans</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Application version</string>
+     </property>
+    </widget>
+   </widget>
+   <zorder>caframe_5</zorder>
+   <zorder>label_25</zorder>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>caFrame</class>
+   <extends>QFrame</extends>
+   <header>caFrame</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>caLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>caLineEdit</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,1 @@
+caQtDM.exe -macro "DEVICE=none" main.ui
