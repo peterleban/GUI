@@ -3,7 +3,7 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 515
+x 254
 y 51
 w 590
 h 460
@@ -249,6 +249,35 @@ bgColor index 0
 useDisplayBg
 value {
   "SA data | IOC: $(HOSTNAME)"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 435
+y 425
+w 145
+h 25
+fgColor index 91
+bgColor index 92
+topShadowColor index 0
+botShadowColor index 14
+font "helvetica-medium-r-12.0"
+buttonLabel "1 minute history"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sa_history.edl"
+}
+menuLabel {
+  0 "SA"
+}
+symbols {
+  0 "SIG=sa_history"
 }
 endObjectProperties
 

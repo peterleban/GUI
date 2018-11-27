@@ -1,0 +1,455 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 799
+y 105
+w 745
+h 545
+font "helvetica-bold-r-12.0"
+ctlFont "helvetica-bold-r-12.0"
+btnFont "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+title "$(HOSTNAME): SA data history"
+showGrid
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 505
+w 735
+h 35
+lineColor index 14
+fill
+fillColor index 1
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 8
+release 0
+# Geometry
+x 5
+y 35
+w 735
+h 430
+# Appearance
+autoScaleBothDirections
+fgColor index 14
+bgColor index 1
+gridColor index 9
+font "courier-medium-r-12.0"
+# Operating Modes
+plotMode "plotLastNPts"
+nPts 50
+traceCtlPv "LOC\\sah_traces=i:0"
+resetPv "LOC\\sah_reset=i:0"
+# X axis properties
+showXAxis
+xAxisSrc "fromUser"
+xMin 0
+xMax 2400
+xShowMinorGrid
+xAxisSmoothing 1
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+yShowMinorGrid
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 8
+yPv {
+  0 "EPICS\\$(HOSTNAME):signals:$(SIG).A"
+  1 "EPICS\\$(HOSTNAME):signals:$(SIG).B"
+  2 "EPICS\\$(HOSTNAME):signals:$(SIG).C"
+  3 "EPICS\\$(HOSTNAME):signals:$(SIG).D"
+  4 "EPICS\\$(HOSTNAME):signals:$(SIG).Sum"
+  5 "EPICS\\$(HOSTNAME):signals:$(SIG).Q"
+  6 "EPICS\\$(HOSTNAME):signals:$(SIG).X"
+  7 "EPICS\\$(HOSTNAME):signals:$(SIG).Y"
+}
+ySigned {
+  5 1
+  6 1
+  7 1
+}
+plotColor {
+  0 index 18
+  1 index 31
+  2 index 46
+  3 index 84
+  4 index 14
+  5 index 43
+  6 index 26
+  7 index 21
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 5
+w 735
+h 25
+lineColor index 14
+fill
+fillColor index 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 10
+w 725
+h 15
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Last 1 minute SA data history | IOC: $(HOSTNAME)"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 470
+w 735
+h 30
+lineColor index 14
+fill
+fillColor index 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 475
+w 105
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Select to show:"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 340
+y 475
+w 70
+h 20
+fgColor index 14
+onColor index 6
+offColor index 84
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\sah_traces=i:0"
+indicatorPv "LOC\\sah_traces=i:0"
+onLabel "Channel D"
+offLabel "Channel D"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 3
+readBitPos 3
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 265
+y 475
+w 70
+h 20
+fgColor index 14
+onColor index 6
+offColor index 46
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\sah_traces=i:0"
+indicatorPv "LOC\\sah_traces=i:0"
+onLabel "Channel C"
+offLabel "Channel C"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 2
+readBitPos 2
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 190
+y 475
+w 70
+h 20
+fgColor index 14
+onColor index 6
+offColor index 31
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\sah_traces=i:0"
+indicatorPv "LOC\\sah_traces=i:0"
+onLabel "Channel B"
+offLabel "Channel B"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 1
+readBitPos 1
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 115
+y 475
+w 70
+h 20
+fgColor index 14
+onColor index 6
+offColor index 18
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\sah_traces=i:0"
+indicatorPv "LOC\\sah_traces=i:0"
+onLabel "Channel A"
+offLabel "Channel A"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 660
+y 475
+w 70
+h 20
+fgColor index 14
+onColor index 6
+offColor index 21
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\sah_traces=i:0"
+indicatorPv "LOC\\sah_traces=i:0"
+onLabel "Y"
+offLabel "Y off"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 7
+readBitPos 7
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 585
+y 475
+w 70
+h 20
+fgColor index 0
+onColor index 6
+offColor index 26
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\sah_traces=i:0"
+indicatorPv "LOC\\sah_traces=i:0"
+onLabel "X"
+offLabel "X off"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 6
+readBitPos 6
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 510
+y 475
+w 70
+h 20
+fgColor index 14
+onColor index 6
+offColor index 43
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\sah_traces=i:0"
+indicatorPv "LOC\\sah_traces=i:0"
+onLabel "Q"
+offLabel "Q off"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 5
+readBitPos 5
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 415
+y 475
+w 70
+h 20
+fgColor index 0
+onColor index 6
+offColor index 14
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\sah_traces=i:0"
+indicatorPv "LOC\\sah_traces=i:0"
+onLabel "Sum"
+offLabel "Sum"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 4
+readBitPos 4
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 130
+y 510
+w 80
+h 25
+fgColor index 14
+onColor index 8
+offColor index 87
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(HOSTNAME):signals:$(SIG).PROC"
+pressValue "1"
+onLabel "Reading..."
+offLabel "Refresh plot"
+3d
+font "helvetica-medium-r-10.0"
+visPv "EPICS\\$(HOSTNAME):signals:$(SIG).SCAN"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 510
+w 115
+h 25
+fgColor index 14
+onColor index 8
+offColor index 87
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(HOSTNAME):signals:$(SIG).SCAN"
+pressValue "0"
+releaseValue "6"
+onLabel "Refresh auto"
+offLabel "Refresh manually"
+toggle
+3d
+useEnumNumeric
+font "helvetica-medium-r-10.0"
+visMin "0"
+visMax "2"
+endObjectProperties
+

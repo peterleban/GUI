@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>315</width>
-    <height>507</height>
+    <height>599</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -24,7 +24,7 @@
     <property name="geometry">
      <rect>
       <x>5</x>
-      <y>20</y>
+      <y>110</y>
       <width>301</width>
       <height>136</height>
      </rect>
@@ -245,20 +245,17 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>10</y>
+      <y>100</y>
       <width>106</width>
       <height>16</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>8</pointsize>
+      <pointsize>10</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
     </property>
     <property name="text">
      <string>Clocks</string>
@@ -279,12 +276,15 @@
       <blue>255</blue>
      </color>
     </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
    </widget>
    <widget class="QFrame" name="frame_2">
     <property name="geometry">
      <rect>
       <x>5</x>
-      <y>175</y>
+      <y>265</y>
       <width>301</width>
       <height>126</height>
      </rect>
@@ -374,32 +374,6 @@
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QLabel" name="label_19">
-     <property name="geometry">
-      <rect>
-       <x>5</x>
-       <y>35</y>
-       <width>171</width>
-       <height>17</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Access PLL stream</string>
-     </property>
-    </widget>
-    <widget class="caMenu" name="camenu">
-     <property name="geometry">
-      <rect>
-       <x>185</x>
-       <y>35</y>
-       <width>111</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):signals:pll.SCAN</string>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_20">
      <property name="geometry">
       <rect>
@@ -470,25 +444,41 @@
       <bool>true</bool>
      </property>
     </widget>
+    <widget class="caToggleButton" name="catogglebutton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>111</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Access PLL stream</string>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(DEVICE):signals:pll.SCAN</string>
+     </property>
+     <property name="trueValue">
+      <string>2</string>
+     </property>
+    </widget>
    </widget>
    <widget class="caLabel" name="calabel_18">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>165</y>
+      <y>255</y>
       <width>106</width>
       <height>16</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>8</pointsize>
+      <pointsize>10</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
     </property>
     <property name="text">
      <string>PLL</string>
@@ -509,12 +499,15 @@
       <blue>255</blue>
      </color>
     </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
    </widget>
    <widget class="QFrame" name="frame_3">
     <property name="geometry">
      <rect>
       <x>5</x>
-      <y>320</y>
+      <y>410</y>
       <width>301</width>
       <height>181</height>
      </rect>
@@ -579,7 +572,7 @@
       <string notr="true">$(DEVICE):triggers:t2:source_mon</string>
      </property>
      <property name="unitsEnabled">
-      <bool>true</bool>
+      <bool>false</bool>
      </property>
     </widget>
     <widget class="caMessageButton" name="camessagebutton">
@@ -780,9 +773,6 @@
      <property name="direction">
       <enum>caSlider::Right</enum>
      </property>
-     <property name="limitsMode">
-      <enum>caSlider::User</enum>
-     </property>
      <property name="maxValue">
       <double>55000000.000000000000000</double>
      </property>
@@ -791,6 +781,9 @@
      </property>
      <property name="incrementValue">
       <double>550000.000000000000000</double>
+     </property>
+     <property name="limitsMode" stdset="0">
+      <enum>caSlider::User</enum>
      </property>
     </widget>
     <widget class="QLabel" name="label_8">
@@ -902,20 +895,17 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>310</y>
+      <y>400</y>
       <width>106</width>
       <height>16</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>8</pointsize>
+      <pointsize>10</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
     </property>
     <property name="text">
      <string>T2 trigger</string>
@@ -936,24 +926,92 @@
       <blue>255</blue>
      </color>
     </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+   </widget>
+   <widget class="caImage" name="caimage">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>81</width>
+      <height>66</height>
+     </rect>
+    </property>
+    <property name="filename" stdset="0">
+     <string notr="true">images/triggers.png</string>
+    </property>
+    <property name="frame">
+     <number>2</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>30</y>
+      <width>171</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>T0 ... reference clock for PLL</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>50</y>
+      <width>171</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>T1 ...Postmortem trigger</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>70</y>
+      <width>211</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>T2 ...Trigger (for synchronous data acq.)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_23">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>10</y>
+      <width>171</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>Instrument's back panel</string>
+    </property>
    </widget>
   </widget>
  </widget>
  <customwidgets>
   <customwidget>
-   <class>QwtSlider</class>
-   <extends>QWidget</extends>
-   <header>qwt_slider.h</header>
-  </customwidget>
-  <customwidget>
    <class>caSlider</class>
-   <extends>QwtSlider</extends>
+   <extends>QWidget</extends>
    <header>caSlider</header>
-  </customwidget>
-  <customwidget>
-   <class>caMenu</class>
-   <extends>QComboBox</extends>
-   <header>caMenu</header>
   </customwidget>
   <customwidget>
    <class>caTextEntry</class>
@@ -966,9 +1024,19 @@
    <header>caMessageButton</header>
   </customwidget>
   <customwidget>
+   <class>caToggleButton</class>
+   <extends>QCheckBox</extends>
+   <header>caToggleButton</header>
+  </customwidget>
+  <customwidget>
    <class>caLabel</class>
    <extends>QLabel</extends>
    <header>caLabel</header>
+  </customwidget>
+  <customwidget>
+   <class>caImage</class>
+   <extends>QWidget</extends>
+   <header>caImage</header>
   </customwidget>
   <customwidget>
    <class>caLineEdit</class>

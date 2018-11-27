@@ -3,10 +3,10 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 1
-y 51
+x 2
+y 78
 w 250
-h 600
+h 740
 font "helvetica-medium-r-18.0"
 ctlFont "helvetica-medium-r-18.0"
 btnFont "helvetica-medium-r-18.0"
@@ -34,7 +34,7 @@ release 0
 x 10
 y 205
 w 230
-h 125
+h 260
 lineColor index 14
 fillColor index 0
 endObjectProperties
@@ -313,7 +313,7 @@ major 4
 minor 0
 release 0
 x 10
-y 430
+y 565
 w 230
 h 165
 lineColor index 14
@@ -327,7 +327,7 @@ major 4
 minor 1
 release 1
 x 15
-y 420
+y 555
 w 175
 h 20
 font "helvetica-bold-r-12.0"
@@ -346,7 +346,7 @@ major 4
 minor 0
 release 0
 x 10
-y 345
+y 480
 w 230
 h 70
 lineColor index 14
@@ -360,7 +360,7 @@ major 4
 minor 1
 release 1
 x 15
-y 335
+y 470
 w 175
 h 20
 font "helvetica-bold-r-12.0"
@@ -379,7 +379,7 @@ major 4
 minor 4
 release 0
 x 15
-y 445
+y 580
 w 125
 h 25
 fgColor index 91
@@ -408,7 +408,7 @@ major 4
 minor 4
 release 0
 x 15
-y 565
+y 700
 w 125
 h 25
 fgColor index 91
@@ -617,7 +617,7 @@ major 4
 minor 4
 release 0
 x 15
-y 360
+y 495
 w 95
 h 20
 fgColor index 91
@@ -640,7 +640,7 @@ major 4
 minor 4
 release 0
 x 140
-y 360
+y 495
 w 95
 h 20
 fgColor index 91
@@ -663,7 +663,7 @@ major 4
 minor 4
 release 0
 x 15
-y 535
+y 670
 w 125
 h 25
 fgColor index 91
@@ -686,7 +686,7 @@ major 4
 minor 4
 release 0
 x 15
-y 475
+y 610
 w 125
 h 25
 fgColor index 14
@@ -724,7 +724,7 @@ major 4
 minor 4
 release 0
 x 15
-y 505
+y 640
 w 125
 h 25
 fgColor index 14
@@ -825,7 +825,7 @@ major 4
 minor 4
 release 0
 x 140
-y 385
+y 520
 w 95
 h 20
 fgColor index 91
@@ -848,7 +848,7 @@ major 4
 minor 0
 release 0
 x 15
-y 390
+y 525
 w 10
 h 10
 lineColor index 14
@@ -867,7 +867,7 @@ major 4
 minor 1
 release 1
 x 35
-y 385
+y 520
 w 95
 h 20
 font "helvetica-medium-r-12.0"
@@ -889,7 +889,7 @@ major 4
 minor 1
 release 1
 x 15
-y 385
+y 520
 w 120
 h 20
 font "helvetica-medium-r-12.0"
@@ -912,7 +912,7 @@ major 4
 minor 4
 release 0
 x 165
-y 445
+y 580
 w 70
 h 25
 fgColor index 91
@@ -929,5 +929,301 @@ displayFileName {
 menuLabel {
   0 "Acq.settings"
 }
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 130
+y 435
+w 105
+h 20
+controlPv "EPICS\\$(HOSTNAME):dsp:adc_offset:D_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+showUnits
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 55
+y 435
+w 65
+h 20
+controlPv "EPICS\\$(HOSTNAME):dsp:adc_offset:D_sp"
+font "helvetica-medium-r-14.0"
+fontAlign "right"
+fgColor index 24
+bgColor index 0
+editable
+motifWidget
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 130
+y 410
+w 105
+h 20
+controlPv "EPICS\\$(HOSTNAME):dsp:adc_offset:C_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+showUnits
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 55
+y 410
+w 65
+h 20
+controlPv "EPICS\\$(HOSTNAME):dsp:adc_offset:C_sp"
+font "helvetica-medium-r-14.0"
+fontAlign "right"
+fgColor index 24
+bgColor index 0
+editable
+motifWidget
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 130
+y 385
+w 105
+h 20
+controlPv "EPICS\\$(HOSTNAME):dsp:adc_offset:B_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+showUnits
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 55
+y 385
+w 65
+h 20
+controlPv "EPICS\\$(HOSTNAME):dsp:adc_offset:B_sp"
+font "helvetica-medium-r-14.0"
+fontAlign "right"
+fgColor index 24
+bgColor index 0
+editable
+motifWidget
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 130
+y 360
+w 105
+h 20
+controlPv "EPICS\\$(HOSTNAME):dsp:adc_offset:A_mon"
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+showUnits
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 55
+y 360
+w 65
+h 20
+controlPv "EPICS\\$(HOSTNAME):dsp:adc_offset:A_sp"
+font "helvetica-medium-r-14.0"
+fontAlign "right"
+fgColor index 24
+bgColor index 0
+editable
+motifWidget
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 360
+w 40
+h 20
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Ch.A"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 385
+w 40
+h 20
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Ch.B"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 410
+w 40
+h 20
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Ch.C"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 435
+w 40
+h 20
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Ch.D"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 340
+w 176
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "ADC offset (static DC offset)"
+}
+autoSize
 endObjectProperties
 
