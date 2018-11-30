@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>ADC</class>
- <widget class="QMainWindow" name="ADC">
+ <class>SA_history</class>
+ <widget class="QMainWindow" name="SA_history">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
     <width>700</width>
-    <height>530</height>
+    <height>800</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -17,10 +17,10 @@
    </sizepolicy>
   </property>
   <property name="windowTitle">
-   <string>ADC data</string>
+   <string>SA data history</string>
   </property>
   <property name="Title" stdset="0">
-   <string>$(DEVICE): ADC amplitudes</string>
+   <string>$(DEVICE): SA data history</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="caCartesianPlot" name="adc_a">
@@ -29,7 +29,7 @@
       <x>5</x>
       <y>5</y>
       <width>690</width>
-      <height>450</height>
+      <height>370</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -48,16 +48,16 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="Title" stdset="0">
-     <string notr="true">ADC raw ( $(SIG) ) | IOC: $(DEVICE)</string>
+     <string notr="true">Amplitudes SA (history) | IOC: $(DEVICE)</string>
     </property>
     <property name="TitleX">
-     <string notr="true">ADC samples</string>
+     <string notr="true">SA samples</string>
     </property>
     <property name="TitleY">
-     <string notr="true">ADC counts</string>
+     <string notr="true">amplitude [a.u.]</string>
     </property>
     <property name="channels_1" stdset="0">
-     <string notr="true">;$(DEVICE):signals:$(SIG).A</string>
+     <string notr="true">;$(DEVICE):signals:sa_history.A</string>
     </property>
     <property name="Style_1">
      <enum>caCartesianPlot::Lines</enum>
@@ -73,7 +73,7 @@
      </color>
     </property>
     <property name="channels_2" stdset="0">
-     <string notr="true">;$(DEVICE):signals:$(SIG).B</string>
+     <string notr="true">;$(DEVICE):signals:sa_history.B</string>
     </property>
     <property name="symbol_2">
      <enum>caCartesianPlot::Star1</enum>
@@ -86,7 +86,7 @@
      </color>
     </property>
     <property name="channels_3" stdset="0">
-     <string notr="true">;$(DEVICE):signals:$(SIG).C</string>
+     <string notr="true">;$(DEVICE):signals:sa_history.C</string>
     </property>
     <property name="symbol_3">
      <enum>caCartesianPlot::Star1</enum>
@@ -99,7 +99,7 @@
      </color>
     </property>
     <property name="channels_4" stdset="0">
-     <string notr="true">;$(DEVICE):signals:$(SIG).D</string>
+     <string notr="true">;$(DEVICE):signals:sa_history.D</string>
     </property>
     <property name="symbol_4">
      <enum>caCartesianPlot::Star1</enum>
@@ -151,9 +151,9 @@
     <property name="geometry">
      <rect>
       <x>5</x>
-      <y>460</y>
+      <y>765</y>
       <width>281</width>
-      <height>61</height>
+      <height>31</height>
      </rect>
     </property>
     <property name="font">
@@ -185,7 +185,7 @@
        <x>220</x>
        <y>5</y>
        <width>56</width>
-       <height>46</height>
+       <height>21</height>
       </rect>
      </property>
      <property name="autoDefault">
@@ -201,7 +201,7 @@
       <enum>EPushButton::WidthAndHeight</enum>
      </property>
      <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):signals:$(SIG).PROC</string>
+      <string notr="true">$(DEVICE):signals:sa_history.PROC</string>
      </property>
      <property name="label">
       <string notr="true">Refresh</string>
@@ -217,13 +217,26 @@
       <string notr="true">1</string>
      </property>
     </widget>
+    <widget class="caMenu" name="camenu">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>5</y>
+       <width>106</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="channel" stdset="0">
+      <string notr="true">$(DEVICE):signals:sa_history.SCAN</string>
+     </property>
+    </widget>
     <widget class="QLabel" name="label_52">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>10</y>
-       <width>71</width>
-       <height>16</height>
+       <x>5</x>
+       <y>5</y>
+       <width>91</width>
+       <height>21</height>
       </rect>
      </property>
      <property name="font">
@@ -235,62 +248,14 @@
       <string>SCAN mode</string>
      </property>
     </widget>
-    <widget class="caMenu" name="camenu">
-     <property name="geometry">
-      <rect>
-       <x>100</x>
-       <y>5</y>
-       <width>106</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):signals:$(SIG).SCAN</string>
-     </property>
-    </widget>
-    <widget class="caLabel" name="calabel_2">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>30</y>
-       <width>196</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Updates on trigger</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-     <property name="background">
-      <color>
-       <red>255</red>
-       <green>255</green>
-       <blue>255</blue>
-      </color>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="visibility">
-      <enum>caLabel::Calc</enum>
-     </property>
-     <property name="visibilityCalc">
-      <string notr="true">A=2</string>
-     </property>
-     <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):signals:$(SIG).SCAN</string>
-     </property>
-    </widget>
    </widget>
    <widget class="caFrame" name="caframe_5">
     <property name="geometry">
      <rect>
       <x>290</x>
-      <y>460</y>
-      <width>290</width>
-      <height>61</height>
+      <y>765</y>
+      <width>406</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="font">
@@ -320,7 +285,7 @@
      <property name="geometry">
       <rect>
        <x>60</x>
-       <y>10</y>
+       <y>5</y>
        <width>101</width>
        <height>20</height>
       </rect>
@@ -363,8 +328,8 @@
     <widget class="QLabel" name="label_36">
      <property name="geometry">
       <rect>
-       <x>5</x>
-       <y>35</y>
+       <x>175</x>
+       <y>5</y>
        <width>56</width>
        <height>20</height>
       </rect>
@@ -382,7 +347,7 @@
      <property name="geometry">
       <rect>
        <x>5</x>
-       <y>10</y>
+       <y>5</y>
        <width>51</width>
        <height>20</height>
       </rect>
@@ -402,8 +367,8 @@
     <widget class="caLineEdit" name="calineedit_2">
      <property name="geometry">
       <rect>
-       <x>60</x>
-       <y>35</y>
+       <x>230</x>
+       <y>5</y>
        <width>101</width>
        <height>20</height>
       </rect>
@@ -450,130 +415,129 @@
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QLabel" name="label_42">
-     <property name="geometry">
-      <rect>
-       <x>185</x>
-       <y>10</y>
-       <width>96</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>Trigger counter</string>
-     </property>
-    </widget>
-    <widget class="caLineEdit" name="calineedit_6">
-     <property name="geometry">
-      <rect>
-       <x>185</x>
-       <y>35</y>
-       <width>101</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Sans Serif</family>
-       <pointsize>10</pointsize>
-      </font>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-     <property name="readOnly">
-      <bool>true</bool>
-     </property>
-     <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):triggers:t2:count_mon</string>
-     </property>
-     <property name="background">
-      <color>
-       <red>255</red>
-       <green>255</green>
-       <blue>255</blue>
-      </color>
-     </property>
-     <property name="colorMode">
-      <enum>caLineEdit::Static</enum>
-     </property>
-     <property name="frameLineWidth" stdset="0">
-      <number>1</number>
-     </property>
-     <property name="fontScaleMode" stdset="0">
-      <enum>caLineEdit::WidthAndHeight</enum>
-     </property>
-     <property name="unitsEnabled">
-      <bool>true</bool>
-     </property>
-    </widget>
    </widget>
-   <widget class="caRelatedDisplay" name="TBT_buffer_11">
+   <widget class="caCartesianPlot" name="adc_a_2">
     <property name="geometry">
      <rect>
-      <x>585</x>
-      <y>460</y>
-      <width>101</width>
-      <height>21</height>
+      <x>5</x>
+      <y>385</y>
+      <width>690</width>
+      <height>370</height>
      </rect>
     </property>
-    <property name="label">
-     <string notr="true">Channels</string>
-    </property>
-    <property name="background">
-     <color>
-      <red>252</red>
-      <green>220</green>
-      <blue>123</blue>
-     </color>
-    </property>
-    <property name="labels">
-     <string notr="true">Channels</string>
-    </property>
-    <property name="files">
-     <string notr="true">adc_individual</string>
-    </property>
-    <property name="args">
-     <string notr="true">DEVICE=$(DEVICE),SIG=$(SIG)</string>
-    </property>
-    <property name="stackingMode" stdset="0">
-     <enum>caRowColMenu::Row</enum>
-    </property>
-   </widget>
-   <widget class="caRelatedDisplay" name="adc_offset">
-    <property name="geometry">
-     <rect>
-      <x>585</x>
-      <y>485</y>
-      <width>101</width>
-      <height>21</height>
-     </rect>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
     </property>
     <property name="font">
      <font>
+      <family>Sans</family>
       <pointsize>8</pointsize>
      </font>
     </property>
-    <property name="background">
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="Title" stdset="0">
+     <string notr="true"/>
+    </property>
+    <property name="TitleX">
+     <string notr="true">SA samples</string>
+    </property>
+    <property name="TitleY">
+     <string notr="true">position [nm]</string>
+    </property>
+    <property name="channels_1" stdset="0">
+     <string notr="true">;$(DEVICE):signals:sa_history.X</string>
+    </property>
+    <property name="Style_1">
+     <enum>caCartesianPlot::Lines</enum>
+    </property>
+    <property name="symbol_1">
+     <enum>caCartesianPlot::Star1</enum>
+    </property>
+    <property name="color_1">
      <color>
-      <red>252</red>
-      <green>220</green>
-      <blue>123</blue>
+      <red>255</red>
+      <green>0</green>
+      <blue>0</blue>
      </color>
     </property>
-    <property name="labels">
-     <string notr="true">ADC offset</string>
+    <property name="channels_2" stdset="0">
+     <string notr="true">;$(DEVICE):signals:sa_history.Y</string>
     </property>
-    <property name="files">
-     <string notr="true">adc_offset</string>
+    <property name="symbol_2">
+     <enum>caCartesianPlot::Star1</enum>
     </property>
-    <property name="args">
-     <string notr="true">DEVICE=$(DEVICE)</string>
+    <property name="color_2">
+     <color>
+      <red>3</red>
+      <green>0</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="channels_3" stdset="0">
+     <string notr="true"/>
+    </property>
+    <property name="symbol_3">
+     <enum>caCartesianPlot::Star1</enum>
+    </property>
+    <property name="color_3">
+     <color>
+      <red>31</red>
+      <green>173</green>
+      <blue>30</blue>
+     </color>
+    </property>
+    <property name="channels_4" stdset="0">
+     <string notr="true"/>
+    </property>
+    <property name="symbol_4">
+     <enum>caCartesianPlot::Star1</enum>
+    </property>
+    <property name="color_4">
+     <color>
+      <red>122</red>
+      <green>12</green>
+      <blue>114</blue>
+     </color>
+    </property>
+    <property name="plotMode">
+     <enum>caCartesianPlot::PlotNPointsAndStop</enum>
+    </property>
+    <property name="countNumOrChannel" stdset="0">
+     <string notr="true"/>
+    </property>
+    <property name="triggerChannel" stdset="0">
+     <string notr="true"/>
+    </property>
+    <property name="foreground">
+     <color alpha="0">
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="gridColor">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="XaxisScaling" stdset="0">
+     <enum>caCartesianPlot::Auto</enum>
+    </property>
+    <property name="XaxisLimits">
+     <string>0;100</string>
+    </property>
+    <property name="YaxisLimits">
+     <string>-1000000;-900000</string>
+    </property>
+    <property name="LegendEnabled">
+     <bool>true</bool>
     </property>
    </widget>
   </widget>
@@ -585,11 +549,6 @@
    <header>caMenu</header>
   </customwidget>
   <customwidget>
-   <class>caRelatedDisplay</class>
-   <extends>QWidget</extends>
-   <header>caRelatedDisplay</header>
-  </customwidget>
-  <customwidget>
    <class>caMessageButton</class>
    <extends>QPushButton</extends>
    <header>caMessageButton</header>
@@ -599,11 +558,6 @@
    <extends>QFrame</extends>
    <header>caFrame</header>
    <container>1</container>
-  </customwidget>
-  <customwidget>
-   <class>caLabel</class>
-   <extends>QLabel</extends>
-   <header>caLabel</header>
   </customwidget>
   <customwidget>
    <class>caLineEdit</class>

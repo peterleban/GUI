@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>804</width>
-    <height>672</height>
+    <height>800</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -25,9 +25,6 @@
       <width>201</width>
       <height>21</height>
      </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
     </property>
     <property name="text">
      <string>ADC raw buffer</string>
@@ -48,6 +45,9 @@
       <green>161</green>
       <blue>175</blue>
      </color>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
     </property>
    </widget>
    <widget class="caMenu" name="camenu_2">
@@ -206,7 +206,7 @@ background-color: rgb(255, 255, 255);</string>
     <property name="frameLineWidth" stdset="0">
      <number>1</number>
     </property>
-    <property name="fontScaleMode">
+    <property name="fontScaleMode" stdset="0">
      <enum>caLineEdit::WidthAndHeight</enum>
     </property>
    </widget>
@@ -259,9 +259,6 @@ background-color: rgb(255, 255, 255);</string>
       <height>18</height>
      </rect>
     </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
-    </property>
     <property name="text">
      <string>Enabled</string>
     </property>
@@ -282,6 +279,9 @@ background-color: rgb(255, 255, 255);</string>
       <blue>0</blue>
      </color>
     </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
     <property name="visibility">
      <enum>caLabel::Calc</enum>
     </property>
@@ -301,9 +301,6 @@ background-color: rgb(255, 255, 255);</string>
       <height>18</height>
      </rect>
     </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
-    </property>
     <property name="text">
      <string>Disabled</string>
     </property>
@@ -316,6 +313,9 @@ background-color: rgb(255, 255, 255);</string>
       <green>255</green>
       <blue>0</blue>
      </color>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
     </property>
     <property name="visibility">
      <enum>caLabel::Calc</enum>
@@ -362,13 +362,10 @@ background-color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>290</x>
-      <y>215</y>
+      <y>345</y>
       <width>91</width>
       <height>18</height>
      </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
     </property>
     <property name="text">
      <string>Enabled</string>
@@ -390,6 +387,9 @@ background-color: rgb(255, 255, 255);</string>
       <blue>0</blue>
      </color>
     </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
     <property name="visibility">
      <enum>caLabel::Calc</enum>
     </property>
@@ -404,7 +404,7 @@ background-color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>125</x>
-      <y>260</y>
+      <y>390</y>
       <width>91</width>
       <height>21</height>
      </rect>
@@ -417,7 +417,7 @@ background-color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>310</y>
+      <y>440</y>
       <width>76</width>
       <height>21</height>
      </rect>
@@ -435,13 +435,10 @@ background-color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>290</x>
-      <y>215</y>
+      <y>345</y>
       <width>91</width>
       <height>18</height>
      </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
     </property>
     <property name="text">
      <string>Disabled</string>
@@ -455,6 +452,9 @@ background-color: rgb(255, 255, 255);</string>
       <green>255</green>
       <blue>0</blue>
      </color>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
     </property>
     <property name="visibility">
      <enum>caLabel::Calc</enum>
@@ -470,7 +470,7 @@ background-color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>235</y>
+      <y>365</y>
       <width>71</width>
       <height>21</height>
      </rect>
@@ -488,7 +488,7 @@ background-color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>215</x>
-      <y>215</y>
+      <y>345</y>
       <width>76</width>
       <height>16</height>
      </rect>
@@ -510,7 +510,7 @@ background-color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>95</x>
-      <y>310</y>
+      <y>440</y>
       <width>121</width>
       <height>20</height>
      </rect>
@@ -543,7 +543,7 @@ background-color: rgb(255, 255, 255);</string>
     <property name="frameLineWidth" stdset="0">
      <number>1</number>
     </property>
-    <property name="fontScaleMode">
+    <property name="fontScaleMode" stdset="0">
      <enum>caLineEdit::WidthAndHeight</enum>
     </property>
    </widget>
@@ -551,13 +551,10 @@ background-color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>210</y>
+      <y>340</y>
       <width>201</width>
       <height>21</height>
      </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
     </property>
     <property name="text">
      <string>Turn-by-turn DDC</string>
@@ -579,12 +576,15 @@ background-color: rgb(255, 255, 255);</string>
       <blue>175</blue>
      </color>
     </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
    </widget>
    <widget class="QLabel" name="label_24">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>260</y>
+      <y>390</y>
       <width>106</width>
       <height>21</height>
      </rect>
@@ -602,7 +602,7 @@ background-color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>285</y>
+      <y>415</y>
       <width>106</width>
       <height>21</height>
      </rect>
@@ -620,7 +620,7 @@ background-color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>95</x>
-      <y>235</y>
+      <y>365</y>
       <width>286</width>
       <height>18</height>
      </rect>
@@ -633,7 +633,7 @@ background-color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>125</x>
-      <y>285</y>
+      <y>415</y>
       <width>91</width>
       <height>21</height>
      </rect>
@@ -645,8 +645,8 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="QLabel" name="label_27">
     <property name="geometry">
      <rect>
-      <x>425</x>
-      <y>235</y>
+      <x>10</x>
+      <y>500</y>
       <width>71</width>
       <height>21</height>
      </rect>
@@ -663,8 +663,8 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="caLineEdit" name="calineedit_5">
     <property name="geometry">
      <rect>
-      <x>505</x>
-      <y>310</y>
+      <x>90</x>
+      <y>575</y>
       <width>126</width>
       <height>20</height>
      </rect>
@@ -697,15 +697,15 @@ background-color: rgb(255, 255, 255);</string>
     <property name="frameLineWidth" stdset="0">
      <number>1</number>
     </property>
-    <property name="fontScaleMode">
+    <property name="fontScaleMode" stdset="0">
      <enum>caLineEdit::WidthAndHeight</enum>
     </property>
    </widget>
    <widget class="caLineEdit" name="calineedit_6">
     <property name="geometry">
      <rect>
-      <x>510</x>
-      <y>235</y>
+      <x>95</x>
+      <y>500</y>
       <width>286</width>
       <height>18</height>
      </rect>
@@ -717,8 +717,8 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="caMenu" name="camenu_15">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>285</y>
+      <x>125</x>
+      <y>550</y>
       <width>91</width>
       <height>21</height>
      </rect>
@@ -730,8 +730,8 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="caToggleButton" name="catogglebutton_3">
     <property name="geometry">
      <rect>
-      <x>630</x>
-      <y>215</y>
+      <x>215</x>
+      <y>480</y>
       <width>86</width>
       <height>16</height>
      </rect>
@@ -752,14 +752,11 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="caLabel" name="label_33">
     <property name="geometry">
      <rect>
-      <x>425</x>
-      <y>210</y>
+      <x>10</x>
+      <y>475</y>
       <width>201</width>
       <height>21</height>
      </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
     </property>
     <property name="text">
      <string>Turn-by-turn DDC averaged</string>
@@ -781,12 +778,15 @@ background-color: rgb(255, 255, 255);</string>
       <blue>175</blue>
      </color>
     </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
    </widget>
    <widget class="QLabel" name="label_34">
     <property name="geometry">
      <rect>
-      <x>425</x>
-      <y>310</y>
+      <x>10</x>
+      <y>575</y>
       <width>76</width>
       <height>21</height>
      </rect>
@@ -803,14 +803,11 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="caLabel" name="calabel_5">
     <property name="geometry">
      <rect>
-      <x>705</x>
-      <y>215</y>
+      <x>290</x>
+      <y>480</y>
       <width>91</width>
       <height>18</height>
      </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
     </property>
     <property name="text">
      <string>Enabled</string>
@@ -832,6 +829,9 @@ background-color: rgb(255, 255, 255);</string>
       <blue>0</blue>
      </color>
     </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
     <property name="visibility">
      <enum>caLabel::Calc</enum>
     </property>
@@ -845,8 +845,8 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="caMenu" name="camenu_16">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>260</y>
+      <x>125</x>
+      <y>525</y>
       <width>91</width>
       <height>21</height>
      </rect>
@@ -858,14 +858,11 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="caLabel" name="calabel_6">
     <property name="geometry">
      <rect>
-      <x>705</x>
-      <y>215</y>
+      <x>290</x>
+      <y>480</y>
       <width>91</width>
       <height>18</height>
      </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
     </property>
     <property name="text">
      <string>Disabled</string>
@@ -880,6 +877,9 @@ background-color: rgb(255, 255, 255);</string>
       <blue>0</blue>
      </color>
     </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
     <property name="visibility">
      <enum>caLabel::Calc</enum>
     </property>
@@ -893,8 +893,8 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="QLabel" name="label_35">
     <property name="geometry">
      <rect>
-      <x>425</x>
-      <y>285</y>
+      <x>10</x>
+      <y>550</y>
       <width>106</width>
       <height>21</height>
      </rect>
@@ -911,8 +911,8 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="QLabel" name="label_36">
     <property name="geometry">
      <rect>
-      <x>425</x>
-      <y>260</y>
+      <x>10</x>
+      <y>525</y>
       <width>106</width>
       <height>21</height>
      </rect>
@@ -930,7 +930,7 @@ background-color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>505</x>
-      <y>440</y>
+      <y>570</y>
       <width>126</width>
       <height>20</height>
      </rect>
@@ -963,7 +963,7 @@ background-color: rgb(255, 255, 255);</string>
     <property name="frameLineWidth" stdset="0">
      <number>1</number>
     </property>
-    <property name="fontScaleMode">
+    <property name="fontScaleMode" stdset="0">
      <enum>caLineEdit::WidthAndHeight</enum>
     </property>
    </widget>
@@ -971,7 +971,7 @@ background-color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>425</x>
-      <y>365</y>
+      <y>500</y>
       <width>71</width>
       <height>21</height>
      </rect>
@@ -988,8 +988,8 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="QLabel" name="label_37">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>390</y>
+      <x>425</x>
+      <y>255</y>
       <width>106</width>
       <height>21</height>
      </rect>
@@ -1007,13 +1007,10 @@ background-color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>705</x>
-      <y>345</y>
+      <y>475</y>
       <width>91</width>
       <height>18</height>
      </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
     </property>
     <property name="text">
      <string>Disabled</string>
@@ -1028,6 +1025,9 @@ background-color: rgb(255, 255, 255);</string>
       <blue>0</blue>
      </color>
     </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
     <property name="visibility">
      <enum>caLabel::Calc</enum>
     </property>
@@ -1041,17 +1041,14 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="caLabel" name="label_38">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>340</y>
+      <x>425</x>
+      <y>210</y>
       <width>201</width>
       <height>21</height>
      </rect>
     </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
-    </property>
     <property name="text">
-     <string>Clean Turn-by-turn</string>
+     <string>Turn-by-turn TDP</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -1070,12 +1067,15 @@ background-color: rgb(255, 255, 255);</string>
       <blue>175</blue>
      </color>
     </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
    </widget>
    <widget class="QLabel" name="label_39">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>440</y>
+      <x>425</x>
+      <y>305</y>
       <width>76</width>
       <height>21</height>
      </rect>
@@ -1092,8 +1092,8 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="caMenu" name="camenu_17">
     <property name="geometry">
      <rect>
-      <x>125</x>
-      <y>415</y>
+      <x>540</x>
+      <y>280</y>
       <width>91</width>
       <height>21</height>
      </rect>
@@ -1105,8 +1105,8 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="caMenu" name="camenu_18">
     <property name="geometry">
      <rect>
-      <x>125</x>
-      <y>390</y>
+      <x>540</x>
+      <y>255</y>
       <width>91</width>
       <height>21</height>
      </rect>
@@ -1119,7 +1119,7 @@ background-color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>630</x>
-      <y>346</y>
+      <y>476</y>
       <width>71</width>
       <height>16</height>
      </rect>
@@ -1141,7 +1141,7 @@ background-color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>510</x>
-      <y>365</y>
+      <y>495</y>
       <width>286</width>
       <height>18</height>
      </rect>
@@ -1153,8 +1153,8 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="QLabel" name="label_40">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>365</y>
+      <x>425</x>
+      <y>235</y>
       <width>71</width>
       <height>21</height>
      </rect>
@@ -1171,8 +1171,8 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="caToggleButton" name="catogglebutton_5">
     <property name="geometry">
      <rect>
-      <x>215</x>
-      <y>345</y>
+      <x>630</x>
+      <y>210</y>
       <width>71</width>
       <height>16</height>
      </rect>
@@ -1193,14 +1193,11 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="caLabel" name="calabel_8">
     <property name="geometry">
      <rect>
-      <x>290</x>
-      <y>345</y>
+      <x>705</x>
+      <y>210</y>
       <width>91</width>
       <height>18</height>
      </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
     </property>
     <property name="text">
      <string>Disabled</string>
@@ -1214,6 +1211,9 @@ background-color: rgb(255, 255, 255);</string>
       <green>255</green>
       <blue>0</blue>
      </color>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
     </property>
     <property name="visibility">
      <enum>caLabel::Calc</enum>
@@ -1229,7 +1229,7 @@ background-color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>425</x>
-      <y>440</y>
+      <y>570</y>
       <width>76</width>
       <height>21</height>
      </rect>
@@ -1247,7 +1247,7 @@ background-color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>540</x>
-      <y>415</y>
+      <y>545</y>
       <width>91</width>
       <height>21</height>
      </rect>
@@ -1259,8 +1259,8 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="caLineEdit" name="calineedit_9">
     <property name="geometry">
      <rect>
-      <x>95</x>
-      <y>365</y>
+      <x>510</x>
+      <y>230</y>
       <width>286</width>
       <height>18</height>
      </rect>
@@ -1273,13 +1273,10 @@ background-color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>705</x>
-      <y>345</y>
+      <y>475</y>
       <width>91</width>
       <height>18</height>
      </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
     </property>
     <property name="text">
      <string>Enabled</string>
@@ -1301,6 +1298,9 @@ background-color: rgb(255, 255, 255);</string>
       <blue>0</blue>
      </color>
     </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
     <property name="visibility">
      <enum>caLabel::Calc</enum>
     </property>
@@ -1314,8 +1314,8 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="caLineEdit" name="calineedit_10">
     <property name="geometry">
      <rect>
-      <x>95</x>
-      <y>440</y>
+      <x>510</x>
+      <y>305</y>
       <width>121</width>
       <height>20</height>
      </rect>
@@ -1348,15 +1348,15 @@ background-color: rgb(255, 255, 255);</string>
     <property name="frameLineWidth" stdset="0">
      <number>1</number>
     </property>
-    <property name="fontScaleMode">
+    <property name="fontScaleMode" stdset="0">
      <enum>caLineEdit::WidthAndHeight</enum>
     </property>
    </widget>
    <widget class="QLabel" name="label_42">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>415</y>
+      <x>425</x>
+      <y>280</y>
       <width>106</width>
       <height>21</height>
      </rect>
@@ -1373,14 +1373,11 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="caLabel" name="calabel_10">
     <property name="geometry">
      <rect>
-      <x>290</x>
-      <y>345</y>
+      <x>705</x>
+      <y>210</y>
       <width>91</width>
       <height>18</height>
      </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
     </property>
     <property name="text">
      <string>Enabled</string>
@@ -1402,6 +1399,9 @@ background-color: rgb(255, 255, 255);</string>
       <blue>0</blue>
      </color>
     </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
     <property name="visibility">
      <enum>caLabel::Calc</enum>
     </property>
@@ -1416,16 +1416,13 @@ background-color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>425</x>
-      <y>340</y>
+      <y>475</y>
       <width>201</width>
       <height>21</height>
      </rect>
     </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
-    </property>
     <property name="text">
-     <string>Clean Turn-by-turn averaged</string>
+     <string>Turn-by-turn TDP averaged</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -1444,12 +1441,15 @@ background-color: rgb(255, 255, 255);</string>
       <blue>175</blue>
      </color>
     </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
    </widget>
    <widget class="caMenu" name="camenu_20">
     <property name="geometry">
      <rect>
       <x>540</x>
-      <y>390</y>
+      <y>520</y>
       <width>91</width>
       <height>21</height>
      </rect>
@@ -1462,7 +1462,7 @@ background-color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>425</x>
-      <y>415</y>
+      <y>550</y>
       <width>106</width>
       <height>21</height>
      </rect>
@@ -1480,7 +1480,7 @@ background-color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>425</x>
-      <y>390</y>
+      <y>525</y>
       <width>106</width>
       <height>21</height>
      </rect>
@@ -1497,8 +1497,8 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="QLabel" name="label_29">
     <property name="geometry">
      <rect>
-      <x>425</x>
-      <y>105</y>
+      <x>10</x>
+      <y>235</y>
       <width>71</width>
       <height>21</height>
      </rect>
@@ -1515,8 +1515,8 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="caLineEdit" name="calineedit_11">
     <property name="geometry">
      <rect>
-      <x>510</x>
-      <y>180</y>
+      <x>95</x>
+      <y>310</y>
       <width>121</width>
       <height>20</height>
      </rect>
@@ -1549,15 +1549,15 @@ background-color: rgb(255, 255, 255);</string>
     <property name="frameLineWidth" stdset="0">
      <number>1</number>
     </property>
-    <property name="fontScaleMode">
+    <property name="fontScaleMode" stdset="0">
      <enum>caLineEdit::WidthAndHeight</enum>
     </property>
    </widget>
    <widget class="caLineEdit" name="calineedit_12">
     <property name="geometry">
      <rect>
-      <x>510</x>
-      <y>105</y>
+      <x>95</x>
+      <y>235</y>
       <width>286</width>
       <height>18</height>
      </rect>
@@ -1569,8 +1569,8 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="caMenu" name="camenu_21">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>155</y>
+      <x>125</x>
+      <y>285</y>
       <width>91</width>
       <height>21</height>
      </rect>
@@ -1582,8 +1582,8 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="caToggleButton" name="catogglebutton_6">
     <property name="geometry">
      <rect>
-      <x>630</x>
-      <y>85</y>
+      <x>215</x>
+      <y>215</y>
       <width>76</width>
       <height>16</height>
      </rect>
@@ -1604,14 +1604,11 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="caLabel" name="label_46">
     <property name="geometry">
      <rect>
-      <x>425</x>
-      <y>80</y>
+      <x>10</x>
+      <y>210</y>
       <width>201</width>
       <height>21</height>
      </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
     </property>
     <property name="text">
      <string>Turn-by-turn raw buffer</string>
@@ -1633,12 +1630,15 @@ background-color: rgb(255, 255, 255);</string>
       <blue>175</blue>
      </color>
     </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
    </widget>
    <widget class="QLabel" name="label_30">
     <property name="geometry">
      <rect>
-      <x>425</x>
-      <y>180</y>
+      <x>10</x>
+      <y>310</y>
       <width>76</width>
       <height>21</height>
      </rect>
@@ -1655,14 +1655,11 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="caLabel" name="calabel_11">
     <property name="geometry">
      <rect>
-      <x>705</x>
-      <y>85</y>
+      <x>290</x>
+      <y>215</y>
       <width>91</width>
       <height>18</height>
      </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
     </property>
     <property name="text">
      <string>Enabled</string>
@@ -1684,6 +1681,9 @@ background-color: rgb(255, 255, 255);</string>
       <blue>0</blue>
      </color>
     </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
     <property name="visibility">
      <enum>caLabel::Calc</enum>
     </property>
@@ -1697,8 +1697,8 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="caMenu" name="camenu_22">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>130</y>
+      <x>125</x>
+      <y>260</y>
       <width>91</width>
       <height>21</height>
      </rect>
@@ -1710,14 +1710,11 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="caLabel" name="calabel_12">
     <property name="geometry">
      <rect>
-      <x>705</x>
-      <y>85</y>
+      <x>290</x>
+      <y>215</y>
       <width>91</width>
       <height>18</height>
      </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
     </property>
     <property name="text">
      <string>Disabled</string>
@@ -1732,6 +1729,9 @@ background-color: rgb(255, 255, 255);</string>
       <blue>0</blue>
      </color>
     </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
     <property name="visibility">
      <enum>caLabel::Calc</enum>
     </property>
@@ -1745,8 +1745,8 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="QLabel" name="label_31">
     <property name="geometry">
      <rect>
-      <x>425</x>
-      <y>155</y>
+      <x>10</x>
+      <y>285</y>
       <width>106</width>
       <height>21</height>
      </rect>
@@ -1763,8 +1763,8 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="QLabel" name="label_47">
     <property name="geometry">
      <rect>
-      <x>425</x>
-      <y>130</y>
+      <x>10</x>
+      <y>260</y>
       <width>106</width>
       <height>21</height>
      </rect>
@@ -1781,14 +1781,11 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="caLabel" name="label_48">
     <property name="geometry">
      <rect>
-      <x>5</x>
-      <y>475</y>
+      <x>10</x>
+      <y>615</y>
       <width>201</width>
       <height>21</height>
      </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
     </property>
     <property name="text">
      <string>Fast data stream</string>
@@ -1810,12 +1807,15 @@ background-color: rgb(255, 255, 255);</string>
       <blue>175</blue>
      </color>
     </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
    </widget>
    <widget class="caToggleButton" name="catogglebutton_7">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>480</y>
+      <x>215</x>
+      <y>620</y>
       <width>71</width>
       <height>16</height>
      </rect>
@@ -1836,8 +1836,8 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="caLineEdit" name="calineedit_13">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>500</y>
+      <x>95</x>
+      <y>640</y>
       <width>286</width>
       <height>18</height>
      </rect>
@@ -1849,8 +1849,8 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="QLabel" name="label_49">
     <property name="geometry">
      <rect>
-      <x>5</x>
-      <y>500</y>
+      <x>10</x>
+      <y>640</y>
       <width>71</width>
       <height>21</height>
      </rect>
@@ -1867,14 +1867,11 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="caLabel" name="calabel_13">
     <property name="geometry">
      <rect>
-      <x>285</x>
-      <y>480</y>
+      <x>290</x>
+      <y>620</y>
       <width>91</width>
       <height>18</height>
      </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
     </property>
     <property name="text">
      <string>Enabled</string>
@@ -1896,6 +1893,9 @@ background-color: rgb(255, 255, 255);</string>
       <blue>0</blue>
      </color>
     </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
     <property name="visibility">
      <enum>caLabel::Calc</enum>
     </property>
@@ -1909,14 +1909,11 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="caLabel" name="calabel_14">
     <property name="geometry">
      <rect>
-      <x>285</x>
-      <y>480</y>
+      <x>290</x>
+      <y>620</y>
       <width>91</width>
       <height>18</height>
      </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
     </property>
     <property name="text">
      <string>Disabled</string>
@@ -1930,6 +1927,9 @@ background-color: rgb(255, 255, 255);</string>
       <green>255</green>
       <blue>0</blue>
      </color>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
     </property>
     <property name="visibility">
      <enum>caLabel::Calc</enum>
@@ -1945,7 +1945,7 @@ background-color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>510</x>
-      <y>500</y>
+      <y>640</y>
       <width>286</width>
       <height>18</height>
      </rect>
@@ -1958,13 +1958,10 @@ background-color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>705</x>
-      <y>480</y>
+      <y>620</y>
       <width>91</width>
       <height>18</height>
      </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
     </property>
     <property name="text">
      <string>Disabled</string>
@@ -1978,6 +1975,9 @@ background-color: rgb(255, 255, 255);</string>
       <green>255</green>
       <blue>0</blue>
      </color>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
     </property>
     <property name="visibility">
      <enum>caLabel::Calc</enum>
@@ -1993,13 +1993,10 @@ background-color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>705</x>
-      <y>480</y>
+      <y>620</y>
       <width>91</width>
       <height>18</height>
      </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
     </property>
     <property name="text">
      <string>Enabled</string>
@@ -2021,6 +2018,9 @@ background-color: rgb(255, 255, 255);</string>
       <blue>0</blue>
      </color>
     </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
     <property name="visibility">
      <enum>caLabel::Calc</enum>
     </property>
@@ -2035,13 +2035,10 @@ background-color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>425</x>
-      <y>475</y>
+      <y>615</y>
       <width>201</width>
       <height>21</height>
      </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
     </property>
     <property name="text">
      <string>Slow data stream</string>
@@ -2063,12 +2060,15 @@ background-color: rgb(255, 255, 255);</string>
       <blue>175</blue>
      </color>
     </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
    </widget>
    <widget class="QLabel" name="label_51">
     <property name="geometry">
      <rect>
       <x>425</x>
-      <y>500</y>
+      <y>640</y>
       <width>71</width>
       <height>21</height>
      </rect>
@@ -2086,7 +2086,7 @@ background-color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>630</x>
-      <y>480</y>
+      <y>620</y>
       <width>71</width>
       <height>16</height>
      </rect>
@@ -2108,7 +2108,7 @@ background-color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>5</x>
-      <y>535</y>
+      <y>665</y>
       <width>791</width>
       <height>131</height>
      </rect>
@@ -2138,6 +2138,901 @@ Event   ... read data on trigger</string>
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
    </widget>
+   <widget class="caMessageButton" name="camessagebutton">
+    <property name="geometry">
+     <rect>
+      <x>225</x>
+      <y>130</y>
+      <width>46</width>
+      <height>46</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PROC</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="fontScaleMode">
+     <enum>EPushButton::WidthAndHeight</enum>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(DEVICE):signals:adc.PROC</string>
+    </property>
+    <property name="label">
+     <string notr="true">PROC</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>254</red>
+      <green>217</green>
+      <blue>188</blue>
+     </color>
+    </property>
+    <property name="pressMessage">
+     <string notr="true">1</string>
+    </property>
+   </widget>
+   <widget class="caMessageButton" name="camessagebutton_2">
+    <property name="geometry">
+     <rect>
+      <x>225</x>
+      <y>260</y>
+      <width>46</width>
+      <height>46</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PROC</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="fontScaleMode">
+     <enum>EPushButton::WidthAndHeight</enum>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(DEVICE):signals:ddc_raw.PROC</string>
+    </property>
+    <property name="label">
+     <string notr="true">PROC</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>254</red>
+      <green>217</green>
+      <blue>188</blue>
+     </color>
+    </property>
+    <property name="pressMessage">
+     <string notr="true">1</string>
+    </property>
+   </widget>
+   <widget class="caMessageButton" name="camessagebutton_3">
+    <property name="geometry">
+     <rect>
+      <x>225</x>
+      <y>390</y>
+      <width>46</width>
+      <height>46</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PROC</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="fontScaleMode">
+     <enum>EPushButton::WidthAndHeight</enum>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(DEVICE):signals:ddc_synth.PROC</string>
+    </property>
+    <property name="label">
+     <string notr="true">PROC</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>254</red>
+      <green>217</green>
+      <blue>188</blue>
+     </color>
+    </property>
+    <property name="pressMessage">
+     <string notr="true">1</string>
+    </property>
+   </widget>
+   <widget class="caMessageButton" name="camessagebutton_4">
+    <property name="geometry">
+     <rect>
+      <x>225</x>
+      <y>525</y>
+      <width>46</width>
+      <height>46</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PROC</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="fontScaleMode">
+     <enum>EPushButton::WidthAndHeight</enum>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(DEVICE):signals:ddc_synth_d.PROC</string>
+    </property>
+    <property name="label">
+     <string notr="true">PROC</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>254</red>
+      <green>217</green>
+      <blue>188</blue>
+     </color>
+    </property>
+    <property name="pressMessage">
+     <string notr="true">1</string>
+    </property>
+   </widget>
+   <widget class="caMessageButton" name="camessagebutton_5">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>255</y>
+      <width>46</width>
+      <height>46</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PROC</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="fontScaleMode">
+     <enum>EPushButton::WidthAndHeight</enum>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(DEVICE):signals:tdp_synth.PROC</string>
+    </property>
+    <property name="label">
+     <string notr="true">PROC</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>254</red>
+      <green>217</green>
+      <blue>188</blue>
+     </color>
+    </property>
+    <property name="pressMessage">
+     <string notr="true">1</string>
+    </property>
+   </widget>
+   <widget class="caMessageButton" name="camessagebutton_6">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>520</y>
+      <width>46</width>
+      <height>46</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PROC</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="fontScaleMode">
+     <enum>EPushButton::WidthAndHeight</enum>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(DEVICE):signals:tdp_synth_d.PROC</string>
+    </property>
+    <property name="label">
+     <string notr="true">PROC</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>254</red>
+      <green>217</green>
+      <blue>188</blue>
+     </color>
+    </property>
+    <property name="pressMessage">
+     <string notr="true">1</string>
+    </property>
+   </widget>
+   <widget class="caLabel" name="calabel_17">
+    <property name="geometry">
+     <rect>
+      <x>705</x>
+      <y>340</y>
+      <width>91</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Disabled</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="background">
+     <color>
+      <red>0</red>
+      <green>255</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="visibility">
+     <enum>caLabel::Calc</enum>
+    </property>
+    <property name="visibilityCalc">
+     <string notr="true">A=0</string>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(DEVICE):signals:tdp_synth_long.SCAN</string>
+    </property>
+   </widget>
+   <widget class="caLabel" name="calabel_18">
+    <property name="geometry">
+     <rect>
+      <x>705</x>
+      <y>340</y>
+      <width>91</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Enabled</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="visibility">
+     <enum>caLabel::Calc</enum>
+    </property>
+    <property name="visibilityCalc">
+     <string notr="true">A=2</string>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(DEVICE):signals:tdp_synth_long.SCAN</string>
+    </property>
+   </widget>
+   <widget class="caLabel" name="label_53">
+    <property name="geometry">
+     <rect>
+      <x>425</x>
+      <y>340</y>
+      <width>201</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Turn-by-turn TDP long</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color>
+      <red>149</red>
+      <green>161</green>
+      <blue>175</blue>
+     </color>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_54">
+    <property name="geometry">
+     <rect>
+      <x>425</x>
+      <y>435</y>
+      <width>76</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Buffer size</string>
+    </property>
+   </widget>
+   <widget class="caMenu" name="camenu_23">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>385</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(DEVICE):signals:tdp_synth_long.SCAN</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_15">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>360</y>
+      <width>286</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(DEVICE):signals:tdp_synth_long.DESC</string>
+    </property>
+   </widget>
+   <widget class="caToggleButton" name="catogglebutton_9">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>340</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Enable</string>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(DEVICE):signals:tdp_synth_long.SCAN</string>
+    </property>
+    <property name="colorMode">
+     <enum>caToggleButton::Alarm</enum>
+    </property>
+    <property name="trueValue">
+     <string>2</string>
+    </property>
+   </widget>
+   <widget class="caMessageButton" name="camessagebutton_7">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>385</y>
+      <width>46</width>
+      <height>46</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PROC</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="fontScaleMode">
+     <enum>EPushButton::WidthAndHeight</enum>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(DEVICE):signals:tdp_synth_long.PROC</string>
+    </property>
+    <property name="label">
+     <string notr="true">PROC</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>254</red>
+      <green>217</green>
+      <blue>188</blue>
+     </color>
+    </property>
+    <property name="pressMessage">
+     <string notr="true">1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_55">
+    <property name="geometry">
+     <rect>
+      <x>425</x>
+      <y>385</y>
+      <width>106</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>SCAN mode</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_56">
+    <property name="geometry">
+     <rect>
+      <x>425</x>
+      <y>365</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>DESC field</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_57">
+    <property name="geometry">
+     <rect>
+      <x>425</x>
+      <y>410</y>
+      <width>106</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Acquisition mode</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_16">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>435</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans Serif</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(DEVICE):signals:tdp_synth_long.NGRP</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+    <property name="frameLineWidth" stdset="0">
+     <number>1</number>
+    </property>
+    <property name="fontScaleMode" stdset="0">
+     <enum>caLineEdit::WidthAndHeight</enum>
+    </property>
+   </widget>
+   <widget class="caMenu" name="camenu_24">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>410</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(DEVICE):signals:tdp_synth_long.ACQM</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_58">
+    <property name="geometry">
+     <rect>
+      <x>225</x>
+      <y>310</y>
+      <width>76</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Offset</string>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_5">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>310</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(DEVICE):signals:ddc_raw.OFFS</string>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>170</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_6">
+    <property name="geometry">
+     <rect>
+      <x>715</x>
+      <y>305</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(DEVICE):signals:tdp_synth.OFFS</string>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>170</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_59">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>305</y>
+      <width>76</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Offset</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_60">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>435</y>
+      <width>76</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Offset</string>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_7">
+    <property name="geometry">
+     <rect>
+      <x>715</x>
+      <y>435</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(DEVICE):signals:tdp_synth_long.OFFS</string>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>170</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_61">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>570</y>
+      <width>76</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Offset</string>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_8">
+    <property name="geometry">
+     <rect>
+      <x>715</x>
+      <y>570</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(DEVICE):signals:tdp_synth_d.OFFS</string>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>170</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_9">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>440</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(DEVICE):signals:ddc_synth.OFFS</string>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>170</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_62">
+    <property name="geometry">
+     <rect>
+      <x>225</x>
+      <y>440</y>
+      <width>76</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Offset</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_63">
+    <property name="geometry">
+     <rect>
+      <x>225</x>
+      <y>575</y>
+      <width>76</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Offset</string>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_10">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>575</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(DEVICE):signals:ddc_synth_d.OFFS</string>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>170</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
   </widget>
  </widget>
  <customwidgets>
@@ -2145,6 +3040,16 @@ Event   ... read data on trigger</string>
    <class>caMenu</class>
    <extends>QComboBox</extends>
    <header>caMenu</header>
+  </customwidget>
+  <customwidget>
+   <class>caTextEntry</class>
+   <extends>caLineEdit</extends>
+   <header>caTextEntry</header>
+  </customwidget>
+  <customwidget>
+   <class>caMessageButton</class>
+   <extends>QPushButton</extends>
+   <header>caMessageButton</header>
   </customwidget>
   <customwidget>
    <class>caToggleButton</class>

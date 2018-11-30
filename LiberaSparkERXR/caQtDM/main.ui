@@ -343,7 +343,7 @@
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):triggers:t2:delay_us</string>
+      <string notr="true">$(DEVICE):triggers:t2:delay_mon</string>
      </property>
      <property name="background">
       <color>
@@ -359,10 +359,10 @@
       <number>1</number>
      </property>
      <property name="precision">
-      <number>3</number>
+      <number>0</number>
      </property>
      <property name="precisionMode">
-      <enum>caLineEdit::User</enum>
+      <enum>caLineEdit::Channel</enum>
      </property>
      <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
@@ -494,9 +494,9 @@
     <widget class="caRelatedDisplay" name="adc_mask">
      <property name="geometry">
       <rect>
-       <x>165</x>
+       <x>100</x>
        <y>15</y>
-       <width>100</width>
+       <width>85</width>
        <height>21</height>
       </rect>
      </property>
@@ -525,9 +525,9 @@
     <widget class="caRelatedDisplay" name="dsp_coeff">
      <property name="geometry">
       <rect>
-       <x>25</x>
+       <x>10</x>
        <y>15</y>
-       <width>100</width>
+       <width>85</width>
        <height>21</height>
       </rect>
      </property>
@@ -556,9 +556,9 @@
     <widget class="caRelatedDisplay" name="calibration">
      <property name="geometry">
       <rect>
-       <x>165</x>
+       <x>190</x>
        <y>40</y>
-       <width>100</width>
+       <width>85</width>
        <height>21</height>
       </rect>
      </property>
@@ -588,9 +588,9 @@
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>40</y>
-       <width>146</width>
-       <height>21</height>
+       <y>45</y>
+       <width>171</width>
+       <height>16</height>
       </rect>
      </property>
      <property name="text">
@@ -620,9 +620,9 @@
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>40</y>
-       <width>146</width>
-       <height>21</height>
+       <y>45</y>
+       <width>171</width>
+       <height>16</height>
       </rect>
      </property>
      <property name="text">
@@ -646,6 +646,37 @@
      </property>
      <property name="channel" stdset="0">
       <string notr="true">$(DEVICE):calib:enabled_mon</string>
+     </property>
+    </widget>
+    <widget class="caRelatedDisplay" name="adc_offset">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>15</y>
+       <width>85</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="background">
+      <color>
+       <red>252</red>
+       <green>220</green>
+       <blue>123</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">ADC offset</string>
+     </property>
+     <property name="files">
+      <string notr="true">adc_offset</string>
+     </property>
+     <property name="args">
+      <string notr="true">DEVICE=$(DEVICE)</string>
      </property>
     </widget>
    </widget>
@@ -737,13 +768,13 @@
       </color>
      </property>
      <property name="labels">
-      <string notr="true">ADC;TBT IQ</string>
+      <string notr="true">ADC;ADC long;TBT IQ</string>
      </property>
      <property name="files">
-      <string notr="true">adc;tbt_iq</string>
+      <string notr="true">adc;adc;tbt_iq</string>
      </property>
      <property name="args">
-      <string notr="true">DEVICE=$(DEVICE)</string>
+      <string notr="true">DEVICE=$(DEVICE),SIG=adc;DEVICE=$(DEVICE),SIG=adc_long;DEVICE=$(DEVICE),SIG=ddc_raw</string>
      </property>
      <property name="stackingMode" stdset="0">
       <enum>caRowColMenu::Menu</enum>
@@ -833,13 +864,13 @@
       </color>
      </property>
      <property name="labels">
-      <string notr="true">amplitudes;position</string>
+      <string notr="true">amplitudes;position;history data</string>
      </property>
      <property name="files">
-      <string notr="true">sa_amplitudes;sa</string>
+      <string notr="true">sa_amplitudes;sa;sa_history</string>
      </property>
      <property name="args">
-      <string notr="true">DEVICE=$(DEVICE);DEVICE=$(DEVICE)</string>
+      <string notr="true">DEVICE=$(DEVICE);DEVICE=$(DEVICE);DEVICE=$(DEVICE)</string>
      </property>
      <property name="stackingMode" stdset="0">
       <enum>caRowColMenu::Menu</enum>
@@ -892,43 +923,16 @@ settings</string>
       </color>
      </property>
      <property name="labels">
-      <string notr="true">TDP standard;TDP averaged</string>
+      <string notr="true">TDP standard;TDP standard long;TDP averaged</string>
      </property>
      <property name="files">
-      <string notr="true">tbt;tbt</string>
+      <string notr="true">tbt;tbt;tbt</string>
      </property>
      <property name="args">
-      <string notr="true">DEVICE=$(DEVICE), SIG=tdp_synth;DEVICE=$(DEVICE), SIG=tdp_synth_d</string>
+      <string notr="true">DEVICE=$(DEVICE), SIG=tdp_synth;DEVICE=$(DEVICE), SIG=tdp_synth_long;DEVICE=$(DEVICE), SIG=tdp_synth_d</string>
      </property>
      <property name="stackingMode" stdset="0">
       <enum>caRowColMenu::Menu</enum>
-     </property>
-    </widget>
-    <widget class="caRelatedDisplay" name="pilot_tone_test">
-     <property name="geometry">
-      <rect>
-       <x>195</x>
-       <y>125</y>
-       <width>81</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="background">
-      <color>
-       <red>252</red>
-       <green>220</green>
-       <blue>123</blue>
-      </color>
-     </property>
-     <property name="labels">
-      <string notr="true">Pilot-tone
-compensation</string>
-     </property>
-     <property name="files">
-      <string notr="true">pilot_tone</string>
-     </property>
-     <property name="args">
-      <string notr="true">DEVICE=$(DEVICE)</string>
      </property>
     </widget>
    </widget>
