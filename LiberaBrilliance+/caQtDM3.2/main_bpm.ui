@@ -13,9 +13,6 @@
   <property name="windowTitle">
    <string>Main BPM window</string>
   </property>
-  <property name="styleSheet">
-   <string notr="true">background-color: rgb(255, 255, 255);</string>
-  </property>
   <property name="Title" stdset="0">
    <string>Main &gt;&gt; $(BPM)</string>
   </property>
@@ -28,9 +25,6 @@
       <width>246</width>
       <height>191</height>
      </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(231, 231, 231);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -52,7 +46,10 @@
      </color>
     </property>
     <property name="backgroundMode">
-     <enum>caFrame::Filled</enum>
+     <enum>caFrame::Outline</enum>
+    </property>
+    <property name="styleSheet" stdset="0">
+     <string notr="true"/>
     </property>
     <widget class="caTextEntry" name="phase_offset">
      <property name="geometry">
@@ -66,7 +63,7 @@
      <property name="font">
       <font>
        <family>FreeSans</family>
-       <pointsize>8</pointsize>
+       <pointsize>10</pointsize>
       </font>
      </property>
      <property name="alignment">
@@ -92,7 +89,7 @@
      <property name="colorMode">
       <enum>caLineEdit::Static</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
     </widget>
@@ -108,7 +105,7 @@
      <property name="font">
       <font>
        <family>FreeSans</family>
-       <pointsize>8</pointsize>
+       <pointsize>10</pointsize>
       </font>
      </property>
      <property name="alignment">
@@ -134,7 +131,7 @@
      <property name="colorMode">
       <enum>caLineEdit::Static</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
     </widget>
@@ -150,11 +147,8 @@
      <property name="font">
       <font>
        <family>FreeSans</family>
-       <pointsize>8</pointsize>
+       <pointsize>10</pointsize>
       </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
      <property name="cursorPosition">
       <number>0</number>
@@ -182,8 +176,11 @@
      <property name="colorMode">
       <enum>caLineEdit::Static</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
+     </property>
+     <property name="styleSheet" stdset="0">
+      <string notr="true">caTextEntry,caLineEdit {background-color: rgba(255, 255, 127, 255); color: rgba(170, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 63, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 63, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
      </property>
     </widget>
     <widget class="QLabel" name="label_8">
@@ -263,7 +260,7 @@
       </color>
      </property>
      <property name="labels">
-      <string notr="true">Scaling coefficients</string>
+      <string notr="true">Coeff and Offsets</string>
      </property>
      <property name="files">
       <string notr="true">scaling_coefficients</string>
@@ -271,7 +268,7 @@
      <property name="args">
       <string notr="true">BPM=$(BPM)</string>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>EPushButton::WidthAndHeight</enum>
      </property>
     </widget>
@@ -333,7 +330,7 @@ removal</string>
      <property name="args">
       <string notr="true">BPM=$(BPM)</string>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>EPushButton::WidthAndHeight</enum>
      </property>
     </widget>
@@ -349,7 +346,7 @@ removal</string>
      <property name="font">
       <font>
        <family>Sans Serif</family>
-       <pointsize>8</pointsize>
+       <pointsize>9</pointsize>
       </font>
      </property>
      <property name="text">
@@ -378,7 +375,7 @@ removal</string>
      <property name="font">
       <font>
        <family>Sans Serif</family>
-       <pointsize>8</pointsize>
+       <pointsize>9</pointsize>
       </font>
      </property>
      <property name="text">
@@ -387,7 +384,7 @@ removal</string>
      <property name="channel" stdset="0">
       <string notr="true">$(BPM):tbt:sr:fa_enable_sp</string>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caToggleButton::WidthAndHeight</enum>
      </property>
     </widget>
@@ -422,7 +419,7 @@ removal</string>
      <property name="args">
       <string notr="true">BPM=$(BPM)</string>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>EPushButton::WidthAndHeight</enum>
      </property>
     </widget>
@@ -470,7 +467,7 @@ removal</string>
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -521,7 +518,7 @@ removal</string>
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -572,7 +569,7 @@ removal</string>
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -588,9 +585,6 @@ removal</string>
        <height>16</height>
       </rect>
      </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
      <property name="text">
       <string>disabled</string>
      </property>
@@ -603,6 +597,9 @@ removal</string>
        <green>217</green>
        <blue>188</blue>
       </color>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
      </property>
      <property name="visibility">
       <enum>caLabel::IfZero</enum>
@@ -620,9 +617,6 @@ removal</string>
        <height>16</height>
       </rect>
      </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
      <property name="text">
       <string>enabled</string>
      </property>
@@ -635,6 +629,9 @@ removal</string>
        <green>255</green>
        <blue>127</blue>
       </color>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
      </property>
      <property name="visibility">
       <enum>caLabel::IfNotZero</enum>
@@ -652,9 +649,6 @@ removal</string>
        <height>16</height>
       </rect>
      </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
      <property name="text">
       <string>disabled</string>
      </property>
@@ -667,6 +661,9 @@ removal</string>
        <green>217</green>
        <blue>188</blue>
       </color>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
      </property>
      <property name="visibility">
       <enum>caLabel::IfZero</enum>
@@ -684,9 +681,6 @@ removal</string>
        <height>16</height>
       </rect>
      </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
      <property name="text">
       <string>enabled</string>
      </property>
@@ -699,6 +693,9 @@ removal</string>
        <green>255</green>
        <blue>127</blue>
       </color>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
      </property>
      <property name="visibility">
       <enum>caLabel::IfNotZero</enum>
@@ -723,6 +720,9 @@ removal</string>
       <bold>true</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
     </property>
@@ -738,9 +738,6 @@ removal</string>
       <width>246</width>
       <height>91</height>
      </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(231, 231, 231);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -762,7 +759,10 @@ removal</string>
      </color>
     </property>
     <property name="backgroundMode">
-     <enum>caFrame::Filled</enum>
+     <enum>caFrame::Outline</enum>
+    </property>
+    <property name="styleSheet" stdset="0">
+     <string notr="true"/>
     </property>
     <widget class="caTextEntry" name="power_level">
      <property name="geometry">
@@ -776,7 +776,7 @@ removal</string>
      <property name="font">
       <font>
        <family>Sans Serif</family>
-       <pointsize>9</pointsize>
+       <pointsize>10</pointsize>
       </font>
      </property>
      <property name="alignment">
@@ -802,7 +802,7 @@ removal</string>
      <property name="colorMode">
       <enum>caLineEdit::Static</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
     </widget>
@@ -876,9 +876,6 @@ removal</string>
        <height>16</height>
       </rect>
      </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
      <property name="text">
       <string>disabled</string>
      </property>
@@ -891,6 +888,9 @@ removal</string>
        <green>217</green>
        <blue>188</blue>
       </color>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
      </property>
      <property name="visibility">
       <enum>caLabel::IfZero</enum>
@@ -908,9 +908,6 @@ removal</string>
        <height>16</height>
       </rect>
      </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
      <property name="text">
       <string>enabled</string>
      </property>
@@ -923,6 +920,9 @@ removal</string>
        <green>255</green>
        <blue>127</blue>
       </color>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
      </property>
      <property name="visibility">
       <enum>caLabel::IfNotZero</enum>
@@ -975,7 +975,7 @@ removal</string>
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -1026,7 +1026,7 @@ removal</string>
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -1042,9 +1042,6 @@ removal</string>
       <width>246</width>
       <height>151</height>
      </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(231, 231, 231);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1066,7 +1063,10 @@ removal</string>
      </color>
     </property>
     <property name="backgroundMode">
-     <enum>caFrame::Filled</enum>
+     <enum>caFrame::Outline</enum>
+    </property>
+    <property name="styleSheet" stdset="0">
+     <string notr="true"/>
     </property>
     <widget class="QLabel" name="label_21">
      <property name="geometry">
@@ -1159,7 +1159,7 @@ removal</string>
      <property name="args">
       <string notr="true">BPM=$(BPM)</string>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>EPushButton::WidthAndHeight</enum>
      </property>
     </widget>
@@ -1207,7 +1207,7 @@ removal</string>
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -1258,7 +1258,7 @@ removal</string>
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -1309,7 +1309,7 @@ removal</string>
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -1360,7 +1360,7 @@ removal</string>
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -1411,7 +1411,7 @@ removal</string>
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -1427,9 +1427,6 @@ removal</string>
       <width>261</width>
       <height>206</height>
      </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(231, 231, 231);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1451,7 +1448,10 @@ removal</string>
      </color>
     </property>
     <property name="backgroundMode">
-     <enum>caFrame::Filled</enum>
+     <enum>caFrame::Outline</enum>
+    </property>
+    <property name="styleSheet" stdset="0">
+     <string notr="true"/>
     </property>
     <widget class="Line" name="line_12">
      <property name="geometry">
@@ -1608,7 +1608,7 @@ removal</string>
      <property name="args">
       <string notr="true">BPM=$(BPM)</string>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>EPushButton::WidthAndHeight</enum>
      </property>
     </widget>
@@ -1648,9 +1648,6 @@ removal</string>
      <property name="autoFillBackground">
       <bool>false</bool>
      </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(0, 0, 0);</string>
-     </property>
      <property name="channel" stdset="0">
       <string notr="true">$(BPM):switching:source_sp</string>
      </property>
@@ -1663,6 +1660,9 @@ removal</string>
        <green>230</green>
        <blue>230</blue>
       </color>
+     </property>
+     <property name="styleSheet" stdset="0">
+      <string notr="true">background-color: rgba(230, 230, 230, 255); color: rgba(0, 0, 0, 255);</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_27">
@@ -1695,7 +1695,7 @@ removal</string>
      <property name="font">
       <font>
        <family>Arial</family>
-       <pointsize>10</pointsize>
+       <pointsize>9</pointsize>
       </font>
      </property>
      <property name="alignment">
@@ -1721,7 +1721,7 @@ removal</string>
      <property name="colorMode">
       <enum>caLineEdit::Static</enum>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
     </widget>
@@ -1756,7 +1756,7 @@ removal</string>
      <property name="args">
       <string notr="true">BPM=$(BPM)</string>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>EPushButton::WidthAndHeight</enum>
      </property>
     </widget>
@@ -1852,9 +1852,6 @@ allowed</string>
        <height>16</height>
       </rect>
      </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
      <property name="text">
       <string>enabled</string>
      </property>
@@ -1867,6 +1864,9 @@ allowed</string>
        <green>255</green>
        <blue>127</blue>
       </color>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
      </property>
      <property name="visibility">
       <enum>caLabel::IfNotZero</enum>
@@ -1884,9 +1884,6 @@ allowed</string>
        <height>16</height>
       </rect>
      </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
      <property name="text">
       <string>disabled</string>
      </property>
@@ -1899,6 +1896,9 @@ allowed</string>
        <green>217</green>
        <blue>188</blue>
       </color>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
      </property>
      <property name="visibility">
       <enum>caLabel::IfZero</enum>
@@ -1916,9 +1916,6 @@ allowed</string>
        <height>16</height>
       </rect>
      </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
      <property name="text">
       <string>disabled</string>
      </property>
@@ -1931,6 +1928,9 @@ allowed</string>
        <green>217</green>
        <blue>188</blue>
       </color>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
      </property>
      <property name="visibility">
       <enum>caLabel::IfZero</enum>
@@ -1948,9 +1948,6 @@ allowed</string>
        <height>16</height>
       </rect>
      </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
      <property name="text">
       <string>enabled</string>
      </property>
@@ -1963,6 +1960,9 @@ allowed</string>
        <green>255</green>
        <blue>127</blue>
       </color>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
      </property>
      <property name="visibility">
       <enum>caLabel::IfNotZero</enum>
@@ -1980,9 +1980,6 @@ allowed</string>
        <height>16</height>
       </rect>
      </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
      <property name="text">
       <string>unity</string>
      </property>
@@ -1995,6 +1992,9 @@ allowed</string>
        <green>217</green>
        <blue>188</blue>
       </color>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
      </property>
      <property name="visibility">
       <enum>caLabel::IfZero</enum>
@@ -2012,9 +2012,6 @@ allowed</string>
        <height>16</height>
       </rect>
      </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
      <property name="text">
       <string>adjusted</string>
      </property>
@@ -2027,6 +2024,9 @@ allowed</string>
        <green>255</green>
        <blue>127</blue>
       </color>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
      </property>
      <property name="visibility">
       <enum>caLabel::IfNotZero</enum>
@@ -2044,9 +2044,6 @@ allowed</string>
        <height>16</height>
       </rect>
      </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
      <property name="text">
       <string>disabled</string>
      </property>
@@ -2059,6 +2056,9 @@ allowed</string>
        <green>255</green>
        <blue>0</blue>
       </color>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
      </property>
      <property name="visibility">
       <enum>caLabel::Calc</enum>
@@ -2076,9 +2076,6 @@ allowed</string>
        <height>16</height>
       </rect>
      </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
      <property name="text">
       <string>enabled</string>
      </property>
@@ -2091,6 +2088,9 @@ allowed</string>
        <green>217</green>
        <blue>188</blue>
       </color>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
      </property>
      <property name="visibility">
       <enum>caLabel::IfNotZero</enum>
@@ -2108,9 +2108,6 @@ allowed</string>
        <height>16</height>
       </rect>
      </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
      <property name="text">
       <string>External</string>
      </property>
@@ -2123,6 +2120,9 @@ allowed</string>
        <green>255</green>
        <blue>255</blue>
       </color>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
      </property>
      <property name="visibility">
       <enum>caLabel::IfNotZero</enum>
@@ -2140,9 +2140,6 @@ allowed</string>
        <height>16</height>
       </rect>
      </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
      <property name="text">
       <string>Internal</string>
      </property>
@@ -2155,6 +2152,9 @@ allowed</string>
        <green>255</green>
        <blue>255</blue>
       </color>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
      </property>
      <property name="visibility">
       <enum>caLabel::IfZero</enum>
@@ -2207,7 +2207,7 @@ allowed</string>
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -2223,9 +2223,6 @@ allowed</string>
       <width>261</width>
       <height>91</height>
      </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(231, 231, 231);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2247,7 +2244,10 @@ allowed</string>
      </color>
     </property>
     <property name="backgroundMode">
-     <enum>caFrame::Filled</enum>
+     <enum>caFrame::Outline</enum>
+    </property>
+    <property name="styleSheet" stdset="0">
+     <string notr="true"/>
     </property>
     <widget class="caToggleButton" name="catogglebutton">
      <property name="geometry">
@@ -2261,7 +2261,7 @@ allowed</string>
      <property name="font">
       <font>
        <family>Sans Serif</family>
-       <pointsize>9</pointsize>
+       <pointsize>10</pointsize>
       </font>
      </property>
      <property name="text">
@@ -2283,7 +2283,7 @@ allowed</string>
      <property name="font">
       <font>
        <family>Sans Serif</family>
-       <pointsize>8</pointsize>
+       <pointsize>10</pointsize>
       </font>
      </property>
      <property name="text">
@@ -2325,7 +2325,7 @@ Settings</string>
      <property name="args">
       <string notr="true">BPM=$(BPM)</string>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>EPushButton::WidthAndHeight</enum>
      </property>
     </widget>
@@ -2361,7 +2361,7 @@ Settings</string>
      <property name="args">
       <string notr="true">BPM=$(BPM)</string>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>EPushButton::WidthAndHeight</enum>
      </property>
     </widget>
@@ -2373,9 +2373,6 @@ Settings</string>
        <width>51</width>
        <height>16</height>
       </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
      </property>
      <property name="text">
       <string>disabled</string>
@@ -2389,6 +2386,9 @@ Settings</string>
        <green>217</green>
        <blue>188</blue>
       </color>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
      </property>
      <property name="visibility">
       <enum>caLabel::IfZero</enum>
@@ -2406,9 +2406,6 @@ Settings</string>
        <height>16</height>
       </rect>
      </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
      <property name="text">
       <string>enabled</string>
      </property>
@@ -2421,6 +2418,9 @@ Settings</string>
        <green>255</green>
        <blue>127</blue>
       </color>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
      </property>
      <property name="visibility">
       <enum>caLabel::IfNotZero</enum>
@@ -2438,9 +2438,6 @@ Settings</string>
        <height>16</height>
       </rect>
      </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
      <property name="text">
       <string>disabled</string>
      </property>
@@ -2453,6 +2450,9 @@ Settings</string>
        <green>217</green>
        <blue>188</blue>
       </color>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
      </property>
      <property name="visibility">
       <enum>caLabel::IfZero</enum>
@@ -2470,9 +2470,6 @@ Settings</string>
        <height>16</height>
       </rect>
      </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
      <property name="text">
       <string>enabled</string>
      </property>
@@ -2485,6 +2482,9 @@ Settings</string>
        <green>255</green>
        <blue>127</blue>
       </color>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
      </property>
      <property name="visibility">
       <enum>caLabel::IfNotZero</enum>
@@ -2502,9 +2502,6 @@ Settings</string>
       <width>511</width>
       <height>51</height>
      </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(231, 231, 231);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2526,7 +2523,10 @@ Settings</string>
      </color>
     </property>
     <property name="backgroundMode">
-     <enum>caFrame::Filled</enum>
+     <enum>caFrame::Outline</enum>
+    </property>
+    <property name="styleSheet" stdset="0">
+     <string notr="true"/>
     </property>
     <widget class="caRelatedDisplay" name="hp_temp">
      <property name="geometry">
@@ -2560,7 +2560,7 @@ temperature sensors</string>
      <property name="args">
       <string notr="true">BPM=$(BPM)</string>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>EPushButton::WidthAndHeight</enum>
      </property>
     </widget>
@@ -2626,7 +2626,7 @@ temperature sensors</string>
      <property name="frameLineWidth" stdset="0">
       <number>1</number>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>caLineEdit::WidthAndHeight</enum>
      </property>
      <property name="unitsEnabled">
@@ -2648,6 +2648,9 @@ temperature sensors</string>
       <weight>75</weight>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2671,6 +2674,9 @@ temperature sensors</string>
       <bold>true</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
     </property>
@@ -2693,6 +2699,9 @@ temperature sensors</string>
       <bold>true</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
     </property>
@@ -2714,6 +2723,9 @@ temperature sensors</string>
       <weight>75</weight>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2752,7 +2764,7 @@ temperature sensors</string>
     <property name="args">
      <string notr="true">BPM=$(BPM)</string>
     </property>
-    <property name="fontScaleMode">
+    <property name="fontScaleMode" stdset="0">
      <enum>EPushButton::WidthAndHeight</enum>
     </property>
    </widget>
@@ -2764,9 +2776,6 @@ temperature sensors</string>
       <width>261</width>
       <height>136</height>
      </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(231, 231, 231);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2788,7 +2797,10 @@ temperature sensors</string>
      </color>
     </property>
     <property name="backgroundMode">
-     <enum>caFrame::Filled</enum>
+     <enum>caFrame::Outline</enum>
+    </property>
+    <property name="styleSheet" stdset="0">
+     <string notr="true"/>
     </property>
     <widget class="caRelatedDisplay" name="adc_buff">
      <property name="geometry">
@@ -2824,7 +2836,7 @@ temperature sensors</string>
      <property name="args">
       <string notr="true">BPM=$(BPM),SIG=adc;BPM=$(BPM),SIG=adc_long</string>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>EPushButton::WidthAndHeight</enum>
      </property>
      <property name="stackingMode" stdset="0">
@@ -2863,7 +2875,7 @@ Frequency Domain</string>
      <property name="args">
       <string notr="true">BPM=$(BPM), SIG=ddc_synth</string>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>EPushButton::WidthAndHeight</enum>
      </property>
     </widget>
@@ -2898,7 +2910,7 @@ Frequency Domain</string>
      <property name="args">
       <string notr="true">BPM=$(BPM)</string>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>EPushButton::WidthAndHeight</enum>
      </property>
     </widget>
@@ -2933,7 +2945,7 @@ Frequency Domain</string>
      <property name="args">
       <string notr="true">BPM=$(BPM), SIG=ddc_raw</string>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>EPushButton::WidthAndHeight</enum>
      </property>
     </widget>
@@ -2972,7 +2984,7 @@ time domain</string>
      <property name="args">
       <string notr="true">BPM=$(BPM), SIG=tdp_synth;BPM=$(BPM), SIG=tdp_synth_long</string>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>EPushButton::WidthAndHeight</enum>
      </property>
      <property name="stackingMode" stdset="0">
@@ -3010,7 +3022,7 @@ time domain</string>
      <property name="args">
       <string notr="true">BPM=$(BPM)</string>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>EPushButton::WidthAndHeight</enum>
      </property>
     </widget>
@@ -3048,7 +3060,7 @@ time domain</string>
      <property name="args">
       <string notr="true">BPM=$(BPM)</string>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>EPushButton::WidthAndHeight</enum>
      </property>
     </widget>
@@ -3086,7 +3098,7 @@ time domain</string>
      <property name="args">
       <string notr="true">BPM=$(BPM)</string>
      </property>
-     <property name="fontScaleMode">
+     <property name="fontScaleMode" stdset="0">
       <enum>EPushButton::WidthAndHeight</enum>
      </property>
     </widget>
@@ -3105,6 +3117,9 @@ time domain</string>
       <weight>75</weight>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -3127,6 +3142,9 @@ time domain</string>
       <weight>75</weight>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>

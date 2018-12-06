@@ -29,7 +29,7 @@
       <x>5</x>
       <y>5</y>
       <width>758</width>
-      <height>496</height>
+      <height>476</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -157,9 +157,9 @@
     <property name="geometry">
      <rect>
       <x>5</x>
-      <y>505</y>
+      <y>485</y>
       <width>236</width>
-      <height>66</height>
+      <height>86</height>
      </rect>
     </property>
     <property name="font">
@@ -298,14 +298,32 @@
       <string notr="true">1</string>
      </property>
     </widget>
+    <widget class="QLabel" name="label_58">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>56</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>SEGM</string>
+     </property>
+    </widget>
    </widget>
    <widget class="caFrame" name="caframe_7">
     <property name="geometry">
      <rect>
       <x>245</x>
-      <y>505</y>
+      <y>485</y>
       <width>456</width>
-      <height>66</height>
+      <height>86</height>
      </rect>
     </property>
     <property name="font">
@@ -599,13 +617,13 @@
      </property>
     </widget>
    </widget>
-   <widget class="caRelatedDisplay" name="TBT_buffer_11">
+   <widget class="caRelatedDisplay" name="channels">
     <property name="geometry">
      <rect>
-      <x>704</x>
-      <y>505</y>
+      <x>705</x>
+      <y>485</y>
       <width>56</width>
-      <height>66</height>
+      <height>86</height>
      </rect>
     </property>
     <property name="label">
@@ -625,7 +643,7 @@
      <string notr="true">adc_individual;adc_individual;adc_individual;adc_individual</string>
     </property>
     <property name="args">
-     <string notr="true">DEVICE=$(DEVICE),SIG=$(SIG);DEVICE=$(DEVICE),SIG=$(SIG);DEVICE=$(DEVICE),SIG=$(SIG);DEVICE=$(DEVICE),SIG=$(SIG)</string>
+     <string notr="true">DEVICE=$(DEVICE),SIG=$(SIG).Ch1;DEVICE=$(DEVICE),SIG=$(SIG).Ch2;DEVICE=$(DEVICE),SIG=$(SIG).Ch3;DEVICE=$(DEVICE),SIG=$(SIG).Ch4</string>
     </property>
     <property name="stackingMode" stdset="0">
      <enum>caRowColMenu::Row</enum>
