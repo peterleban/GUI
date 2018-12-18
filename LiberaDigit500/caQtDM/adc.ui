@@ -257,72 +257,13 @@
       <string>ACQM</string>
      </property>
     </widget>
-    <widget class="caMessageButton" name="readnow_2">
-     <property name="geometry">
-      <rect>
-       <x>180</x>
-       <y>10</y>
-       <width>46</width>
-       <height>46</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>PROC</string>
-     </property>
-     <property name="autoDefault">
-      <bool>false</bool>
-     </property>
-     <property name="default">
-      <bool>false</bool>
-     </property>
-     <property name="flat">
-      <bool>false</bool>
-     </property>
-     <property name="fontScaleMode">
-      <enum>EPushButton::WidthAndHeight</enum>
-     </property>
-     <property name="channel" stdset="0">
-      <string notr="true">$(DEVICE):signals:$(SIG).PROC</string>
-     </property>
-     <property name="label">
-      <string notr="true">PROC</string>
-     </property>
-     <property name="background">
-      <color>
-       <red>254</red>
-       <green>217</green>
-       <blue>188</blue>
-      </color>
-     </property>
-     <property name="pressMessage">
-      <string notr="true">1</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_58">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>60</y>
-       <width>56</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>SEGM</string>
-     </property>
-    </widget>
    </widget>
    <widget class="caFrame" name="caframe_7">
     <property name="geometry">
      <rect>
       <x>245</x>
       <y>485</y>
-      <width>456</width>
+      <width>516</width>
       <height>86</height>
      </rect>
     </property>
@@ -489,9 +430,9 @@
     <widget class="caLineEdit" name="calineedit_23">
      <property name="geometry">
       <rect>
-       <x>380</x>
+       <x>400</x>
        <y>35</y>
-       <width>66</width>
+       <width>111</width>
        <height>20</height>
       </rect>
      </property>
@@ -533,7 +474,7 @@
     <widget class="QLabel" name="label_56">
      <property name="geometry">
       <rect>
-       <x>285</x>
+       <x>305</x>
        <y>10</y>
        <width>91</width>
        <height>20</height>
@@ -554,9 +495,9 @@
     <widget class="caLineEdit" name="calineedit_22">
      <property name="geometry">
       <rect>
-       <x>380</x>
+       <x>400</x>
        <y>10</y>
-       <width>66</width>
+       <width>111</width>
        <height>20</height>
       </rect>
      </property>
@@ -598,7 +539,7 @@
     <widget class="QLabel" name="label_57">
      <property name="geometry">
       <rect>
-       <x>285</x>
+       <x>305</x>
        <y>35</y>
        <width>91</width>
        <height>20</height>
@@ -616,38 +557,59 @@
       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
      </property>
     </widget>
-   </widget>
-   <widget class="caRelatedDisplay" name="channels">
-    <property name="geometry">
-     <rect>
-      <x>705</x>
-      <y>485</y>
-      <width>56</width>
-      <height>86</height>
-     </rect>
-    </property>
-    <property name="label">
-     <string notr="true">channels</string>
-    </property>
-    <property name="background">
-     <color>
-      <red>255</red>
-      <green>170</green>
-      <blue>127</blue>
-     </color>
-    </property>
-    <property name="labels">
-     <string notr="true">ch 1;ch 2;ch 3;ch 4</string>
-    </property>
-    <property name="files">
-     <string notr="true">adc_individual;adc_individual;adc_individual;adc_individual</string>
-    </property>
-    <property name="args">
-     <string notr="true">DEVICE=$(DEVICE),SIG=$(SIG).Ch1;DEVICE=$(DEVICE),SIG=$(SIG).Ch2;DEVICE=$(DEVICE),SIG=$(SIG).Ch3;DEVICE=$(DEVICE),SIG=$(SIG).Ch4</string>
-    </property>
-    <property name="stackingMode" stdset="0">
-     <enum>caRowColMenu::Row</enum>
-    </property>
+    <widget class="QLabel" name="label_59">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>131</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Read segments:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="caRelatedDisplay" name="channels_2">
+     <property name="geometry">
+      <rect>
+       <x>145</x>
+       <y>60</y>
+       <width>366</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">channels</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>255</red>
+       <green>170</green>
+       <blue>127</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">ch 1;ch 2;ch 3;ch 4</string>
+     </property>
+     <property name="files">
+      <string notr="true">adc_segments;adc_segments;adc_segments;adc_segments</string>
+     </property>
+     <property name="args">
+      <string notr="true">DEVICE=$(DEVICE),SIG=$(SIG),CH=1;DEVICE=$(DEVICE),SIG=$(SIG),CH=2;DEVICE=$(DEVICE),SIG=$(SIG),CH=3;DEVICE=$(DEVICE),SIG=$(SIG),CH=4</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Column</enum>
+     </property>
+    </widget>
    </widget>
   </widget>
  </widget>
@@ -661,11 +623,6 @@
    <class>caRelatedDisplay</class>
    <extends>QWidget</extends>
    <header>caRelatedDisplay</header>
-  </customwidget>
-  <customwidget>
-   <class>caMessageButton</class>
-   <extends>QPushButton</extends>
-   <header>caMessageButton</header>
   </customwidget>
   <customwidget>
    <class>caFrame</class>

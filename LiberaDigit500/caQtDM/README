@@ -1,13 +1,11 @@
 ##############################################################
-# 							     #
+# 															 #
 #  caQtDM is an MEDM replacement. It has been developed      #
 #  at PSI; check http://epics.web.psi.ch/software/caqtdm/    #
-#							     #
-#    Author: Matjaz Znidarcic (matjaz.znidarcic@i-tech.si)   #
-#    Date: November 17, 2015				     #
-#							     #
-#    Thanks to Anton Mezger (PSI) for support.		     #
-#							     #
+#							     							 #
+#    Author: Peter Leban (peter.leban@i-tech.si)			 #
+#    Date: December 18, 2018							     #
+#							      							 #
 ##############################################################
 
  Usage instructions:

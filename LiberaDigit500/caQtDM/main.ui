@@ -720,16 +720,16 @@
       </color>
      </property>
      <property name="labels">
-      <string notr="true">ADC;ADC long</string>
+      <string notr="true">ADC;ADC segments</string>
      </property>
      <property name="files">
-      <string notr="true">adc;adc</string>
+      <string notr="true">adc</string>
      </property>
      <property name="args">
-      <string notr="true">DEVICE=$(DEVICE),SIG=adc1;DEVICE=$(DEVICE),SIG=adc10</string>
+      <string notr="true">DEVICE=$(DEVICE),SIG=adc;DEVICE=$(DEVICE),SIG=adc</string>
      </property>
      <property name="stackingMode" stdset="0">
-      <enum>caRowColMenu::Menu</enum>
+      <enum>caRowColMenu::Row</enum>
      </property>
     </widget>
     <widget class="caRelatedDisplay" name="buf_acq_settings_4">
