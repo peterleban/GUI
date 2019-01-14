@@ -560,7 +560,7 @@ to read individual segments</string>
       </rect>
      </property>
      <property name="text">
-      <string>Refresh plot</string>
+      <string>PROC</string>
      </property>
      <property name="autoDefault">
       <bool>false</bool>
@@ -699,7 +699,7 @@ to read individual segments</string>
       <enum>caLabel::Calc</enum>
      </property>
      <property name="visibilityCalc">
-      <string notr="true">A&lt;B</string>
+      <string notr="true">A&lt;=B</string>
      </property>
      <property name="channel" stdset="0">
       <string notr="true">$(DEVICE):signals:$(SIG):segm_off_mon</string>
