@@ -2456,7 +2456,7 @@
           <rect>
            <x>5</x>
            <y>60</y>
-           <width>115</width>
+           <width>126</width>
            <height>20</height>
           </rect>
          </property>
@@ -2466,7 +2466,7 @@
           </font>
          </property>
          <property name="text">
-          <string>Gate offset [%]</string>
+          <string>Gate offs. [x 10 %]</string>
          </property>
         </widget>
         <widget class="caTextEntry" name="caTextEntry_12">
@@ -2512,7 +2512,7 @@
           <rect>
            <x>5</x>
            <y>85</y>
-           <width>116</width>
+           <width>121</width>
            <height>20</height>
           </rect>
          </property>
@@ -2522,7 +2522,7 @@
           </font>
          </property>
          <property name="text">
-          <string>Gate end [%]</string>
+          <string>Gate end [x 10 %]</string>
          </property>
         </widget>
         <widget class="caTextEntry" name="caTextEntry_13">
@@ -2969,7 +2969,7 @@
        <string notr="true"/>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>3</number>
       </property>
       <property name="iconSize">
        <size>
@@ -3446,7 +3446,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -3491,7 +3491,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -3536,7 +3536,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -3581,7 +3581,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -3626,7 +3626,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -3671,7 +3671,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -3716,7 +3716,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -3873,7 +3873,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -4602,7 +4602,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -4647,7 +4647,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -4692,7 +4692,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -4737,7 +4737,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -4782,7 +4782,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -4827,7 +4827,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -4872,7 +4872,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -4917,7 +4917,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -4962,7 +4962,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -5123,7 +5123,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -5168,7 +5168,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -5213,7 +5213,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -6329,7 +6329,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -6368,7 +6368,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -6407,7 +6407,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -6446,7 +6446,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -6485,7 +6485,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -6524,7 +6524,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -6563,7 +6563,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -6602,7 +6602,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -6641,7 +6641,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -6680,7 +6680,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -6719,7 +6719,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -6758,7 +6758,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -6797,7 +6797,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -6926,7 +6926,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -7161,7 +7161,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -7200,7 +7200,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -7239,7 +7239,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -7378,7 +7378,7 @@
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>8</pointsize>
            <stylestrategy>PreferDefault</stylestrategy>
           </font>
          </property>
@@ -8316,6 +8316,2134 @@
       </widget>
      </widget>
     </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Amplifier</string>
+     </attribute>
+     <widget class="QTabWidget" name="MainSignalWindowTab_8">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>816</width>
+        <height>426</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>300</width>
+        <height>400</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>DejaVu Sans</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <kerning>false</kerning>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+      <property name="elideMode">
+       <enum>Qt::ElideNone</enum>
+      </property>
+      <property name="usesScrollButtons">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="tab_7">
+       <attribute name="title">
+        <string>Set</string>
+       </attribute>
+       <widget class="caFrame" name="caframe_15">
+        <property name="geometry">
+         <rect>
+          <x>4</x>
+          <y>4</y>
+          <width>806</width>
+          <height>381</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(226, 226, 226);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <widget class="QLabel" name="label_109">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>70</y>
+           <width>121</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>Transfer</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_110">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>5</y>
+           <width>251</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Set gain</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_111">
+         <property name="geometry">
+          <rect>
+           <x>475</x>
+           <y>5</y>
+           <width>251</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Amplifier status</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="Line" name="line_15">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>25</y>
+           <width>346</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="Line" name="line_16">
+         <property name="geometry">
+          <rect>
+           <x>450</x>
+           <y>25</y>
+           <width>346</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="caMessageButton" name="camessagebutton">
+         <property name="geometry">
+          <rect>
+           <x>250</x>
+           <y>70</y>
+           <width>101</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Transfer</string>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+         <property name="fontScaleMode">
+          <enum>EPushButton::WidthAndHeight</enum>
+         </property>
+         <property name="channel" stdset="0">
+          <string notr="true">$(BPM):ha:transfer_sp</string>
+         </property>
+         <property name="background">
+          <color>
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </property>
+         <property name="pressMessage">
+          <string notr="true">0</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_131">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>95</y>
+           <width>121</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>Latch</string>
+         </property>
+        </widget>
+        <widget class="caMessageButton" name="camessagebutton_2">
+         <property name="geometry">
+          <rect>
+           <x>250</x>
+           <y>95</y>
+           <width>101</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Latch</string>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+         <property name="fontScaleMode">
+          <enum>EPushButton::WidthAndHeight</enum>
+         </property>
+         <property name="channel" stdset="0">
+          <string notr="true">$(BPM):ha:hpa_spi:sw_latch_sp</string>
+         </property>
+         <property name="background">
+          <color>
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </property>
+         <property name="pressMessage">
+          <string notr="true">0</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_132">
+         <property name="geometry">
+          <rect>
+           <x>450</x>
+           <y>95</y>
+           <width>121</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>Error</string>
+         </property>
+        </widget>
+        <widget class="caMessageButton" name="camessagebutton_3">
+         <property name="geometry">
+          <rect>
+           <x>695</x>
+           <y>95</y>
+           <width>101</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Clear</string>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+         <property name="fontScaleMode">
+          <enum>EPushButton::WidthAndHeight</enum>
+         </property>
+         <property name="channel" stdset="0">
+          <string notr="true">$(BPM):ha:hpa_spi:clear_error_sp</string>
+         </property>
+         <property name="background">
+          <color>
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </property>
+         <property name="pressMessage">
+          <string notr="true">0</string>
+         </property>
+        </widget>
+        <widget class="caWaveTable" name="cawavetable_4">
+         <property name="geometry">
+          <rect>
+           <x>585</x>
+           <y>95</y>
+           <width>101</width>
+           <height>86</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="autoScrollMargin">
+          <number>4</number>
+         </property>
+         <property name="channel" stdset="0">
+          <string notr="true">$(BPM):ha:hpa_spi:state_error_mon</string>
+         </property>
+         <property name="numberOfRows">
+          <number>4</number>
+         </property>
+         <property name="numberOfColumns">
+          <number>1</number>
+         </property>
+         <attribute name="horizontalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <column/>
+         <item row="0" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="1" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="2" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="3" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+        </widget>
+        <widget class="caLineEdit" name="calineedit_87">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>45</y>
+           <width>101</width>
+           <height>18</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+           <stylestrategy>PreferDefault</stylestrategy>
+          </font>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+         <property name="channel" stdset="0">
+          <string notr="true">$(BPM):ha:gain_index_mon</string>
+         </property>
+         <property name="background">
+          <color>
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </property>
+         <property name="colorMode">
+          <enum>caLineEdit::Static</enum>
+         </property>
+        </widget>
+        <widget class="caTextEntry" name="catextentry_57">
+         <property name="geometry">
+          <rect>
+           <x>250</x>
+           <y>45</y>
+           <width>100</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>9</pointsize>
+           <stylestrategy>PreferDefault</stylestrategy>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+         <property name="channel" stdset="0">
+          <string notr="true">$(BPM):ha:gain_index_sp</string>
+         </property>
+         <property name="background">
+          <color>
+           <red>230</red>
+           <green>230</green>
+           <blue>230</blue>
+          </color>
+         </property>
+         <property name="colorMode">
+          <enum>caLineEdit::Static</enum>
+         </property>
+         <property name="precision">
+          <number>4</number>
+         </property>
+         <property name="precisionMode">
+          <enum>caLineEdit::Channel</enum>
+         </property>
+         <property name="maxValue">
+          <double>2.000000000000000</double>
+         </property>
+         <property name="minValue">
+          <double>0.100000000000000</double>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_106">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>45</y>
+           <width>121</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>Gain index</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_107">
+         <property name="geometry">
+          <rect>
+           <x>450</x>
+           <y>45</y>
+           <width>121</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>Current gain set.</string>
+         </property>
+        </widget>
+        <widget class="caLineEdit" name="calineedit_88">
+         <property name="geometry">
+          <rect>
+           <x>585</x>
+           <y>45</y>
+           <width>101</width>
+           <height>18</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+           <stylestrategy>PreferDefault</stylestrategy>
+          </font>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+         <property name="channel" stdset="0">
+          <string notr="true">$(BPM):ha:hw:gain_index_mon</string>
+         </property>
+         <property name="background">
+          <color>
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </property>
+         <property name="colorMode">
+          <enum>caLineEdit::Static</enum>
+         </property>
+        </widget>
+        <widget class="caLineEdit" name="calineedit_89">
+         <property name="geometry">
+          <rect>
+           <x>585</x>
+           <y>70</y>
+           <width>101</width>
+           <height>18</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+           <stylestrategy>PreferDefault</stylestrategy>
+          </font>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+         <property name="channel" stdset="0">
+          <string notr="true">$(BPM):ha:hpa_spi:state_mon</string>
+         </property>
+         <property name="background">
+          <color>
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </property>
+         <property name="colorMode">
+          <enum>caLineEdit::Static</enum>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_108">
+         <property name="geometry">
+          <rect>
+           <x>450</x>
+           <y>70</y>
+           <width>121</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>Status</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="sc_3">
+       <attribute name="title">
+        <string>Calibration</string>
+       </attribute>
+       <widget class="caFrame" name="caframe_5">
+        <property name="geometry">
+         <rect>
+          <x>4</x>
+          <y>4</y>
+          <width>806</width>
+          <height>381</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(226, 226, 226);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <widget class="QLabel" name="label_112">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>10</y>
+           <width>101</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>Calibration src</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_113">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>90</y>
+           <width>101</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>Generator</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_114">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>170</y>
+           <width>106</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>Int. generator</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_115">
+         <property name="geometry">
+          <rect>
+           <x>640</x>
+           <y>10</y>
+           <width>71</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>Ch. D</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_116">
+         <property name="geometry">
+          <rect>
+           <x>470</x>
+           <y>10</y>
+           <width>71</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>Ch. C</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_117">
+         <property name="geometry">
+          <rect>
+           <x>130</x>
+           <y>10</y>
+           <width>71</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>Ch. A</string>
+         </property>
+        </widget>
+        <widget class="caWaveTable" name="cawavetable_7">
+         <property name="geometry">
+          <rect>
+           <x>130</x>
+           <y>35</y>
+           <width>81</width>
+           <height>326</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="autoScrollMargin">
+          <number>16</number>
+         </property>
+         <property name="channel" stdset="0">
+          <string notr="true">$(BPM):ha:calibration:A_mon</string>
+         </property>
+         <property name="numberOfRows">
+          <number>16</number>
+         </property>
+         <property name="numberOfColumns">
+          <number>1</number>
+         </property>
+         <attribute name="horizontalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <column/>
+         <item row="0" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="font">
+           <font/>
+          </property>
+          <property name="background">
+           <brush brushstyle="NoBrush">
+            <color alpha="255">
+             <red>255</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </property>
+         </item>
+         <item row="1" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="2" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="3" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="4" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="5" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="6" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="7" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="8" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="9" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="10" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="11" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="12" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="13" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="14" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="15" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLabel" name="label_118">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>10</y>
+           <width>76</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>Ch. B</string>
+         </property>
+        </widget>
+        <widget class="caLineEdit" name="calineedit_90">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>35</y>
+           <width>101</width>
+           <height>18</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+           <stylestrategy>PreferDefault</stylestrategy>
+          </font>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+         <property name="channel" stdset="0">
+          <string notr="true">$(BPM):ha:source_mon</string>
+         </property>
+         <property name="background">
+          <color>
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </property>
+         <property name="colorMode">
+          <enum>caLineEdit::Static</enum>
+         </property>
+         <property name="precision">
+          <number>4</number>
+         </property>
+         <property name="precisionMode">
+          <enum>caLineEdit::Channel</enum>
+         </property>
+        </widget>
+        <widget class="caMenu" name="camenu_16">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>55</y>
+           <width>100</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="frame">
+          <bool>true</bool>
+         </property>
+         <property name="channel" stdset="0">
+          <string notr="true">$(BPM):ha:source_sp</string>
+         </property>
+         <property name="labelDisplay">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="caMenu" name="camenu_17">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>135</y>
+           <width>100</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="frame">
+          <bool>true</bool>
+         </property>
+         <property name="channel" stdset="0">
+          <string notr="true">$(BPM):ha:generator_sp</string>
+         </property>
+         <property name="labelDisplay">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="caLineEdit" name="calineedit_91">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>115</y>
+           <width>101</width>
+           <height>18</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+           <stylestrategy>PreferDefault</stylestrategy>
+          </font>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+         <property name="channel" stdset="0">
+          <string notr="true">$(BPM):ha:generator_mon</string>
+         </property>
+         <property name="background">
+          <color>
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </property>
+         <property name="colorMode">
+          <enum>caLineEdit::Static</enum>
+         </property>
+         <property name="precision">
+          <number>4</number>
+         </property>
+         <property name="precisionMode">
+          <enum>caLineEdit::Channel</enum>
+         </property>
+        </widget>
+        <widget class="caMenu" name="camenu_18">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>215</y>
+           <width>100</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="frame">
+          <bool>true</bool>
+         </property>
+         <property name="channel" stdset="0">
+          <string notr="true">$(BPM):ha:internal_gen_sp</string>
+         </property>
+         <property name="labelDisplay">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="caLineEdit" name="calineedit_92">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>195</y>
+           <width>101</width>
+           <height>18</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+           <stylestrategy>PreferDefault</stylestrategy>
+          </font>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+         <property name="channel" stdset="0">
+          <string notr="true">$(BPM):ha:internal_gen_mon</string>
+         </property>
+         <property name="background">
+          <color>
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </property>
+         <property name="colorMode">
+          <enum>caLineEdit::Static</enum>
+         </property>
+         <property name="precision">
+          <number>4</number>
+         </property>
+         <property name="precisionMode">
+          <enum>caLineEdit::Channel</enum>
+         </property>
+        </widget>
+        <widget class="caWaveTable" name="cawavetable_9">
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>35</y>
+           <width>81</width>
+           <height>326</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="autoScrollMargin">
+          <number>16</number>
+         </property>
+         <property name="channel" stdset="0">
+          <string notr="true">$(BPM):ha:calibration:A_sp</string>
+         </property>
+         <property name="numberOfRows">
+          <number>16</number>
+         </property>
+         <property name="numberOfColumns">
+          <number>1</number>
+         </property>
+         <attribute name="horizontalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <column/>
+         <item row="0" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="1" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="2" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="3" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="4" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="5" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="6" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="7" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="8" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="9" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="10" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="11" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="12" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="13" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="14" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="15" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+        </widget>
+        <widget class="caWaveTable" name="cawavetable_8">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>35</y>
+           <width>81</width>
+           <height>326</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="autoScrollMargin">
+          <number>16</number>
+         </property>
+         <property name="channel" stdset="0">
+          <string notr="true">$(BPM):ha:calibration:B_mon</string>
+         </property>
+         <property name="numberOfRows">
+          <number>16</number>
+         </property>
+         <property name="numberOfColumns">
+          <number>1</number>
+         </property>
+         <attribute name="horizontalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <column/>
+         <item row="0" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="1" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="2" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="3" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="4" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="5" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="6" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="7" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="8" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="9" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="10" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="11" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="12" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="13" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="14" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="15" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+        </widget>
+        <widget class="caWaveTable" name="cawavetable_10">
+         <property name="geometry">
+          <rect>
+           <x>380</x>
+           <y>35</y>
+           <width>81</width>
+           <height>326</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="autoScrollMargin">
+          <number>16</number>
+         </property>
+         <property name="channel" stdset="0">
+          <string notr="true">$(BPM):ha:calibration:B_sp</string>
+         </property>
+         <property name="numberOfRows">
+          <number>16</number>
+         </property>
+         <property name="numberOfColumns">
+          <number>1</number>
+         </property>
+         <attribute name="horizontalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <column/>
+         <item row="0" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="1" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="2" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="3" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="4" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="5" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="6" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="7" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="8" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="9" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="10" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="11" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="12" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="13" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="14" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="15" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+        </widget>
+        <widget class="caWaveTable" name="cawavetable_11">
+         <property name="geometry">
+          <rect>
+           <x>470</x>
+           <y>35</y>
+           <width>81</width>
+           <height>326</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="autoScrollMargin">
+          <number>16</number>
+         </property>
+         <property name="channel" stdset="0">
+          <string notr="true">$(BPM):ha:calibration:C_mon</string>
+         </property>
+         <property name="numberOfRows">
+          <number>16</number>
+         </property>
+         <property name="numberOfColumns">
+          <number>1</number>
+         </property>
+         <attribute name="horizontalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <column/>
+         <item row="0" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="1" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="2" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="3" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="4" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="5" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="6" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="7" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="8" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="9" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="10" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="11" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="12" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="13" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="14" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="15" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+        </widget>
+        <widget class="caWaveTable" name="cawavetable_12">
+         <property name="geometry">
+          <rect>
+           <x>550</x>
+           <y>35</y>
+           <width>81</width>
+           <height>326</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="autoScrollMargin">
+          <number>16</number>
+         </property>
+         <property name="channel" stdset="0">
+          <string notr="true">$(BPM):ha:calibration:C_sp</string>
+         </property>
+         <property name="numberOfRows">
+          <number>16</number>
+         </property>
+         <property name="numberOfColumns">
+          <number>1</number>
+         </property>
+         <attribute name="horizontalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <column/>
+         <item row="0" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="1" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="2" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="3" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="4" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="5" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="6" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="7" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="8" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="9" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="10" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="11" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="12" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="13" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="14" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="15" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+        </widget>
+        <widget class="caWaveTable" name="cawavetable_13">
+         <property name="geometry">
+          <rect>
+           <x>640</x>
+           <y>35</y>
+           <width>81</width>
+           <height>326</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="autoScrollMargin">
+          <number>16</number>
+         </property>
+         <property name="channel" stdset="0">
+          <string notr="true">$(BPM):ha:calibration:D_mon</string>
+         </property>
+         <property name="numberOfRows">
+          <number>16</number>
+         </property>
+         <property name="numberOfColumns">
+          <number>1</number>
+         </property>
+         <attribute name="horizontalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <column/>
+         <item row="0" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="1" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="2" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="3" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="4" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="5" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="6" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="7" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="8" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="9" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="10" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="11" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="12" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="13" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="14" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="15" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+        </widget>
+        <widget class="caWaveTable" name="cawavetable_14">
+         <property name="geometry">
+          <rect>
+           <x>720</x>
+           <y>35</y>
+           <width>81</width>
+           <height>326</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="autoScrollMargin">
+          <number>16</number>
+         </property>
+         <property name="channel" stdset="0">
+          <string notr="true">$(BPM):ha:calibration:D_sp</string>
+         </property>
+         <property name="numberOfRows">
+          <number>16</number>
+         </property>
+         <property name="numberOfColumns">
+          <number>1</number>
+         </property>
+         <attribute name="horizontalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <column/>
+         <item row="0" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="1" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="2" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="3" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="4" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="5" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="6" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="7" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="8" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="9" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="10" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="11" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="12" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="13" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="14" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+         <item row="15" column="0">
+          <property name="font">
+           <font/>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLabel" name="label_119">
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>10</y>
+           <width>71</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="text">
+          <string> Ch. A set</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_120">
+         <property name="geometry">
+          <rect>
+           <x>380</x>
+           <y>10</y>
+           <width>71</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="text">
+          <string> Ch. B set</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_121">
+         <property name="geometry">
+          <rect>
+           <x>550</x>
+           <y>10</y>
+           <width>71</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="text">
+          <string> Ch. C set</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_122">
+         <property name="geometry">
+          <rect>
+           <x>720</x>
+           <y>10</y>
+           <width>71</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>Ch. D set</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
    </widget>
    <widget class="QTabWidget" name="MainSignalWindowTab_4">
     <property name="enabled">
@@ -9060,6 +11188,11 @@
    <header>caTextEntry</header>
   </customwidget>
   <customwidget>
+   <class>caMessageButton</class>
+   <extends>QPushButton</extends>
+   <header>caMessageButton</header>
+  </customwidget>
+  <customwidget>
    <class>caToggleButton</class>
    <extends>QCheckBox</extends>
    <header>caToggleButton</header>
@@ -9084,6 +11217,11 @@
    <class>caLineEdit</class>
    <extends>QLineEdit</extends>
    <header>caLineEdit</header>
+  </customwidget>
+  <customwidget>
+   <class>caWaveTable</class>
+   <extends>QTableWidget</extends>
+   <header>caWaveTable</header>
   </customwidget>
  </customwidgets>
  <resources>
