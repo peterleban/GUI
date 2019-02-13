@@ -1,0 +1,22 @@
+Graphical User Interface (GUI) for Libera instruments.
+
+This GUI version works with the Control System Studio (CSS)
+environment ( http://controlsystemstudio.org/ )
+The CSS environment can be installed under Windows, Linux and OSX
+operating systems.
+
+Copy or fork the .opi files and open the "main.opi" file.
+The .opi files contain a macro definition (DEVICE). It must be
+defined in the "main.opi" file and is then linked to other related .opi files automatically.
+
+DEVICE stands for the IOCname (EPICS prefix). The IOCname is defined
+in the Libera instrument ( /opt/libera-ioc/IOCname )
+
+
+RELEASE NOTES:
+* This is the first GUI based on the CSS. It does not support all functionalities yet.
+
+Contributions are much appreciated.
+
+Date: February 13, 2019
+Author: Peter Leban [ peter.leban@i-tech.si ]
