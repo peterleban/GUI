@@ -15,7 +15,7 @@
     <color red="192" green="192" blue="192" />
   </foreground_color>
   <grid_space>5</grid_space>
-  <height>600</height>
+  <height>440</height>
   <macros>
     <include_parent_macros>true</include_parent_macros>
     <DEVICE>curmet</DEVICE>
@@ -33,64 +33,6 @@
   <wuid>-7231c4ff:1679c144bcf:-7e88</wuid>
   <x>-1</x>
   <y>-1</y>
-  <widget typeId="org.csstudio.opibuilder.widgets.Rectangle" version="1.0.0">
-    <actions hook="false" hook_all="false" />
-    <alarm_pulsing>false</alarm_pulsing>
-    <alpha>255</alpha>
-    <anti_alias>true</anti_alias>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
-    <bg_gradient_color>
-      <color red="255" green="255" blue="255" />
-    </bg_gradient_color>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <border_color>
-      <color red="0" green="0" blue="0" />
-    </border_color>
-    <border_style>1</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <fg_gradient_color>
-      <color red="255" green="255" blue="255" />
-    </fg_gradient_color>
-    <fill_level>0.0</fill_level>
-    <font>
-      <opifont.name fontName="Ubuntu" height="11" style="0" pixels="false">Default</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color red="255" green="0" blue="0" />
-    </foreground_color>
-    <gradient>false</gradient>
-    <height>80</height>
-    <horizontal_fill>true</horizontal_fill>
-    <line_color>
-      <color red="128" green="0" blue="255" />
-    </line_color>
-    <line_style>0</line_style>
-    <line_width>0</line_width>
-    <name>Rectangle</name>
-    <pv_name></pv_name>
-    <pv_value />
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <transparent>false</transparent>
-    <visible>true</visible>
-    <widget_type>Rectangle</widget_type>
-    <width>775</width>
-    <wuid>-7231c4ff:1679c144bcf:-7c2b</wuid>
-    <x>10</x>
-    <y>470</y>
-  </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
     <auto_size>false</auto_size>
@@ -2210,7 +2152,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
-    <height>145</height>
+    <height>100</height>
     <lock_children>false</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
@@ -2291,63 +2233,6 @@ $(pv_value)</tooltip>
     <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
       <actions hook="false" hook_all="false">
         <action type="OPEN_DISPLAY">
-          <path>data.opi</path>
-          <macros>
-            <include_parent_macros>true</include_parent_macros>
-            <SIG>current</SIG>
-            <CH>A</CH>
-          </macros>
-          <mode>6</mode>
-          <description></description>
-        </action>
-      </actions>
-      <alarm_pulsing>false</alarm_pulsing>
-      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-      <background_color>
-        <color red="240" green="240" blue="240" />
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_color>
-        <color red="0" green="128" blue="255" />
-      </border_color>
-      <border_style>0</border_style>
-      <border_width>1</border_width>
-      <enabled>true</enabled>
-      <font>
-        <opifont.name fontName="Ubuntu" height="9" style="0" pixels="false">Fine Print</opifont.name>
-      </font>
-      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-      <foreground_color>
-        <color red="0" green="0" blue="0" />
-      </foreground_color>
-      <height>30</height>
-      <image></image>
-      <name>Action Button</name>
-      <push_action_index>0</push_action_index>
-      <pv_name></pv_name>
-      <pv_value />
-      <rules />
-      <scale_options>
-        <width_scalable>true</width_scalable>
-        <height_scalable>true</height_scalable>
-        <keep_wh_ratio>false</keep_wh_ratio>
-      </scale_options>
-      <scripts />
-      <style>0</style>
-      <text>Plot data</text>
-      <toggle_button>false</toggle_button>
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-      <visible>true</visible>
-      <widget_type>Action Button</widget_type>
-      <width>120</width>
-      <wuid>-7231c4ff:1679c144bcf:-7dfc</wuid>
-      <x>35</x>
-      <y>15</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-      <actions hook="false" hook_all="false">
-        <action type="OPEN_DISPLAY">
           <path>channel_data.opi</path>
           <macros>
             <include_parent_macros>true</include_parent_macros>
@@ -2400,7 +2285,7 @@ $(pv_value)</tooltip>
       <width>120</width>
       <wuid>5b47cdd1:1694da9e46a:-7e49</wuid>
       <x>35</x>
-      <y>95</y>
+      <y>10</y>
     </widget>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
@@ -2421,7 +2306,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
-    <height>145</height>
+    <height>100</height>
     <lock_children>false</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
@@ -2502,63 +2387,6 @@ $(pv_value)</tooltip>
     <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
       <actions hook="false" hook_all="false">
         <action type="OPEN_DISPLAY">
-          <path>data.opi</path>
-          <macros>
-            <include_parent_macros>true</include_parent_macros>
-            <SIG>current</SIG>
-            <CH>B</CH>
-          </macros>
-          <mode>6</mode>
-          <description></description>
-        </action>
-      </actions>
-      <alarm_pulsing>false</alarm_pulsing>
-      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-      <background_color>
-        <color red="240" green="240" blue="240" />
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_color>
-        <color red="0" green="128" blue="255" />
-      </border_color>
-      <border_style>0</border_style>
-      <border_width>1</border_width>
-      <enabled>true</enabled>
-      <font>
-        <opifont.name fontName="Ubuntu" height="9" style="0" pixels="false">Fine Print</opifont.name>
-      </font>
-      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-      <foreground_color>
-        <color red="0" green="0" blue="0" />
-      </foreground_color>
-      <height>30</height>
-      <image></image>
-      <name>Action Button</name>
-      <push_action_index>0</push_action_index>
-      <pv_name></pv_name>
-      <pv_value />
-      <rules />
-      <scale_options>
-        <width_scalable>true</width_scalable>
-        <height_scalable>true</height_scalable>
-        <keep_wh_ratio>false</keep_wh_ratio>
-      </scale_options>
-      <scripts />
-      <style>0</style>
-      <text>Plot data</text>
-      <toggle_button>false</toggle_button>
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-      <visible>true</visible>
-      <widget_type>Action Button</widget_type>
-      <width>120</width>
-      <wuid>-4bb4c8a9:1690589c6c5:-31f7</wuid>
-      <x>35</x>
-      <y>15</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-      <actions hook="false" hook_all="false">
-        <action type="OPEN_DISPLAY">
           <path>channel_data.opi</path>
           <macros>
             <include_parent_macros>true</include_parent_macros>
@@ -2611,7 +2439,7 @@ $(pv_value)</tooltip>
       <width>120</width>
       <wuid>5b47cdd1:1694da9e46a:-7c61</wuid>
       <x>35</x>
-      <y>95</y>
+      <y>10</y>
     </widget>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
@@ -2632,7 +2460,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
-    <height>145</height>
+    <height>100</height>
     <lock_children>false</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
@@ -2713,63 +2541,6 @@ $(pv_value)</tooltip>
     <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
       <actions hook="false" hook_all="false">
         <action type="OPEN_DISPLAY">
-          <path>data.opi</path>
-          <macros>
-            <include_parent_macros>true</include_parent_macros>
-            <SIG>current</SIG>
-            <CH>C</CH>
-          </macros>
-          <mode>6</mode>
-          <description></description>
-        </action>
-      </actions>
-      <alarm_pulsing>false</alarm_pulsing>
-      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-      <background_color>
-        <color red="240" green="240" blue="240" />
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_color>
-        <color red="0" green="128" blue="255" />
-      </border_color>
-      <border_style>0</border_style>
-      <border_width>1</border_width>
-      <enabled>true</enabled>
-      <font>
-        <opifont.name fontName="Ubuntu" height="9" style="0" pixels="false">Fine Print</opifont.name>
-      </font>
-      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-      <foreground_color>
-        <color red="0" green="0" blue="0" />
-      </foreground_color>
-      <height>30</height>
-      <image></image>
-      <name>Action Button</name>
-      <push_action_index>0</push_action_index>
-      <pv_name></pv_name>
-      <pv_value />
-      <rules />
-      <scale_options>
-        <width_scalable>true</width_scalable>
-        <height_scalable>true</height_scalable>
-        <keep_wh_ratio>false</keep_wh_ratio>
-      </scale_options>
-      <scripts />
-      <style>0</style>
-      <text>Plot data</text>
-      <toggle_button>false</toggle_button>
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-      <visible>true</visible>
-      <widget_type>Action Button</widget_type>
-      <width>120</width>
-      <wuid>-4bb4c8a9:1690589c6c5:-31ec</wuid>
-      <x>35</x>
-      <y>15</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-      <actions hook="false" hook_all="false">
-        <action type="OPEN_DISPLAY">
           <path>channel_data.opi</path>
           <macros>
             <include_parent_macros>true</include_parent_macros>
@@ -2822,7 +2593,7 @@ $(pv_value)</tooltip>
       <width>120</width>
       <wuid>5b47cdd1:1694da9e46a:-7c5c</wuid>
       <x>35</x>
-      <y>95</y>
+      <y>10</y>
     </widget>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
@@ -2843,7 +2614,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
-    <height>145</height>
+    <height>100</height>
     <lock_children>false</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
@@ -2924,63 +2695,6 @@ $(pv_value)</tooltip>
     <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
       <actions hook="false" hook_all="false">
         <action type="OPEN_DISPLAY">
-          <path>data.opi</path>
-          <macros>
-            <include_parent_macros>true</include_parent_macros>
-            <SIG>current</SIG>
-            <CH>D</CH>
-          </macros>
-          <mode>6</mode>
-          <description></description>
-        </action>
-      </actions>
-      <alarm_pulsing>false</alarm_pulsing>
-      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-      <background_color>
-        <color red="240" green="240" blue="240" />
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_color>
-        <color red="0" green="128" blue="255" />
-      </border_color>
-      <border_style>0</border_style>
-      <border_width>1</border_width>
-      <enabled>true</enabled>
-      <font>
-        <opifont.name fontName="Ubuntu" height="9" style="0" pixels="false">Fine Print</opifont.name>
-      </font>
-      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-      <foreground_color>
-        <color red="0" green="0" blue="0" />
-      </foreground_color>
-      <height>30</height>
-      <image></image>
-      <name>Action Button</name>
-      <push_action_index>0</push_action_index>
-      <pv_name></pv_name>
-      <pv_value />
-      <rules />
-      <scale_options>
-        <width_scalable>true</width_scalable>
-        <height_scalable>true</height_scalable>
-        <keep_wh_ratio>false</keep_wh_ratio>
-      </scale_options>
-      <scripts />
-      <style>0</style>
-      <text>Plot data</text>
-      <toggle_button>false</toggle_button>
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-      <visible>true</visible>
-      <widget_type>Action Button</widget_type>
-      <width>120</width>
-      <wuid>-4bb4c8a9:1690589c6c5:-31e1</wuid>
-      <x>35</x>
-      <y>15</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-      <actions hook="false" hook_all="false">
-        <action type="OPEN_DISPLAY">
           <path>channel_data.opi</path>
           <macros>
             <include_parent_macros>true</include_parent_macros>
@@ -3033,7 +2747,7 @@ $(pv_value)</tooltip>
       <width>120</width>
       <wuid>5b47cdd1:1694da9e46a:-7c57</wuid>
       <x>35</x>
-      <y>95</y>
+      <y>10</y>
     </widget>
   </widget>
 </display>
