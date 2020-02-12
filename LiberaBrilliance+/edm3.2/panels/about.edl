@@ -3,10 +3,10 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 1161
-y 753
+x 398
+y 205
 w 300
-h 180
+h 220
 font "helvetica-bold-r-12.0"
 ctlFont "helvetica-bold-r-12.0"
 btnFont "helvetica-medium-r-10.0"
@@ -34,7 +34,7 @@ release 0
 x 5
 y 15
 w 290
-h 160
+h 200
 lineColor index 14
 fillColor index 0
 endObjectProperties
@@ -44,7 +44,7 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 5
 y 5
 w 145
@@ -63,11 +63,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 10
 y 30
 w 285
-h 135
+h 180
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -82,6 +82,9 @@ value {
   "For more flexibility in signal acquisition, one can"
   "use local \"libera-ireg\" client that runs in the"
   "instrument."
+  ""
+  "Multibunch processing is only available in latest"
+  "(2020) BPM module."
 }
 endObjectProperties
 

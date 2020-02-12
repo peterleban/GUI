@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 336
-y 159
+x 593
+y 543
 w 700
 h 380
 font "helvetica-bold-r-12.0"
@@ -40,7 +40,7 @@ h 170
 autoScaleBothDirections
 graphTitle "Horizontal position"
 xLabel "samples"
-yLabel "[mm]"
+yLabel "[nm]"
 fgColor index 14
 bgColor index 0
 gridColor index 2
@@ -66,7 +66,10 @@ y2Max 1
 # Trace Properties
 numTraces 1
 yPv {
-  0 "CALC\\deljenje1k(EPICS\\$(HOSTNAME):$(BPM):sa.X,1000)"
+  0 "EPICS\\$(HOSTNAME):$(BPM):sa.X"
+}
+ySigned {
+  0 1
 }
 plotColor {
   0 index 14
@@ -88,7 +91,7 @@ h 170
 autoScaleBothDirections
 graphTitle "Vertical position"
 xLabel "samples"
-yLabel "[mm]"
+yLabel "[nm]"
 fgColor index 14
 bgColor index 0
 gridColor index 2
@@ -114,7 +117,10 @@ y2Max 1
 # Trace Properties
 numTraces 1
 yPv {
-  0 "CALC\\deljenje1k(EPICS\\$(HOSTNAME):$(BPM):sa.Y,1000)"
+  0 "EPICS\\$(HOSTNAME):$(BPM):sa.Y"
+}
+ySigned {
+  0 1
 }
 plotColor {
   0 index 14

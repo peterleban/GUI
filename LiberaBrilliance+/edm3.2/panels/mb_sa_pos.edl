@@ -1,0 +1,503 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 562
+y 386
+w 900
+h 440
+font "helvetica-bold-r-12.0"
+ctlFont "helvetica-bold-r-12.0"
+btnFont "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+title "Multibunch SA on $(HOSTNAME)/$(BPM)"
+showGrid
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 405
+w 415
+h 30
+lineColor index 14
+fill
+fillColor index 1
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 430
+y 405
+w 45
+h 30
+fgColor index 14
+onColor index 20
+offColor index 15
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(HOSTNAME):$(BPM):sa_mb.SCAN"
+pressValue "2"
+releaseValue "0"
+onLabel "ON"
+offLabel "OFF"
+toggle
+3d
+useEnumNumeric
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 350
+y 410
+w 70
+h 20
+fgColor index 14
+onColor index 6
+offColor index 43
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\$(BPM)_$(MBSA)_traces=i:0"
+indicatorPv "LOC\\$(BPM)_$(MBSA)_traces=i:0"
+onLabel "Bunch #4"
+offLabel "Bunch #4"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 3
+readBitPos 3
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 275
+y 410
+w 70
+h 20
+fgColor index 14
+onColor index 6
+offColor index 46
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\$(BPM)_$(MBSA)_traces=i:0"
+indicatorPv "LOC\\$(BPM)_$(MBSA)_traces=i:0"
+onLabel "Bunch #3"
+offLabel "Bunch #3"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 2
+readBitPos 2
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 200
+y 410
+w 70
+h 20
+fgColor index 14
+onColor index 6
+offColor index 83
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\$(BPM)_$(MBSA)_traces=i:0"
+indicatorPv "LOC\\$(BPM)_$(MBSA)_traces=i:0"
+onLabel "Bunch #2"
+offLabel "Bunch #2"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 1
+readBitPos 1
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 125
+y 410
+w 70
+h 20
+fgColor index 0
+onColor index 6
+offColor index 26
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\$(BPM)_$(MBSA)_traces=i:0"
+indicatorPv "LOC\\$(BPM)_$(MBSA)_traces=i:0"
+onLabel "Bunch #1"
+offLabel "Bunch #1"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 410
+w 105
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Select to show:"
+}
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 8
+release 0
+# Geometry
+x 10
+y 5
+w 440
+h 395
+# Appearance
+autoScaleBothDirections
+graphTitle "Horizontal position"
+xLabel "SA samples"
+yLabel "nm"
+fgColor index 14
+bgColor index 1
+gridColor index 9
+font "helvetica-medium-r-14.0"
+# Operating Modes
+plotMode "plotLastNPts"
+nPts 30
+traceCtlPv "LOC\\$(BPM)_$(MBSA)_traces=i:0"
+resetPv "LOC\\$(BPM)_$(MBSA)_reset=i:0"
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMin 0
+xMax 2048
+xLabelIntervals 4
+xMajorsPerLabel 1
+xMinorsPerMajor 8
+xShowLabelGrid
+xShowMajorGrid
+xShowMinorGrid
+xUserSpecScaleDiv 1
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+yLabelIntervals 4
+yMajorsPerLabel 1
+yMinorsPerMajor 4
+yShowLabelGrid
+yShowMajorGrid
+yShowMinorGrid
+yUserSpecScaleDiv 1
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 4
+yPv {
+  0 "EPICS\\$(HOSTNAME):$(BPM):sa_mb.MB0_X"
+  1 "EPICS\\$(HOSTNAME):$(BPM):sa_mb.MB1_X"
+  2 "EPICS\\$(HOSTNAME):$(BPM):sa_mb.MB2_X"
+  3 "EPICS\\$(HOSTNAME):$(BPM):sa_mb.MB3_X"
+}
+plotSymbolType {
+  0 "circle"
+  1 "circle"
+  2 "circle"
+  3 "circle"
+}
+ySigned {
+  0 1
+  1 1
+  2 1
+  3 1
+}
+plotColor {
+  0 index 26
+  1 index 83
+  2 index 46
+  3 index 43
+}
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 8
+release 0
+# Geometry
+x 455
+y 5
+w 440
+h 395
+# Appearance
+autoScaleBothDirections
+graphTitle "Vertical position"
+xLabel "SA samples"
+yLabel "nm"
+fgColor index 14
+bgColor index 1
+gridColor index 9
+font "helvetica-medium-r-14.0"
+# Operating Modes
+plotMode "plotLastNPts"
+nPts 50
+traceCtlPv "LOC\\$(BPM)_$(MBSAY)_tracesy=i:0"
+resetPv "LOC\\$(BPM)_$(MBSAY)_resety=i:0"
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMin 0
+xMax 2048
+xLabelIntervals 4
+xMajorsPerLabel 1
+xMinorsPerMajor 8
+xShowLabelGrid
+xShowMajorGrid
+xShowMinorGrid
+xUserSpecScaleDiv 1
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+yLabelIntervals 4
+yMajorsPerLabel 1
+yMinorsPerMajor 4
+yShowLabelGrid
+yShowMajorGrid
+yShowMinorGrid
+yUserSpecScaleDiv 1
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 4
+yPv {
+  0 "EPICS\\$(HOSTNAME):$(BPM):sa_mb.MB0_Y"
+  1 "EPICS\\$(HOSTNAME):$(BPM):sa_mb.MB1_Y"
+  2 "EPICS\\$(HOSTNAME):$(BPM):sa_mb.MB2_Y"
+  3 "EPICS\\$(HOSTNAME):$(BPM):sa_mb.MB3_Y"
+}
+plotSymbolType {
+  0 "circle"
+  1 "circle"
+  2 "circle"
+  3 "circle"
+}
+ySigned {
+  0 1
+  1 1
+  2 1
+  3 1
+}
+plotColor {
+  0 index 26
+  1 index 83
+  2 index 46
+  3 index 43
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 480
+y 405
+w 415
+h 30
+lineColor index 14
+fill
+fillColor index 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 485
+y 410
+w 105
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Select to show:"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 595
+y 410
+w 70
+h 20
+fgColor index 0
+onColor index 6
+offColor index 26
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\$(BPM)_$(MBSAY)_tracesy=i:0"
+indicatorPv "LOC\\$(BPM)_$(MBSAY)_tracesy=i:0"
+onLabel "Bunch #1"
+offLabel "Bunch #1"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 670
+y 410
+w 70
+h 20
+fgColor index 14
+onColor index 6
+offColor index 83
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\$(BPM)_$(MBSAY)_tracesy=i:0"
+indicatorPv "LOC\\$(BPM)_$(MBSAY)_tracesy=i:0"
+onLabel "Bunch #2"
+offLabel "Bunch #2"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 1
+readBitPos 1
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 745
+y 410
+w 70
+h 20
+fgColor index 14
+onColor index 6
+offColor index 46
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\$(BPM)_$(MBSAY)_tracesy=i:0"
+indicatorPv "LOC\\$(BPM)_$(MBSAY)_tracesy=i:0"
+onLabel "Bunch #3"
+offLabel "Bunch #3"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 2
+readBitPos 2
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 820
+y 410
+w 70
+h 20
+fgColor index 14
+onColor index 6
+offColor index 43
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\$(BPM)_$(MBSAY)_tracesy=i:0"
+indicatorPv "LOC\\$(BPM)_$(MBSAY)_tracesy=i:0"
+onLabel "Bunch #4"
+offLabel "Bunch #4"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 3
+readBitPos 3
+endObjectProperties
+

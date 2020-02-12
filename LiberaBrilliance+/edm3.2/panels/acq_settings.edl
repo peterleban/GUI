@@ -3,10 +3,10 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 444
-y 94
+x 371
+y 56
 w 300
-h 700
+h 870
 font "helvetica-bold-r-12.0"
 ctlFont "helvetica-bold-r-12.0"
 btnFont "helvetica-medium-r-10.0"
@@ -462,7 +462,7 @@ major 4
 minor 1
 release 1
 x 10
-y 530
+y 625
 w 115
 h 20
 font "helvetica-medium-r-14.0"
@@ -481,7 +481,7 @@ major 4
 minor 0
 release 0
 x 130
-y 525
+y 620
 w 95
 h 25
 fgColor index 14
@@ -502,7 +502,7 @@ major 4
 minor 0
 release 0
 x 130
-y 500
+y 595
 w 95
 h 25
 fgColor index 14
@@ -513,65 +513,6 @@ topShadowColor index 0
 botShadowColor index 14
 controlPv "EPICS\\$(HOSTNAME):$(BPM):sp.SCAN"
 indicatorPv "EPICS\\$(HOSTNAME):$(BPM):sp.SCAN"
-font "helvetica-medium-r-14.0"
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 10
-y 505
-w 90
-h 20
-font "helvetica-medium-r-14.0"
-fgColor index 14
-bgColor index 0
-useDisplayBg
-value {
-  "Scan mode:"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 10
-y 475
-w 215
-h 20
-font "helvetica-medium-r-12.0"
-fontAlign "center"
-fgColor index 0
-bgColor index 9
-value {
-  "SP (Single-Pass)"
-}
-endObjectProperties
-
-# (Menu Button)
-object activeMenuButtonClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 130
-y 595
-w 95
-h 25
-fgColor index 14
-fgAlarm
-bgColor index 0
-inconsistentColor index 14
-topShadowColor index 0
-botShadowColor index 14
-controlPv "EPICS\\$(HOSTNAME):$(BPM):sa.SCAN"
-indicatorPv "EPICS\\$(HOSTNAME):$(BPM):sa.SCAN"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -609,6 +550,65 @@ fontAlign "center"
 fgColor index 0
 bgColor index 9
 value {
+  "SP (Single-Pass)"
+}
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 130
+y 760
+w 95
+h 25
+fgColor index 14
+fgAlarm
+bgColor index 0
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(HOSTNAME):$(BPM):sa.SCAN"
+indicatorPv "EPICS\\$(HOSTNAME):$(BPM):sa.SCAN"
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 765
+w 90
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Scan mode:"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 735
+w 215
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 0
+bgColor index 9
+value {
   "SA (Slow Acquisition)"
 }
 endObjectProperties
@@ -620,7 +620,7 @@ major 4
 minor 0
 release 0
 x 130
-y 665
+y 690
 w 95
 h 25
 fgColor index 14
@@ -641,7 +641,7 @@ major 4
 minor 1
 release 1
 x 10
-y 670
+y 695
 w 90
 h 20
 font "helvetica-medium-r-14.0"
@@ -660,7 +660,7 @@ major 4
 minor 1
 release 1
 x 10
-y 640
+y 665
 w 215
 h 20
 font "helvetica-medium-r-12.0"
@@ -826,7 +826,7 @@ major 4
 minor 1
 release 0
 x 230
-y 500
+y 595
 w 50
 h 50
 fgColor index 14
@@ -854,7 +854,7 @@ major 4
 minor 1
 release 0
 x 230
-y 595
+y 760
 w 50
 h 25
 fgColor index 14
@@ -882,7 +882,7 @@ major 4
 minor 1
 release 0
 x 230
-y 665
+y 690
 w 50
 h 25
 fgColor index 14
@@ -901,5 +901,219 @@ font "helvetica-medium-r-10.0"
 objType "controls"
 controlBitPos 1
 readBitPos 1
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 230
+y 500
+w 50
+h 50
+fgColor index 14
+onColor index 20
+offColor index 15
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(HOSTNAME):$(BPM):tdp_mb.SCAN"
+indicatorPv "EPICS\\$(HOSTNAME):$(BPM):tdp_mb.SCAN"
+onLabel "Enabled"
+offLabel "Disabled"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 1
+readBitPos 1
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 130
+y 525
+w 95
+h 25
+fgColor index 14
+fgAlarm
+bgColor index 0
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(HOSTNAME):$(BPM):tdp_mb.ACQM"
+indicatorPv "EPICS\\$(HOSTNAME):$(BPM):tdp_mb.ACQM"
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 530
+w 115
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Acquisition mode:"
+}
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 130
+y 500
+w 95
+h 25
+fgColor index 14
+fgAlarm
+bgColor index 0
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(HOSTNAME):$(BPM):tdp_mb.SCAN"
+indicatorPv "EPICS\\$(HOSTNAME):$(BPM):tdp_mb.SCAN"
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 505
+w 90
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Scan mode:"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 475
+w 215
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 0
+bgColor index 9
+value {
+  "Multibunch TDP (Time-Domain)"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 230
+y 830
+w 50
+h 25
+fgColor index 14
+onColor index 20
+offColor index 15
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(HOSTNAME):$(BPM):sa_mb.SCAN"
+indicatorPv "EPICS\\$(HOSTNAME):$(BPM):sa_mb.SCAN"
+onLabel "Enabled"
+offLabel "Disabled"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 1
+readBitPos 1
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 130
+y 830
+w 95
+h 25
+fgColor index 14
+fgAlarm
+bgColor index 0
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(HOSTNAME):$(BPM):sa_mb.SCAN"
+indicatorPv "EPICS\\$(HOSTNAME):$(BPM):sa_mb.SCAN"
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 835
+w 90
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Scan mode:"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 805
+w 215
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 0
+bgColor index 9
+value {
+  "Multibunch SA (Slow Acquisition)"
+}
 endObjectProperties
 

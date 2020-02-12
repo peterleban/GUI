@@ -1,0 +1,685 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 313
+y 407
+w 900
+h 520
+font "helvetica-bold-r-12.0"
+ctlFont "helvetica-bold-r-12.0"
+btnFont "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+title "Multibunch TDP on $(HOSTNAME)/$(BPM)"
+showGrid
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 405
+w 440
+h 30
+lineColor index 14
+fill
+fillColor index 1
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 440
+w 885
+h 70
+lineColor index 14
+fill
+fillColor index 1
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 540
+y 450
+w 110
+h 17
+controlPv "EPICS\\$(HOSTNAME):$(BPM):$(DD).MT"
+font "helvetica-medium-r-14.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 460
+y 450
+w 80
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Timestamp:"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 460
+y 480
+w 120
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Acq.offset (turns):"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 580
+y 480
+w 70
+h 20
+controlPv "EPICS\\$(HOSTNAME):$(BPM):$(DD).OFFS"
+font "helvetica-medium-r-14.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+editable
+motifWidget
+limitsFromDb
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 450
+w 90
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Scan mode:"
+}
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 140
+y 445
+w 95
+h 25
+fgColor index 14
+fgAlarm
+bgColor index 0
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(HOSTNAME):$(BPM):$(DD).SCAN"
+indicatorPv "EPICS\\$(HOSTNAME):$(BPM):$(DD).SCAN"
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 475
+w 115
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Acquisition mode:"
+}
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 140
+y 470
+w 95
+h 25
+fgColor index 14
+fgAlarm
+bgColor index 0
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(HOSTNAME):$(BPM):$(DD).ACQM"
+indicatorPv "EPICS\\$(HOSTNAME):$(BPM):$(DD).ACQM"
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 240
+y 445
+w 95
+h 50
+fgColor index 14
+onColor index 0
+offColor index 0
+topShadowColor index 0
+botShadowColor index 14
+controlPv "EPICS\\$(HOSTNAME):$(BPM):$(DD).PROC"
+pressValue "1"
+onLabel "Processing..."
+offLabel "Read data"
+3d
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 350
+y 410
+w 70
+h 20
+fgColor index 14
+onColor index 6
+offColor index 43
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\$(BPM)_$(DD)_traces=i:0"
+indicatorPv "LOC\\$(BPM)_$(DD)_traces=i:0"
+onLabel "Bunch #4"
+offLabel "Bunch #4"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 3
+readBitPos 3
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 275
+y 410
+w 70
+h 20
+fgColor index 14
+onColor index 6
+offColor index 46
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\$(BPM)_$(DD)_traces=i:0"
+indicatorPv "LOC\\$(BPM)_$(DD)_traces=i:0"
+onLabel "Bunch #3"
+offLabel "Bunch #3"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 2
+readBitPos 2
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 200
+y 410
+w 70
+h 20
+fgColor index 14
+onColor index 6
+offColor index 83
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\$(BPM)_$(DD)_traces=i:0"
+indicatorPv "LOC\\$(BPM)_$(DD)_traces=i:0"
+onLabel "Bunch #2"
+offLabel "Bunch #2"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 1
+readBitPos 1
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 125
+y 410
+w 70
+h 20
+fgColor index 0
+onColor index 6
+offColor index 26
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\$(BPM)_$(DD)_traces=i:0"
+indicatorPv "LOC\\$(BPM)_$(DD)_traces=i:0"
+onLabel "Bunch #1"
+offLabel "Bunch #1"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 410
+w 105
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Select to show:"
+}
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 8
+release 0
+# Geometry
+x 10
+y 5
+w 440
+h 395
+# Appearance
+autoScaleBothDirections
+graphTitle "Horizontal position"
+xLabel "turns"
+yLabel "nm"
+fgColor index 14
+bgColor index 1
+gridColor index 9
+font "helvetica-medium-r-14.0"
+# Operating Modes
+plotMode "plotLastNPts"
+nPts 50
+traceCtlPv "LOC\\$(BPM)_$(DD)_traces=i:0"
+resetPv "LOC\\$(BPM)_$(DD)_reset=i:0"
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMin 0
+xMax 2048
+xLabelIntervals 4
+xMajorsPerLabel 1
+xMinorsPerMajor 8
+xShowLabelGrid
+xShowMajorGrid
+xShowMinorGrid
+xUserSpecScaleDiv 1
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+yLabelIntervals 4
+yMajorsPerLabel 1
+yMinorsPerMajor 4
+yShowLabelGrid
+yShowMajorGrid
+yShowMinorGrid
+yUserSpecScaleDiv 1
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 4
+yPv {
+  0 "EPICS\\$(HOSTNAME):$(BPM):$(DD).MB0_X"
+  1 "EPICS\\$(HOSTNAME):$(BPM):$(DD).MB1_X"
+  2 "EPICS\\$(HOSTNAME):$(BPM):$(DD).MB2_X"
+  3 "EPICS\\$(HOSTNAME):$(BPM):$(DD).MB3_X"
+}
+plotSymbolType {
+  0 "circle"
+  1 "circle"
+  2 "circle"
+  3 "circle"
+}
+ySigned {
+  0 1
+  1 1
+  2 1
+  3 1
+}
+plotColor {
+  0 index 26
+  1 index 83
+  2 index 46
+  3 index 43
+}
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 8
+release 0
+# Geometry
+x 455
+y 5
+w 440
+h 395
+# Appearance
+autoScaleBothDirections
+graphTitle "Vertical position"
+xLabel "turns"
+yLabel "nm"
+fgColor index 14
+bgColor index 1
+gridColor index 9
+font "helvetica-medium-r-14.0"
+# Operating Modes
+plotMode "plotLastNPts"
+nPts 50
+traceCtlPv "LOC\\$(BPM)_$(DD)_tracesy=i:0"
+resetPv "LOC\\$(BPM)_$(DD)_resety=i:0"
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMin 0
+xMax 2048
+xLabelIntervals 4
+xMajorsPerLabel 1
+xMinorsPerMajor 8
+xShowLabelGrid
+xShowMajorGrid
+xShowMinorGrid
+xUserSpecScaleDiv 1
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+yLabelIntervals 4
+yMajorsPerLabel 1
+yMinorsPerMajor 4
+yShowLabelGrid
+yShowMajorGrid
+yShowMinorGrid
+yUserSpecScaleDiv 1
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 4
+yPv {
+  0 "EPICS\\$(HOSTNAME):$(BPM):$(DD).MB0_Y"
+  1 "EPICS\\$(HOSTNAME):$(BPM):$(DD).MB1_Y"
+  2 "EPICS\\$(HOSTNAME):$(BPM):$(DD).MB2_Y"
+  3 "EPICS\\$(HOSTNAME):$(BPM):$(DD).MB3_Y"
+}
+plotSymbolType {
+  0 "circle"
+  1 "circle"
+  2 "circle"
+  3 "circle"
+}
+ySigned {
+  0 1
+  1 1
+  2 1
+  3 1
+}
+plotColor {
+  0 index 26
+  1 index 83
+  2 index 46
+  3 index 43
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 455
+y 405
+w 440
+h 30
+lineColor index 14
+fill
+fillColor index 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 460
+y 410
+w 105
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Select to show:"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 570
+y 410
+w 70
+h 20
+fgColor index 0
+onColor index 6
+offColor index 26
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\$(BPM)_$(DD)_tracesy=i:0"
+indicatorPv "LOC\\$(BPM)_$(DD)_tracesy=i:0"
+onLabel "Bunch #1"
+offLabel "Bunch #1"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 645
+y 410
+w 70
+h 20
+fgColor index 14
+onColor index 6
+offColor index 83
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\$(BPM)_$(DD)_tracesy=i:0"
+indicatorPv "LOC\\$(BPM)_$(DD)_tracesy=i:0"
+onLabel "Bunch #2"
+offLabel "Bunch #2"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 1
+readBitPos 1
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 720
+y 410
+w 70
+h 20
+fgColor index 14
+onColor index 6
+offColor index 46
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\$(BPM)_$(DD)_tracesy=i:0"
+indicatorPv "LOC\\$(BPM)_$(DD)_tracesy=i:0"
+onLabel "Bunch #3"
+offLabel "Bunch #3"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 2
+readBitPos 2
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 795
+y 410
+w 70
+h 20
+fgColor index 14
+onColor index 6
+offColor index 43
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\$(BPM)_$(DD)_tracesy=i:0"
+indicatorPv "LOC\\$(BPM)_$(DD)_tracesy=i:0"
+onLabel "Bunch #4"
+offLabel "Bunch #4"
+labelType "literal"
+3d
+font "helvetica-medium-r-10.0"
+objType "controls"
+controlBitPos 3
+readBitPos 3
+endObjectProperties
+
