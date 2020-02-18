@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 175
-y 78
+x 8
+y 249
 w 400
 h 250
 font "helvetica-medium-r-18.0"
@@ -269,9 +269,14 @@ botShadowColor index 14
 font "helvetica-medium-r-14.0"
 buttonLabel "GDX"
 numPvs 4
-numDsps 1
+numDsps 2
 displayFileName {
-  0 "gdx3"
+  0 "gdx3.edl"
+  1 "gdx6.edl"
+}
+menuLabel {
+  0 "userblock 3"
+  1 "userblock 6"
 }
 endObjectProperties
 
