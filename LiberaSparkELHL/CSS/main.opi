@@ -18,7 +18,7 @@
   <height>720</height>
   <macros>
     <include_parent_macros>true</include_parent_macros>
-    <DEVICE>spark</DEVICE>
+    <DEVICE>libera</DEVICE>
     <SIG>signals:adc</SIG>
   </macros>
   <name>Libera Digit500 GUI</name>
@@ -165,7 +165,7 @@
       <foreground_color>
         <color red="192" green="192" blue="192" />
       </foreground_color>
-      <height>631</height>
+      <height>628</height>
       <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
@@ -2490,7 +2490,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color red="192" green="192" blue="192" />
       </foreground_color>
-      <height>631</height>
+      <height>628</height>
       <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
@@ -2603,7 +2603,7 @@ $(pv_value)</tooltip>
           <foreground_color>
             <color red="192" green="192" blue="192" />
           </foreground_color>
-          <height>598</height>
+          <height>595</height>
           <lock_children>false</lock_children>
           <macros>
             <include_parent_macros>true</include_parent_macros>
@@ -3208,7 +3208,7 @@ $(pv_value)</tooltip>
           <foreground_color>
             <color red="192" green="192" blue="192" />
           </foreground_color>
-          <height>598</height>
+          <height>595</height>
           <lock_children>false</lock_children>
           <macros>
             <include_parent_macros>true</include_parent_macros>
@@ -4441,7 +4441,7 @@ $(pv_value)</tooltip>
           <foreground_color>
             <color red="192" green="192" blue="192" />
           </foreground_color>
-          <height>598</height>
+          <height>595</height>
           <lock_children>false</lock_children>
           <macros>
             <include_parent_macros>true</include_parent_macros>
@@ -4653,7 +4653,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color red="192" green="192" blue="192" />
       </foreground_color>
-      <height>631</height>
+      <height>628</height>
       <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
@@ -5098,7 +5098,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color red="192" green="192" blue="192" />
       </foreground_color>
-      <height>631</height>
+      <height>628</height>
       <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
@@ -5671,7 +5671,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color red="192" green="192" blue="192" />
       </foreground_color>
-      <height>631</height>
+      <height>628</height>
       <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>

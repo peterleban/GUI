@@ -18,7 +18,7 @@
   <height>800</height>
   <macros>
     <include_parent_macros>true</include_parent_macros>
-    <DEVICE>pt</DEVICE>
+    <DEVICE>libera</DEVICE>
   </macros>
   <name>LiberaSparkERXR</name>
   <rules />
@@ -1207,8 +1207,8 @@ $(pv_value)</tooltip>
       <horizontal_alignment>1</horizontal_alignment>
       <horizontal_buttons_layout>false</horizontal_buttons_layout>
       <limits_from_pv>false</limits_from_pv>
-      <maximum>0.0</maximum>
-      <minimum>-80.0</minimum>
+      <maximum>31.0</maximum>
+      <minimum>0.0</minimum>
       <name>Spinner</name>
       <page_increment>10.0</page_increment>
       <precision>0</precision>

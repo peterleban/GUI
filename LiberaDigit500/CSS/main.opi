@@ -18,7 +18,7 @@
   <height>720</height>
   <macros>
     <include_parent_macros>true</include_parent_macros>
-    <DEVICE>digitac2</DEVICE>
+    <DEVICE>libera</DEVICE>
     <SIG>signals:adc</SIG>
   </macros>
   <name>Libera Digit500 GUI</name>
@@ -365,7 +365,7 @@ $(pv_value)</tooltip>
       <show_scrollbar>true</show_scrollbar>
       <tooltip></tooltip>
       <transparent>true</transparent>
-      <visible>false</visible>
+      <visible>true</visible>
       <widget_type>Grouping Container</widget_type>
       <width>277</width>
       <wuid>4f592d9b:16798216d69:-7e52</wuid>
@@ -1639,7 +1639,7 @@ $(pv_value)</tooltip>
       <show_scrollbar>true</show_scrollbar>
       <tooltip></tooltip>
       <transparent>true</transparent>
-      <visible>true</visible>
+      <visible>false</visible>
       <widget_type>Grouping Container</widget_type>
       <width>277</width>
       <wuid>-23894fa2:167c551b480:-7ebf</wuid>
@@ -2063,11 +2063,11 @@ $(trace_0_y_pv_value)</tooltip>
     <trace_1_point_size>4</trace_1_point_size>
     <trace_1_point_style>0</trace_1_point_style>
     <trace_1_trace_color>
-      <color red="32" green="74" blue="135" />
+      <color red="242" green="26" blue="26" />
     </trace_1_trace_color>
     <trace_1_trace_type>0</trace_1_trace_type>
     <trace_1_update_delay>100</trace_1_update_delay>
-    <trace_1_update_mode>1</trace_1_update_mode>
+    <trace_1_update_mode>0</trace_1_update_mode>
     <trace_1_visible>true</trace_1_visible>
     <trace_1_x_axis_index>0</trace_1_x_axis_index>
     <trace_1_x_pv></trace_1_x_pv>
@@ -2084,11 +2084,11 @@ $(trace_0_y_pv_value)</tooltip>
     <trace_2_point_size>4</trace_2_point_size>
     <trace_2_point_style>0</trace_2_point_style>
     <trace_2_trace_color>
-      <color red="78" green="154" blue="6" />
+      <color red="33" green="179" blue="33" />
     </trace_2_trace_color>
     <trace_2_trace_type>0</trace_2_trace_type>
     <trace_2_update_delay>100</trace_2_update_delay>
-    <trace_2_update_mode>1</trace_2_update_mode>
+    <trace_2_update_mode>0</trace_2_update_mode>
     <trace_2_visible>true</trace_2_visible>
     <trace_2_x_axis_index>0</trace_2_x_axis_index>
     <trace_2_x_pv></trace_2_x_pv>
@@ -2105,11 +2105,11 @@ $(trace_0_y_pv_value)</tooltip>
     <trace_3_point_size>4</trace_3_point_size>
     <trace_3_point_style>0</trace_3_point_style>
     <trace_3_trace_color>
-      <color red="46" green="52" blue="54" />
+      <color red="0" green="0" blue="0" />
     </trace_3_trace_color>
     <trace_3_trace_type>0</trace_3_trace_type>
     <trace_3_update_delay>100</trace_3_update_delay>
-    <trace_3_update_mode>1</trace_3_update_mode>
+    <trace_3_update_mode>0</trace_3_update_mode>
     <trace_3_visible>true</trace_3_visible>
     <trace_3_x_axis_index>0</trace_3_x_axis_index>
     <trace_3_x_pv></trace_3_x_pv>

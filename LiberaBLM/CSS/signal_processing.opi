@@ -1493,7 +1493,7 @@ $(pv_value)</tooltip>
         <path>data_stream.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
-          <SIG>signals:average</SIG>
+          <SIG>signals:sa</SIG>
           <TITLE>SA data stream (integrated or averaged)</TITLE>
           <XLABEL>SA samples</XLABEL>
           <YLABEL>amplitude [a.u.]</YLABEL>
