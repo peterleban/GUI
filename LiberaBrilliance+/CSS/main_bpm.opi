@@ -3966,6 +3966,8 @@ $(pv_value)</tooltip>
           <macros>
             <include_parent_macros>true</include_parent_macros>
             <SIG>pm:ddc_synth</SIG>
+            <XLABEL>turns</XLABEL>
+            <YLABEL1>amplitudes [a.u.]</YLABEL1>
           </macros>
           <mode>6</mode>
           <description>Open postmortem settings</description>
@@ -4389,6 +4391,78 @@ $(pv_value)</tooltip>
       <wuid>-4c4b84d5:1687af14a43:-77c6</wuid>
       <x>10</x>
       <y>115</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+      <actions hook="false" hook_all="false">
+        <action type="OPEN_DISPLAY">
+          <path>data_tbt.opi</path>
+          <macros>
+            <include_parent_macros>true</include_parent_macros>
+            <SIG>ddc_synth</SIG>
+            <TITLE>Turn-by-turn DDC</TITLE>
+            <XLABEL>turns</XLABEL>
+            <YLABEL1>amplitudes [a.u.]</YLABEL1>
+            <YLABEL2>position [nm]</YLABEL2>
+          </macros>
+          <mode>6</mode>
+          <description>Turn-by-turn DDC synthetic</description>
+        </action>
+        <action type="OPEN_DISPLAY">
+          <path>data_tbtraw.opi</path>
+          <macros>
+            <include_parent_macros>true</include_parent_macros>
+            <SIG>$(BPM):ddc_raw</SIG>
+            <TITLE>Turn-by-turn DDC raw</TITLE>
+            <XLABEL>turns</XLABEL>
+            <YLABEL>amplitudes [a.u.]</YLABEL>
+            <TIM>evrx</TIM>
+          </macros>
+          <mode>6</mode>
+          <description>Turn-by-turn DDC raw</description>
+        </action>
+      </actions>
+      <actions_from_pv>false</actions_from_pv>
+      <alarm_pulsing>false</alarm_pulsing>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <background_color>
+        <color red="254" green="217" blue="188" />
+      </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="0" blue="0" />
+      </border_color>
+      <border_style>6</border_style>
+      <border_width>1</border_width>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="Ubuntu" height="9" style="0" pixels="false">Fine Print</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>30</height>
+      <label>Turn-by-Turn DDC</label>
+      <name>Menu Button</name>
+      <pv_name></pv_name>
+      <pv_value />
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <show_down_arrow>true</show_down_arrow>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <transparent>false</transparent>
+      <visible>true</visible>
+      <widget_type>Menu Button</widget_type>
+      <width>130</width>
+      <wuid>-3cf5abd0:16a1feda1c1:-7dde</wuid>
+      <x>120</x>
+      <y>44</y>
     </widget>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
