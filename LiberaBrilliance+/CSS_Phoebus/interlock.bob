@@ -1,0 +1,1102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>$(DEVICE), $(BPM) - Interlock</name>
+  <width>650</width>
+  <height>730</height>
+  <background_color>
+    <color red="18" green="19" blue="42">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="group" version="2.0.0">
+    <name>Interlock status</name>
+    <x>10</x>
+    <y>10</y>
+    <width>625</width>
+    <height>250</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <actions>
+    </actions>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline</name>
+      <height>100</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED</name>
+      <pv_name>$(DEVICE):$(BPM):ilk:status:x</pv_name>
+      <x>37</x>
+      <y>22</y>
+      <width>26</width>
+      <height>26</height>
+      <off_color>
+        <color red="0" green="100" blue="0">
+        </color>
+      </off_color>
+      <on_color>
+        <color red="255" green="0" blue="0">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color red="192" green="192" blue="192">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="150" green="150" blue="150">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>X position</text>
+      <x>10</x>
+      <y>60</y>
+      <width>80</width>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED</name>
+      <pv_name>$(DEVICE):$(BPM):ilk:status:y</pv_name>
+      <x>132</x>
+      <y>22</y>
+      <width>26</width>
+      <height>26</height>
+      <off_color>
+        <color red="0" green="100" blue="0">
+        </color>
+      </off_color>
+      <on_color>
+        <color red="255" green="0" blue="0">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color red="192" green="192" blue="192">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="150" green="150" blue="150">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Y position</text>
+      <x>105</x>
+      <y>60</y>
+      <width>80</width>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED</name>
+      <pv_name>$(DEVICE):$(BPM):ilk:status:adc_ovf</pv_name>
+      <x>232</x>
+      <y>22</y>
+      <width>26</width>
+      <height>26</height>
+      <off_color>
+        <color red="0" green="100" blue="0">
+        </color>
+      </off_color>
+      <on_color>
+        <color red="255" green="0" blue="0">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color red="192" green="192" blue="192">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="150" green="150" blue="150">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>ADC ovf</text>
+      <x>205</x>
+      <y>60</y>
+      <width>80</width>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED</name>
+      <pv_name>$(DEVICE):$(BPM):ilk:status:adc_ovf_filtered</pv_name>
+      <x>332</x>
+      <y>22</y>
+      <width>26</width>
+      <height>26</height>
+      <off_color>
+        <color red="0" green="100" blue="0">
+        </color>
+      </off_color>
+      <on_color>
+        <color red="255" green="0" blue="0">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color red="192" green="192" blue="192">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="150" green="150" blue="150">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>ADC ovf_f</text>
+      <x>305</x>
+      <y>60</y>
+      <width>80</width>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED</name>
+      <pv_name>$(DEVICE):$(BPM):ilk:status:attenuator</pv_name>
+      <x>437</x>
+      <y>22</y>
+      <width>26</width>
+      <height>26</height>
+      <off_color>
+        <color red="0" green="100" blue="0">
+        </color>
+      </off_color>
+      <on_color>
+        <color red="255" green="0" blue="0">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color red="192" green="192" blue="192">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="150" green="150" blue="150">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Att bit</text>
+      <x>410</x>
+      <y>60</y>
+      <width>80</width>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(DEVICE):$(BPM):ilk:status:reset_sp</pv_name>
+          <value>0</value>
+          <description>Reset the Interlock status</description>
+        </action>
+      </actions>
+      <text>Reset</text>
+      <x>500</x>
+      <y>15</y>
+      <width>80</width>
+      <height>40</height>
+      <background_color>
+        <color red="225" green="120" blue="0">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="slide_button" version="2.0.0">
+      <name>Slide Button_4</name>
+      <pv_name>$(DEVICE):$(BPM):ilk:enabled_sp</pv_name>
+      <label></label>
+      <x>10</x>
+      <y>100</y>
+      <width>53</width>
+      <height>50</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>enable status</text>
+      <x>73</x>
+      <y>108</y>
+      <width>178</width>
+      <height>34</height>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="Rule" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>INTERLOCK DISABLED</value>
+          </exp>
+          <exp bool_exp="pv0==1">
+            <value>INTERLOCK ENABLED</value>
+          </exp>
+          <pv_name>$(DEVICE):$(BPM):ilk:enabled_mon</pv_name>
+        </rule>
+        <rule name="Rule2" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>
+              <color red="149" green="161" blue="175">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0==1">
+            <value>
+              <color name="Major" red="255" green="0" blue="0">
+              </color>
+            </value>
+          </exp>
+          <pv_name>$(DEVICE):$(BPM):ilk:enabled_mon</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="slide_button" version="2.0.0">
+      <name>Slide Button_5</name>
+      <pv_name>$(DEVICE):$(BPM):ilk:gain_dependent:enabled_sp</pv_name>
+      <label></label>
+      <x>10</x>
+      <y>161</y>
+      <width>53</width>
+      <height>44</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_2</name>
+      <text>enable status</text>
+      <x>73</x>
+      <y>161</y>
+      <width>178</width>
+      <height>44</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="Rule" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>Interlock detection works for all power levels</value>
+          </exp>
+          <exp bool_exp="pv0==1">
+            <value>Interlock detection is disabled if power (attenuation) below threshold</value>
+          </exp>
+          <pv_name>$(DEVICE):$(BPM):ilk:gain_dependent:enabled_mon</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_4</name>
+      <x>263</x>
+      <y>150</y>
+      <width>290</width>
+      <height>66</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="Rule" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>true</value>
+          </exp>
+          <exp bool_exp="pv0==0">
+            <value>false</value>
+          </exp>
+          <pv_name>$(DEVICE):$(BPM):ilk:gain_dependent:enabled_mon</pv_name>
+        </rule>
+      </rules>
+      <widget type="label" version="2.0.0">
+        <name>Label_4</name>
+        <text>Power threshold</text>
+        <y>3</y>
+        <width>126</width>
+        <height>25</height>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="spinner" version="2.0.0">
+        <name>Spinner_2</name>
+        <pv_name>$(DEVICE):$(BPM):ilk:gain_dependent:threshold_sp</pv_name>
+        <x>135</x>
+        <y>3</y>
+        <width>80</width>
+        <height>25</height>
+        <format>0</format>
+        <precision>0</precision>
+        <background_color>
+          <color red="254" green="217" blue="188">
+          </color>
+        </background_color>
+        <actions>
+        </actions>
+        <minimum>-16.0</minimum>
+        <maximum>15.0</maximum>
+        <limits_from_pv>false</limits_from_pv>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_7</name>
+        <pv_name>$(DEVICE):$(BPM):ilk:gain_dependent:threshold_mon</pv_name>
+        <x>220</x>
+        <y>3</y>
+        <width>70</width>
+        <height>25</height>
+        <font>
+          <font family="Liberation Sans" style="BOLD" size="14.0">
+          </font>
+        </font>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_8</name>
+        <pv_name>$(DEVICE):$(BPM):ilk:gain_dependent:threshold_dB_mon</pv_name>
+        <x>220</x>
+        <y>38</y>
+        <width>70</width>
+        <height>25</height>
+        <font>
+          <font family="Liberation Sans" style="BOLD" size="14.0">
+          </font>
+        </font>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_5</name>
+        <text>Attenuation threshold</text>
+        <y>38</y>
+        <width>185</width>
+        <height>25</height>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Position limits</name>
+    <x>10</x>
+    <y>270</y>
+    <width>625</width>
+    <height>240</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <actions>
+    </actions>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline</name>
+      <height>100</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_6</name>
+      <pv_name>$(DEVICE):$(BPM):ilk:limits:min_x_mon</pv_name>
+      <x>300</x>
+      <y>10</y>
+      <width>150</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner</name>
+      <pv_name>$(DEVICE):$(BPM):ilk:limits:min_x_sp</pv_name>
+      <x>140</x>
+      <y>10</y>
+      <width>150</width>
+      <height>25</height>
+      <format>0</format>
+      <precision>0</precision>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <minimum>-3.0E7</minimum>
+      <maximum>3.0E7</maximum>
+      <limits_from_pv>false</limits_from_pv>
+      <increment>10000.0</increment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>smooth position glitches</text>
+      <x>5</x>
+      <y>174</y>
+      <width>146</width>
+      <height>25</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>X min</text>
+      <x>5</x>
+      <y>10</y>
+      <width>130</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_6</name>
+      <pv_name>$(DEVICE):$(BPM):ilk:limits:max_x_mon</pv_name>
+      <x>300</x>
+      <y>40</y>
+      <width>150</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner</name>
+      <pv_name>$(DEVICE):$(BPM):ilk:limits:max_x_sp</pv_name>
+      <x>140</x>
+      <y>40</y>
+      <width>150</width>
+      <height>25</height>
+      <format>0</format>
+      <precision>0</precision>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <minimum>-3.0E7</minimum>
+      <maximum>3.0E7</maximum>
+      <limits_from_pv>false</limits_from_pv>
+      <increment>10000.0</increment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>X max</text>
+      <x>5</x>
+      <y>40</y>
+      <width>130</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_6</name>
+      <pv_name>$(DEVICE):$(BPM):ilk:limits:min_y_mon</pv_name>
+      <x>300</x>
+      <y>80</y>
+      <width>150</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner</name>
+      <pv_name>$(DEVICE):$(BPM):ilk:limits:min_y_sp</pv_name>
+      <x>140</x>
+      <y>80</y>
+      <width>150</width>
+      <height>25</height>
+      <format>0</format>
+      <precision>0</precision>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <minimum>-3.0E7</minimum>
+      <maximum>3.0E7</maximum>
+      <limits_from_pv>false</limits_from_pv>
+      <increment>10000.0</increment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Y min</text>
+      <x>5</x>
+      <y>80</y>
+      <width>130</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>$(DEVICE):$(BPM):ilk:limits:max_y_mon</pv_name>
+      <x>300</x>
+      <y>110</y>
+      <width>150</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner_1</name>
+      <pv_name>$(DEVICE):$(BPM):ilk:limits:max_y_sp</pv_name>
+      <x>140</x>
+      <y>110</y>
+      <width>150</width>
+      <height>25</height>
+      <format>0</format>
+      <precision>0</precision>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <minimum>-3.0E7</minimum>
+      <maximum>3.0E7</maximum>
+      <limits_from_pv>false</limits_from_pv>
+      <increment>10000.0</increment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_3</name>
+      <text>Y max</text>
+      <x>5</x>
+      <y>110</y>
+      <width>130</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_3</name>
+      <text>Filter</text>
+      <x>5</x>
+      <y>150</y>
+      <width>130</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="scaledslider" version="2.0.0">
+      <name>Scaled Slider</name>
+      <pv_name>$(DEVICE):$(BPM):ilk:filter:position_sp</pv_name>
+      <x>134</x>
+      <y>150</y>
+      <width>152</width>
+      <height>25</height>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <show_scale>false</show_scale>
+      <show_minor_ticks>false</show_minor_ticks>
+      <major_tick_step_hint>50</major_tick_step_hint>
+      <scale_format></scale_format>
+      <show_hihi>false</show_hihi>
+      <show_high>false</show_high>
+      <show_low>false</show_low>
+      <show_lolo>false</show_lolo>
+      <actions>
+      </actions>
+      <maximum>255.0</maximum>
+      <limits_from_pv>false</limits_from_pv>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Text Update_1</name>
+      <text>filter</text>
+      <x>301</x>
+      <y>151</y>
+      <width>88</width>
+      <height>23</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="Rule" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0&lt;61">
+            <value>Soft</value>
+          </exp>
+          <exp bool_exp="pv0&lt;151">
+            <value>Medium</value>
+          </exp>
+          <exp bool_exp="pv0&lt;256">
+            <value>Strong</value>
+          </exp>
+          <pv_name>$(DEVICE):$(BPM):ilk:filter:position_mon</pv_name>
+        </rule>
+      </rules>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <border_width>1</border_width>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Overflow limits</name>
+    <x>10</x>
+    <y>520</y>
+    <width>625</width>
+    <height>196</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <actions>
+    </actions>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline</name>
+      <height>100</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_6</name>
+      <pv_name>$(DEVICE):$(BPM):ilk:limits:ovf_threshold_mon</pv_name>
+      <x>300</x>
+      <y>10</y>
+      <width>150</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner</name>
+      <pv_name>$(DEVICE):$(BPM):ilk:limits:ovf_threshold_sp</pv_name>
+      <x>134</x>
+      <y>10</y>
+      <height>25</height>
+      <format>0</format>
+      <precision>0</precision>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <minimum>10.0</minimum>
+      <maximum>32766.0</maximum>
+      <limits_from_pv>false</limits_from_pv>
+      <increment>100.0</increment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>smooth ADC glitches</text>
+      <x>5</x>
+      <y>134</y>
+      <width>146</width>
+      <height>25</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>ADC count limit</text>
+      <x>5</x>
+      <y>10</y>
+      <width>130</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_3</name>
+      <text>Filter</text>
+      <x>5</x>
+      <y>110</y>
+      <width>130</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="scaledslider" version="2.0.0">
+      <name>Scaled Slider</name>
+      <pv_name>$(DEVICE):$(BPM):ilk:filter:overflow_sp</pv_name>
+      <x>134</x>
+      <y>110</y>
+      <width>152</width>
+      <height>25</height>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <show_scale>false</show_scale>
+      <show_minor_ticks>false</show_minor_ticks>
+      <major_tick_step_hint>50</major_tick_step_hint>
+      <scale_format></scale_format>
+      <show_hihi>false</show_hihi>
+      <show_high>false</show_high>
+      <show_low>false</show_low>
+      <show_lolo>false</show_lolo>
+      <actions>
+      </actions>
+      <maximum>6.0</maximum>
+      <limits_from_pv>false</limits_from_pv>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Text Update_1</name>
+      <text>filter</text>
+      <x>301</x>
+      <y>111</y>
+      <width>88</width>
+      <height>23</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="Rule" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0&lt;3">
+            <value>Soft</value>
+          </exp>
+          <exp bool_exp="pv0&lt;5">
+            <value>Medium</value>
+          </exp>
+          <exp bool_exp="pv0&lt;7">
+            <value>Strong</value>
+          </exp>
+          <pv_name>$(DEVICE):$(BPM):ilk:filter:overflow_mon</pv_name>
+        </rule>
+      </rules>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_6</name>
+      <pv_name>$(DEVICE):$(BPM):ilk:limits:ovf_duration_mon</pv_name>
+      <x>300</x>
+      <y>40</y>
+      <width>150</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner</name>
+      <pv_name>$(DEVICE):$(BPM):ilk:limits:ovf_duration_sp</pv_name>
+      <x>134</x>
+      <y>40</y>
+      <height>25</height>
+      <format>0</format>
+      <precision>0</precision>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <minimum>10.0</minimum>
+      <maximum>32766.0</maximum>
+      <limits_from_pv>false</limits_from_pv>
+      <increment>100.0</increment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Allowed duration</text>
+      <x>5</x>
+      <y>40</y>
+      <width>130</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Text Update_1</name>
+      <text>duration units</text>
+      <x>6</x>
+      <y>76</y>
+      <width>227</width>
+      <height>23</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="Rule" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>Duration is expressed in ADC samples</value>
+          </exp>
+          <exp bool_exp="pv0==1">
+            <value>Duration is expressed in turns</value>
+          </exp>
+          <pv_name>$(DEVICE):$(BPM):ilk:limits:ovf_mode</pv_name>
+        </rule>
+      </rules>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <border_width>1</border_width>
+    </widget>
+  </widget>
+</display>

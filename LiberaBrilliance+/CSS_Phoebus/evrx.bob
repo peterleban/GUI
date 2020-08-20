@@ -1,0 +1,1382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>$(DEVICE),  timing module</name>
+  <width>1000</width>
+  <height>800</height>
+  <background_color>
+    <color red="18" green="19" blue="42" alpha="0">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="group" version="2.0.0">
+    <name>Clocks</name>
+    <x>10</x>
+    <y>10</y>
+    <width>420</width>
+    <height>150</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <widget type="label" version="2.0.0">
+      <name>Label_22</name>
+      <text>Compensate tune</text>
+      <y>80</y>
+      <width>150</width>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Menu Button_1</name>
+      <pv_name>$(DEVICE):$(TIM):pll:compensate_offset_sp</pv_name>
+      <x>160</x>
+      <y>80</y>
+      <width>80</width>
+      <height>25</height>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_10</name>
+      <pv_name>$(DEVICE):$(TIM):pll:compensate_offset_mon</pv_name>
+      <x>250</x>
+      <y>80</y>
+      <width>130</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_11</name>
+      <pv_name>$(DEVICE):$(TIM):pll:vcxo_offset_mon</pv_name>
+      <x>250</x>
+      <y>45</y>
+      <width>130</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner_1</name>
+      <pv_name>$(DEVICE):$(TIM):pll:vcxo_offset_sp</pv_name>
+      <x>160</x>
+      <y>45</y>
+      <width>80</width>
+      <height>25</height>
+      <format>0</format>
+      <precision>0</precision>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <minimum>1.0</minimum>
+      <maximum>1000.0</maximum>
+      <limits_from_pv>false</limits_from_pv>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_23</name>
+      <text>Offset tune</text>
+      <y>45</y>
+      <width>150</width>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_26</name>
+      <text>MC PLL locked</text>
+      <y>10</y>
+      <width>150</width>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_21</name>
+      <pv_name>$(DEVICE):$(TIM):pll:locked</pv_name>
+      <x>160</x>
+      <y>10</y>
+      <width>220</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>PLL</name>
+    <x>440</x>
+    <y>10</y>
+    <width>420</width>
+    <height>150</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <widget type="label" version="2.0.0">
+      <name>Label_37</name>
+      <text>Clk error</text>
+      <y>80</y>
+      <width>80</width>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_22</name>
+      <pv_name>$(DEVICE):$(TIM):pll.Dac</pv_name>
+      <x>300</x>
+      <y>80</y>
+      <width>80</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_23</name>
+      <pv_name>$(DEVICE):$(TIM):pll.Freq</pv_name>
+      <x>200</x>
+      <y>45</y>
+      <width>180</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_38</name>
+      <text>ADC sampling clock</text>
+      <y>45</y>
+      <width>150</width>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_39</name>
+      <text>Access PLL stream</text>
+      <y>10</y>
+      <width>150</width>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_25</name>
+      <pv_name>$(DEVICE):$(TIM):pll.Err</pv_name>
+      <x>80</x>
+      <y>80</y>
+      <width>80</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_40</name>
+      <text>DAC value</text>
+      <x>200</x>
+      <y>80</y>
+      <width>80</width>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="slide_button" version="2.0.0">
+      <name>Boolean Button</name>
+      <pv_name>$(DEVICE):$(TIM):pll.SCAN</pv_name>
+      <bit>-1</bit>
+      <label></label>
+      <x>200</x>
+      <y>10</y>
+      <width>50</width>
+      <height>25</height>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(DEVICE):$(TIM):pll.SCAN</pv_name>
+          <value>2</value>
+          <description>Enable stream access</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>$(DEVICE):$(TIM):pll.SCAN</pv_name>
+          <value>0</value>
+          <description>Disable stream access</description>
+        </action>
+      </actions>
+      <confirm_message>Are you sure you want to do this?</confirm_message>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Synchronization</name>
+    <x>440</x>
+    <y>170</y>
+    <width>420</width>
+    <height>250</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <widget type="label" version="2.0.0">
+      <name>Label_43</name>
+      <text>BPM 1</text>
+      <y>80</y>
+      <width>80</width>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_6</name>
+      <pv_name>$(DEVICE):bpm1:sync_st_m</pv_name>
+      <x>90</x>
+      <y>80</y>
+      <width>130</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="Rule" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>
+              <color name="Major" red="255" green="0" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0==1">
+            <value>
+              <color name="Minor" red="255" green="128" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0==2">
+            <value>
+              <color red="0" green="240" blue="0">
+              </color>
+            </value>
+          </exp>
+          <pv_name>$(DEVICE):bpm1:sync_st_m</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>$(DEVICE):bpm2:sync_st_m</pv_name>
+      <x>90</x>
+      <y>115</y>
+      <width>130</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="Rule" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>
+              <color name="Major" red="255" green="0" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0==1">
+            <value>
+              <color name="Minor" red="255" green="128" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0==2">
+            <value>
+              <color red="0" green="240" blue="0">
+              </color>
+            </value>
+          </exp>
+          <pv_name>$(DEVICE):bpm2:sync_st_m</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>$(DEVICE):bpm3:sync_st_m</pv_name>
+      <x>90</x>
+      <y>150</y>
+      <width>130</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="Rule" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>
+              <color name="Major" red="255" green="0" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0==1">
+            <value>
+              <color name="Minor" red="255" green="128" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0==2">
+            <value>
+              <color red="0" green="240" blue="0">
+              </color>
+            </value>
+          </exp>
+          <pv_name>$(DEVICE):bpm3:sync_st_m</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>$(DEVICE):bpm4:sync_st_m</pv_name>
+      <x>90</x>
+      <y>185</y>
+      <width>130</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="Rule" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>
+              <color name="Major" red="255" green="0" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0==1">
+            <value>
+              <color name="Minor" red="255" green="128" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0==2">
+            <value>
+              <color red="0" green="240" blue="0">
+              </color>
+            </value>
+          </exp>
+          <pv_name>$(DEVICE):bpm4:sync_st_m</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_45</name>
+      <text>BPM 2</text>
+      <y>115</y>
+      <width>80</width>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_46</name>
+      <text>BPM 3</text>
+      <y>150</y>
+      <width>80</width>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_47</name>
+      <text>BPM 4</text>
+      <y>185</y>
+      <width>80</width>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(DEVICE):sync</pv_name>
+          <value>0</value>
+          <description>Synchronize command</description>
+        </action>
+      </actions>
+      <text>Sync
+now</text>
+      <x>240</x>
+      <y>115</y>
+      <width>130</width>
+      <height>45</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_57</name>
+      <text>1. MC PLL must be locked.
+2. Disable the Trigger
+3. Click 'Sync now'
+4. Enable the Trigger</text>
+      <x>5</x>
+      <y>5</y>
+      <width>360</width>
+      <height>70</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Triggers</name>
+    <x>10</x>
+    <y>170</y>
+    <width>420</width>
+    <height>250</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <widget type="label" version="2.0.0">
+      <name>Label_50</name>
+      <text>Machine Clock</text>
+      <y>25</y>
+      <width>130</width>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_31</name>
+      <pv_name>$(DEVICE):$(TIM):triggers:mc:source_mon</pv_name>
+      <x>260</x>
+      <y>25</y>
+      <width>120</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Menu Button_5</name>
+      <pv_name>$(DEVICE):$(TIM):triggers:mc:source_sp</pv_name>
+      <x>130</x>
+      <y>25</y>
+      <width>120</width>
+      <height>25</height>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_51</name>
+      <text>Trigger</text>
+      <y>57</y>
+      <width>130</width>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Menu Button_6</name>
+      <pv_name>$(DEVICE):$(TIM):triggers:t2:source_sp</pv_name>
+      <x>130</x>
+      <y>57</y>
+      <width>120</width>
+      <height>25</height>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_32</name>
+      <pv_name>$(DEVICE):$(TIM):triggers:t2:source_mon</pv_name>
+      <x>260</x>
+      <y>57</y>
+      <width>120</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_52</name>
+      <text>Postmortem</text>
+      <y>90</y>
+      <width>130</width>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Menu Button_7</name>
+      <pv_name>$(DEVICE):$(TIM):triggers:t1:source_sp</pv_name>
+      <x>130</x>
+      <y>90</y>
+      <width>120</width>
+      <height>25</height>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_33</name>
+      <pv_name>$(DEVICE):$(TIM):triggers:t1:source_mon</pv_name>
+      <x>260</x>
+      <y>90</y>
+      <width>120</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_53</name>
+      <text>trigger source selection</text>
+      <x>130</x>
+      <width>250</width>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_54</name>
+      <text>trigger count and timestamp</text>
+      <x>130</x>
+      <y>125</y>
+      <width>250</width>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_55</name>
+      <text>Trigger</text>
+      <y>150</y>
+      <width>130</width>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_34</name>
+      <pv_name>$(DEVICE):$(TIM):events:t2:timestamp</pv_name>
+      <x>260</x>
+      <y>150</y>
+      <width>120</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_35</name>
+      <pv_name>$(DEVICE):$(TIM):events:t2:count</pv_name>
+      <x>130</x>
+      <y>150</y>
+      <width>120</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_56</name>
+      <text>Postmortem</text>
+      <y>185</y>
+      <width>130</width>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_36</name>
+      <pv_name>$(DEVICE):$(TIM):events:t1:count</pv_name>
+      <x>129</x>
+      <y>185</y>
+      <width>120</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_37</name>
+      <pv_name>$(DEVICE):$(TIM):events:t1:timestamp</pv_name>
+      <x>259</x>
+      <y>185</y>
+      <width>120</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Event decoding</name>
+    <x>10</x>
+    <y>430</y>
+    <width>850</width>
+    <height>330</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <widget type="slide_button" version="2.0.0">
+      <name>Boolean Button_2</name>
+      <pv_name>$(DEVICE):$(TIM):rtc:decoder_switch_sp</pv_name>
+      <bit>-1</bit>
+      <label></label>
+      <x>180</x>
+      <y>10</y>
+      <width>50</width>
+      <height>25</height>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(DEVICE):$(TIM):pll.SCAN</pv_name>
+          <value>2</value>
+          <description>Enable stream access</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>$(DEVICE):$(TIM):pll.SCAN</pv_name>
+          <value>0</value>
+          <description>Disable stream access</description>
+        </action>
+      </actions>
+      <confirm_message>Are you sure you want to do this?</confirm_message>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_61</name>
+      <text>Enable event decoding</text>
+      <y>10</y>
+      <width>180</width>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Text Update_42</name>
+      <text></text>
+      <x>260</x>
+      <y>10</y>
+      <width>120</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="Rule" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>disabled</value>
+          </exp>
+          <exp bool_exp="pv0==1">
+            <value>enabled</value>
+          </exp>
+          <pv_name>$(DEVICE):$(TIM):rtc:decoder_switch_mon</pv_name>
+        </rule>
+      </rules>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="tabs" version="2.0.0">
+      <name>Tabs</name>
+      <tabs>
+        <tab>
+          <name>MC</name>
+          <children>
+            <widget type="textentry" version="3.0.0">
+              <name>Text Entry_12</name>
+              <pv_name>$(DEVICE):$(TIM):rtc:mc:in_function_sp</pv_name>
+              <x>50</x>
+              <y>40</y>
+              <width>750</width>
+              <font>
+                <font family="Liberation Sans" style="REGULAR" size="12.0">
+                </font>
+              </font>
+              <background_color>
+                <color red="254" green="217" blue="188">
+                </color>
+              </background_color>
+              <precision>0</precision>
+            </widget>
+            <widget type="textupdate" version="2.0.0">
+              <name>Text Entry_13</name>
+              <pv_name>$(DEVICE):$(TIM):rtc:mc:in_function_mon</pv_name>
+              <x>50</x>
+              <y>60</y>
+              <width>750</width>
+              <font>
+                <font family="Liberation Sans" style="REGULAR" size="12.0">
+                </font>
+              </font>
+              <precision>0</precision>
+              <wrap_words>false</wrap_words>
+            </widget>
+            <widget type="textentry" version="3.0.0">
+              <name>Text Entry_10</name>
+              <pv_name>$(DEVICE):$(TIM):rtc:mc:in_mask_sp</pv_name>
+              <x>50</x>
+              <y>120</y>
+              <width>750</width>
+              <font>
+                <font family="Liberation Sans" style="REGULAR" size="12.0">
+                </font>
+              </font>
+              <background_color>
+                <color red="254" green="217" blue="188">
+                </color>
+              </background_color>
+              <precision>0</precision>
+            </widget>
+            <widget type="textupdate" version="2.0.0">
+              <name>Text Entry_11</name>
+              <pv_name>$(DEVICE):$(TIM):rtc:mc:in_mask_mon</pv_name>
+              <x>50</x>
+              <y>140</y>
+              <width>750</width>
+              <font>
+                <font family="Liberation Sans" style="REGULAR" size="12.0">
+                </font>
+              </font>
+              <precision>0</precision>
+              <wrap_words>false</wrap_words>
+            </widget>
+            <widget type="label" version="2.0.0">
+              <name>Label_63</name>
+              <text>in_function</text>
+              <x>10</x>
+              <y>10</y>
+              <width>130</width>
+              <height>25</height>
+              <transparent>false</transparent>
+              <vertical_alignment>1</vertical_alignment>
+              <wrap_words>false</wrap_words>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="label" version="2.0.0">
+              <name>Label_64</name>
+              <text>in_mask</text>
+              <x>10</x>
+              <y>90</y>
+              <width>130</width>
+              <height>25</height>
+              <transparent>false</transparent>
+              <vertical_alignment>1</vertical_alignment>
+              <wrap_words>false</wrap_words>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+          </children>
+        </tab>
+        <tab>
+          <name>Trigger</name>
+          <children>
+            <widget type="textentry" version="3.0.0">
+              <name>Text Entry_8</name>
+              <pv_name>$(DEVICE):$(TIM):rtc:t2:in_function_sp</pv_name>
+              <x>50</x>
+              <y>40</y>
+              <width>750</width>
+              <font>
+                <font family="Liberation Sans" style="REGULAR" size="12.0">
+                </font>
+              </font>
+              <background_color>
+                <color red="254" green="217" blue="188">
+                </color>
+              </background_color>
+              <precision>0</precision>
+            </widget>
+            <widget type="textupdate" version="2.0.0">
+              <name>Text Entry_9</name>
+              <pv_name>$(DEVICE):$(TIM):rtc:t2:in_function_mon</pv_name>
+              <x>50</x>
+              <y>60</y>
+              <width>750</width>
+              <font>
+                <font family="Liberation Sans" style="REGULAR" size="12.0">
+                </font>
+              </font>
+              <precision>0</precision>
+              <wrap_words>false</wrap_words>
+            </widget>
+            <widget type="textentry" version="3.0.0">
+              <name>Text Entry_14</name>
+              <pv_name>$(DEVICE):$(TIM):rtc:t2:in_mask_sp</pv_name>
+              <x>50</x>
+              <y>120</y>
+              <width>750</width>
+              <font>
+                <font family="Liberation Sans" style="REGULAR" size="12.0">
+                </font>
+              </font>
+              <background_color>
+                <color red="254" green="217" blue="188">
+                </color>
+              </background_color>
+              <precision>0</precision>
+            </widget>
+            <widget type="textupdate" version="2.0.0">
+              <name>Text Entry_15</name>
+              <pv_name>$(DEVICE):$(TIM):rtc:t2:in_mask_mon</pv_name>
+              <x>50</x>
+              <y>140</y>
+              <width>750</width>
+              <font>
+                <font family="Liberation Sans" style="REGULAR" size="12.0">
+                </font>
+              </font>
+              <precision>0</precision>
+              <wrap_words>false</wrap_words>
+            </widget>
+            <widget type="label" version="2.0.0">
+              <name>Label_65</name>
+              <text>in_function</text>
+              <x>10</x>
+              <y>10</y>
+              <width>130</width>
+              <height>25</height>
+              <transparent>false</transparent>
+              <vertical_alignment>1</vertical_alignment>
+              <wrap_words>false</wrap_words>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="label" version="2.0.0">
+              <name>Label_66</name>
+              <text>in_mask</text>
+              <x>10</x>
+              <y>90</y>
+              <width>130</width>
+              <height>25</height>
+              <transparent>false</transparent>
+              <vertical_alignment>1</vertical_alignment>
+              <wrap_words>false</wrap_words>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+          </children>
+        </tab>
+        <tab>
+          <name>Postmortem</name>
+          <children>
+            <widget type="textentry" version="3.0.0">
+              <name>Text Entry_16</name>
+              <pv_name>$(DEVICE):$(TIM):rtc:t2:in_function_sp</pv_name>
+              <x>50</x>
+              <y>40</y>
+              <width>750</width>
+              <font>
+                <font family="Liberation Sans" style="REGULAR" size="12.0">
+                </font>
+              </font>
+              <background_color>
+                <color red="254" green="217" blue="188">
+                </color>
+              </background_color>
+              <precision>0</precision>
+            </widget>
+            <widget type="textupdate" version="2.0.0">
+              <name>Text Entry_17</name>
+              <pv_name>$(DEVICE):$(TIM):rtc:t2:in_function_mon</pv_name>
+              <x>50</x>
+              <y>60</y>
+              <width>750</width>
+              <font>
+                <font family="Liberation Sans" style="REGULAR" size="12.0">
+                </font>
+              </font>
+              <precision>0</precision>
+              <wrap_words>false</wrap_words>
+            </widget>
+            <widget type="textentry" version="3.0.0">
+              <name>Text Entry_18</name>
+              <pv_name>$(DEVICE):$(TIM):rtc:t2:in_mask_sp</pv_name>
+              <x>50</x>
+              <y>120</y>
+              <width>750</width>
+              <font>
+                <font family="Liberation Sans" style="REGULAR" size="12.0">
+                </font>
+              </font>
+              <background_color>
+                <color red="254" green="217" blue="188">
+                </color>
+              </background_color>
+              <precision>0</precision>
+            </widget>
+            <widget type="textupdate" version="2.0.0">
+              <name>Text Entry_19</name>
+              <pv_name>$(DEVICE):$(TIM):rtc:t2:in_mask_mon</pv_name>
+              <x>50</x>
+              <y>140</y>
+              <width>750</width>
+              <font>
+                <font family="Liberation Sans" style="REGULAR" size="12.0">
+                </font>
+              </font>
+              <precision>0</precision>
+              <wrap_words>false</wrap_words>
+            </widget>
+            <widget type="label" version="2.0.0">
+              <name>Label_67</name>
+              <text>in_function</text>
+              <x>10</x>
+              <y>10</y>
+              <width>130</width>
+              <height>25</height>
+              <transparent>false</transparent>
+              <vertical_alignment>1</vertical_alignment>
+              <wrap_words>false</wrap_words>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="label" version="2.0.0">
+              <name>Label_68</name>
+              <text>in_mask</text>
+              <x>10</x>
+              <y>90</y>
+              <width>130</width>
+              <height>25</height>
+              <transparent>false</transparent>
+              <vertical_alignment>1</vertical_alignment>
+              <wrap_words>false</wrap_words>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+          </children>
+        </tab>
+      </tabs>
+      <y>50</y>
+      <width>810</width>
+      <height>242</height>
+      <active_tab>2</active_tab>
+      <tab_height>20</tab_height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_62</name>
+      <text>SFP link frequency</text>
+      <x>440</x>
+      <y>10</y>
+      <width>150</width>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>$(DEVICE):$(TIM):sfp_freq</pv_name>
+      <x>590</x>
+      <y>10</y>
+      <width>130</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+  </widget>
+</display>

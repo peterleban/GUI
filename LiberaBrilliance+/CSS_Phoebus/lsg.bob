@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>$(DEVICE), $(BPM): Synthetic Data Generator</name>
+  <width>1000</width>
+  <height>850</height>
+  <background_color>
+    <color red="18" green="19" blue="42" alpha="0">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="xyplot" version="2.0.0">
+    <name>XY Graph</name>
+    <x>440</x>
+    <y>10</y>
+    <width>550</width>
+    <height>570</height>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <title>Gain waveform</title>
+    <title_font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </title_font>
+    <show_toolbar>true</show_toolbar>
+    <actions>
+    </actions>
+    <x_axis>
+      <title>Samples</title>
+      <autoscale>true</autoscale>
+      <log_scale>false</log_scale>
+      <minimum>0.0</minimum>
+      <maximum>4096.0</maximum>
+      <show_grid>true</show_grid>
+      <title_font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </title_font>
+      <scale_font>
+        <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+        </font>
+      </scale_font>
+      <visible>true</visible>
+    </x_axis>
+    <y_axes>
+      <y_axis>
+        <title>[a.u.]</title>
+        <autoscale>true</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>0.0</minimum>
+        <maximum>100.0</maximum>
+        <show_grid>true</show_grid>
+        <title_font>
+          <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+          </font>
+        </title_font>
+        <scale_font>
+          <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+          </font>
+        </scale_font>
+        <visible>true</visible>
+      </y_axis>
+    </y_axes>
+    <traces>
+      <trace>
+        <name>$(traces[0].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>$(DEVICE):$(BPM):lsg:gain_table_mon</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="164" green="0" blue="0">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>4</point_size>
+        <visible>true</visible>
+      </trace>
+    </traces>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Settings</name>
+    <x>10</x>
+    <y>10</y>
+    <width>420</width>
+    <height>570</height>
+    <widget type="slide_button" version="2.0.0">
+      <name>Slide Button</name>
+      <pv_name>$(DEVICE):$(BPM):lsg:enable_sp</pv_name>
+      <label></label>
+      <x>120</x>
+      <y>10</y>
+      <width>42</width>
+      <height>25</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_21</name>
+      <text></text>
+      <x>200</x>
+      <y>10</y>
+      <width>180</width>
+      <height>25</height>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="Rule" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>Disabled</value>
+          </exp>
+          <exp bool_exp="pv0==1">
+            <value>Constant value enabled</value>
+          </exp>
+          <pv_name>$(DEVICE):$(BPM):lsg:enable_mon</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_22</name>
+      <text>Start mode</text>
+      <y>90</y>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Menu Button</name>
+      <pv_name>$(DEVICE):$(BPM):lsg:start_mode_sp</pv_name>
+      <x>120</x>
+      <y>90</y>
+      <width>120</width>
+      <height>25</height>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_10</name>
+      <pv_name>$(DEVICE):$(BPM):lsg:start_mode_mon</pv_name>
+      <x>250</x>
+      <y>90</y>
+      <width>130</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_11</name>
+      <pv_name>$(DEVICE):$(BPM):lsg:repetitions_mon</pv_name>
+      <x>250</x>
+      <y>130</y>
+      <width>130</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner</name>
+      <pv_name>$(DEVICE):$(BPM):lsg:repetitions_sp</pv_name>
+      <x>160</x>
+      <y>130</y>
+      <width>80</width>
+      <height>25</height>
+      <format>0</format>
+      <precision>0</precision>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <minimum>1.0</minimum>
+      <maximum>1000.0</maximum>
+      <limits_from_pv>false</limits_from_pv>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_23</name>
+      <text>Number of repetitions</text>
+      <y>130</y>
+      <width>150</width>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_24</name>
+      <text>Waveform length</text>
+      <y>170</y>
+      <width>150</width>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner_1</name>
+      <pv_name>$(DEVICE):$(BPM):lsg:gain_table_length_sp</pv_name>
+      <x>160</x>
+      <y>170</y>
+      <width>80</width>
+      <height>25</height>
+      <format>0</format>
+      <precision>0</precision>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <minimum>1.0</minimum>
+      <maximum>262144.0</maximum>
+      <limits_from_pv>false</limits_from_pv>
+      <increment>1000.0</increment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_12</name>
+      <pv_name>$(DEVICE):$(BPM):lsg:gain_table_length_mon</pv_name>
+      <x>250</x>
+      <y>170</y>
+      <width>130</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="slide_button" version="2.0.0">
+      <name>Slide Button_1</name>
+      <pv_name>$(DEVICE):$(BPM):lsg:enable_waveform_sp</pv_name>
+      <label></label>
+      <x>120</x>
+      <y>50</y>
+      <width>42</width>
+      <height>25</height>
+      <rules>
+        <rule name="visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>false</value>
+          </exp>
+          <exp bool_exp="pv0==1">
+            <value>true</value>
+          </exp>
+          <pv_name>$(DEVICE):$(BPM):lsg:enable_mon</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_25</name>
+      <text>enable status</text>
+      <x>200</x>
+      <y>50</y>
+      <width>180</width>
+      <height>25</height>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="text" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>Disabled</value>
+          </exp>
+          <exp bool_exp="pv0==1">
+            <value>Synthetic waveform enabled</value>
+          </exp>
+          <pv_name>$(DEVICE):$(BPM):lsg:enable_waveform_mon</pv_name>
+        </rule>
+        <rule name="visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>false</value>
+          </exp>
+          <exp bool_exp="pv0==1">
+            <value>true</value>
+          </exp>
+          <pv_name>$(DEVICE):$(BPM):lsg:enable_mon</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_26</name>
+      <text>Enable</text>
+      <y>10</y>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_27</name>
+      <text>Enable waveform</text>
+      <y>50</y>
+      <width>120</width>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_28</name>
+      <text>Amplitude A</text>
+      <y>245</y>
+      <width>150</width>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_13</name>
+      <pv_name>$(DEVICE):$(BPM):lsg:k_A_mon</pv_name>
+      <x>250</x>
+      <y>245</y>
+      <width>130</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_29</name>
+      <text>Constant values</text>
+      <y>212</y>
+      <width>150</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry</name>
+      <pv_name>$(DEVICE):$(BPM):lsg:k_A_sp</pv_name>
+      <x>160</x>
+      <y>245</y>
+      <width>80</width>
+      <height>25</height>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_30</name>
+      <text>Amplitude B</text>
+      <y>280</y>
+      <width>150</width>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_1</name>
+      <pv_name>$(DEVICE):$(BPM):lsg:k_B_sp</pv_name>
+      <x>160</x>
+      <y>280</y>
+      <width>80</width>
+      <height>25</height>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_14</name>
+      <pv_name>$(DEVICE):$(BPM):lsg:k_B_mon</pv_name>
+      <x>250</x>
+      <y>280</y>
+      <width>130</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_31</name>
+      <text>Amplitude C</text>
+      <y>315</y>
+      <width>150</width>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_32</name>
+      <text>Amplitude D</text>
+      <y>350</y>
+      <width>150</width>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_2</name>
+      <pv_name>$(DEVICE):$(BPM):lsg:k_C_sp</pv_name>
+      <x>160</x>
+      <y>315</y>
+      <width>80</width>
+      <height>25</height>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_3</name>
+      <pv_name>$(DEVICE):$(BPM):lsg:k_D_sp</pv_name>
+      <x>160</x>
+      <y>350</y>
+      <width>80</width>
+      <height>25</height>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_15</name>
+      <pv_name>$(DEVICE):$(BPM):lsg:k_C_mon</pv_name>
+      <x>250</x>
+      <y>315</y>
+      <width>130</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_16</name>
+      <pv_name>$(DEVICE):$(BPM):lsg:k_D_mon</pv_name>
+      <x>250</x>
+      <y>350</y>
+      <width>130</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_17</name>
+      <pv_name>$(DEVICE):$(BPM):lsg:k_Q_mon</pv_name>
+      <x>250</x>
+      <y>490</y>
+      <width>130</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_4</name>
+      <pv_name>$(DEVICE):$(BPM):lsg:k_Q_sp</pv_name>
+      <x>160</x>
+      <y>490</y>
+      <width>80</width>
+      <height>25</height>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_33</name>
+      <text>Position Q</text>
+      <y>490</y>
+      <width>150</width>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_34</name>
+      <text>Position Y</text>
+      <y>455</y>
+      <width>150</width>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_35</name>
+      <text>Position X</text>
+      <y>420</y>
+      <width>150</width>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_36</name>
+      <text>Amplitude SUM</text>
+      <y>385</y>
+      <width>150</width>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_5</name>
+      <pv_name>$(DEVICE):$(BPM):lsg:k_SUM_sp</pv_name>
+      <x>160</x>
+      <y>385</y>
+      <width>80</width>
+      <height>25</height>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_6</name>
+      <pv_name>$(DEVICE):$(BPM):lsg:k_X_sp</pv_name>
+      <x>160</x>
+      <y>420</y>
+      <width>80</width>
+      <height>25</height>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_7</name>
+      <pv_name>$(DEVICE):$(BPM):lsg:k_Y_sp</pv_name>
+      <x>160</x>
+      <y>455</y>
+      <width>80</width>
+      <height>25</height>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_18</name>
+      <pv_name>$(DEVICE):$(BPM):lsg:k_SUM_mon</pv_name>
+      <x>250</x>
+      <y>385</y>
+      <width>130</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_19</name>
+      <pv_name>$(DEVICE):$(BPM):lsg:k_X_mon</pv_name>
+      <x>250</x>
+      <y>420</y>
+      <width>130</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_20</name>
+      <pv_name>$(DEVICE):$(BPM):lsg:k_Y_mon</pv_name>
+      <x>250</x>
+      <y>455</y>
+      <width>130</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+  </widget>
+</display>

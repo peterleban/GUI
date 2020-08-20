@@ -1,0 +1,1120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>$(DEVICE), $(BPM): Postmortem</name>
+  <width>1000</width>
+  <height>850</height>
+  <background_color>
+    <color red="18" green="19" blue="42" alpha="0">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="group" version="2.0.0">
+    <name>Thresholds</name>
+    <x>10</x>
+    <y>170</y>
+    <width>420</width>
+    <height>251</height>
+    <actions>
+    </actions>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline</name>
+      <height>100</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_6</name>
+      <pv_name>$(DEVICE):$(BPM):pm:limits:min_x_mon</pv_name>
+      <x>230</x>
+      <y>10</y>
+      <width>150</width>
+      <height>23</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner</name>
+      <pv_name>$(DEVICE):$(BPM):pm:limits:min_x_sp</pv_name>
+      <x>100</x>
+      <y>10</y>
+      <width>120</width>
+      <height>25</height>
+      <format>0</format>
+      <precision>0</precision>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <minimum>-3.0E7</minimum>
+      <maximum>3.0E7</maximum>
+      <limits_from_pv>false</limits_from_pv>
+      <increment>10000.0</increment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>X min</text>
+      <x>5</x>
+      <y>10</y>
+      <width>80</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_6</name>
+      <pv_name>$(DEVICE):$(BPM):pm:limits:max_x_mon</pv_name>
+      <x>230</x>
+      <y>40</y>
+      <width>150</width>
+      <height>23</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner</name>
+      <pv_name>$(DEVICE):$(BPM):pm:limits:max_x_sp</pv_name>
+      <x>100</x>
+      <y>40</y>
+      <width>120</width>
+      <height>25</height>
+      <format>0</format>
+      <precision>0</precision>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <minimum>-3.0E7</minimum>
+      <maximum>3.0E7</maximum>
+      <limits_from_pv>false</limits_from_pv>
+      <increment>10000.0</increment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>X max</text>
+      <x>5</x>
+      <y>40</y>
+      <width>80</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_6</name>
+      <pv_name>$(DEVICE):$(BPM):pm:limits:min_y_mon</pv_name>
+      <x>230</x>
+      <y>80</y>
+      <width>150</width>
+      <height>23</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner</name>
+      <pv_name>$(DEVICE):$(BPM):pm:limits:min_y_sp</pv_name>
+      <x>100</x>
+      <y>80</y>
+      <width>120</width>
+      <height>25</height>
+      <format>0</format>
+      <precision>0</precision>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <minimum>-3.0E7</minimum>
+      <maximum>3.0E7</maximum>
+      <limits_from_pv>false</limits_from_pv>
+      <increment>10000.0</increment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Y min</text>
+      <x>5</x>
+      <y>80</y>
+      <width>80</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>$(DEVICE):$(BPM):pm:limits:max_y_mon</pv_name>
+      <x>230</x>
+      <y>110</y>
+      <width>150</width>
+      <height>23</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner_1</name>
+      <pv_name>$(DEVICE):$(BPM):pm:limits:max_y_sp</pv_name>
+      <x>100</x>
+      <y>110</y>
+      <width>120</width>
+      <height>25</height>
+      <format>0</format>
+      <precision>0</precision>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <minimum>-3.0E7</minimum>
+      <maximum>3.0E7</maximum>
+      <limits_from_pv>false</limits_from_pv>
+      <increment>10000.0</increment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_3</name>
+      <text>Y max</text>
+      <x>5</x>
+      <y>110</y>
+      <width>80</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_10</name>
+      <pv_name>$(DEVICE):$(BPM):pm:limits:ovf_threshold_mon</pv_name>
+      <x>230</x>
+      <y>151</y>
+      <width>150</width>
+      <height>23</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner</name>
+      <pv_name>$(DEVICE):$(BPM):pm:limits:ovf_threshold_sp</pv_name>
+      <x>120</x>
+      <y>150</y>
+      <height>25</height>
+      <format>0</format>
+      <precision>0</precision>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <minimum>10.0</minimum>
+      <maximum>32766.0</maximum>
+      <limits_from_pv>false</limits_from_pv>
+      <increment>100.0</increment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_21</name>
+      <text>ADC count limit</text>
+      <x>5</x>
+      <y>150</y>
+      <width>130</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_11</name>
+      <pv_name>$(DEVICE):$(BPM):pm:limits:ovf_duration_mon</pv_name>
+      <x>230</x>
+      <y>181</y>
+      <width>150</width>
+      <height>23</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner_1</name>
+      <pv_name>$(DEVICE):$(BPM):pm:limits:ovf_duration_sp</pv_name>
+      <x>120</x>
+      <y>180</y>
+      <height>25</height>
+      <format>0</format>
+      <precision>0</precision>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <minimum>10.0</minimum>
+      <maximum>32766.0</maximum>
+      <limits_from_pv>false</limits_from_pv>
+      <increment>100.0</increment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_22</name>
+      <text>Allowed duration</text>
+      <x>5</x>
+      <y>180</y>
+      <width>130</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Info &amp; Read-out settings</name>
+    <x>10</x>
+    <y>430</y>
+    <width>420</width>
+    <height>210</height>
+    <actions>
+    </actions>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline</name>
+      <height>100</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_25</name>
+      <text>Last postmortem event:</text>
+      <x>5</x>
+      <y>5</y>
+      <width>146</width>
+      <height>25</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_4</name>
+      <pv_name>$(DEVICE):$(BPM):pm:os_time</pv_name>
+      <x>190</x>
+      <y>9</y>
+      <width>190</width>
+      <height>18</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_16</name>
+      <text>Timestamp LMT</text>
+      <x>5</x>
+      <y>35</y>
+      <width>110</width>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_17</name>
+      <text>Timestamp MT</text>
+      <x>5</x>
+      <y>60</y>
+      <width>110</width>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_5</name>
+      <pv_name>$(DEVICE):$(BPM):$(SIG).LMT</pv_name>
+      <x>190</x>
+      <y>36</y>
+      <width>190</width>
+      <height>18</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_5</name>
+      <pv_name>$(DEVICE):$(BPM):$(SIG).MT</pv_name>
+      <x>190</x>
+      <y>61</y>
+      <width>190</width>
+      <height>18</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Status label SCAN</text>
+      <x>6</x>
+      <y>86</y>
+      <width>240</width>
+      <height>23</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="Rule" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0&gt;1">
+            <value>Refreshing on trigger automatically</value>
+          </exp>
+          <exp bool_exp="pv0&lt;1">
+            <value>Manual refresh required</value>
+          </exp>
+          <pv_name>$(DEVICE):$(BPM):$(SIG).SCAN</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>Status label ACQM</text>
+      <x>6</x>
+      <y>110</y>
+      <width>240</width>
+      <height>23</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="Rule" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0&lt;2">
+            <value>Data refresh is not linked to trigger</value>
+          </exp>
+          <exp bool_exp="1&lt;pv0&lt;3">
+            <value>New data will refresh on trigger.</value>
+          </exp>
+          <pv_name>$(DEVICE):$(BPM):$(SIG).ACQM</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_1</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(DEVICE):$(BPM):$(SIG).ACQM</pv_name>
+          <value>2</value>
+          <description>Set ACQM to Event</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>$(DEVICE):$(BPM):$(SIG).ACQM</pv_name>
+          <value>1</value>
+          <description>Set ACQM to Now</description>
+        </action>
+      </actions>
+      <x>5</x>
+      <y>140</y>
+      <height>25</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="ACQMRule" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0&lt;2">
+            <value>Free running</value>
+          </exp>
+          <exp bool_exp="1&lt;pv0&lt;3">
+            <value>Triggered</value>
+          </exp>
+          <pv_name>$(DEVICE):$(BPM):$(SIG).ACQM</pv_name>
+        </rule>
+      </rules>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(DEVICE):$(BPM):$(SIG).SCAN</pv_name>
+          <value>2</value>
+          <description>Set SCAN to I/O Intr</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>$(DEVICE):$(BPM):$(SIG).SCAN</pv_name>
+          <value>0</value>
+          <description>Set SCAN to Passive</description>
+        </action>
+      </actions>
+      <x>111</x>
+      <y>140</y>
+      <height>25</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="SCANRule" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0&gt;1">
+            <value>Stop refreshing</value>
+          </exp>
+          <exp bool_exp="pv0&lt;1">
+            <value>Start refreshing</value>
+          </exp>
+          <pv_name>$(DEVICE):$(BPM):$(SIG).SCAN</pv_name>
+        </rule>
+      </rules>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_2</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(DEVICE):$(BPM):$(SIG).PROC</pv_name>
+          <value>1</value>
+          <description>Send PROC</description>
+        </action>
+      </actions>
+      <text>Manual refresh</text>
+      <x>215</x>
+      <y>140</y>
+      <height>25</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="SCANRule" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0&gt;1">
+            <value>false</value>
+          </exp>
+          <exp bool_exp="pv0&lt;1">
+            <value>true</value>
+          </exp>
+          <pv_name>$(DEVICE):$(BPM):$(SIG).SCAN</pv_name>
+        </rule>
+      </rules>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_1</name>
+      <actions>
+        <action type="open_display">
+          <file>data_pm.opi</file>
+          <macros>
+            <SIG>pm:ddc_synth</SIG>
+            <TITLE>Postmortem buffer</TITLE>
+            <XLABEL>turns</XLABEL>
+            <YLABEL1>amplitude [a.u.]</YLABEL1>
+            <YLABEL2>position [nm]</YLABEL2>
+          </macros>
+          <target>tab</target>
+          <description>Read Postmortem amplitudes</description>
+        </action>
+      </actions>
+      <text>Read all
+signals</text>
+      <x>270</x>
+      <y>85</y>
+      <height>49</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+  </widget>
+  <widget type="xyplot" version="2.0.0">
+    <name>XY Graph</name>
+    <x>440</x>
+    <y>10</y>
+    <width>550</width>
+    <height>630</height>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <title>Amplitudes - Postmortem</title>
+    <title_font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </title_font>
+    <show_toolbar>true</show_toolbar>
+    <actions>
+    </actions>
+    <x_axis>
+      <title>$(XLABEL)</title>
+      <autoscale>true</autoscale>
+      <log_scale>false</log_scale>
+      <minimum>0.0</minimum>
+      <maximum>2048.0</maximum>
+      <show_grid>true</show_grid>
+      <title_font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </title_font>
+      <scale_font>
+        <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+        </font>
+      </scale_font>
+      <visible>true</visible>
+    </x_axis>
+    <y_axes>
+      <y_axis>
+        <title>$(YLABEL1)</title>
+        <autoscale>true</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>0.0</minimum>
+        <maximum>100.0</maximum>
+        <show_grid>true</show_grid>
+        <title_font>
+          <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+          </font>
+        </title_font>
+        <scale_font>
+          <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+          </font>
+        </scale_font>
+        <visible>true</visible>
+      </y_axis>
+    </y_axes>
+    <traces>
+      <trace>
+        <name>$(traces[0].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>$(DEVICE):$(BPM):$(SIG).Va</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="164" green="0" blue="0">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>4</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[1].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>$(DEVICE):$(BPM):$(SIG).Vb</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="32" green="74" blue="135">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>4</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[2].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>$(DEVICE):$(BPM):$(SIG).Vc</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="78" green="154" blue="6">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>4</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[3].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>$(DEVICE):$(BPM):$(SIG).Vd</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="46" green="52" blue="54">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>4</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[4].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>$(DEVICE):$(BPM):$(SIG).Sum</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="136" green="138" blue="133">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>4</point_size>
+        <visible>true</visible>
+      </trace>
+    </traces>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Settings</name>
+    <x>10</x>
+    <y>10</y>
+    <width>420</width>
+    <height>151</height>
+    <widget type="slide_button" version="2.0.0">
+      <name>Slide Button</name>
+      <pv_name>$(DEVICE):$(BPM):pm:capture_sp</pv_name>
+      <label></label>
+      <width>42</width>
+      <height>25</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_21</name>
+      <text>enable status</text>
+      <x>80</x>
+      <width>140</width>
+      <height>25</height>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="Rule" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>Postmortem disabled</value>
+          </exp>
+          <exp bool_exp="pv0==1">
+            <value>Postmortem enabled</value>
+          </exp>
+          <pv_name>$(DEVICE):$(BPM):pm:capture_mon</pv_name>
+        </rule>
+        <rule name="Rule2" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>
+              <color red="0" green="255" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0==0">
+            <value>
+              <color name="Major" red="255" green="0" blue="0">
+              </color>
+            </value>
+          </exp>
+          <pv_name>$(DEVICE):$(BPM):pm:capture_mon</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_25</name>
+      <text>Toggle enable to re-arm</text>
+      <x>230</x>
+      <width>150</width>
+      <height>25</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="Rule" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>false</value>
+          </exp>
+          <exp bool_exp="pv0==0">
+            <value>true</value>
+          </exp>
+          <pv_name>$(DEVICE):$(BPM):pm:capture_mon</pv_name>
+        </rule>
+      </rules>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_22</name>
+      <text>Source</text>
+      <y>30</y>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Menu Button</name>
+      <pv_name>$(DEVICE):$(BPM):pm:source_select_sp</pv_name>
+      <x>100</x>
+      <y>30</y>
+      <width>120</width>
+      <height>25</height>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_10</name>
+      <pv_name>$(DEVICE):$(BPM):pm:source_select_mon</pv_name>
+      <x>230</x>
+      <y>30</y>
+      <width>150</width>
+      <height>23</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_11</name>
+      <pv_name>$(DEVICE):$(BPM):pm:offset_mon</pv_name>
+      <x>230</x>
+      <y>60</y>
+      <width>150</width>
+      <height>23</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner</name>
+      <pv_name>$(DEVICE):$(BPM):pm:offset_sp</pv_name>
+      <x>100</x>
+      <y>60</y>
+      <width>120</width>
+      <height>25</height>
+      <format>0</format>
+      <precision>0</precision>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <minimum>-3.0E7</minimum>
+      <maximum>3.0E7</maximum>
+      <limits_from_pv>false</limits_from_pv>
+      <increment>10000.0</increment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_23</name>
+      <text>Write offset</text>
+      <y>60</y>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_24</name>
+      <text>Buffer length</text>
+      <y>90</y>
+      <height>25</height>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner_1</name>
+      <pv_name>$(DEVICE):$(BPM):pm:capacity_sp</pv_name>
+      <x>100</x>
+      <y>90</y>
+      <width>120</width>
+      <height>25</height>
+      <format>0</format>
+      <precision>0</precision>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <minimum>1.0</minimum>
+      <maximum>262144.0</maximum>
+      <limits_from_pv>false</limits_from_pv>
+      <increment>1000.0</increment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_12</name>
+      <pv_name>$(DEVICE):$(BPM):pm:capacity_mon</pv_name>
+      <x>230</x>
+      <y>90</y>
+      <width>150</width>
+      <height>23</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+  </widget>
+</display>

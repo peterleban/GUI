@@ -1,0 +1,38 @@
+This directory contains Graphical User Interface (GUI) for the Libera Brilliance+ instrument.
+
+GUI panels were developed under CSS Phoebus environment.
+The GUI supports the latest software release (3.6) and features introduced
+in the new BPM module (KRAF).
+
+Copy or fork the .bob files and open the "main.bob" file.
+The .bob files contain a macro definition (DEVICE). It must be defined in the "main.bob"
+file and is then linked to other related .bob files automatically.
+
+DEVICE stands for the IOCname (EPICS prefix). The IOCname is defined
+in the Libera instrument ( /opt/libera-ioc/IOCname )
+
+----------------------------------
+
+Installation instructions:
+
+1. Download and install the CSS Phoebus from this link:
+
+   https://controlssoftware.sns.ornl.gov/css_phoebus/
+
+2. Copy the contents of this directory to the target PC
+   where the CSS Phoebus is installed.
+
+3. Open the "main.bob" panel in Editor mode. Set the macro
+   "DEVICE" to the actual IOC name of the Libera instrument.
+   Save the "main.bob" file.
+
+4. Open the "main.bob" in Run mode or select the "play"
+   button in the CSS Phoebus environment.
+
+----------------------------------
+
+The panels were built under CSS Phoebus version 4.6.3
+
+Date: August 20, 2020
+Author: Peter Leban
+Email: peter.leban@i-tech.si
