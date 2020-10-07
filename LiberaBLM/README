@@ -1,9 +1,10 @@
-Date: January 14, 2019
+Date: October 7, 2020
 
 Directory content:
 
-  edm3.2    ... EDM panels for libera-blm version 1.6
-  caQtDM3.2 ... Qt panels for libera-blm version 1.6
-  CSS       ... CSS panels for libera-blm version 1.6
+  edm3.2      ... EDM panels for libera-blm version 1.6
+  caQtDM3.2   ... Qt panels for libera-blm version 1.6
+  CSS         ... CSS panels for libera-blm version 1.6
+  CSS_Phoebus ... CSS panels for libera-blm version 2.0
 
 [Removed /edm and /caQtDM directories]
