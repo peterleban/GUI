@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>BLD outputs ( $(IOCname) )</name>
+  <width>940</width>
+  <background_color>
+    <color red="18" green="19" blue="42" alpha="0">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="group" version="2.0.0">
+    <name>BLD outputs</name>
+    <x>5</x>
+    <y>5</y>
+    <width>930</width>
+    <height>206</height>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_1</name>
+      <width>295</width>
+      <height>170</height>
+      <style>2</style>
+      <background_color>
+        <color red="181" green="190" blue="201">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_13</name>
+        <pv_name>$(IOCname):bld:vout</pv_name>
+        <x>85</x>
+        <y>45</y>
+        <width>80</width>
+        <height>23</height>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_27</name>
+        <text>Vout (+/-)</text>
+        <x>6</x>
+        <y>42</y>
+        <width>79</width>
+        <height>25</height>
+        <background_color>
+          <color red="181" green="190" blue="201">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_27</name>
+        <text>Power supply</text>
+        <x>6</x>
+        <y>6</y>
+        <width>280</width>
+        <height>25</height>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_1</name>
+      <x>600</x>
+      <width>290</width>
+      <height>170</height>
+      <style>2</style>
+      <background_color>
+        <color red="249" green="163" blue="102">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <widget type="spinner" version="2.0.0">
+        <name>Spinner_2</name>
+        <pv_name>$(IOCname):bld:vgc:A_sp</pv_name>
+        <x>102</x>
+        <y>42</y>
+        <width>90</width>
+        <height>25</height>
+        <format>0</format>
+        <precision>2</precision>
+        <foreground_color>
+          <color red="164" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <actions>
+        </actions>
+        <minimum>-8000.0</minimum>
+        <maximum>8000.0</maximum>
+        <limits_from_pv>false</limits_from_pv>
+        <increment>0.1</increment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_15</name>
+        <pv_name>$(IOCname):bld:vgc:A_mon</pv_name>
+        <x>200</x>
+        <y>43</y>
+        <width>68</width>
+        <height>23</height>
+        <font>
+          <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_25</name>
+        <text>Gain control voltages</text>
+        <x>10</x>
+        <y>6</y>
+        <width>270</width>
+        <height>25</height>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_26</name>
+        <text>Channel A</text>
+        <x>12</x>
+        <y>42</y>
+        <width>85</width>
+        <height>26</height>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="spinner" version="2.0.0">
+        <name>Spinner_2</name>
+        <pv_name>$(IOCname):bld:vgc:B_sp</pv_name>
+        <x>102</x>
+        <y>72</y>
+        <width>90</width>
+        <height>25</height>
+        <format>0</format>
+        <precision>2</precision>
+        <foreground_color>
+          <color red="164" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <actions>
+        </actions>
+        <minimum>-8000.0</minimum>
+        <maximum>8000.0</maximum>
+        <limits_from_pv>false</limits_from_pv>
+        <increment>0.1</increment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_15</name>
+        <pv_name>$(IOCname):bld:vgc:B_mon</pv_name>
+        <x>200</x>
+        <y>73</y>
+        <width>68</width>
+        <height>23</height>
+        <font>
+          <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_26</name>
+        <text>Channel B</text>
+        <x>12</x>
+        <y>72</y>
+        <width>85</width>
+        <height>26</height>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="spinner" version="2.0.0">
+        <name>Spinner_3</name>
+        <pv_name>$(IOCname):bld:vgc:C_sp</pv_name>
+        <x>102</x>
+        <y>102</y>
+        <width>90</width>
+        <height>25</height>
+        <format>0</format>
+        <precision>2</precision>
+        <foreground_color>
+          <color red="164" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <actions>
+        </actions>
+        <minimum>-8000.0</minimum>
+        <maximum>8000.0</maximum>
+        <limits_from_pv>false</limits_from_pv>
+        <increment>0.1</increment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_16</name>
+        <pv_name>$(IOCname):bld:vgc:C_mon</pv_name>
+        <x>200</x>
+        <y>103</y>
+        <width>68</width>
+        <height>23</height>
+        <font>
+          <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_28</name>
+        <text>Channel C</text>
+        <x>12</x>
+        <y>102</y>
+        <width>85</width>
+        <height>26</height>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="spinner" version="2.0.0">
+        <name>Spinner_2</name>
+        <pv_name>$(IOCname):bld:vgc:D_sp</pv_name>
+        <x>102</x>
+        <y>132</y>
+        <width>90</width>
+        <height>25</height>
+        <format>0</format>
+        <precision>2</precision>
+        <foreground_color>
+          <color red="164" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <actions>
+        </actions>
+        <minimum>-8000.0</minimum>
+        <maximum>8000.0</maximum>
+        <limits_from_pv>false</limits_from_pv>
+        <increment>0.1</increment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_15</name>
+        <pv_name>$(IOCname):bld:vgc:D_mon</pv_name>
+        <x>200</x>
+        <y>133</y>
+        <width>68</width>
+        <height>23</height>
+        <font>
+          <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_26</name>
+        <text>Channel D</text>
+        <x>12</x>
+        <y>132</y>
+        <width>85</width>
+        <height>26</height>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_1</name>
+      <x>300</x>
+      <width>295</width>
+      <height>170</height>
+      <style>2</style>
+      <background_color>
+        <color red="181" green="190" blue="201">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <widget type="label" version="2.0.0">
+        <name>Label_26</name>
+        <text>Vgc limit</text>
+        <x>6</x>
+        <y>42</y>
+        <width>73</width>
+        <height>25</height>
+        <background_color>
+          <color red="181" green="190" blue="201">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_14</name>
+        <pv_name>$(IOCname):bld:vgc:limit</pv_name>
+        <x>85</x>
+        <y>45</y>
+        <width>80</width>
+        <height>23</height>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_27</name>
+        <text>Gain Control Voltage limit</text>
+        <x>6</x>
+        <y>6</y>
+        <width>280</width>
+        <height>25</height>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+  </widget>
+</display>

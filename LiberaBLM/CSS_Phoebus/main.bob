@@ -1,0 +1,3176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>LiberaBLM ( $(IOCname) )</name>
+  <width>930</width>
+  <height>900</height>
+  <background_color>
+    <color red="18" green="19" blue="42" alpha="0">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="group" version="2.0.0">
+    <name>Buffer Processing Configuration</name>
+    <y>330</y>
+    <width>910</width>
+    <height>270</height>
+    <actions>
+    </actions>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline</name>
+      <height>100</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>ADC mask offset (O)</text>
+      <x>5</x>
+      <y>138</y>
+      <width>160</width>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_20</name>
+      <text>ADC mask window (W)</text>
+      <x>5</x>
+      <y>168</y>
+      <width>160</width>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_6</name>
+      <pv_name>$(IOCname):adcmask:offset_mon</pv_name>
+      <x>251</x>
+      <y>136</y>
+      <width>98</width>
+      <height>23</height>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input_2</name>
+      <pv_name>$(IOCname):adcmask:offset_sp</pv_name>
+      <x>170</x>
+      <y>135</y>
+      <width>70</width>
+      <height>25</height>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_7</name>
+      <pv_name>$(IOCname):adcmask:window_mon</pv_name>
+      <x>251</x>
+      <y>166</y>
+      <width>98</width>
+      <height>23</height>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input_1</name>
+      <pv_name>$(IOCname):adcmask:window_sp</pv_name>
+      <x>170</x>
+      <y>165</y>
+      <width>70</width>
+      <height>25</height>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>SUM decimation</text>
+      <x>5</x>
+      <y>13</y>
+      <width>160</width>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_20</name>
+      <text>AVG decimation (2^N)</text>
+      <x>5</x>
+      <y>71</y>
+      <width>160</width>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_6</name>
+      <pv_name>$(IOCname):decimation:sum_mon</pv_name>
+      <x>251</x>
+      <y>11</y>
+      <width>98</width>
+      <height>23</height>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input_2</name>
+      <pv_name>$(IOCname):decimation:sum_sp</pv_name>
+      <x>170</x>
+      <y>10</y>
+      <width>70</width>
+      <height>25</height>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_7</name>
+      <pv_name>$(IOCname):decimation:avg:val_mon</pv_name>
+      <x>251</x>
+      <y>69</y>
+      <width>98</width>
+      <height>23</height>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_22</name>
+      <text>SA decimation (2^N)</text>
+      <x>5</x>
+      <y>100</y>
+      <width>160</width>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_9</name>
+      <pv_name>$(IOCname):decimation:sa:val_mon</pv_name>
+      <x>251</x>
+      <y>101</y>
+      <width>98</width>
+      <height>23</height>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_24</name>
+      <text>SUM mode</text>
+      <x>5</x>
+      <y>43</y>
+      <width>160</width>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="slide_button" version="2.0.0">
+      <name>Boolean Button</name>
+      <pv_name>$(IOCname):decimation:sum_mode_sp</pv_name>
+      <label></label>
+      <x>95</x>
+      <y>41</y>
+      <width>50</width>
+      <height>23</height>
+      <off_color>
+        <color red="0" green="100" blue="0">
+        </color>
+      </off_color>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(IOCname):decimation:sum_mode_sp</pv_name>
+          <value>1</value>
+        </action>
+        <action type="write_pv">
+          <pv_name>$(IOCname):decimation:sum_mode_sp</pv_name>
+          <value>0</value>
+        </action>
+      </actions>
+      <confirm_message>Are you sure you want to do this?</confirm_message>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_25</name>
+      <text>Label</text>
+      <x>170</x>
+      <y>43</y>
+      <width>155</width>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="SumModeShow" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0&lt;1">
+            <value>integrating mode</value>
+          </exp>
+          <exp bool_exp="pv0&gt;0">
+            <value>averaging mode</value>
+          </exp>
+          <pv_name>$(IOCname):decimation:sum_mode_mon</pv_name>
+        </rule>
+      </rules>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner</name>
+      <pv_name>$(IOCname):decimation:avg:n_sp</pv_name>
+      <x>170</x>
+      <y>68</y>
+      <width>70</width>
+      <height>25</height>
+      <format>0</format>
+      <precision>0</precision>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <minimum>1.0</minimum>
+      <maximum>18.0</maximum>
+      <limits_from_pv>false</limits_from_pv>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner</name>
+      <pv_name>$(IOCname):decimation:sa:n_sp</pv_name>
+      <x>170</x>
+      <y>100</y>
+      <width>70</width>
+      <height>25</height>
+      <format>0</format>
+      <precision>0</precision>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <minimum>16.0</minimum>
+      <maximum>26.0</maximum>
+      <limits_from_pv>false</limits_from_pv>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_20</name>
+      <text>O + W &lt;= </text>
+      <x>5</x>
+      <y>196</y>
+      <width>160</width>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_6</name>
+      <pv_name>$(IOCname):decimation:sum_mon</pv_name>
+      <x>171</x>
+      <y>194</y>
+      <width>68</width>
+      <height>23</height>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Boolean Button_1</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(IOCname):acqtrigger:source_sp</pv_name>
+          <value>1</value>
+          <description>Set external triggering</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>$(IOCname):acqtrigger:source_sp</pv_name>
+          <value>2</value>
+          <description>Set threshold trigger</description>
+        </action>
+      </actions>
+      <pv_name>$(IOCname):acqtrigger:source_sp</pv_name>
+      <x>600</x>
+      <y>10</y>
+      <width>50</width>
+      <height>25</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <confirm_message>Are you sure you want to do this?</confirm_message>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner_1</name>
+      <pv_name>$(IOCname):threshold:autotrig:A_sp</pv_name>
+      <x>600</x>
+      <y>100</y>
+      <width>90</width>
+      <height>25</height>
+      <format>0</format>
+      <precision>0</precision>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <minimum>-8000.0</minimum>
+      <maximum>8000.0</maximum>
+      <limits_from_pv>false</limits_from_pv>
+      <increment>10.0</increment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Text Update_15</name>
+      <text></text>
+      <x>700</x>
+      <y>11</y>
+      <width>78</width>
+      <height>23</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="Rule" prop_id="text" out_exp="false">
+          <exp bool_exp="0&lt;pv0&lt;2">
+            <value>External (T2)</value>
+          </exp>
+          <exp bool_exp="pv0&gt;1">
+            <value>Threshold</value>
+          </exp>
+          <pv_name>$(IOCname):acqtrigger:source_mon</pv_name>
+        </rule>
+      </rules>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_16</name>
+      <pv_name>$(IOCname):threshold:autotrig:A_mon</pv_name>
+      <x>700</x>
+      <y>101</y>
+      <width>78</width>
+      <height>23</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="slide_button" version="2.0.0">
+      <name>Boolean Button_1</name>
+      <pv_name>$(IOCname):threshold:autotrig:edge_sp</pv_name>
+      <bit>-1</bit>
+      <label></label>
+      <x>600</x>
+      <y>68</y>
+      <width>50</width>
+      <height>25</height>
+      <off_color>
+        <color red="0" green="145" blue="255">
+        </color>
+      </off_color>
+      <on_color>
+        <color red="0" green="163" blue="0">
+        </color>
+      </on_color>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(IOCname):threshold:autotrig:edge_sp</pv_name>
+          <value>1</value>
+          <description>Set raising edge</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>$(IOCname):threshold:autotrig:edge_sp</pv_name>
+          <value>0</value>
+          <description>Set falling edge</description>
+        </action>
+      </actions>
+      <confirm_message>Are you sure you want to do this?</confirm_message>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Text Update_17</name>
+      <text></text>
+      <x>700</x>
+      <y>69</y>
+      <width>78</width>
+      <height>23</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="Rule" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0&gt;0">
+            <value>Raising</value>
+          </exp>
+          <exp bool_exp="pv0&lt;1">
+            <value>Falling</value>
+          </exp>
+          <pv_name>$(IOCname):threshold:autotrig:edge_mon</pv_name>
+        </rule>
+      </rules>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Acquisition trigger source</text>
+      <x>390</x>
+      <y>10</y>
+      <width>200</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Trigger edge</text>
+      <x>390</x>
+      <y>68</y>
+      <width>200</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_5</name>
+      <actions execute_as_one="true">
+        <action type="write_pv">
+          <pv_name>$(IOCname):acqtrigger:source_sp</pv_name>
+          <value>1</value>
+        </action>
+        <action type="write_pv">
+          <pv_name>$(IOCname):acqtrigger:source_sp</pv_name>
+          <value>2</value>
+        </action>
+      </actions>
+      <text>Reset</text>
+      <x>700</x>
+      <y>40</y>
+      <width>80</width>
+      <height>21</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Channel A</text>
+      <x>390</x>
+      <y>100</y>
+      <width>200</width>
+      <height>25</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner_1</name>
+      <pv_name>$(IOCname):threshold:autotrig:B_sp</pv_name>
+      <x>600</x>
+      <y>130</y>
+      <width>90</width>
+      <height>25</height>
+      <format>0</format>
+      <precision>0</precision>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <minimum>-8000.0</minimum>
+      <maximum>8000.0</maximum>
+      <limits_from_pv>false</limits_from_pv>
+      <increment>10.0</increment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_16</name>
+      <pv_name>$(IOCname):threshold:autotrig:B_mon</pv_name>
+      <x>700</x>
+      <y>131</y>
+      <width>78</width>
+      <height>23</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Channel B</text>
+      <x>390</x>
+      <y>130</y>
+      <width>200</width>
+      <height>25</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner_1</name>
+      <pv_name>$(IOCname):threshold:autotrig:C_sp</pv_name>
+      <x>600</x>
+      <y>160</y>
+      <width>90</width>
+      <height>25</height>
+      <format>0</format>
+      <precision>0</precision>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <minimum>-8000.0</minimum>
+      <maximum>8000.0</maximum>
+      <limits_from_pv>false</limits_from_pv>
+      <increment>10.0</increment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_16</name>
+      <pv_name>$(IOCname):threshold:autotrig:C_mon</pv_name>
+      <x>700</x>
+      <y>161</y>
+      <width>78</width>
+      <height>23</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Channel C</text>
+      <x>390</x>
+      <y>160</y>
+      <width>200</width>
+      <height>25</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner_1</name>
+      <pv_name>$(IOCname):threshold:autotrig:D_sp</pv_name>
+      <x>600</x>
+      <y>190</y>
+      <width>90</width>
+      <height>25</height>
+      <format>0</format>
+      <precision>0</precision>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <minimum>-8000.0</minimum>
+      <maximum>8000.0</maximum>
+      <limits_from_pv>false</limits_from_pv>
+      <increment>10.0</increment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_16</name>
+      <pv_name>$(IOCname):threshold:autotrig:D_mon</pv_name>
+      <x>700</x>
+      <y>191</y>
+      <width>78</width>
+      <height>23</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Channel D</text>
+      <x>390</x>
+      <y>190</y>
+      <width>200</width>
+      <height>25</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Auto-trigger thresholds</text>
+      <x>390</x>
+      <y>97</y>
+      <width>121</width>
+      <height>118</height>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_19</name>
+    <text>
+Instrument's back panel:
+T0 ... ref. clock for PLL
+T1 ... Postmortem trigger
+T2 ... Trigger</text>
+    <x>750</x>
+    <y>610</y>
+    <width>160</width>
+    <height>170</height>
+    <font>
+      <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="252" green="233" blue="79">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <actions>
+    </actions>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Clocks and Triggers</name>
+    <y>610</y>
+    <width>740</width>
+    <height>170</height>
+    <actions>
+    </actions>
+    <widget type="label" version="2.0.0">
+      <name>Label_12</name>
+      <text>T0 PLL locked</text>
+      <x>5</x>
+      <y>5</y>
+      <width>146</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>$(IOCname):pll:locked</pv_name>
+      <x>151</x>
+      <y>6</y>
+      <width>128</width>
+      <height>23</height>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_12</name>
+      <text>T0 interval</text>
+      <x>5</x>
+      <y>65</y>
+      <width>130</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>$(IOCname):decimation:t0_interval_mon</pv_name>
+      <x>206</x>
+      <y>66</y>
+      <width>73</width>
+      <height>23</height>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline</name>
+      <height>100</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_12</name>
+      <text>Trigger counter</text>
+      <x>305</x>
+      <y>65</y>
+      <width>130</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>$(IOCname):triggers:t2:count_mon</pv_name>
+      <x>431</x>
+      <y>66</y>
+      <width>98</width>
+      <height>23</height>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input_2</name>
+      <pv_name>$(IOCname):decimation:t0_interval_sp</pv_name>
+      <x>150</x>
+      <y>65</y>
+      <width>50</width>
+      <height>25</height>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_18</name>
+      <text>T0 ref. (expected)</text>
+      <x>5</x>
+      <y>35</y>
+      <width>146</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>$(IOCname):clock_info:pll_ref:frequency</pv_name>
+      <x>151</x>
+      <y>36</y>
+      <width>128</width>
+      <height>23</height>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_19</name>
+      <text>Trigger source</text>
+      <x>305</x>
+      <y>5</y>
+      <width>126</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Label</text>
+      <x>431</x>
+      <y>6</y>
+      <width>98</width>
+      <height>23</height>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="Rule" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0&lt;2">
+            <value>External</value>
+          </exp>
+          <exp bool_exp="pv0&lt;3">
+            <value>Internal</value>
+          </exp>
+          <exp bool_exp="pv0&lt;4">
+            <value>Manual</value>
+          </exp>
+          <pv_name>$(IOCname):triggers:t2:source_mon</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(IOCname):triggers:t2:source_sp</pv_name>
+          <value>1</value>
+          <description>Set external trigger</description>
+        </action>
+      </actions>
+      <text>Ext</text>
+      <x>535</x>
+      <y>5</y>
+      <width>50</width>
+      <height>25</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_5</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(IOCname):triggers:t2:source_sp</pv_name>
+          <value>2</value>
+          <description>Set internal trigger</description>
+        </action>
+      </actions>
+      <text>Int</text>
+      <x>590</x>
+      <y>5</y>
+      <width>50</width>
+      <height>25</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_6</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(IOCname):triggers:t2:source_sp</pv_name>
+          <value>3</value>
+          <description>Send manual trigger</description>
+        </action>
+      </actions>
+      <text>Manual</text>
+      <x>645</x>
+      <y>5</y>
+      <width>50</width>
+      <height>25</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_19</name>
+      <text>Trigger delay</text>
+      <x>305</x>
+      <y>35</y>
+      <width>126</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_6</name>
+      <pv_name>$(IOCname):triggers:t2:delay_mon</pv_name>
+      <x>536</x>
+      <y>36</y>
+      <width>98</width>
+      <height>23</height>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input_2</name>
+      <pv_name>$(IOCname):triggers:t2:delay_sp</pv_name>
+      <x>430</x>
+      <y>35</y>
+      <height>25</height>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Sampling freq.</text>
+      <x>5</x>
+      <y>95</y>
+      <width>232</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>$(IOCname):clock_info:adc_frequency</pv_name>
+      <x>151</x>
+      <y>96</y>
+      <width>128</width>
+      <height>23</height>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_19</name>
+      <text>Trigger freq. (int)</text>
+      <x>305</x>
+      <y>95</y>
+      <width>126</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_6</name>
+      <pv_name>$(IOCname):triggers:t2:int_freq</pv_name>
+      <x>431</x>
+      <y>96</y>
+      <width>98</width>
+      <height>23</height>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner</name>
+      <pv_name>$(IOCname):triggers:t2:prescaler_sp</pv_name>
+      <x>535</x>
+      <y>95</y>
+      <width>160</width>
+      <height>25</height>
+      <format>0</format>
+      <precision>0</precision>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <minimum>600000.0</minimum>
+      <maximum>1.0E8</maximum>
+      <limits_from_pv>false</limits_from_pv>
+      <increment>500000.0</increment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>IOC information</name>
+    <width>910</width>
+    <height>90</height>
+    <widget type="label" version="2.0.0">
+      <name>Label_53</name>
+      <text>Application version</text>
+      <x>250</x>
+      <width>130</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_10</name>
+      <pv_name>$(IOCname):version</pv_name>
+      <x>390</x>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_56</name>
+      <text>IOC name</text>
+      <x>250</x>
+      <y>30</y>
+      <width>80</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Text Update_12</name>
+      <text>$(IOCname)</text>
+      <x>390</x>
+      <y>30</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="Read_Background" red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_57</name>
+      <text>Libera BLM</text>
+      <x>50</x>
+      <y>5</y>
+      <width>185</width>
+      <height>42</height>
+      <font>
+        <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="picture" version="2.0.0">
+      <name>Picture</name>
+      <file>libera.png</file>
+      <y>5</y>
+      <width>50</width>
+      <height>42</height>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Analog Signal Processing</name>
+    <y>100</y>
+    <width>910</width>
+    <height>220</height>
+    <actions>
+    </actions>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline</name>
+      <height>100</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>$(IOCname):att:A_mon</pv_name>
+      <x>231</x>
+      <y>26</y>
+      <width>68</width>
+      <height>23</height>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_13</name>
+      <text>Max ADC</text>
+      <x>40</x>
+      <y>5</y>
+      <width>110</width>
+      <height>15</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_13</name>
+      <text>Attenuation</text>
+      <x>155</x>
+      <y>5</y>
+      <width>145</width>
+      <height>15</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_13</name>
+      <text>Termination</text>
+      <x>310</x>
+      <y>6</y>
+      <width>120</width>
+      <height>15</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>$(IOCname):maxadc:B_mon</pv_name>
+      <x>41</x>
+      <y>56</y>
+      <width>108</width>
+      <height>23</height>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="MaxADCAlarm" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0&gt;8000">
+            <value>
+              <color name="Major" red="255" green="0" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0&gt;7000">
+            <value>
+              <color name="Minor" red="255" green="128" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0&gt;100">
+            <value>
+              <color red="0" green="255" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0&lt;100">
+            <value>
+              <color red="0" green="163" blue="255">
+              </color>
+            </value>
+          </exp>
+          <pv_name>$(IOCname):maxadc:B_mon</pv_name>
+        </rule>
+      </rules>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_3</name>
+      <pv_name>$(IOCname):att:B_mon</pv_name>
+      <x>231</x>
+      <y>56</y>
+      <width>68</width>
+      <height>23</height>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>$(IOCname):maxadc:C_mon</pv_name>
+      <x>41</x>
+      <y>86</y>
+      <width>108</width>
+      <height>23</height>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="MaxADCAlarm" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0&gt;8000">
+            <value>
+              <color name="Major" red="255" green="0" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0&gt;7000">
+            <value>
+              <color name="Minor" red="255" green="128" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0&gt;100">
+            <value>
+              <color red="0" green="255" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0&lt;100">
+            <value>
+              <color red="0" green="163" blue="255">
+              </color>
+            </value>
+          </exp>
+          <pv_name>$(IOCname):maxadc:C_mon</pv_name>
+        </rule>
+      </rules>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_3</name>
+      <pv_name>$(IOCname):att:C_mon</pv_name>
+      <x>231</x>
+      <y>86</y>
+      <width>68</width>
+      <height>23</height>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>$(IOCname):maxadc:D_mon</pv_name>
+      <x>41</x>
+      <y>116</y>
+      <width>108</width>
+      <height>23</height>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="MaxADCAlarm" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0&gt;8000">
+            <value>
+              <color name="Major" red="255" green="0" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0&gt;7000">
+            <value>
+              <color name="Minor" red="255" green="128" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0&gt;100">
+            <value>
+              <color red="0" green="255" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0&lt;100">
+            <value>
+              <color red="0" green="163" blue="255">
+              </color>
+            </value>
+          </exp>
+          <pv_name>$(IOCname):maxadc:D_mon</pv_name>
+        </rule>
+      </rules>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_3</name>
+      <pv_name>$(IOCname):att:D_mon</pv_name>
+      <x>231</x>
+      <y>116</y>
+      <width>68</width>
+      <height>23</height>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Label</text>
+      <x>361</x>
+      <y>26</y>
+      <width>68</width>
+      <height>23</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="TerminationRule" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0&lt;1">
+            <value>1 MOhm</value>
+          </exp>
+          <exp bool_exp="pv0&gt;0">
+            <value>50 Ohm</value>
+          </exp>
+          <pv_name>$(IOCname):termination:A_mon</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_15</name>
+      <text>Label</text>
+      <x>361</x>
+      <y>56</y>
+      <width>68</width>
+      <height>23</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="TerminationRule" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0&lt;1">
+            <value>1 MOhm</value>
+          </exp>
+          <exp bool_exp="pv0&gt;0">
+            <value>50 Ohm</value>
+          </exp>
+          <pv_name>$(IOCname):termination:B_mon</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_15</name>
+      <text>Label</text>
+      <x>361</x>
+      <y>86</y>
+      <width>68</width>
+      <height>23</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="TerminationRule" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0&lt;1">
+            <value>1 MOhm</value>
+          </exp>
+          <exp bool_exp="pv0&gt;0">
+            <value>50 Ohm</value>
+          </exp>
+          <pv_name>$(IOCname):termination:C_mon</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_15</name>
+      <text>Label</text>
+      <x>361</x>
+      <y>116</y>
+      <width>68</width>
+      <height>23</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="TerminationRule" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0&lt;1">
+            <value>1 MOhm</value>
+          </exp>
+          <exp bool_exp="pv0&gt;0">
+            <value>50 Ohm</value>
+          </exp>
+          <pv_name>$(IOCname):termination:D_mon</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner</name>
+      <pv_name>$(IOCname):att:B_sp</pv_name>
+      <x>154</x>
+      <y>55</y>
+      <width>70</width>
+      <height>25</height>
+      <format>0</format>
+      <precision>0</precision>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <maximum>31.0</maximum>
+      <limits_from_pv>false</limits_from_pv>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>$(IOCname):maxadc:A_mon</pv_name>
+      <x>41</x>
+      <y>26</y>
+      <width>108</width>
+      <height>23</height>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="MaxADCAlarm" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0&gt;8000">
+            <value>
+              <color name="Major" red="255" green="0" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0&gt;7000">
+            <value>
+              <color name="Minor" red="255" green="128" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0&gt;100">
+            <value>
+              <color red="0" green="255" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0&lt;100">
+            <value>
+              <color red="0" green="163" blue="255">
+              </color>
+            </value>
+          </exp>
+          <pv_name>$(IOCname):maxadc:A_mon</pv_name>
+        </rule>
+      </rules>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner</name>
+      <pv_name>$(IOCname):att:A_sp</pv_name>
+      <x>154</x>
+      <y>25</y>
+      <width>70</width>
+      <height>25</height>
+      <format>0</format>
+      <precision>0</precision>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <maximum>31.0</maximum>
+      <limits_from_pv>false</limits_from_pv>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner</name>
+      <pv_name>$(IOCname):att:C_sp</pv_name>
+      <x>154</x>
+      <y>85</y>
+      <width>70</width>
+      <height>25</height>
+      <format>0</format>
+      <precision>0</precision>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <maximum>31.0</maximum>
+      <limits_from_pv>false</limits_from_pv>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner</name>
+      <pv_name>$(IOCname):att:D_sp</pv_name>
+      <x>154</x>
+      <y>115</y>
+      <width>70</width>
+      <height>25</height>
+      <format>0</format>
+      <precision>0</precision>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <maximum>31.0</maximum>
+      <limits_from_pv>false</limits_from_pv>
+    </widget>
+    <widget type="slide_button" version="2.0.0">
+      <name>Boolean Button</name>
+      <pv_name>$(IOCname):termination:A_sp</pv_name>
+      <bit>-1</bit>
+      <label></label>
+      <x>305</x>
+      <y>25</y>
+      <width>50</width>
+      <height>25</height>
+      <off_color>
+        <color red="0" green="145" blue="255">
+        </color>
+      </off_color>
+      <on_color>
+        <color red="0" green="163" blue="0">
+        </color>
+      </on_color>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <actions>
+      </actions>
+      <confirm_message>Are you sure you want to do this?</confirm_message>
+    </widget>
+    <widget type="slide_button" version="2.0.0">
+      <name>Boolean Button</name>
+      <pv_name>$(IOCname):termination:B_sp</pv_name>
+      <bit>-1</bit>
+      <label></label>
+      <x>305</x>
+      <y>55</y>
+      <width>50</width>
+      <height>25</height>
+      <off_color>
+        <color red="0" green="145" blue="255">
+        </color>
+      </off_color>
+      <on_color>
+        <color red="0" green="163" blue="0">
+        </color>
+      </on_color>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <actions>
+      </actions>
+      <confirm_message>Are you sure you want to do this?</confirm_message>
+    </widget>
+    <widget type="slide_button" version="2.0.0">
+      <name>Boolean Button</name>
+      <pv_name>$(IOCname):termination:C_sp</pv_name>
+      <bit>-1</bit>
+      <label></label>
+      <x>305</x>
+      <y>85</y>
+      <width>50</width>
+      <height>25</height>
+      <off_color>
+        <color red="0" green="145" blue="255">
+        </color>
+      </off_color>
+      <on_color>
+        <color red="0" green="163" blue="0">
+        </color>
+      </on_color>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <actions>
+      </actions>
+      <confirm_message>Are you sure you want to do this?</confirm_message>
+    </widget>
+    <widget type="slide_button" version="2.0.0">
+      <name>Boolean Button</name>
+      <pv_name>$(IOCname):termination:D_sp</pv_name>
+      <bit>-1</bit>
+      <label></label>
+      <x>305</x>
+      <y>115</y>
+      <width>50</width>
+      <height>25</height>
+      <off_color>
+        <color red="0" green="145" blue="255">
+        </color>
+      </off_color>
+      <on_color>
+        <color red="0" green="163" blue="0">
+        </color>
+      </on_color>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <actions>
+      </actions>
+      <confirm_message>Are you sure you want to do this?</confirm_message>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_6</name>
+      <pv_name>$(IOCname):adc_offset:A_mon</pv_name>
+      <x>516</x>
+      <y>26</y>
+      <width>98</width>
+      <height>23</height>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input_2</name>
+      <pv_name>$(IOCname):adc_offset:A_sp</pv_name>
+      <x>445</x>
+      <y>25</y>
+      <width>60</width>
+      <height>25</height>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_7</name>
+      <pv_name>$(IOCname):adc_offset:B_mon</pv_name>
+      <x>516</x>
+      <y>56</y>
+      <width>98</width>
+      <height>23</height>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input_1</name>
+      <pv_name>$(IOCname):adc_offset:B_sp</pv_name>
+      <x>445</x>
+      <y>55</y>
+      <width>60</width>
+      <height>25</height>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_8</name>
+      <pv_name>$(IOCname):adc_offset:C_mon</pv_name>
+      <x>516</x>
+      <y>86</y>
+      <width>98</width>
+      <height>23</height>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input_2</name>
+      <pv_name>$(IOCname):adc_offset:C_sp</pv_name>
+      <x>445</x>
+      <y>85</y>
+      <width>60</width>
+      <height>25</height>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_9</name>
+      <pv_name>$(IOCname):adc_offset:D_mon</pv_name>
+      <x>516</x>
+      <y>116</y>
+      <width>98</width>
+      <height>23</height>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input_3</name>
+      <pv_name>$(IOCname):adc_offset:D_sp</pv_name>
+      <x>445</x>
+      <y>115</y>
+      <width>60</width>
+      <height>25</height>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_18</name>
+      <text>ADC offset</text>
+      <x>445</x>
+      <y>5</y>
+      <width>170</width>
+      <height>15</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="checkbox" version="2.0.0">
+      <name>Check Box</name>
+      <pv_name>$(IOCname):abs_enabled:A_sp</pv_name>
+      <label>abs(A)</label>
+      <x>625</x>
+      <y>28</y>
+      <width>76</width>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="checkbox" version="2.0.0">
+      <name>Check Box_1</name>
+      <pv_name>$(IOCname):abs_enabled:B_sp</pv_name>
+      <label>abs(B)</label>
+      <x>625</x>
+      <y>58</y>
+      <width>66</width>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="checkbox" version="2.0.0">
+      <name>Check Box_2</name>
+      <pv_name>$(IOCname):abs_enabled:C_sp</pv_name>
+      <label>abs(C)</label>
+      <x>625</x>
+      <y>88</y>
+      <width>66</width>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="checkbox" version="2.0.0">
+      <name>Check Box_3</name>
+      <pv_name>$(IOCname):abs_enabled:D_sp</pv_name>
+      <label>abs(D)</label>
+      <x>625</x>
+      <y>118</y>
+      <width>66</width>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>$(IOCname):abs_enabled:A_mon</pv_name>
+      <x>701</x>
+      <y>26</y>
+      <width>58</width>
+      <height>23</height>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_3</name>
+      <pv_name>$(IOCname):abs_enabled:B_mon</pv_name>
+      <x>701</x>
+      <y>56</y>
+      <width>58</width>
+      <height>23</height>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_4</name>
+      <pv_name>$(IOCname):abs_enabled:C_mon</pv_name>
+      <x>701</x>
+      <y>86</y>
+      <width>58</width>
+      <height>23</height>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_5</name>
+      <pv_name>$(IOCname):abs_enabled:D_mon</pv_name>
+      <x>701</x>
+      <y>116</y>
+      <width>58</width>
+      <height>23</height>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_1</name>
+      <actions>
+        <action type="open_display">
+          <file>signal_processing.opi</file>
+          <macros>
+            <CH>A</CH>
+          </macros>
+          <target>tab</target>
+          <description>Open signal processing</description>
+        </action>
+      </actions>
+      <text>A</text>
+      <x>5</x>
+      <y>25</y>
+      <width>25</width>
+      <height>25</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_1</name>
+      <actions>
+        <action type="open_display">
+          <file>signal_processing.opi</file>
+          <macros>
+            <CH>B</CH>
+          </macros>
+          <target>tab</target>
+          <description>Open signal processing</description>
+        </action>
+      </actions>
+      <text>B</text>
+      <x>5</x>
+      <y>55</y>
+      <width>25</width>
+      <height>25</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_1</name>
+      <actions>
+        <action type="open_display">
+          <file>signal_processing.opi</file>
+          <macros>
+            <CH>C</CH>
+          </macros>
+          <target>tab</target>
+          <description>Open signal processing</description>
+        </action>
+      </actions>
+      <text>C</text>
+      <x>5</x>
+      <y>85</y>
+      <width>25</width>
+      <height>25</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_1</name>
+      <actions>
+        <action type="open_display">
+          <file>signal_processing.opi</file>
+          <macros>
+            <CH>D</CH>
+          </macros>
+          <target>tab</target>
+          <description>Open signal processing</description>
+        </action>
+      </actions>
+      <text>D</text>
+      <x>5</x>
+      <y>115</y>
+      <width>25</width>
+      <height>25</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="slide_button" version="2.0.0">
+      <name>Boolean Button_4</name>
+      <pv_name>$(IOCname):adc_invert_sp</pv_name>
+      <bit>-1</bit>
+      <label></label>
+      <x>305</x>
+      <y>150</y>
+      <width>50</width>
+      <height>25</height>
+      <off_color>
+        <color red="0" green="255" blue="0">
+        </color>
+      </off_color>
+      <on_color>
+        <color red="255" green="0" blue="0">
+        </color>
+      </on_color>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <actions>
+      </actions>
+      <confirm_message>Are you sure you want to do this?</confirm_message>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_32</name>
+      <text>Switch positive pulses to negative pulses (all channels)</text>
+      <x>5</x>
+      <y>155</y>
+      <width>326</width>
+      <height>15</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Text Update_18</name>
+      <x>361</x>
+      <y>154</y>
+      <width>88</width>
+      <height>18</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="Rule1" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0&lt;1">
+            <value>Normal</value>
+          </exp>
+          <exp bool_exp="pv0&gt;0">
+            <value>Inverted!</value>
+          </exp>
+          <pv_name>$(IOCname):adc_invert_mon</pv_name>
+        </rule>
+        <rule name="Rule2" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0&gt;0">
+            <value>
+              <color red="255" green="0" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0&lt;1">
+            <value>
+              <color red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <pv_name>$(IOCname):adc_invert_mon</pv_name>
+        </rule>
+        <rule name="Rule3" prop_id="foreground_color" out_exp="false">
+          <exp bool_exp="pv0&gt;0">
+            <value>
+              <color red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0&lt;1">
+            <value>
+              <color red="0" green="0" blue="0">
+              </color>
+            </value>
+          </exp>
+          <pv_name>$(IOCname):adc_invert_mon</pv_name>
+        </rule>
+      </rules>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <border_width>1</border_width>
+      <border_color>
+        <color red="255" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_18</name>
+      <text>Line delay</text>
+      <x>765</x>
+      <y>6</y>
+      <width>95</width>
+      <height>15</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_3</name>
+      <pv_name>$(IOCname):ch_delay:A_mon</pv_name>
+      <x>779</x>
+      <y>26</y>
+      <width>78</width>
+      <height>23</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_3</name>
+      <pv_name>$(IOCname):ch_delay:B_mon</pv_name>
+      <x>779</x>
+      <y>56</y>
+      <width>78</width>
+      <height>23</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_3</name>
+      <pv_name>$(IOCname):ch_delay:C_mon</pv_name>
+      <x>779</x>
+      <y>86</y>
+      <width>78</width>
+      <height>23</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_3</name>
+      <pv_name>$(IOCname):ch_delay:D_mon</pv_name>
+      <x>779</x>
+      <y>116</y>
+      <width>78</width>
+      <height>23</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_width>1</border_width>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Data Buffers and Signals</name>
+    <y>790</y>
+    <width>910</width>
+    <height>90</height>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_3</name>
+      <width>390</width>
+      <height>51</height>
+      <style>2</style>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <widget type="polyline" version="2.0.0">
+        <name>Polyline</name>
+        <height>100</height>
+        <line_width>1</line_width>
+        <line_color>
+          <color red="30" green="144" blue="255">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Menu Button</name>
+        <actions>
+          <action type="open_display">
+            <file>data.opi</file>
+            <macros>
+              <CH>A</CH>
+              <SIG>signals:adc</SIG>
+              <TITLE>ADC raw buffer</TITLE>
+              <XLABEL>ADC samples</XLABEL>
+              <YLABEL>ADC counts</YLABEL>
+            </macros>
+            <target>tab</target>
+            <description>Read ADC data</description>
+          </action>
+          <action type="open_display">
+            <file>data.opi</file>
+            <macros>
+              <CH>A</CH>
+              <SIG>signals:adc_synth</SIG>
+              <TITLE>ADC raw buffer</TITLE>
+              <XLABEL>ADC samples</XLABEL>
+              <YLABEL>ADC counts</YLABEL>
+            </macros>
+            <target>tab</target>
+            <description>Read ADC synth data</description>
+          </action>
+          <action type="open_display">
+            <file>data.opi</file>
+            <macros>
+              <CH>A</CH>
+              <SIG>signals:sum</SIG>
+              <TITLE>SUM buffer</TITLE>
+              <XLABEL>SUM samples</XLABEL>
+              <YLABEL>amplitude [a.u.]</YLABEL>
+            </macros>
+            <target>tab</target>
+            <description>Read SUM data</description>
+          </action>
+          <action type="open_display">
+            <file>data.opi</file>
+            <macros>
+              <CH>A</CH>
+              <SIG>signals:average</SIG>
+              <TITLE>AVG buffer</TITLE>
+              <XLABEL>AVG samples</XLABEL>
+              <YLABEL>amplitude [a.u.]</YLABEL>
+            </macros>
+            <target>tab</target>
+            <description>Read AVG buffer</description>
+          </action>
+          <action type="open_display">
+            <file>data_stream.opi</file>
+            <macros>
+              <CH>A</CH>
+              <SIG>signals:sa</SIG>
+              <TITLE>Slow (integrated) stream</TITLE>
+              <XLABEL>SA samples</XLABEL>
+              <YLABEL>amplitude [a.u.]</YLABEL>
+            </macros>
+            <target>tab</target>
+            <description>Slow (integrated) stream</description>
+          </action>
+          <action type="open_display">
+            <file>data_integrated.opi</file>
+            <macros>
+              <CH>A</CH>
+              <SIG>signals:adc_integrated</SIG>
+              <TITLE>Integrated ADC buffer over SUMDEC periods</TITLE>
+              <XLABEL>ADC samples</XLABEL>
+              <YLABEL>ADC counts</YLABEL>
+            </macros>
+            <target>tab</target>
+            <description>Read integrated ADC data</description>
+          </action>
+        </actions>
+        <text>Channel A</text>
+        <x>5</x>
+        <y>10</y>
+        <width>85</width>
+        <font>
+          <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Menu Button</name>
+        <actions>
+          <action type="open_display">
+            <file>data.opi</file>
+            <macros>
+              <CH>B</CH>
+              <SIG>signals:adc</SIG>
+              <TITLE>ADC raw buffer</TITLE>
+              <XLABEL>ADC samples</XLABEL>
+              <YLABEL>ADC counts</YLABEL>
+            </macros>
+            <target>tab</target>
+            <description>Read ADC data</description>
+          </action>
+          <action type="open_display">
+            <file>data.opi</file>
+            <macros>
+              <CH>B</CH>
+              <SIG>signals:adc_synth</SIG>
+              <TITLE>ADC raw buffer</TITLE>
+              <XLABEL>ADC samples</XLABEL>
+              <YLABEL>ADC counts</YLABEL>
+            </macros>
+            <target>tab</target>
+            <description>Read ADC synth data</description>
+          </action>
+          <action type="open_display">
+            <file>data.opi</file>
+            <macros>
+              <CH>B</CH>
+              <SIG>signals:sum</SIG>
+              <TITLE>SUM buffer</TITLE>
+              <XLABEL>SUM samples</XLABEL>
+              <YLABEL>amplitude [a.u.]</YLABEL>
+            </macros>
+            <target>tab</target>
+            <description>Read SUM data</description>
+          </action>
+          <action type="open_display">
+            <file>data.opi</file>
+            <macros>
+              <CH>B</CH>
+              <SIG>signals:average</SIG>
+              <TITLE>AVG buffer</TITLE>
+              <XLABEL>AVG samples</XLABEL>
+              <YLABEL>amplitude [a.u.]</YLABEL>
+            </macros>
+            <target>tab</target>
+            <description>Read AVG buffer</description>
+          </action>
+          <action type="open_display">
+            <file>data_stream.opi</file>
+            <macros>
+              <CH>B</CH>
+              <SIG>signals:sa</SIG>
+              <TITLE>Slow (integrated) stream</TITLE>
+              <XLABEL>SA samples</XLABEL>
+              <YLABEL>amplitude [a.u.]</YLABEL>
+            </macros>
+            <target>tab</target>
+            <description>Slow (integrated) stream</description>
+          </action>
+          <action type="open_display">
+            <file>data_integrated.opi</file>
+            <macros>
+              <CH>B</CH>
+              <SIG>signals:adc_integrated</SIG>
+              <TITLE>Integrated ADC buffer over SUMDEC periods</TITLE>
+              <XLABEL>ADC samples</XLABEL>
+              <YLABEL>ADC counts</YLABEL>
+            </macros>
+            <target>tab</target>
+            <description>Read integrated ADC data</description>
+          </action>
+        </actions>
+        <text>Channel B</text>
+        <x>100</x>
+        <y>10</y>
+        <width>85</width>
+        <font>
+          <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Menu Button_1</name>
+        <actions>
+          <action type="open_display">
+            <file>data.opi</file>
+            <macros>
+              <CH>C</CH>
+              <SIG>signals:adc</SIG>
+              <TITLE>ADC raw buffer</TITLE>
+              <XLABEL>ADC samples</XLABEL>
+              <YLABEL>ADC counts</YLABEL>
+            </macros>
+            <target>tab</target>
+            <description>Read ADC data</description>
+          </action>
+          <action type="open_display">
+            <file>data.opi</file>
+            <macros>
+              <CH>C</CH>
+              <SIG>signals:adc_synth</SIG>
+              <TITLE>ADC raw buffer</TITLE>
+              <XLABEL>ADC samples</XLABEL>
+              <YLABEL>ADC counts</YLABEL>
+            </macros>
+            <target>tab</target>
+            <description>Read ADC synth data</description>
+          </action>
+          <action type="open_display">
+            <file>data.opi</file>
+            <macros>
+              <CH>C</CH>
+              <SIG>signals:sum</SIG>
+              <TITLE>SUM buffer</TITLE>
+              <XLABEL>SUM samples</XLABEL>
+              <YLABEL>amplitude [a.u.]</YLABEL>
+            </macros>
+            <target>tab</target>
+            <description>Read SUM data</description>
+          </action>
+          <action type="open_display">
+            <file>data.opi</file>
+            <macros>
+              <CH>C</CH>
+              <SIG>signals:average</SIG>
+              <TITLE>AVG buffer</TITLE>
+              <XLABEL>AVG samples</XLABEL>
+              <YLABEL>amplitude [a.u.]</YLABEL>
+            </macros>
+            <target>tab</target>
+            <description>Read AVG buffer</description>
+          </action>
+          <action type="open_display">
+            <file>data_stream.opi</file>
+            <macros>
+              <CH>C</CH>
+              <SIG>signals:sa</SIG>
+              <TITLE>Slow (integrated) stream</TITLE>
+              <XLABEL>SA samples</XLABEL>
+              <YLABEL>amplitude [a.u.]</YLABEL>
+            </macros>
+            <target>tab</target>
+            <description>Slow (integrated) stream</description>
+          </action>
+          <action type="open_display">
+            <file>data_integrated.opi</file>
+            <macros>
+              <CH>C</CH>
+              <SIG>signals:adc_integrated</SIG>
+              <TITLE>Integrated ADC buffer over SUMDEC periods</TITLE>
+              <XLABEL>ADC samples</XLABEL>
+              <YLABEL>ADC counts</YLABEL>
+            </macros>
+            <target>tab</target>
+            <description>Read integrated ADC data</description>
+          </action>
+        </actions>
+        <text>Channel C</text>
+        <x>195</x>
+        <y>10</y>
+        <width>85</width>
+        <font>
+          <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Menu Button_2</name>
+        <actions>
+          <action type="open_display">
+            <file>data.opi</file>
+            <macros>
+              <CH>D</CH>
+              <SIG>signals:adc</SIG>
+              <TITLE>ADC raw buffer</TITLE>
+              <XLABEL>ADC samples</XLABEL>
+              <YLABEL>ADC counts</YLABEL>
+            </macros>
+            <target>tab</target>
+            <description>Read ADC data</description>
+          </action>
+          <action type="open_display">
+            <file>data.opi</file>
+            <macros>
+              <CH>D</CH>
+              <SIG>signals:adc_synth</SIG>
+              <TITLE>ADC raw buffer</TITLE>
+              <XLABEL>ADC samples</XLABEL>
+              <YLABEL>ADC counts</YLABEL>
+            </macros>
+            <target>tab</target>
+            <description>Read ADC synth data</description>
+          </action>
+          <action type="open_display">
+            <file>data.opi</file>
+            <macros>
+              <CH>D</CH>
+              <SIG>signals:sum</SIG>
+              <TITLE>SUM buffer</TITLE>
+              <XLABEL>SUM samples</XLABEL>
+              <YLABEL>amplitude [a.u.]</YLABEL>
+            </macros>
+            <target>tab</target>
+            <description>Read SUM data</description>
+          </action>
+          <action type="open_display">
+            <file>data.opi</file>
+            <macros>
+              <CH>D</CH>
+              <SIG>signals:average</SIG>
+              <TITLE>AVG buffer</TITLE>
+              <XLABEL>AVG samples</XLABEL>
+              <YLABEL>amplitude [a.u.]</YLABEL>
+            </macros>
+            <target>tab</target>
+            <description>Read AVG buffer</description>
+          </action>
+          <action type="open_display">
+            <file>data_stream.opi</file>
+            <macros>
+              <CH>D</CH>
+              <SIG>signals:sa</SIG>
+              <TITLE>Slow (integrated) stream</TITLE>
+              <XLABEL>SA samples</XLABEL>
+              <YLABEL>amplitude [a.u.]</YLABEL>
+            </macros>
+            <target>tab</target>
+            <description>Slow (integrated) stream</description>
+          </action>
+          <action type="open_display">
+            <file>data_integrated.opi</file>
+            <macros>
+              <CH>D</CH>
+              <SIG>signals:adc_integrated</SIG>
+              <TITLE>Integrated ADC buffer over SUMDEC periods</TITLE>
+              <XLABEL>ADC samples</XLABEL>
+              <YLABEL>ADC counts</YLABEL>
+            </macros>
+            <target>tab</target>
+            <description>Read integrated ADC data</description>
+          </action>
+        </actions>
+        <text>Channel D</text>
+        <x>290</x>
+        <y>10</y>
+        <width>85</width>
+        <font>
+          <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_1</name>
+      <actions>
+        <action type="open_display">
+          <file>processing_counting.opi</file>
+          <target>tab</target>
+        </action>
+      </actions>
+      <text>Counting
+modes</text>
+      <x>685</x>
+      <y>1</y>
+      <width>90</width>
+      <height>50</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_1</name>
+      <actions>
+        <action type="open_display">
+          <file>postmortem_configuration.opi</file>
+          <macros>
+            <SIG>signals:pm</SIG>
+          </macros>
+          <target>tab</target>
+          <description>Open Postmortem configuration</description>
+        </action>
+      </actions>
+      <text>Postmortem</text>
+      <x>590</x>
+      <y>1</y>
+      <width>90</width>
+      <height>50</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_5</name>
+      <actions>
+        <action type="open_display">
+          <file>bld_outputs.opi</file>
+          <target>tab</target>
+          <description>BLD interface</description>
+        </action>
+      </actions>
+      <text>BLD outputs</text>
+      <x>400</x>
+      <y>1</y>
+      <width>90</width>
+      <height>50</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_6</name>
+      <actions>
+        <action type="open_display">
+          <file>calibration.opi</file>
+          <target>tab</target>
+          <description>Calibration</description>
+        </action>
+      </actions>
+      <text>Calibration</text>
+      <x>495</x>
+      <y>1</y>
+      <width>90</width>
+      <height>50</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_2</name>
+      <actions>
+        <action type="open_display">
+          <file>interlock.bob</file>
+          <target>window</target>
+          <description>Interlock</description>
+        </action>
+      </actions>
+      <text>Interlock</text>
+      <x>780</x>
+      <y>1</y>
+      <width>90</width>
+      <height>50</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+  </widget>
+</display>

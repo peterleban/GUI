@@ -1,0 +1,27 @@
+Graphical User Interface (GUI) for Libera instruments.
+
+This GUI version works with the Control System Studio (CSS) Phoebus
+environment ( https://controlssoftware.sns.ornl.gov/css_phoebus/ )
+The GUI environment can be installed under Windows, Linux and OSX
+operating systems.
+
+----------------------------------
+
+Installation instructions:
+
+1. Download and install the CSS Phoebus from this link:
+
+   https://controlssoftware.sns.ornl.gov/css_phoebus/
+
+2. Copy the contents of this directory to the target PC
+   where the CSS Phoebus is installed.
+
+3. Open the "start_panel.bob"
+
+----------------------------------
+
+The panels were built under CSS Phoebus version 4.6.3
+
+Date: October 7, 2020
+Author: Peter Leban
+Email: peter.leban@i-tech.si
