@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>ADC buffer ( $(IOCname) )</name>
+  <width>930</width>
+  <height>900</height>
+  <background_color>
+    <color red="18" green="19" blue="42" alpha="0">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="xyplot" version="2.0.0">
+    <name>XY Graph</name>
+    <x>5</x>
+    <y>5</y>
+    <width>910</width>
+    <height>690</height>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <title>$(TITLE)</title>
+    <title_font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </title_font>
+    <show_toolbar>true</show_toolbar>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="axis_max" prop_id="x_axis.maximum" out_exp="true">
+        <exp bool_exp="true">
+          <expression>pv0</expression>
+        </exp>
+        <pv_name>$(IOCname):$(SIG).NGRP</pv_name>
+      </rule>
+    </rules>
+    <x_axis>
+      <title>$(XLABEL)</title>
+      <autoscale>false</autoscale>
+      <log_scale>false</log_scale>
+      <minimum>0.0</minimum>
+      <maximum>10.0</maximum>
+      <show_grid>true</show_grid>
+      <title_font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </title_font>
+      <scale_font>
+        <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+        </font>
+      </scale_font>
+      <visible>true</visible>
+    </x_axis>
+    <y_axes>
+      <y_axis>
+        <title>$(YLABEL)</title>
+        <autoscale>true</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>0.0</minimum>
+        <maximum>100.0</maximum>
+        <show_grid>true</show_grid>
+        <title_font>
+          <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+          </font>
+        </title_font>
+        <scale_font>
+          <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+          </font>
+        </scale_font>
+        <visible>true</visible>
+      </y_axis>
+    </y_axes>
+    <traces>
+      <trace>
+        <name>$(traces[0].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>$(IOCname):$(SIG).A</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="164" green="0" blue="0">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>4</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[1].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>$(IOCname):$(SIG).B</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="32" green="74" blue="135">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>4</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[2].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>$(IOCname):$(SIG).C</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="78" green="154" blue="6">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>4</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[3].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>$(IOCname):$(SIG).D</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="46" green="52" blue="54">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>4</point_size>
+        <visible>true</visible>
+      </trace>
+    </traces>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Settings</name>
+    <x>5</x>
+    <y>700</y>
+    <width>910</width>
+    <height>150</height>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(IOCname):$(SIG).SCAN</pv_name>
+          <value>2</value>
+          <description>Set SCAN to I/O Intr</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>$(IOCname):$(SIG).SCAN</pv_name>
+          <value>0</value>
+          <description>Set SCAN to Passive</description>
+        </action>
+      </actions>
+      <x>105</x>
+      <y>53</y>
+      <height>40</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="SCANRule" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0&gt;1">
+            <value>Stop refreshing</value>
+          </exp>
+          <exp bool_exp="pv0&lt;1">
+            <value>Start refreshing</value>
+          </exp>
+          <pv_name>$(IOCname):$(SIG).SCAN</pv_name>
+        </rule>
+      </rules>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Status label SCAN</text>
+      <x>1</x>
+      <width>308</width>
+      <height>23</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="Rule" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0&gt;1">
+            <value>Refreshing on trigger automatically</value>
+          </exp>
+          <exp bool_exp="pv0&lt;1">
+            <value>Manual refresh required</value>
+          </exp>
+          <pv_name>$(IOCname):$(SIG).SCAN</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>Status label ACQM</text>
+      <x>1</x>
+      <y>24</y>
+      <width>308</width>
+      <height>23</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="Rule" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0&lt;2">
+            <value>Data refresh is not linked to trigger</value>
+          </exp>
+          <exp bool_exp="1&lt;pv0&lt;3">
+            <value>New data will refresh on trigger.</value>
+          </exp>
+          <pv_name>$(IOCname):$(SIG).ACQM</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_1</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(IOCname):$(SIG).ACQM</pv_name>
+          <value>2</value>
+          <description>Set ACQM to Event</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>$(IOCname):$(SIG).ACQM</pv_name>
+          <value>1</value>
+          <description>Set ACQM to Now</description>
+        </action>
+      </actions>
+      <y>53</y>
+      <height>40</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="ACQMRule" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0&lt;2">
+            <value>Free running</value>
+          </exp>
+          <exp bool_exp="1&lt;pv0&lt;3">
+            <value>Triggered</value>
+          </exp>
+          <pv_name>$(IOCname):$(SIG).ACQM</pv_name>
+        </rule>
+      </rules>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_2</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(IOCname):$(SIG).PROC</pv_name>
+          <value>1</value>
+          <description>Send PROC</description>
+        </action>
+      </actions>
+      <text>Manual refresh</text>
+      <x>210</x>
+      <y>53</y>
+      <height>40</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="SCANRule" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0&gt;1">
+            <value>false</value>
+          </exp>
+          <exp bool_exp="pv0&lt;1">
+            <value>true</value>
+          </exp>
+          <pv_name>$(IOCname):$(SIG).SCAN</pv_name>
+        </rule>
+      </rules>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_13</name>
+      <text>Attenuation</text>
+      <x>590</x>
+      <width>80</width>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>$(IOCname):att_mon</pv_name>
+      <x>671</x>
+      <y>1</y>
+      <width>98</width>
+      <height>18</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_15</name>
+      <text>Max ADC</text>
+      <x>590</x>
+      <y>25</y>
+      <width>80</width>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_3</name>
+      <pv_name>$(IOCname):max_adc</pv_name>
+      <x>671</x>
+      <y>26</y>
+      <width>98</width>
+      <height>18</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="MaxADCAlarm" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0&gt;30000">
+            <value>
+              <color name="Major" red="255" green="0" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0&gt;25000">
+            <value>
+              <color name="Minor" red="255" green="128" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0&gt;400">
+            <value>
+              <color red="0" green="255" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0&lt;401">
+            <value>
+              <color red="0" green="163" blue="255">
+              </color>
+            </value>
+          </exp>
+          <pv_name>$(IOCname):max_adc</pv_name>
+        </rule>
+      </rules>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_16</name>
+      <text>Timestamp LMT</text>
+      <x>335</x>
+      <width>110</width>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_4</name>
+      <pv_name>$(IOCname):$(SIG).LMT</pv_name>
+      <x>446</x>
+      <y>1</y>
+      <width>128</width>
+      <height>18</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_17</name>
+      <text>Timestamp MT</text>
+      <x>335</x>
+      <y>25</y>
+      <width>110</width>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_5</name>
+      <pv_name>$(IOCname):$(SIG).MT</pv_name>
+      <x>446</x>
+      <y>26</y>
+      <width>128</width>
+      <height>18</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_18</name>
+      <text>Trigger timestamp</text>
+      <x>335</x>
+      <y>50</y>
+      <width>110</width>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_6</name>
+      <pv_name>$(IOCname):triggers:t2:timestamp_mon</pv_name>
+      <x>446</x>
+      <y>51</y>
+      <width>128</width>
+      <height>18</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_19</name>
+      <text>Trigger counter</text>
+      <x>335</x>
+      <y>75</y>
+      <width>110</width>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_7</name>
+      <pv_name>$(IOCname):triggers:t2:count_mon</pv_name>
+      <x>446</x>
+      <y>76</y>
+      <width>128</width>
+      <height>18</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+  </widget>
+</display>

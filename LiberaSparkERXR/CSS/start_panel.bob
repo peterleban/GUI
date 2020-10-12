@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Libera Spark ERXR</name>
+  <macros>
+    <IOCname>libera</IOCname>
+  </macros>
+  <width>1000</width>
+  <height>1050</height>
+  <background_color>
+    <color red="18" green="19" blue="42" alpha="0">
+    </color>
+  </background_color>
+  <widget type="group" version="2.0.0">
+    <name>Libera BLM</name>
+    <x>90</x>
+    <y>340</y>
+    <width>850</width>
+    <height>250</height>
+    <widget type="label" version="2.0.0">
+      <name>Label_57</name>
+      <text>Libera Spark ERXR</text>
+      <x>340</x>
+      <y>2</y>
+      <width>250</width>
+      <height>42</height>
+      <font>
+        <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="picture" version="2.0.0">
+      <name>Picture</name>
+      <file>libera.png</file>
+      <x>280</x>
+      <y>2</y>
+      <width>50</width>
+      <height>42</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_38</name>
+      <text>Set the IOC name</text>
+      <x>100</x>
+      <y>70</y>
+      <width>200</width>
+      <height>35</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="18.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>iocname_w</name>
+      <pv_name>loc://myname("set_my_name")</pv_name>
+      <x>299</x>
+      <y>70</y>
+      <width>250</width>
+      <height>35</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="18.0">
+        </font>
+      </font>
+      <format>6</format>
+      <precision>0</precision>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>assign_name</name>
+      <actions>
+        <action type="execute">
+          <script file="EmbeddedPy">
+            <text><![CDATA[# This script reads the text in the "IOC name" section and assigns the "IOCname" macro.
+
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+
+children = widget.getDisplayModel().runtimeChildren()
+name_widget = children.getChildByName("iocname_w")
+name_pv = ScriptUtil.getPVs(name_widget)
+name = PVUtil.getString(name_pv[0])
+
+# Debug only
+#logger = ScriptUtil.getLogger()
+#print dir(children)
+#print dir(name_widget)
+#logger.info("Name widget " + str(name_widget))
+#print name_pv
+#print name
+
+# Look for the main widget
+main_widget = children.getWidget()
+main_widget.getPropertyValue("macros").add("IOCname",name)
+
+# Debug only
+#print (main_widget.getName())
+#print (main_widget.getMacrosOrProperties())
+#print (main_widget.getProperties())
+#print (main_widget.getMacrosOrProperties())
+
+# Enable button for main panel
+button_widget = children.getChildByName("open_main")
+button_widget.setPropertyValue("enabled","true")
+
+assigned_text_widget = children.getChildByName("assigned_text")
+assigned_text_widget.setPropertyValue("visible","true")
+assigned_name_widget = children.getChildByName("assigned_name")
+assigned_name_widget.setPropertyValue("visible","true")
+assigned_name_widget.setPropertyValue("text",name)
+]]></text>
+          </script>
+          <description>Assign IOC name</description>
+        </action>
+      </actions>
+      <text>Assign the name</text>
+      <x>559</x>
+      <y>70</y>
+      <width>160</width>
+      <height>35</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>open_main</name>
+      <actions execute_as_one="true">
+        <action type="open_display">
+          <file>main.bob</file>
+          <macros>
+            <IOCname>$(IOCname)</IOCname>
+          </macros>
+          <target>replace</target>
+          <description>Open main panel</description>
+        </action>
+      </actions>
+      <text>Continue to main panel</text>
+      <x>559</x>
+      <y>150</y>
+      <width>160</width>
+      <height>45</height>
+      <tooltip>$(actions)</tooltip>
+      <enabled>false</enabled>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>and press Enter</text>
+      <x>99</x>
+      <y>100</y>
+      <width>200</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>assigned_text</name>
+      <text>Assigned IOC name</text>
+      <x>100</x>
+      <y>150</y>
+      <width>200</width>
+      <height>45</height>
+      <visible>false</visible>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="18.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>assigned_name</name>
+      <text></text>
+      <x>300</x>
+      <y>150</y>
+      <width>247</width>
+      <height>45</height>
+      <visible>false</visible>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="18.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+  </widget>
+</display>

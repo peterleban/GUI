@@ -1,22 +1,27 @@
 Graphical User Interface (GUI) for Libera instruments.
 
-This GUI version works with the Control System Studio (CSS)
-environment ( http://controlsystemstudio.org/ )
-The CSS environment can be installed under Windows, Linux and OSX
+This GUI version works with the Control System Studio (CSS) Phoebus
+environment ( https://controlssoftware.sns.ornl.gov/css_phoebus/ )
+The GUI environment can be installed under Windows, Linux and OSX
 operating systems.
 
-Copy or fork the .opi files and open the "main.opi" file.
-The .opi files contain a macro definition (DEVICE). It must be
-defined in the "main.opi" file and is then linked to other related .opi files automatically.
+----------------------------------
 
-DEVICE stands for the IOCname (EPICS prefix). The IOCname is defined
-in the Libera instrument ( /opt/libera-ioc/IOCname )
+Installation instructions:
 
+1. Download and install the CSS Phoebus from this link:
 
-RELEASE NOTES:
-* GUI does not support the calibration functionality.
+   https://controlssoftware.sns.ornl.gov/css_phoebus/
 
-Contributions are much appreciated.
+2. Copy the contents of this directory to the target PC
+   where the CSS Phoebus is installed.
 
-Date: April 23, 2020
-Author: Peter Leban [ peter.leban@i-tech.si ]
+3. Open the "start_panel.bob"
+
+----------------------------------
+
+The panels were built under CSS Phoebus version 4.6.3
+
+Date: October 12, 2020
+Author: Peter Leban
+Email: peter.leban@i-tech.si

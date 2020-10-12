@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Processing window ( $(IOCname) )</name>
+  <width>930</width>
+  <height>900</height>
+  <background_color>
+    <color red="18" green="19" blue="42" alpha="0">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="xyplot" version="2.0.0">
+    <name>XY Graph</name>
+    <x>5</x>
+    <y>5</y>
+    <width>910</width>
+    <height>690</height>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <title>$(TITLE)</title>
+    <title_font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </title_font>
+    <show_toolbar>true</show_toolbar>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="axis_max" prop_id="x_axis.maximum" out_exp="true">
+        <exp bool_exp="true">
+          <expression>pv0</expression>
+        </exp>
+        <pv_name>$(IOCname):dsp:tbt_decimation</pv_name>
+      </rule>
+    </rules>
+    <x_axis>
+      <title>$(XLABEL)</title>
+      <autoscale>false</autoscale>
+      <log_scale>false</log_scale>
+      <minimum>0.0</minimum>
+      <maximum></maximum>
+      <show_grid>true</show_grid>
+      <title_font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </title_font>
+      <scale_font>
+        <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+        </font>
+      </scale_font>
+      <visible>true</visible>
+    </x_axis>
+    <y_axes>
+      <y_axis>
+        <title>$(YLABEL)</title>
+        <autoscale>true</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>0.0</minimum>
+        <maximum>100.0</maximum>
+        <show_grid>true</show_grid>
+        <title_font>
+          <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+          </font>
+        </title_font>
+        <scale_font>
+          <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+          </font>
+        </scale_font>
+        <visible>true</visible>
+      </y_axis>
+    </y_axes>
+    <traces>
+      <trace>
+        <name>$(traces[0].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>$(IOCname):$(SIG).A</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="164" green="0" blue="0">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>4</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[1].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>$(IOCname):$(SIG).B</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="32" green="74" blue="135">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>4</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[2].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>$(IOCname):$(SIG).C</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="78" green="154" blue="6">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>4</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[3].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>$(IOCname):$(SIG).D</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="46" green="52" blue="54">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>4</point_size>
+        <visible>true</visible>
+      </trace>
+    </traces>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Settings</name>
+    <x>5</x>
+    <y>700</y>
+    <width>910</width>
+    <height>150</height>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_2</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(IOCname):$(SIG).PROC</pv_name>
+          <value>1</value>
+          <description>Send PROC</description>
+        </action>
+      </actions>
+      <text>Buffer refresh</text>
+      <x>680</x>
+      <y>40</y>
+      <height>40</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="SCANRule" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0&gt;1">
+            <value>false</value>
+          </exp>
+          <exp bool_exp="pv0&lt;1">
+            <value>true</value>
+          </exp>
+          <pv_name>$(IOCname):$(SIG).SCAN</pv_name>
+        </rule>
+      </rules>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_12</name>
+      <text>ADC mask window length</text>
+      <width>200</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>$(IOCname):dsp:adc_mask:window_mon</pv_name>
+      <x>320</x>
+      <height>25</height>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input_2</name>
+      <pv_name>$(IOCname):dsp:adc_mask:window_sp</pv_name>
+      <x>210</x>
+      <height>25</height>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>ADC mask window offset</text>
+      <y>30</y>
+      <width>200</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>$(IOCname):dsp:adc_mask:offset_mon</pv_name>
+      <x>320</x>
+      <y>30</y>
+      <height>25</height>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input_1</name>
+      <pv_name>$(IOCname):dsp:adc_mask:offset_sp</pv_name>
+      <x>210</x>
+      <y>30</y>
+      <height>25</height>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_2</name>
+      <text>Phase offset</text>
+      <x>440</x>
+      <width>130</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>$(IOCname):dsp:phase_offset_sp</pv_name>
+      <x>680</x>
+      <y>1</y>
+      <height>25</height>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input_2</name>
+      <pv_name>$(IOCname):dsp:phase_offset_mon</pv_name>
+      <x>570</x>
+      <height>25</height>
+      <background_color>
+        <color red="254" green="217" blue="188">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_3</name>
+      <text>offset+window =&lt;</text>
+      <y>60</y>
+      <width>146</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_3</name>
+      <pv_name>$(IOCname):dsp:tbt_decimation</pv_name>
+      <x>211</x>
+      <y>61</y>
+      <height>23</height>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+  </widget>
+</display>

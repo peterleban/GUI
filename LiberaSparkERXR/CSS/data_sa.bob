@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>$(IOCname): SA data</name>
+  <width>930</width>
+  <height>900</height>
+  <background_color>
+    <color red="18" green="19" blue="42" alpha="0">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="stripchart" version="2.0.0">
+    <name>XY Graph</name>
+    <x>5</x>
+    <y>5</y>
+    <width>445</width>
+    <height>750</height>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <title>Amplitudes - $(TITLE)</title>
+    <title_font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </title_font>
+    <show_legend>true</show_legend>
+    <actions>
+    </actions>
+    <y_axes>
+      <y_axis>
+        <title>$(YLABEL1)</title>
+        <autoscale>true</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>0.0</minimum>
+        <maximum>100.0</maximum>
+        <show_grid>true</show_grid>
+        <visible>true</visible>
+      </y_axis>
+    </y_axes>
+    <traces>
+      <trace>
+        <name>$(traces[0].y_pv)</name>
+        <y_pv>$(IOCname):$(SIG).A</y_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="164" green="0" blue="0">
+          </color>
+        </color>
+        <line_width>2</line_width>
+        <point_type>0</point_type>
+        <point_size>4</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[1].y_pv)</name>
+        <y_pv>$(IOCname):$(SIG).B</y_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="32" green="74" blue="135">
+          </color>
+        </color>
+        <line_width>2</line_width>
+        <point_type>0</point_type>
+        <point_size>4</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[2].y_pv)</name>
+        <y_pv>$(IOCname):$(SIG).C</y_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="78" green="154" blue="6">
+          </color>
+        </color>
+        <line_width>2</line_width>
+        <point_type>0</point_type>
+        <point_size>4</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[3].y_pv)</name>
+        <y_pv>$(IOCname):$(SIG).D</y_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="46" green="52" blue="54">
+          </color>
+        </color>
+        <line_width>2</line_width>
+        <point_type>0</point_type>
+        <point_size>4</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[4].y_pv)</name>
+        <y_pv>$(IOCname):$(SIG).Sum</y_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="136" green="138" blue="133">
+          </color>
+        </color>
+        <line_width>2</line_width>
+        <point_type>0</point_type>
+        <point_size>4</point_size>
+        <visible>true</visible>
+      </trace>
+    </traces>
+  </widget>
+  <widget type="stripchart" version="2.0.0">
+    <name>XY Graph_1</name>
+    <x>450</x>
+    <y>5</y>
+    <width>480</width>
+    <height>375</height>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <title>Horizontal position - $(TITLE)</title>
+    <title_font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </title_font>
+    <show_legend>true</show_legend>
+    <actions>
+    </actions>
+    <y_axes>
+      <y_axis>
+        <title>$(YLABEL2)</title>
+        <autoscale>true</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>0.0</minimum>
+        <maximum>100.0</maximum>
+        <show_grid>true</show_grid>
+        <visible>true</visible>
+      </y_axis>
+    </y_axes>
+    <traces>
+      <trace>
+        <name>$(traces[0].y_pv)</name>
+        <y_pv>$(IOCname):$(SIG).X</y_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="164" green="0" blue="0">
+          </color>
+        </color>
+        <line_width>2</line_width>
+        <point_type>0</point_type>
+        <point_size>4</point_size>
+        <visible>true</visible>
+      </trace>
+    </traces>
+  </widget>
+  <widget type="stripchart" version="2.0.0">
+    <name>XY Graph_2</name>
+    <x>450</x>
+    <y>380</y>
+    <width>480</width>
+    <height>375</height>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <title>Vertical position - $(TITLE)</title>
+    <title_font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </title_font>
+    <show_legend>true</show_legend>
+    <actions>
+    </actions>
+    <y_axes>
+      <y_axis>
+        <title>$(YLABEL2)</title>
+        <autoscale>true</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>0.0</minimum>
+        <maximum>100.0</maximum>
+        <show_grid>true</show_grid>
+        <visible>true</visible>
+      </y_axis>
+    </y_axes>
+    <traces>
+      <trace>
+        <name>$(traces[0].y_pv)</name>
+        <y_pv>$(IOCname):$(SIG).Y</y_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="32" green="74" blue="135">
+          </color>
+        </color>
+        <line_width>2</line_width>
+        <point_type>0</point_type>
+        <point_size>4</point_size>
+        <visible>true</visible>
+      </trace>
+    </traces>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Settings</name>
+    <y>760</y>
+    <width>330</width>
+    <height>90</height>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(IOCname):$(SIG).SCAN</pv_name>
+          <value>2</value>
+          <description>Set SCAN to I/O Intr</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>$(IOCname):$(SIG).SCAN</pv_name>
+          <value>0</value>
+          <description>Set SCAN to Passive</description>
+        </action>
+      </actions>
+      <height>40</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="SCANRule" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0&gt;1">
+            <value>Stop refreshing</value>
+          </exp>
+          <exp bool_exp="pv0&lt;1">
+            <value>Start refreshing</value>
+          </exp>
+          <pv_name>$(IOCname):$(SIG).SCAN</pv_name>
+        </rule>
+      </rules>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_13</name>
+      <text>Attenuation</text>
+      <x>115</x>
+      <width>80</width>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>$(IOCname):att_mon</pv_name>
+      <x>196</x>
+      <y>1</y>
+      <width>98</width>
+      <height>18</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_15</name>
+      <text>Max ADC</text>
+      <x>115</x>
+      <y>28</y>
+      <width>80</width>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_3</name>
+      <pv_name>$(IOCname):max_adc</pv_name>
+      <x>196</x>
+      <y>29</y>
+      <width>98</width>
+      <height>18</height>
+      <font>
+        <font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="MaxADCAlarm" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0&gt;30000">
+            <value>
+              <color name="Major" red="255" green="0" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0&gt;25000">
+            <value>
+              <color name="Minor" red="255" green="128" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0&gt;400">
+            <value>
+              <color red="0" green="255" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0&lt;401">
+            <value>
+              <color red="0" green="163" blue="255">
+              </color>
+            </value>
+          </exp>
+          <pv_name>$(IOCname):max_adc</pv_name>
+        </rule>
+      </rules>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_width>1</border_width>
+    </widget>
+  </widget>
+</display>
